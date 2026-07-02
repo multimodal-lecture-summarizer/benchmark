@@ -1,0 +1,16 @@
+whisperx
+jiwer
+pandas
+tqdm
+nbformat
+matplotlib
+seaborn
+ipykernel
+soundfile
+ipywidgets
+scenedetect[opencv]
+transformers
+accelerate
+bitsandbytes
+scikit-learn
+pillow

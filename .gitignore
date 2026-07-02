@@ -1,0 +1,22 @@
+# Bỏ qua thư mục chứa dữ liệu gốc (rất nặng)
+dataset/
+
+# Bỏ qua các thư mục lưu trữ ảnh và kết quả sinh ra trong lúc chạy code
+visual/keyframes/
+visual/pipeline_output/
+visual/results/
+
+# Các file tạm của Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Môi trường ảo (Nếu có dùng)
+venv/
+env/
+.venv/
+
+# Cấu hình IDE / Môi trường cá nhân
+.vscode/
+.idea/
+.env
