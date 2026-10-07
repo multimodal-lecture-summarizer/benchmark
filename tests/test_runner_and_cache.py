@@ -13,7 +13,6 @@ from benchmarks.core.feature_store import (
     TranscriptChunk,
 )
 from benchmarks.core.judge import QualityAuditRecord, SingleAuthorAuditTool
-from benchmarks.core.manifest_manager import FrozenManifestManager, verify_manifest_integrity
 from benchmarks.core.runner import (
     ExperimentConfig,
     ResumableExperimentRunner,
@@ -119,14 +118,6 @@ def test_resumable_runner_execution(tmp_path: Path):
     # Check resumption
     runner2 = ResumableExperimentRunner(ckpt_file)
     assert len(runner2.results) == 3
-
-
-def test_manifest_verification(tmp_path: Path):
-    manifest_path = Path("benchmarks/manifests/frozen_manifest_v1.json")
-    if manifest_path.exists():
-        res = verify_manifest_integrity(manifest_path, check_existing_files=False)
-        assert res["integrity_healthy"] is True
-        assert res["leakage_free"] is True
 
 
 def test_single_author_audit_tool(tmp_path: Path):

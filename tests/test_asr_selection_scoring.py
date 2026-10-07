@@ -4,15 +4,13 @@ import hashlib
 import json
 import sys
 from dataclasses import replace
-from pathlib import Path
 
 import pytest
 
 from benchmarks.scripts import run_asr_model_benchmark as bakeoff
-from benchmarks.scripts import run_asr_preprocessing_ablation as ablation
 from experiments.evaluation.asr_selection_scoring import (
     normalize_english_asr, require_selection_metadata, score_asr_pairs,
-    scoring_metadata, selection_metadata, validation_units,
+    selection_metadata, validation_units,
 )
 from experiments.scripts.benchmark_artifacts import (
     RunnerContext, read_json_artifact, write_json_artifact, write_run_manifest,
@@ -107,124 +105,6 @@ def _context(tmp_path, notebook_id, profile):
                          source_sha256=hashlib.sha256(b"fixture-source").hexdigest(),
                          config_sha256=hashlib.sha256(b"fixture-config").hexdigest(),
                          dependency_state_sha256=hashlib.sha256(b"fixture-dependency").hexdigest())
-
-
-@pytest.mark.parametrize("runner,notebook_id", [
-    (bakeoff, "01a_asr_model_benchmark"),
-    (ablation, "01b_asr_preprocessing_ablation"),
-])
-@pytest.mark.parametrize("profile", ["smoke", "full"])
-def test_runners_never_infer_or_select_on_test(tmp_path, monkeypatch, runner, notebook_id, profile):
-    context = _context(tmp_path, notebook_id, profile)
-    if runner is bakeoff:
-        context = replace(context, run_namespace="diagnostic")
-    valid = _unit()
-    units = [_unit("test:secret", "final_test", "do not inspect"), valid]
-    monkeypatch.setattr(runner, "parse_context", lambda *args: context)
-    def load_units(context, *, limit_smoke):
-        assert limit_smoke is False
-        return units
-
-    monkeypatch.setattr(runner, "load_eligible_units", load_units)
-    seen = []
-
-    def media(unit, *args):
-        seen.append(unit["unit_id"])
-        assert unit["split"] == "validation"
-        return Path("validation.wav")
-
-    if runner is bakeoff:
-        producer = replace(context, notebook_id="00c_dataset_eda_and_freeze")
-        write_json_artifact(producer, "dataset.frozen_manifest", [{
-            "dataset_id": "fixture", "unit_records": [valid], "unit_ids": [valid["unit_id"]],
-        }])
-        write_run_manifest(producer)
-        from experiments.evaluation.asr_candidate_adapters import TranscriptResult
-
-        class FakeAdapter:
-            def __init__(self, candidate):
-                self.id = candidate["id"]
-                self.model_size = "fixture"
-                self.device = "cpu"
-                self.load_seconds = 0.
-                self.dependency_versions = {"fixture": "1"}
-
-            def load(self):
-                pass
-
-            def transcribe(self, audio):
-                return TranscriptResult("HELLO, world!", .1)
-
-            def close(self):
-                pass
-
-        monkeypatch.setattr(runner, "ADAPTER_FACTORY", FakeAdapter)
-        monkeypatch.setattr(runner, "_audio", lambda unit, **kwargs: (seen.append(unit["unit_id"]) or __import__("numpy").ones(16000, dtype="float32"), 1., "a" * 64))
-    else:
-        monkeypatch.setattr(runner, "require_media", media)
-        monkeypatch.setattr(runner, "_audio_duration_sec", lambda path: 1.)
-        monkeypatch.setattr(runner, "_transcribe", lambda *args, **kwargs: ("HELLO, world!", .1))
-        monkeypatch.setattr(runner, "read_json_artifact", lambda *args: {"records": [
-            {"candidate": "faster-whisper-tiny.en", "selected": True, **selection_metadata([valid])}
-        ]})
-    assert runner.main([]) == 0
-    assert set(seen) == {valid["unit_id"]}
-    if runner is bakeoff:
-        assert seen.count(valid["unit_id"]) == 6
-    payloads = list((context.namespace_root / "payloads").glob("asr.*.json"))
-    assert len(payloads) == (5 if runner is bakeoff else 3)
-    for payload in payloads:
-        records = json.loads(payload.read_text())["records"]
-        for record in records:
-            assert record["selection_split"] == "validation"
-            assert record["selection_unit_count"] == 1
-            assert record["scoring"] == scoring_metadata()
-            assert record.get("unit_id", valid["unit_id"]) == valid["unit_id"]
-            if "metrics" in record and record["metrics"]:
-                assert record["metrics"].get("wer", record["metrics"].get("corpus_wer")) == 0
-
-
-@pytest.mark.parametrize("runner", [bakeoff, ablation])
-def test_runners_reject_bad_splits_before_media_or_model(monkeypatch, runner):
-    monkeypatch.setattr(runner, "parse_context", lambda *args: object())
-    monkeypatch.setattr(runner, "load_eligible_units", lambda context, **kwargs: [_unit(), _unit("bad", None)])
-    seen = []
-    monkeypatch.setattr(runner, "require_media", lambda *args: seen.append("media"))
-    assert runner.main([]) == 1
-    assert seen == []
-
-
-def test_ablation_rejects_historical_shortlist_before_inference(monkeypatch):
-    monkeypatch.setattr(ablation, "read_json_artifact", lambda *args: {"records": [
-        {"candidate": "faster-whisper-tiny.en", "selected": True}
-    ]})
-    with pytest.raises(RuntimeError, match="regenerate on validation"):
-        ablation._resolve_shortlisted_model(object(), [_unit()])
-
-
-def test_ablation_emits_typed_block_for_new_asr_candidate(tmp_path, monkeypatch):
-    context = _context(tmp_path, "01b_asr_preprocessing_ablation", "smoke")
-    unit = _unit()
-    monkeypatch.setattr(ablation, "parse_context", lambda *args: context)
-    monkeypatch.setattr(ablation, "load_eligible_units", lambda *args, **kwargs: [unit])
-    monkeypatch.setattr(ablation, "read_json_artifact", lambda *args: {"records": [
-        {"candidate": "RQ0_A.A0_WhisperBase", "selected": True,
-         **selection_metadata([unit])},
-    ]})
-
-    assert ablation.main([]) == 2
-    for artifact in ("asr.ablation_predictions", "asr.ablation_metrics", "asr.frozen_configuration"):
-        payload = json.loads((context.namespace_root / "payloads" / f"{artifact}.json").read_text())
-        assert payload["records"][0]["status"] == "blocked_unsupported_candidate"
-
-
-@pytest.mark.parametrize("selected_flags", [[False], [True, True]])
-def test_ablation_rejects_ambiguous_selection(monkeypatch, selected_flags):
-    records = [{"candidate": "faster-whisper-tiny.en", "selected": selected,
-                **selection_metadata([_unit()])} for selected in selected_flags]
-    monkeypatch.setattr(ablation, "read_json_artifact", lambda *args: {"records": records})
-    with pytest.raises(RuntimeError, match="exactly one"):
-        ablation._resolve_shortlisted_model(object(), [_unit()])
 
 
 @pytest.mark.parametrize("field,sentinel", [

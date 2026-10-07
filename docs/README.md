@@ -27,3 +27,5 @@
 - [Ghi nhận chuyển repo](archive/research-migration-2026-10-06.md), [nhật ký benchmark đầu kỳ](journals/260922-260925-early-benchmark-journal.md), [nhật ký sửa bằng chứng](workspace/260926-research-evidence-journal.md) và `workspace/`: nhật ký, tài liệu luận văn và bản thảo trình bày. Ba nhật ký có tên và SHA-256 trong manifest vẫn là tệp riêng trong `journals/`.
 
 `benchmarks/references/` không có ground truth cục bộ đã xác minh. Không dùng các ví dụ trong tài liệu như nhãn đánh giá.
+
+Các runner một lượt RQ0A/RQ0V, RQ1–RQ4, EDA tổng quát, ablation ASR và error cascading tính bằng công thức trong `benchmarks/scripts/` đã ngừng dùng và được gỡ ngày 2026-10-07. Manifest đóng băng v1 cùng mẫu provenance cũ cũng được gỡ. Các mục lịch sử trong tài liệu và kết quả cũ chỉ để đối chiếu; nghiên cứu mới theo notebook được tạo khi dataset, nhãn, ứng viên và metric đã sẵn sàng.

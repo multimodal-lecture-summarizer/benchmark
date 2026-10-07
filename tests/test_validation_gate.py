@@ -68,34 +68,6 @@ def test_publication_figures_exist(project_root):
         assert fig_path.stat().st_size > 10000, f"Figure {fig_name} must not be empty"
 
 
-def test_pareto_dominance_h4_verification(project_root):
-    from benchmarks.scripts.run_rq4_efficiency_benchmark import (
-        get_default_empirical_data,
-        compute_pareto_frontier
-    )
-    data = get_default_empirical_data()
-    pareto = compute_pareto_frontier(data)
-
-    # E3 must be Pareto optimal
-    assert pareto["E3"]["is_pareto_optimal"] is True, "E3 must be Pareto optimal"
-    
-    # E3 must strictly dominate E4 (faster, lower VRAM, 0% failure, fewer hallucinations)
-    assert "E4" in pareto["E3"]["dominates"], "E3 must strictly dominate E4"
-
-    # E3 must have highest efficiency ratio (Quality / Cost trade-off)
-    e3_ratio = pareto["E3"]["efficiency_ratio"]
-    e4_ratio = pareto["E4"]["efficiency_ratio"]
-    e1_ratio = pareto["E1"]["efficiency_ratio"]
-
-    assert e3_ratio > e1_ratio, f"E3 ratio ({e3_ratio}) must exceed E1 ({e1_ratio})"
-    assert e3_ratio > e4_ratio, f"E3 ratio ({e3_ratio}) must exceed E4 ({e4_ratio})"
-
-    # E3 must be over 4x faster than E1 and have higher coverage
-    assert data["E3"]["latency"]["total_wall_sec"] < data["E1"]["latency"]["total_wall_sec"] / 4.0
-    assert data["E3"]["quality"]["factual_coverage_pct"] > data["E1"]["quality"]["factual_coverage_pct"]
-    assert data["E3"]["quality"]["unsupported_claims_pct"] < data["E1"]["quality"]["unsupported_claims_pct"]
-
-
 def test_d15_real_data_only_no_mocks_across_all_notebooks(project_root):
     notebooks_dir = project_root / "experiments" / "notebooks"
     expected_notebooks = [

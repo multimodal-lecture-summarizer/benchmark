@@ -4,6 +4,8 @@ Hướng dẫn thiết lập, chạy và ghi nhận benchmark cho pipeline **mul
 
 Notebook chỉ được tạo khi có dataset, câu hỏi phân tích và phiên chạy cụ thể. Không tạo notebook khung hoặc notebook smoke. [Manifest](../experiments/notebooks/notebook_manifest.yaml) hiện ở chế độ `on_demand` với `notebooks: []`; hồ sơ chẩn đoán/EDA/đánh giá đã chạy nằm ngoài danh sách notebook hoạt động. Notebook `01a` và `01b` đã rời luồng hoạt động; archive giữ notebook đã chạy và receipt lịch sử, không giữ notebook smoke.
 
+Các runner cũ trong `benchmarks/scripts/` cho RQ0A/RQ0V, RQ1–RQ4, EDA tổng quát, ablation ASR và error cascading tính bằng công thức đã được gỡ ngày 2026-10-07; `frozen_manifest_v1.json` và `provenance_template.json` cũng đã được gỡ. Những lệnh, bảng và manifest trong các mục lịch sử bên dưới mô tả thời điểm nghiên cứu trước, không còn là quy trình chạy hiện hành.
+
 ## Quy trình nghiên cứu hiện hành
 
 1. **Chọn dữ liệu và ứng viên theo tác vụ:** chỉ chọn cohort video bài giảng hoặc bài thuyết trình học thuật có thể xác minh là cùng miền nghiên cứu, với nhãn có sẵn phù hợp đúng tác vụ. Ghi nguồn/phiên bản, quyền, modality, ground truth, đơn vị đánh giá, split/cohort và ít nhất hai họ mô hình hoặc thuật toán có ý nghĩa để so sánh. Không dùng video tổng quát làm benchmark phụ hoặc fallback. Chốt metric chính, normalizer, ngân sách đầu vào/đầu ra và tài nguyên chung trước khi xem điểm.
