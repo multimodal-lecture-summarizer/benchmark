@@ -128,13 +128,7 @@ Artifact contract dưới `experiments/outputs/dataset_eda/<dataset_id>/<revisio
 
 | Phase | Name | Status |
 |-------|------|--------|
-| 1 | [Repair execution and evidence integrity](./phase-01-repair-execution-and-evidence-integrity.md) | Infrastructure repaired; evidence pending (10/12 infrastructure criteria) |
-| 2 | [Qualify and freeze feasible datasets, ground truth and benchmark contracts](./phase-02-freeze-datasets-ground-truth-and-benchmark-contracts.md) | Diagnostic evidence only; scientific acceptance pending (0/20) |
-| 3 | [Expand candidate families for every task](./phase-03-expand-candidate-families-for-every-task.md) | Pending |
-| 4 | [Implement real stage benchmark runners](./phase-04-implement-real-stage-benchmark-runners.md) | Pending |
-| 5 | [Add statistical analysis and selection gates](./phase-05-add-statistical-analysis-and-selection-gates.md) | Pending |
-| 6 | [Run compatibility and error propagation benchmarks](./phase-06-run-compatibility-and-error-propagation-benchmarks.md) | Pending |
-| 7 | [Validate end-to-end system and reconcile reports](./phase-07-validate-end-to-end-system-and-reconcile-reports.md) | Pending |
+The original seven phase checklists were removed during the 2026-10-07 documentation cleanup. Their historical status is not a current execution queue; follow the current workflow linked above.
 
 ## Current status — 2026-09-26
 
@@ -142,7 +136,7 @@ Phase 1 infrastructure is repaired, but execution/equivalence evidence is incomp
 
 The former Phase 1 11/12 checklist and TED-only Phase 2 ticks must not be read as scientific completion. Phase 1 execution/equivalence gates remain open; scoped regression verification passed; Phase 2 full acceptance remains 0/20 while historical partial evidence is retained. All seven phase files were reviewed in this reconciliation; Phases 3–7 remain pending with no newly completed criteria.
 
-Repair code is scoped to the audited evidence paths. Regression tests and diagnostic runs must be captured in `experiments/notebooks/diagnostics/phase12_evidence_repair.ipynb` and its uniquely timestamped executed copy under the nested app. Initial and final execution results are recorded below. See [repair plan](../260926-phase12-evidence-repair/plan.md).
+The earlier phase-12 repair sequence and its proposed notebook are historical; see the current notebook manifest and task-specific protocol before creating any new run.
 ## Dependencies
 
 - No blocking plan detected in project scope.
@@ -310,7 +304,7 @@ Selection/protocol are saved before decoding. Independent WAV/FLAC container len
 
 The new renderer is designed to produce sixteen actual universal plots across both datasets, with source hashes and honest N/A. Execution, final counts and visual verification are recorded in the final dataset-readiness section below. Earlier official-bundle SVG cards remain historical `not_rendered` placeholders; standalone preparation figures do not silently repair or promote those bundles. No model inference or D2 promotion is claimed.
 
-All seven master phases were reconciled: Phase 1/2 remain in progress, Phase 3–7 pending. Existing full Phase 2 checklist stays open until its complete acceptance conditions are supported. Follow [dataset-readiness plan](../260926-1651-dataset-readiness/plan.md) and outer `docs/dataset-readiness.md` for the new preparation evidence.
+The old seven-phase status snapshot is historical. Current dataset readiness and eligibility are described in `docs/DATASET_EDA.md` and the task-specific EDA evidence; no phase status in this plan opens a run.
 
 ## Initial readiness execution — historical checkpoint
 

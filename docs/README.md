@@ -1,33 +1,21 @@
-# Tài liệu benchmark
+# Benchmark documentation
 
-Điểm vào cho tài liệu còn dùng và hồ sơ nghiên cứu. Quy trình hiện hành: [chọn dataset bài giảng có nhãn đúng tác vụ và họ ứng viên → EDA đúng cohort → đánh giá cùng thang đo](BENCHMARK.md#quy-trình-nghiên-cứu-hiện-hành). Không dùng video tổng quát làm benchmark dự phòng. Chỉ tạo notebook khi sắp chạy bước EDA hoặc đánh giá tương ứng; không duy trì notebook khung hay luồng notebook smoke. Manifest ở chế độ `on_demand` hiện không có notebook hoạt động. `01a`/`01b` đã rời danh sách chạy, còn `01c` là kết quả ASR diagnostic lịch sử. Báo cáo có số liệu được giữ nguyên; tài liệu định hướng cũ nằm trong `archive/`.
+## Current guidance
 
-## Tài liệu chính
-
-| Tài liệu | Nội dung |
+| Document | Purpose |
 |---|---|
-| [BENCHMARK.md](BENCHMARK.md) | Giao thức, điều kiện đánh giá và giới hạn kết luận. |
-| [DATASET_EDA.md](DATASET_EDA.md) | Phạm vi, nguồn và bằng chứng EDA. |
-| [HYBRID_MODEL_GUIDE.md](HYBRID_MODEL_GUIDE.md) | Hướng dẫn mô hình kết hợp. |
-| [MODEL_SELECTION_README.md](MODEL_SELECTION_README.md) | Cách đọc kết quả lựa chọn mô hình. |
-| [OUTLINE_MAPPING.md](OUTLINE_MAPPING.md) | Đối chiếu đề cương với mã và bằng chứng. |
-| [SPRINT_QUALITY_DEPLOYMENT.md](SPRINT_QUALITY_DEPLOYMENT.md) | Báo cáo triển khai bộ lọc chất lượng. |
-| [florence-2-cpu-reproducibility.md](florence-2-cpu-reproducibility.md) | Chẩn đoán tái lập Florence-2. |
+| [Benchmark protocol](BENCHMARK.md) | Task eligibility, candidate comparison, metrics and reporting. |
+| [Dataset EDA](DATASET_EDA.md) | What to inspect before using a cohort, and what has actually been inspected. |
+| [Model selection](MODEL_SELECTION_README.md) | Separate completed evidence from proposed candidates. |
+| [Master plan](../plans/260901-unified-scientific-benchmark/framework/00-master-plan.md) | Research questions and open hypotheses. |
+| [RQ2 plan](../plans/261002-0946-rq2-controlled-summarization/plan.md) | Summarization-specific cohort and comparison decisions. |
 
-## Kết quả và hiện vật
+The sequence is dataset and candidate selection → executed EDA notebook → evaluation notebook on the same task units and metric. Only lecture-domain datasets with suitable existing labels enter the benchmark. Notebooks are created when needed; the [active manifest](../experiments/notebooks/notebook_manifest.yaml) is currently empty.
 
-- [Đánh giá ASR `01c`](results/asr-architecture-evaluation-2026-10-05.md): sáu kiến trúc đã chạy đủ 507 validation và 1.155 native-test unit; Qwen3-ASR 0.6B đứng đầu validation WER 3,91%. Native test chỉ là diagnostic. Xem thêm [ghi nhận lỗi transcript rỗng](results/asr-architecture-empty-transcript-recovery-2026-10-05.md). Kết quả đánh giá chia chương và tóm tắt cũ đã rút khỏi repo để phân tích lại.
-- [Sơ đồ cây thư mục hiện tại](visuals/benchmark-directory-tree.drawio) được tạo từ `scripts/generate_benchmark_directory_tree_drawio.py`.
-- [Bản Word EDA](exports/DATASET_EDA.docx) là bản xuất lịch sử; dùng [DATASET_EDA.md](DATASET_EDA.md) cho quy trình và trạng thái hiện hành.
+## Retained results
 
-## Lưu trữ lịch sử
+[The ASR architecture report](results/asr-architecture-evaluation-2026-10-05.md) documents the completed six-candidate diagnostic run and its limitations; [transcript recovery notes](results/asr-architecture-empty-transcript-recovery-2026-10-05.md) record a run-specific repair. RQ1 and ASR are not planned for rerun. Saved chaptering and summarization outcomes were withdrawn pending new analysis; their notebook code may remain as historical material.
 
-- [Hồ sơ chiến lược lịch sử](archive/strategy/research-strategy-archive.md): nguyên văn bốn bản định hướng, lộ trình và so sánh stack, kèm hash từng nguồn.
-- `archive/visuals/`: hai báo cáo HTML cũ.
-- [Ghi nhận chuyển repo](archive/research-migration-2026-10-06.md), [nhật ký benchmark đầu kỳ](journals/260922-260925-early-benchmark-journal.md), [nhật ký sửa bằng chứng](workspace/260926-research-evidence-journal.md) và `workspace/`: nhật ký, tài liệu luận văn và bản thảo trình bày. Ba nhật ký có tên và SHA-256 trong manifest vẫn là tệp riêng trong `journals/`.
+Other files under `docs/` are supporting or historical references, not an execution queue. Do not infer a completed benchmark from a plan, runner, registry entry or unexecuted notebook.
 
-`benchmarks/references/` không có ground truth cục bộ đã xác minh. Không dùng các ví dụ trong tài liệu như nhãn đánh giá.
-
-Các script tải/chạy TED-LIUM tại máy, harness sprint cũ, bộ sinh notebook một lần và script RQ1/Yale/MITFLD đã được gỡ ngày 2026-10-07. Notebook cùng kết quả lịch sử được giữ để đọc; một số notebook cũ không còn chạy lại được nếu thiếu mã đã gỡ. Các module ASR `01c`, RQ2, dataset readiness, chapter contract/scorer và runner video theo tác vụ vẫn được giữ.
-
-Các runner một lượt RQ0A/RQ0V, RQ1–RQ4, EDA tổng quát, ablation ASR và error cascading tính bằng công thức trong `benchmarks/scripts/` đã ngừng dùng và được gỡ ngày 2026-10-07. Manifest đóng băng v1 cùng mẫu provenance cũ cũng được gỡ. Các mục lịch sử trong tài liệu và kết quả cũ chỉ để đối chiếu; nghiên cứu mới theo notebook được tạo khi dataset, nhãn, ứng viên và metric đã sẵn sàng.
+The older `benchmarks/docs/frozen_decisions.json` and `plans/260901-unified-scientific-benchmark/framework/decisions-log.md` record the original design, including RQ2 assumptions superseded by the no-human-scoring amendment and all-split TIB EDA scope. They are not the current RQ2 protocol. The [cleanup record](cleanup-record-2026-10-07.md) summarizes the reviewed deletions and the evidence retained.

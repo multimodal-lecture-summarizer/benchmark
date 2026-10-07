@@ -48,15 +48,13 @@ There are **two deliverables with different claim levels**:
 
 | Phase | Name | Status |
 |-------|------|--------|
-| 1 | [Reconcile evidence and claims](./phase-01-reconcile-evidence-and-claims.md) | Pending |
-| 2 | [Qualify video rights and source mapping](./phase-02-qualify-video-rights-and-source-mapping.md) | Pending |
-| 3 | [Design independent cohort and split](./phase-03-design-independent-cohort-and-split.md) | Pending |
+| 1–3 | Detailed historical checklists removed during the 2026-10-07 documentation cleanup. | Not current work |
 | 4 | [Freeze D2 and benchmark protocol](./phase-04-freeze-d2-and-benchmark-protocol.md) | Pending |
-| 5 | [Execute eligible RQ1 and report](./phase-05-execute-eligible-rq1-and-report.md) | Pending |
+| 5 | Detailed historical checklist removed during the 2026-10-07 documentation cleanup. | Not planned; RQ1 will not be rerun |
 
 ## Dependencies
 
-- Continues [RQ1 dataset/notebook readiness](../260927-1152-rq1-dataset-notebook-readiness/plan.md): its runner and diagnostic work are usable; its official cohort/D2 phase remains blocked. Historical `not_run` text in that plan is superseded by the dated 2026-09-28 diagnostic report.
+- The earlier RQ1 dataset/notebook-readiness plan and its phase checklists were removed in the 2026-10-07 cleanup. Preserve only the linked qualification reports as historical evidence; RQ1 will not be rerun.
 - Supplies the RQ1 dataset and execution evidence needed by [scientific benchmark pipeline](../260921-1943-scientific-benchmark-pipeline/plan.md), especially dataset freeze and real stage results. It does not change other endpoints or unlock the full DAG by itself.
 - The user previously narrowed available local media to MIT001's 35 lectures. This plan makes no assumption that additional course archives exist. Official work remains conditional on acquiring eligible independent data.
 

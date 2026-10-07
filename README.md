@@ -1,47 +1,22 @@
 # Benchmark research workspace
 
-This repository contains experiment runners, Colab notebooks, frozen contracts, and evaluation evidence for the multimodal lecture summarizer. The application code is in the sibling `multimodal-lecture-summarizer/` directory.
+This repository holds lecture-video research code, Colab notebooks and evidence. The application is in the sibling `multimodal-lecture-summarizer/` repository. Start with the [documentation index](docs/README.md), [benchmark protocol](docs/BENCHMARK.md) and [EDA guide](docs/DATASET_EDA.md).
 
-Start with the [documentation index](docs/README.md), [benchmark protocol](docs/BENCHMARK.md), and [dataset EDA guide](docs/DATASET_EDA.md). The [on-demand notebook manifest](experiments/notebooks/notebook_manifest.yaml) is currently empty; add a notebook only for a concrete run. ASR tasks `01a` and `01b` were retired from active execution; their historical results remain available.
+## Current workflow
 
-## Current research sequence
+1. For each video task, identify a lecture-domain dataset with existing labels that match its target. Verify source, rights, media and annotation provenance. Select candidate model or algorithm families and a common metric.
+2. Create an EDA notebook when the dataset is ready. Account for every selected record, inspect relevant inputs and labels, report missingness, duplication, leakage and any sampling limits, then decide whether to keep, repair, restrict or reject the cohort.
+3. Create an evaluation notebook after fixing the cohort and protocol. Compare candidates on the same units, ground truth, metrics and resource profile. Save item-level predictions, failures and run receipts. Report `no_selection` when evidence is insufficient.
 
-1. For each video-processing task, select datasets with existing labels for that task, confirm usable inputs and rights, then choose representatives from different model or algorithm families. General-video datasets are not benchmark fallbacks. For creator TIB summarization, inspect every record in the pinned `train`, `valid`, and `test` splits regardless of `genre`; treat genre as a reported stratum, not an exclusion rule. Record the same task-specific metrics and comparison conditions before evaluation.
-2. Create and run an EDA notebook **when that dataset and task are ready to use**. Analyze every selected unit within the declared scope, report missing and excluded units, inspect relevant media/labels and leakage, and record any cleaning or cohort changes. A sampled inspection must be labeled as a sample.
-3. Once the dataset and comparison are fixed, create and run the task's evaluation notebook on the same units, metrics and resource profile for all candidates. Preserve per-unit outputs, failures and run receipts; report `no_selection` when evidence is insufficient.
+General-video datasets are not substitutes for missing lecture labels. Create notebooks only for a concrete EDA or evaluation run; there is no placeholder or smoke-notebook workflow. The [notebook manifest](experiments/notebooks/notebook_manifest.yaml) is currently `on_demand` and empty. [The master plan](plans/260901-unified-scientific-benchmark/framework/00-master-plan.md) states the research questions; [the RQ2 plan](plans/261002-0946-rq2-controlled-summarization/plan.md) records the summarization protocol.
 
-Do not create placeholder notebooks or a separate smoke-notebook workflow. Existing diagnostic results remain historical evidence, not proof that a future dataset or task passed these steps.
+## Current evidence
 
-The earlier one-shot `benchmarks/scripts` runners for RQ0A/RQ0V, RQ1–RQ4, generic dataset EDA, ASR preprocessing ablation, and calculated error cascading were retired on 2026-10-07. The old `frozen_manifest_v1.json` and `provenance_template.json` were retired with them. Create task-specific EDA and evaluation notebooks only after selecting usable lecture data, labels, candidates, and metrics. Historical results remain in notebooks, outputs, and reports; they are not instructions to rerun the retired scripts.
+- [ASR architecture notebook](experiments/notebooks/asr_architecture_colab_t4.ipynb) and [report](docs/results/asr-architecture-evaluation-2026-10-05.md): a completed six-candidate diagnostic comparison. Native-test outcomes are diagnostic, and no ASR rerun is planned. This result does not change the application's model default.
+- RQ1 chaptering will not be rerun. Its notebook code is retained, but saved chaptering results were withdrawn for reanalysis.
+- TIB summarization: [all-split EDA notebook](experiments/notebooks/diagnostics/rq2-tib-all-splits-eda-colab.ipynb) targets `train`, `valid` and `test` without a genre filter. It is not an executed full-cohort result. Earlier 20- and 70-record work is historical; saved comparison results were withdrawn. Reading the creator `test` references during EDA removes its unseen-holdout status for later claims.
+- VISTA: [validation media EDA notebook](experiments/notebooks/diagnostics/vista-validation-media-eda-colab.ipynb) has partial executed evidence; full-validation inspection is still pending. No chaptering or summarization winner is established by these notebooks.
 
-Local TED-LIUM download/test scripts, the old sprint execution scripts, one-time notebook builders, and RQ1/Yale/MITFLD acquisition and rerun scripts were also retired on 2026-10-07. ASR results and dataset EDA remain; saved chaptering and summarization evaluation outputs were withdrawn pending a new analysis. Some historical notebooks require the retired source to execute again. The ASR `01c` runner, current RQ2/readiness helpers, chaptering contract/scorer, and task-specific video runners remain.
+Downloaded datasets and most caches were removed locally. Colab runs must acquire their declared inputs from their documented source or Drive. `experiments/outputs/` contains ignored local evidence and may be incomplete; consult each report and receipt before citing a result. `benchmarks/references/` does not contain validated ground truth. The benchmark protocol lists the annotation requirements for each task.
 
-The new [TIB all-split EDA notebook](experiments/notebooks/diagnostics/rq2-tib-all-splits-eda-colab.ipynb) targets all **9,103 expected records across train/valid/test without a genre filter**; actual per-split counts and usable inputs must be verified when it runs on Colab. The earlier [TIB validation EDA notebook](experiments/notebooks/diagnostics/rq2-tib-valid-eda.ipynb) retains its 20-item dataset inspection. Code for the former 70-item Qwen comparison remains in a notebook, but its saved outputs and result reports were removed for reanalysis. The new all-split EDA will inspect test content, so the creator's `test` split can no longer be described as an unseen holdout afterward. VISTA's saved media outputs cover 40/1,859 validation records; its unexecuted extension targets all 1,859. Run the new EDA and review per-item receipts before treating either gate as complete.
-
-The remaining ASR notebook, [`01c`](experiments/notebooks/asr_architecture_colab_t4.ipynb), completed all six pinned architecture candidates on 507 TED-LIUM validation units and 1,155 native-test units. Qwen3-ASR 0.6B ranked first by validation WER (3.91%). Native-test results are diagnostic, and this research result does not change the application's Faster-Whisper `base.en` default. See the [ASR evaluation report](docs/results/asr-architecture-evaluation-2026-10-05.md) for results and limitations.
-
-## Research workspace
-
-The `benchmarks/`, `experiments/`, `tests/`, `plans/`, `reports/`, and `docs/` directories contain the research code, notebooks, protocols, and evaluation evidence moved from the application repository. Existing `audio/` and `visual/` examples remain here. Executed historical notebooks and run receipts are retained in `experiments/notebook_history_20260926.zip` with its manifest; archived smoke notebooks have been removed.
-
-`benchmarks/references/` has no validated local ground truth. Repeated `TBD` and mock reference files were removed on 2026-10-07; current task-specific annotation requirements remain documented in `docs/BENCHMARK.md`. The generic reference schema and dataset-contract modules were retired with the old evaluation-table workflow.
-
-`docs/visuals/benchmark-directory-tree.drawio` was regenerated from the current tree on 2026-10-07; rerun `scripts/generate_benchmark_directory_tree_drawio.py` after later layout changes.
-
-Run outputs are present on this machine but ignored by Git. Downloaded dataset payloads and local caches were removed on 2026-10-07:
-
-- `experiments/datasets/`: source provenance and RQ1 qualification evidence remain; TED-LIUM, IIIT-CVid, EduViQA, and SlideVQA payloads were removed.
-- `experiments/outputs/`, `outputs/`, and `checkpoints/`: experiment results and model checkpoints. The local ASR architecture input ZIP was removed; its SHA-256 receipt remains.
-- `cache/`: removed; model and feature caches must be rebuilt if needed.
-- The completed ASR run export `external-results/runs-20261005T055449Z-1-001.zip` (SHA-256 `8f6e359f947097cb85b67b59024b2e58a7872a86fbcacb8a0a6180310270b1cf`) is documented in the evaluation report but was not present locally on 2026-10-07. From the separate `asr_architecture_colab_t4-20261007T065505Z-1-002.zip`, the available files for the completed run were extracted to `experiments/outputs/asr_architecture_colab_t4/runs/architecture_25ce9f1f300b/`. This ZIP part omits some payloads and the native-test parent index; it is not a complete local copy of the run. Model cache and older partial runs were not imported. The incomplete 2026-10-04 ZIP remains represented by a [partial-run audit record](reports/asr-architecture-partial-validation-2026-10-04.json).
-
-RQ1 qualification media, source archives, input bundle, and local model caches were removed on 2026-10-07. Saved RQ1 chaptering evaluation outputs and local run trees were later removed for reanalysis; notebook code and dataset qualification notes remain.
-
-Run benchmark commands from this repository root. Some experiments import `ai_workers` from the sibling application repository. In this workspace, set `PYTHONPATH` to both repositories before running those experiments:
-
-```powershell
-$env:PYTHONPATH = "$(Resolve-Path .);$(Resolve-Path ../multimodal-lecture-summarizer)"
-python -m pytest tests/test_asr_architecture_colab_run.py
-```
-
-The ASR architecture notebook is `experiments/notebooks/asr_architecture_colab_t4.ipynb`. It expects `asr_architecture_colab_t4_inputs_empty_transcript_261005_clean.zip` and its SHA-256 file in the configured Drive folder; the ZIP is no longer stored locally. See `docs/results/asr-architecture-evaluation-2026-10-05.md` for the evaluation interpretation. The old `experiments/outputs/asr_full_corpus_qualification_261003/` metadata and media receipts were removed on 2026-10-07 at the user's request. Extracting a partial export does not make the diagnostic result an official benchmark.
+Some retained historical notebooks depend on code or data that was removed during cleanup. They are records, not a current run sequence. Task-specific runners under `benchmarks/scripts/` are implementation helpers; their presence does not establish that an evaluation was completed.

@@ -3,6 +3,8 @@
 **Status:** Candidate datasets verified at source level; local schema/media/license gates still required.  
 **Last patched:** 2026-08-31 — removed false VISTA transcript claim; added tib-bench eval target; added three-tier fallback; added audit rubric.
 
+> **Historical source register, not the current selection.** The table below records 2026-era dataset research and contains superseded choices, including VISTA-primary, an 80-item TIB test target and human-evaluation steps. Current scope and eligibility are defined by [BENCHMARK.md](../../../docs/BENCHMARK.md) and [DATASET_EDA.md](../../../docs/DATASET_EDA.md): choose only labeled lecture-domain data per task, inspect the full selected cohort, and do not reuse the old targets as current decisions. Source links and rights notes below are retained for provenance.
+
 **EDA gate (2026-09-30):** Source-level qualification and a frozen manifest do not establish that the selected data have been analyzed. Before adopting any dataset/cohort for a research comparison, execute an EDA notebook on the actual selected records and retain its visible results as specified in §6. This gate applies to every new or changed cohort; prior source probes are supporting evidence, not a substitute.
 
 ## 1. Core dataset matrix
