@@ -1,0 +1,273 @@
+{
+  "schema": "rq1-04ab-shared-input-recipe/1",
+  "status": "recipe_locked_payloads_pending",
+  "consumers": [
+    "04a_chaptering_benchmark",
+    "04b_chaptering_modality_ablation"
+  ],
+  "generator_sha256": "75bb369f4c846d4609960142e8d9be62deac7ecd9876f8cd565c3b78bf6867bf",
+  "d2_source_bundle_sha256": "996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+  "asr_selection": {
+    "source": "phase2_tedlium_d2/official/full/asr.frozen_configuration",
+    "payload_sha256": "265f728b34d400f80c1cd7cd5aeb7b6233235acbbead07ae3a17b8fdcd6c2f97",
+    "receipt_file_sha256": "4a518493173502f8f4626a2c657de56ace3b6b777ab2244c28e1333beaf31e4d",
+    "model": "Systran/faster-whisper-tiny.en",
+    "revision": "0d3d19a32d3338f10357c0889762bd8d64bbdeba",
+    "files_sha256": {
+      "model.bin": "1a5afae06a4db91c975c9a9d78be5cc110ee4ea022ad57d55492e4550e936b2a",
+      "config.json": "14b1b421a90349bc551b881461426b561a874049cb9e4c4864f2ca384f6a7cc5",
+      "tokenizer.json": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df",
+      "vocabulary.txt": "ff77588746d3a2595d32ab5b69ffd7b95ce2441ac57533cb66fc3eb575a115cf"
+    },
+    "faster_whisper_version": "1.2.1",
+    "ctranslate2_version": "4.8.1"
+  },
+  "transcript_preprocessing": {
+    "input": "exact D2 media bytes, audio decoded by faster-whisper/PyAV at 16000 Hz mono",
+    "language": "en",
+    "beam_size": 5,
+    "temperature": 0.0,
+    "vad_filter": false,
+    "condition_on_previous_text": true,
+    "word_timestamps": false,
+    "compute_device": "cpu",
+    "compute_type": "int8",
+    "text_join": "single space between stripped segment texts",
+    "timestamps": "retain original segment start/end seconds without retiming"
+  },
+  "video_feature_preprocessing": {
+    "implementation": {
+      "rq1_extractor_source_sha256": "eeb8950cf51fc7869f19630910f4eb751df2665bb81bcb7b5f726761b03b00f7",
+      "scene_detector_source_sha256": "1b737c24fc7a66d835fd27b07bdd04c5c6d6ec61a7fc36f6c3be1ac7ff51c4c9",
+      "package_versions": {
+        "opencv-python": "4.11.0.86",
+        "scenedetect": "0.7",
+        "paddleocr": "2.8.1",
+        "paddlepaddle": "2.6.2",
+        "easyocr": "1.7.2",
+        "numpy": "2.4.6"
+      },
+      "cached_paddle_model_sha256": {
+        "cls/ch_ppocr_mobile_v2.0_cls_infer/inference.pdmodel": "3c4337ec61722a20b1dca2e5bfaffc313c0592bc89ad6e0d45168224186f6683",
+        "det/en/en_PP-OCRv3_det_infer/inference.pdmodel": "c4bfb1b05d9d1d5a760801eaf6d20180ef7e47bcc675fb17d1f3a89da5fef427",
+        "rec/en/en_PP-OCRv4_rec_infer/inference.pdmodel": "85b952f05f709af259cfe4254012aa7208bef0998f71f57a15495446f25ccd43",
+        "rec/latin/latin_PP-OCRv3_rec_infer/inference.pdmodel": "23e11a537d8cd7ebab669a9e48fb12f49c295ca9ecde398c6b5460830bd174b8",
+        "cls/ch_ppocr_mobile_v2.0_cls_infer/inference.pdiparams": "d1efda1b80e174b4fcb168a035ac96c1af4938892bd86a55f300a6027105d08c",
+        "det/en/en_PP-OCRv3_det_infer/inference.pdiparams": "83676ec730627ab4502f401410a4b6a3ce1c0bb98fa249b71db055b6bddae051",
+        "rec/en/en_PP-OCRv4_rec_infer/inference.pdiparams": "75f64a1ffb70c56b7a25655963ca16f5bf3286202e3f52ac972bee05cdee2f56",
+        "rec/latin/latin_PP-OCRv3_rec_infer/inference.pdiparams": "fa6f22a8b2a669c7d5b4dfd2607491abd4cd2467adf7077c9cc70ce8c47b61d9"
+      },
+      "cached_easyocr_model_sha256": {},
+      "ffmpeg": {
+        "path": "C:\\ProgramData\\chocolatey\\bin\\ffmpeg.exe",
+        "version": "ffmpeg version 8.0-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers",
+        "sha256": "ba2deceb8a744efce005bcc30e09a91db2b98c3230d2e82e7535559984117e24"
+      }
+    },
+    "scene": {
+      "extractor": "ai_workers.modules.visual_v2.scene_detector.SceneDetector",
+      "config": {
+        "detector": "content",
+        "threshold": 27.0,
+        "frame_skip": 4
+      }
+    },
+    "ocr": {
+      "primary": "PaddleOCR",
+      "fallback": "EasyOCR",
+      "primary_config": {
+        "lang": "en",
+        "use_angle_cls": true,
+        "sampling": "scene_midpoints_single_scene_grid_v2"
+      },
+      "fallback_config": {
+        "lang": "en",
+        "gpu": false,
+        "detail": 0,
+        "sampling": "scene_midpoints_single_scene_grid_v2"
+      },
+      "max_ocr_frames": 12
+    },
+    "visual": {
+      "extractor": "OpenCV sparse grayscale frame difference",
+      "config": {
+        "sample_interval_sec": 20,
+        "width": 64,
+        "height": 36,
+        "change_score": "mean_absolute_pixel_difference/255",
+        "min_decoded_fraction": 0.95
+      }
+    },
+    "acoustic": {
+      "extractor": "FFmpeg PCM window RMS change",
+      "config": {
+        "window_sec": 10,
+        "sample_rate_hz": 8000,
+        "change_score": "adjacent_rms_db_difference/40_clipped"
+      }
+    }
+  },
+  "units": [
+    {
+      "dataset_id": "ytseg",
+      "unit_id": "-7xg8pGcP6w",
+      "split": "train",
+      "media_sha256": "a58685b0ad2424ae6bc995521c7c5cb22b652d42fe964a0448e14c137e2ce719",
+      "transcript_output_sha256": null,
+      "video_features_output_sha256": null
+    },
+    {
+      "dataset_id": "ytseg",
+      "unit_id": "tCKk22kaZi4",
+      "split": "validation",
+      "media_sha256": "fcd4a38165cd2abf4eb244faa2f67d00da2fefd3d7418935812f705c2a88737d",
+      "transcript_output_sha256": null,
+      "video_features_output_sha256": null
+    },
+    {
+      "dataset_id": "vidchapters",
+      "unit_id": "AW3a2ECNFlE",
+      "split": "final_test",
+      "media_sha256": "b3d4dbb35935cef4c16d573d11cdd2d9eb62b16d8ed15cd9277a50093148eb20",
+      "transcript_output_sha256": null,
+      "video_features_output_sha256": null
+    },
+    {
+      "dataset_id": "vidchapters",
+      "unit_id": "oo1ZZlvT2LQ",
+      "split": "train",
+      "media_sha256": "e704ccc54429e5d09050501e87277ec0755888cb763057375b5ea380e881f2ed",
+      "transcript_output_sha256": null,
+      "video_features_output_sha256": null
+    },
+    {
+      "dataset_id": "vidchapters",
+      "unit_id": "EuNXVy5-KgA",
+      "split": "train",
+      "media_sha256": "a369b3aaf61b242e5eb95b31c99073c7c5f9fce8d2c49a9a29d04557a1fb187c",
+      "transcript_output_sha256": null,
+      "video_features_output_sha256": null
+    },
+    {
+      "dataset_id": "vidchapters",
+      "unit_id": "09vU-wVwW3U",
+      "split": "final_test",
+      "media_sha256": "a254e643a715065291dfd693d1b958989ca3856ad83477cfcf728b5755835ee3",
+      "transcript_output_sha256": null,
+      "video_features_output_sha256": null
+    },
+    {
+      "dataset_id": "yale_publisher_native",
+      "unit_id": "zsb6B8HrNVA",
+      "split": "train",
+      "media_sha256": "7e345dec14d01746ff3d1fd119c598f8f1ea701aadd08884a58132359c53abca",
+      "transcript_output_sha256": null,
+      "video_features_output_sha256": null
+    },
+    {
+      "dataset_id": "yale_publisher_native",
+      "unit_id": "-W4kU1YFSck",
+      "split": "train",
+      "media_sha256": "1f57f817d489fa6fa9b3394753242b139a5490e20c18c0f1691fcc278aeec3c0",
+      "transcript_output_sha256": null,
+      "video_features_output_sha256": null
+    },
+    {
+      "dataset_id": "yale_publisher_native",
+      "unit_id": "f_55cmhHq3g",
+      "split": "validation",
+      "media_sha256": "e4946787d3140f084dba26910e338e088445acb62edafa7cc7fcf9395033e7e3",
+      "transcript_output_sha256": null,
+      "video_features_output_sha256": null
+    },
+    {
+      "dataset_id": "yale_publisher_native",
+      "unit_id": "e3uBi2TZdUY",
+      "split": "final_test",
+      "media_sha256": "6047db7f473d9179676ccba04a1fc52da551e50fef067d1f7d234bac2eebe470",
+      "transcript_output_sha256": null,
+      "video_features_output_sha256": null
+    },
+    {
+      "dataset_id": "yale_publisher_native",
+      "unit_id": "LZkoBeI6gVM",
+      "split": "train",
+      "media_sha256": "eb8e05f3288ab51da4a03eeff53c52bf4e9e4bc1b8ec14c34f3e9b7e68192345",
+      "transcript_output_sha256": null,
+      "video_features_output_sha256": null
+    },
+    {
+      "dataset_id": "yale_publisher_native",
+      "unit_id": "Y3S1uqgGfB4",
+      "split": "final_test",
+      "media_sha256": "47446f616e94b6b373b4f7a17af36b3050c16034e09ebe66b206dc4191e9ad82",
+      "transcript_output_sha256": null,
+      "video_features_output_sha256": null
+    },
+    {
+      "dataset_id": "yale_publisher_native",
+      "unit_id": "qQ3kFydI_xQ",
+      "split": "final_test",
+      "media_sha256": "a25dbe7b4de66f7978c6c503da1b20548d301c116a9d4b9fd6224d7889113edf",
+      "transcript_output_sha256": null,
+      "video_features_output_sha256": null
+    },
+    {
+      "dataset_id": "yale_publisher_native",
+      "unit_id": "9FrHGAd_yto",
+      "split": "final_test",
+      "media_sha256": "303ec813a20efc63e9659270379cb4c96b48605dd9cb0fd541a3e8ec18da88a5",
+      "transcript_output_sha256": null,
+      "video_features_output_sha256": null
+    },
+    {
+      "dataset_id": "yale_publisher_native",
+      "unit_id": "VX4eYYmvQ78",
+      "split": "validation",
+      "media_sha256": "5dd470296f18a7c4279b27dd0c3c43c10db04931e283ebb5c5fb8fea2d6f360b",
+      "transcript_output_sha256": null,
+      "video_features_output_sha256": null
+    },
+    {
+      "dataset_id": "yale_publisher_native",
+      "unit_id": "WMkD8HKJQCM",
+      "split": "final_test",
+      "media_sha256": "84d52f1532b570963c2e582a29ae772fcd3faf71d277721fe536ccb0405ba66b",
+      "transcript_output_sha256": null,
+      "video_features_output_sha256": null
+    },
+    {
+      "dataset_id": "yale_publisher_native",
+      "unit_id": "2B9b9mUPJik",
+      "split": "train",
+      "media_sha256": "4296bedcfc013d654e23734db08aca6d72d99d5b42cce09aa64e5c1142b2213b",
+      "transcript_output_sha256": null,
+      "video_features_output_sha256": null
+    },
+    {
+      "dataset_id": "yale_publisher_native",
+      "unit_id": "679FGDpZBew",
+      "split": "train",
+      "media_sha256": "9911c3c7a370129f795de54bd06258b5eead33fe31e30351ef0f44836db7bd52",
+      "transcript_output_sha256": null,
+      "video_features_output_sha256": null
+    },
+    {
+      "dataset_id": "yale_publisher_native",
+      "unit_id": "Hy7ou5R_vjE",
+      "split": "validation",
+      "media_sha256": "b02e27d481ac37925b3ea1868519dcd6234faf92f94c49d1dfe893cf2779925a",
+      "transcript_output_sha256": null,
+      "video_features_output_sha256": null
+    },
+    {
+      "dataset_id": "yale_publisher_native",
+      "unit_id": "4YY4CTSQ8nY",
+      "split": "final_test",
+      "media_sha256": "793c518c10bb4ba4fb62d34e49ba18e9a74380cd831cfb6ccf069bb5c86544cd",
+      "transcript_output_sha256": null,
+      "video_features_output_sha256": null
+    }
+  ],
+  "output_policy": "Populate output SHA256 only after source-only materialization and verification; no model outcomes or GT-based sample decisions."
+}

@@ -1,0 +1,40 @@
+{
+  "date": "2026-09-29",
+  "status": "qualification_only_not_official_rq1",
+  "video_id": "oo1ZZlvT2LQ",
+  "course_id": "mit-res.18-005-spring-2010",
+  "lecturer_ids": ["gilbert-strang"],
+  "publisher_resource": "https://ocw.mit.edu/courses/res-18-005-highlights-of-calculus-spring-2010/resources/the-exponential-function/",
+  "source_annotation": {
+    "path": "experiments/datasets/vidchapters_qualification/chapters.pkl",
+    "sha256": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+    "record_byte_offset": 1847323479,
+    "duration_seconds": 2333.788,
+    "chapter_start_seconds": [0, 24, 75, 1640, 1800],
+    "description_pair_parity": "pass_5_of_5_exact_meaning"
+  },
+  "source_media": {
+    "url": "https://archive.org/download/MITRES18.005/MITRES18_005S10_ExponentialFunction_300k.mp4",
+    "bytes": 90193596,
+    "sha256": "e704ccc54429e5d09050501e87277ec0755888cb763057375b5ea380e881f2ed",
+    "ffprobe_duration_seconds": 2333.791202,
+    "annotation_duration_delta_seconds": 0.003202,
+    "full_ffmpeg_decode": "pass"
+  },
+  "boundary_qa": {
+    "rule": "rq1-boundary-qualification-rule-260929.md",
+    "method": "source-only frames at t-minus-5,t-plus-5 and tight t-minus-1-through-t-plus-3; local diagnostic audio t-minus-20-through-t-plus-25",
+    "internal_starts": [
+      {"time_seconds": 24, "title_status": "pass", "boundary_status": "pass", "evidence": "overview slate ends at 24; professor starts topic at 25"},
+      {"time_seconds": 75, "title_status": "pass", "boundary_status": "pass", "evidence": "properties lower-third appears at 75-76; speech moves to defining property"},
+      {"time_seconds": 1640, "title_status": "pass", "boundary_status": "pass", "evidence": "graph lower-third appears at 1640; speech says draw a graph around 1639-1641"},
+      {"time_seconds": 1800, "title_status": "pass", "boundary_status": "pass", "evidence": "speech introduces bank compounding interest around 1801; matching lower-third follows"}
+    ],
+    "unit_decision": "pass_boundary"
+  },
+  "scoped_research_right": "pass_mit_ocw_noncommercial_terms_page_and_examined_video_without_explicit_exclusion;retain_jimmy_ren_subtitle_credit",
+  "redistribution_right": "not_assessed_not_required_for_internal_run",
+  "history_for_final_test": "unverified_not_assigned",
+  "private_diagnostics": "Local ignored media directory contains the MP4, contact sheets and diagnostic speech windows; do not publish them.",
+  "limitation": "Source-only spotchecks support chapter-start alignment; they are not a frame-by-frame third-party asset audit or evidence of final-test independence."
+}

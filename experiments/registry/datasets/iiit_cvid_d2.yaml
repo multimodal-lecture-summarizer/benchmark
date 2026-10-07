@@ -1,0 +1,140 @@
+# D2 qualification config for IIIT-CVid / LectureVideoDB (CVIT IIIT Hyderabad).
+#
+# Read by probe_dataset_feasibility.py and profile_dataset.py.  This file is the
+# single source of truth for the D2 freeze decision for iiit_cvid.
+#
+# All numeric values are derived from the real on-disk verification pass of
+# 2026-09-26 (no network access, no model inference):
+#   - frozen selection: 2115 frame-level units
+#       final_test  = all 1755 frames of the official test split
+#                     (frames-test-img.txt, 1755 rows, 1:1 with PNG and XML)
+#       validation  = 360 frames from the official train split
+#                     (frames-train-img.txt, 30 frames x each of 12 courses,
+#                     selected by ascending sha256 of the relative path)
+#     The D2 contract requires a validation and a final_test split.  IIIT-Cvid's
+#     official train and test splits share ZERO courses and ZERO videos, so the
+#     validation sample is leakage-free by construction and the official test
+#     split is consumed whole and untouched.
+#   - expected_bytes: 540,960,433 (measured sum of the 2115 selected PNGs)
+#   - ground truth: 48,515 text lines total, of which 40,103 belong to the
+#     final_test frames.  That matches the Crops/test line-crop count (40,103)
+#     exactly, which cross-validates the XML <object><name> transcription
+#     extraction.  Validation contributes 8,412 lines.
+#   - decode: PIL.Image.verify() reads headers only; measured well under the
+#     0.5 h cap below.
+#
+# GROUND TRUTH FORMAT (verified, differs from the original plan text):
+#   Each frame has a Pascal-VOC XML sibling:
+#     Frames/test/{course}/{video}/{frame}.xml  (canonical split: final_test)
+#     Frames/train/{course}/{video}/{frame}.xml (canonical split: validation)
+#   Every <object> is one text line: <bndbox> gives the box and
+#   <object><name> holds the manual transcription.  lexicon.txt and vocab.txt
+#   are constrained-decoding vocabulary only and are NOT the ground truth.
+#
+# SPLIT NAMING: the contract only accepts {train, validation, final_test}.
+# IIIT-Cvid names its held-out split "test"; it is the final held-out split and
+# maps to final_test, exactly as the TED-LIUM driver maps source "test" to
+# "final_test".  unit records keep original_split for provenance.
+#
+# RIGHTS decision frozen 2026-09-26:
+#   The dataset is distributed for academic research use by CVIT IIIT
+#   Hyderabad.  Provenance: HuggingFace dataset staghado/IIIT-CVid, zip
+#   sha256 b5b562580e250ee3336462b7699bc79d0d1149d3b8cc82f1b221a0d0ce4fb489,
+#   downloaded 2026-08-29.  (NOTE: the licence string inside the downloaded
+#   provenance.json is mojibake-corrupted; the clean wording is recorded here.)
+#   Non-commercial academic benchmark use is within scope.  No redistribution
+#   of raw images; only aggregate metrics (CER/WER) are published.  This
+#   decision must be re-adjudicated before any commercial or redistributive
+#   use, and before any figure in a publication embeds a raw frame.
+
+schema_version: 1
+dataset_id: iiit_cvid
+
+# --- Identity ---
+source: "local_extracted_zip"
+release: "iit_cvid_release_2018"
+revision: "iit-cvid-snapshot-b5b56258"   # first 8 chars of local_snapshot_fingerprint
+local_snapshot_fingerprint: "b5b562580e250ee3336462b7699bc79d0d1149d3b8cc82f1b221a0d0ce4fb489"
+
+# --- Rights (adjudicated 2026-09-26) ---
+rights: "academic_research_only - verify with CVIT IIIT Hyderabad before redistribution; aggregate metrics only, no raw image re-hosting"
+access_status: "available"
+leakage_exception: null    # image-level units; no speaker_id, no talk_id overlap with TED-LIUM
+
+# --- Data root ---
+data_root_key: "experiments/datasets/iiit_cvid"
+
+# --- D2 receipt path (written by the 00b-equivalent step of the freeze driver) ---
+# Path is relative to the artifact_root of the run that produced 00b.
+receipt_path: "datasets/iiit_cvid/official/full/payloads/dataset.feasibility_receipts.json"
+
+# --- Endpoint declaration (consumed by profile_dataset.py) ---
+# Canonical endpoint id from _NOTEBOOK_TO_ENDPOINTS in
+# experiments/scripts/stage_benchmark_helpers.py:
+#   02c_ocr_benchmark -> {"ocr_benchmark", "ocr"}
+# profile_dataset.py defaults to "asr_benchmark" when this key is absent, so
+# the absence of this key in tedlium3_d2.yaml is what keeps TED-LIUM unchanged.
+endpoint: "ocr_benchmark"
+
+# --- Human-readable status labels written into dataset.profile / frozen_manifest ---
+# Defaults reproduce the historical TED-LIUM label byte-for-byte when absent.
+ground_truth_status_label: "released_manual_frame_transcriptions_academic_research_only"
+freeze_reason: >-
+  D2 freeze: 2115 frame-level units - the complete official test split (1755
+  frames, 7 courses, 276 videos) as final_test plus a 360-frame stratified
+  validation sample from the disjoint official train split (30 frames x 12
+  courses). Manual per-line transcriptions, academic_research_only rights
+  adjudicated 2026-09-26, 100% decode, leakage adjudicated (official train/test
+  splits share zero courses and zero videos; sha256 identity; no exact
+  duplicates)
+eligibility_reason: >-
+  D2 freeze: final_test is the complete official frames-test-img.txt test split
+  (1755 indexed frames, 1:1 with PNG and Pascal-VOC XML on disk) and validation
+  is drawn from the disjoint official train split, so decoding parameters can be
+  tuned without touching the reported test set. 48,515 manual text lines
+  extracted from XML object names; the 40,103 final_test lines match the
+  Crops/test line-crop count exactly. academic_research_only; no exact
+  duplicates; no validation/final_test speaker_id or talk_id overlap
+
+# --- Size estimates (from the 2026-09-26 disk verification pass) ---
+# expected_bytes: sum of the selected PNG files, measured on disk:
+#   final_test  = all 1755 official test PNGs                 = 400,763,111 bytes
+#   validation  = 360 train PNGs (30 x 12 train courses)      = 140,197,322 bytes
+#   total                                                       = 540,960,433 bytes
+expected_bytes: 540960433
+# predicted_peak_bytes: 3x headroom for decode + temporary artefacts
+predicted_peak_bytes: 1622881299
+# estimated_completion_hours: generous upper bound; header-only decode + sha256
+estimated_completion_hours: 0.5
+
+# --- D2 eligibility gates (all must be True before freeze proceeds) ---
+# These mirror the _validate_d1_receipt gates in dataset_contracts.py:
+#   schema_success_rate   >= 1.0
+#   checksum_success_rate >= 1.0
+#   download_success_rate >= 0.90
+#   decode_success_rate   >= 0.95
+#   predicted_peak_bytes  <= 50 GiB  (MAX_D2_PEAK_BYTES)
+#   estimated_completion_hours <= 12 (MAX_D2_HOURS)
+min_schema_success_rate: 1.0
+min_checksum_success_rate: 1.0
+min_download_success_rate: 1.0
+min_decode_success_rate: 0.95
+
+# --- Ground truth (OCR task) ---
+ground_truth:
+  status: "released"
+  source: "IIIT-CVid official - manual per-line transcriptions in Pascal-VOC XML under Frames/test"
+  revision: "iit_cvid_release_2018"
+  annotation_protocol: >
+    Each frame has a Pascal-VOC XML sibling; every <object> element is one text
+    line whose <bndbox> is the box and whose <name> is the manual transcription.
+    Frame-level reference_text concatenates the frame's lines sorted by
+    (ymin, xmin) so the ordering is deterministic.  48,515 lines are extracted in
+    total; the 40,103 lines from the final_test frames match the Crops/test
+    line-crop count exactly, cross-validating extraction.  Scored with corpus
+    CER/WER using a frozen English text normaliser.  lexicon.txt and vocab.txt
+    provide constrained-decoding vocabulary only and are not ground truth.
+    Line-level scoring over the 40,103 Crops/test crops is deferred to D3.
+
+# --- Fallback ---
+fallback_dataset: null

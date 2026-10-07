@@ -1,0 +1,19 @@
+{
+  "source": "retkowski/ytseg text TRAIN Parquet",
+  "revision": "4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+  "rows_audited": 16404,
+  "source_fields": ["raw_chapters", "chapter_titles", "chapter_timestamps"],
+  "observed_patterns": [
+    {"count": 15341, "titles": "raw titles", "timestamps": "raw starts excluding first zero", "title_minus_timestamp_count": 1},
+    {"count": 550, "titles": "raw titles plus Outro", "timestamps": "raw starts excluding first zero", "title_minus_timestamp_count": 2},
+    {"count": 472, "titles": "Intro plus raw titles", "timestamps": "all raw starts", "title_minus_timestamp_count": 1},
+    {"count": 35, "titles": "raw titles", "timestamps": "all raw starts", "title_minus_timestamp_count": 0},
+    {"count": 6, "titles": "Intro plus raw titles plus Outro", "timestamps": "all raw starts", "title_minus_timestamp_count": 2}
+  ],
+  "three_count_relations": {"titles_minus_timestamps_0": 35, "titles_minus_timestamps_1": 15813, "titles_minus_timestamps_2": 556},
+  "locked_train_ids_all_base_pattern": ["-dOX_4lI6HY", "MoEaRpLNo9A", "-7xg8pGcP6w", "tCKk22kaZi4", "3sB64Au76h0", "Th2N_rDfkDw", "alLh1Jdqwvg", "xsO2Ip6eiaY", "ksyY5wa5_50", "kiCNa95DnnE"],
+  "upstream_preprocessing_code_status": "not_in_pinned_public_release_or_located_author_repository",
+  "paper_status": "section_2_2_describes_intro_outro_but_not_exact_release_field_mapping",
+  "gt_gate": "hold_all_locked_train_ids",
+  "prohibited_action": "do_not_zip_titles_and_timestamps_by_same_index_or_synthesize_intro_outro_labels"
+}

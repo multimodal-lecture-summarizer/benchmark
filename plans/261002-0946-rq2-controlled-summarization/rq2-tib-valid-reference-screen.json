@@ -1,0 +1,30 @@
+{
+  "dataset": "gigant/tib",
+  "revision": "e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee",
+  "split": "valid",
+  "test_content_accessed": false,
+  "screen_method": "Read each selected dataset abstract and corresponding av.tib.eu landing-page abstract. Mark clearly non-talk-specific descriptions unsuitable. Candidate means content-specific enough to inspect, not verified source support, authorship or reference eligibility.",
+  "formal_reference_qualified_count": 0,
+  "items": {
+    "20846": {"archive_match": "exact_normalized", "screen": "candidate_unverified", "reason": "Talk-specific abstract; source support not verified"},
+    "43747": {"archive_match": "exact_normalized", "screen": "unsuitable", "reason": "Speaker and title only"},
+    "15101": {"archive_match": "exact_normalized", "screen": "candidate_unverified", "reason": "Brief lecture-specific description; coverage uncertain"},
+    "38638": {"archive_match": "cleaned_substring", "screen": "unsuitable", "reason": "Three-word chapter stub"},
+    "49452": {"archive_match": "exact_normalized", "screen": "candidate_unverified", "reason": "Brief morphology topic outline"},
+    "35254": {"archive_match": "exact_normalized", "screen": "candidate_unverified", "reason": "Brief topic outline; coverage uncertain"},
+    "49509": {"archive_match": "exact_normalized", "screen": "candidate_unverified", "reason": "Gothic morphology outline; source support unverified"},
+    "50943": {"archive_match": "exact_normalized", "screen": "unsuitable", "reason": "Mini-course description for part 3 of 3"},
+    "38319": {"archive_match": "exact_normalized", "screen": "unsuitable", "reason": "Speaker biography and event metadata dominate"},
+    "14078": {"archive_match": "exact_normalized", "screen": "unsuitable", "reason": "Book-signing event description"},
+    "16294": {"archive_match": "exact_normalized", "screen": "candidate_unverified", "reason": "Brief topic outline; coverage uncertain"},
+    "50934": {"archive_match": "exact_normalized", "screen": "candidate_unverified", "reason": "Course aim on part 1 of 3; talk-specific support unverified"},
+    "46066": {"archive_match": "editorial_variant", "screen": "candidate_unverified", "reason": "Narrative abstract differs in punctuation; archive adds chapter list"},
+    "18890": {"archive_match": "cleaned_substring", "screen": "unsuitable", "reason": "Course-level description on Lecture 12"},
+    "19217": {"archive_match": "cleaned_substring", "screen": "unsuitable", "reason": "Course-level description on Lecture 01"},
+    "20848": {"archive_match": "exact_normalized", "screen": "candidate_unverified", "reason": "Talk-specific abstract; source support not verified"},
+    "48908": {"archive_match": "exact_normalized", "screen": "candidate_unverified", "reason": "Phonology topics; source support unverified"},
+    "55669": {"archive_match": "exact_normalized", "screen": "unsuitable", "reason": "Course-level abstract on part 2 of 3"},
+    "45978": {"archive_match": "exact_normalized", "screen": "candidate_unverified", "reason": "Talk-specific abstract; source support not verified"},
+    "49247": {"archive_match": "exact_normalized", "screen": "candidate_unverified", "reason": "Text-sample lecture description; source support unverified"}
+  }
+}

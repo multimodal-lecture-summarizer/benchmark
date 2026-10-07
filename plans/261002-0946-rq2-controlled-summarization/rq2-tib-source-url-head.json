@@ -1,0 +1,127 @@
+{
+  "dataset_revision": "e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee",
+  "method": "HEAD on TIB media landing page; no video fetched",
+  "test_content_accessed": false,
+  "results": [
+    {
+      "doi": "10.5446/45978 (DOI)",
+      "url": "https://av.tib.eu/media/45978",
+      "http_status": 200,
+      "final_url": "https://av.tib.eu/media/45978"
+    },
+    {
+      "doi": "10.5446/50943 (DOI)",
+      "url": "https://av.tib.eu/media/50943",
+      "http_status": 200,
+      "final_url": "https://av.tib.eu/media/50943"
+    },
+    {
+      "doi": "10.5446/46066 (DOI)",
+      "url": "https://av.tib.eu/media/46066",
+      "http_status": 200,
+      "final_url": "https://av.tib.eu/media/46066"
+    },
+    {
+      "doi": "10.5446/49509 (DOI)",
+      "url": "https://av.tib.eu/media/49509",
+      "http_status": 200,
+      "final_url": "https://av.tib.eu/media/49509"
+    },
+    {
+      "doi": "10.5446/16294 (DOI)",
+      "url": "https://av.tib.eu/media/16294",
+      "http_status": 200,
+      "final_url": "https://av.tib.eu/media/16294"
+    },
+    {
+      "doi": "10.5446/48908 (DOI)",
+      "url": "https://av.tib.eu/media/48908",
+      "http_status": 200,
+      "final_url": "https://av.tib.eu/media/48908"
+    },
+    {
+      "doi": "10.5446/38319 (DOI)",
+      "url": "https://av.tib.eu/media/38319",
+      "http_status": 200,
+      "final_url": "https://av.tib.eu/media/38319"
+    },
+    {
+      "doi": "10.5446/20846 (DOI)",
+      "url": "https://av.tib.eu/media/20846",
+      "http_status": 200,
+      "final_url": "https://av.tib.eu/media/20846"
+    },
+    {
+      "doi": "10.5446/38638 (DOI)",
+      "url": "https://av.tib.eu/media/38638",
+      "http_status": 200,
+      "final_url": "https://av.tib.eu/media/38638"
+    },
+    {
+      "doi": "10.5446/14078 (DOI)",
+      "url": "https://av.tib.eu/media/14078",
+      "http_status": 200,
+      "final_url": "https://av.tib.eu/media/14078"
+    },
+    {
+      "doi": "10.5446/55669 (DOI)",
+      "url": "https://av.tib.eu/media/55669",
+      "http_status": 200,
+      "final_url": "https://av.tib.eu/media/55669"
+    },
+    {
+      "doi": "10.5446/35254 (DOI)",
+      "url": "https://av.tib.eu/media/35254",
+      "http_status": 200,
+      "final_url": "https://av.tib.eu/media/35254"
+    },
+    {
+      "doi": "10.5446/19217 (DOI)",
+      "url": "https://av.tib.eu/media/19217",
+      "http_status": 200,
+      "final_url": "https://av.tib.eu/media/19217"
+    },
+    {
+      "doi": "10.5446/18890 (DOI)",
+      "url": "https://av.tib.eu/media/18890",
+      "http_status": 200,
+      "final_url": "https://av.tib.eu/media/18890"
+    },
+    {
+      "doi": "10.5446/43747 (DOI)",
+      "url": "https://av.tib.eu/media/43747",
+      "http_status": 200,
+      "final_url": "https://av.tib.eu/media/43747"
+    },
+    {
+      "doi": "10.5446/15101 (DOI)",
+      "url": "https://av.tib.eu/media/15101",
+      "http_status": 200,
+      "final_url": "https://av.tib.eu/media/15101"
+    },
+    {
+      "doi": "10.5446/49247 (DOI)",
+      "url": "https://av.tib.eu/media/49247",
+      "http_status": 200,
+      "final_url": "https://av.tib.eu/media/49247"
+    },
+    {
+      "doi": "10.5446/50934 (DOI)",
+      "url": "https://av.tib.eu/media/50934",
+      "http_status": 200,
+      "final_url": "https://av.tib.eu/media/50934"
+    },
+    {
+      "doi": "10.5446/49452 (DOI)",
+      "url": "https://av.tib.eu/media/49452",
+      "http_status": 200,
+      "final_url": "https://av.tib.eu/media/49452"
+    },
+    {
+      "doi": "10.5446/20848 (DOI)",
+      "url": "https://av.tib.eu/media/20848",
+      "http_status": 200,
+      "final_url": "https://av.tib.eu/media/20848"
+    }
+  ]
+}

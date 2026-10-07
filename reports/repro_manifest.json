@@ -1,0 +1,357 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "manifest_title": "Reproducibility Package & Provenance Manifest — Multimodal Lecture Summarizer",
+  "manifest_version": "3.0.0-final-overhaul",
+  "frozen_manifest_version": "2.0.0-final-frozen",
+  "frozen_date": "2026-09-05",
+  "git_provenance": {
+    "repository": "https://github.com/multimodal-lecture-summarizer/multimodal-lecture-summarizer",
+    "target_branch": "main",
+    "frozen_commit_hash": "4d2a33e30213d7e07a89416454f12fceb0376d33",
+    "clean_working_tree": true
+  },
+  "hardware_environment": {
+    "primary_gpu": "NVIDIA GeForce RTX 4050 Laptop GPU / NVIDIA Tesla T4",
+    "usable_vram_mb": 6144,
+    "cuda_compute_capability": "8.9 (RTX) / 7.5 (T4)",
+    "cuda_runtime_version": "12.4",
+    "pytorch_version": "2.6.0+cu124",
+    "cloud_environment": "Google Colab Free (T4) / Local NVIDIA CUDA workstation"
+  },
+  "software_dependencies": {
+    "python_runtime": "3.11.1",
+    "pytorch_version": "2.6.0+cu124",
+    "faster_whisper": "1.1.1",
+    "paddleocr": "2.9.1",
+    "transformers": "4.49.0",
+    "datasets": "3.2.0",
+    "jiwer": "3.1.0",
+    "pyscenedetect": "0.6.5.2",
+    "scipy": "1.15.1"
+  },
+  "frozen_experimental_decisions": {
+    "D-T01": {
+      "name": "Compact VLM Baseline",
+      "model_id": "Qwen/Qwen3-VL-4B-Instruct",
+      "precision": "FP16",
+      "role": "E4 baseline in RQ4"
+    },
+    "D-T02": {
+      "name": "Temporal Chaptering Architecture",
+      "model_id": "C5_TemporalCrossAttentionTransformer",
+      "layers": 4,
+      "hidden_dimension": 256,
+      "num_heads": 4,
+      "boundary_query_tokens": 3,
+      "loss_function": "BCEWithLogitsLoss",
+      "trainable_parameters": 1600000,
+      "visual_anchor_snapping": true,
+      "dynamic_peak_nms": true
+    },
+    "D-T04": {
+      "name": "Feature Extractor Revisions",
+      "visual_dim": 384,
+      "visual_backbone": "DINOv2 ViT-S/14",
+      "ocr_dim": 384,
+      "ocr_backbone": "PaddleOCR v3 (ch_PP-OCRv4, confidence >= 0.6)",
+      "acoustic_dim": 32,
+      "acoustic_backbone": "Whisper-small (32-dim acoustic bottleneck)"
+    },
+    "D-T07": {
+      "name": "Hypothesis Testing Correction",
+      "method": "Holm-Bonferroni Family-Wise Error Rate Control",
+      "alpha": 0.05,
+      "resamples": 1000
+    },
+    "D-T08": {
+      "name": "Equal Budget Guardrails",
+      "max_source_tokens": 32000,
+      "max_output_tokens": 512,
+      "max_video_frames": 200,
+      "frame_short_edge_px": 448
+    },
+    "D-T14": {
+      "name": "Single-Author Quality Audit Protocol",
+      "total_audited": 20,
+      "keep_rate_pct": 100.0,
+      "mean_source_support": 2.0,
+      "mean_coverage_score": 2.0,
+      "frozen_exclusion_list": []
+    },
+    "D-T15": {
+      "name": "Real-Data-Only Scientific Constraint",
+      "status": "Strictly enforced",
+      "policy": "Zero synthetic/fabricated/mock data in research execution paths"
+    }
+  },
+  "random_seeds": [
+    42,
+    1337,
+    2026
+  ],
+  "datasets_provenance": {
+    "tedlium3_speech": {
+      "path": "experiments/datasets/tedlium3",
+      "total_utterances": 270323,
+      "train_utterances": 268263,
+      "val_utterances": 591,
+      "test_utterances": 1469
+    },
+    "eduviqa_multimodal_qa": {
+      "path": "experiments/datasets/eduviqa",
+      "total_videos": 20,
+      "total_qa_pairs": 883,
+      "question_taxonomy": {
+        "What": 356,
+        "How": 298,
+        "Why": 46,
+        "Verification": 2,
+        "Other": 177
+      }
+    },
+    "core_evaluation_lectures": {
+      "path": "benchmarks/data/cached_features",
+      "total_lectures": 20,
+      "total_duration_hours": 1.6,
+      "ground_truth_boundaries": 25,
+      "features_checksums": {
+        "21_Soft_Skills_for_Teachers_Explained.pt": {
+          "sha256": "9e4b2dc537f153dff314960ad1fe407ba8bc1e291c5f471b9ed3d721b5e51520",
+          "md5": "d6250483a19d947a1948a23b46e97caa",
+          "size_bytes": 99892
+        },
+        "Applied_Business_Strategy_01_-_Macroeconomic_Analysis.pt": {
+          "sha256": "af6fb2553e92ff8e27967f4a6bb70591b892e3c3474accf34442c147dd0338e4",
+          "md5": "be79c86243871d6e78839921767d1063",
+          "size_bytes": 141012
+        },
+        "Applied_Business_Strategy_02_-_Porter_s_Five_Forces_Some_common_pitfalls.pt": {
+          "sha256": "02543d2c3526a4777ae65a144831e3334902f71236b1ce56b7984c9d010a7f3e",
+          "md5": "925cfd5a51639adddeb8677ac45d35e1",
+          "size_bytes": 49426
+        },
+        "Business_Research_02_-_Research_Methods.pt": {
+          "sha256": "5ca36942dce24b6cb44b959a10669eff4e3f27dac41e96983498b1266aba8218",
+          "md5": "41fd0d7eac4ca7b49372a1139aee229b",
+          "size_bytes": 169480
+        },
+        "CA01.pt": {
+          "sha256": "7e3f7685fbc83a9a9add5279577e1bf6769da6461562567d4a69e8ffe1fbb915",
+          "md5": "ee9f491c3430d7b1ab279340e582a316",
+          "size_bytes": 72746
+        },
+        "CA02.pt": {
+          "sha256": "fc51eabe043bf1208a7c0dc2c7445ea0f2b17c5393465f0e195435a694d3b42c",
+          "md5": "ca8848fff7aa6e0f497184af38ce164f",
+          "size_bytes": 255146
+        },
+        "CA03.pt": {
+          "sha256": "13c2b54318da1e38a1eaeb1e82645d86e680e0243bb8d4b74db3078fa0691b71",
+          "md5": "c42927f39ac400dac6fd6b3950fe2ff4",
+          "size_bytes": 175722
+        },
+        "CA04.pt": {
+          "sha256": "f313596e7333d36ec0852c485de20198f652b69e1f5a0ada908b132241f1dbb9",
+          "md5": "c6332687c25c85f066a0ece92c45ac3d",
+          "size_bytes": 105642
+        },
+        "CA05.pt": {
+          "sha256": "0ebcca17a6e1af77c779d1902ad38fb3bedaa6d7339f12acfa3a75e9f5ef90b6",
+          "md5": "723a3c00849bae7329581c5fcc504293",
+          "size_bytes": 85354
+        },
+        "Descriptive_Research_Definition_Examples_Explained_in_3_Minutes.pt": {
+          "sha256": "7378c8e7bb7e5015701d638ab7d7ebdb1ffc182b78109e401960b1c9f22eb009",
+          "md5": "403cc778b319b8dea9236e98afad3fa0",
+          "size_bytes": 26168
+        },
+        "DS11-Recursion-Stack.pt": {
+          "sha256": "454c8ea087e25df30983769db5cd7bee063958c8d229f0f9c187ce7dd92953dd",
+          "md5": "21a7d84b7bafa309e98ca7b69d8d8af6",
+          "size_bytes": 230026
+        },
+        "DS12-Queue.pt": {
+          "sha256": "ece1313c313a560ddc1d58880b40e0558aea2e387223c0efa92215183630ca5e",
+          "md5": "578ad7e60dcfb29ac3bdbe667f528856",
+          "size_bytes": 274662
+        },
+        "DS16-Tree.pt": {
+          "sha256": "a89d67ede42492e841d6f789bf6500adefb35f9c4c03f11b6b5438c7679020ea",
+          "md5": "f0328f724e7c8d3e05b8e5667faac79b",
+          "size_bytes": 268572
+        },
+        "DS20Haep.pt": {
+          "sha256": "885bca40e08420e6419c3577f4d92e176ffd8bec6e0f9ab10a7051689861abce",
+          "md5": "8c3f984149d8248f4163b7beb6a96aab",
+          "size_bytes": 249938
+        },
+        "DS6-AlgorithmAnalysis.pt": {
+          "sha256": "f1bb6c9917598f332b669b569bb41fa9788ddc6e32abf3eb138a356f43d3f346",
+          "md5": "7c9bfc0e7758b422b86f99ad7811c754",
+          "size_bytes": 263188
+        },
+        "Regions_in_Human_Geography_Explained_in_3_Minutes.pt": {
+          "sha256": "51e277c0cc33ede6ba1448f9572f3fd8a6dbb6315f99373cb57496249ed27777",
+          "md5": "20a7b399000d1bc3b2b70ae269f99f03",
+          "size_bytes": 20588
+        },
+        "System_Dynamics_and_Control_Module_4_-_Modeling_Mechanical_Systems.pt": {
+          "sha256": "6286b2914707ca493e9149b30626859ed280efb0c8a4df1e7a2a700ef95d3eda",
+          "md5": "ffaf2194c89ffc70b9479cc57e25b083",
+          "size_bytes": 325526
+        },
+        "System_Dynamics_and_Control_Module_7c_-_Introduction_to_Modeling_with_Simulink.pt": {
+          "sha256": "fe18330cfcd026a61f6ad2521a85f3de83f5db89b1d372b46b3dcbac88ef9cb7",
+          "md5": "da6eabab2694ae2f57aa7fe86701c9ef",
+          "size_bytes": 49806
+        },
+        "Thailand_Stock_Market_Update_March_2024_-_Fundamentals_FY_2023_vs.pt": {
+          "sha256": "7cf05806ada96e7123d0d2926a8bd9a23486179c79aff69149c5e812ece4036c",
+          "md5": "de482db8af7f7b79ec837a7a2f8c82ba",
+          "size_bytes": 89932
+        },
+        "What_is_Differentiated_Instruction_4_Types_Explained.pt": {
+          "sha256": "d436c16344af1cc5fc9b22ec02ed2cf46789c4d21f61fffa8c160496353284b8",
+          "md5": "30ef0e113d4fe5773b1ba4732d5c470a",
+          "size_bytes": 112522
+        }
+      }
+    }
+  },
+  "standardized_notebook_suite": [
+    {
+      "index": "00",
+      "file": "experiments/notebooks/00_dataset_eda_and_quality_audit.ipynb",
+      "status": "PASSED"
+    },
+    {
+      "index": "01",
+      "file": "experiments/notebooks/01_audio_asr_benchmark.ipynb",
+      "status": "PASSED"
+    },
+    {
+      "index": "02",
+      "file": "experiments/notebooks/02_visual_scene_ocr_benchmark.ipynb",
+      "status": "PASSED"
+    },
+    {
+      "index": "03",
+      "file": "experiments/notebooks/03_multimodal_chaptering_benchmark.ipynb",
+      "status": "PASSED"
+    },
+    {
+      "index": "04",
+      "file": "experiments/notebooks/04_hierarchical_summarization_benchmark.ipynb",
+      "status": "PASSED"
+    },
+    {
+      "index": "05",
+      "file": "experiments/notebooks/05_evidence_retrieval_qa_benchmark.ipynb",
+      "status": "PASSED"
+    },
+    {
+      "index": "06",
+      "file": "experiments/notebooks/06_efficiency_pareto_error_cascading.ipynb",
+      "status": "PASSED"
+    }
+  ],
+  "research_questions_outcomes": {
+    "RQ0_A": {
+      "title": "Audio Processing & ASR Benchmark",
+      "best_model": "Faster-Whisper Small GPU float16",
+      "wer_pct": 11.36,
+      "real_time_factor": 0.0503,
+      "speedup": "~ 19.9x real-time",
+      "source": "reports/rq0a_audio_results.json"
+    },
+    "RQ0_V": {
+      "title": "Visual Scene Detection & Slide OCR Benchmark",
+      "best_detector": "PySceneDetect ContentDetector",
+      "collar_f1_2s_pct": 100.0,
+      "ocr_throughput_fps": 0.41,
+      "videos_evaluated": 1,
+      "note": "Only CA01.mp4 evaluated as of 2026-09-05; full 20-video benchmark pending",
+      "source": "reports/rq0v_visual_results.json"
+    },
+    "RQ1": {
+      "title": "Multimodal Temporal Representation & Chaptering",
+      "notebook": "experiments/notebooks/03_multimodal_chaptering_benchmark.ipynb",
+      "checkpoint": "checkpoints/c5_real.pt",
+      "evaluated_models": [
+        "C1 (Text-only)",
+        "C2 (Acoustic)",
+        "C3 (Visual)",
+        "C4 (OCR)",
+        "C5 (Cross-Attention Proposed)",
+        "C6 (Late Fusion)"
+      ],
+      "primary_metrics": {
+        "C1_window_diff": 0.2304,
+        "C3_window_diff": 0.1939,
+        "C5_window_diff": 0.136,
+        "C5_window_diff_bound": "<= 0.1500 (loose test threshold; plan target <= 0.0950 not yet achieved)",
+        "C5_collar_f1_5s": 0.25,
+        "C5_pk": 0.136
+      },
+      "statistical_significance": "Holm-Bonferroni corrected p-values NOT significant on N=20 videos (3 seeds) due to high std; plan claim of p<0.01 is incorrect vs raw data"
+    },
+    "RQ2": {
+      "title": "Hierarchical Lecture Summarization & Evidence Grounding",
+      "notebook": "experiments/notebooks/04_hierarchical_summarization_benchmark.ipynb",
+      "evaluated_models": [
+        "S0 (Flat)",
+        "S1 (MapReduce)",
+        "S2 (Oracle)",
+        "S3 (Text Hierarchy)",
+        "S3+ev (Slide Grounded)",
+        "S4 (Multimodal)"
+      ],
+      "primary_metrics": {
+        "S1_hallucination_pct": 15.94,
+        "S3_hallucination_pct": 27.87,
+        "S3_ev_hallucination_pct": 2.39,
+        "S4_hallucination_pct": 2.39,
+        "S3_ev_claim_density": 6.94,
+        "S3_ev_rouge_l": 0.1143,
+        "S4_claim_density": 0.67
+      }
+    },
+    "RQ3": {
+      "title": "Evidence Retrieval & Grounded QA",
+      "notebook": "experiments/notebooks/05_evidence_retrieval_qa_benchmark.ipynb",
+      "evaluated_models": [
+        "Q0 (Flat Dense)",
+        "Q1 (Oracle Hierarchy)",
+        "Q2 (Predicted Hierarchy)",
+        "Q3 (Multimodal RRF)"
+      ],
+      "primary_metrics": {
+        "Q0_recall_3": 70.0,
+        "Q1_recall_3": 92.0,
+        "Q3_recall_3": 88.5,
+        "Q3_mrr": 0.33,
+        "oracle_gap_closed_pct": 84.1,
+        "absolute_oracle_performance_pct": 96.2
+      }
+    },
+    "RQ4": {
+      "title": "Controlled Efficiency, Pareto Frontier & Error Cascading",
+      "notebook": "experiments/notebooks/06_efficiency_pareto_error_cascading.ipynb",
+      "systems": [
+        "E1 (Text)",
+        "E2 (Structured)",
+        "E3 (Proposed Multimodal)",
+        "E4 (VLM 4B)"
+      ],
+      "primary_metrics": {
+        "E3_latency_sec": 18.3,
+        "E3_vram_mb": 5420.0,
+        "E3_pareto_optimal": true,
+        "E3_dominates": [
+          "E4"
+        ],
+        "asr_noise_resilience_factor": 2.7
+      }
+    }
+  }
+}

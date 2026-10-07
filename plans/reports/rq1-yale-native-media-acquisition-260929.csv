@@ -1,0 +1,13 @@
+course_id,lecture_no,filename,source_url,expected_bytes,duration_s,rights_status,acquisition_action,known_sha256
+evst255,24,evst255_24_042210.m4v,https://openmedia.yale.edu/projects/courses/spring10/evst255/m4v/evst255_24_042210.m4v,255318279,3002,pending_component_review,download,
+psyc110,3,psyc110_03_012407.m4v,https://openmedia.yale.edu/projects/courses/spring07/psyc110/iphone/psyc110_03_012407.m4v,295441463,3390,pending_component_review,download,
+beng100,21,beng100_21_041008.m4v,https://openmedia.yale.edu/projects/courses/spring08/beng100/iphone/beng100_21_041008.m4v,169243350,3238,pending_component_review,download,
+afam162,20,afam162_20_040510.m4v,https://openmedia.yale.edu/projects/courses/spring10/afam162/iphone/afam162_20_040510.m4v,265949167,2970,pending_component_review,download,
+psyc123,20,psyc123_20_111208.m4v,https://openmedia.yale.edu/projects/courses/fall08/psyc123/iphone/psyc123_20_111208.m4v,360616830,3939,pending_component_review,download,
+rlst152,14,rlst152_14_022509.m4v,https://openmedia.yale.edu/projects/courses/spring09/rlst152/iphone/rlst152_14_022509.m4v,275928005,3014,pending_component_review,download,
+clcv205,2,clcv205_02_091107.m4v,https://openmedia.yale.edu/projects/courses/fall07/clcv205/iphone/clcv205_02_091107.m4v,210498997,4091,pending_component_review,download,
+hist234,25,hist234_25_042110.m4v,https://openmedia.yale.edu/projects/courses/spring10/hist234/m4v/hist234_25_042110.m4v,207764844,2447,pending_component_review,download,
+hist210,3,hist210_03_090711.m4v,https://openmedia.yale.edu/projects/courses/fall11/hist210/iphone/hist210_03_090711.m4v,105366797,2717,pending_component_review,download,
+ital310,5,ital310_05_091808.m4v,https://openmedia.yale.edu/projects/courses/fall08/ital310/iphone/ital310_05_091808.m4v,426841574,4663,pending_component_review,download,
+hist119,7,hist119_07_020508.m4v,https://openmedia.yale.edu/projects/courses/spring08/hist119/iphone/hist119_07_020508.m4v,181145233,2874,pending_component_review,download,
+astr160,4,astr160_04_012507.m4v,https://openmedia.yale.edu/projects/courses/spring07/astr160/iphone/astr160_04_012507.m4v,144184593,2800,pending_component_review,download,

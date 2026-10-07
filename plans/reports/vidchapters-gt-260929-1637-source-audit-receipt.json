@@ -1,0 +1,23 @@
+{
+  "source_file": "experiments/datasets/vidchapters_qualification/chapters.pkl",
+  "source_sha256": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+  "method": "pickletools opcode scan and bounded per-record interpretation; no pickle.load or code execution",
+  "scope": "10 exact YTSeg-overlap video IDs only; no release-wide pass inference",
+  "top_level_keys_verified": ["chapters", "duration", "title", "description", "channel_id", "view_count"],
+  "chapter_keys_verified": ["label", "time"],
+  "rows": [
+    {"video_id":"-dOX_4lI6HY","byte_offset":1979756129,"title":"13. Interpreting Weather Data","course_id":"MIT16.687","duration_seconds":3122.333,"chapter_count":22,"last_start_seconds":3006},
+    {"video_id":"3sB64Au76h0","byte_offset":1840019075,"title":"12. Aircraft Performance","course_id":"MIT16.687","duration_seconds":3931.895,"chapter_count":33,"last_start_seconds":3302},
+    {"video_id":"PHtPau1c5sU","byte_offset":1853780618,"title":"3. Learning to Fly","course_id":"MIT16.687","duration_seconds":2094.936,"chapter_count":16,"last_start_seconds":1905},
+    {"video_id":"Th2N_rDfkDw","byte_offset":1936858845,"title":"7. Navigation","course_id":"MIT16.687","duration_seconds":2514.903,"chapter_count":24,"last_start_seconds":2128},
+    {"video_id":"alLh1Jdqwvg","byte_offset":1984496145,"title":"10. Communication and Flight Information","course_id":"MIT16.687","duration_seconds":2172.838,"chapter_count":19,"last_start_seconds":2066},
+    {"video_id":"kiCNa95DnnE","byte_offset":2022736120,"title":"21. Weather Minimums and Final Tips","course_id":"MIT16.687","duration_seconds":1292.349,"chapter_count":26,"last_start_seconds":1208},
+    {"video_id":"ksyY5wa5_50","byte_offset":1982190105,"title":"19. Multi-Engine and Jets","course_id":"MIT16.687","duration_seconds":1702.274,"chapter_count":21,"last_start_seconds":1456},
+    {"video_id":"shHvE6yV4IM","byte_offset":1910769138,"title":"6. The Flight Environment","course_id":"MIT16.687","duration_seconds":2033.391,"chapter_count":13,"last_start_seconds":1980},
+    {"video_id":"tCKk22kaZi4","byte_offset":1985242381,"title":"2. Preferences and Utility Functions","course_id":"MIT14.01","duration_seconds":2483.417,"chapter_count":12,"last_start_seconds":2071},
+    {"video_id":"xsO2Ip6eiaY","byte_offset":1902728881,"title":"16. Seaplanes","course_id":"MIT16.687","duration_seconds":1474.475,"chapter_count":16,"last_start_seconds":1346}
+  ],
+  "all_10": {"exact_id_occurrences":1,"first_start_seconds":0,"strictly_increasing_starts":true,"starts_within_duration":true,"nonempty_labels":true,"structure_gate":"pass","research_rights_gate":"hold","redistribution_rights_gate":"hold","vidchapters_media_alignment_gate":"hold"},
+  "full_gate_scope_count": {"assessed_video_count":10,"pass_videos":0,"pass_independent_groups":0},
+  "no_model_selection_or_official_rq1": true
+}

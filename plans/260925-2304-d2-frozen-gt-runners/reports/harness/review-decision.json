@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "plan_id": "260925-2304-d2-frozen-gt-runners",
+  "decision": "PASS",
+  "score": 9.5,
+  "summary": "All 5 phases of D2 Frozen Ground Truth & Dependent Runners successfully implemented and verified with fail-closed scientific rigor.",
+  "reviewer": "cook_executor",
+  "timestamp": "2026-09-25T23:50:00+07:00",
+  "criteria": {
+    "manifest_ground_truth_reconciliation": {
+      "status": "PASS",
+      "detail": "TED-LIUM 3 D2 manifest updated with verbatim manual transcripts from validation/test Arrow tables. Strict non-empty reference_text validation confirmed across all 20 units."
+    },
+    "scientific_endpoint_matrix_gating": {
+      "status": "PASS",
+      "detail": "load_eligible_units in stage_benchmark_helpers filters candidate datasets by dataset.endpoint_matrix scientific_selection_eligible flags. Raises descriptive RuntimeError on ineligible endpoints."
+    },
+    "prerequisite_runners_01a_01b": {
+      "status": "PASS",
+      "detail": "01a_asr_model_benchmark and 01b_asr_preprocessing_ablation executed cleanly in Jupyter kernels producing real predictions, metrics, aggregates, and shortlist receipts."
+    },
+    "group_02_group_07_validation": {
+      "status": "PASS",
+      "detail": "Group 02 and Group 07 confirmed fail-closed. Visual benchmarks refuse audio-only datasets, and downstream Pareto/error notebooks refuse execution without upstream stage outputs."
+    },
+    "regression_boundary": {
+      "status": "PASS",
+      "detail": "Full pytest suite executed: 302 tests passed, zero regressions against documented baseline."
+    }
+  }
+}

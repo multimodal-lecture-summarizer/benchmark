@@ -1,0 +1,567 @@
+{
+  "Th2N_rDfkDw": {
+    "shard": 0,
+    "row": 2968,
+    "duration": 2515.0,
+    "raw_chapters": [
+      {
+        "end_time": 24.0,
+        "start_time": 0.0,
+        "title": "Introduction"
+      },
+      {
+        "end_time": 147.0,
+        "start_time": 24.0,
+        "title": "Outline"
+      },
+      {
+        "end_time": 163.0,
+        "start_time": 147.0,
+        "title": "Example"
+      },
+      {
+        "end_time": 232.0,
+        "start_time": 163.0,
+        "title": "Planning Goal: Navlog"
+      },
+      {
+        "end_time": 319.0,
+        "start_time": 232.0,
+        "title": "Dead Reckoning"
+      },
+      {
+        "end_time": 334.0,
+        "start_time": 319.0,
+        "title": "Local Magnetic Variation"
+      },
+      {
+        "end_time": 370.0,
+        "start_time": 334.0,
+        "title": "Magnetic Deviation"
+      },
+      {
+        "end_time": 536.0,
+        "start_time": 370.0,
+        "title": "Plotter and E6B Introduction"
+      },
+      {
+        "end_time": 556.0,
+        "start_time": 536.0,
+        "title": "Using the Plotter"
+      },
+      {
+        "end_time": 587.0,
+        "start_time": 556.0,
+        "title": "Using the E6B: Computer Side"
+      },
+      {
+        "end_time": 898.0,
+        "start_time": 587.0,
+        "title": "Using the E6B: Wind Side"
+      },
+      {
+        "end_time": 1183.0,
+        "start_time": 898.0,
+        "title": "Pilotage Summary"
+      },
+      {
+        "end_time": 1188.0,
+        "start_time": 1183.0,
+        "title": "Automatic Direction Finder"
+      },
+      {
+        "end_time": 1204.0,
+        "start_time": 1188.0,
+        "title": "How to use the ADF"
+      },
+      {
+        "end_time": 1238.0,
+        "start_time": 1204.0,
+        "title": "Finding Magnetic Bearing"
+      },
+      {
+        "end_time": 1356.0,
+        "start_time": 1238.0,
+        "title": "Movable Card ADF"
+      },
+      {
+        "end_time": 1388.0,
+        "start_time": 1356.0,
+        "title": "VOR Service Volumes"
+      },
+      {
+        "end_time": 1474.0,
+        "start_time": 1388.0,
+        "title": "Parts of the VOR"
+      },
+      {
+        "end_time": 1691.0,
+        "start_time": 1474.0,
+        "title": "Using VORS"
+      },
+      {
+        "end_time": 1898.0,
+        "start_time": 1691.0,
+        "title": "VOR simulators"
+      },
+      {
+        "end_time": 2066.0,
+        "start_time": 1898.0,
+        "title": "A Garmin GTN 750"
+      },
+      {
+        "end_time": 2086.0,
+        "start_time": 2066.0,
+        "title": "Avidyne PFD moving map"
+      },
+      {
+        "end_time": 2128.0,
+        "start_time": 2086.0,
+        "title": "91.161 - DC Area"
+      },
+      {
+        "end_time": 2515.0,
+        "start_time": 2128.0,
+        "title": "After the navigation mistake..."
+      }
+    ],
+    "chapter_titles": [
+      "Introduction",
+      "Outline",
+      "Example",
+      "Planning Goal: Navlog",
+      "Dead Reckoning",
+      "Local Magnetic Variation",
+      "Magnetic Deviation",
+      "Plotter and E6B Introduction",
+      "Using the Plotter",
+      "Using the E6B: Computer Side",
+      "Using the E6B: Wind Side",
+      "Pilotage Summary",
+      "Automatic Direction Finder",
+      "How to use the ADF",
+      "Finding Magnetic Bearing",
+      "Movable Card ADF",
+      "VOR Service Volumes",
+      "Parts of the VOR",
+      "Using VORS",
+      "VOR simulators",
+      "A Garmin GTN 750",
+      "Avidyne PFD moving map",
+      "91.161 - DC Area",
+      "After the navigation mistake..."
+    ],
+    "chapter_timestamps": [
+      24.0,
+      147.0,
+      163.0,
+      232.0,
+      319.0,
+      334.0,
+      370.0,
+      536.0,
+      556.0,
+      587.0,
+      898.0,
+      1183.0,
+      1188.0,
+      1204.0,
+      1238.0,
+      1356.0,
+      1388.0,
+      1474.0,
+      1691.0,
+      1898.0,
+      2066.0,
+      2086.0,
+      2128.0
+    ],
+    "text_ref_segments": 485
+  },
+  "3sB64Au76h0": {
+    "shard": 1,
+    "row": 2105,
+    "duration": 3932.0,
+    "raw_chapters": [
+      {
+        "end_time": 69.0,
+        "start_time": 0.0,
+        "title": "Introduction"
+      },
+      {
+        "end_time": 116.0,
+        "start_time": 69.0,
+        "title": "Importance of Performance"
+      },
+      {
+        "end_time": 158.0,
+        "start_time": 116.0,
+        "title": "Reminder: Thrust and Drag"
+      },
+      {
+        "end_time": 306.0,
+        "start_time": 158.0,
+        "title": "Climb Performance"
+      },
+      {
+        "end_time": 333.0,
+        "start_time": 306.0,
+        "title": "Climb Thrust and Power"
+      },
+      {
+        "end_time": 410.0,
+        "start_time": 333.0,
+        "title": "Best Glide Ratio"
+      },
+      {
+        "end_time": 443.0,
+        "start_time": 410.0,
+        "title": "Effects of Wind on Performance"
+      },
+      {
+        "end_time": 605.0,
+        "start_time": 443.0,
+        "title": "Center of Gravity"
+      },
+      {
+        "end_time": 731.0,
+        "start_time": 605.0,
+        "title": "Effect of Atmospheric Pressure"
+      },
+      {
+        "end_time": 865.0,
+        "start_time": 731.0,
+        "title": "Determining Pressure Altitude"
+      },
+      {
+        "end_time": 1014.0,
+        "start_time": 865.0,
+        "title": "Determining Density Altitude"
+      },
+      {
+        "end_time": 1138.0,
+        "start_time": 1014.0,
+        "title": "Humidity: Another Enemy"
+      },
+      {
+        "end_time": 1177.0,
+        "start_time": 1138.0,
+        "title": "Max Convenience: ForeFlight"
+      },
+      {
+        "end_time": 1292.0,
+        "start_time": 1177.0,
+        "title": "Computing Density Altitude Pilot Operating Manual"
+      },
+      {
+        "end_time": 1583.0,
+        "start_time": 1292.0,
+        "title": "Other Factors affecting Performance"
+      },
+      {
+        "end_time": 1719.0,
+        "start_time": 1583.0,
+        "title": "Runway Condition"
+      },
+      {
+        "end_time": 1786.0,
+        "start_time": 1719.0,
+        "title": "Ceiling"
+      },
+      {
+        "end_time": 2025.0,
+        "start_time": 1786.0,
+        "title": "Range vs. Endurance"
+      },
+      {
+        "end_time": 2166.0,
+        "start_time": 2025.0,
+        "title": "Landing and Takeoff Performance"
+      },
+      {
+        "end_time": 2457.0,
+        "start_time": 2166.0,
+        "title": "Landing Performance Additional Factors"
+      },
+      {
+        "end_time": 2497.0,
+        "start_time": 2457.0,
+        "title": "Takeoff/Landing Performance Charts"
+      },
+      {
+        "end_time": 2617.0,
+        "start_time": 2497.0,
+        "title": "Wind Components"
+      },
+      {
+        "end_time": 2824.0,
+        "start_time": 2617.0,
+        "title": "Wind 26040KT; Rwy 29"
+      },
+      {
+        "end_time": 2883.0,
+        "start_time": 2824.0,
+        "title": "Pilatus PC-12, Flaps 15"
+      },
+      {
+        "end_time": 2911.0,
+        "start_time": 2883.0,
+        "title": "Why Cirrus is the best seller"
+      },
+      {
+        "end_time": 2923.0,
+        "start_time": 2911.0,
+        "title": "Rate of Climb?"
+      },
+      {
+        "end_time": 2942.0,
+        "start_time": 2923.0,
+        "title": "POH Table"
+      },
+      {
+        "end_time": 3021.0,
+        "start_time": 2942.0,
+        "title": "Maximum Rate of Climb"
+      },
+      {
+        "end_time": 3046.0,
+        "start_time": 3021.0,
+        "title": "Cruise Charts - Tabular Example"
+      },
+      {
+        "end_time": 3183.0,
+        "start_time": 3046.0,
+        "title": "Landing Performance Example"
+      },
+      {
+        "end_time": 3232.0,
+        "start_time": 3183.0,
+        "title": "The Easy Way"
+      },
+      {
+        "end_time": 3302.0,
+        "start_time": 3232.0,
+        "title": "Gyronimo (not free)"
+      },
+      {
+        "end_time": 3932.0,
+        "start_time": 3302.0,
+        "title": "Questions?"
+      }
+    ],
+    "chapter_titles": [
+      "Introduction",
+      "Importance of Performance",
+      "Reminder: Thrust and Drag",
+      "Climb Performance",
+      "Climb Thrust and Power",
+      "Best Glide Ratio",
+      "Effects of Wind on Performance",
+      "Center of Gravity",
+      "Effect of Atmospheric Pressure",
+      "Determining Pressure Altitude",
+      "Determining Density Altitude",
+      "Humidity: Another Enemy",
+      "Max Convenience: ForeFlight",
+      "Computing Density Altitude Pilot Operating Manual",
+      "Other Factors affecting Performance",
+      "Runway Condition",
+      "Ceiling",
+      "Range vs. Endurance",
+      "Landing and Takeoff Performance",
+      "Landing Performance Additional Factors",
+      "Takeoff/Landing Performance Charts",
+      "Wind Components",
+      "Wind 26040KT; Rwy 29",
+      "Pilatus PC-12, Flaps 15",
+      "Why Cirrus is the best seller",
+      "Rate of Climb?",
+      "POH Table",
+      "Maximum Rate of Climb",
+      "Cruise Charts - Tabular Example",
+      "Landing Performance Example",
+      "The Easy Way",
+      "Gyronimo (not free)",
+      "Questions?"
+    ],
+    "chapter_timestamps": [
+      69.0,
+      116.0,
+      158.0,
+      306.0,
+      333.0,
+      410.0,
+      443.0,
+      605.0,
+      731.0,
+      865.0,
+      1014.0,
+      1138.0,
+      1177.0,
+      1292.0,
+      1583.0,
+      1719.0,
+      1786.0,
+      2025.0,
+      2166.0,
+      2457.0,
+      2497.0,
+      2617.0,
+      2824.0,
+      2883.0,
+      2911.0,
+      2923.0,
+      2942.0,
+      3021.0,
+      3046.0,
+      3183.0,
+      3232.0,
+      3302.0
+    ],
+    "text_ref_segments": 727
+  },
+  "alLh1Jdqwvg": {
+    "shard": 2,
+    "row": 2667,
+    "duration": 2173.0,
+    "raw_chapters": [
+      {
+        "end_time": 149.0,
+        "start_time": 0.0,
+        "title": "Introduction"
+      },
+      {
+        "end_time": 317.0,
+        "start_time": 149.0,
+        "title": "What is a Transponder?"
+      },
+      {
+        "end_time": 356.0,
+        "start_time": 317.0,
+        "title": "Transponder Operations"
+      },
+      {
+        "end_time": 678.0,
+        "start_time": 356.0,
+        "title": "Transponder Squawk Codes"
+      },
+      {
+        "end_time": 865.0,
+        "start_time": 678.0,
+        "title": "Requesting Radar Services"
+      },
+      {
+        "end_time": 964.0,
+        "start_time": 865.0,
+        "title": "Practice Question"
+      },
+      {
+        "end_time": 1067.0,
+        "start_time": 964.0,
+        "title": "Automatic Terminal Information Service (ATIS)"
+      },
+      {
+        "end_time": 1095.0,
+        "start_time": 1067.0,
+        "title": "Example ATIS"
+      },
+      {
+        "end_time": 1160.0,
+        "start_time": 1095.0,
+        "title": "Flight Service Stations (FSS)"
+      },
+      {
+        "end_time": 1275.0,
+        "start_time": 1160.0,
+        "title": "Phonetic Alphabet"
+      },
+      {
+        "end_time": 1409.0,
+        "start_time": 1275.0,
+        "title": "Numbers"
+      },
+      {
+        "end_time": 1526.0,
+        "start_time": 1409.0,
+        "title": "Radio Procedures"
+      },
+      {
+        "end_time": 1641.0,
+        "start_time": 1526.0,
+        "title": "Radio Example"
+      },
+      {
+        "end_time": 1665.0,
+        "start_time": 1641.0,
+        "title": "Common Traffic Advisory Frequency (CTAF)"
+      },
+      {
+        "end_time": 1737.0,
+        "start_time": 1665.0,
+        "title": "CTAF/UNICOM Procedures"
+      },
+      {
+        "end_time": 1890.0,
+        "start_time": 1737.0,
+        "title": "Radar Facilities"
+      },
+      {
+        "end_time": 2020.0,
+        "start_time": 1890.0,
+        "title": "Emergency Procedures"
+      },
+      {
+        "end_time": 2066.0,
+        "start_time": 2020.0,
+        "title": "Chart Supplement"
+      },
+      {
+        "end_time": 2173.0,
+        "start_time": 2066.0,
+        "title": "Advisory Circular"
+      }
+    ],
+    "chapter_titles": [
+      "Introduction",
+      "What is a Transponder?",
+      "Transponder Operations",
+      "Transponder Squawk Codes",
+      "Requesting Radar Services",
+      "Practice Question",
+      "Automatic Terminal Information Service (ATIS)",
+      "Example ATIS",
+      "Flight Service Stations (FSS)",
+      "Phonetic Alphabet",
+      "Numbers",
+      "Radio Procedures",
+      "Radio Example",
+      "Common Traffic Advisory Frequency (CTAF)",
+      "CTAF/UNICOM Procedures",
+      "Radar Facilities",
+      "Emergency Procedures",
+      "Chart Supplement",
+      "Advisory Circular"
+    ],
+    "chapter_timestamps": [
+      149.0,
+      317.0,
+      356.0,
+      678.0,
+      865.0,
+      964.0,
+      1067.0,
+      1095.0,
+      1160.0,
+      1275.0,
+      1409.0,
+      1526.0,
+      1641.0,
+      1665.0,
+      1737.0,
+      1890.0,
+      2020.0,
+      2066.0
+    ],
+    "text_ref_segments": 445
+  }
+}

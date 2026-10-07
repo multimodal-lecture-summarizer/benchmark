@@ -1,0 +1,19 @@
+{
+  "schema": "rq1-d2-freeze-receipt/1",
+  "status": "D2_dataset_frozen",
+  "source_bundle_path": "plans/reports/rq1-d2-source-bundle-260930-twenty-units.json",
+  "source_bundle_sha256": "996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+  "frozen_dataset_path": "plans/reports/rq1-d2-frozen-dataset-260930-twenty-units.json",
+  "frozen_dataset_sha256": "0b8a06ceaf522746a6b5f2aa337fb8a3053f2974e4ec840f8e4778a2640ca861",
+  "registry_yaml_path": "experiments/registry/datasets/rq1_locked_mixed_20_d2.yaml",
+  "registry_yaml_sha256": "fe69b97bf28a75c8985b0b9eb45770ea9856cb269efe0d1589c9356b34ff6fab",
+  "cohort_sha256": "8596d3aad4421ff2e38a86c4e890090ad52f42f33b87e0a7d0babd080135fb4d",
+  "split_sha256": "1bb28edc0c48849d72b827bcf98b7ea35eecbcce7c8da4160693e0041956cbe8",
+  "dataset_contract_result": {
+    "dataset_count": 1,
+    "unit_count": 20,
+    "d2_eligible_dataset_count": 1
+  },
+  "scope": "D2_dataset_only; transcript_feature_candidate_checkpoint_and_validation_precision_pending",
+  "final_test_opened": false
+}

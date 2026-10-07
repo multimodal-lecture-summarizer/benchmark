@@ -1,0 +1,75 @@
+# D2 qualification config for TED-LIUM Release 3 (local HuggingFace snapshot).
+#
+# This file is the single source of truth for the D2 freeze decision for
+# tedlium3.  It is read by probe_dataset_feasibility.py (to emit a D2
+# feasibility receipt) and profile_dataset.py (to emit freeze_status=eligible).
+#
+# All numeric values are derived from the real D1 pilot run completed on
+# 2026-09-23 (run_id e41555d1-f822-435d-ac41-2d2e38f5c4a9):
+#   - selected_bytes from acquisition_inventory: 5,509,872 bytes (20 WAVs)
+#   - peak_disk_delta_bytes from pilot: 0 (files already resident on disk)
+#   - processing_elapsed_sec from pilot: ~0.32 s total for 20 units
+#   - predicted_peak = selected_bytes * 3 = 16,529,616 (decode + tmp buffer)
+#   - estimated_completion_hours = measured 0.32s → 0.001 h (generous cap: 0.1)
+#
+# Rights decision frozen 2026-09-25:
+#   TED-LIUM Release 3 is distributed under CC BY-NC-ND 3.0.
+#   Non-commercial academic benchmark use is within the licence scope.
+#   No redistribution of raw audio; only metrics and aggregate statistics
+#   are published.  This decision must be re-adjudicated before any
+#   commercial or redistributive use.
+
+schema_version: 1
+dataset_id: tedlium3
+
+# --- Identity ---
+source: "local_huggingface_saved_arrow"
+release: "release3"
+revision: "release3-snapshot-e51a4a2a93f3"   # first 12 chars of local_snapshot_fingerprint
+local_snapshot_fingerprint: "e51a4a2a93f32b22ca1ddfa13bc58c4f97fefe5c1134badf11c43fcdcf291d19"
+
+# --- Rights (adjudicated 2026-09-25) ---
+rights: "CC BY-NC-ND 3.0 — non-commercial academic benchmark only; no redistribution of audio"
+access_status: "available"
+leakage_exception: null    # speaker_id and talk_id are present; no exception needed
+
+# --- Data root ---
+data_root_key: "experiments/datasets/tedlium3"
+
+# --- D2 receipt path (written by probe_dataset_feasibility full run) ---
+# Path is relative to the artifact_root of the run that produced 00b.
+receipt_path: "datasets/tedlium3/official/full/payloads/dataset.feasibility_receipts.json"
+
+# --- Size estimates (from D1 pilot; used for gate checks) ---
+# expected_bytes: sum of the 20 selected WAV files (verified by SHA-256)
+expected_bytes: 5509872
+# predicted_peak_bytes: 3× headroom for decode + temporary artefacts
+predicted_peak_bytes: 16529616
+# estimated_completion_hours: generous upper bound from measured 0.32 s pilot
+estimated_completion_hours: 0.1
+
+# --- D2 eligibility gates (all must be True before freeze proceeds) ---
+# These mirror the _validate_d1_receipt gates in dataset_contracts.py:
+#   schema_success_rate   >= 1.0
+#   checksum_success_rate >= 1.0
+#   download_success_rate >= 0.90
+#   decode_success_rate   >= 0.95
+#   predicted_peak_bytes  <= 50 GiB  (MAX_D2_PEAK_BYTES)
+#   estimated_completion_hours <= 12 (MAX_D2_HOURS)
+min_schema_success_rate: 1.0
+min_checksum_success_rate: 1.0
+min_download_success_rate: 0.90
+min_decode_success_rate: 0.95
+
+# --- Ground truth (ASR task) ---
+ground_truth:
+  status: "released"
+  source: "TED-LIUM Release 3 — manual transcripts from TED.com"
+  revision: "release3"
+  annotation_protocol: >
+    Manual verbatim transcripts aligned to 16 kHz mono speech segments.
+    Scored with corpus WER using a frozen English text normaliser.
+    No pseudo-labels; no project-generated annotations.
+
+# --- Fallback ---
+fallback_dataset: null

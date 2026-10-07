@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "plan_id": "260925-2304-d2-frozen-gt-runners",
+  "verification_commands": [
+    "python -m experiments.scripts.phase2_freeze_tedlium",
+    "python -m pytest tests/test_phase2_tedlium_d2.py",
+    "python -m pytest tests/test_phase1_stage_smoke_runners.py",
+    "python -m benchmarks.scripts.execute_all_notebooks --artifact-root experiments/outputs/phase2_tedlium_d2 --profile full --run-namespace official --notebook 01a_asr_model_benchmark",
+    "python -m benchmarks.scripts.execute_all_notebooks --artifact-root experiments/outputs/phase2_tedlium_d2 --profile full --run-namespace official --notebook 01b_asr_preprocessing_ablation",
+    "python -m benchmarks.scripts.run_scene_boundary_benchmark --profile full --run-namespace official --evidence-status real --artifact-root experiments/outputs/phase2_tedlium_d2 --notebook-id 02a_scene_boundary_benchmark --run-id 33333333-3333-3333-3333-333333333333 --source-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --config-sha256 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb --dependency-state-sha256 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "python -m benchmarks.scripts.execute_all_notebooks --artifact-root experiments/outputs/phase2_tedlium_d2 --profile full --run-namespace official --notebook 07a_efficiency_pareto",
+    "python -m pytest tests/"
+  ],
+  "results": {
+    "tedlium_d2_freeze": "PASS (20 units, manual verbatim transcripts verified)",
+    "test_phase2_tedlium_d2": "3/3 PASS",
+    "test_phase1_stage_smoke_runners": "6/6 PASS",
+    "notebook_01a_execution": "PASS (20 units, tiny.en WER 0.1628, base.en WER 0.1919)",
+    "notebook_01b_execution": "PASS (20 units, 3 presets, beam5 frozen)",
+    "group_02_fail_closed": "PASS (refuses uneligible visual endpoints on audio dataset)",
+    "group_07_fail_closed": "PASS (refuses execution on missing stage aggregates)",
+    "full_pytest_suite": "302 passed, 2 pre-existing baseline failures preserved"
+  }
+}

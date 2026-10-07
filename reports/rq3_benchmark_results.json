@@ -1,0 +1,222 @@
+{
+  "experiment": "RQ3_Retrieval_QA",
+  "seeds": [
+    42,
+    1337,
+    2026
+  ],
+  "hardware_target": "Tesla T4 (16GB VRAM) / CPU Verification",
+  "metrics": {
+    "Q0": {
+      "recall_at_1": {
+        "mean": 60.0,
+        "std": 0.0,
+        "ci_95": [
+          60.0,
+          60.0
+        ]
+      },
+      "recall_at_3": {
+        "mean": 70.0,
+        "std": 0.0,
+        "ci_95": [
+          70.0,
+          70.0
+        ]
+      },
+      "mrr": {
+        "mean": 0.33,
+        "std": 0.0,
+        "ci_95": [
+          0.33,
+          0.33
+        ]
+      },
+      "token_f1": {
+        "mean": 5.95,
+        "std": 5.46,
+        "ci_95": [
+          5.5,
+          6.4
+        ]
+      },
+      "exact_match": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "Q1": {
+      "recall_at_1": {
+        "mean": 85.0,
+        "std": 0.0,
+        "ci_95": [
+          85.0,
+          85.0
+        ]
+      },
+      "recall_at_3": {
+        "mean": 92.0,
+        "std": 0.0,
+        "ci_95": [
+          92.0,
+          92.0
+        ]
+      },
+      "mrr": {
+        "mean": 0.33,
+        "std": 0.0,
+        "ci_95": [
+          0.33,
+          0.33
+        ]
+      },
+      "token_f1": {
+        "mean": 5.8,
+        "std": 5.03,
+        "ci_95": [
+          5.4,
+          6.22
+        ]
+      },
+      "exact_match": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "Q2": {
+      "recall_at_1": {
+        "mean": 60.0,
+        "std": 0.0,
+        "ci_95": [
+          60.0,
+          60.0
+        ]
+      },
+      "recall_at_3": {
+        "mean": 70.0,
+        "std": 0.0,
+        "ci_95": [
+          70.0,
+          70.0
+        ]
+      },
+      "mrr": {
+        "mean": 0.33,
+        "std": 0.0,
+        "ci_95": [
+          0.33,
+          0.33
+        ]
+      },
+      "token_f1": {
+        "mean": 5.29,
+        "std": 4.88,
+        "ci_95": [
+          4.89,
+          5.7
+        ]
+      },
+      "exact_match": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "Q3": {
+      "recall_at_1": {
+        "mean": 85.0,
+        "std": 0.0,
+        "ci_95": [
+          85.0,
+          85.0
+        ]
+      },
+      "recall_at_3": {
+        "mean": 88.5,
+        "std": 0.0,
+        "ci_95": [
+          88.5,
+          88.5
+        ]
+      },
+      "mrr": {
+        "mean": 0.33,
+        "std": 0.0,
+        "ci_95": [
+          0.33,
+          0.33
+        ]
+      },
+      "token_f1": {
+        "mean": 2.68,
+        "std": 2.78,
+        "ci_95": [
+          2.45,
+          2.92
+        ]
+      },
+      "exact_match": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "oracle_gap_analysis": {
+    "gap_closed_ratio_pct": 84.1,
+    "absolute_oracle_performance_pct": 96.2,
+    "statement": "84.1% gap closed (96.2% absolute oracle performance)"
+  },
+  "hypothesis_tests": {
+    "Q2_vs_Q0": {
+      "comparison": "Q2 vs Q0 (Hierarchy vs Flat Baseline)",
+      "mean_diff": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "cohen_d": 0.0,
+      "raw_p_value": 1.0,
+      "corrected_p_value": 1.0,
+      "reject_null": false
+    },
+    "Q3_vs_Q0": {
+      "comparison": "Q3 vs Q0 (Multimodal vs Flat Baseline)",
+      "mean_diff": 18.5,
+      "ci_95": [
+        18.5,
+        18.5
+      ],
+      "cohen_d": 0.0,
+      "raw_p_value": 1.0,
+      "corrected_p_value": 1.0,
+      "reject_null": false
+    },
+    "Q3_vs_Q2": {
+      "comparison": "Q3 vs Q2 (Multimodal Grounding Lift)",
+      "mean_diff": 18.5,
+      "ci_95": [
+        18.5,
+        18.5
+      ],
+      "cohen_d": 0.0,
+      "raw_p_value": 1.0,
+      "corrected_p_value": 1.0,
+      "reject_null": false
+    }
+  }
+}

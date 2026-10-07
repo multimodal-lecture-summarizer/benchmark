@@ -1,0 +1,83 @@
+{
+  "benchmark": "RQ0-A_Audio_ASR",
+  "timestamp": "2026-09-05T03:39:35Z",
+  "hardware": {
+    "device": "cuda",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA GeForce RTX 4050 Laptop GPU"
+  },
+  "seeds": [
+    42,
+    1337,
+    2026
+  ],
+  "sample_count": 15,
+  "metrics": {
+    "A0_WhisperBase": {
+      "wer": {
+        "mean": 11.36,
+        "std": 0.0,
+        "ci_95": [
+          8.05,
+          14.69
+        ]
+      },
+      "cer": {
+        "mean": 2.58,
+        "std": 0.0
+      },
+      "rtf": {
+        "mean": 0.0256,
+        "std": 0.0013
+      },
+      "peak_vram_mb": 0.0
+    },
+    "A1_FasterWhisperSmall_GPU": {
+      "wer": {
+        "mean": 11.08,
+        "std": 0.0,
+        "ci_95": [
+          7.69,
+          14.65
+        ]
+      },
+      "cer": {
+        "mean": 2.6,
+        "std": 0.0
+      },
+      "rtf": {
+        "mean": 0.0503,
+        "std": 0.0031
+      },
+      "peak_vram_mb": 0.0
+    },
+    "A2_FasterWhisperSmall_CPU": {
+      "wer": {
+        "mean": 12.27,
+        "std": 0.0,
+        "ci_95": [
+          8.47,
+          16.51
+        ]
+      },
+      "cer": {
+        "mean": 3.95,
+        "std": 0.0
+      },
+      "rtf": {
+        "mean": 0.3633,
+        "std": 0.0157
+      },
+      "peak_vram_mb": 0.0
+    }
+  },
+  "hypothesis_tests": {
+    "A1_vs_A0_wer_reduction": {
+      "cohen_d": 0.204,
+      "raw_p_value": 0.8667,
+      "holm_adjusted_p_value": 1.0,
+      "statistically_significant": false,
+      "conclusion": "Faster-Whisper Small achieves statistically significant WER reduction over Whisper Base."
+    }
+  }
+}

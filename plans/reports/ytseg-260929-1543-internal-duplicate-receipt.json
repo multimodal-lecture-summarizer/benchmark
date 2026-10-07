@@ -1,0 +1,419 @@
+{
+  "checked_at_utc": "2026-09-29T09:29:47.024980+00:00",
+  "source": "retkowski/ytseg text_ref train-00000 through train-00003 Parquet",
+  "revision": "4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+  "lock_sha256": "4dedb0efacecf547f1bf2eac773a0b6ced3cea9ed1330875cf6e9b493e9f0719",
+  "video_ids": [
+    "-7xg8pGcP6w",
+    "-dOX_4lI6HY",
+    "3sB64Au76h0",
+    "MoEaRpLNo9A",
+    "Th2N_rDfkDw",
+    "alLh1Jdqwvg",
+    "kiCNa95DnnE",
+    "ksyY5wa5_50",
+    "tCKk22kaZi4",
+    "xsO2Ip6eiaY"
+  ],
+  "pair_count": 45,
+  "normalization": "lowercase ASCII alphanumeric words via [a-z0-9]+; concatenate published text_ref segments; exact ordered unique word 5-gram and 10-gram sets",
+  "metrics": "Jaccard=shared5/union5; shorter containment=shared5/min(set sizes); 10gram intersection counts exact common 10-word shingles",
+  "token_counts": {
+    "-dOX_4lI6HY": 8795,
+    "tCKk22kaZi4": 7643,
+    "kiCNa95DnnE": 3480,
+    "Th2N_rDfkDw": 6724,
+    "3sB64Au76h0": 10600,
+    "ksyY5wa5_50": 4555,
+    "MoEaRpLNo9A": 16700,
+    "-7xg8pGcP6w": 15920,
+    "alLh1Jdqwvg": 6312,
+    "xsO2Ip6eiaY": 4042
+  },
+  "max_containment_pair": {
+    "a": "3sB64Au76h0",
+    "b": "Th2N_rDfkDw",
+    "shared5": 52,
+    "containment5": 0.00779727,
+    "jaccard5": 0.00303756,
+    "shared10": 0
+  },
+  "max_shared10_pair": {
+    "a": "-dOX_4lI6HY",
+    "b": "3sB64Au76h0",
+    "shared5": 45,
+    "containment5": 0.00515759,
+    "jaccard5": 0.00234595,
+    "shared10": 2
+  },
+  "pairs_containment_ge_0_1": 0,
+  "pairs_shared10_ge_25": 0,
+  "all_pairs": [
+    {
+      "a": "-7xg8pGcP6w",
+      "b": "-dOX_4lI6HY",
+      "shared5": 18,
+      "containment5": 0.00206304,
+      "jaccard5": 0.00074738,
+      "shared10": 0
+    },
+    {
+      "a": "-7xg8pGcP6w",
+      "b": "3sB64Au76h0",
+      "shared5": 18,
+      "containment5": 0.00171396,
+      "jaccard5": 0.00069603,
+      "shared10": 0
+    },
+    {
+      "a": "-7xg8pGcP6w",
+      "b": "MoEaRpLNo9A",
+      "shared5": 40,
+      "containment5": 0.00260129,
+      "jaccard5": 0.00125758,
+      "shared10": 0
+    },
+    {
+      "a": "-7xg8pGcP6w",
+      "b": "Th2N_rDfkDw",
+      "shared5": 13,
+      "containment5": 0.00194932,
+      "jaccard5": 0.00059002,
+      "shared10": 0
+    },
+    {
+      "a": "-7xg8pGcP6w",
+      "b": "alLh1Jdqwvg",
+      "shared5": 13,
+      "containment5": 0.002079,
+      "jaccard5": 0.00060138,
+      "shared10": 0
+    },
+    {
+      "a": "-7xg8pGcP6w",
+      "b": "kiCNa95DnnE",
+      "shared5": 3,
+      "containment5": 0.00086605,
+      "jaccard5": 0.00015925,
+      "shared10": 0
+    },
+    {
+      "a": "-7xg8pGcP6w",
+      "b": "ksyY5wa5_50",
+      "shared5": 11,
+      "containment5": 0.00242344,
+      "jaccard5": 0.00055262,
+      "shared10": 0
+    },
+    {
+      "a": "-7xg8pGcP6w",
+      "b": "tCKk22kaZi4",
+      "shared5": 9,
+      "containment5": 0.00122166,
+      "jaccard5": 0.00039587,
+      "shared10": 0
+    },
+    {
+      "a": "-7xg8pGcP6w",
+      "b": "xsO2Ip6eiaY",
+      "shared5": 7,
+      "containment5": 0.00174129,
+      "jaccard5": 0.00036101,
+      "shared10": 0
+    },
+    {
+      "a": "-dOX_4lI6HY",
+      "b": "3sB64Au76h0",
+      "shared5": 45,
+      "containment5": 0.00515759,
+      "jaccard5": 0.00234595,
+      "shared10": 2
+    },
+    {
+      "a": "-dOX_4lI6HY",
+      "b": "MoEaRpLNo9A",
+      "shared5": 37,
+      "containment5": 0.00424069,
+      "jaccard5": 0.00147071,
+      "shared10": 0
+    },
+    {
+      "a": "-dOX_4lI6HY",
+      "b": "Th2N_rDfkDw",
+      "shared5": 23,
+      "containment5": 0.00344879,
+      "jaccard5": 0.00149632,
+      "shared10": 0
+    },
+    {
+      "a": "-dOX_4lI6HY",
+      "b": "alLh1Jdqwvg",
+      "shared5": 25,
+      "containment5": 0.00399808,
+      "jaccard5": 0.00167191,
+      "shared10": 0
+    },
+    {
+      "a": "-dOX_4lI6HY",
+      "b": "kiCNa95DnnE",
+      "shared5": 9,
+      "containment5": 0.00259815,
+      "jaccard5": 0.00073892,
+      "shared10": 0
+    },
+    {
+      "a": "-dOX_4lI6HY",
+      "b": "ksyY5wa5_50",
+      "shared5": 6,
+      "containment5": 0.00132188,
+      "jaccard5": 0.00045256,
+      "shared10": 0
+    },
+    {
+      "a": "-dOX_4lI6HY",
+      "b": "tCKk22kaZi4",
+      "shared5": 9,
+      "containment5": 0.00122166,
+      "jaccard5": 0.0005596,
+      "shared10": 0
+    },
+    {
+      "a": "-dOX_4lI6HY",
+      "b": "xsO2Ip6eiaY",
+      "shared5": 16,
+      "containment5": 0.0039801,
+      "jaccard5": 0.00125697,
+      "shared10": 0
+    },
+    {
+      "a": "3sB64Au76h0",
+      "b": "MoEaRpLNo9A",
+      "shared5": 65,
+      "containment5": 0.0061893,
+      "jaccard5": 0.00241573,
+      "shared10": 0
+    },
+    {
+      "a": "3sB64Au76h0",
+      "b": "Th2N_rDfkDw",
+      "shared5": 52,
+      "containment5": 0.00779727,
+      "jaccard5": 0.00303756,
+      "shared10": 0
+    },
+    {
+      "a": "3sB64Au76h0",
+      "b": "alLh1Jdqwvg",
+      "shared5": 22,
+      "containment5": 0.00351831,
+      "jaccard5": 0.00131477,
+      "shared10": 0
+    },
+    {
+      "a": "3sB64Au76h0",
+      "b": "kiCNa95DnnE",
+      "shared5": 6,
+      "containment5": 0.0017321,
+      "jaccard5": 0.0004298,
+      "shared10": 0
+    },
+    {
+      "a": "3sB64Au76h0",
+      "b": "ksyY5wa5_50",
+      "shared5": 15,
+      "containment5": 0.00330469,
+      "jaccard5": 0.00099827,
+      "shared10": 0
+    },
+    {
+      "a": "3sB64Au76h0",
+      "b": "tCKk22kaZi4",
+      "shared5": 21,
+      "containment5": 0.00285055,
+      "jaccard5": 0.0011766,
+      "shared10": 0
+    },
+    {
+      "a": "3sB64Au76h0",
+      "b": "xsO2Ip6eiaY",
+      "shared5": 15,
+      "containment5": 0.00373134,
+      "jaccard5": 0.00103398,
+      "shared10": 0
+    },
+    {
+      "a": "MoEaRpLNo9A",
+      "b": "Th2N_rDfkDw",
+      "shared5": 27,
+      "containment5": 0.00404858,
+      "jaccard5": 0.00116822,
+      "shared10": 0
+    },
+    {
+      "a": "MoEaRpLNo9A",
+      "b": "alLh1Jdqwvg",
+      "shared5": 21,
+      "containment5": 0.00335839,
+      "jaccard5": 0.00092503,
+      "shared10": 0
+    },
+    {
+      "a": "MoEaRpLNo9A",
+      "b": "kiCNa95DnnE",
+      "shared5": 4,
+      "containment5": 0.00115473,
+      "jaccard5": 0.0002007,
+      "shared10": 0
+    },
+    {
+      "a": "MoEaRpLNo9A",
+      "b": "ksyY5wa5_50",
+      "shared5": 16,
+      "containment5": 0.00352501,
+      "jaccard5": 0.00076216,
+      "shared10": 0
+    },
+    {
+      "a": "MoEaRpLNo9A",
+      "b": "tCKk22kaZi4",
+      "shared5": 25,
+      "containment5": 0.00339351,
+      "jaccard5": 0.00104989,
+      "shared10": 0
+    },
+    {
+      "a": "MoEaRpLNo9A",
+      "b": "xsO2Ip6eiaY",
+      "shared5": 16,
+      "containment5": 0.0039801,
+      "jaccard5": 0.00078148,
+      "shared10": 0
+    },
+    {
+      "a": "Th2N_rDfkDw",
+      "b": "alLh1Jdqwvg",
+      "shared5": 12,
+      "containment5": 0.00191908,
+      "jaccard5": 0.00092951,
+      "shared10": 0
+    },
+    {
+      "a": "Th2N_rDfkDw",
+      "b": "kiCNa95DnnE",
+      "shared5": 4,
+      "containment5": 0.00115473,
+      "jaccard5": 0.00039491,
+      "shared10": 0
+    },
+    {
+      "a": "Th2N_rDfkDw",
+      "b": "ksyY5wa5_50",
+      "shared5": 8,
+      "containment5": 0.0017625,
+      "jaccard5": 0.00071429,
+      "shared10": 0
+    },
+    {
+      "a": "Th2N_rDfkDw",
+      "b": "tCKk22kaZi4",
+      "shared5": 16,
+      "containment5": 0.00239916,
+      "jaccard5": 0.00114123,
+      "shared10": 0
+    },
+    {
+      "a": "Th2N_rDfkDw",
+      "b": "xsO2Ip6eiaY",
+      "shared5": 16,
+      "containment5": 0.0039801,
+      "jaccard5": 0.00149911,
+      "shared10": 0
+    },
+    {
+      "a": "alLh1Jdqwvg",
+      "b": "kiCNa95DnnE",
+      "shared5": 5,
+      "containment5": 0.00144342,
+      "jaccard5": 0.00051483,
+      "shared10": 0
+    },
+    {
+      "a": "alLh1Jdqwvg",
+      "b": "ksyY5wa5_50",
+      "shared5": 7,
+      "containment5": 0.00154219,
+      "jaccard5": 0.00064905,
+      "shared10": 0
+    },
+    {
+      "a": "alLh1Jdqwvg",
+      "b": "tCKk22kaZi4",
+      "shared5": 12,
+      "containment5": 0.00191908,
+      "jaccard5": 0.00088183,
+      "shared10": 0
+    },
+    {
+      "a": "alLh1Jdqwvg",
+      "b": "xsO2Ip6eiaY",
+      "shared5": 6,
+      "containment5": 0.00149254,
+      "jaccard5": 0.0005844,
+      "shared10": 0
+    },
+    {
+      "a": "kiCNa95DnnE",
+      "b": "ksyY5wa5_50",
+      "shared5": 1,
+      "containment5": 0.00028868,
+      "jaccard5": 0.00012497,
+      "shared10": 0
+    },
+    {
+      "a": "kiCNa95DnnE",
+      "b": "tCKk22kaZi4",
+      "shared5": 2,
+      "containment5": 0.00057737,
+      "jaccard5": 0.00018469,
+      "shared10": 0
+    },
+    {
+      "a": "kiCNa95DnnE",
+      "b": "xsO2Ip6eiaY",
+      "shared5": 3,
+      "containment5": 0.00086605,
+      "jaccard5": 0.00040102,
+      "shared10": 0
+    },
+    {
+      "a": "ksyY5wa5_50",
+      "b": "tCKk22kaZi4",
+      "shared5": 3,
+      "containment5": 0.00066094,
+      "jaccard5": 0.00025204,
+      "shared10": 0
+    },
+    {
+      "a": "ksyY5wa5_50",
+      "b": "xsO2Ip6eiaY",
+      "shared5": 10,
+      "containment5": 0.00248756,
+      "jaccard5": 0.00116973,
+      "shared10": 0
+    },
+    {
+      "a": "tCKk22kaZi4",
+      "b": "xsO2Ip6eiaY",
+      "shared5": 6,
+      "containment5": 0.00149254,
+      "jaccard5": 0.00052719,
+      "shared10": 0
+    }
+  ],
+  "limits": [
+    "Text-only screen; low overlap does not rule out audiovisual reposts or re-captioned same lecture",
+    "Thresholds were operational for this screen and not in the earlier cohort lock",
+    "Same-course lectures can share boilerplate or terminology without being duplicates",
+    "No GT, model scores, or validation/test split contents used"
+  ]
+}

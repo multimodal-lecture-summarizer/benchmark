@@ -1,0 +1,1697 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="Codex" version="24.7.17" type="device">
+  <diagram id="page-1" name="01 Tổng quan">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="3050" pageHeight="8349" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="note" value="Cây thư mục benchmark — Tổng quan | 281 nút trên trang | Ô vàng: xem trang cùng tên. Số tệp là số nằm trực tiếp trong thư mục; .git được thu gọn." style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="2950" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-2" edge="1" parent="1" source="folder-1" target="folder-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-3" edge="1" parent="1" source="folder-1" target="folder-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-4" edge="1" parent="1" source="folder-3" target="folder-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-5" edge="1" parent="1" source="folder-4" target="folder-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-6" edge="1" parent="1" source="folder-1" target="folder-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-7" edge="1" parent="1" source="folder-1" target="folder-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-8" edge="1" parent="1" source="folder-7" target="folder-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-9" edge="1" parent="1" source="folder-7" target="folder-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-10" edge="1" parent="1" source="folder-9" target="folder-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-11" edge="1" parent="1" source="folder-7" target="folder-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-12" edge="1" parent="1" source="folder-7" target="folder-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-13" edge="1" parent="1" source="folder-7" target="folder-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-14" edge="1" parent="1" source="folder-7" target="folder-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-15" edge="1" parent="1" source="folder-7" target="folder-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-16" edge="1" parent="1" source="folder-7" target="folder-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-17" edge="1" parent="1" source="folder-1" target="folder-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-18" edge="1" parent="1" source="folder-1" target="folder-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-19" edge="1" parent="1" source="folder-18" target="folder-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-20" edge="1" parent="1" source="folder-19" target="folder-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-21" edge="1" parent="1" source="folder-19" target="folder-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-22" edge="1" parent="1" source="folder-18" target="folder-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-23" edge="1" parent="1" source="folder-18" target="folder-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-24" edge="1" parent="1" source="folder-18" target="folder-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-25" edge="1" parent="1" source="folder-18" target="folder-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-26" edge="1" parent="1" source="folder-18" target="folder-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-27" edge="1" parent="1" source="folder-1" target="folder-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-28" edge="1" parent="1" source="folder-27" target="folder-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-29" edge="1" parent="1" source="folder-27" target="folder-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-30" edge="1" parent="1" source="folder-27" target="folder-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-31" edge="1" parent="1" source="folder-27" target="folder-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-32" edge="1" parent="1" source="folder-31" target="folder-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-33" edge="1" parent="1" source="folder-27" target="folder-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-34" edge="1" parent="1" source="folder-33" target="folder-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-35" edge="1" parent="1" source="folder-34" target="folder-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-36" edge="1" parent="1" source="folder-35" target="folder-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-37" edge="1" parent="1" source="folder-36" target="folder-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-38" edge="1" parent="1" source="folder-37" target="folder-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-39" edge="1" parent="1" source="folder-38" target="folder-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-40" edge="1" parent="1" source="folder-39" target="folder-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-41" edge="1" parent="1" source="folder-40" target="folder-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-42" edge="1" parent="1" source="folder-40" target="folder-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-43" edge="1" parent="1" source="folder-38" target="folder-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-44" edge="1" parent="1" source="folder-38" target="folder-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-45" edge="1" parent="1" source="folder-34" target="folder-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-46" edge="1" parent="1" source="folder-45" target="folder-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-47" edge="1" parent="1" source="folder-46" target="folder-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-48" edge="1" parent="1" source="folder-46" target="folder-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-49" edge="1" parent="1" source="folder-48" target="folder-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-50" edge="1" parent="1" source="folder-49" target="folder-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-51" edge="1" parent="1" source="folder-49" target="folder-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-52" edge="1" parent="1" source="folder-46" target="folder-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-53" edge="1" parent="1" source="folder-46" target="folder-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-54" edge="1" parent="1" source="folder-33" target="folder-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-55" edge="1" parent="1" source="folder-54" target="folder-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-56" edge="1" parent="1" source="folder-55" target="folder-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-57" edge="1" parent="1" source="folder-56" target="folder-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-58" edge="1" parent="1" source="folder-56" target="folder-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-59" edge="1" parent="1" source="folder-33" target="folder-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-60" edge="1" parent="1" source="folder-59" target="folder-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-61" edge="1" parent="1" source="folder-60" target="folder-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-62" edge="1" parent="1" source="folder-61" target="folder-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-63" edge="1" parent="1" source="folder-61" target="folder-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-64" edge="1" parent="1" source="folder-33" target="folder-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-65" edge="1" parent="1" source="folder-64" target="folder-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-66" edge="1" parent="1" source="folder-65" target="folder-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-67" edge="1" parent="1" source="folder-66" target="folder-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-68" edge="1" parent="1" source="folder-66" target="folder-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-69" edge="1" parent="1" source="folder-33" target="folder-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-70" edge="1" parent="1" source="folder-69" target="folder-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-71" edge="1" parent="1" source="folder-69" target="folder-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-72" edge="1" parent="1" source="folder-33" target="folder-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-73" edge="1" parent="1" source="folder-72" target="folder-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-74" edge="1" parent="1" source="folder-73" target="folder-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-75" edge="1" parent="1" source="folder-74" target="folder-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-76" edge="1" parent="1" source="folder-75" target="folder-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-77" edge="1" parent="1" source="folder-75" target="folder-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-78" edge="1" parent="1" source="folder-74" target="folder-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-79" edge="1" parent="1" source="folder-74" target="folder-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-80" edge="1" parent="1" source="folder-79" target="folder-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-81" edge="1" parent="1" source="folder-74" target="folder-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-82" edge="1" parent="1" source="folder-72" target="folder-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-83" edge="1" parent="1" source="folder-82" target="folder-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-84" edge="1" parent="1" source="folder-83" target="folder-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-85" edge="1" parent="1" source="folder-84" target="folder-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-86" edge="1" parent="1" source="folder-84" target="folder-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-87" edge="1" parent="1" source="folder-83" target="folder-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-88" edge="1" parent="1" source="folder-83" target="folder-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-89" edge="1" parent="1" source="folder-88" target="folder-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-90" edge="1" parent="1" source="folder-83" target="folder-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-91" edge="1" parent="1" source="folder-33" target="folder-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-92" edge="1" parent="1" source="folder-91" target="folder-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-93" edge="1" parent="1" source="folder-92" target="folder-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-94" edge="1" parent="1" source="folder-93" target="folder-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-95" edge="1" parent="1" source="folder-94" target="folder-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-96" edge="1" parent="1" source="folder-95" target="folder-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-97" edge="1" parent="1" source="folder-95" target="folder-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-98" edge="1" parent="1" source="folder-92" target="folder-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-99" edge="1" parent="1" source="folder-98" target="folder-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-100" edge="1" parent="1" source="folder-99" target="folder-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-101" edge="1" parent="1" source="folder-100" target="folder-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-102" edge="1" parent="1" source="folder-100" target="folder-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-103" edge="1" parent="1" source="folder-98" target="folder-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-104" edge="1" parent="1" source="folder-103" target="folder-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-105" edge="1" parent="1" source="folder-104" target="folder-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-106" edge="1" parent="1" source="folder-98" target="folder-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-107" edge="1" parent="1" source="folder-92" target="folder-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-108" edge="1" parent="1" source="folder-107" target="folder-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-109" edge="1" parent="1" source="folder-108" target="folder-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-110" edge="1" parent="1" source="folder-109" target="folder-110" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-111" edge="1" parent="1" source="folder-109" target="folder-111" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-112" edge="1" parent="1" source="folder-92" target="folder-112" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-113" edge="1" parent="1" source="folder-112" target="folder-113" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-114" edge="1" parent="1" source="folder-113" target="folder-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-115" edge="1" parent="1" source="folder-114" target="folder-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-116" edge="1" parent="1" source="folder-114" target="folder-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-117" edge="1" parent="1" source="folder-92" target="folder-117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-118" edge="1" parent="1" source="folder-117" target="folder-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-119" edge="1" parent="1" source="folder-118" target="folder-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-120" edge="1" parent="1" source="folder-119" target="folder-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-121" edge="1" parent="1" source="folder-119" target="folder-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-122" edge="1" parent="1" source="folder-92" target="folder-122" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-123" edge="1" parent="1" source="folder-122" target="folder-123" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-124" edge="1" parent="1" source="folder-123" target="folder-124" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-125" edge="1" parent="1" source="folder-124" target="folder-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-126" edge="1" parent="1" source="folder-124" target="folder-126" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-127" edge="1" parent="1" source="folder-92" target="folder-127" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-128" edge="1" parent="1" source="folder-127" target="folder-128" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-129" edge="1" parent="1" source="folder-128" target="folder-129" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-130" edge="1" parent="1" source="folder-129" target="folder-130" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-131" edge="1" parent="1" source="folder-129" target="folder-131" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-132" edge="1" parent="1" source="folder-92" target="folder-132" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-133" edge="1" parent="1" source="folder-132" target="folder-133" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-134" edge="1" parent="1" source="folder-133" target="folder-134" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-135" edge="1" parent="1" source="folder-134" target="folder-135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-136" edge="1" parent="1" source="folder-134" target="folder-136" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-137" edge="1" parent="1" source="folder-92" target="folder-137" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-138" edge="1" parent="1" source="folder-137" target="folder-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-139" edge="1" parent="1" source="folder-138" target="folder-139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-140" edge="1" parent="1" source="folder-139" target="folder-140" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-141" edge="1" parent="1" source="folder-139" target="folder-141" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-142" edge="1" parent="1" source="folder-91" target="folder-142" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-143" edge="1" parent="1" source="folder-142" target="folder-143" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-144" edge="1" parent="1" source="folder-143" target="folder-144" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-145" edge="1" parent="1" source="folder-144" target="folder-145" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-146" edge="1" parent="1" source="folder-145" target="folder-146" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-147" edge="1" parent="1" source="folder-146" target="folder-147" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-148" edge="1" parent="1" source="folder-146" target="folder-148" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-149" edge="1" parent="1" source="folder-91" target="folder-149" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-150" edge="1" parent="1" source="folder-91" target="folder-150" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-151" edge="1" parent="1" source="folder-91" target="folder-151" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-152" edge="1" parent="1" source="folder-151" target="folder-152" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-153" edge="1" parent="1" source="folder-152" target="folder-153" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-154" edge="1" parent="1" source="folder-152" target="folder-154" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-155" edge="1" parent="1" source="folder-152" target="folder-155" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-156" edge="1" parent="1" source="folder-152" target="folder-156" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-157" edge="1" parent="1" source="folder-152" target="folder-157" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-158" edge="1" parent="1" source="folder-91" target="folder-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-159" edge="1" parent="1" source="folder-91" target="folder-159" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-160" edge="1" parent="1" source="folder-91" target="folder-160" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-161" edge="1" parent="1" source="folder-33" target="folder-161" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-162" edge="1" parent="1" source="folder-161" target="folder-162" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-163" edge="1" parent="1" source="folder-162" target="folder-163" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-164" edge="1" parent="1" source="folder-163" target="folder-164" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-165" edge="1" parent="1" source="folder-164" target="folder-165" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-166" edge="1" parent="1" source="folder-161" target="folder-166" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-167" edge="1" parent="1" source="folder-166" target="folder-167" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-168" edge="1" parent="1" source="folder-161" target="folder-168" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-169" edge="1" parent="1" source="folder-33" target="folder-169" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-170" edge="1" parent="1" source="folder-33" target="folder-170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-171" edge="1" parent="1" source="folder-170" target="folder-171" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-172" edge="1" parent="1" source="folder-171" target="folder-172" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-173" edge="1" parent="1" source="folder-33" target="folder-173" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-174" edge="1" parent="1" source="folder-173" target="folder-174" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-175" edge="1" parent="1" source="folder-174" target="folder-175" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-176" edge="1" parent="1" source="folder-175" target="folder-176" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-177" edge="1" parent="1" source="folder-176" target="folder-177" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-178" edge="1" parent="1" source="folder-177" target="folder-178" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-179" edge="1" parent="1" source="folder-177" target="folder-179" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-180" edge="1" parent="1" source="folder-177" target="folder-180" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-181" edge="1" parent="1" source="folder-177" target="folder-181" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-182" edge="1" parent="1" source="folder-174" target="folder-182" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-183" edge="1" parent="1" source="folder-182" target="folder-183" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-184" edge="1" parent="1" source="folder-183" target="folder-184" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-185" edge="1" parent="1" source="folder-184" target="folder-185" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-186" edge="1" parent="1" source="folder-184" target="folder-186" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-187" edge="1" parent="1" source="folder-186" target="folder-187" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-188" edge="1" parent="1" source="folder-184" target="folder-188" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-189" edge="1" parent="1" source="folder-184" target="folder-189" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-190" edge="1" parent="1" source="folder-173" target="folder-190" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-191" edge="1" parent="1" source="folder-190" target="folder-191" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-192" edge="1" parent="1" source="folder-191" target="folder-192" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-193" edge="1" parent="1" source="folder-192" target="folder-193" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-194" edge="1" parent="1" source="folder-193" target="folder-194" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-195" edge="1" parent="1" source="folder-193" target="folder-195" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-196" edge="1" parent="1" source="folder-193" target="folder-196" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-197" edge="1" parent="1" source="folder-193" target="folder-197" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-198" edge="1" parent="1" source="folder-190" target="folder-198" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-199" edge="1" parent="1" source="folder-198" target="folder-199" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-200" edge="1" parent="1" source="folder-199" target="folder-200" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-201" edge="1" parent="1" source="folder-200" target="folder-201" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-202" edge="1" parent="1" source="folder-200" target="folder-202" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-203" edge="1" parent="1" source="folder-202" target="folder-203" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-204" edge="1" parent="1" source="folder-200" target="folder-204" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-205" edge="1" parent="1" source="folder-200" target="folder-205" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-206" edge="1" parent="1" source="folder-33" target="folder-206" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-207" edge="1" parent="1" source="folder-206" target="folder-207" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-208" edge="1" parent="1" source="folder-207" target="folder-208" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-209" edge="1" parent="1" source="folder-208" target="folder-209" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-210" edge="1" parent="1" source="folder-208" target="folder-210" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-211" edge="1" parent="1" source="folder-208" target="folder-211" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-212" edge="1" parent="1" source="folder-33" target="folder-212" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-213" edge="1" parent="1" source="folder-212" target="folder-213" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-214" edge="1" parent="1" source="folder-213" target="folder-214" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-215" edge="1" parent="1" source="folder-214" target="folder-215" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-216" edge="1" parent="1" source="folder-215" target="folder-216" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-217" edge="1" parent="1" source="folder-214" target="folder-217" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-218" edge="1" parent="1" source="folder-214" target="folder-218" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-219" edge="1" parent="1" source="folder-33" target="folder-219" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-220" edge="1" parent="1" source="folder-219" target="folder-220" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-221" edge="1" parent="1" source="folder-220" target="folder-221" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-222" edge="1" parent="1" source="folder-221" target="folder-222" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-223" edge="1" parent="1" source="folder-219" target="folder-223" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-224" edge="1" parent="1" source="folder-223" target="folder-224" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-225" edge="1" parent="1" source="folder-224" target="folder-225" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-226" edge="1" parent="1" source="folder-224" target="folder-226" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-227" edge="1" parent="1" source="folder-224" target="folder-227" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-228" edge="1" parent="1" source="folder-223" target="folder-228" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-229" edge="1" parent="1" source="folder-223" target="folder-229" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-230" edge="1" parent="1" source="folder-223" target="folder-230" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-231" edge="1" parent="1" source="folder-219" target="folder-231" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-232" edge="1" parent="1" source="folder-231" target="folder-232" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-233" edge="1" parent="1" source="folder-232" target="folder-233" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-234" edge="1" parent="1" source="folder-233" target="folder-234" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-235" edge="1" parent="1" source="folder-233" target="folder-235" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-236" edge="1" parent="1" source="folder-219" target="folder-236" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-237" edge="1" parent="1" source="folder-236" target="folder-237" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-238" edge="1" parent="1" source="folder-236" target="folder-238" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-239" edge="1" parent="1" source="folder-219" target="folder-239" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-240" edge="1" parent="1" source="folder-27" target="folder-240" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-241" edge="1" parent="1" source="folder-27" target="folder-241" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-242" edge="1" parent="1" source="folder-241" target="folder-242" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-243" edge="1" parent="1" source="folder-27" target="folder-243" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-244" edge="1" parent="1" source="folder-1" target="folder-244" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-245" edge="1" parent="1" source="folder-244" target="folder-245" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-246" edge="1" parent="1" source="folder-245" target="folder-246" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-247" edge="1" parent="1" source="folder-245" target="folder-247" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-248" edge="1" parent="1" source="folder-247" target="folder-248" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-249" edge="1" parent="1" source="folder-244" target="folder-249" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-250" edge="1" parent="1" source="folder-249" target="folder-250" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-251" edge="1" parent="1" source="folder-250" target="folder-251" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-252" edge="1" parent="1" source="folder-249" target="folder-252" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-253" edge="1" parent="1" source="folder-252" target="folder-253" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-254" edge="1" parent="1" source="folder-249" target="folder-254" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-255" edge="1" parent="1" source="folder-244" target="folder-255" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-256" edge="1" parent="1" source="folder-244" target="folder-256" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-257" edge="1" parent="1" source="folder-256" target="folder-257" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-258" edge="1" parent="1" source="folder-244" target="folder-258" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-259" edge="1" parent="1" source="folder-244" target="folder-259" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-260" edge="1" parent="1" source="folder-259" target="folder-260" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-261" edge="1" parent="1" source="folder-260" target="folder-261" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-262" edge="1" parent="1" source="folder-244" target="folder-262" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-263" edge="1" parent="1" source="folder-244" target="folder-263" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-264" edge="1" parent="1" source="folder-244" target="folder-264" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-265" edge="1" parent="1" source="folder-244" target="folder-265" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-266" edge="1" parent="1" source="folder-244" target="folder-266" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-267" edge="1" parent="1" source="folder-244" target="folder-267" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-268" edge="1" parent="1" source="folder-244" target="folder-268" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-269" edge="1" parent="1" source="folder-244" target="folder-269" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-270" edge="1" parent="1" source="folder-244" target="folder-270" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-271" edge="1" parent="1" source="folder-244" target="folder-271" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-272" edge="1" parent="1" source="folder-244" target="folder-272" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-273" edge="1" parent="1" source="folder-244" target="folder-273" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-274" edge="1" parent="1" source="folder-244" target="folder-274" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-275" edge="1" parent="1" source="folder-244" target="folder-275" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-276" edge="1" parent="1" source="folder-1" target="folder-276" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-277" edge="1" parent="1" source="folder-276" target="folder-277" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-278" edge="1" parent="1" source="folder-1" target="folder-278" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-279" edge="1" parent="1" source="folder-1" target="folder-279" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-280" edge="1" parent="1" source="folder-279" target="folder-280" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-folder-281" edge="1" parent="1" source="folder-1" target="folder-281" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#9aa7b1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-1" value="&lt;b&gt;benchmark/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;280 thư mục con · 5 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="40" y="4146.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-2" value="&lt;b&gt;.git/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;Git metadata · không mở rộng&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#eeeeee;strokeColor=#999999;fontSize=12;">
+          <mxGeometry x="310" y="96.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-3" value="&lt;b&gt;.pytest_cache/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="310" y="150.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-4" value="&lt;b&gt;v/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;1 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="580" y="150.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-5" value="&lt;b&gt;cache/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 2 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="850" y="150.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-6" value="&lt;b&gt;audio/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="310" y="204.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-7" value="&lt;b&gt;benchmarks/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;9 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="310" y="447.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-8" value="&lt;b&gt;core/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 6 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="580" y="258.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-9" value="&lt;b&gt;data/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;1 thư mục con · 2 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="580" y="312.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-10" value="&lt;b&gt;cached_features/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 21 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="850" y="312.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-11" value="&lt;b&gt;docs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="580" y="366.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-12" value="&lt;b&gt;manifests/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 2 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="580" y="420.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-13" value="&lt;b&gt;metrics/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 5 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="580" y="474.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-14" value="&lt;b&gt;models/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 5 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="580" y="528.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-15" value="&lt;b&gt;scripts/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 28 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="580" y="582.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-16" value="&lt;b&gt;utils/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="580" y="636.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-17" value="&lt;b&gt;brainstorm-reports/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="310" y="690.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-18" value="&lt;b&gt;docs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;8 thư mục con · 8 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="310" y="919.5" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-19" value="&lt;b&gt;archive/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="771.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-20" value="&lt;b&gt;strategy/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="850" y="744.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-21" value="&lt;b&gt;visuals/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 2 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="850" y="798.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-22" value="&lt;b&gt;exports/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="852.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-23" value="&lt;b&gt;journals/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 4 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="906.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-24" value="&lt;b&gt;results/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="960.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-25" value="&lt;b&gt;visuals/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="1014.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-26" value="&lt;b&gt;workspace/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 9 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="1068.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-27" value="&lt;b&gt;experiments/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;216 thư mục con · 2 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="310" y="3930.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-28" value="&lt;b&gt;dashboards/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="580" y="1122.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-29" value="&lt;b&gt;evaluation/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 6 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="580" y="1176.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-30" value="&lt;b&gt;legacy_notebooks/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="580" y="1230.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-31" value="&lt;b&gt;notebooks/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;1 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="580" y="1284.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-32" value="&lt;b&gt;diagnostics/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 13 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="850" y="1284.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-33" value="&lt;b&gt;outputs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;206 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="580" y="3913.1" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-34" value="&lt;b&gt;artifacts/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;19 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="850" y="1547.2" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-35" value="&lt;b&gt;datasets/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;9 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="1432.5" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-36" value="&lt;b&gt;tedlium3/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;8 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="1432.5" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-37" value="&lt;b&gt;official/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;7 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="1432.5" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-38" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;6 thư mục con · 5 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="1432.5" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-39" value="&lt;b&gt;operations/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;3 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="1365.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-40" value="&lt;b&gt;00b_dataset_feasibility/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2470" y="1365.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-41" value="&lt;b&gt;logs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2740" y="1338.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-42" value="&lt;b&gt;units/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 20 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2740" y="1392.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-43" value="&lt;b&gt;payloads/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 4 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="1446.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-44" value="&lt;b&gt;runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 4 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="1500.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-45" value="&lt;b&gt;official/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;8 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="1662.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-46" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;7 thư mục con · 19 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="1662.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-47" value="&lt;b&gt;figures/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 9 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="1554.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-48" value="&lt;b&gt;operations/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;3 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="1635.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-49" value="&lt;b&gt;00b_dataset_feasibility/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="1635.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-50" value="&lt;b&gt;logs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="1608.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-51" value="&lt;b&gt;units/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 20 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="1662.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-52" value="&lt;b&gt;payloads/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 18 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="1716.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-53" value="&lt;b&gt;runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 7 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="1770.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-54" value="&lt;b&gt;asr_a0_a5_benchmark_261003/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;4 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="850" y="1851.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-55" value="&lt;b&gt;diagnostic/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;3 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="1851.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-56" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="1851.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-57" value="&lt;b&gt;payloads/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="1824.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-58" value="&lt;b&gt;runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="1878.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-59" value="&lt;b&gt;asr_a0_a5_benchmark_261003_metadata_screen/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;4 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="850" y="1959.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-60" value="&lt;b&gt;diagnostic/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;3 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="1959.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-61" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="1959.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-62" value="&lt;b&gt;payloads/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="1932.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-63" value="&lt;b&gt;runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="1986.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-64" value="&lt;b&gt;asr_a0_a5_benchmark_261003_pinned/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;4 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="850" y="2067.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-65" value="&lt;b&gt;diagnostic/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;3 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="2067.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-66" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="2067.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-67" value="&lt;b&gt;payloads/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="2040.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-68" value="&lt;b&gt;runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="2094.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-69" value="&lt;b&gt;asr_full_corpus_qualification_261003/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="850" y="2175.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-70" value="&lt;b&gt;media/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 2 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="2148.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-71" value="&lt;b&gt;metadata/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 2 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="2202.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-72" value="&lt;b&gt;dataset_readiness_260926/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;18 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="850" y="2512.5" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-73" value="&lt;b&gt;20260926T101159603902Z/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;8 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="2377.5" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-74" value="&lt;b&gt;bundle/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;7 thư mục con · 7 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="2377.5" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-75" value="&lt;b&gt;figures/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="2283.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-76" value="&lt;b&gt;iiit_cvid/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 19 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="2256.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-77" value="&lt;b&gt;tedlium3/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 19 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="2310.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-78" value="&lt;b&gt;iiit_cvid/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 4 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="2364.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-79" value="&lt;b&gt;media/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;1 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="2418.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-80" value="&lt;b&gt;tedlium3/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 70 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="2418.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-81" value="&lt;b&gt;tedlium3/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 4 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="2472.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-82" value="&lt;b&gt;20260926T101747121197Z/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;8 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="2647.5" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-83" value="&lt;b&gt;bundle/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;7 thư mục con · 7 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="2647.5" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-84" value="&lt;b&gt;figures/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="2553.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-85" value="&lt;b&gt;iiit_cvid/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 19 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="2526.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-86" value="&lt;b&gt;tedlium3/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 19 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="2580.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-87" value="&lt;b&gt;iiit_cvid/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 4 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="2634.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-88" value="&lt;b&gt;media/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;1 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="2688.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-89" value="&lt;b&gt;tedlium3/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 70 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="2688.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-90" value="&lt;b&gt;tedlium3/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 4 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="2742.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-91" value="&lt;b&gt;diagnostic/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;69 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="850" y="3889.5" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-92" value="&lt;b&gt;rq1_mit001_local_runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;49 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="3309.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-93" value="&lt;b&gt;20260927T102633Z/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;4 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="2823.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-94" value="&lt;b&gt;diagnostic/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;3 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="2823.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-95" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 13 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="2823.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-96" value="&lt;b&gt;payloads/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 13 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="2796.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-97" value="&lt;b&gt;runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="2850.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-98" value="&lt;b&gt;20260927T103316Z/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;8 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="2998.5" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-99" value="&lt;b&gt;diagnostic/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;3 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="2931.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-100" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 13 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="2931.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-101" value="&lt;b&gt;payloads/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 13 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="2904.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-102" value="&lt;b&gt;runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 5 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="2958.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-103" value="&lt;b&gt;executed_notebooks/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="3012.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-104" value="&lt;b&gt;diagnostic/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;1 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="3012.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-105" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 4 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="3012.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-106" value="&lt;b&gt;jupyter_runtime/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="3066.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-107" value="&lt;b&gt;20260927T110816Z/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;4 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="3147.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-108" value="&lt;b&gt;diagnostic/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;3 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="3147.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-109" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 13 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="3147.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-110" value="&lt;b&gt;payloads/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 13 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="3120.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-111" value="&lt;b&gt;runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="3174.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-112" value="&lt;b&gt;20260927T110919Z/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;4 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="3255.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-113" value="&lt;b&gt;diagnostic/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;3 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="3255.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-114" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 13 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="3255.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-115" value="&lt;b&gt;payloads/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 13 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="3228.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-116" value="&lt;b&gt;runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="3282.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-117" value="&lt;b&gt;20260927T111147Z/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;4 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="3363.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-118" value="&lt;b&gt;diagnostic/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;3 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="3363.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-119" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 13 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="3363.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-120" value="&lt;b&gt;payloads/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 13 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="3336.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-121" value="&lt;b&gt;runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="3390.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-122" value="&lt;b&gt;20260927T113445Z/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;4 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="3471.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-123" value="&lt;b&gt;diagnostic/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;3 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="3471.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-124" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 13 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="3471.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-125" value="&lt;b&gt;payloads/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 13 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="3444.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-126" value="&lt;b&gt;runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="3498.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-127" value="&lt;b&gt;20260927T121111Z/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;4 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="3579.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-128" value="&lt;b&gt;diagnostic/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;3 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="3579.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-129" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 13 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="3579.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-130" value="&lt;b&gt;payloads/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 13 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="3552.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-131" value="&lt;b&gt;runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="3606.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-132" value="&lt;b&gt;20260928T021901Z/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;4 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="3687.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-133" value="&lt;b&gt;diagnostic/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;3 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="3687.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-134" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 13 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="3687.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-135" value="&lt;b&gt;payloads/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 13 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="3660.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-136" value="&lt;b&gt;runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="3714.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-137" value="&lt;b&gt;20260928T022609Z/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;4 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="3795.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-138" value="&lt;b&gt;diagnostic/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;3 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="3795.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-139" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 13 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="3795.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-140" value="&lt;b&gt;payloads/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 13 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="3768.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-141" value="&lt;b&gt;runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="3822.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-142" value="&lt;b&gt;rq1_pilot_runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;6 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="3903.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-143" value="&lt;b&gt;20260927T065316Z/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;5 thư mục con · 2 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="3903.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-144" value="&lt;b&gt;artifacts/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;4 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="3903.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-145" value="&lt;b&gt;diagnostic/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;3 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="3903.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-146" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 13 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="3903.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-147" value="&lt;b&gt;payloads/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 13 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2470" y="3876.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-148" value="&lt;b&gt;runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2470" y="3930.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-149" value="&lt;b&gt;rq1_qualification/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 2 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="3984.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-150" value="&lt;b&gt;rq2_eda/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="4038.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-151" value="&lt;b&gt;rq2_ipython/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;6 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="4200.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-152" value="&lt;b&gt;profile_default/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;5 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="4200.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-153" value="&lt;b&gt;db/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="4092.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-154" value="&lt;b&gt;log/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="4146.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-155" value="&lt;b&gt;pid/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="4200.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-156" value="&lt;b&gt;security/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="4254.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-157" value="&lt;b&gt;startup/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="4308.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-158" value="&lt;b&gt;rq2_valid_controlled_qwen/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 8 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="4362.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-159" value="&lt;b&gt;rq2_valid_paired/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 22 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="4416.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-160" value="&lt;b&gt;ytseg_access_probe/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="4470.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-161" value="&lt;b&gt;executed_notebooks/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;7 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="850" y="4578.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-162" value="&lt;b&gt;datasets/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;3 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="4524.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-163" value="&lt;b&gt;tedlium3/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="4524.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-164" value="&lt;b&gt;official/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;1 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="4524.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-165" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="4524.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-166" value="&lt;b&gt;official/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;1 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="4578.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-167" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="4578.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-168" value="&lt;b&gt;phase12_repair_260926/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="4632.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-169" value="&lt;b&gt;full_corpus_eda_261003/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 5 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="850" y="4686.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-170" value="&lt;b&gt;notebook_sessions/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="850" y="4740.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-171" value="&lt;b&gt;20260926T104553957094Z/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;1 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="4740.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-172" value="&lt;b&gt;diagnostic/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="4740.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-173" value="&lt;b&gt;phase12_repair_260926/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;32 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="850" y="5199.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-174" value="&lt;b&gt;20260926T093319128008Z/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;15 thư mục con · 2 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="4983.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-175" value="&lt;b&gt;iiit_cvid/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;6 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="4875.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-176" value="&lt;b&gt;official/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;5 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="4875.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-177" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;4 thư mục con · 18 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="4875.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-178" value="&lt;b&gt;enrichment_history/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 2 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="4794.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-179" value="&lt;b&gt;figures/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 17 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="4848.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-180" value="&lt;b&gt;payloads/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 18 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="4902.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-181" value="&lt;b&gt;runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="4956.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-182" value="&lt;b&gt;tedlium3/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;7 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="5091.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-183" value="&lt;b&gt;official/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;6 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="5091.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-184" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;5 thư mục con · 18 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="5091.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-185" value="&lt;b&gt;enrichment_history/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 2 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="5010.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-186" value="&lt;b&gt;figures/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;1 thư mục con · 9 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="5064.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-187" value="&lt;b&gt;audio/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 12 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2470" y="5064.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-188" value="&lt;b&gt;payloads/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 18 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="5118.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-189" value="&lt;b&gt;runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="5172.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-190" value="&lt;b&gt;20260926T094154516917Z/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;15 thư mục con · 2 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="5415.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-191" value="&lt;b&gt;iiit_cvid/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;6 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="5307.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-192" value="&lt;b&gt;official/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;5 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="5307.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-193" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;4 thư mục con · 18 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="5307.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-194" value="&lt;b&gt;enrichment_history/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 2 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="5226.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-195" value="&lt;b&gt;figures/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 17 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="5280.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-196" value="&lt;b&gt;payloads/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 18 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="5334.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-197" value="&lt;b&gt;runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="5388.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-198" value="&lt;b&gt;tedlium3/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;7 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="5523.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-199" value="&lt;b&gt;official/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;6 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="5523.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-200" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;5 thư mục con · 18 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="5523.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-201" value="&lt;b&gt;enrichment_history/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 2 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="5442.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-202" value="&lt;b&gt;figures/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;1 thư mục con · 9 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="5496.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-203" value="&lt;b&gt;audio/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 12 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2470" y="5496.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-204" value="&lt;b&gt;payloads/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 18 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="5550.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-205" value="&lt;b&gt;runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="2200" y="5604.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-206" value="&lt;b&gt;phase2_iiit_cvid_d2/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;5 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="850" y="5712.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-207" value="&lt;b&gt;official/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;4 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="5712.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-208" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;3 thư mục con · 18 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="5712.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-209" value="&lt;b&gt;figures/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 17 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="5658.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-210" value="&lt;b&gt;payloads/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 18 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="5712.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-211" value="&lt;b&gt;runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="5766.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-212" value="&lt;b&gt;phase2_tedlium_d2/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;6 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="850" y="5874.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-213" value="&lt;b&gt;official/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;5 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="5874.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-214" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;4 thư mục con · 25 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="5874.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-215" value="&lt;b&gt;figures/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;1 thư mục con · 9 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="5820.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-216" value="&lt;b&gt;audio/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 12 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="5820.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-217" value="&lt;b&gt;payloads/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 25 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="5874.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-218" value="&lt;b&gt;runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 7 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="5928.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-219" value="&lt;b&gt;rq1_locked_mixed_20/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;20 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="850" y="6279.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-220" value="&lt;b&gt;executed_notebooks/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="5982.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-221" value="&lt;b&gt;official/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;1 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="5982.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-222" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 2 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="5982.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-223" value="&lt;b&gt;learned_features/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;7 thư mục con · 4 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="6198.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-224" value="&lt;b&gt;ocr_chunks/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;3 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="6090.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-225" value="&lt;b&gt;-7xg8pGcP6w/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 51 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="6036.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-226" value="&lt;b&gt;679FGDpZBew/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 14 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="6090.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-227" value="&lt;b&gt;EuNXVy5-KgA/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 22 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="6144.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-228" value="&lt;b&gt;safe_resume_logs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 2 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="6198.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-229" value="&lt;b&gt;safe_resume_receipts/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="6252.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-230" value="&lt;b&gt;superseded_20260930_cli_fix/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 2 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="6306.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-231" value="&lt;b&gt;notebook_artifacts/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;4 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="6387.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-232" value="&lt;b&gt;official/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;3 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="6387.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-233" value="&lt;b&gt;full/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1660" y="6387.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-234" value="&lt;b&gt;payloads/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="6360.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-235" value="&lt;b&gt;runs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 2 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1930" y="6414.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-236" value="&lt;b&gt;shared_inputs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="6495.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-237" value="&lt;b&gt;transcripts/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 12 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="6468.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-238" value="&lt;b&gt;video_features/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 12 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1390" y="6522.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-239" value="&lt;b&gt;train_inputs/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;">
+          <mxGeometry x="1120" y="6576.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-240" value="&lt;b&gt;pipeline/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 4 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="580" y="6630.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-241" value="&lt;b&gt;registry/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;1 thư mục con · 9 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="580" y="6684.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-242" value="&lt;b&gt;datasets/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 4 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="850" y="6684.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-243" value="&lt;b&gt;scripts/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 131 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="580" y="6738.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-244" value="&lt;b&gt;plans/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;31 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="310" y="7399.5" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-245" value="&lt;b&gt;260830-1917-scientific-benchmark/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;3 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="6819.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-246" value="&lt;b&gt;manifests/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="850" y="6792.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-247" value="&lt;b&gt;probes/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;1 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="850" y="6846.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-248" value="&lt;b&gt;output/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 11 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="1120" y="6846.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-249" value="&lt;b&gt;260901-unified-scientific-benchmark/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;5 thư mục con · 10 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="6954.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-250" value="&lt;b&gt;archive/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;1 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="850" y="6900.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-251" value="&lt;b&gt;sources/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="1120" y="6900.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-252" value="&lt;b&gt;framework/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;1 thư mục con · 18 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="850" y="6954.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-253" value="&lt;b&gt;manifests/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="1120" y="6954.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-254" value="&lt;b&gt;reports/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="850" y="7008.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-255" value="&lt;b&gt;260904-scientific-benchmark-overhaul/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 6 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="7062.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-256" value="&lt;b&gt;260921-1943-scientific-benchmark-pipeline/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;1 thư mục con · 8 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="7116.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-257" value="&lt;b&gt;reports/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="850" y="7116.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-258" value="&lt;b&gt;260925-1537-dataset-coverage-expansion/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 5 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="7170.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-259" value="&lt;b&gt;260925-2304-d2-frozen-gt-runners/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;2 thư mục con · 6 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="7224.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-260" value="&lt;b&gt;reports/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;1 thư mục con · 0 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="850" y="7224.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-261" value="&lt;b&gt;harness/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 4 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="1120" y="7224.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-262" value="&lt;b&gt;260926-0849-endpoint-gating-dag-reconciliation/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 6 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="7278.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-263" value="&lt;b&gt;260926-1416-unlock-9-downstream-tasks/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 6 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="7332.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-264" value="&lt;b&gt;260926-1651-dataset-readiness/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="7386.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-265" value="&lt;b&gt;260926-1722-one-notebook-location/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="7440.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-266" value="&lt;b&gt;260926-phase12-evidence-repair/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="7494.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-267" value="&lt;b&gt;260927-1152-rq1-dataset-notebook-readiness/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 5 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="7548.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-268" value="&lt;b&gt;260928-0909-mit001-multimodal-diagnostic/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="7602.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-269" value="&lt;b&gt;260928-0949-rq1-completion-after-ytseg-audit/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 6 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="7656.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-270" value="&lt;b&gt;260929-1659-rq1-ytseg-evaluation-protocol/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="7710.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-271" value="&lt;b&gt;261002-0946-rq2-controlled-summarization/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 16 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="7764.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-272" value="&lt;b&gt;261003-1346-asr-candidate-full-corpus-benchmark/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 5 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="7818.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-273" value="&lt;b&gt;261003-1958-asr-architecture-benchmark/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 5 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="7872.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-274" value="&lt;b&gt;reports/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 273 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="7926.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-275" value="&lt;b&gt;templates/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 4 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="7980.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-276" value="&lt;b&gt;reports/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;1 thư mục con · 13 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="310" y="8034.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-277" value="&lt;b&gt;figures/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 3 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;">
+          <mxGeometry x="580" y="8034.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-278" value="&lt;b&gt;scripts/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 2 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="310" y="8088.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-279" value="&lt;b&gt;tests/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;1 thư mục con · 56 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="310" y="8142.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-280" value="&lt;b&gt;fixtures/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 1 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="580" y="8142.0" width="230" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="folder-281" value="&lt;b&gt;visual/&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:10px'&gt;0 thư mục con · 5 tệp&lt;/font&gt;" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;">
+          <mxGeometry x="310" y="8196.0" width="230" height="38" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

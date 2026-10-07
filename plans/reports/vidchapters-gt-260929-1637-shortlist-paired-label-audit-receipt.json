@@ -1,0 +1,29 @@
+{
+  "source_file": "experiments/datasets/vidchapters_qualification/chapters.pkl",
+  "source_sha256": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+  "method": "pickletools bounded opcode interpretation at recorded byte offsets; no pickle.load or code execution",
+  "scope": "five nonoverlap MIT OCW channel prescreen candidates only",
+  "rows": [
+    {"video_id":"EH6vE97qIP4","annotation_byte_offset":1834797189,"record_end_offset":1834800049,"title":"1. Introduction for 15.S12 Blockchain and Money, Fall 2018","duration_seconds":3723.397,"chapter_count":23,"first_start_seconds":0,"last_start_seconds":3702},
+    {"video_id":"3MOahpLxj6A","annotation_byte_offset":1861352483,"record_end_offset":1861353178,"title":"5. Discrete Random Variables I","duration_seconds":3034.078,"chapter_count":5,"first_start_seconds":0,"last_start_seconds":2580},
+    {"video_id":"U_C7xW_gCfI","annotation_byte_offset":1883241073,"record_end_offset":1883243087,"title":"7. Standing Waves Part II","duration_seconds":3196.56,"chapter_count":5,"first_start_seconds":0,"last_start_seconds":1144},
+    {"video_id":"AW3a2ECNFlE","annotation_byte_offset":1898437410,"record_end_offset":1898439043,"title":"5. Measurement in Development","duration_seconds":4923.103,"chapter_count":11,"first_start_seconds":0,"last_start_seconds":4522},
+    {"video_id":"LFOsw1Vccac","annotation_byte_offset":2020932258,"record_end_offset":2020933416,"title":"1. Introduction to MIT 21L.011 The Film Experience (2007)","duration_seconds":3079.427,"chapter_count":6,"first_start_seconds":0,"last_start_seconds":2755}
+  ],
+  "all_five": {
+    "exact_opcode_video_id_occurrences": 1,
+    "chapter_pair_keys": ["label", "time"],
+    "all_chapters_are_two_field_pairs": true,
+    "nonempty_labels": true,
+    "nonnegative_starts": true,
+    "strictly_increasing_starts": true,
+    "all_starts_less_than_duration": true,
+    "gt_structure_gate": "pass",
+    "publisher_course_lecturer_identity_gate": "hold",
+    "research_rights_gate": "hold",
+    "redistribution_rights_gate": "hold",
+    "media_alignment_gate": "hold"
+  },
+  "full_pass_video_count_in_shortlist": 0,
+  "full_pass_independent_group_count_in_shortlist": 0
+}

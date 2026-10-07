@@ -1,0 +1,49 @@
+{
+  "source_lock_file": "ytseg-260929-1543-pre-media-cohort-lock.csv",
+  "source_lock_sha256": "4dedb0efacecf547f1bf2eac773a0b6ced3cea9ed1330875cf6e9b493e9f0719",
+  "manifest_sha256": "8df5d2a0fa6e0ce684acda795198aedcbe8b91914a415d146bc2d1ffe5e98d68",
+  "source_revision": "4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+  "total_locked_rows": 12,
+  "train_candidates": 10,
+  "excluded_original_nontrain": 2,
+  "full_file_media_audits": 10,
+  "technical_media_pass": 10,
+  "pilot_transcript_comparison_pairs": 450,
+  "internal_ytseg_transcript_comparison_pairs": 45,
+  "decision_counts": {
+    "hold": 10,
+    "exclude": 2
+  },
+  "strict_pass_video_count": 0,
+  "strict_pass_independent_group_count": 0,
+  "train_candidate_independent_group_count": 4,
+  "candidate_groups": {
+    "group-01": [
+      "-7xg8pGcP6w"
+    ],
+    "group-02": [
+      "-dOX_4lI6HY",
+      "3sB64Au76h0",
+      "PHtPau1c5sU",
+      "Th2N_rDfkDw",
+      "alLh1Jdqwvg",
+      "kiCNa95DnnE",
+      "ksyY5wa5_50",
+      "shHvE6yV4IM",
+      "xsO2Ip6eiaY"
+    ],
+    "group-03": [
+      "MoEaRpLNo9A"
+    ],
+    "group-04": [
+      "tCKk22kaZi4"
+    ]
+  },
+  "split_status": "not_assigned_no_pass_cohort",
+  "no_selection": true,
+  "qualification_scope_note": "all_six_locked_reserves_audited_due_explicit_user_request_without_changing_roles_or_group_count",
+  "protocol_amendment": "not_issued",
+  "d2": "not_frozen",
+  "official_rq1": "not_run",
+  "next_qualification_source": "VidChapters-7M"
+}

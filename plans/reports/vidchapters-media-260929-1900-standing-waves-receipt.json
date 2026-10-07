@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-29",
+  "status": "qualification_only_not_official_rq1",
+  "video_id": "U_C7xW_gCfI",
+  "corrected_course_id": "mit-res.8-005-fall-2012",
+  "lecturer_ids": ["wit-busza"],
+  "source_annotation": {
+    "path": "experiments/datasets/vidchapters_qualification/chapters.pkl",
+    "sha256": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+    "record_byte_offset": 1883241073,
+    "duration_seconds": 3196.56,
+    "chapter_start_seconds": [0, 33, 936, 1094, 1144]
+  },
+  "source_media": {
+    "url": "https://archive.org/download/MIT8.03SCF12/MIT8_03SCF12_ses07_300k.mp4",
+    "bytes": 124197407,
+    "sha256": "acf71e6c92fcf9ee25715908da79ba1b2bb81a710a7905522a1e47e7464a90f3",
+    "ffprobe_duration_seconds": 3196.544,
+    "annotation_duration_delta_seconds": 0.016,
+    "full_ffmpeg_decode": "pass"
+  },
+  "checks": {
+    "identity": "pass_official_res_8_005_transcript_exact_id",
+    "description_label_time_parity": "pass_5_of_5_meaning_with_punctuation_normalization",
+    "media_technical": "pass_full_decode_and_hash",
+    "frame_sampling": "four_internal_starts_before_after_5_seconds",
+    "audio_sampling": "four_internal_starts_from_minus_20_to_plus_25_seconds_cached_faster_whisper_tiny_en_diagnostic_only",
+    "semantic_gt": "hold_mismatched_label_sequence_and_boundary_meaning"
+  },
+  "semantic_observations": [
+    {"start_seconds": 33, "assessment": "first_two_string_problem_introduction_plausible"},
+    {"start_seconds": 936, "assessment": "label_claims_air_room_normal_modes_but_audio_continues_two_string_problem_normal_mode_calculation"},
+    {"start_seconds": 1094, "assessment": "label_claims_longitudinal_rods_but_audio_still_explains_first_two_string_problem; transition_to_next_problem_around_1115"},
+    {"start_seconds": 1144, "assessment": "label_claims_connected_strings_but_audio_introduces_longitudinal_waves_and_rods"}
+  ],
+  "private_diagnostics": "Local ignored media directory contains frame and short speech-window samples; do not publish media, frames, or transcript text.",
+  "decision": "hold_gt_semantic_no_d2_or_official_cohort",
+  "limitations": "Automatic speech recognition is diagnostic; human review of exact media should adjudicate the disputed labels before any future inclusion."
+}

@@ -1,0 +1,221 @@
+{
+  "3sB64Au76h0": {
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 640,
+          "height": 360,
+          "duration": "3931.861267"
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "duration": "3931.882000"
+        },
+        {
+          "index": 2,
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "duration": "3905.890000"
+        },
+        {
+          "index": 3,
+          "codec_name": "png",
+          "codec_type": "video",
+          "width": 1400,
+          "height": 1400,
+          "duration": "3931.882000"
+        },
+        {
+          "index": 4,
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "width": 640,
+          "height": 360,
+          "duration": "3931.882000"
+        }
+      ],
+      "format": {
+        "duration": "3931.882000",
+        "size": "155177690"
+      }
+    },
+    "full_av_decode": {
+      "exit_code": 0,
+      "stderr_tail": "[mov,mp4,m4a,3gp,3g2,mj2 @ 00000298fea96dc0] stream 0, timescale not set\n"
+    },
+    "pts": {
+      "video": {
+        "frames": 117838,
+        "first_s": 0.0,
+        "last_s": 3931.8279,
+        "negative_steps": 0,
+        "ffprobe_exit_code": 0,
+        "stderr_tail": ""
+      },
+      "audio": {
+        "frames": 184307,
+        "first_s": 0.0,
+        "last_s": 3931.86,
+        "negative_steps": 0,
+        "ffprobe_exit_code": 0,
+        "stderr_tail": ""
+      }
+    },
+    "elapsed_s": 70.85
+  },
+  "Th2N_rDfkDw": {
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 640,
+          "height": 360,
+          "duration": "2514.879033"
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "duration": "2514.900000"
+        },
+        {
+          "index": 2,
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "duration": "2490.350000"
+        },
+        {
+          "index": 3,
+          "codec_name": "png",
+          "codec_type": "video",
+          "width": 1400,
+          "height": 1400,
+          "duration": "2514.900000"
+        },
+        {
+          "index": 4,
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "width": 640,
+          "height": 360,
+          "duration": "2514.900000"
+        }
+      ],
+      "format": {
+        "duration": "2514.900000",
+        "size": "99442554"
+      }
+    },
+    "full_av_decode": {
+      "exit_code": 0,
+      "stderr_tail": "[mov,mp4,m4a,3gp,3g2,mj2 @ 00000227a76c6dc0] stream 0, timescale not set\n"
+    },
+    "pts": {
+      "video": {
+        "frames": 75371,
+        "first_s": 0.0,
+        "last_s": 2514.845667,
+        "negative_steps": 0,
+        "ffprobe_exit_code": 0,
+        "stderr_tail": ""
+      },
+      "audio": {
+        "frames": 117886,
+        "first_s": 0.0,
+        "last_s": 2514.878667,
+        "negative_steps": 0,
+        "ffprobe_exit_code": 0,
+        "stderr_tail": ""
+      }
+    },
+    "elapsed_s": 41.2
+  },
+  "alLh1Jdqwvg": {
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 640,
+          "height": 360,
+          "duration": "2172.803967"
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "duration": "2172.842000"
+        },
+        {
+          "index": 2,
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "duration": "2152.860000"
+        },
+        {
+          "index": 3,
+          "codec_name": "png",
+          "codec_type": "video",
+          "width": 1400,
+          "height": 1400,
+          "duration": "2172.842000"
+        },
+        {
+          "index": 4,
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "width": 640,
+          "height": 360,
+          "duration": "2172.842000"
+        }
+      ],
+      "format": {
+        "duration": "2172.842000",
+        "size": "86983502"
+      }
+    },
+    "full_av_decode": {
+      "exit_code": 0,
+      "stderr_tail": "[mov,mp4,m4a,3gp,3g2,mj2 @ 000001f077fc6dc0] stream 0, timescale not set\n"
+    },
+    "pts": {
+      "video": {
+        "frames": 65119,
+        "first_s": 0.0,
+        "last_s": 2172.7706,
+        "negative_steps": 0,
+        "ffprobe_exit_code": 0,
+        "stderr_tail": ""
+      },
+      "audio": {
+        "frames": 101852,
+        "first_s": 0.0,
+        "last_s": 2172.82,
+        "negative_steps": 0,
+        "ffprobe_exit_code": 0,
+        "stderr_tail": ""
+      }
+    },
+    "elapsed_s": 39.35
+  }
+}

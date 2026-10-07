@@ -1,0 +1,122 @@
+{
+  "xsO2Ip6eiaY": {
+    "decoded_frame_pts": {
+      "video": {
+        "frames": 44189,
+        "first_s": 0.0,
+        "last_s": 1474.406267,
+        "negative_steps": 0,
+        "exit_code": 0
+      },
+      "audio": {
+        "frames": 69116,
+        "first_s": 0.0,
+        "last_s": 1474.452,
+        "negative_steps": 0,
+        "exit_code": 0
+      }
+    },
+    "subtitle_extract_exit_code": 0,
+    "subtitle_cues": 523,
+    "fixed_checks": [
+      {
+        "fraction": 0.1,
+        "time_s": 147.4474,
+        "subtitle_cue_start_s": 147.77,
+        "subtitle_text": "bought 15 or 20 years ago for Fish and Wildlife patrol"
+      },
+      {
+        "fraction": 0.5,
+        "time_s": 737.237,
+        "subtitle_cue_start_s": 736.96,
+        "subtitle_text": "So if it gets water on it, it'll be eroded."
+      },
+      {
+        "fraction": 0.9,
+        "time_s": 1327.0266,
+        "subtitle_cue_start_s": 1328.24,
+        "subtitle_text": "at an economical price."
+      }
+    ]
+  },
+  "ksyY5wa5_50": {
+    "decoded_frame_pts": {
+      "video": {
+        "frames": 51016,
+        "first_s": 0.0,
+        "last_s": 1702.2005,
+        "negative_steps": 0,
+        "exit_code": 0
+      },
+      "audio": {
+        "frames": 79794,
+        "first_s": 0.0,
+        "last_s": 1702.249333,
+        "negative_steps": 0,
+        "exit_code": 0
+      }
+    },
+    "subtitle_extract_exit_code": 0,
+    "subtitle_cues": 590,
+    "fixed_checks": [
+      {
+        "fraction": 0.1,
+        "time_s": 170.2271,
+        "subtitle_cue_start_s": 170.93,
+        "subtitle_text": "Can anybody immediately see what one problem might be?"
+      },
+      {
+        "fraction": 0.5,
+        "time_s": 851.1355,
+        "subtitle_cue_start_s": 850.06,
+        "subtitle_text": "jets with one pilot."
+      },
+      {
+        "fraction": 0.9,
+        "time_s": 1532.0439,
+        "subtitle_cue_start_s": 1532.05,
+        "subtitle_text": "On the left is the ramp at Teterboro."
+      }
+    ]
+  },
+  "kiCNa95DnnE": {
+    "decoded_frame_pts": {
+      "video": {
+        "frames": 38731,
+        "first_s": 0.0,
+        "last_s": 1292.291,
+        "negative_steps": 0,
+        "exit_code": 0
+      },
+      "audio": {
+        "frames": 60579,
+        "first_s": 0.0,
+        "last_s": 1292.329333,
+        "negative_steps": 0,
+        "exit_code": 0
+      }
+    },
+    "subtitle_extract_exit_code": 0,
+    "subtitle_cues": 437,
+    "fixed_checks": [
+      {
+        "fraction": 0.1,
+        "time_s": 129.23510000000002,
+        "subtitle_cue_start_s": 129.729,
+        "subtitle_text": "I think it's more to enable people to say, take off and do"
+      },
+      {
+        "fraction": 0.5,
+        "time_s": 646.1755,
+        "subtitle_cue_start_s": 646.38,
+        "subtitle_text": "Remember L/D MAX for best glide speed."
+      },
+      {
+        "fraction": 0.9,
+        "time_s": 1163.1159000000002,
+        "subtitle_cue_start_s": 1162.2,
+        "subtitle_text": "not in one of their own PDFs."
+      }
+    ]
+  }
+}

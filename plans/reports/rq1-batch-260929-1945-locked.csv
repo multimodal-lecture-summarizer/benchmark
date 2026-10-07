@@ -1,0 +1,5 @@
+order,video_id,course_key,lecturer_hint,source,selection_reason,status
+1,EuNXVy5-KgA,MIT-16.687-IAP2019,Philip Greenspun;Tina Srivastava,VidChapters train,exact MIT resource ID and paired description; new course relative to qualified four,locked_for_source_qualification
+2,js34ZxECiCA,MIT-22.033-Fall2011,Michael Short,VidChapters train,paired description and matching MIT lecture title; exact ID pending,locked_for_source_qualification
+3,qdbkvD4N-us,MIT-18.S096-Fall2013,Choongbum Lee,VidChapters train,new course and lecturer; publisher resource known,locked_for_source_qualification
+4,09vU-wVwW3U,MIT-6.046J-Spring2015,Ling Ren,VidChapters train,new course and lecturer; official transcript names ID,locked_for_source_qualification

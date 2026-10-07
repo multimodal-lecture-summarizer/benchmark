@@ -1,0 +1,50 @@
+{
+  "date_local": "2026-09-29",
+  "purpose": "VidChapters selected-ID qualification; no model selection or official RQ1",
+  "annotation_source_sha256": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+  "media_source": "publisher-linked MIT OpenCourseWare Archive MP4, exact YouTube ID embedded on resource page",
+  "media_private_location": "experiments/datasets/vidchapters_qualification/media/ (ignored, do not publish)",
+  "method": "SHA-256 on complete downloaded file; ffprobe format duration; ffmpeg full-file decode; all internal starts sampled at -5/+5 s video and -20/+25 s audio; local cached faster-whisper tiny.en for diagnostic speech cues only",
+  "rows": [
+    {
+      "video_id": "3MOahpLxj6A",
+      "publisher_resource": "https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/resources/lecture-5-discrete-variables-probability-expectations/",
+      "media_url": "https://archive.org/download/MIT6.041F10/MIT6_041F11_lec05_300k.mp4",
+      "media_sha256": "bc9950a4f52e90bdf079ede1a3f17e8d8aeb40c7f4cdda4830e3f66a9eaf6be9",
+      "media_bytes": 116662046,
+      "annotation_duration_sec": 3034.078,
+      "ffprobe_duration_sec": 3034.21,
+      "absolute_duration_difference_sec": 0.132,
+      "full_decode_exit_code": 0,
+      "internal_starts_checked_sec": [54, 156, 1493, 2580],
+      "video_window_decode_count": 8,
+      "audio_window_asr_count": 4,
+      "media_technical_gate": "pass",
+      "semantic_gt_gate": "hold_review_start_1493",
+      "reason": "the uploader Expectation marker is 1493 s, while sampled speech explicitly introduces the new concept around 1509 s; determine whether 1493 marks the transition start or a material label offset before accepting this source GT",
+      "full_qualification": "hold_gt_semantic"
+    },
+    {
+      "video_id": "AW3a2ECNFlE",
+      "publisher_resource": "https://ocw.mit.edu/courses/14-772-development-economics-macroeconomics-spring-2013/resources/lecture-5-february-21-2013/",
+      "media_url": "https://archive.org/download/MIT14.772S13/MIT14_772S13_lec05_300k.mp4",
+      "media_sha256": "b3d4dbb35935cef4c16d573d11cdd2d9eb62b16d8ed15cd9277a50093148eb20",
+      "media_bytes": 273048607,
+      "annotation_duration_sec": 4923.103,
+      "ffprobe_duration_sec": 4923.058792,
+      "absolute_duration_difference_sec": 0.044208,
+      "full_decode_exit_code": 0,
+      "internal_starts_checked_sec": [26, 302, 802, 1111, 2175, 3010, 3490, 3790, 4050, 4522],
+      "video_window_decode_count": 20,
+      "audio_window_asr_count": 10,
+      "media_technical_gate": "pass",
+      "semantic_gt_gate": "pass_all_published_internal_starts_spotchecked",
+      "full_qualification": "pass_gt_media_scoped_research_right_pending_history_split"
+    }
+  ],
+  "limitations": [
+    "tiny.en speech is diagnostic and may misrecognize words; visual/audio review is a local boundary spot-check, not a new independently authored annotation",
+    "duration differences are recorded, not rescaled; exact allowable tolerance must be frozen before D2",
+    "publication of media, source frames, audio clips, and transcripts is outside this receipt"
+  ]
+}

@@ -1,0 +1,810 @@
+{
+  "registry": [
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "source": "Curated YTSeg, VidChapters and Open Yale publisher chapter sources; see per-unit source bundle",
+      "revision": "source-bundle-sha256:996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+      "rights": "Per-unit scoped internal noncommercial research decisions bound in source bundle",
+      "access_status": "available",
+      "expected_bytes": 5001861970,
+      "predicted_peak_bytes": 0,
+      "acquisition_level": "D2",
+      "fallback_dataset": null,
+      "data_root_key": "multimodal-lecture-summarizer/experiments/datasets",
+      "receipt_path": "plans/reports/rq1-d2-source-bundle-260930-twenty-units.json",
+      "leakage_exception": null
+    }
+  ],
+  "feasibility_receipts": [
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "acquisition_level": "D2",
+      "schema_success_rate": 1.0,
+      "checksum_success_rate": 1.0,
+      "download_success_rate": 1.0,
+      "decode_success_rate": 1.0,
+      "predicted_peak_bytes": 0,
+      "estimated_completion_hours": 0.0
+    }
+  ],
+  "units": [
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "unit_id": "-7xg8pGcP6w",
+      "course_id": "harvard-cs50p-2022",
+      "speaker_id": "david-j-malan",
+      "talk_id": "-7xg8pGcP6w",
+      "lecture_id": "-7xg8pGcP6w",
+      "split": "train",
+      "source": "https://huggingface.co/datasets/retkowski/ytseg",
+      "revision": "source-bundle-sha256:996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+      "rights": "Per-unit scoped internal noncommercial research decisions bound in source bundle",
+      "bytes": 963059289,
+      "sha256": "a58685b0ad2424ae6bc995521c7c5cb22b652d42fe964a0448e14c137e2ce719",
+      "decoded": true,
+      "ground_truth": {
+        "status": "released",
+        "source": "https://huggingface.co/datasets/retkowski/ytseg",
+        "revision": "4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+        "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+      },
+      "duration_sec": 4847.0,
+      "chapter_boundaries_sec": [
+        24.0,
+        50.0,
+        204.0,
+        981.0,
+        1620.0,
+        2099.0,
+        2436.0,
+        2747.0,
+        3422.0,
+        3902.0,
+        4817.0
+      ],
+      "chapter_gt": {
+        "source": "https://huggingface.co/datasets/retkowski/ytseg",
+        "revision": "4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+        "annotation_origin": "creator_chapters",
+        "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+      }
+    },
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "unit_id": "tCKk22kaZi4",
+      "course_id": "mit-14.01-fall-2018",
+      "speaker_id": "jonathan-gruber",
+      "talk_id": "tCKk22kaZi4",
+      "lecture_id": "tCKk22kaZi4",
+      "split": "validation",
+      "source": "https://huggingface.co/datasets/retkowski/ytseg",
+      "revision": "source-bundle-sha256:996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+      "rights": "Per-unit scoped internal noncommercial research decisions bound in source bundle",
+      "bytes": 98407054,
+      "sha256": "fcd4a38165cd2abf4eb244faa2f67d00da2fefd3d7418935812f705c2a88737d",
+      "decoded": true,
+      "ground_truth": {
+        "status": "released",
+        "source": "https://huggingface.co/datasets/retkowski/ytseg",
+        "revision": "4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+        "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+      },
+      "duration_sec": 2483.0,
+      "chapter_boundaries_sec": [
+        11.0,
+        73.0,
+        354.0,
+        563.0,
+        807.0,
+        928.0,
+        1111.0,
+        1489.0,
+        1813.0,
+        1957.0,
+        2071.0
+      ],
+      "chapter_gt": {
+        "source": "https://huggingface.co/datasets/retkowski/ytseg",
+        "revision": "4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+        "annotation_origin": "creator_chapters",
+        "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+      }
+    },
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "unit_id": "AW3a2ECNFlE",
+      "course_id": "mit-14.772-spring-2013",
+      "speaker_id": "robert-m-townsend",
+      "talk_id": "AW3a2ECNFlE",
+      "lecture_id": "AW3a2ECNFlE",
+      "split": "final_test",
+      "source": "https://github.com/antoyang/VidChapters",
+      "revision": "source-bundle-sha256:996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+      "rights": "Per-unit scoped internal noncommercial research decisions bound in source bundle",
+      "bytes": 273048607,
+      "sha256": "b3d4dbb35935cef4c16d573d11cdd2d9eb62b16d8ed15cd9277a50093148eb20",
+      "decoded": true,
+      "ground_truth": {
+        "status": "released",
+        "source": "https://github.com/antoyang/VidChapters",
+        "revision": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+        "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+      },
+      "duration_sec": 4923.058792,
+      "chapter_boundaries_sec": [
+        26,
+        302,
+        802,
+        1111,
+        2175,
+        3010,
+        3490,
+        3790,
+        4050,
+        4522
+      ],
+      "chapter_gt": {
+        "source": "https://github.com/antoyang/VidChapters",
+        "revision": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+        "annotation_origin": "creator_chapters",
+        "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+      }
+    },
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "unit_id": "oo1ZZlvT2LQ",
+      "course_id": "mit-res.18-005-spring-2010",
+      "speaker_id": "gilbert-strang",
+      "talk_id": "oo1ZZlvT2LQ",
+      "lecture_id": "oo1ZZlvT2LQ",
+      "split": "train",
+      "source": "https://github.com/antoyang/VidChapters",
+      "revision": "source-bundle-sha256:996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+      "rights": "Per-unit scoped internal noncommercial research decisions bound in source bundle",
+      "bytes": 90193596,
+      "sha256": "e704ccc54429e5d09050501e87277ec0755888cb763057375b5ea380e881f2ed",
+      "decoded": true,
+      "ground_truth": {
+        "status": "released",
+        "source": "https://github.com/antoyang/VidChapters",
+        "revision": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+        "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+      },
+      "duration_sec": 2333.791202,
+      "chapter_boundaries_sec": [
+        24,
+        75,
+        1640,
+        1800
+      ],
+      "chapter_gt": {
+        "source": "https://github.com/antoyang/VidChapters",
+        "revision": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+        "annotation_origin": "creator_chapters",
+        "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+      }
+    },
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "unit_id": "EuNXVy5-KgA",
+      "course_id": "mit-16.687-iap-2019",
+      "speaker_id": "philip-greenspun;tina-srivastava",
+      "talk_id": "EuNXVy5-KgA",
+      "lecture_id": "EuNXVy5-KgA",
+      "split": "train",
+      "source": "https://github.com/antoyang/VidChapters",
+      "revision": "source-bundle-sha256:996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+      "rights": "Per-unit scoped internal noncommercial research decisions bound in source bundle",
+      "bytes": 78229335,
+      "sha256": "a369b3aaf61b242e5eb95b31c99073c7c5f9fce8d2c49a9a29d04557a1fb187c",
+      "decoded": true,
+      "ground_truth": {
+        "status": "released",
+        "source": "https://github.com/antoyang/VidChapters",
+        "revision": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+        "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+      },
+      "duration_sec": 1941.802,
+      "chapter_boundaries_sec": [
+        12,
+        159,
+        235,
+        324,
+        405,
+        590,
+        684,
+        755,
+        802,
+        878,
+        977,
+        1134,
+        1688
+      ],
+      "chapter_gt": {
+        "source": "https://github.com/antoyang/VidChapters",
+        "revision": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+        "annotation_origin": "creator_chapters",
+        "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+      }
+    },
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "unit_id": "09vU-wVwW3U",
+      "course_id": "mit-6.046j-spring-2015",
+      "speaker_id": "ling-ren",
+      "talk_id": "09vU-wVwW3U",
+      "lecture_id": "09vU-wVwW3U",
+      "split": "final_test",
+      "source": "https://github.com/antoyang/VidChapters",
+      "revision": "source-bundle-sha256:996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+      "rights": "Per-unit scoped internal noncommercial research decisions bound in source bundle",
+      "bytes": 127320647,
+      "sha256": "a254e643a715065291dfd693d1b958989ca3856ad83477cfcf728b5755835ee3",
+      "decoded": true,
+      "ground_truth": {
+        "status": "released",
+        "source": "https://github.com/antoyang/VidChapters",
+        "revision": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+        "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+      },
+      "duration_sec": 3225.664,
+      "chapter_boundaries_sec": [
+        20,
+        136,
+        1360,
+        1993
+      ],
+      "chapter_gt": {
+        "source": "https://github.com/antoyang/VidChapters",
+        "revision": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+        "annotation_origin": "creator_chapters",
+        "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+      }
+    },
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "unit_id": "zsb6B8HrNVA",
+      "course_id": "yale-beng-100",
+      "speaker_id": "w-mark-saltzman",
+      "talk_id": "zsb6B8HrNVA",
+      "lecture_id": "zsb6B8HrNVA",
+      "split": "train",
+      "source": "https://oyc.yale.edu/biomedical-engineering/beng-100/lecture-21",
+      "revision": "source-bundle-sha256:996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+      "rights": "Per-unit scoped internal noncommercial research decisions bound in source bundle",
+      "bytes": 169243350,
+      "sha256": "7e345dec14d01746ff3d1fd119c598f8f1ea701aadd08884a58132359c53abca",
+      "decoded": true,
+      "ground_truth": {
+        "status": "released",
+        "source": "https://oyc.yale.edu/biomedical-engineering/beng-100/lecture-21",
+        "revision": "fcef38c83f8df20e0223361875cce57bc15c7d32eb544a98aa21f08acbce76b9",
+        "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+      },
+      "duration_sec": 3238.27161,
+      "chapter_boundaries_sec": [
+        304,
+        1513,
+        1893,
+        2662,
+        2996
+      ],
+      "chapter_gt": {
+        "source": "https://oyc.yale.edu/biomedical-engineering/beng-100/lecture-21",
+        "revision": "fcef38c83f8df20e0223361875cce57bc15c7d32eb544a98aa21f08acbce76b9",
+        "annotation_origin": "publisher_timed_toc",
+        "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+      }
+    },
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "unit_id": "-W4kU1YFSck",
+      "course_id": "yale-hist-116",
+      "speaker_id": "joanne-freeman",
+      "talk_id": "-W4kU1YFSck",
+      "lecture_id": "-W4kU1YFSck",
+      "split": "train",
+      "source": "https://oyc.yale.edu/history/hist-116/lecture-4",
+      "revision": "source-bundle-sha256:996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+      "rights": "Per-unit scoped internal noncommercial research decisions bound in source bundle",
+      "bytes": 221331551,
+      "sha256": "1f57f817d489fa6fa9b3394753242b139a5490e20c18c0f1691fcc278aeec3c0",
+      "decoded": true,
+      "ground_truth": {
+        "status": "released",
+        "source": "https://oyc.yale.edu/history/hist-116/lecture-4",
+        "revision": "064887f0913bf02b6787200dc12ca53377c4375ca9f79cda66e15399a5472d6a",
+        "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+      },
+      "duration_sec": 2498.832165,
+      "chapter_boundaries_sec": [
+        172,
+        704,
+        1438,
+        1843,
+        2190
+      ],
+      "chapter_gt": {
+        "source": "https://oyc.yale.edu/history/hist-116/lecture-4",
+        "revision": "064887f0913bf02b6787200dc12ca53377c4375ca9f79cda66e15399a5472d6a",
+        "annotation_origin": "publisher_timed_toc",
+        "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+      }
+    },
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "unit_id": "f_55cmhHq3g",
+      "course_id": "yale-phil-176",
+      "speaker_id": "shelly-kagan",
+      "talk_id": "f_55cmhHq3g",
+      "lecture_id": "f_55cmhHq3g",
+      "split": "validation",
+      "source": "https://oyc.yale.edu/death/phil-176/lecture-20",
+      "revision": "source-bundle-sha256:996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+      "rights": "Per-unit scoped internal noncommercial research decisions bound in source bundle",
+      "bytes": 266845285,
+      "sha256": "e4946787d3140f084dba26910e338e088445acb62edafa7cc7fcf9395033e7e3",
+      "decoded": true,
+      "ground_truth": {
+        "status": "released",
+        "source": "https://oyc.yale.edu/death/phil-176/lecture-20",
+        "revision": "d369e09bb49562515eece6232078f9e1718e6d33dadc48c824ccea6b61d5425e",
+        "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+      },
+      "duration_sec": 3039.239239,
+      "chapter_boundaries_sec": [
+        357,
+        1025,
+        1616,
+        2116,
+        2639
+      ],
+      "chapter_gt": {
+        "source": "https://oyc.yale.edu/death/phil-176/lecture-20",
+        "revision": "d369e09bb49562515eece6232078f9e1718e6d33dadc48c824ccea6b61d5425e",
+        "annotation_origin": "publisher_timed_toc",
+        "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+      }
+    },
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "unit_id": "e3uBi2TZdUY",
+      "course_id": "yale-hist-251",
+      "speaker_id": "keith-e-wrightson",
+      "talk_id": "e3uBi2TZdUY",
+      "lecture_id": "e3uBi2TZdUY",
+      "split": "final_test",
+      "source": "https://oyc.yale.edu/history/hist-251/lecture-1",
+      "revision": "source-bundle-sha256:996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+      "rights": "Per-unit scoped internal noncommercial research decisions bound in source bundle",
+      "bytes": 193644466,
+      "sha256": "6047db7f473d9179676ccba04a1fc52da551e50fef067d1f7d234bac2eebe470",
+      "decoded": true,
+      "ground_truth": {
+        "status": "released",
+        "source": "https://oyc.yale.edu/history/hist-251/lecture-1",
+        "revision": "98f6d2c8b1d0ed023c1a9de769545984c45894b23e14c1a1be507880b41f3412",
+        "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+      },
+      "duration_sec": 2168.802135,
+      "chapter_boundaries_sec": [
+        443,
+        1189,
+        1717
+      ],
+      "chapter_gt": {
+        "source": "https://oyc.yale.edu/history/hist-251/lecture-1",
+        "revision": "98f6d2c8b1d0ed023c1a9de769545984c45894b23e14c1a1be507880b41f3412",
+        "annotation_origin": "publisher_timed_toc",
+        "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+      }
+    },
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "unit_id": "LZkoBeI6gVM",
+      "course_id": "yale-span-300",
+      "speaker_id": "roberto-gonzalez-echevarria",
+      "talk_id": "LZkoBeI6gVM",
+      "lecture_id": "LZkoBeI6gVM",
+      "split": "train",
+      "source": "https://oyc.yale.edu/spanish-and-portuguese/span-300/lecture-2",
+      "revision": "source-bundle-sha256:996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+      "rights": "Per-unit scoped internal noncommercial research decisions bound in source bundle",
+      "bytes": 305378193,
+      "sha256": "eb8e05f3288ab51da4a03eeff53c52bf4e9e4bc1b8ec14c34f3e9b7e68192345",
+      "decoded": true,
+      "ground_truth": {
+        "status": "released",
+        "source": "https://oyc.yale.edu/spanish-and-portuguese/span-300/lecture-2",
+        "revision": "b4fe5a0a9d4f3ef25d9d87d2031f48e9b61cb5c324ecbf23059111feb78b5abc",
+        "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+      },
+      "duration_sec": 3433.5669,
+      "chapter_boundaries_sec": [
+        550,
+        949,
+        1358,
+        2547
+      ],
+      "chapter_gt": {
+        "source": "https://oyc.yale.edu/spanish-and-portuguese/span-300/lecture-2",
+        "revision": "b4fe5a0a9d4f3ef25d9d87d2031f48e9b61cb5c324ecbf23059111feb78b5abc",
+        "annotation_origin": "publisher_timed_toc",
+        "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+      }
+    },
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "unit_id": "Y3S1uqgGfB4",
+      "course_id": "yale-plsc-114",
+      "speaker_id": "steven-b-smith",
+      "talk_id": "Y3S1uqgGfB4",
+      "lecture_id": "Y3S1uqgGfB4",
+      "split": "final_test",
+      "source": "https://oyc.yale.edu/political-science/plsc-114/lecture-12",
+      "revision": "source-bundle-sha256:996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+      "rights": "Per-unit scoped internal noncommercial research decisions bound in source bundle",
+      "bytes": 171734759,
+      "sha256": "47446f616e94b6b373b4f7a17af36b3050c16034e09ebe66b206dc4191e9ad82",
+      "decoded": true,
+      "ground_truth": {
+        "status": "released",
+        "source": "https://oyc.yale.edu/political-science/plsc-114/lecture-12",
+        "revision": "1febcc2a9d8ce7c4e97289c96bfb4af81a536ee832f55de46a5b8b690bf22daf",
+        "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+      },
+      "duration_sec": 2728.628639,
+      "chapter_boundaries_sec": [
+        448,
+        852,
+        1526,
+        2035,
+        2432
+      ],
+      "chapter_gt": {
+        "source": "https://oyc.yale.edu/political-science/plsc-114/lecture-12",
+        "revision": "1febcc2a9d8ce7c4e97289c96bfb4af81a536ee832f55de46a5b8b690bf22daf",
+        "annotation_origin": "publisher_timed_toc",
+        "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+      }
+    },
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "unit_id": "qQ3kFydI_xQ",
+      "course_id": "yale-econ-159",
+      "speaker_id": "ben-polak",
+      "talk_id": "qQ3kFydI_xQ",
+      "lecture_id": "qQ3kFydI_xQ",
+      "split": "final_test",
+      "source": "https://oyc.yale.edu/economics/econ-159/lecture-2",
+      "revision": "source-bundle-sha256:996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+      "rights": "Per-unit scoped internal noncommercial research decisions bound in source bundle",
+      "bytes": 601595188,
+      "sha256": "a25dbe7b4de66f7978c6c503da1b20548d301c116a9d4b9fd6224d7889113edf",
+      "decoded": true,
+      "ground_truth": {
+        "status": "released",
+        "source": "https://oyc.yale.edu/economics/econ-159/lecture-2",
+        "revision": "0790cd8ca798f30016340bf8b0665ee58dfbf50cca09b8c8c2892e2ca923a2d1",
+        "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+      },
+      "duration_sec": 4129.0,
+      "chapter_boundaries_sec": [
+        407,
+        961,
+        2129,
+        3937
+      ],
+      "chapter_gt": {
+        "source": "https://oyc.yale.edu/economics/econ-159/lecture-2",
+        "revision": "0790cd8ca798f30016340bf8b0665ee58dfbf50cca09b8c8c2892e2ca923a2d1",
+        "annotation_origin": "publisher_timed_toc",
+        "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+      }
+    },
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "unit_id": "9FrHGAd_yto",
+      "course_id": "yale-clcv-205",
+      "speaker_id": "donald-kagan",
+      "talk_id": "9FrHGAd_yto",
+      "lecture_id": "9FrHGAd_yto",
+      "split": "final_test",
+      "source": "https://oyc.yale.edu/classics/clcv-205/lecture-1",
+      "revision": "source-bundle-sha256:996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+      "rights": "Per-unit scoped internal noncommercial research decisions bound in source bundle",
+      "bytes": 102875509,
+      "sha256": "303ec813a20efc63e9659270379cb4c96b48605dd9cb0fd541a3e8ec18da88a5",
+      "decoded": true,
+      "ground_truth": {
+        "status": "released",
+        "source": "https://oyc.yale.edu/classics/clcv-205/lecture-1",
+        "revision": "7dc2d8614324e1adfa00f9bb219dc979724b8600f7d710cdb9692eb79abcd4ae",
+        "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+      },
+      "duration_sec": 1982.51585,
+      "chapter_boundaries_sec": [
+        786,
+        1490
+      ],
+      "chapter_gt": {
+        "source": "https://oyc.yale.edu/classics/clcv-205/lecture-1",
+        "revision": "7dc2d8614324e1adfa00f9bb219dc979724b8600f7d710cdb9692eb79abcd4ae",
+        "annotation_origin": "publisher_timed_toc",
+        "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+      }
+    },
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "unit_id": "VX4eYYmvQ78",
+      "course_id": "yale-econ-251",
+      "speaker_id": "john-geanakoplos",
+      "talk_id": "VX4eYYmvQ78",
+      "lecture_id": "VX4eYYmvQ78",
+      "split": "validation",
+      "source": "https://oyc.yale.edu/economics/econ-251/lecture-2",
+      "revision": "source-bundle-sha256:996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+      "rights": "Per-unit scoped internal noncommercial research decisions bound in source bundle",
+      "bytes": 360388928,
+      "sha256": "5dd470296f18a7c4279b27dd0c3c43c10db04931e283ebb5c5fb8fea2d6f360b",
+      "decoded": true,
+      "ground_truth": {
+        "status": "released",
+        "source": "https://oyc.yale.edu/economics/econ-251/lecture-2",
+        "revision": "6037265da7eec969ba32184bfceb891f633a72d58f76a31e565d3ab6371cfdaf",
+        "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+      },
+      "duration_sec": 4336.536537,
+      "chapter_boundaries_sec": [
+        424,
+        810,
+        1481,
+        2279,
+        2720
+      ],
+      "chapter_gt": {
+        "source": "https://oyc.yale.edu/economics/econ-251/lecture-2",
+        "revision": "6037265da7eec969ba32184bfceb891f633a72d58f76a31e565d3ab6371cfdaf",
+        "annotation_origin": "publisher_timed_toc",
+        "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+      }
+    },
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "unit_id": "WMkD8HKJQCM",
+      "course_id": "yale-econ-252-2008",
+      "speaker_id": "robert-j-shiller",
+      "talk_id": "WMkD8HKJQCM",
+      "lecture_id": "WMkD8HKJQCM",
+      "split": "final_test",
+      "source": "https://oyc.yale.edu/economics/econ-252-08/lecture-2",
+      "revision": "source-bundle-sha256:996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+      "rights": "Per-unit scoped internal noncommercial research decisions bound in source bundle",
+      "bytes": 215328958,
+      "sha256": "84d52f1532b570963c2e582a29ae772fcd3faf71d277721fe536ccb0405ba66b",
+      "decoded": true,
+      "ground_truth": {
+        "status": "released",
+        "source": "https://oyc.yale.edu/economics/econ-252-08/lecture-2",
+        "revision": "8838e0bf971460dcb01a889ea898584ea18bf106995dc7fc16530f5194171136",
+        "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+      },
+      "duration_sec": 4147.380714,
+      "chapter_boundaries_sec": [
+        601,
+        938,
+        1992,
+        3039,
+        3826
+      ],
+      "chapter_gt": {
+        "source": "https://oyc.yale.edu/economics/econ-252-08/lecture-2",
+        "revision": "8838e0bf971460dcb01a889ea898584ea18bf106995dc7fc16530f5194171136",
+        "annotation_origin": "publisher_timed_toc",
+        "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+      }
+    },
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "unit_id": "2B9b9mUPJik",
+      "course_id": "yale-hist-210",
+      "speaker_id": "paul-freedman",
+      "talk_id": "2B9b9mUPJik",
+      "lecture_id": "2B9b9mUPJik",
+      "split": "train",
+      "source": "https://oyc.yale.edu/history/hist-210/lecture-2",
+      "revision": "source-bundle-sha256:996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+      "rights": "Per-unit scoped internal noncommercial research decisions bound in source bundle",
+      "bytes": 108294307,
+      "sha256": "4296bedcfc013d654e23734db08aca6d72d99d5b42cce09aa64e5c1142b2213b",
+      "decoded": true,
+      "ground_truth": {
+        "status": "released",
+        "source": "https://oyc.yale.edu/history/hist-210/lecture-2",
+        "revision": "0a54f438f31bc94a686b9bbb4ed476bcb4087efed321f8e39ba1ce152d0161cd",
+        "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+      },
+      "duration_sec": 2916.8,
+      "chapter_boundaries_sec": [
+        64,
+        579,
+        1025,
+        1337,
+        1537
+      ],
+      "chapter_gt": {
+        "source": "https://oyc.yale.edu/history/hist-210/lecture-2",
+        "revision": "0a54f438f31bc94a686b9bbb4ed476bcb4087efed321f8e39ba1ce152d0161cd",
+        "annotation_origin": "publisher_timed_toc",
+        "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+      }
+    },
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "unit_id": "679FGDpZBew",
+      "course_id": "yale-ital-310",
+      "speaker_id": "giuseppe-mazzotta",
+      "talk_id": "679FGDpZBew",
+      "lecture_id": "679FGDpZBew",
+      "split": "train",
+      "source": "https://oyc.yale.edu/italian-language-and-literature/ital-310/lecture-1",
+      "revision": "source-bundle-sha256:996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+      "rights": "Per-unit scoped internal noncommercial research decisions bound in source bundle",
+      "bytes": 103006442,
+      "sha256": "9911c3c7a370129f795de54bd06258b5eead33fe31e30351ef0f44836db7bd52",
+      "decoded": true,
+      "ground_truth": {
+        "status": "released",
+        "source": "https://oyc.yale.edu/italian-language-and-literature/ital-310/lecture-1",
+        "revision": "793345afb3fadebad947469183dd4efcc3e297cca1c9ba06bab5a233c53cb126",
+        "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+      },
+      "duration_sec": 1125.156823,
+      "chapter_boundaries_sec": [
+        448,
+        1036
+      ],
+      "chapter_gt": {
+        "source": "https://oyc.yale.edu/italian-language-and-literature/ital-310/lecture-1",
+        "revision": "793345afb3fadebad947469183dd4efcc3e297cca1c9ba06bab5a233c53cb126",
+        "annotation_origin": "publisher_timed_toc",
+        "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+      }
+    },
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "unit_id": "Hy7ou5R_vjE",
+      "course_id": "yale-phys-200",
+      "speaker_id": "ramamurti-shankar",
+      "talk_id": "Hy7ou5R_vjE",
+      "lecture_id": "Hy7ou5R_vjE",
+      "split": "validation",
+      "source": "https://oyc.yale.edu/physics/phys-200/lecture-2",
+      "revision": "source-bundle-sha256:996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+      "rights": "Per-unit scoped internal noncommercial research decisions bound in source bundle",
+      "bytes": 335095827,
+      "sha256": "b02e27d481ac37925b3ea1868519dcd6234faf92f94c49d1dfe893cf2779925a",
+      "decoded": true,
+      "ground_truth": {
+        "status": "released",
+        "source": "https://oyc.yale.edu/physics/phys-200/lecture-2",
+        "revision": "7d97eb652161915a7ece863d413b581a53158f8e7c27492f8e613308a0324415",
+        "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+      },
+      "duration_sec": 4008.375042,
+      "chapter_boundaries_sec": [
+        285,
+        1377,
+        2300,
+        2620,
+        3240
+      ],
+      "chapter_gt": {
+        "source": "https://oyc.yale.edu/physics/phys-200/lecture-2",
+        "revision": "7d97eb652161915a7ece863d413b581a53158f8e7c27492f8e613308a0324415",
+        "annotation_origin": "publisher_timed_toc",
+        "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+      }
+    },
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "unit_id": "4YY4CTSQ8nY",
+      "course_id": "yale-engl-300",
+      "speaker_id": "paul-h-fry",
+      "talk_id": "4YY4CTSQ8nY",
+      "lecture_id": "4YY4CTSQ8nY",
+      "split": "final_test",
+      "source": "https://oyc.yale.edu/english/engl-300/lecture-1",
+      "revision": "source-bundle-sha256:996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00",
+      "rights": "Per-unit scoped internal noncommercial research decisions bound in source bundle",
+      "bytes": 216840679,
+      "sha256": "793c518c10bb4ba4fb62d34e49ba18e9a74380cd831cfb6ccf069bb5c86544cd",
+      "decoded": true,
+      "ground_truth": {
+        "status": "released",
+        "source": "https://oyc.yale.edu/english/engl-300/lecture-1",
+        "revision": "eecb1b4666a22e4fca8053145b51734840431b8951fbd8cee1c0ff7fa808449d",
+        "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+      },
+      "duration_sec": 2368.6333,
+      "chapter_boundaries_sec": [
+        269,
+        608,
+        790,
+        1091,
+        1930
+      ],
+      "chapter_gt": {
+        "source": "https://oyc.yale.edu/english/engl-300/lecture-1",
+        "revision": "eecb1b4666a22e4fca8053145b51734840431b8951fbd8cee1c0ff7fa808449d",
+        "annotation_origin": "publisher_timed_toc",
+        "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "source": "Curated YTSeg, VidChapters and Open Yale publisher chapter sources; see per-unit source bundle",
+      "acquisition_level": "D2",
+      "profile": "locked_20_unit_post_qualification_cohort",
+      "raw_file_count": 20,
+      "eligible_file_count": 20,
+      "excluded_file_count": 0,
+      "unresolved_file_count": 0,
+      "selected_bytes": 5001861970,
+      "selection_policy": "pre-media locked batch plus source-only qualification; see cohort and attrition reports",
+      "ground_truth_status": "released_original_creator_or_publisher_chapter_starts"
+    }
+  ],
+  "attrition": [
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "raw": 20,
+      "eligible": 20,
+      "excluded": 0,
+      "unresolved": 0,
+      "scope": "locked_post_qualification_cohort_only; pre-cohort recruitment attrition in source reports"
+    }
+  ],
+  "frozen_manifest": [
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "freeze_status": "eligible",
+      "scientific_selection_eligible": true,
+      "unit_ids": [
+        "-7xg8pGcP6w",
+        "-W4kU1YFSck",
+        "09vU-wVwW3U",
+        "2B9b9mUPJik",
+        "4YY4CTSQ8nY",
+        "679FGDpZBew",
+        "9FrHGAd_yto",
+        "AW3a2ECNFlE",
+        "EuNXVy5-KgA",
+        "Hy7ou5R_vjE",
+        "LZkoBeI6gVM",
+        "VX4eYYmvQ78",
+        "WMkD8HKJQCM",
+        "Y3S1uqgGfB4",
+        "e3uBi2TZdUY",
+        "f_55cmhHq3g",
+        "oo1ZZlvT2LQ",
+        "qQ3kFydI_xQ",
+        "tCKk22kaZi4",
+        "zsb6B8HrNVA"
+      ],
+      "reason": "20 original publisher/creator chapter units with exact decoded media, scoped rights and course/lecturer-disjoint 8/4/8 split",
+      "profile": "locked_20_unit_post_qualification_cohort"
+    }
+  ],
+  "endpoint_matrix": [
+    {
+      "dataset_id": "rq1_locked_mixed_20",
+      "endpoint": "chapter",
+      "eligibility": "internal_chapter_start_GT_media_rights_D2",
+      "scientific_selection_eligible": true,
+      "reason": "D2 source eligibility for chapter scoring; candidate and feature-input gates remain separate"
+    }
+  ]
+}

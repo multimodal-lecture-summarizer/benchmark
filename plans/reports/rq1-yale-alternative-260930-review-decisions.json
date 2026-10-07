@@ -1,0 +1,87 @@
+{
+  "schema": "rq1-yale-alternative-review-decisions/1",
+  "source_only": true,
+  "no_timestamp_or_label_edits": true,
+  "no_candidate_prediction_or_metric_consulted": true,
+  "decisions": {
+    "YxGHbnwqd14": {
+      "boundary_pass": [1130, 1815],
+      "boundary_uncertain": [2809],
+      "boundary_error": [714, 3019],
+      "title_uncertain": [714, 2809, 3019],
+      "title_error": [],
+      "boundary_reason": {
+        "714": "The lecturer continues the previous atom/molecular-mass explanation through 714 s; no distinguishable new section begins within the fixed collar.",
+        "2809": "The lecturer moves from gas equilibrium to the problem of paths between equilibrium states, but the quasi-static concept develops gradually; no confident independent onset within ±3 s.",
+        "3019": "At 3019 s the lecturer continues explaining states and processes; first-law/internal-energy onset is not independently observed within ±3 s."
+      },
+      "rights": "pass_scoped",
+      "rights_reason": "Full-lecture storyboard shows lecturer and his chalkboard equations/diagrams only; OYC internal noncommercial research scope, no media or transcript redistribution."
+    },
+    "nd6hBBPWHvg": {
+      "boundary_pass": [436, 827, 1320, 2070],
+      "boundary_uncertain": [],
+      "boundary_error": [],
+      "title_uncertain": [2070],
+      "title_error": [],
+      "rights": "hold_component",
+      "rights_reason": "Full-lecture storyboard shows projected war maps and archival war photographs; their exact component provenance and internal processing basis are not established by the lecture page or OYC general terms."
+    },
+    "JSXUrNZJKiI": {
+      "boundary_pass": [855, 1575, 2812, 3425],
+      "boundary_uncertain": [2057],
+      "boundary_error": [],
+      "title_uncertain": [2057],
+      "title_error": [],
+      "boundary_reason": {
+        "2057": "The 'next question' lead-in begins around 2053.3 s and continues over the original marker; the exact topic onset is gradual and cannot be fixed within ±3 s."
+      },
+      "rights": "hold_component",
+      "rights_reason": "Full-lecture storyboard contains projected population charts, published-looking figures and a book-cover image; their component-specific internal processing basis is not established on the selected page."
+    },
+    "yYrhDxApqgg": {
+      "boundary_pass": [259, 2354, 2654],
+      "boundary_uncertain": [],
+      "boundary_error": [],
+      "title_uncertain": [],
+      "title_error": [],
+      "rights": "hold_component",
+      "rights_reason": "Full-lecture storyboard contains third-party-looking photographs/portraits, a map and a statistical chart; the selected lecture page does not establish component-specific reuse for internal research processing."
+    },
+    "-cu29S-jvxQ": {
+      "boundary_pass": [1425, 2803, 2927],
+      "boundary_uncertain": [],
+      "boundary_error": [],
+      "title_uncertain": [],
+      "title_error": [],
+      "rights": "hold_component",
+      "rights_reason": "Projected slides and speech reproduce substantial English passages from Durkheim's Suicide. The course syllabus assigns a Free Press 1951 English edition; the selected page does not establish a component-specific basis for internal processing of that translation."
+    },
+    "_lEPUrBdxx8": {
+      "boundary_pass": [525, 1544, 3404],
+      "boundary_uncertain": [2164, 2585],
+      "boundary_error": [],
+      "title_uncertain": [2164, 2585],
+      "title_error": [],
+      "boundary_reason": {
+        "2164": "The speaker describes the same painting detail across the marker before moving to the next scene; the conclusion onset is gradual and uncertain within ±3 s.",
+        "2585": "The speaker closes the Villa of the Mysteries discussion and begins a new example around the marker, but the exact Odysseus-topic onset is not distinguishable within ±3 s."
+      },
+      "rights": "hold_component",
+      "rights_reason": "Publisher Lecture 8 credits explicitly list images reproduced from modern books and Wikimedia material; their component-specific internal processing basis is not established by OYC general terms."
+    },
+    "KnFe-YvrS60": {
+      "boundary_pass": [1479, 1906, 2421, 2817],
+      "boundary_uncertain": [258],
+      "boundary_error": [892],
+      "title_uncertain": [258],
+      "title_error": [892],
+      "boundary_reason": {
+        "258": "After earlier mammal chronology the lecturer begins broad large-scale events near 258 s; the specific Cambrian-radiation onset is not yet independently clear within ±3 s.",
+        "892": "At 892 s the lecturer explicitly continues the Cambrian animal explosion; the listed plant/vertebrate chapter has no distinguishable onset within ±3 s. Keep the title error and boundary error separate."
+      },
+      "rights": "hold_component",
+      "rights_reason": "Full-lecture storyboard shows projected fossil/animal illustrations, photographs and charts with no component-specific internal processing basis on the lecture page."
+    }
+  }
+}

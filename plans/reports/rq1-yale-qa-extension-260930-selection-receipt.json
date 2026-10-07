@@ -1,0 +1,8 @@
+{
+  "schema": "rq1-yale-qa-extension-lock/1",
+  "qualification_only": true,
+  "selection_rule": "from original nine-course QA selection, choose unqualified source-snapshot courses ECON251, ECON25208 and PHYS201 in fixed order; first two add previously unqualified lecturers, third is a held-lecturer course; original lecture URL and chapter pairs are unchanged",
+  "prior_qa_selection_sha256": "5a5963776fb754a01c7968492c3fd5712c70f1f185e1e8b26625ea012c63853d",
+  "source_snapshot_sha256": "638bff9a54048f2bab643bcc9047a4ee8446ce307f583066ba2f017932a548f2",
+  "locked_csv_sha256": "38d5b3adc27ccf9483f48957a606083939fdad9a936c4aace7c0efe07969150d"
+}

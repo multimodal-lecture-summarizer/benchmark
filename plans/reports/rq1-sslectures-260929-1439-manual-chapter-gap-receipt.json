@@ -1,0 +1,141 @@
+{
+  "checked_local": "2026-09-29 14:39 Asia/Bangkok",
+  "scope": "source trace for frozen nine; structural gap comparison only; no new GT",
+  "primary_target_id": "zMlEb29UlKw",
+  "secondary_target_id": "TgrNa_Guigs",
+  "rules_url": "https://support.google.com/youtube/answer/9884579?hl=en",
+  "manual_chapter_min_seconds_current": 10,
+  "interpretation": "short gaps are incompatible with exact current manually entered YouTube chapter list, but do not prove label origin or historical YouTube rules",
+  "rows": [
+    {
+      "csv_line": 4,
+      "youtube_id": "zMlEb29UlKw",
+      "chapter_count": 19,
+      "sub_10_second_gap_count": 1,
+      "sub_10_second_gaps": [
+        {
+          "start_sec": 2888,
+          "title": "Perturbation Theory",
+          "next_start_sec": 2892,
+          "next_title": "Perturbation Operator",
+          "gap_sec": 4
+        }
+      ]
+    },
+    {
+      "csv_line": 404,
+      "youtube_id": "PLVjevMsQpQ",
+      "chapter_count": 9,
+      "sub_10_second_gap_count": 0,
+      "sub_10_second_gaps": []
+    },
+    {
+      "csv_line": 405,
+      "youtube_id": "yHzpj_MDOdk",
+      "chapter_count": 7,
+      "sub_10_second_gap_count": 0,
+      "sub_10_second_gaps": []
+    },
+    {
+      "csv_line": 736,
+      "youtube_id": "EuVpZmQ5v6A",
+      "chapter_count": 15,
+      "sub_10_second_gap_count": 0,
+      "sub_10_second_gaps": []
+    },
+    {
+      "csv_line": 740,
+      "youtube_id": "TgrNa_Guigs",
+      "chapter_count": 33,
+      "sub_10_second_gap_count": 5,
+      "sub_10_second_gaps": [
+        {
+          "start_sec": 27,
+          "title": "The Catalase Lab",
+          "next_start_sec": 36,
+          "next_title": "Catalase Lab",
+          "gap_sec": 9
+        },
+        {
+          "start_sec": 120,
+          "title": "Catalase",
+          "next_start_sec": 127,
+          "next_title": "Space Filling Model",
+          "gap_sec": 7
+        },
+        {
+          "start_sec": 258,
+          "title": "Superoxide",
+          "next_start_sec": 264,
+          "next_title": "Superoxide Radical",
+          "gap_sec": 6
+        },
+        {
+          "start_sec": 808,
+          "title": "Integrated Rate Law",
+          "next_start_sec": 813,
+          "next_title": "Integrated Rate Laws",
+          "gap_sec": 5
+        },
+        {
+          "start_sec": 1829,
+          "title": "The Activation Energy of the Reaction",
+          "next_start_sec": 1836,
+          "next_title": "The Arrhenius Equation",
+          "gap_sec": 7
+        }
+      ]
+    },
+    {
+      "csv_line": 1016,
+      "youtube_id": "S6JHQ3-bsHk",
+      "chapter_count": 17,
+      "sub_10_second_gap_count": 0,
+      "sub_10_second_gaps": []
+    },
+    {
+      "csv_line": 1017,
+      "youtube_id": "K7QVIqV2QMk",
+      "chapter_count": 29,
+      "sub_10_second_gap_count": 2,
+      "sub_10_second_gaps": [
+        {
+          "start_sec": 2127,
+          "title": "Policies To Increase Pro-Sociality",
+          "next_start_sec": 2136,
+          "next_title": "Are Social Preferences Malleable",
+          "gap_sec": 9
+        },
+        {
+          "start_sec": 4483,
+          "title": "Test Scores and Discipline",
+          "next_start_sec": 4487,
+          "next_title": "Positive Effects on Social Preferences",
+          "gap_sec": 4
+        }
+      ]
+    },
+    {
+      "csv_line": 1365,
+      "youtube_id": "wvXDB9dMdEo",
+      "chapter_count": 12,
+      "sub_10_second_gap_count": 1,
+      "sub_10_second_gaps": [
+        {
+          "start_sec": 1341,
+          "title": "Market Participants",
+          "next_start_sec": 1348,
+          "next_title": "What Is Market Making",
+          "gap_sec": 7
+        }
+      ]
+    },
+    {
+      "csv_line": 1370,
+      "youtube_id": "_IFUfFuyQlU",
+      "chapter_count": 4,
+      "sub_10_second_gap_count": 0,
+      "sub_10_second_gaps": []
+    }
+  ]
+}

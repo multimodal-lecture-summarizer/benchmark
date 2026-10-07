@@ -1,0 +1,606 @@
+[
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\asr.ablation_metrics.receipt.json",
+    "sha256": "C04F5D08098305A3E2AC5E72D3F3672D7E4A66FAD03CBF60EA10C2DDFA9E0FE7"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\asr.ablation_predictions.receipt.json",
+    "sha256": "6AD6135CB1504551F3F53F36D0C7B6CF7D2F345469C32DDFC59394F75E4FC405"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\asr.aggregate.receipt.json",
+    "sha256": "4CB17DDCD716D101D3320A3FFB8BA61B97DE9E22333BAD3A8C0EDEA2DD45082D"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\asr.frozen_configuration.receipt.json",
+    "sha256": "4A518493173502F8F4626A2C657DE56ACE3B6B777AB2244C28E1333BEAF31E4D"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\asr.per_unit_metrics.receipt.json",
+    "sha256": "3A3EE13E16D90DD0EA99131644081E9CF13DB39709A979CD306CE12FF96576C7"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\asr.raw_predictions.receipt.json",
+    "sha256": "FCE0E562A43C7ADB81E10132C3ABD3CFC642ABE0B94C9B5ACF60A252349B8159"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\asr.shortlist.receipt.json",
+    "sha256": "226162F956A2AD4E1D7DCA9D7EB50AA9877F1A48E916CBE5154F8FE659433001"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\dataset.acquisition_inventory.receipt.json",
+    "sha256": "22D6C696941E9B8D801EEC68F7553CC2492950883EC6053054F74662F478E7BA"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\dataset.attrition.receipt.json",
+    "sha256": "256F8D2044AC634271CFD9E9D5AD2E6F3E34B7E97E74F1AFD0797B710C1076B2"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\dataset.cross_dataset_comparison.receipt.json",
+    "sha256": "85D673EFE114D0F1163DB922DB3891947B4F64DE9A2604B6B1D54A5DDD609B6C"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\dataset.d2_registry.receipt.json",
+    "sha256": "47B52C0C4DD974D98FC49B081126EBDB2C64D6DD5CA62C99B1413136396AF4B4"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\dataset.eda_report.receipt.json",
+    "sha256": "0DC18275D6FEB6CA7DCF1C29906E83F1C8A64428D08B1D60F3E2538CC07CD1D6"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\dataset.endpoint_matrix.receipt.json",
+    "sha256": "73E7BEC5C0B6C6AAAD3F22E6F39CA2C86549510A26BD44EAEF7A8421AD018BFA"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\dataset.feasibility_receipts.receipt.json",
+    "sha256": "603D6B549317FFA04DA5FB035F26C0435916EBFF5E5F58CDEA243E94CFCE303C"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\dataset.figure_manifest.receipt.json",
+    "sha256": "EB0BB6BD466230724403FE7F3AB3B028330C60C24245219603173671A1721D31"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\dataset.frozen_manifest.receipt.json",
+    "sha256": "D412569752F90E3E74440C5FDFEE1B781DC02EC9E39E96148AEA35BA9482D657"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\dataset.leakage_audit.receipt.json",
+    "sha256": "DCCC85D6F7856BC979A8DEEA04A16A780B4C6D5B9FDF371BCF23896471E40757"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\dataset.profile.receipt.json",
+    "sha256": "4E4A45EDD84091ED24C6E3C50D33733097C22041459A4078B21287B184B4D2B9"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\dataset.quality_issues.receipt.json",
+    "sha256": "80ACFFABC020DA95E55373A2876A496371DCF5248625A1BB3E1E99A324CC377A"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\dataset.registry.receipt.json",
+    "sha256": "9C9955105D77378E41804342BCF69A057DC9626DD279285A30A4493A6E379C05"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\dataset.split_statistics.receipt.json",
+    "sha256": "50175219AAD0EAA328574F75051C89E86477FE892639136EAE20103594B8904C"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\dataset.statistics.receipt.json",
+    "sha256": "E7D8B1DCF8204E67E48FE3095E60833D979D2A5EF23194D75B2880CC706ADA19"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\dataset.unit_profile.receipt.json",
+    "sha256": "5877C154E88A323DF22F445C808B98D567DDFB347A3B38F0BD433FEC4A5D6DD6"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\environment.preflight_receipt.receipt.json",
+    "sha256": "77911B1F859B2AC5EF377446B1ABEBA0E2CFB06DE2841CF7A396952254CF2A0A"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\environment.profile.receipt.json",
+    "sha256": "E01E2E3C5C0D12578595A749F3385E5BFFCEDB5725E9F4FAF5948BE4D12BE683"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\figures\\selected-bytes-by-dataset.svg",
+    "sha256": "259B90C7DAF03337718D14068D1C7AE8B2DFC2EC08BB2BC9E00150565D90BAA6"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\figures\\tedlium3-attrition_waterfall.svg",
+    "sha256": "67C8E1D5B186A20EB1B49C1521D0A9453C237B5AD6EDCFA31146E5A3D1623936"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\figures\\tedlium3-duplicate_matrix.svg",
+    "sha256": "B49D576DF8EA4471A9195DB67AEBD6C08D901E445269367997DE9212C4986031"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\figures\\tedlium3-duration_distribution.svg",
+    "sha256": "8CB505C9DA40C1DF70FC106234D6F1BE8BCC88BD2DEF628099C0E4803AD71CA3"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\figures\\tedlium3-file_size_distribution.svg",
+    "sha256": "87AB6163703ABAEAC33C03D65653D78B05809D5E88E90414F43F40CA47E902E2"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\figures\\tedlium3-missingness_gt_coverage.svg",
+    "sha256": "F47586AFDB5C064D9D51825B6453C2288BD1B9CC123CE8A462B6D7854D066859"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\figures\\tedlium3-scale_bytes.svg",
+    "sha256": "C1E79D32F2153D5793361AA5DA7DC45EB95F31F9F892227B011CB66F90F04C9F"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\figures\\tedlium3-source_overlap.svg",
+    "sha256": "3362B5EE28F84CBE12C4A558B9508EE6FD3A730EB29DA415D6D9EAAA14883AEC"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\figures\\tedlium3-split_comparison.svg",
+    "sha256": "02C36392C90697F603693889C0431CA0046206C8EC722280BC0D4B04FE35626B"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\figures\\audio\\tedlium3-audio_channel_layout.json",
+    "sha256": "29B3D8702B4FDBA60157A45D54BD1A2109B0C67C81126C4E05FBCF503AD3E920"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\figures\\audio\\tedlium3-audio_channel_layout.png",
+    "sha256": "564B855776F7FA008AAC5BE0471494C71E73E523605C123C5E7C9410BD7F08F8"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\figures\\audio\\tedlium3-audio_duration_ecdf.json",
+    "sha256": "5465DCCB23439BC10958B8323EED2E3A7C4916C7F22D2927319DBE361EC92137"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\figures\\audio\\tedlium3-audio_duration_ecdf.png",
+    "sha256": "F934C9949E40D8E6A53BC5F23DC5878CED15A6B16B6DD9AE4D5AF30F9D39EFAF"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\figures\\audio\\tedlium3-audio_duration_vs_size.json",
+    "sha256": "1DCA1B2474711323BAE3C01E0F850466A4FE89FE8176FC0EFBF3EE5F393AD663"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\figures\\audio\\tedlium3-audio_duration_vs_size.png",
+    "sha256": "B729AEA0E8B5ED6B915F510685AEAB612582D77EF90A07BCEF68B88E322315B1"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\figures\\audio\\tedlium3-audio_peak_rms_distribution.json",
+    "sha256": "EDBA098386C0ABDC77636629C204E24F2C2260776D5FA8C56AB11FF3163B15B7"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\figures\\audio\\tedlium3-audio_peak_rms_distribution.png",
+    "sha256": "AA3A981E874819034C61B10BEE12F9A0F3DAA3B04D716CA4BF1356761EF6C19C"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\figures\\audio\\tedlium3-audio_sample_rate_distribution.json",
+    "sha256": "4AEBCEE5475F238B18430A40D38CD86DB22D9C8B5D3C460BA8F5739602BF6F96"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\figures\\audio\\tedlium3-audio_sample_rate_distribution.png",
+    "sha256": "9940229BA20240D8D42F6061435ACDCAD77F9C8F3990DEA34902E402E6545C9C"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\figures\\audio\\tedlium3-audio_speech_ratio_distribution.json",
+    "sha256": "F33223E2509BB5691B7440DC452C24510A663EAFB22A23C99C9B7B1E3FEC2EA8"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\figures\\audio\\tedlium3-audio_speech_ratio_distribution.png",
+    "sha256": "266A76C1A6DD5A3C25063D93DE187E1D02BD664327F1F14EB844730B0A91EA31"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\asr.ablation_metrics.json",
+    "sha256": "5E52DE011285A7B8C2C4607BA37AEEA67D67919E851BA16397DB22CE5458CC94"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\asr.ablation_predictions.json",
+    "sha256": "00B1228FDFF0C709C87FBB682DF95E4965A193F981E00EDCBE709CE4F1E5A66D"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\asr.aggregate.json",
+    "sha256": "920543F40AD10A9DD8370A6EA0EDD1E718B61152F51CF83E6CD9A117EEFE70EA"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\asr.frozen_configuration.json",
+    "sha256": "265F728B34D400F80C1CD7CD5AEB7B6233235ACBBEAD07AE3A17B8FDCD6C2F97"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\asr.per_unit_metrics.json",
+    "sha256": "12B7114F6E3EC2484C5C911CB47CEBE33A12FEC3E4509F312B61F34A1FFD7A8E"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\asr.raw_predictions.json",
+    "sha256": "8498AB5D1E5C0C5512D7668D0A1EB17F7D9D4EABC86CCA06863B0588744BD612"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\asr.shortlist.json",
+    "sha256": "EA8BD004FE85423F6FC9A3554BE83E0994194494C94C501BFB1965C02C665F49"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\dataset.acquisition_inventory.json",
+    "sha256": "64734FB13DD347D7BED74B5581565E1ABF1281F995E5B1080250AB70E3B4C867"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\dataset.attrition.json",
+    "sha256": "3A6EFCF07373153E755A345081380EEABAC939BB9D03F2D1D37EF1C108FBBE1E"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\dataset.cross_dataset_comparison.json",
+    "sha256": "A59C71449A88EC5A7404D2E2D273F1DDE481A35CA9E1B861D2ECA81ABA3422DD"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\dataset.d2_registry.json",
+    "sha256": "D09824C8D1DAD2B897C62126A6D49123D173428138BEC7C93596D0AAEBF68CE9"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\dataset.eda_report.md",
+    "sha256": "34C5112EA812ADE2798DCE931660D09BB321F165E686C5FC091B6AD91C5306E0"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\dataset.endpoint_matrix.json",
+    "sha256": "67BB6CDF56610DC723324450293DD94019C880747D0ED846E088B8A6E96AB403"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\dataset.feasibility_receipts.json",
+    "sha256": "6139535EA813AA442254E0A516A553AAFB12396AF846EA724AF31F1D36122721"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\dataset.figure_manifest.json",
+    "sha256": "C8613A265A0DD3AD820F67834D400A2864829214118ED2BAB2A624B695B0A972"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\dataset.frozen_manifest.json",
+    "sha256": "6FFCC78CF6218DC1914A2CCDCACDE6D978671D2DB34D4738C207CA3056B0EC10"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\dataset.leakage_audit.json",
+    "sha256": "BE2AE90618433275CF24BCA5444D613E9EBE5B057CA1E92B1B51182EA32C1983"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\dataset.profile.json",
+    "sha256": "BDF4AC52CA86CBAD340E34B860232C77B3734EAAA768CE129C50A11BEB038882"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\dataset.quality_issues.json",
+    "sha256": "2EC14BBFCE4E40279C6E578A35951BD4F4A373B250F5232B036EF0F3BE7075DE"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\dataset.registry.json",
+    "sha256": "D09824C8D1DAD2B897C62126A6D49123D173428138BEC7C93596D0AAEBF68CE9"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\dataset.split_statistics.json",
+    "sha256": "4ADD0146BB2EC01AE8107C592524135699952ECD6B8FA156B161CADB06F79C47"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\dataset.statistics.json",
+    "sha256": "75406BF48E251322847FA011004225D042106228B7FFE42AA2AA5ADD15BA2103"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\dataset.unit_profile.json",
+    "sha256": "36CF47ED8768412407B7F9B7DBD320238CE2D2574A298D45C46858ABBD34F199"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\environment.preflight_receipt.json",
+    "sha256": "5B2102818168E2DD9174E47FCC2FF2D67C50E5A3AD9FF52A4A71DCB179313197"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\payloads\\environment.profile.json",
+    "sha256": "87EE5CAE9BB0C442E44F02522C4A4FD7D235BB34353EC634D73F16409ED777E3"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\runs\\00a_environment_preflight.run.json",
+    "sha256": "B36B0F0D02D53A25662186FA4311632FA3FA03DA556776F975AD244E29B2A7DA"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\runs\\00b_dataset_feasibility.run.json",
+    "sha256": "8F0281A613E8F3D10714C901B245FBBC639B1543B8E426DF39D599507EB77769"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\runs\\00c_dataset_eda_and_freeze.run.json",
+    "sha256": "F5B3B5DAFCB79FA7091BFDDDEB7012F35D621F244EB8071F3344AFE4AF3C515A"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\runs\\01a_asr_model_benchmark.run.json",
+    "sha256": "F62861597292F03CCAEE3A52FD7483151AA6CFAFAF7B35F9198C620A4C33E647"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\runs\\01a_asr_model_benchmark.start.json",
+    "sha256": "2B20EC26B540F56F5310C013D6870901434A368DCD646515054A8D3C0DE745B7"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\runs\\01b_asr_preprocessing_ablation.run.json",
+    "sha256": "3D02ED90F1D19816F245C6E3AC9F37A003545DC12984DD74BEDD9DE797453D19"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_tedlium_d2\\official\\full\\runs\\01b_asr_preprocessing_ablation.start.json",
+    "sha256": "A6B2DED23FC9B337D16459CC444E623AF433CC76040D9679D3201E3D6F694BCD"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\dataset.acquisition_inventory.receipt.json",
+    "sha256": "F76364763D9F70A5E0E5CBE0A93F9FCA3A076B0B8842026771C2714A7FC9532F"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\dataset.attrition.receipt.json",
+    "sha256": "F9034BFBA742FF4CFCEA65F26547CDC83E66D66C54A84E414781A186D1645C7C"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\dataset.cross_dataset_comparison.receipt.json",
+    "sha256": "60B6C2B4CC993A4A2D75EE0C193227C51396D93E9A21F738C3D1290A3C097858"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\dataset.d2_registry.receipt.json",
+    "sha256": "E09166024D737B959D10F6E00AF56730B464AD5B7A125F35F58DAE0DC059E498"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\dataset.eda_report.receipt.json",
+    "sha256": "83897A26972F53505A21E942108880D99B9F70A53C24A3DFAD328C83BCFAC1A2"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\dataset.endpoint_matrix.receipt.json",
+    "sha256": "C3101A300A87C7E6A6FF6A1083FE77F4D4E3644CD2A30D9C8FB2E29C51FE1CF2"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\dataset.feasibility_receipts.receipt.json",
+    "sha256": "2F2ADB63FFF4CE49CE863A5FD91C93ACE61CD1EEB5F0967B1143F5E26263FDBD"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\dataset.figure_manifest.receipt.json",
+    "sha256": "63ACA64046CEA78EF85F923D8063C75F9A111DDC013DE9752DF6B3494AA8CDC3"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\dataset.frozen_manifest.receipt.json",
+    "sha256": "66CCA4D7CE04E9222F0F2BBA4A9A187B820FA26911D56C7BC3CACF988EDCBA24"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\dataset.leakage_audit.receipt.json",
+    "sha256": "901DA77F4691319F4D0E691B795847DCB21B7F63C4FB3DED81EFE34CF2055C97"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\dataset.profile.receipt.json",
+    "sha256": "F813180856A850191E88987B9DDD6DFE6EBD4633B95E0A0DF162FDB3DC4653A1"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\dataset.quality_issues.receipt.json",
+    "sha256": "2BAC50E98D1BE0B96BA02B68E457700FF59F7B00D1087F192CBD8997BA8C1A97"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\dataset.registry.receipt.json",
+    "sha256": "D01C4EF7C35DE52156F6A73384F338791A7C0B95BD96206DDBBC9F47FF4D6DD0"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\dataset.split_statistics.receipt.json",
+    "sha256": "1F9EB5275A09F6F7679E8F77C592F6939CF59453303FE0E753F7E36D0FFA3BA6"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\dataset.statistics.receipt.json",
+    "sha256": "EDCD2E0C04C7547E6AA9D98617CE3B981BEDAC4BC786FC59FA5FDCE06A9702F0"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\dataset.unit_profile.receipt.json",
+    "sha256": "332519729C78E23A3EE14ABD414BD298FF8C0F80C4D6D05C5EC32F1CF8B402B9"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\environment.preflight_receipt.receipt.json",
+    "sha256": "F8672D8A155418B60A0551B82574781A75FFDBB62D5209C1F10570C9515D558E"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\environment.profile.receipt.json",
+    "sha256": "3016ECBA13B150FD08D5729DF5EA329D31C9E2AA0DC13D51EB26821150EFD544"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\figures\\iiit_cvid-attrition_waterfall.svg",
+    "sha256": "A534E692663341EA8C1B96F1696264D04AFC434DDFF96C5AFEF1A0EE5116BF37"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\figures\\iiit_cvid-duplicate_matrix.svg",
+    "sha256": "6BF0AE265F62ACFC851C69EBB9C8C2C57A44010F4AA92E877D5A6116A6F36AFE"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\figures\\iiit_cvid-duration_distribution.svg",
+    "sha256": "5828014F06152DA49D88357E7BA37B84B5EDD1376D28D50E3EEEBF8E0FA73AE3"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\figures\\iiit_cvid-file_size_distribution.svg",
+    "sha256": "6E35C44086DA4B7C64AB31C59B605F7AAD9B66150B61BD07A5EC4CA1BBCA7C6A"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\figures\\iiit_cvid-image_aspect_ratio_distribution.json",
+    "sha256": "2F3678E2461FAA5B0677C3534E94400E347D91C69ECE268AC6EDC01752D3511D"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\figures\\iiit_cvid-image_aspect_ratio_distribution.png",
+    "sha256": "7A9DF83B048702F3242078D1066B6F110307BF7A3663BCB1D9EDD74378CDFCE7"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\figures\\iiit_cvid-image_mode_histogram.json",
+    "sha256": "1F9DDD95A9C2B2A82ABC0952B8E06EDFEFF5DF31B35A1E15B530974A21466A1C"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\figures\\iiit_cvid-image_mode_histogram.png",
+    "sha256": "CD225126BF1D1194199880569EA563D0D4A6482F866C74EEA6F37079C5749853"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\figures\\iiit_cvid-image_resolution_distribution.json",
+    "sha256": "703D7748D7E106A8F307F5EC88E08FAF4CF1BB1DB33A2FA8BAD838762B36D3F7"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\figures\\iiit_cvid-image_resolution_distribution.png",
+    "sha256": "7A1C3809A923BB9D1C2097349FB76226E4B6EF82E7345D42C14E39C3354FB6A4"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\figures\\iiit_cvid-image_text_line_density.json",
+    "sha256": "AF1FA12E042BC4972F1A49A4C73D726AD0BD143D53E4D0067A99BEDCC7964AF6"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\figures\\iiit_cvid-image_text_line_density.png",
+    "sha256": "3F8A9A4AAED3B2E19FA040BDBA7A127FD18B77AE308966AD3EAE1FF3A5936FBA"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\figures\\iiit_cvid-missingness_gt_coverage.svg",
+    "sha256": "A10B7D054DBF123AA50362CE3459E0F84C4FA8312CB7F9C211418B55CFAF844D"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\figures\\iiit_cvid-scale_bytes.svg",
+    "sha256": "7862426BBE509F049750552EE1C3E71C011184B6E36FE8954EC769058DE63433"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\figures\\iiit_cvid-source_overlap.svg",
+    "sha256": "908BFD35E349C8FE5F06376277D01097CFBD1A65A450B18ED25B6D3C543F1CC0"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\figures\\iiit_cvid-split_comparison.svg",
+    "sha256": "B5D80EC8BBD816ED1ACA3DE72EED8DAB7D3CAC9F4166D2C3115110280A7BA6CC"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\figures\\selected-bytes-by-dataset.svg",
+    "sha256": "1A916DFE621CA55A04669B95EF72DC9D8125580091A2564BE45418DF2D5DF2B5"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\payloads\\dataset.acquisition_inventory.json",
+    "sha256": "ED866F974A8B304DC9EA810C18C10AC7C4179CF78E96F81E42B0B97417E3EA92"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\payloads\\dataset.attrition.json",
+    "sha256": "063647208363AE8BD95AA17C71F0240055E6AA46BFD564D48D50D88E9E159807"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\payloads\\dataset.cross_dataset_comparison.json",
+    "sha256": "A2651B5197E244AECC43976F3AF41DF8F5DAD5791E1E7D3AC7D6A44B63FE1449"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\payloads\\dataset.d2_registry.json",
+    "sha256": "4CB842E64D4F294108996B838ADFE253EF575FE5F23497FAB6B63B648D6717E6"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\payloads\\dataset.eda_report.md",
+    "sha256": "80137437599C1EEB0AF2871DE584B2C716AB6964862E3C0457A6F881E06C34FF"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\payloads\\dataset.endpoint_matrix.json",
+    "sha256": "12DECBCB69D572C5A58940E6A6A27A383959A3B3498100D02784ABCEA9A15FDB"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\payloads\\dataset.feasibility_receipts.json",
+    "sha256": "ADF003B1543424005FF9656DE682A034BB0BEF229589ABA01015C3B5645751FE"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\payloads\\dataset.figure_manifest.json",
+    "sha256": "71088CF9887A74D73B80F27F5BE2C7A8CD59F3BB4178CFCCDA9DCE44E31C3854"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\payloads\\dataset.frozen_manifest.json",
+    "sha256": "21D64F94A2052975DA04F43109BE4C00A28067170F3F49DEA6BA81B1A59C32D5"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\payloads\\dataset.leakage_audit.json",
+    "sha256": "D0762A015E51EFAE5B528DD5B1311C56BBB5A9CDA56A5C3C26A0A46612E97AAF"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\payloads\\dataset.profile.json",
+    "sha256": "BE35D38B5755A7221AC968C402B196A99291812F924AA6F1C9709D0C95747785"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\payloads\\dataset.quality_issues.json",
+    "sha256": "0DF36DFCFA4256A4D85EF0586D81E238AF827BC3188A99488BE9A097EF6474CF"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\payloads\\dataset.registry.json",
+    "sha256": "4CB842E64D4F294108996B838ADFE253EF575FE5F23497FAB6B63B648D6717E6"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\payloads\\dataset.split_statistics.json",
+    "sha256": "99AF87BC02966D23D2E9670317EA43FEE86EAE81DD2E621D14DB8FB2C2963769"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\payloads\\dataset.statistics.json",
+    "sha256": "68DB833022E3130E555C494AD2DE5C1C7B9357E364635B9380421F850FE34F65"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\payloads\\dataset.unit_profile.json",
+    "sha256": "F23562B97ACAA2B7F5EFBF7A9E244166EE3BB3BA25CC82EC513C8F92DCAD7242"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\payloads\\environment.preflight_receipt.json",
+    "sha256": "5B2102818168E2DD9174E47FCC2FF2D67C50E5A3AD9FF52A4A71DCB179313197"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\payloads\\environment.profile.json",
+    "sha256": "87EE5CAE9BB0C442E44F02522C4A4FD7D235BB34353EC634D73F16409ED777E3"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\runs\\00a_environment_preflight.run.json",
+    "sha256": "525E5D9AAD99FC34A9FD2DF5C485AB91E5EB77FD87431FA8F54C5A77F5570970"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\runs\\00b_dataset_feasibility.run.json",
+    "sha256": "61E23ABFD8B9CC4CB95C5051FBBC493809127529937837796F524CABA3162A0A"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\phase2_iiit_cvid_d2\\official\\full\\runs\\00c_dataset_eda_and_freeze.run.json",
+    "sha256": "1025D10DB387336C9C04F1DAF30A5DF40D283A164067539F126E5AC677EFEABD"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\executed_notebooks\\official\\full\\.00b-dataset-scope.json",
+    "sha256": "3EDD23596D556964A3466B657BA3DC1ABE099332F4AAD95CAD07E5663C28E2E5"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\executed_notebooks\\official\\full\\00a_environment_preflight.ipynb",
+    "sha256": "73FFB37A91E4DE62DAA18E7107FE932E46011D4B6CCDF27B904E860D20A2801F"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\executed_notebooks\\official\\full\\00a_environment_preflight.run.json",
+    "sha256": "50948399806300394C96A22A0636371D78D4AEF93033846E8764FEE444D7EF45"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\executed_notebooks\\official\\full\\00b_dataset_feasibility.ipynb",
+    "sha256": "91FC768982EAE1C529F8C74C7C8C2960753FF79D95A8BD8B24A79941CC8D3F55"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\executed_notebooks\\official\\full\\00b_dataset_feasibility.run.json",
+    "sha256": "74E30CCBEC668169EBA377C1455DDE682F9F25AD3B93EE9406CDA8882D660DFF"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\executed_notebooks\\official\\full\\00c_dataset_eda_and_freeze.ipynb",
+    "sha256": "3420EEE44DDB5D2162206272B42EE0948C1C8F91C7A931E8961FD6295523BB54"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\executed_notebooks\\official\\full\\00c_dataset_eda_and_freeze.run.json",
+    "sha256": "CA39370E3939A18C5DC54CE8B76DF217BF13FAABCDBCD05984F6145736F82A01"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\executed_notebooks\\official\\full\\01a_asr_model_benchmark.ipynb",
+    "sha256": "502D34A88112F9879EF3B2ECD510C3F9F32D015679A488258DABF2424D30278F"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\executed_notebooks\\official\\full\\01a_asr_model_benchmark.run.json",
+    "sha256": "15F0F2CA55AD25C88584417939A1E319785EE1CA503A6A3394BCD10974575B88"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\executed_notebooks\\official\\full\\01b_asr_preprocessing_ablation.ipynb",
+    "sha256": "755CC396B773672D20D93B18C15C8AABA0378E3E3485761DFF648F984685B66B"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\executed_notebooks\\official\\full\\01b_asr_preprocessing_ablation.run.json",
+    "sha256": "9FF89F1C0F1E74EB38F2CA105433DA4F5584DC18BAA1B16C3F89E6617DCAD210"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\executed_notebooks\\official\\smoke\\00a_environment_preflight.ipynb",
+    "sha256": "DF6A25603C62ACE28D7C520A930CC1E270728259F5144FEE8FD4F51869A242C9"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\executed_notebooks\\official\\smoke\\00a_environment_preflight.run.json",
+    "sha256": "6CB40229752267F75ABE9979F9C8E164049C1D3D15A743F037B4BBD97825FE78"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\executed_notebooks\\official\\smoke\\00b_dataset_feasibility.ipynb",
+    "sha256": "72A0EDC0DD51C60AA50F62FE116DDBBB673FA2B60DA7327009AD48DD9F4B7BD2"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\executed_notebooks\\official\\smoke\\00b_dataset_feasibility.run.json",
+    "sha256": "7CD1CDACC12845236D48922F93C47C56138D5B101B6B67D93CA244253F07DF54"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\executed_notebooks\\official\\smoke\\00c_dataset_eda_and_freeze.ipynb",
+    "sha256": "E9C46790C678AA43FC33EA99776E502124E291EB6F5220E71D44F0DFBC81022A"
+  },
+  {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\outputs\\executed_notebooks\\official\\smoke\\00c_dataset_eda_and_freeze.run.json",
+    "sha256": "5F89EC7A0B9CE310E7FECA52AD869A3FEF0F9F3205F621D157083AE79A1BB4E4"
+  }
+]

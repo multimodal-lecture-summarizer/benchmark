@@ -1,0 +1,330 @@
+[
+  {
+    "path": "docs/journals/260925-2030-tedlium3-d2-freeze-first-eligible.md",
+    "sha256": "57520A0543C563C29C7951EBC893C782E0405D9C1B75920F4AF0AC8B5C279EDD"
+  },
+  {
+    "path": "docs/journals/260925-2355-d2-frozen-gt-and-dependent-runners.md",
+    "sha256": "16D8A6C97B047DDD9F136915F9841E32A4CC5ECB47791BCE506EFA4AAEAC99B8"
+  },
+  {
+    "path": "docs/journals/260926-0915-endpoint-gating-dag-reconciliation.md",
+    "sha256": "9FB7E297021A2944A653A6DF6CCC4B9062BC48CD7A791CBA4479377FF3B3886D"
+  },
+  {
+    "path": "experiments/evaluation/asr_selection_scoring.py",
+    "sha256": "4905693E1FE120F80C45BB5498604AA21E35E086EB7F273AD69C4C7DD231F881"
+  },
+  {
+    "path": "experiments/notebooks/diagnostics/phase12_evidence_repair.ipynb",
+    "sha256": "122611CEDD65CF8D254A603633AE877E9EF73FF438838C0BFB5367D929D21517"
+  },
+  {
+    "path": "experiments/notebooks/diagnostics/phase12_qualification_supplement.ipynb",
+    "sha256": "CF300B0B800207C8A3314CCDC37E26618ACDCB204AD6E6FE4F2B02C2B880B33B"
+  },
+  {
+    "path": "experiments/registry/datasets/iiit_cvid_d2.yaml",
+    "sha256": "2F5DFDA44D7D7C79B4C7581C3EBD0FB994B98B22658218B64392D2A95B0F7B9D"
+  },
+  {
+    "path": "experiments/scripts/artifact_enrichment.py",
+    "sha256": "D917F17555C9A4CA753B710CDDACE6F1E12FC89689C800B410231008F969E3F9"
+  },
+  {
+    "path": "experiments/scripts/build_phase12_repair_notebook.py",
+    "sha256": "7DAC05599D9E7C64C20D7FC4F19DCE1ACD423549AC5D6F9E2A6C3C40CD96790D"
+  },
+  {
+    "path": "experiments/scripts/dataset_freeze_evidence.py",
+    "sha256": "B265694C22062B8046F4E7A995FDF6241E959F6795B631C6BCF5195F8576A1F4"
+  },
+  {
+    "path": "experiments/scripts/emit_audio_modality_figures.py",
+    "sha256": "6211205E538673540CC02EB9E984B1AB5C66988A72324D4433E3AD8A94CC1E13"
+  },
+  {
+    "path": "experiments/scripts/emit_iiit_cvid_image_figures.py",
+    "sha256": "7E577369CDD8DBA9E5450A86C2399DCFEC7208BDA5B25295C69621AF19456903"
+  },
+  {
+    "path": "experiments/scripts/execute_repair_notebook.py",
+    "sha256": "F9798D2145BF3D2FFC8B3621F296EE6B9329FA4B9EE267A0A05C909E3CAACC77"
+  },
+  {
+    "path": "experiments/scripts/notebook_results.py",
+    "sha256": "EF9314EAD02895E58DCE10A220E04BC539AB60B418776903BE4A26CE99475118"
+  },
+  {
+    "path": "experiments/scripts/phase2_freeze_iiit_cvid.py",
+    "sha256": "29400D86373A26336BBADA576C7466FE29C5233D43AA1BFF731D7E9CEDA0BC60"
+  },
+  {
+    "path": "plans/260925-2304-d2-frozen-gt-runners/phase-01-reconcile-d2-and-ground-truth-contract.md",
+    "sha256": "6EB97E49087F1F4069D0E611E9F659E2563146B9795F4EBE1E13EDF67A90A154"
+  },
+  {
+    "path": "plans/260925-2304-d2-frozen-gt-runners/phase-02-complete-prerequisite-runners.md",
+    "sha256": "1AD12DEBA41DDBB7F81F09B8FD1A7BA60E978570B9A9187A7CB65C4281D649BE"
+  },
+  {
+    "path": "plans/260925-2304-d2-frozen-gt-runners/phase-03-validate-group-02.md",
+    "sha256": "9116571EE1C9D52AD29F2F46A88719AF67F40A1AF0BE7CD40BA205810B7487CA"
+  },
+  {
+    "path": "plans/260925-2304-d2-frozen-gt-runners/phase-04-validate-group-07.md",
+    "sha256": "432D4BDDCB14CEB72D414FE4C2EFFECEDB0AD8E191B390F89C3E3632D61B65D4"
+  },
+  {
+    "path": "plans/260925-2304-d2-frozen-gt-runners/phase-05-run-and-reconcile-full-dag.md",
+    "sha256": "150C8C8B9AE4FA45D3A0B5BBF596AECC3B963F23F5C9DF5AA9C8B430DAE29764"
+  },
+  {
+    "path": "plans/260925-2304-d2-frozen-gt-runners/plan.md",
+    "sha256": "DA86C82A0279D1811AF3A44E91140D1D9AEA3AF834D6D0F6493BE9081A0A5854"
+  },
+  {
+    "path": "plans/260925-2304-d2-frozen-gt-runners/reports/harness/context-snippets.json",
+    "sha256": "FD910963A282F00C7C17E524F3615251BA1AF0FEA4E96989825C0D639E8C2E4C"
+  },
+  {
+    "path": "plans/260925-2304-d2-frozen-gt-runners/reports/harness/review-decision.json",
+    "sha256": "27A1CF1BA6FD9EA93241577405C67232ACE3DD1EC26511A75517B171F28CB878"
+  },
+  {
+    "path": "plans/260925-2304-d2-frozen-gt-runners/reports/harness/risk-gate.json",
+    "sha256": "DD520E47F43AAE56865E73A2929A7CE150886EC215FA983614656043E65081E2"
+  },
+  {
+    "path": "plans/260925-2304-d2-frozen-gt-runners/reports/harness/verification.json",
+    "sha256": "353C4553D0B0CF35CAFF1C637CC738F25EF3C8E01E67DEACE616B19BC9932804"
+  },
+  {
+    "path": "plans/260926-0849-endpoint-gating-dag-reconciliation/phase-01-enforce-fail-closed-endpoint-eligibility.md",
+    "sha256": "5AF6751950BA901899F1BD6C6FAA1405BD83B0179554DBB5FF8859578CE8C7BE"
+  },
+  {
+    "path": "plans/260926-0849-endpoint-gating-dag-reconciliation/phase-02-repair-focused-regression-coverage.md",
+    "sha256": "DD1BCAB9ED1FD235A3D05375A6DF3A97DBDB795146220F93E03254DE80469FDE"
+  },
+  {
+    "path": "plans/260926-0849-endpoint-gating-dag-reconciliation/phase-03-reconcile-group-02-entries.md",
+    "sha256": "0049E5E6E03FB46C0E5146F49F2E2CA4A8C0485A010E31E4D3A525516115CA9B"
+  },
+  {
+    "path": "plans/260926-0849-endpoint-gating-dag-reconciliation/phase-04-reconcile-group-07-dependencies.md",
+    "sha256": "5C41DCBDA1FFF25C3BF537DF16FCED8028E309B3501F4B6B2EAA0263C2F77544"
+  },
+  {
+    "path": "plans/260926-0849-endpoint-gating-dag-reconciliation/phase-05-close-full-dag-readiness-and-evidence-ledger.md",
+    "sha256": "2E8F4C0742169E5F9C6CB81D147B9880020DAD6BBE323D5834875EBE21AADBC3"
+  },
+  {
+    "path": "plans/260926-0849-endpoint-gating-dag-reconciliation/plan.md",
+    "sha256": "1D50B39F71AF8E77C33E7A2839294C73F1101027DB626A1EDF8E7E3634978342"
+  },
+  {
+    "path": "tests/fixtures/tedlium_d2_payload_sha256.json",
+    "sha256": "6ABB4DEDA3596D4B8C3A982806E547AAE3E4FCF1127B680B182C1DD94BED2777"
+  },
+  {
+    "path": "tests/test_artifact_enrichment.py",
+    "sha256": "EBB8367C942EE9F6A0E213ABDEEA63460C29570759543A86DB6D08DF19C57002"
+  },
+  {
+    "path": "tests/test_asr_selection_scoring.py",
+    "sha256": "E8A92A86E6EA5CCFFB38ABAC1952E57C4D4A95B825197C385C62A38F147ABCE5"
+  },
+  {
+    "path": "tests/test_audio_modality_figures.py",
+    "sha256": "2667778A83085BBFF6E011A9DE0BA36ADD1AF0493CD85ACC1169EBCE4540AB27"
+  },
+  {
+    "path": "tests/test_dataset_freeze_evidence.py",
+    "sha256": "11A93EC685C0A9A8B175C4484E46954A4131D7C71418E7CAC8E64B904733A60C"
+  },
+  {
+    "path": "tests/test_endpoint_eligibility.py",
+    "sha256": "87FCB475A296D7B6A02965D7F60B9DB6FF4A224E9F8631A17EA703C3E4C34A61"
+  },
+  {
+    "path": "tests/test_group02_group07_reconciliation.py",
+    "sha256": "6216E05F0DE8F6EB1D7D974085B52448B75A3F45A19C92F13836436EADD4F1FD"
+  },
+  {
+    "path": "tests/test_notebook_results.py",
+    "sha256": "FAF9E00ADA8132F1AC77F24CA65245C3B727ECEA5B48E273877EB8C9FFB501D7"
+  },
+  {
+    "path": "tests/test_unlock_iiit_cvid_d2.py",
+    "sha256": "DE65059EA3AED0C4C04F4ADCE6C303288FAF4D93B9A356FCA2EA3CF3DFF8D327"
+  },
+  {
+    "path": "benchmarks/scripts/execute_all_notebooks.py",
+    "sha256": "1148F9FFB26D67A091C6B517B3D676164FAA880FB6EB162BFEEC8BB8101DE410"
+  },
+  {
+    "path": "benchmarks/scripts/run_asr_model_benchmark.py",
+    "sha256": "DE3C78D76B71FD3B5DA45347B675E630D5AC39C92583C3DF590E893EA3DB09BA"
+  },
+  {
+    "path": "benchmarks/scripts/run_asr_preprocessing_ablation.py",
+    "sha256": "9A86C468A730CD9FCE475445FC94ED14943A2576C1EFE34F65CDD793ED7AFDF7"
+  },
+  {
+    "path": "benchmarks/scripts/run_efficiency_pareto.py",
+    "sha256": "B5DB69CCC1AC986AD3495B8D973BD4079FB866DE3FC7B3D962547B64C262BB8A"
+  },
+  {
+    "path": "docs/BENCHMARK.md",
+    "sha256": "5C8235EA4C5C6C89ED5C952069E216205768E6CF08BF1212157061426BB1CE68"
+  },
+  {
+    "path": "experiments/evaluation/dataset_contracts.py",
+    "sha256": "ED8D52D3E81B66ADDA7E2021A6F17B4A39586A7D3E51013C86F9A96458206D4F"
+  },
+  {
+    "path": "experiments/evaluation/dataset_profile_schema.json",
+    "sha256": "A9E5EE380F31A0BB5959F25C99A96D6ECD4D9BF05748ADA611B07422DF3DA4CB"
+  },
+  {
+    "path": "experiments/notebooks/00a_environment_preflight.ipynb",
+    "sha256": "D7D111629E6BFCCA051EEE981C55C9DA2FCAF9DCCA35360FC9245713486D40C6"
+  },
+  {
+    "path": "experiments/notebooks/00b_dataset_feasibility.ipynb",
+    "sha256": "19AC83195A1F3D1835A258DB85F2A6EA1856008BB6C09EDB42F4B2776CB662CC"
+  },
+  {
+    "path": "experiments/notebooks/00c_dataset_eda_and_freeze.ipynb",
+    "sha256": "9B7B3C59E0F8C57476BE1EF04D1BE8FA5CEED37AF6B28D696A6824CD757AB1D6"
+  },
+  {
+    "path": "experiments/notebooks/01a_asr_model_benchmark.ipynb",
+    "sha256": "01962E9AC99C44C02E71556F23BB5309F65A3C7AC0F0BAAA84845A46B0632D1D"
+  },
+  {
+    "path": "experiments/notebooks/01b_asr_preprocessing_ablation.ipynb",
+    "sha256": "7C6E522F6CB1504F373B13CD5D1D9ED3C6876E7CB5413F1D42CE225F49AAB9EF"
+  },
+  {
+    "path": "experiments/notebooks/02a_scene_boundary_benchmark.ipynb",
+    "sha256": "F753D2F66F4BE2FAB6831DC28EEFBA71E74EA0CA46D386254DC7FDE71DCF0A27"
+  },
+  {
+    "path": "experiments/notebooks/02b_keyframe_selection_benchmark.ipynb",
+    "sha256": "8BDF74EED034AC54D63A6C9C3CCB2F28F2C7848F6841B10445E6B0F3CA7BCB8A"
+  },
+  {
+    "path": "experiments/notebooks/02c_ocr_benchmark.ipynb",
+    "sha256": "6BFBB01FF67874DB667AA47741107394F30DB27A17FE61F6267C16041CFDC107"
+  },
+  {
+    "path": "experiments/notebooks/02d_visual_caption_benchmark.ipynb",
+    "sha256": "A2D05A23FF4CC13FF0A583BF57C093A3EB3CC19587998F93979DF68B6B6966E3"
+  },
+  {
+    "path": "experiments/notebooks/03a_object_detection_benchmark.ipynb",
+    "sha256": "B12B72C00E44A77CE89628AFA3D5455FD743FDE303A351C2639E528E43A708B5"
+  },
+  {
+    "path": "experiments/notebooks/03b_multi_object_tracking_benchmark.ipynb",
+    "sha256": "61A952C1130E36876CB722F57F38F9B13A38E9C74FB9FD474C9309890BA33EB4"
+  },
+  {
+    "path": "experiments/notebooks/04a_chaptering_benchmark.ipynb",
+    "sha256": "C2604E0DDEB4AD61F61F7E81B1561CDE8D4F5BEDBEFF995A37BFE48640F0B79A"
+  },
+  {
+    "path": "experiments/notebooks/04b_chaptering_modality_ablation.ipynb",
+    "sha256": "7859EAB131431EF7166E0F25C476C76DF490F7F22CD863A540C43CFF1BC1C409"
+  },
+  {
+    "path": "experiments/notebooks/05a_summarization_benchmark.ipynb",
+    "sha256": "0BC66DC62E6D2D74AACE661DBD41AE77B2EC5E08DEADA397135596E641CCAE64"
+  },
+  {
+    "path": "experiments/notebooks/05b_summary_factuality_and_human_eval.ipynb",
+    "sha256": "86EB9669DF719654FDC35DF6FDF52E03861AD7F0869D383B822BA2D0CEEF74B4"
+  },
+  {
+    "path": "experiments/notebooks/06a_retrieval_benchmark.ipynb",
+    "sha256": "2239BE07878FD8B5D33B66A8005C47F95D501D2B761A0ABA94954DA8FC953F5D"
+  },
+  {
+    "path": "experiments/notebooks/06b_qa_generation_benchmark.ipynb",
+    "sha256": "73DB191AE68A1DF59A25CA28101246105DDE72268979F2C0C94F40C2A83AEAF3"
+  },
+  {
+    "path": "experiments/notebooks/07a_efficiency_pareto.ipynb",
+    "sha256": "8A532769159207BA53E7214AD1CB3C1E196B399314F64BA4114925622BE6E971"
+  },
+  {
+    "path": "experiments/notebooks/07b_error_propagation.ipynb",
+    "sha256": "DDFAD484769B71224AECF98FC7BC5333BA3BB8DC3B6E0DE37970B6AB408BAD27"
+  },
+  {
+    "path": "experiments/notebooks/08a_stage_compatibility.ipynb",
+    "sha256": "E2D27BA7021D60B2D2A04F371E3CEB7AD394F43D782184A2764479C548D17547"
+  },
+  {
+    "path": "experiments/notebooks/08b_end_to_end_system.ipynb",
+    "sha256": "E76E38CC1E3CD44803E5F1F922B629DE4D0B3A4CA0B3F58AFBBF260D85FC9D45"
+  },
+  {
+    "path": "experiments/notebooks/09_cross_task_report.ipynb",
+    "sha256": "47D03841FE6D86D69FCB82D167ABD93153C0395E3A455CEAD67B15905E393657"
+  },
+  {
+    "path": "experiments/scripts/benchmark_artifacts.py",
+    "sha256": "A08944833EF7F922B408CAA4B043D37877C053D1FBD011C67127E54C1A8920B2"
+  },
+  {
+    "path": "experiments/scripts/dataset_profile_helpers.py",
+    "sha256": "B13CF871FE51F3DF02C66780FCFD7A0F1966760251575D3E617E38998E830133"
+  },
+  {
+    "path": "experiments/scripts/generate_refactored_notebook.py",
+    "sha256": "C1776E7B5752970F7F7A4D31061B0F0F69B287A58645CF092AB1DCD5158B71EF"
+  },
+  {
+    "path": "experiments/scripts/phase2_freeze_tedlium.py",
+    "sha256": "1519DD34879A122AF029DED0447945DD5DA5645F6A7CB988FEFF27EC12C389BC"
+  },
+  {
+    "path": "experiments/scripts/profile_dataset.py",
+    "sha256": "D848D993152335B39FF021B9CA3B50C7B136A218DFA5F40311BB462898EAFFBD"
+  },
+  {
+    "path": "experiments/scripts/stage_benchmark_helpers.py",
+    "sha256": "4525CAC44100D83EB4E7324FB557F8B277A7125444D917C446A2DA05CEBADD44"
+  },
+  {
+    "path": "tests/test_d2_freeze_pipeline.py",
+    "sha256": "2D2F42DEC88D783734CF842C2D503492FCBF1588DB40EE0A31E6A61A40A692E7"
+  },
+  {
+    "path": "tests/test_dataset_contracts.py",
+    "sha256": "DD7F8BFCBB7FE6AA576FA542524FA224B2B80A6EE8DC8B2EBD28736F2E74AD3A"
+  },
+  {
+    "path": "tests/test_notebook_executor.py",
+    "sha256": "032E7C2EFA835825FEFC233F772972CFB0D90DA3F53A17411492A1AE172AC37D"
+  },
+  {
+    "path": "tests/test_notebook_generator.py",
+    "sha256": "300DA6179CFCE3EAD664B2BAE630F5B379FE203855C7061AE219347C652B23B4"
+  },
+  {
+    "path": "tests/test_phase1_priority_runners.py",
+    "sha256": "871076FBB2CC9D0EA13197DFF9E581E421C3674BC1C23C0560C2B972E425B8DB"
+  },
+  {
+    "path": "tests/test_phase1_stage_smoke_runners.py",
+    "sha256": "70159B872FE4470E06287FD02C1D86C4A920EE264341D3E4022FF626BBD429BA"
+  },
+  {
+    "path": "tests/test_phase2_tedlium_d2.py",
+    "sha256": "E052A45827BB8EDF1E414F935820896EC5E524AA632A76214CDA8A845937E66B"
+  }
+]

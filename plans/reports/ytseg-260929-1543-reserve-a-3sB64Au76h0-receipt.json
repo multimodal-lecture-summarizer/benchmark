@@ -1,0 +1,244 @@
+{
+  "video_id": "3sB64Au76h0",
+  "cohort_lock_sha256": "4dedb0efacecf547f1bf2eac773a0b6ced3cea9ed1330875cf6e9b493e9f0719",
+  "ytseg_revision": "4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+  "ytseg_split": "train",
+  "locked_role": "reserve",
+  "course_id": "mit-16.687-iap-2019",
+  "lecturer_ids": [
+    "philip-greenspun",
+    "tina-srivastava"
+  ],
+  "publisher_page": "https://ocw.mit.edu/courses/16-687-private-pilot-ground-school-january-iap-2019/resources/lecture-12-aircraft-performance/",
+  "publisher_page_contains_exact_video_id": true,
+  "publisher_page_links_exact_media": true,
+  "rights_page": "https://ocw.mit.edu/pages/privacy-and-terms-of-use/",
+  "publisher_media_download": {
+    "url": "https://archive.org/download/MIT16.687IAP19/MIT16_687IAP19_lec12_300k.mp4",
+    "resolved_url": "https://dn720400.ca.archive.org/0/items/MIT16.687IAP19/MIT16_687IAP19_lec12_300k.mp4",
+    "content_length": 155177690,
+    "local_bytes": 155177690,
+    "sha256": "4e0c3d2e86366585acf497e83e5ba618403fa95dad232e4640ef06565d2647f2",
+    "etag": "\"5e8770a5-93fd2da\"",
+    "last_modified": "Fri, 03 Apr 2020 17:21:41 GMT",
+    "elapsed_s": 22.62
+  },
+  "local_media_path": "multimodal-lecture-summarizer/experiments/datasets/ytseg_qualification/3sB64Au76h0.mp4",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 640,
+        "height": 360,
+        "duration": "3931.861267"
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "3931.882000"
+      },
+      {
+        "index": 2,
+        "codec_name": "mov_text",
+        "codec_type": "subtitle",
+        "duration": "3905.890000"
+      },
+      {
+        "index": 3,
+        "codec_name": "png",
+        "codec_type": "video",
+        "width": 1400,
+        "height": 1400,
+        "duration": "3931.882000"
+      },
+      {
+        "index": 4,
+        "codec_name": "mov_text",
+        "codec_type": "subtitle",
+        "width": 640,
+        "height": 360,
+        "duration": "3931.882000"
+      }
+    ],
+    "format": {
+      "duration": "3931.882000",
+      "size": "155177690"
+    }
+  },
+  "full_av_decode": {
+    "exit_code": 0,
+    "stderr_tail": "[mov,mp4,m4a,3gp,3g2,mj2 @ 00000298fea96dc0] stream 0, timescale not set\n"
+  },
+  "decoded_pts": {
+    "video": {
+      "frames": 117838,
+      "first_s": 0.0,
+      "last_s": 3931.8279,
+      "negative_steps": 0,
+      "ffprobe_exit_code": 0,
+      "stderr_tail": ""
+    },
+    "audio": {
+      "frames": 184307,
+      "first_s": 0.0,
+      "last_s": 3931.86,
+      "negative_steps": 0,
+      "ffprobe_exit_code": 0,
+      "stderr_tail": ""
+    }
+  },
+  "pinned_train": {
+    "shard": 1,
+    "row_offset": 2105,
+    "duration_s": 3932.0,
+    "raw_chapters_count": 33,
+    "titles_count": 33,
+    "timestamps_count": 32,
+    "title_sequence_matches_raw": true,
+    "timestamps_equal_raw_starts_after_zero": true,
+    "raw_chapter_starts_s": [
+      0.0,
+      69.0,
+      116.0,
+      158.0,
+      306.0,
+      333.0,
+      410.0,
+      443.0,
+      605.0,
+      731.0,
+      865.0,
+      1014.0,
+      1138.0,
+      1177.0,
+      1292.0,
+      1583.0,
+      1719.0,
+      1786.0,
+      2025.0,
+      2166.0,
+      2457.0,
+      2497.0,
+      2617.0,
+      2824.0,
+      2883.0,
+      2911.0,
+      2923.0,
+      2942.0,
+      3021.0,
+      3046.0,
+      3183.0,
+      3232.0,
+      3302.0
+    ],
+    "final_end_s": 3932.0,
+    "text_ref_segments": 727
+  },
+  "embedded_subtitle_cues": 1321,
+  "alignment_checks": [
+    {
+      "kind": "10_percent",
+      "checked_at_s": 393.2,
+      "chapter_index": 5,
+      "chapter_title": "Best Glide Ratio",
+      "publisher_subtitle_cues": 5,
+      "sixgram_hits": 41,
+      "sixgram_total": 41,
+      "sixgram_coverage": 1.0,
+      "median_pinned_text_position_fraction": 0.0881,
+      "relative_time_fraction": 0.1,
+      "publisher_caption_sample_sha256": "0170e228d3d2b990ffdebcea9465f12448f116c57176242b3cba274df4df41e8",
+      "qualitative_topic_check": "performance discussion of weight and glide speeds"
+    },
+    {
+      "kind": "50_percent",
+      "checked_at_s": 1966.0,
+      "chapter_index": 17,
+      "chapter_title": "Range vs. Endurance",
+      "publisher_subtitle_cues": 7,
+      "sixgram_hits": 48,
+      "sixgram_total": 48,
+      "sixgram_coverage": 1.0,
+      "median_pinned_text_position_fraction": 0.4944,
+      "relative_time_fraction": 0.5,
+      "publisher_caption_sample_sha256": "2a97256ad75144b2387a2ae2c6c390fbce7dae1e3172a7e34d501ab63e9db7b0",
+      "qualitative_topic_check": "range and endurance with headwind discussion"
+    },
+    {
+      "kind": "90_percent",
+      "checked_at_s": 3538.8,
+      "chapter_index": 32,
+      "chapter_title": "Questions?",
+      "publisher_subtitle_cues": 6,
+      "sixgram_hits": 48,
+      "sixgram_total": 48,
+      "sixgram_coverage": 1.0,
+      "median_pinned_text_position_fraction": 0.9031,
+      "relative_time_fraction": 0.9,
+      "publisher_caption_sample_sha256": "cb4b22b0b75831188405c95eaf5510c56ce45797b0c2a99631f78385cdb29721",
+      "qualitative_topic_check": "questions and performance planning"
+    },
+    {
+      "kind": "first_internal_boundary",
+      "checked_at_s": 77.0,
+      "chapter_index": 1,
+      "chapter_title": "Importance of Performance",
+      "publisher_subtitle_cues": 6,
+      "sixgram_hits": 45,
+      "sixgram_total": 45,
+      "sixgram_coverage": 1.0,
+      "median_pinned_text_position_fraction": 0.0164,
+      "relative_time_fraction": 0.0196,
+      "publisher_caption_sample_sha256": "77e10788d166e7148789e43eddd87198455510340b8167f219b6f8ddf49d6b13",
+      "qualitative_topic_check": "performance importance and flight safety"
+    },
+    {
+      "kind": "middle_internal_boundary",
+      "checked_at_s": 1727.0,
+      "chapter_index": 16,
+      "chapter_title": "Ceiling",
+      "publisher_subtitle_cues": 8,
+      "sixgram_hits": 53,
+      "sixgram_total": 53,
+      "sixgram_coverage": 1.0,
+      "median_pinned_text_position_fraction": 0.4251,
+      "relative_time_fraction": 0.4392,
+      "publisher_caption_sample_sha256": "bd49172f807938b08bcfbc690231cb595f7896aaee7f29e2f41b7bd0441075b9",
+      "qualitative_topic_check": "service ceiling discussion"
+    },
+    {
+      "kind": "last_internal_boundary",
+      "checked_at_s": 3310.0,
+      "chapter_index": 32,
+      "chapter_title": "Questions?",
+      "publisher_subtitle_cues": 5,
+      "sixgram_hits": 34,
+      "sixgram_total": 34,
+      "sixgram_coverage": 1.0,
+      "median_pinned_text_position_fraction": 0.8534,
+      "relative_time_fraction": 0.8418,
+      "publisher_caption_sample_sha256": "0b33008dea801ac4392a618521328ff217c39047b9499f227cfb7aa1e0714f1f",
+      "qualitative_topic_check": "audience questions begin"
+    }
+  ],
+  "technical_media_status": "pass",
+  "resource_status": "hold",
+  "blocking_gates": [
+    "hold_gt_upstream_conversion_code",
+    "hold_rights_whole_component_review",
+    "content_near_duplicate_check_pending"
+  ],
+  "limits": [
+    "Embedded MP4 subtitles may be the upstream source of YTSeg text_ref, so sixgram agreement is not independent speech transcription.",
+    "Six predefined points do not validate every chapter boundary.",
+    "Course-level terms and a downloadable MP4 do not prove reuse rights for every third-party component.",
+    "No model selection, D2, or official RQ1 run."
+  ]
+}

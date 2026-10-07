@@ -1,0 +1,234 @@
+{
+  "purpose": "point-in-time receipt of publisher-published chapter titles and start times; no generated labels",
+  "source": "Open Yale Courses lecture pages",
+  "parsing": "lecture chapter title fields and companion chapter start time fields in .view-session-lecture-chapters",
+  "raw_html_preserved": false,
+  "files": [
+    {
+      "course_id": "econ159",
+      "lecture_no": 2,
+      "source_url": "https://oyc.yale.edu/economics/econ-159/lecture-2",
+      "retrieved_at_utc": "2026-09-29T04:13:15+00:00",
+      "http_status": 200,
+      "etag": "W/\"1790452903\"",
+      "last_modified": "Sat, 26 Sep 2026 20:01:43 GMT",
+      "source_html_bytes": 82115,
+      "source_html_sha256": "8decd028af50067b0dc6b6bc8341160fb30809a5bdcdc68a34af72b6db9a51a4",
+      "publisher_chapters_sha256": "0790cd8ca798f30016340bf8b0665ee58dfbf50cca09b8c8c2892e2ca923a2d1",
+      "publisher_chapters": [
+        {
+          "title": "Recap of Previous Lecture: Prisoners' Dilemma and Payoffs",
+          "start_s": 0
+        },
+        {
+          "title": "The Formal Ingredients of a Game",
+          "start_s": 407
+        },
+        {
+          "title": "Weakly Dominant Strategies",
+          "start_s": 961
+        },
+        {
+          "title": "Rationality and Common Knowledge",
+          "start_s": 2129
+        },
+        {
+          "title": "Common Knowledge vs. Mutual Knowledge",
+          "start_s": 3937
+        }
+      ],
+      "ledger_starts_exact_match": true
+    },
+    {
+      "course_id": "econ251",
+      "lecture_no": 1,
+      "source_url": "https://oyc.yale.edu/economics/econ-251/lecture-1",
+      "retrieved_at_utc": "2026-09-29T04:13:16+00:00",
+      "http_status": 200,
+      "etag": "W/\"1790456919\"",
+      "last_modified": "Sat, 26 Sep 2026 21:08:39 GMT",
+      "source_html_bytes": 93551,
+      "source_html_sha256": "e39e3643aa4d55b0cdc0b6ecce80ecc96a6bbe98931b142c4273b50176f580b3",
+      "publisher_chapters_sha256": "b7aefb1ef51fd6fd349ff6c0c81f8fc063f8158c7a9605bfe231142431efe8ed",
+      "publisher_chapters": [
+        {
+          "title": "Course Introduction",
+          "start_s": 0
+        },
+        {
+          "title": "Collateral in the Standard Theory",
+          "start_s": 616
+        },
+        {
+          "title": "Leverage in Housing Prices",
+          "start_s": 1074
+        },
+        {
+          "title": "Examples of Finance",
+          "start_s": 2027
+        },
+        {
+          "title": "Why Study Finance?",
+          "start_s": 2773
+        },
+        {
+          "title": "Logistics",
+          "start_s": 3013
+        },
+        {
+          "title": "A Experiment of the Financial Market",
+          "start_s": 3502
+        }
+      ],
+      "ledger_starts_exact_match": true
+    },
+    {
+      "course_id": "econ25208",
+      "lecture_no": 6,
+      "source_url": "https://oyc.yale.edu/economics/econ-252-08/lecture-6",
+      "retrieved_at_utc": "2026-09-29T04:13:16+00:00",
+      "http_status": 200,
+      "etag": "W/\"1790465006\"",
+      "last_modified": "Sat, 26 Sep 2026 23:23:26 GMT",
+      "source_html_bytes": 72109,
+      "source_html_sha256": "5cb199fe91f3bb34e096399fbda7a26b36858dea8cfa2a7f22a5dafbd0a94df9",
+      "publisher_chapters_sha256": "b270344507497bfb968a51a292f79669edba342be233459a9719d3336f202242",
+      "publisher_chapters": [
+        {
+          "title": "Last Thoughts on Insurance and Catastrophe Bonds",
+          "start_s": 0
+        },
+        {
+          "title": "Information Access and the Efficient Markets Hypothesis",
+          "start_s": 388
+        },
+        {
+          "title": "Varying Degrees of Efficient Markets and No Dividends: The Case of First Federal Financial",
+          "start_s": 1200
+        },
+        {
+          "title": "The Random Walk Theory",
+          "start_s": 2504
+        },
+        {
+          "title": "The First Order Auto-regressive Model",
+          "start_s": 3090
+        },
+        {
+          "title": "Challenges in Forecasting the Market",
+          "start_s": 3419
+        }
+      ],
+      "ledger_starts_exact_match": true
+    },
+    {
+      "course_id": "engl220",
+      "lecture_no": 23,
+      "source_url": "https://oyc.yale.edu/english/engl-220/lecture-23",
+      "retrieved_at_utc": "2026-09-29T04:13:16+00:00",
+      "http_status": 200,
+      "etag": "W/\"1790475105\"",
+      "last_modified": "Sun, 27 Sep 2026 02:11:45 GMT",
+      "source_html_bytes": 54222,
+      "source_html_sha256": "0b9648b63d0ae8ecdfafbd94fa009517439f8c89e9af97272cfaa1c8eabf01a2",
+      "publisher_chapters_sha256": "afcf0c71e35cc8744d2f632a968d02a320dc0f18edbdc8df0edcd0ce448ae729",
+      "publisher_chapters": [
+        {
+          "title": "Introduction: “Samson Agonistes”",
+          "start_s": 0
+        },
+        {
+          "title": "When Was “Samson Agonistes” Written?",
+          "start_s": 117
+        },
+        {
+          "title": "“Samson Agonistes”: The Most Intense Expression of Misogyny in the Miltonic Canon",
+          "start_s": 1034
+        },
+        {
+          "title": "Dalila’s Dialogue",
+          "start_s": 1538
+        },
+        {
+          "title": "Samson: The Nursling of God",
+          "start_s": 2202
+        }
+      ],
+      "ledger_starts_exact_match": true
+    },
+    {
+      "course_id": "phys200",
+      "lecture_no": 19,
+      "source_url": "https://oyc.yale.edu/physics/phys-200/lecture-19",
+      "retrieved_at_utc": "2026-09-29T04:13:17+00:00",
+      "http_status": 200,
+      "etag": "W/\"1790458686\"",
+      "last_modified": "Sat, 26 Sep 2026 21:38:06 GMT",
+      "source_html_bytes": 85504,
+      "source_html_sha256": "ed9a28315a36c6aa51eb55d7b6cbc7cdd1ba62d1c3d306d6adfc521e282c020d",
+      "publisher_chapters_sha256": "5c5649e2222c7f265512f85fd9d32ee2a4fadce779ff4c1634c7cfc647fa3ff4",
+      "publisher_chapters": [
+        {
+          "title": "General Solution of Wave Equation",
+          "start_s": 0
+        },
+        {
+          "title": "Spatial and Temporal Periodicity: Frequency, Period",
+          "start_s": 531
+        },
+        {
+          "title": "Wave Energy and Power Transmitted",
+          "start_s": 1059
+        },
+        {
+          "title": "Doppler Effect",
+          "start_s": 1802
+        },
+        {
+          "title": "Superposition of Waves",
+          "start_s": 2338
+        },
+        {
+          "title": "Constructive and Destructive Interference, Double Slit Experiment",
+          "start_s": 2937
+        },
+        {
+          "title": "Modes of Vibration: Application to Musical Instruments",
+          "start_s": 3690
+        }
+      ],
+      "ledger_starts_exact_match": true
+    },
+    {
+      "course_id": "phys201",
+      "lecture_no": 10,
+      "source_url": "https://oyc.yale.edu/physics/phys-201/lecture-10",
+      "retrieved_at_utc": "2026-09-29T04:13:17+00:00",
+      "http_status": 200,
+      "etag": "W/\"1790457854\"",
+      "last_modified": "Sat, 26 Sep 2026 21:24:14 GMT",
+      "source_html_bytes": 79566,
+      "source_html_sha256": "4a474a190d90a35f293ce57e8dc072031f2d5c0e30704d27209295f0fcdfe7de",
+      "publisher_chapters_sha256": "66a82cb545b66ec968d98f551d68118b9dceebe892dbf53e253775bb4e5566d6",
+      "publisher_chapters": [
+        {
+          "title": "Review of Ampere's Law",
+          "start_s": 0
+        },
+        {
+          "title": "Magnetic Field Generated by Current in a Solenoid",
+          "start_s": 526
+        },
+        {
+          "title": "Lenz's Law",
+          "start_s": 2994
+        },
+        {
+          "title": "Faraday's Law",
+          "start_s": 4027
+        }
+      ],
+      "ledger_starts_exact_match": true
+    }
+  ]
+}

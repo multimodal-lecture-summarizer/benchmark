@@ -1,0 +1,60 @@
+{
+  "schema": "rq1-yale-alternative-tranche-lock/1",
+  "qualification_only": true,
+  "selection_rule": "six held groups from prior remaining tranche plus held PHYS200 QA group; choose minimum SHA256 lecture URL within same course excluding previously reviewed URL; no alternative lecture page/GT/media read before lock",
+  "prior_lock_sha256": "63a7b8ee5bb48f43178af91ba75c9cdc94ae9a223287b331bc6774892b9e3e75",
+  "prior_gate_sha256": "c8994690007aa7c13ac9af5c9660b8c37dfcd47ecec44d64babf83c0965c39a2",
+  "prior_qa_gate_sha256": "7b52673eef377bbff4bf39eb57cd33af547e882c914599c3fd0726cf3786ad8a",
+  "locked_csv_sha256": "9e4fcabb1f7a2a8b95906894d10a7359a18a951dce5ad6b8709dcca43a4ff095",
+  "source_course_pages": [
+    {
+      "course_url": "https://oyc.yale.edu/history/hist-276",
+      "source": "prior_locked_course_snapshot",
+      "course_html_sha256": "ae7cde41b334eaa2c301a61488c538f3810dc5d216dae05fd49459dcfed0f7a4",
+      "candidate_url_count": 21,
+      "all_lecture_urls_sha256": "8f70c16e50a7c77ffc3c3e9b2e9d15bb06818ee975b04e6bc4d999c522700e76"
+    },
+    {
+      "course_url": "https://oyc.yale.edu/molecular-cellular-and-developmental-biology/mcdb-150",
+      "source": "prior_locked_course_snapshot",
+      "course_html_sha256": "afc91b49d0d9834e2bf4252af12aecb1d8961ba2ec4c915f76ee092a6b87f17e",
+      "candidate_url_count": 23,
+      "all_lecture_urls_sha256": "7dcdf155eb0ac44134e93733ff49544a1062d4ef22d994884e6ea50444a8a6a9"
+    },
+    {
+      "course_url": "https://oyc.yale.edu/political-science/plsc-270",
+      "source": "prior_locked_course_snapshot",
+      "course_html_sha256": "6e1e02315c5118785e9c08146021e73eb1305fbef1a11743f05a7d4daf44e097",
+      "candidate_url_count": 23,
+      "all_lecture_urls_sha256": "483e1a9a0461948984e1b434367aa2cadb7e02928113a94da302e13a59679001"
+    },
+    {
+      "course_url": "https://oyc.yale.edu/sociology/socy-151",
+      "source": "prior_locked_course_snapshot",
+      "course_html_sha256": "74ee40f2f4012c2d34c700872e8aaa5198c104636fba3d0b30ea53ac482ef875",
+      "candidate_url_count": 24,
+      "all_lecture_urls_sha256": "468a5e3296c67bf9b637c97393c115cef2e9367d2a20d51dbc79fccd33946cf9"
+    },
+    {
+      "course_url": "https://oyc.yale.edu/history-of-art/hsar-252",
+      "source": "prior_locked_course_snapshot",
+      "course_html_sha256": "91f7f735db85ad5a098db57c02ac1909b88024ed6416ef224629f7948faeebeb",
+      "candidate_url_count": 14,
+      "all_lecture_urls_sha256": "af50c311d678470b3b655a8a147a4091af76b6c1886f43e11a51195d2299f67d"
+    },
+    {
+      "course_url": "https://oyc.yale.edu/ecology-and-evolutionary-biology/eeb-122",
+      "source": "prior_locked_course_snapshot",
+      "course_html_sha256": "7ec0036064047537a97b9796980d5f9d5fbad63d7df708d758b97b59f5c717c5",
+      "candidate_url_count": 35,
+      "all_lecture_urls_sha256": "7ca65b1206e987581b0ee763ad7292f3484da0410001f44832eff1c43a844597"
+    },
+    {
+      "course_url": "https://oyc.yale.edu/physics/phys-200",
+      "source": "publisher_course_page_at_lock",
+      "course_html_sha256": "1281e91faae056ae4fc8c79352206cc4844b35fdbee75991151d1a9a25923878",
+      "candidate_url_count": 22,
+      "all_lecture_urls_sha256": "e920ac4c5c9e00c109308793f7ae3977266f05b84328cc3576500b2636ea1713"
+    }
+  ]
+}

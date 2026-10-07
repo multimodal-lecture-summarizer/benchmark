@@ -1,0 +1,4292 @@
+{
+  "checked_at_utc": "2026-09-29T09:20:30.821396+00:00",
+  "lock_sha256": "4dedb0efacecf547f1bf2eac773a0b6ced3cea9ed1330875cf6e9b493e9f0719",
+  "ytseg_revision": "4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+  "mitfld_revision": "f5a5047e040ecf0f80a3cb67d64e324407f323ec",
+  "ytseg_ids": [
+    "-7xg8pGcP6w",
+    "-dOX_4lI6HY",
+    "3sB64Au76h0",
+    "MoEaRpLNo9A",
+    "Th2N_rDfkDw",
+    "alLh1Jdqwvg",
+    "kiCNa95DnnE",
+    "ksyY5wa5_50",
+    "tCKk22kaZi4",
+    "xsO2Ip6eiaY"
+  ],
+  "mitfld_selected_count": 35,
+  "mitfld_prior_pilot_count": 10,
+  "pair_count": 450,
+  "normalization": "lowercase ASCII alphanumeric words via [a-z0-9]+; concatenate published text_ref or transcript segments; unigrams preserve speaker/caption words; exact ordered unique word 5-gram and 10-gram sets",
+  "metrics": "Jaccard=shared5/union5; shorter containment=shared5/min(set sizes). 10gram intersection is a stricter crosscheck. No MinHash approximation.",
+  "screen_thresholds": {
+    "flag_review_if_shorter_containment_5gram_at_least": 0.1,
+    "flag_review_if_intersection_10gram_at_least": 25
+  },
+  "ytseg_token_counts": {
+    "-dOX_4lI6HY": 8795,
+    "tCKk22kaZi4": 7643,
+    "kiCNa95DnnE": 3480,
+    "Th2N_rDfkDw": 6724,
+    "3sB64Au76h0": 10600,
+    "ksyY5wa5_50": 4555,
+    "MoEaRpLNo9A": 16700,
+    "-7xg8pGcP6w": 15920,
+    "alLh1Jdqwvg": 6312,
+    "xsO2Ip6eiaY": 4042
+  },
+  "mitfld_token_counts": {
+    "-Pg11JHzUTo": 12172,
+    "2NMtS1ecb3o": 7433,
+    "6MssatXXAzc": 8637,
+    "74_BKWR3n0k": 12549,
+    "7J1HD9rqEB4": 11695,
+    "7LyvAVjQUR8": 9349,
+    "9uqKU5ZDwfM": 8075,
+    "AhK3YeJP8Ts": 6761,
+    "CALYA11terw": 6975,
+    "Chv8dlBVXpw": 6403,
+    "DvGNpuan4rw": 6225,
+    "EXYw8_pnKr0": 7148,
+    "Ed0Wg-5YYCk": 7992,
+    "EmSmaW-ud6A": 6020,
+    "Hf1Ma9YkOMY": 9262,
+    "J4gbaRyWpoM": 10854,
+    "JIw9mnVeFig": 5803,
+    "JNWXzIFcf3g": 8239,
+    "JuKKBf-uSDI": 12061,
+    "KAySmSEGc9U": 10441,
+    "LMSTMBX_2F4": 6803,
+    "M2d4HsBsu8Y": 8158,
+    "R2vL2wLqGYg": 8464,
+    "Rlvwagd2BmY": 8402,
+    "XSUjp-cDyeY": 10591,
+    "Z2ScgFh81Dc": 8709,
+    "_S1CREXGfvE": 2028,
+    "_Ycy0Dy-B1c": 13133,
+    "g0bXSXuLVb0": 13331,
+    "gXPX29KfEc4": 7706,
+    "gnWKpHUj11w": 8416,
+    "gtQ046Tu2S4": 1016,
+    "mhQebe1Y4d0": 12457,
+    "muwNEvhy6Po": 11480,
+    "neBeTYziSLo": 7749,
+    "o8sje-b-BCk": 8893,
+    "qb1U3_Q-7o8": 11585,
+    "r1VX3WXrYUw": 10924,
+    "smHwRzk81b0": 10521,
+    "tKyaGnPni3U": 7109,
+    "vFZY--lgmHs": 11669,
+    "vcsxCFSLyP8": 8617,
+    "w7HDA8gUbpQ": 10906,
+    "ySqVVEBTy2o": 10280,
+    "z_xyx-z6arc": 8397
+  },
+  "mitfld_transcript_sha256": {
+    "-Pg11JHzUTo": "5d90c948a994aeeff73bf5f33178fcfa2e7c0a7b12f7ccb0de58bc48b2602a74",
+    "2NMtS1ecb3o": "4fdddf6bbc039a4004018a000760bbd79ea05683103805557efa72a6effc726b",
+    "6MssatXXAzc": "9618c0879547b00501c1a001166f5ab4fa66158a3736f4d191a6db66f86faf24",
+    "74_BKWR3n0k": "79d6a9ee6e8e16262f562a4887e89e317574fc0e885338d29473231d50257169",
+    "7J1HD9rqEB4": "ef6b24d6b11590452440302cd67dd8b104c4f6e0fead1bf1cdbc20c20c59355a",
+    "7LyvAVjQUR8": "29135394a20c6fcdb45f32c9d0b7be581851314755746b01f68abefe33e21625",
+    "9uqKU5ZDwfM": "0f717b50d2835a7181188ef2e3e0f1eda938ab16cb6297f38868f321e7f17c27",
+    "AhK3YeJP8Ts": "eac85cf250008f0c8069da0c7bdefbd819710ac1e143809143ccb47e51ddefbe",
+    "CALYA11terw": "2e3e66cadd49bde8e6c6354200baa3b1dfd8006557d8206dd0300c54cf57da27",
+    "Chv8dlBVXpw": "96a778a962323872353af77fc669ba473720efc90e4274ac41d1b90043401668",
+    "DvGNpuan4rw": "0541f66ea962e0a00e6736bae1db303e2fae4bf91f5937f2b6629125ef00662a",
+    "EXYw8_pnKr0": "487034533eba353224dbf811a2c70f764b1900c2521856420c8b98fc467e64d8",
+    "Ed0Wg-5YYCk": "ee1190887367061bc0580c198a8ab32c64c292716738d0e8d75ac1d073ed028a",
+    "EmSmaW-ud6A": "e4a4df384112de7ee80b35e37a64b7b78bb45537216454e3b02762d0b8e357d7",
+    "Hf1Ma9YkOMY": "16f9008c4c793e845f3ee9a0e92cad7f94e805ebf69f9372c8c5b01378d10cb1",
+    "J4gbaRyWpoM": "a79f076481892e710e291dc200745a8f39f000a9fb78f660e4386862a83ff3b7",
+    "JIw9mnVeFig": "42c89bb1b0dc8279558bc199de2999aedc5b33d3c501dd8984ddd223e1924dd8",
+    "JNWXzIFcf3g": "a571583a9c44fb14bfa69ba20bb014ea2edb433b0c8ae808426e8747621f4b78",
+    "JuKKBf-uSDI": "85b83aab9d9766adea6588cf5ddf44b18d17ab14099bd86e514d5e04bd6207de",
+    "KAySmSEGc9U": "9933634f788ba477d29107cd262916ac9be5afc33487a00234dd63f19bc90893",
+    "LMSTMBX_2F4": "b69a9591793fce46735202e7584bfc8d1433cc13445161708839988259759b0d",
+    "M2d4HsBsu8Y": "74f85e5ad2b0292ed344ad2cec71ea6ad2661118963767b6974355288320adff",
+    "R2vL2wLqGYg": "53965c0b462b8835d80bc405afaf14c5e6a721de5f2b1449469e3f308b532f06",
+    "Rlvwagd2BmY": "29f17b0f67223343b6b4c789463df242a03480bdfc3dabe001a6a09f01755ee9",
+    "XSUjp-cDyeY": "8854f9c3a2bfbd9c36e74489c84da3038bc1b214d35e1658adf284514d6c7889",
+    "Z2ScgFh81Dc": "3de73358b532b322929cb82edaab42b51b773dca5549f3ffaf2f3f344e82c183",
+    "_S1CREXGfvE": "66a8eed4e263c5d2f6f05a164db3aa05b12a2637f1589ba287c4fbb8e6051142",
+    "_Ycy0Dy-B1c": "d6e9cd0842f8337bdda34e8c0fed65284237cea4be21580209afd757166da25d",
+    "g0bXSXuLVb0": "e0316266dc50be163b821059e582769f5f9019e1a95c775486669e009bed5214",
+    "gXPX29KfEc4": "5fee3f5e7f2abbe964fd30cae98245a223dfa4182f35b14765959387aacb155a",
+    "gnWKpHUj11w": "19e907bb45482c5675897412cef7a221ffc1a69645f10bf2ca6f00013ae3313e",
+    "gtQ046Tu2S4": "9cfa7f29292dd798313cdbb33ee689fe6e24d3cb58263aee8b926fb6a9979228",
+    "mhQebe1Y4d0": "e515d19668613cec4cdc3d271ada3834bff99ded2fcbbb4a5cb733b2047e535f",
+    "muwNEvhy6Po": "bce7dc68d71f9e9b59331f19cd8c4c51ecd95874a977e9a49771db5c7edc17ad",
+    "neBeTYziSLo": "db222f11a1b3a6d0c210bfa72909a663f7d43267780333a36fcf93f4af524d52",
+    "o8sje-b-BCk": "911b8e50396208593e6f923526728322d819ce77c3139e4a0cf0ec3404c94c93",
+    "qb1U3_Q-7o8": "39c6dffa4d4387dd0ba139804eab6b167f41bbae45107e410b8b05bb710ecd4a",
+    "r1VX3WXrYUw": "b861bb6e7d174443050d6a12adfd08168f3e5991fe3a8588a0a52f7596d9c58e",
+    "smHwRzk81b0": "1481f83df38174baa19b06cabe4b54fa20eda1395c6ee52ca54e099c72083479",
+    "tKyaGnPni3U": "fb367177c777255ebe9b52e7477ed81f46ee8aa4d1f33bf1b20c788d2a747cb2",
+    "vFZY--lgmHs": "5188660b7f89709b051ea5f17fbb064c2eb1f07756743649cf913e00f41ac08d",
+    "vcsxCFSLyP8": "8f2e894233a88e603fc6c81b41de22e7f08b0b5dfa45b2970f08685107075f42",
+    "w7HDA8gUbpQ": "e31b419f9c015f35d5265b461f89989ec1381dc12dadd3c01d7ba9cf951275a7",
+    "ySqVVEBTy2o": "bd02e25c2f40f35b8baff12219216a47a25a6f05fdbef9b83544c8fe14cd1511",
+    "z_xyx-z6arc": "4f742fe148e7f6ccb35bc84d04cbb863c935f17c66d352d864e77e3a171dcb7a"
+  },
+  "max_pair": {
+    "ytseg_id": "tCKk22kaZi4",
+    "mitfld_id": "7J1HD9rqEB4",
+    "mitfld_role": "selected",
+    "intersection_5gram": 42,
+    "jaccard_5gram": 0.00225928,
+    "shorter_containment_5gram": 0.0057011,
+    "intersection_10gram": 0
+  },
+  "max_pair_by_ytseg": [
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "Chv8dlBVXpw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 25,
+      "jaccard_5gram": 0.00115314,
+      "shorter_containment_5gram": 0.0039507,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "7J1HD9rqEB4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 31,
+      "jaccard_5gram": 0.00155318,
+      "shorter_containment_5gram": 0.00355301,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "7J1HD9rqEB4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 44,
+      "jaccard_5gram": 0.0020255,
+      "shorter_containment_5gram": 0.00418968,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "6MssatXXAzc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 48,
+      "jaccard_5gram": 0.0019319,
+      "shorter_containment_5gram": 0.00569801,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "Hf1Ma9YkOMY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 30,
+      "jaccard_5gram": 0.00194112,
+      "shorter_containment_5gram": 0.00449843,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "7J1HD9rqEB4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 18,
+      "jaccard_5gram": 0.00102857,
+      "shorter_containment_5gram": 0.00287862,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "_Ycy0Dy-B1c",
+      "mitfld_role": "selected",
+      "intersection_5gram": 11,
+      "jaccard_5gram": 0.00066918,
+      "shorter_containment_5gram": 0.00317552,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "_Ycy0Dy-B1c",
+      "mitfld_role": "selected",
+      "intersection_5gram": 13,
+      "jaccard_5gram": 0.00074239,
+      "shorter_containment_5gram": 0.00286407,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "7J1HD9rqEB4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 42,
+      "jaccard_5gram": 0.00225928,
+      "shorter_containment_5gram": 0.0057011,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "_Ycy0Dy-B1c",
+      "mitfld_role": "selected",
+      "intersection_5gram": 21,
+      "jaccard_5gram": 0.00123646,
+      "shorter_containment_5gram": 0.00522388,
+      "intersection_10gram": 0
+    }
+  ],
+  "pairs": [
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "-Pg11JHzUTo",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 22,
+      "jaccard_5gram": 0.00080966,
+      "shorter_containment_5gram": 0.00186172,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "2NMtS1ecb3o",
+      "mitfld_role": "selected",
+      "intersection_5gram": 16,
+      "jaccard_5gram": 0.00070519,
+      "shorter_containment_5gram": 0.00218341,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "6MssatXXAzc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 31,
+      "jaccard_5gram": 0.00130416,
+      "shorter_containment_5gram": 0.00367996,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "74_BKWR3n0k",
+      "mitfld_role": "selected",
+      "intersection_5gram": 31,
+      "jaccard_5gram": 0.00111772,
+      "shorter_containment_5gram": 0.00250222,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "7J1HD9rqEB4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 41,
+      "jaccard_5gram": 0.0015413,
+      "shorter_containment_5gram": 0.00363959,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "7LyvAVjQUR8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 16,
+      "jaccard_5gram": 0.00064935,
+      "shorter_containment_5gram": 0.00172432,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "9uqKU5ZDwfM",
+      "mitfld_role": "selected",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.00012829,
+      "shorter_containment_5gram": 0.00037449,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "AhK3YeJP8Ts",
+      "mitfld_role": "selected",
+      "intersection_5gram": 6,
+      "jaccard_5gram": 0.00027232,
+      "shorter_containment_5gram": 0.00090063,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "CALYA11terw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 16,
+      "jaccard_5gram": 0.00071781,
+      "shorter_containment_5gram": 0.00230914,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "Chv8dlBVXpw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 25,
+      "jaccard_5gram": 0.00115314,
+      "shorter_containment_5gram": 0.0039507,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "DvGNpuan4rw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 14,
+      "jaccard_5gram": 0.00065165,
+      "shorter_containment_5gram": 0.00228721,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "EXYw8_pnKr0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 6,
+      "jaccard_5gram": 0.0002675,
+      "shorter_containment_5gram": 0.00084998,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "Ed0Wg-5YYCk",
+      "mitfld_role": "selected",
+      "intersection_5gram": 16,
+      "jaccard_5gram": 0.00069052,
+      "shorter_containment_5gram": 0.00204866,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "EmSmaW-ud6A",
+      "mitfld_role": "selected",
+      "intersection_5gram": 19,
+      "jaccard_5gram": 0.00089572,
+      "shorter_containment_5gram": 0.00324564,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "Hf1Ma9YkOMY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 7,
+      "jaccard_5gram": 0.00028942,
+      "shorter_containment_5gram": 0.00079401,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "J4gbaRyWpoM",
+      "mitfld_role": "selected",
+      "intersection_5gram": 29,
+      "jaccard_5gram": 0.00111367,
+      "shorter_containment_5gram": 0.00271231,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "JIw9mnVeFig",
+      "mitfld_role": "selected",
+      "intersection_5gram": 22,
+      "jaccard_5gram": 0.00104325,
+      "shorter_containment_5gram": 0.00383743,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "JNWXzIFcf3g",
+      "mitfld_role": "selected",
+      "intersection_5gram": 17,
+      "jaccard_5gram": 0.00072307,
+      "shorter_containment_5gram": 0.00208563,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "JuKKBf-uSDI",
+      "mitfld_role": "selected",
+      "intersection_5gram": 19,
+      "jaccard_5gram": 0.00069587,
+      "shorter_containment_5gram": 0.00159049,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "KAySmSEGc9U",
+      "mitfld_role": "selected",
+      "intersection_5gram": 38,
+      "jaccard_5gram": 0.00149842,
+      "shorter_containment_5gram": 0.00379204,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "LMSTMBX_2F4",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 17,
+      "jaccard_5gram": 0.00077164,
+      "shorter_containment_5gram": 0.00254834,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "M2d4HsBsu8Y",
+      "mitfld_role": "selected",
+      "intersection_5gram": 16,
+      "jaccard_5gram": 0.00071358,
+      "shorter_containment_5gram": 0.00226597,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "R2vL2wLqGYg",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 24,
+      "jaccard_5gram": 0.00101493,
+      "shorter_containment_5gram": 0.00289366,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "Rlvwagd2BmY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 14,
+      "jaccard_5gram": 0.00059312,
+      "shorter_containment_5gram": 0.00169882,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "XSUjp-cDyeY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 22,
+      "jaccard_5gram": 0.00085424,
+      "shorter_containment_5gram": 0.00211559,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "Z2ScgFh81Dc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00020866,
+      "shorter_containment_5gram": 0.00058207,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "_S1CREXGfvE",
+      "mitfld_role": "selected",
+      "intersection_5gram": 1,
+      "jaccard_5gram": 5.751e-05,
+      "shorter_containment_5gram": 0.00049727,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "_Ycy0Dy-B1c",
+      "mitfld_role": "selected",
+      "intersection_5gram": 32,
+      "jaccard_5gram": 0.00112954,
+      "shorter_containment_5gram": 0.00246438,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "g0bXSXuLVb0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 33,
+      "jaccard_5gram": 0.00116062,
+      "shorter_containment_5gram": 0.0025212,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "gXPX29KfEc4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 18,
+      "jaccard_5gram": 0.00080699,
+      "shorter_containment_5gram": 0.00259142,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "gnWKpHUj11w",
+      "mitfld_role": "selected",
+      "intersection_5gram": 31,
+      "jaccard_5gram": 0.00131434,
+      "shorter_containment_5gram": 0.00376214,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "gtQ046Tu2S4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 1,
+      "jaccard_5gram": 6.118e-05,
+      "shorter_containment_5gram": 0.00103306,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "mhQebe1Y4d0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 31,
+      "jaccard_5gram": 0.00112238,
+      "shorter_containment_5gram": 0.00252566,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "muwNEvhy6Po",
+      "mitfld_role": "selected",
+      "intersection_5gram": 15,
+      "jaccard_5gram": 0.00056131,
+      "shorter_containment_5gram": 0.00132031,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "neBeTYziSLo",
+      "mitfld_role": "selected",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.0002168,
+      "shorter_containment_5gram": 0.00065011,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "o8sje-b-BCk",
+      "mitfld_role": "selected",
+      "intersection_5gram": 11,
+      "jaccard_5gram": 0.00045494,
+      "shorter_containment_5gram": 0.00124816,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "qb1U3_Q-7o8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 16,
+      "jaccard_5gram": 0.00060549,
+      "shorter_containment_5gram": 0.00144613,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "r1VX3WXrYUw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 25,
+      "jaccard_5gram": 0.00096169,
+      "shorter_containment_5gram": 0.00234874,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "smHwRzk81b0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 17,
+      "jaccard_5gram": 0.00066871,
+      "shorter_containment_5gram": 0.00168952,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "tKyaGnPni3U",
+      "mitfld_role": "selected",
+      "intersection_5gram": 17,
+      "jaccard_5gram": 0.00076121,
+      "shorter_containment_5gram": 0.00243798,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "vFZY--lgmHs",
+      "mitfld_role": "selected",
+      "intersection_5gram": 25,
+      "jaccard_5gram": 0.00093245,
+      "shorter_containment_5gram": 0.00218169,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "vcsxCFSLyP8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 16,
+      "jaccard_5gram": 0.00067394,
+      "shorter_containment_5gram": 0.00190931,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "w7HDA8gUbpQ",
+      "mitfld_role": "selected",
+      "intersection_5gram": 13,
+      "jaccard_5gram": 0.00049702,
+      "shorter_containment_5gram": 0.0012046,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "ySqVVEBTy2o",
+      "mitfld_role": "selected",
+      "intersection_5gram": 21,
+      "jaccard_5gram": 0.00082224,
+      "shorter_containment_5gram": 0.00206206,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-7xg8pGcP6w",
+      "mitfld_id": "z_xyx-z6arc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 17,
+      "jaccard_5gram": 0.00071949,
+      "shorter_containment_5gram": 0.00205612,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "-Pg11JHzUTo",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 18,
+      "jaccard_5gram": 0.00087702,
+      "shorter_containment_5gram": 0.00206304,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "2NMtS1ecb3o",
+      "mitfld_role": "selected",
+      "intersection_5gram": 12,
+      "jaccard_5gram": 0.00074808,
+      "shorter_containment_5gram": 0.00163755,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "6MssatXXAzc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 15,
+      "jaccard_5gram": 0.00087545,
+      "shorter_containment_5gram": 0.00178063,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "74_BKWR3n0k",
+      "mitfld_role": "selected",
+      "intersection_5gram": 12,
+      "jaccard_5gram": 0.00056867,
+      "shorter_containment_5gram": 0.00137536,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "7J1HD9rqEB4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 31,
+      "jaccard_5gram": 0.00155318,
+      "shorter_containment_5gram": 0.00355301,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "7LyvAVjQUR8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 15,
+      "jaccard_5gram": 0.00083384,
+      "shorter_containment_5gram": 0.0017192,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "9uqKU5ZDwfM",
+      "mitfld_role": "selected",
+      "intersection_5gram": 13,
+      "jaccard_5gram": 0.00077737,
+      "shorter_containment_5gram": 0.00162277,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "AhK3YeJP8Ts",
+      "mitfld_role": "selected",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.00013,
+      "shorter_containment_5gram": 0.00030021,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "CALYA11terw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 18,
+      "jaccard_5gram": 0.00115119,
+      "shorter_containment_5gram": 0.00259778,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "Chv8dlBVXpw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 12,
+      "jaccard_5gram": 0.00079782,
+      "shorter_containment_5gram": 0.00189633,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "DvGNpuan4rw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 12,
+      "jaccard_5gram": 0.00080895,
+      "shorter_containment_5gram": 0.00196046,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "EXYw8_pnKr0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.0001901,
+      "shorter_containment_5gram": 0.00042499,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "Ed0Wg-5YYCk",
+      "mitfld_role": "selected",
+      "intersection_5gram": 10,
+      "jaccard_5gram": 0.00060514,
+      "shorter_containment_5gram": 0.00128041,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "EmSmaW-ud6A",
+      "mitfld_role": "selected",
+      "intersection_5gram": 18,
+      "jaccard_5gram": 0.00123618,
+      "shorter_containment_5gram": 0.00307482,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "Hf1Ma9YkOMY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 16,
+      "jaccard_5gram": 0.00091298,
+      "shorter_containment_5gram": 0.00183381,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "J4gbaRyWpoM",
+      "mitfld_role": "selected",
+      "intersection_5gram": 17,
+      "jaccard_5gram": 0.00087629,
+      "shorter_containment_5gram": 0.00194842,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "JIw9mnVeFig",
+      "mitfld_role": "selected",
+      "intersection_5gram": 18,
+      "jaccard_5gram": 0.00124654,
+      "shorter_containment_5gram": 0.00313972,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "JNWXzIFcf3g",
+      "mitfld_role": "selected",
+      "intersection_5gram": 14,
+      "jaccard_5gram": 0.00083027,
+      "shorter_containment_5gram": 0.00171758,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "JuKKBf-uSDI",
+      "mitfld_role": "selected",
+      "intersection_5gram": 21,
+      "jaccard_5gram": 0.00101695,
+      "shorter_containment_5gram": 0.00240688,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "KAySmSEGc9U",
+      "mitfld_role": "selected",
+      "intersection_5gram": 25,
+      "jaccard_5gram": 0.0013354,
+      "shorter_containment_5gram": 0.00286533,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "LMSTMBX_2F4",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 15,
+      "jaccard_5gram": 0.00097523,
+      "shorter_containment_5gram": 0.00224854,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "M2d4HsBsu8Y",
+      "mitfld_role": "selected",
+      "intersection_5gram": 15,
+      "jaccard_5gram": 0.00095111,
+      "shorter_containment_5gram": 0.00212434,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "R2vL2wLqGYg",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 19,
+      "jaccard_5gram": 0.00111765,
+      "shorter_containment_5gram": 0.00229081,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "Rlvwagd2BmY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 11,
+      "jaccard_5gram": 0.00064878,
+      "shorter_containment_5gram": 0.00133479,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "XSUjp-cDyeY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 11,
+      "jaccard_5gram": 0.00057552,
+      "shorter_containment_5gram": 0.00126074,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "Z2ScgFh81Dc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 6,
+      "jaccard_5gram": 0.00034664,
+      "shorter_containment_5gram": 0.00069849,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "_S1CREXGfvE",
+      "mitfld_role": "selected",
+      "intersection_5gram": 1,
+      "jaccard_5gram": 9.315e-05,
+      "shorter_containment_5gram": 0.00049727,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "_Ycy0Dy-B1c",
+      "mitfld_role": "selected",
+      "intersection_5gram": 20,
+      "jaccard_5gram": 0.00092208,
+      "shorter_containment_5gram": 0.00229226,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "g0bXSXuLVb0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 17,
+      "jaccard_5gram": 0.00077992,
+      "shorter_containment_5gram": 0.00194842,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "gXPX29KfEc4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 6,
+      "jaccard_5gram": 0.00038302,
+      "shorter_containment_5gram": 0.00086381,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "gnWKpHUj11w",
+      "mitfld_role": "selected",
+      "intersection_5gram": 15,
+      "jaccard_5gram": 0.00088496,
+      "shorter_containment_5gram": 0.00182039,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "gtQ046Tu2S4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 0,
+      "jaccard_5gram": 0.0,
+      "shorter_containment_5gram": 0.0,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "mhQebe1Y4d0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 16,
+      "jaccard_5gram": 0.00076252,
+      "shorter_containment_5gram": 0.00183381,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "muwNEvhy6Po",
+      "mitfld_role": "selected",
+      "intersection_5gram": 12,
+      "jaccard_5gram": 0.00059779,
+      "shorter_containment_5gram": 0.00137536,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "neBeTYziSLo",
+      "mitfld_role": "selected",
+      "intersection_5gram": 10,
+      "jaccard_5gram": 0.00060953,
+      "shorter_containment_5gram": 0.00130022,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "o8sje-b-BCk",
+      "mitfld_role": "selected",
+      "intersection_5gram": 7,
+      "jaccard_5gram": 0.00039929,
+      "shorter_containment_5gram": 0.00080229,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "qb1U3_Q-7o8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 14,
+      "jaccard_5gram": 0.00070796,
+      "shorter_containment_5gram": 0.00160458,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "r1VX3WXrYUw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 13,
+      "jaccard_5gram": 0.00067163,
+      "shorter_containment_5gram": 0.00148997,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "smHwRzk81b0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 23,
+      "jaccard_5gram": 0.00122575,
+      "shorter_containment_5gram": 0.0026361,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "tKyaGnPni3U",
+      "mitfld_role": "selected",
+      "intersection_5gram": 19,
+      "jaccard_5gram": 0.00121181,
+      "shorter_containment_5gram": 0.0027248,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "vFZY--lgmHs",
+      "mitfld_role": "selected",
+      "intersection_5gram": 13,
+      "jaccard_5gram": 0.00064449,
+      "shorter_containment_5gram": 0.00148997,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "vcsxCFSLyP8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 8,
+      "jaccard_5gram": 0.00046792,
+      "shorter_containment_5gram": 0.00095465,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "w7HDA8gUbpQ",
+      "mitfld_role": "selected",
+      "intersection_5gram": 13,
+      "jaccard_5gram": 0.00066653,
+      "shorter_containment_5gram": 0.00148997,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "ySqVVEBTy2o",
+      "mitfld_role": "selected",
+      "intersection_5gram": 10,
+      "jaccard_5gram": 0.00052913,
+      "shorter_containment_5gram": 0.00114613,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "-dOX_4lI6HY",
+      "mitfld_id": "z_xyx-z6arc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 18,
+      "jaccard_5gram": 0.00106038,
+      "shorter_containment_5gram": 0.00217707,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "-Pg11JHzUTo",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 22,
+      "jaccard_5gram": 0.00098668,
+      "shorter_containment_5gram": 0.00209484,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "2NMtS1ecb3o",
+      "mitfld_role": "selected",
+      "intersection_5gram": 22,
+      "jaccard_5gram": 0.0012354,
+      "shorter_containment_5gram": 0.00300218,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "6MssatXXAzc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 26,
+      "jaccard_5gram": 0.00137566,
+      "shorter_containment_5gram": 0.00308642,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "74_BKWR3n0k",
+      "mitfld_role": "selected",
+      "intersection_5gram": 30,
+      "jaccard_5gram": 0.00131228,
+      "shorter_containment_5gram": 0.0028566,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "7J1HD9rqEB4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 44,
+      "jaccard_5gram": 0.0020255,
+      "shorter_containment_5gram": 0.00418968,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "7LyvAVjQUR8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 26,
+      "jaccard_5gram": 0.00131612,
+      "shorter_containment_5gram": 0.00280203,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "9uqKU5ZDwfM",
+      "mitfld_role": "selected",
+      "intersection_5gram": 19,
+      "jaccard_5gram": 0.00102736,
+      "shorter_containment_5gram": 0.00237174,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "AhK3YeJP8Ts",
+      "mitfld_role": "selected",
+      "intersection_5gram": 11,
+      "jaccard_5gram": 0.00064129,
+      "shorter_containment_5gram": 0.00165116,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "CALYA11terw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 10,
+      "jaccard_5gram": 0.00057402,
+      "shorter_containment_5gram": 0.00144321,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "Chv8dlBVXpw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 16,
+      "jaccard_5gram": 0.00095159,
+      "shorter_containment_5gram": 0.00252845,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "DvGNpuan4rw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 10,
+      "jaccard_5gram": 0.00060194,
+      "shorter_containment_5gram": 0.00163372,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "EXYw8_pnKr0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 17,
+      "jaccard_5gram": 0.00096899,
+      "shorter_containment_5gram": 0.00240827,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "Ed0Wg-5YYCk",
+      "mitfld_role": "selected",
+      "intersection_5gram": 19,
+      "jaccard_5gram": 0.00103865,
+      "shorter_containment_5gram": 0.00243278,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "EmSmaW-ud6A",
+      "mitfld_role": "selected",
+      "intersection_5gram": 10,
+      "jaccard_5gram": 0.00061177,
+      "shorter_containment_5gram": 0.00170823,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "Hf1Ma9YkOMY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 24,
+      "jaccard_5gram": 0.00124391,
+      "shorter_containment_5gram": 0.00272232,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "J4gbaRyWpoM",
+      "mitfld_role": "selected",
+      "intersection_5gram": 26,
+      "jaccard_5gram": 0.00122827,
+      "shorter_containment_5gram": 0.00247572,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "JIw9mnVeFig",
+      "mitfld_role": "selected",
+      "intersection_5gram": 17,
+      "jaccard_5gram": 0.00104822,
+      "shorter_containment_5gram": 0.00296529,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "JNWXzIFcf3g",
+      "mitfld_role": "selected",
+      "intersection_5gram": 14,
+      "jaccard_5gram": 0.00075111,
+      "shorter_containment_5gram": 0.00171758,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "JuKKBf-uSDI",
+      "mitfld_role": "selected",
+      "intersection_5gram": 27,
+      "jaccard_5gram": 0.00120423,
+      "shorter_containment_5gram": 0.00257094,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "KAySmSEGc9U",
+      "mitfld_role": "selected",
+      "intersection_5gram": 39,
+      "jaccard_5gram": 0.00190393,
+      "shorter_containment_5gram": 0.00389183,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "LMSTMBX_2F4",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 14,
+      "jaccard_5gram": 0.0008159,
+      "shorter_containment_5gram": 0.00209864,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "M2d4HsBsu8Y",
+      "mitfld_role": "selected",
+      "intersection_5gram": 8,
+      "jaccard_5gram": 0.00045571,
+      "shorter_containment_5gram": 0.00113298,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "R2vL2wLqGYg",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 26,
+      "jaccard_5gram": 0.00138519,
+      "shorter_containment_5gram": 0.0031348,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "Rlvwagd2BmY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 9,
+      "jaccard_5gram": 0.00048041,
+      "shorter_containment_5gram": 0.0010921,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "XSUjp-cDyeY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 29,
+      "jaccard_5gram": 0.00138942,
+      "shorter_containment_5gram": 0.00278873,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "Z2ScgFh81Dc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 11,
+      "jaccard_5gram": 0.00057649,
+      "shorter_containment_5gram": 0.00128056,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "_S1CREXGfvE",
+      "mitfld_role": "selected",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.00015986,
+      "shorter_containment_5gram": 0.00099453,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "_Ycy0Dy-B1c",
+      "mitfld_role": "selected",
+      "intersection_5gram": 37,
+      "jaccard_5gram": 0.00157783,
+      "shorter_containment_5gram": 0.00352314,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "g0bXSXuLVb0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 20,
+      "jaccard_5gram": 0.0008485,
+      "shorter_containment_5gram": 0.0019044,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "gXPX29KfEc4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.00011464,
+      "shorter_containment_5gram": 0.00028794,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "gnWKpHUj11w",
+      "mitfld_role": "selected",
+      "intersection_5gram": 23,
+      "jaccard_5gram": 0.0012287,
+      "shorter_containment_5gram": 0.00279126,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "gtQ046Tu2S4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 1,
+      "jaccard_5gram": 8.719e-05,
+      "shorter_containment_5gram": 0.00103306,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "mhQebe1Y4d0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 28,
+      "jaccard_5gram": 0.00123088,
+      "shorter_containment_5gram": 0.00266616,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "muwNEvhy6Po",
+      "mitfld_role": "selected",
+      "intersection_5gram": 23,
+      "jaccard_5gram": 0.00105311,
+      "shorter_containment_5gram": 0.00219006,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "neBeTYziSLo",
+      "mitfld_role": "selected",
+      "intersection_5gram": 11,
+      "jaccard_5gram": 0.00060499,
+      "shorter_containment_5gram": 0.00143024,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "o8sje-b-BCk",
+      "mitfld_role": "selected",
+      "intersection_5gram": 21,
+      "jaccard_5gram": 0.00108842,
+      "shorter_containment_5gram": 0.00238284,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "qb1U3_Q-7o8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 16,
+      "jaccard_5gram": 0.00074246,
+      "shorter_containment_5gram": 0.00152352,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "r1VX3WXrYUw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 20,
+      "jaccard_5gram": 0.0009467,
+      "shorter_containment_5gram": 0.0019044,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "smHwRzk81b0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 30,
+      "jaccard_5gram": 0.00146099,
+      "shorter_containment_5gram": 0.00298151,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "tKyaGnPni3U",
+      "mitfld_role": "selected",
+      "intersection_5gram": 24,
+      "jaccard_5gram": 0.00137528,
+      "shorter_containment_5gram": 0.00344185,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "vFZY--lgmHs",
+      "mitfld_role": "selected",
+      "intersection_5gram": 40,
+      "jaccard_5gram": 0.00182473,
+      "shorter_containment_5gram": 0.0038088,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "vcsxCFSLyP8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 12,
+      "jaccard_5gram": 0.00063593,
+      "shorter_containment_5gram": 0.00143198,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "w7HDA8gUbpQ",
+      "mitfld_role": "selected",
+      "intersection_5gram": 21,
+      "jaccard_5gram": 0.00098717,
+      "shorter_containment_5gram": 0.00199962,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "ySqVVEBTy2o",
+      "mitfld_role": "selected",
+      "intersection_5gram": 26,
+      "jaccard_5gram": 0.00125847,
+      "shorter_containment_5gram": 0.00255302,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "3sB64Au76h0",
+      "mitfld_id": "z_xyx-z6arc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 22,
+      "jaccard_5gram": 0.00117346,
+      "shorter_containment_5gram": 0.00266086,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "-Pg11JHzUTo",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 39,
+      "jaccard_5gram": 0.00138063,
+      "shorter_containment_5gram": 0.00330033,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "2NMtS1ecb3o",
+      "mitfld_role": "selected",
+      "intersection_5gram": 35,
+      "jaccard_5gram": 0.00147288,
+      "shorter_containment_5gram": 0.0047762,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "6MssatXXAzc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 48,
+      "jaccard_5gram": 0.0019319,
+      "shorter_containment_5gram": 0.00569801,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "74_BKWR3n0k",
+      "mitfld_role": "selected",
+      "intersection_5gram": 57,
+      "jaccard_5gram": 0.00197903,
+      "shorter_containment_5gram": 0.00460086,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "7J1HD9rqEB4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 59,
+      "jaccard_5gram": 0.00213181,
+      "shorter_containment_5gram": 0.00523746,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "7LyvAVjQUR8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 29,
+      "jaccard_5gram": 0.00112753,
+      "shorter_containment_5gram": 0.00312534,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "9uqKU5ZDwfM",
+      "mitfld_role": "selected",
+      "intersection_5gram": 20,
+      "jaccard_5gram": 0.00081763,
+      "shorter_containment_5gram": 0.00249657,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "AhK3YeJP8Ts",
+      "mitfld_role": "selected",
+      "intersection_5gram": 13,
+      "jaccard_5gram": 0.00056231,
+      "shorter_containment_5gram": 0.00195137,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "CALYA11terw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 27,
+      "jaccard_5gram": 0.00115523,
+      "shorter_containment_5gram": 0.00389667,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "Chv8dlBVXpw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 29,
+      "jaccard_5gram": 0.00127366,
+      "shorter_containment_5gram": 0.00458281,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "DvGNpuan4rw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 22,
+      "jaccard_5gram": 0.00097479,
+      "shorter_containment_5gram": 0.00359418,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "EXYw8_pnKr0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 17,
+      "jaccard_5gram": 0.00072304,
+      "shorter_containment_5gram": 0.00240827,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "Ed0Wg-5YYCk",
+      "mitfld_role": "selected",
+      "intersection_5gram": 29,
+      "jaccard_5gram": 0.00119583,
+      "shorter_containment_5gram": 0.00371319,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "EmSmaW-ud6A",
+      "mitfld_role": "selected",
+      "intersection_5gram": 17,
+      "jaccard_5gram": 0.00076209,
+      "shorter_containment_5gram": 0.002904,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "Hf1Ma9YkOMY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 39,
+      "jaccard_5gram": 0.00154474,
+      "shorter_containment_5gram": 0.00442377,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "J4gbaRyWpoM",
+      "mitfld_role": "selected",
+      "intersection_5gram": 42,
+      "jaccard_5gram": 0.00154867,
+      "shorter_containment_5gram": 0.00392817,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "JIw9mnVeFig",
+      "mitfld_role": "selected",
+      "intersection_5gram": 23,
+      "jaccard_5gram": 0.00103697,
+      "shorter_containment_5gram": 0.00401186,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "JNWXzIFcf3g",
+      "mitfld_role": "selected",
+      "intersection_5gram": 45,
+      "jaccard_5gram": 0.00183105,
+      "shorter_containment_5gram": 0.00552079,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "JuKKBf-uSDI",
+      "mitfld_role": "selected",
+      "intersection_5gram": 40,
+      "jaccard_5gram": 0.00140964,
+      "shorter_containment_5gram": 0.0033484,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "KAySmSEGc9U",
+      "mitfld_role": "selected",
+      "intersection_5gram": 55,
+      "jaccard_5gram": 0.0020805,
+      "shorter_containment_5gram": 0.00548847,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "LMSTMBX_2F4",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 32,
+      "jaccard_5gram": 0.00138474,
+      "shorter_containment_5gram": 0.00479688,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "M2d4HsBsu8Y",
+      "mitfld_role": "selected",
+      "intersection_5gram": 11,
+      "jaccard_5gram": 0.00046769,
+      "shorter_containment_5gram": 0.00155785,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "R2vL2wLqGYg",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 30,
+      "jaccard_5gram": 0.00121291,
+      "shorter_containment_5gram": 0.00361707,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "Rlvwagd2BmY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 11,
+      "jaccard_5gram": 0.00044534,
+      "shorter_containment_5gram": 0.00133479,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "XSUjp-cDyeY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 35,
+      "jaccard_5gram": 0.00130432,
+      "shorter_containment_5gram": 0.00336571,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "Z2ScgFh81Dc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 17,
+      "jaccard_5gram": 0.00067883,
+      "shorter_containment_5gram": 0.00197905,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "_S1CREXGfvE",
+      "mitfld_role": "selected",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00027062,
+      "shorter_containment_5gram": 0.00248633,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "_Ycy0Dy-B1c",
+      "mitfld_role": "selected",
+      "intersection_5gram": 60,
+      "jaccard_5gram": 0.00204116,
+      "shorter_containment_5gram": 0.00462072,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "g0bXSXuLVb0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 32,
+      "jaccard_5gram": 0.00108375,
+      "shorter_containment_5gram": 0.0024448,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "gXPX29KfEc4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 8.542e-05,
+      "shorter_containment_5gram": 0.00028794,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "gnWKpHUj11w",
+      "mitfld_role": "selected",
+      "intersection_5gram": 46,
+      "jaccard_5gram": 0.00186507,
+      "shorter_containment_5gram": 0.00558252,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "gtQ046Tu2S4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 1,
+      "jaccard_5gram": 5.735e-05,
+      "shorter_containment_5gram": 0.00103306,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "mhQebe1Y4d0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 54,
+      "jaccard_5gram": 0.00188219,
+      "shorter_containment_5gram": 0.00439954,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "muwNEvhy6Po",
+      "mitfld_role": "selected",
+      "intersection_5gram": 33,
+      "jaccard_5gram": 0.00118714,
+      "shorter_containment_5gram": 0.00290467,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "neBeTYziSLo",
+      "mitfld_role": "selected",
+      "intersection_5gram": 25,
+      "jaccard_5gram": 0.0010358,
+      "shorter_containment_5gram": 0.00325055,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "o8sje-b-BCk",
+      "mitfld_role": "selected",
+      "intersection_5gram": 21,
+      "jaccard_5gram": 0.00083129,
+      "shorter_containment_5gram": 0.00238284,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "qb1U3_Q-7o8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 24,
+      "jaccard_5gram": 0.00087241,
+      "shorter_containment_5gram": 0.0021692,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "r1VX3WXrYUw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 23,
+      "jaccard_5gram": 0.00084899,
+      "shorter_containment_5gram": 0.00216084,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "smHwRzk81b0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 45,
+      "jaccard_5gram": 0.00169895,
+      "shorter_containment_5gram": 0.00447227,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "tKyaGnPni3U",
+      "mitfld_role": "selected",
+      "intersection_5gram": 27,
+      "jaccard_5gram": 0.00115306,
+      "shorter_containment_5gram": 0.00387208,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "vFZY--lgmHs",
+      "mitfld_role": "selected",
+      "intersection_5gram": 32,
+      "jaccard_5gram": 0.00114708,
+      "shorter_containment_5gram": 0.00279256,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "vcsxCFSLyP8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 23,
+      "jaccard_5gram": 0.00092641,
+      "shorter_containment_5gram": 0.00274463,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "w7HDA8gUbpQ",
+      "mitfld_role": "selected",
+      "intersection_5gram": 26,
+      "jaccard_5gram": 0.00095462,
+      "shorter_containment_5gram": 0.00240919,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "ySqVVEBTy2o",
+      "mitfld_role": "selected",
+      "intersection_5gram": 26,
+      "jaccard_5gram": 0.00097642,
+      "shorter_containment_5gram": 0.00255302,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "MoEaRpLNo9A",
+      "mitfld_id": "z_xyx-z6arc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 27,
+      "jaccard_5gram": 0.00109263,
+      "shorter_containment_5gram": 0.0032656,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "-Pg11JHzUTo",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 16,
+      "jaccard_5gram": 0.00086627,
+      "shorter_containment_5gram": 0.00239916,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "2NMtS1ecb3o",
+      "mitfld_role": "selected",
+      "intersection_5gram": 16,
+      "jaccard_5gram": 0.00114441,
+      "shorter_containment_5gram": 0.00239916,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "6MssatXXAzc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 23,
+      "jaccard_5gram": 0.00152621,
+      "shorter_containment_5gram": 0.00344879,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "74_BKWR3n0k",
+      "mitfld_role": "selected",
+      "intersection_5gram": 18,
+      "jaccard_5gram": 0.00094538,
+      "shorter_containment_5gram": 0.00269906,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "7J1HD9rqEB4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 28,
+      "jaccard_5gram": 0.00156372,
+      "shorter_containment_5gram": 0.00419853,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "7LyvAVjQUR8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 21,
+      "jaccard_5gram": 0.00131852,
+      "shorter_containment_5gram": 0.0031489,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "9uqKU5ZDwfM",
+      "mitfld_role": "selected",
+      "intersection_5gram": 9,
+      "jaccard_5gram": 0.00061346,
+      "shorter_containment_5gram": 0.00134953,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "AhK3YeJP8Ts",
+      "mitfld_role": "selected",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.00022509,
+      "shorter_containment_5gram": 0.00045032,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "CALYA11terw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 6,
+      "jaccard_5gram": 0.00044144,
+      "shorter_containment_5gram": 0.00089969,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "Chv8dlBVXpw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 13,
+      "jaccard_5gram": 0.00100123,
+      "shorter_containment_5gram": 0.00205436,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "DvGNpuan4rw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 10,
+      "jaccard_5gram": 0.00078247,
+      "shorter_containment_5gram": 0.00163372,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "EXYw8_pnKr0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 9,
+      "jaccard_5gram": 0.00065602,
+      "shorter_containment_5gram": 0.00134953,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "Ed0Wg-5YYCk",
+      "mitfld_role": "selected",
+      "intersection_5gram": 12,
+      "jaccard_5gram": 0.00082947,
+      "shorter_containment_5gram": 0.00179937,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "EmSmaW-ud6A",
+      "mitfld_role": "selected",
+      "intersection_5gram": 10,
+      "jaccard_5gram": 0.00079917,
+      "shorter_containment_5gram": 0.00170823,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "Hf1Ma9YkOMY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 30,
+      "jaccard_5gram": 0.00194112,
+      "shorter_containment_5gram": 0.00449843,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "J4gbaRyWpoM",
+      "mitfld_role": "selected",
+      "intersection_5gram": 15,
+      "jaccard_5gram": 0.00086475,
+      "shorter_containment_5gram": 0.00224921,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "JIw9mnVeFig",
+      "mitfld_role": "selected",
+      "intersection_5gram": 11,
+      "jaccard_5gram": 0.00088774,
+      "shorter_containment_5gram": 0.00191872,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "JNWXzIFcf3g",
+      "mitfld_role": "selected",
+      "intersection_5gram": 11,
+      "jaccard_5gram": 0.00074279,
+      "shorter_containment_5gram": 0.00164942,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "JuKKBf-uSDI",
+      "mitfld_role": "selected",
+      "intersection_5gram": 12,
+      "jaccard_5gram": 0.00064506,
+      "shorter_containment_5gram": 0.00179937,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "KAySmSEGc9U",
+      "mitfld_role": "selected",
+      "intersection_5gram": 22,
+      "jaccard_5gram": 0.00131989,
+      "shorter_containment_5gram": 0.00329885,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "LMSTMBX_2F4",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 11,
+      "jaccard_5gram": 0.00082527,
+      "shorter_containment_5gram": 0.00164942,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "M2d4HsBsu8Y",
+      "mitfld_role": "selected",
+      "intersection_5gram": 10,
+      "jaccard_5gram": 0.00072886,
+      "shorter_containment_5gram": 0.00149948,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "R2vL2wLqGYg",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 14,
+      "jaccard_5gram": 0.00093652,
+      "shorter_containment_5gram": 0.00209927,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "Rlvwagd2BmY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 7,
+      "jaccard_5gram": 0.0004697,
+      "shorter_containment_5gram": 0.00104963,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "XSUjp-cDyeY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 11,
+      "jaccard_5gram": 0.0006449,
+      "shorter_containment_5gram": 0.00164942,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "Z2ScgFh81Dc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 8,
+      "jaccard_5gram": 0.00052456,
+      "shorter_containment_5gram": 0.00119958,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "_S1CREXGfvE",
+      "mitfld_role": "selected",
+      "intersection_5gram": 0,
+      "jaccard_5gram": 0.0,
+      "shorter_containment_5gram": 0.0,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "_Ycy0Dy-B1c",
+      "mitfld_role": "selected",
+      "intersection_5gram": 19,
+      "jaccard_5gram": 0.00096766,
+      "shorter_containment_5gram": 0.002849,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "g0bXSXuLVb0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 11,
+      "jaccard_5gram": 0.00055705,
+      "shorter_containment_5gram": 0.00164942,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "gXPX29KfEc4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.00022039,
+      "shorter_containment_5gram": 0.00044984,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "gnWKpHUj11w",
+      "mitfld_role": "selected",
+      "intersection_5gram": 20,
+      "jaccard_5gram": 0.00134327,
+      "shorter_containment_5gram": 0.00299895,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "gtQ046Tu2S4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.00026195,
+      "shorter_containment_5gram": 0.00206612,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "mhQebe1Y4d0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 20,
+      "jaccard_5gram": 0.00105691,
+      "shorter_containment_5gram": 0.00299895,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "muwNEvhy6Po",
+      "mitfld_role": "selected",
+      "intersection_5gram": 10,
+      "jaccard_5gram": 0.00055494,
+      "shorter_containment_5gram": 0.00149948,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "neBeTYziSLo",
+      "mitfld_role": "selected",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00027863,
+      "shorter_containment_5gram": 0.00059979,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "o8sje-b-BCk",
+      "mitfld_role": "selected",
+      "intersection_5gram": 14,
+      "jaccard_5gram": 0.00090509,
+      "shorter_containment_5gram": 0.00209927,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "qb1U3_Q-7o8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 15,
+      "jaccard_5gram": 0.0008466,
+      "shorter_containment_5gram": 0.00224921,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "r1VX3WXrYUw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 17,
+      "jaccard_5gram": 0.00098289,
+      "shorter_containment_5gram": 0.00254911,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "smHwRzk81b0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 18,
+      "jaccard_5gram": 0.00107701,
+      "shorter_containment_5gram": 0.00269906,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "tKyaGnPni3U",
+      "mitfld_role": "selected",
+      "intersection_5gram": 17,
+      "jaccard_5gram": 0.00124771,
+      "shorter_containment_5gram": 0.00254911,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "vFZY--lgmHs",
+      "mitfld_role": "selected",
+      "intersection_5gram": 19,
+      "jaccard_5gram": 0.0010492,
+      "shorter_containment_5gram": 0.002849,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "vcsxCFSLyP8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00033236,
+      "shorter_containment_5gram": 0.00074974,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "w7HDA8gUbpQ",
+      "mitfld_role": "selected",
+      "intersection_5gram": 13,
+      "jaccard_5gram": 0.00074507,
+      "shorter_containment_5gram": 0.00194932,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "ySqVVEBTy2o",
+      "mitfld_role": "selected",
+      "intersection_5gram": 8,
+      "jaccard_5gram": 0.00047492,
+      "shorter_containment_5gram": 0.00119958,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "Th2N_rDfkDw",
+      "mitfld_id": "z_xyx-z6arc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 12,
+      "jaccard_5gram": 0.00080402,
+      "shorter_containment_5gram": 0.00179937,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "-Pg11JHzUTo",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 12,
+      "jaccard_5gram": 0.00066453,
+      "shorter_containment_5gram": 0.00191908,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "2NMtS1ecb3o",
+      "mitfld_role": "selected",
+      "intersection_5gram": 9,
+      "jaccard_5gram": 0.00066313,
+      "shorter_containment_5gram": 0.00143931,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "6MssatXXAzc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 16,
+      "jaccard_5gram": 0.00109133,
+      "shorter_containment_5gram": 0.00255877,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "74_BKWR3n0k",
+      "mitfld_role": "selected",
+      "intersection_5gram": 10,
+      "jaccard_5gram": 0.00053671,
+      "shorter_containment_5gram": 0.00159923,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "7J1HD9rqEB4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 18,
+      "jaccard_5gram": 0.00102857,
+      "shorter_containment_5gram": 0.00287862,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "7LyvAVjQUR8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 14,
+      "jaccard_5gram": 0.00090218,
+      "shorter_containment_5gram": 0.00223893,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "9uqKU5ZDwfM",
+      "mitfld_role": "selected",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00035066,
+      "shorter_containment_5gram": 0.00079962,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "AhK3YeJP8Ts",
+      "mitfld_role": "selected",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00030981,
+      "shorter_containment_5gram": 0.00063969,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "CALYA11terw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00037945,
+      "shorter_containment_5gram": 0.00079962,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "Chv8dlBVXpw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 11,
+      "jaccard_5gram": 0.0008751,
+      "shorter_containment_5gram": 0.00175916,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "DvGNpuan4rw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 8,
+      "jaccard_5gram": 0.00064694,
+      "shorter_containment_5gram": 0.00130698,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "EXYw8_pnKr0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.00015026,
+      "shorter_containment_5gram": 0.00031985,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "Ed0Wg-5YYCk",
+      "mitfld_role": "selected",
+      "intersection_5gram": 15,
+      "jaccard_5gram": 0.00106777,
+      "shorter_containment_5gram": 0.00239885,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "EmSmaW-ud6A",
+      "mitfld_role": "selected",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00041315,
+      "shorter_containment_5gram": 0.00085412,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "Hf1Ma9YkOMY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 12,
+      "jaccard_5gram": 0.00079697,
+      "shorter_containment_5gram": 0.00191908,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "J4gbaRyWpoM",
+      "mitfld_role": "selected",
+      "intersection_5gram": 16,
+      "jaccard_5gram": 0.00094512,
+      "shorter_containment_5gram": 0.00255877,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "JIw9mnVeFig",
+      "mitfld_role": "selected",
+      "intersection_5gram": 12,
+      "jaccard_5gram": 0.00100217,
+      "shorter_containment_5gram": 0.00209314,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "JNWXzIFcf3g",
+      "mitfld_role": "selected",
+      "intersection_5gram": 8,
+      "jaccard_5gram": 0.00055571,
+      "shorter_containment_5gram": 0.00127939,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "JuKKBf-uSDI",
+      "mitfld_role": "selected",
+      "intersection_5gram": 13,
+      "jaccard_5gram": 0.00071484,
+      "shorter_containment_5gram": 0.002079,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "KAySmSEGc9U",
+      "mitfld_role": "selected",
+      "intersection_5gram": 16,
+      "jaccard_5gram": 0.00098413,
+      "shorter_containment_5gram": 0.00255877,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "LMSTMBX_2F4",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 13,
+      "jaccard_5gram": 0.00100689,
+      "shorter_containment_5gram": 0.002079,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "M2d4HsBsu8Y",
+      "mitfld_role": "selected",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.00022538,
+      "shorter_containment_5gram": 0.00047977,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "R2vL2wLqGYg",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 11,
+      "jaccard_5gram": 0.00075674,
+      "shorter_containment_5gram": 0.00175916,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "Rlvwagd2BmY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00027605,
+      "shorter_containment_5gram": 0.00063969,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "XSUjp-cDyeY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 12,
+      "jaccard_5gram": 0.00072115,
+      "shorter_containment_5gram": 0.00191908,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "Z2ScgFh81Dc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00026956,
+      "shorter_containment_5gram": 0.00063969,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "_S1CREXGfvE",
+      "mitfld_role": "selected",
+      "intersection_5gram": 0,
+      "jaccard_5gram": 0.0,
+      "shorter_containment_5gram": 0.0,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "_Ycy0Dy-B1c",
+      "mitfld_role": "selected",
+      "intersection_5gram": 18,
+      "jaccard_5gram": 0.00093652,
+      "shorter_containment_5gram": 0.00287862,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "g0bXSXuLVb0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 14,
+      "jaccard_5gram": 0.00072434,
+      "shorter_containment_5gram": 0.00223893,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "gXPX29KfEc4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 7,
+      "jaccard_5gram": 0.00053062,
+      "shorter_containment_5gram": 0.00111946,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "gnWKpHUj11w",
+      "mitfld_role": "selected",
+      "intersection_5gram": 15,
+      "jaccard_5gram": 0.00103605,
+      "shorter_containment_5gram": 0.00239885,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "gtQ046Tu2S4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 0,
+      "jaccard_5gram": 0.0,
+      "shorter_containment_5gram": 0.0,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "mhQebe1Y4d0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 15,
+      "jaccard_5gram": 0.00081029,
+      "shorter_containment_5gram": 0.00239885,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "muwNEvhy6Po",
+      "mitfld_role": "selected",
+      "intersection_5gram": 17,
+      "jaccard_5gram": 0.00096607,
+      "shorter_containment_5gram": 0.0027187,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "neBeTYziSLo",
+      "mitfld_role": "selected",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00035871,
+      "shorter_containment_5gram": 0.00079962,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "o8sje-b-BCk",
+      "mitfld_role": "selected",
+      "intersection_5gram": 6,
+      "jaccard_5gram": 0.00039841,
+      "shorter_containment_5gram": 0.00095954,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "qb1U3_Q-7o8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 13,
+      "jaccard_5gram": 0.00075127,
+      "shorter_containment_5gram": 0.002079,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "r1VX3WXrYUw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 11,
+      "jaccard_5gram": 0.00065143,
+      "shorter_containment_5gram": 0.00175916,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "smHwRzk81b0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 12,
+      "jaccard_5gram": 0.00073606,
+      "shorter_containment_5gram": 0.00191908,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "tKyaGnPni3U",
+      "mitfld_role": "selected",
+      "intersection_5gram": 12,
+      "jaccard_5gram": 0.00090813,
+      "shorter_containment_5gram": 0.00191908,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "vFZY--lgmHs",
+      "mitfld_role": "selected",
+      "intersection_5gram": 10,
+      "jaccard_5gram": 0.00056491,
+      "shorter_containment_5gram": 0.00159923,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "vcsxCFSLyP8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 7,
+      "jaccard_5gram": 0.0004786,
+      "shorter_containment_5gram": 0.00111946,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "w7HDA8gUbpQ",
+      "mitfld_role": "selected",
+      "intersection_5gram": 16,
+      "jaccard_5gram": 0.00093957,
+      "shorter_containment_5gram": 0.00255877,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "ySqVVEBTy2o",
+      "mitfld_role": "selected",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00024341,
+      "shorter_containment_5gram": 0.00063969,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "alLh1Jdqwvg",
+      "mitfld_id": "z_xyx-z6arc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 11,
+      "jaccard_5gram": 0.0007581,
+      "shorter_containment_5gram": 0.00175916,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "-Pg11JHzUTo",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00032731,
+      "shorter_containment_5gram": 0.00144342,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "2NMtS1ecb3o",
+      "mitfld_role": "selected",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.00027806,
+      "shorter_containment_5gram": 0.00086605,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "6MssatXXAzc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00042077,
+      "shorter_containment_5gram": 0.00144342,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "74_BKWR3n0k",
+      "mitfld_role": "selected",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.00018927,
+      "shorter_containment_5gram": 0.00086605,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "7J1HD9rqEB4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.0001358,
+      "shorter_containment_5gram": 0.00057737,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "7LyvAVjQUR8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 1,
+      "jaccard_5gram": 7.848e-05,
+      "shorter_containment_5gram": 0.00028868,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "9uqKU5ZDwfM",
+      "mitfld_role": "selected",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00034871,
+      "shorter_containment_5gram": 0.00115473,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "AhK3YeJP8Ts",
+      "mitfld_role": "selected",
+      "intersection_5gram": 0,
+      "jaccard_5gram": 0.0,
+      "shorter_containment_5gram": 0.0,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "CALYA11terw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.00019247,
+      "shorter_containment_5gram": 0.00057737,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "Chv8dlBVXpw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.00030647,
+      "shorter_containment_5gram": 0.00086605,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "DvGNpuan4rw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 1,
+      "jaccard_5gram": 0.00010434,
+      "shorter_containment_5gram": 0.00028868,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "EXYw8_pnKr0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.0001901,
+      "shorter_containment_5gram": 0.00057737,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "Ed0Wg-5YYCk",
+      "mitfld_role": "selected",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.00026617,
+      "shorter_containment_5gram": 0.00086605,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "EmSmaW-ud6A",
+      "mitfld_role": "selected",
+      "intersection_5gram": 1,
+      "jaccard_5gram": 0.00010733,
+      "shorter_containment_5gram": 0.00028868,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "Hf1Ma9YkOMY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.00016289,
+      "shorter_containment_5gram": 0.00057737,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "J4gbaRyWpoM",
+      "mitfld_role": "selected",
+      "intersection_5gram": 9,
+      "jaccard_5gram": 0.00063618,
+      "shorter_containment_5gram": 0.00259815,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "JIw9mnVeFig",
+      "mitfld_role": "selected",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00054395,
+      "shorter_containment_5gram": 0.00144342,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "JNWXzIFcf3g",
+      "mitfld_role": "selected",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.00017222,
+      "shorter_containment_5gram": 0.00057737,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "JuKKBf-uSDI",
+      "mitfld_role": "selected",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00032457,
+      "shorter_containment_5gram": 0.00144342,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "KAySmSEGc9U",
+      "mitfld_role": "selected",
+      "intersection_5gram": 1,
+      "jaccard_5gram": 7.416e-05,
+      "shorter_containment_5gram": 0.00028868,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "LMSTMBX_2F4",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00049358,
+      "shorter_containment_5gram": 0.00144342,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "M2d4HsBsu8Y",
+      "mitfld_role": "selected",
+      "intersection_5gram": 0,
+      "jaccard_5gram": 0.0,
+      "shorter_containment_5gram": 0.0,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "R2vL2wLqGYg",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 1,
+      "jaccard_5gram": 8.506e-05,
+      "shorter_containment_5gram": 0.00028868,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "Rlvwagd2BmY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 0,
+      "jaccard_5gram": 0.0,
+      "shorter_containment_5gram": 0.0,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "XSUjp-cDyeY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 1,
+      "jaccard_5gram": 7.214e-05,
+      "shorter_containment_5gram": 0.00028868,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "Z2ScgFh81Dc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.00016595,
+      "shorter_containment_5gram": 0.00057737,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "_S1CREXGfvE",
+      "mitfld_role": "selected",
+      "intersection_5gram": 0,
+      "jaccard_5gram": 0.0,
+      "shorter_containment_5gram": 0.0,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "_Ycy0Dy-B1c",
+      "mitfld_role": "selected",
+      "intersection_5gram": 11,
+      "jaccard_5gram": 0.00066918,
+      "shorter_containment_5gram": 0.00317552,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "g0bXSXuLVb0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 1,
+      "jaccard_5gram": 6.042e-05,
+      "shorter_containment_5gram": 0.00028868,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "gXPX29KfEc4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.00019216,
+      "shorter_containment_5gram": 0.00057737,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "gnWKpHUj11w",
+      "mitfld_role": "selected",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.00025639,
+      "shorter_containment_5gram": 0.00086605,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "gtQ046Tu2S4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 0,
+      "jaccard_5gram": 0.0,
+      "shorter_containment_5gram": 0.0,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "mhQebe1Y4d0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.0003178,
+      "shorter_containment_5gram": 0.00144342,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "muwNEvhy6Po",
+      "mitfld_role": "selected",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00033738,
+      "shorter_containment_5gram": 0.00144342,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "neBeTYziSLo",
+      "mitfld_role": "selected",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.00017932,
+      "shorter_containment_5gram": 0.00057737,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "o8sje-b-BCk",
+      "mitfld_role": "selected",
+      "intersection_5gram": 1,
+      "jaccard_5gram": 8.146e-05,
+      "shorter_containment_5gram": 0.00028868,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "qb1U3_Q-7o8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.00020654,
+      "shorter_containment_5gram": 0.00086605,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "r1VX3WXrYUw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00028361,
+      "shorter_containment_5gram": 0.00115473,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "smHwRzk81b0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00029581,
+      "shorter_containment_5gram": 0.00115473,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "tKyaGnPni3U",
+      "mitfld_role": "selected",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00047929,
+      "shorter_containment_5gram": 0.00144342,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "vFZY--lgmHs",
+      "mitfld_role": "selected",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.00013404,
+      "shorter_containment_5gram": 0.00057737,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "vcsxCFSLyP8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.00025336,
+      "shorter_containment_5gram": 0.00086605,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "w7HDA8gUbpQ",
+      "mitfld_role": "selected",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.00014031,
+      "shorter_containment_5gram": 0.00057737,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "ySqVVEBTy2o",
+      "mitfld_role": "selected",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.00021986,
+      "shorter_containment_5gram": 0.00086605,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "kiCNa95DnnE",
+      "mitfld_id": "z_xyx-z6arc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.00025578,
+      "shorter_containment_5gram": 0.00086605,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "-Pg11JHzUTo",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00030579,
+      "shorter_containment_5gram": 0.00110156,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "2NMtS1ecb3o",
+      "mitfld_role": "selected",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00033718,
+      "shorter_containment_5gram": 0.00088125,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "6MssatXXAzc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00038586,
+      "shorter_containment_5gram": 0.00110156,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "74_BKWR3n0k",
+      "mitfld_role": "selected",
+      "intersection_5gram": 7,
+      "jaccard_5gram": 0.00041369,
+      "shorter_containment_5gram": 0.00154219,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "7J1HD9rqEB4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 10,
+      "jaccard_5gram": 0.00063315,
+      "shorter_containment_5gram": 0.00220313,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "7LyvAVjQUR8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 12,
+      "jaccard_5gram": 0.00086919,
+      "shorter_containment_5gram": 0.00264375,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "9uqKU5ZDwfM",
+      "mitfld_role": "selected",
+      "intersection_5gram": 6,
+      "jaccard_5gram": 0.00047832,
+      "shorter_containment_5gram": 0.00132188,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "AhK3YeJP8Ts",
+      "mitfld_role": "selected",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.0002679,
+      "shorter_containment_5gram": 0.00066094,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "CALYA11terw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00043619,
+      "shorter_containment_5gram": 0.00110156,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "Chv8dlBVXpw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 6,
+      "jaccard_5gram": 0.00055244,
+      "shorter_containment_5gram": 0.00132188,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "DvGNpuan4rw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 1,
+      "jaccard_5gram": 9.382e-05,
+      "shorter_containment_5gram": 0.00022031,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "EXYw8_pnKr0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00034501,
+      "shorter_containment_5gram": 0.00088125,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "Ed0Wg-5YYCk",
+      "mitfld_role": "selected",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.00024299,
+      "shorter_containment_5gram": 0.00066094,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "EmSmaW-ud6A",
+      "mitfld_role": "selected",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.00019247,
+      "shorter_containment_5gram": 0.00044063,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "Hf1Ma9YkOMY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00037453,
+      "shorter_containment_5gram": 0.00110156,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "J4gbaRyWpoM",
+      "mitfld_role": "selected",
+      "intersection_5gram": 8,
+      "jaccard_5gram": 0.00052552,
+      "shorter_containment_5gram": 0.0017625,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "JIw9mnVeFig",
+      "mitfld_role": "selected",
+      "intersection_5gram": 7,
+      "jaccard_5gram": 0.00068193,
+      "shorter_containment_5gram": 0.00154219,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "JNWXzIFcf3g",
+      "mitfld_role": "selected",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.00023646,
+      "shorter_containment_5gram": 0.00066094,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "JuKKBf-uSDI",
+      "mitfld_role": "selected",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.00018202,
+      "shorter_containment_5gram": 0.00066094,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "KAySmSEGc9U",
+      "mitfld_role": "selected",
+      "intersection_5gram": 9,
+      "jaccard_5gram": 0.00061851,
+      "shorter_containment_5gram": 0.00198282,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "LMSTMBX_2F4",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00044623,
+      "shorter_containment_5gram": 0.00110156,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "M2d4HsBsu8Y",
+      "mitfld_role": "selected",
+      "intersection_5gram": 1,
+      "jaccard_5gram": 8.621e-05,
+      "shorter_containment_5gram": 0.00022031,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "R2vL2wLqGYg",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 6,
+      "jaccard_5gram": 0.00046776,
+      "shorter_containment_5gram": 0.00132188,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "Rlvwagd2BmY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00039139,
+      "shorter_containment_5gram": 0.00110156,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "XSUjp-cDyeY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 6,
+      "jaccard_5gram": 0.00040182,
+      "shorter_containment_5gram": 0.00132188,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "Z2ScgFh81Dc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.00015236,
+      "shorter_containment_5gram": 0.00044063,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "_S1CREXGfvE",
+      "mitfld_role": "selected",
+      "intersection_5gram": 0,
+      "jaccard_5gram": 0.0,
+      "shorter_containment_5gram": 0.0,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "_Ycy0Dy-B1c",
+      "mitfld_role": "selected",
+      "intersection_5gram": 13,
+      "jaccard_5gram": 0.00074239,
+      "shorter_containment_5gram": 0.00286407,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "g0bXSXuLVb0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00028372,
+      "shorter_containment_5gram": 0.00110156,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "gXPX29KfEc4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 1,
+      "jaccard_5gram": 8.708e-05,
+      "shorter_containment_5gram": 0.00022031,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "gnWKpHUj11w",
+      "mitfld_role": "selected",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00031311,
+      "shorter_containment_5gram": 0.00088125,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "gtQ046Tu2S4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 1,
+      "jaccard_5gram": 0.00018162,
+      "shorter_containment_5gram": 0.00103306,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "mhQebe1Y4d0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 7,
+      "jaccard_5gram": 0.00041652,
+      "shorter_containment_5gram": 0.00154219,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "muwNEvhy6Po",
+      "mitfld_role": "selected",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00025164,
+      "shorter_containment_5gram": 0.00088125,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "neBeTYziSLo",
+      "mitfld_role": "selected",
+      "intersection_5gram": 8,
+      "jaccard_5gram": 0.00065456,
+      "shorter_containment_5gram": 0.0017625,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "o8sje-b-BCk",
+      "mitfld_role": "selected",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.00014981,
+      "shorter_containment_5gram": 0.00044063,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "qb1U3_Q-7o8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 1,
+      "jaccard_5gram": 6.409e-05,
+      "shorter_containment_5gram": 0.00022031,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "r1VX3WXrYUw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.00019763,
+      "shorter_containment_5gram": 0.00066094,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "smHwRzk81b0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.000137,
+      "shorter_containment_5gram": 0.00044063,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "tKyaGnPni3U",
+      "mitfld_role": "selected",
+      "intersection_5gram": 6,
+      "jaccard_5gram": 0.00052147,
+      "shorter_containment_5gram": 0.00132188,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "vFZY--lgmHs",
+      "mitfld_role": "selected",
+      "intersection_5gram": 7,
+      "jaccard_5gram": 0.00043775,
+      "shorter_containment_5gram": 0.00154219,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "vcsxCFSLyP8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.00023227,
+      "shorter_containment_5gram": 0.00066094,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "w7HDA8gUbpQ",
+      "mitfld_role": "selected",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.00019572,
+      "shorter_containment_5gram": 0.00066094,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "ySqVVEBTy2o",
+      "mitfld_role": "selected",
+      "intersection_5gram": 9,
+      "jaccard_5gram": 0.00061166,
+      "shorter_containment_5gram": 0.00198282,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "ksyY5wa5_50",
+      "mitfld_id": "z_xyx-z6arc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 8,
+      "jaccard_5gram": 0.00062505,
+      "shorter_containment_5gram": 0.0017625,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "-Pg11JHzUTo",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 13,
+      "jaccard_5gram": 0.00067811,
+      "shorter_containment_5gram": 0.00176463,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "2NMtS1ecb3o",
+      "mitfld_role": "selected",
+      "intersection_5gram": 9,
+      "jaccard_5gram": 0.00061283,
+      "shorter_containment_5gram": 0.00122817,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "6MssatXXAzc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 21,
+      "jaccard_5gram": 0.00133164,
+      "shorter_containment_5gram": 0.00285055,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "74_BKWR3n0k",
+      "mitfld_role": "selected",
+      "intersection_5gram": 14,
+      "jaccard_5gram": 0.00070915,
+      "shorter_containment_5gram": 0.00190037,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "7J1HD9rqEB4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 42,
+      "jaccard_5gram": 0.00225928,
+      "shorter_containment_5gram": 0.0057011,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "7LyvAVjQUR8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 10,
+      "jaccard_5gram": 0.00060111,
+      "shorter_containment_5gram": 0.0013574,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "9uqKU5ZDwfM",
+      "mitfld_role": "selected",
+      "intersection_5gram": 9,
+      "jaccard_5gram": 0.00058559,
+      "shorter_containment_5gram": 0.00122166,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "AhK3YeJP8Ts",
+      "mitfld_role": "selected",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.00014258,
+      "shorter_containment_5gram": 0.00030021,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "CALYA11terw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 7,
+      "jaccard_5gram": 0.00048989,
+      "shorter_containment_5gram": 0.00101025,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "Chv8dlBVXpw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 16,
+      "jaccard_5gram": 0.00116968,
+      "shorter_containment_5gram": 0.00252845,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "DvGNpuan4rw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 14,
+      "jaccard_5gram": 0.00103904,
+      "shorter_containment_5gram": 0.00228721,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "EXYw8_pnKr0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 7,
+      "jaccard_5gram": 0.00048547,
+      "shorter_containment_5gram": 0.00099164,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "Ed0Wg-5YYCk",
+      "mitfld_role": "selected",
+      "intersection_5gram": 12,
+      "jaccard_5gram": 0.0007913,
+      "shorter_containment_5gram": 0.00162889,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "EmSmaW-ud6A",
+      "mitfld_role": "selected",
+      "intersection_5gram": 8,
+      "jaccard_5gram": 0.00060546,
+      "shorter_containment_5gram": 0.00136659,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "Hf1Ma9YkOMY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 24,
+      "jaccard_5gram": 0.00148524,
+      "shorter_containment_5gram": 0.00325777,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "J4gbaRyWpoM",
+      "mitfld_role": "selected",
+      "intersection_5gram": 23,
+      "jaccard_5gram": 0.00127523,
+      "shorter_containment_5gram": 0.00312203,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "JIw9mnVeFig",
+      "mitfld_role": "selected",
+      "intersection_5gram": 15,
+      "jaccard_5gram": 0.00114635,
+      "shorter_containment_5gram": 0.00261643,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "JNWXzIFcf3g",
+      "mitfld_role": "selected",
+      "intersection_5gram": 16,
+      "jaccard_5gram": 0.00103212,
+      "shorter_containment_5gram": 0.00217185,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "JuKKBf-uSDI",
+      "mitfld_role": "selected",
+      "intersection_5gram": 17,
+      "jaccard_5gram": 0.00088101,
+      "shorter_containment_5gram": 0.00230759,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "KAySmSEGc9U",
+      "mitfld_role": "selected",
+      "intersection_5gram": 27,
+      "jaccard_5gram": 0.00155521,
+      "shorter_containment_5gram": 0.00366499,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "LMSTMBX_2F4",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 20,
+      "jaccard_5gram": 0.00142674,
+      "shorter_containment_5gram": 0.00299805,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "M2d4HsBsu8Y",
+      "mitfld_role": "selected",
+      "intersection_5gram": 10,
+      "jaccard_5gram": 0.00069358,
+      "shorter_containment_5gram": 0.00141623,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "R2vL2wLqGYg",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 19,
+      "jaccard_5gram": 0.00121468,
+      "shorter_containment_5gram": 0.00257907,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "Rlvwagd2BmY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00025634,
+      "shorter_containment_5gram": 0.00054296,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "XSUjp-cDyeY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 13,
+      "jaccard_5gram": 0.00073227,
+      "shorter_containment_5gram": 0.00176463,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "Z2ScgFh81Dc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.00018804,
+      "shorter_containment_5gram": 0.00040722,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "_S1CREXGfvE",
+      "mitfld_role": "selected",
+      "intersection_5gram": 0,
+      "jaccard_5gram": 0.0,
+      "shorter_containment_5gram": 0.0,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "_Ycy0Dy-B1c",
+      "mitfld_role": "selected",
+      "intersection_5gram": 26,
+      "jaccard_5gram": 0.00127915,
+      "shorter_containment_5gram": 0.00352925,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "g0bXSXuLVb0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 18,
+      "jaccard_5gram": 0.00088071,
+      "shorter_containment_5gram": 0.00244333,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "gXPX29KfEc4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 6,
+      "jaccard_5gram": 0.00041938,
+      "shorter_containment_5gram": 0.00086381,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "gnWKpHUj11w",
+      "mitfld_role": "selected",
+      "intersection_5gram": 23,
+      "jaccard_5gram": 0.00147587,
+      "shorter_containment_5gram": 0.00312203,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "gtQ046Tu2S4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.00024001,
+      "shorter_containment_5gram": 0.00206612,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "mhQebe1Y4d0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 19,
+      "jaccard_5gram": 0.0009683,
+      "shorter_containment_5gram": 0.00257907,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "muwNEvhy6Po",
+      "mitfld_role": "selected",
+      "intersection_5gram": 11,
+      "jaccard_5gram": 0.0005877,
+      "shorter_containment_5gram": 0.00149315,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "neBeTYziSLo",
+      "mitfld_role": "selected",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00033216,
+      "shorter_containment_5gram": 0.0006787,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "o8sje-b-BCk",
+      "mitfld_role": "selected",
+      "intersection_5gram": 16,
+      "jaccard_5gram": 0.00098985,
+      "shorter_containment_5gram": 0.00217185,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "qb1U3_Q-7o8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 7,
+      "jaccard_5gram": 0.00037994,
+      "shorter_containment_5gram": 0.00095018,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "r1VX3WXrYUw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 36,
+      "jaccard_5gram": 0.00200278,
+      "shorter_containment_5gram": 0.00488666,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "smHwRzk81b0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 30,
+      "jaccard_5gram": 0.00172424,
+      "shorter_containment_5gram": 0.00407221,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "tKyaGnPni3U",
+      "mitfld_role": "selected",
+      "intersection_5gram": 20,
+      "jaccard_5gram": 0.00139665,
+      "shorter_containment_5gram": 0.00286821,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "vFZY--lgmHs",
+      "mitfld_role": "selected",
+      "intersection_5gram": 25,
+      "jaccard_5gram": 0.00132972,
+      "shorter_containment_5gram": 0.00339351,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "vcsxCFSLyP8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 10,
+      "jaccard_5gram": 0.00063545,
+      "shorter_containment_5gram": 0.0013574,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "w7HDA8gUbpQ",
+      "mitfld_role": "selected",
+      "intersection_5gram": 22,
+      "jaccard_5gram": 0.00121299,
+      "shorter_containment_5gram": 0.00298629,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "ySqVVEBTy2o",
+      "mitfld_role": "selected",
+      "intersection_5gram": 12,
+      "jaccard_5gram": 0.00068419,
+      "shorter_containment_5gram": 0.00162889,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "tCKk22kaZi4",
+      "mitfld_id": "z_xyx-z6arc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 14,
+      "jaccard_5gram": 0.00089623,
+      "shorter_containment_5gram": 0.00190037,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "-Pg11JHzUTo",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 6,
+      "jaccard_5gram": 0.000379,
+      "shorter_containment_5gram": 0.00149254,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "2NMtS1ecb3o",
+      "mitfld_role": "selected",
+      "intersection_5gram": 7,
+      "jaccard_5gram": 0.00061723,
+      "shorter_containment_5gram": 0.00174129,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "6MssatXXAzc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00032154,
+      "shorter_containment_5gram": 0.00099502,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "74_BKWR3n0k",
+      "mitfld_role": "selected",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.0003048,
+      "shorter_containment_5gram": 0.00124378,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "7J1HD9rqEB4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 7,
+      "jaccard_5gram": 0.00045818,
+      "shorter_containment_5gram": 0.00174129,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "7LyvAVjQUR8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00037611,
+      "shorter_containment_5gram": 0.00124378,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "9uqKU5ZDwfM",
+      "mitfld_role": "selected",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00033259,
+      "shorter_containment_5gram": 0.00099502,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "AhK3YeJP8Ts",
+      "mitfld_role": "selected",
+      "intersection_5gram": 0,
+      "jaccard_5gram": 0.0,
+      "shorter_containment_5gram": 0.0,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "CALYA11terw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00036546,
+      "shorter_containment_5gram": 0.00099502,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "Chv8dlBVXpw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.00029,
+      "shorter_containment_5gram": 0.00074627,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "DvGNpuan4rw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.00019726,
+      "shorter_containment_5gram": 0.00049751,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "EXYw8_pnKr0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 3,
+      "jaccard_5gram": 0.00027086,
+      "shorter_containment_5gram": 0.00074627,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "Ed0Wg-5YYCk",
+      "mitfld_role": "selected",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00042283,
+      "shorter_containment_5gram": 0.00124378,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "EmSmaW-ud6A",
+      "mitfld_role": "selected",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00040527,
+      "shorter_containment_5gram": 0.00099502,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "Hf1Ma9YkOMY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 7,
+      "jaccard_5gram": 0.00054564,
+      "shorter_containment_5gram": 0.00174129,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "J4gbaRyWpoM",
+      "mitfld_role": "selected",
+      "intersection_5gram": 8,
+      "jaccard_5gram": 0.00054407,
+      "shorter_containment_5gram": 0.00199005,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "JIw9mnVeFig",
+      "mitfld_role": "selected",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00051293,
+      "shorter_containment_5gram": 0.00124378,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "JNWXzIFcf3g",
+      "mitfld_role": "selected",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00041098,
+      "shorter_containment_5gram": 0.00124378,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "JuKKBf-uSDI",
+      "mitfld_role": "selected",
+      "intersection_5gram": 12,
+      "jaccard_5gram": 0.00075216,
+      "shorter_containment_5gram": 0.00298507,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "KAySmSEGc9U",
+      "mitfld_role": "selected",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00035623,
+      "shorter_containment_5gram": 0.00124378,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "LMSTMBX_2F4",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 8,
+      "jaccard_5gram": 0.00074885,
+      "shorter_containment_5gram": 0.00199005,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "M2d4HsBsu8Y",
+      "mitfld_role": "selected",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.00018052,
+      "shorter_containment_5gram": 0.00049751,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "R2vL2wLqGYg",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 8,
+      "jaccard_5gram": 0.00065009,
+      "shorter_containment_5gram": 0.00199005,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "Rlvwagd2BmY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00032634,
+      "shorter_containment_5gram": 0.00099502,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "XSUjp-cDyeY",
+      "mitfld_role": "selected",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00027749,
+      "shorter_containment_5gram": 0.00099502,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "Z2ScgFh81Dc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.00015863,
+      "shorter_containment_5gram": 0.00049751,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "_S1CREXGfvE",
+      "mitfld_role": "selected",
+      "intersection_5gram": 1,
+      "jaccard_5gram": 0.00016584,
+      "shorter_containment_5gram": 0.00049727,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "_Ycy0Dy-B1c",
+      "mitfld_role": "selected",
+      "intersection_5gram": 21,
+      "jaccard_5gram": 0.00123646,
+      "shorter_containment_5gram": 0.00522388,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "g0bXSXuLVb0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00029233,
+      "shorter_containment_5gram": 0.00124378,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "gXPX29KfEc4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 0,
+      "jaccard_5gram": 0.0,
+      "shorter_containment_5gram": 0.0,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "gnWKpHUj11w",
+      "mitfld_role": "selected",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00032637,
+      "shorter_containment_5gram": 0.00099502,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "gtQ046Tu2S4",
+      "mitfld_role": "selected",
+      "intersection_5gram": 1,
+      "jaccard_5gram": 0.00020052,
+      "shorter_containment_5gram": 0.00103306,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "mhQebe1Y4d0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 10,
+      "jaccard_5gram": 0.0006141,
+      "shorter_containment_5gram": 0.00248756,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "muwNEvhy6Po",
+      "mitfld_role": "selected",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00026013,
+      "shorter_containment_5gram": 0.00099502,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "neBeTYziSLo",
+      "mitfld_role": "selected",
+      "intersection_5gram": 6,
+      "jaccard_5gram": 0.0005126,
+      "shorter_containment_5gram": 0.00149254,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "o8sje-b-BCk",
+      "mitfld_role": "selected",
+      "intersection_5gram": 5,
+      "jaccard_5gram": 0.00038977,
+      "shorter_containment_5gram": 0.00124378,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "qb1U3_Q-7o8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 6,
+      "jaccard_5gram": 0.00039793,
+      "shorter_containment_5gram": 0.00149254,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "r1VX3WXrYUw",
+      "mitfld_role": "selected",
+      "intersection_5gram": 6,
+      "jaccard_5gram": 0.00040933,
+      "shorter_containment_5gram": 0.00149254,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "smHwRzk81b0",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00028413,
+      "shorter_containment_5gram": 0.00099502,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "tKyaGnPni3U",
+      "mitfld_role": "selected",
+      "intersection_5gram": 6,
+      "jaccard_5gram": 0.0005461,
+      "shorter_containment_5gram": 0.00149254,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "vFZY--lgmHs",
+      "mitfld_role": "selected",
+      "intersection_5gram": 8,
+      "jaccard_5gram": 0.0005171,
+      "shorter_containment_5gram": 0.00199005,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "vcsxCFSLyP8",
+      "mitfld_role": "selected",
+      "intersection_5gram": 2,
+      "jaccard_5gram": 0.00016132,
+      "shorter_containment_5gram": 0.00049751,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "w7HDA8gUbpQ",
+      "mitfld_role": "selected",
+      "intersection_5gram": 10,
+      "jaccard_5gram": 0.00067558,
+      "shorter_containment_5gram": 0.00248756,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "ySqVVEBTy2o",
+      "mitfld_role": "selected",
+      "intersection_5gram": 7,
+      "jaccard_5gram": 0.00049306,
+      "shorter_containment_5gram": 0.00174129,
+      "intersection_10gram": 0
+    },
+    {
+      "ytseg_id": "xsO2Ip6eiaY",
+      "mitfld_id": "z_xyx-z6arc",
+      "mitfld_role": "prior_pilot",
+      "intersection_5gram": 4,
+      "jaccard_5gram": 0.00032563,
+      "shorter_containment_5gram": 0.00099502,
+      "intersection_10gram": 0
+    }
+  ],
+  "limits": [
+    "Text-only screen; no pairwise audio or video fingerprints",
+    "Captions/transcript availability and wording differ; low overlap does not mathematically rule out audiovisual reuploads",
+    "Unrelated generic lecture phrases and speaker cues can cause small overlaps",
+    "This is exclusion screening, not GT validation or model selection"
+  ]
+}

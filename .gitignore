@@ -20,3 +20,28 @@ env/
 .vscode/
 .idea/
 .env
+
+# Local research corpora, checkpoints and generated results
+/experiments/datasets/*
+!/experiments/datasets/.gitkeep
+!/experiments/datasets/eduviqa/
+/experiments/datasets/eduviqa/*
+!/experiments/datasets/eduviqa/*.json
+/experiments/outputs/
+/benchmarks/official_datasets/
+/benchmarks/data/cached_features/*
+!/benchmarks/data/cached_features/manifest.json
+/outputs/
+/checkpoints/
+/research-data/
+/external-results/
+/cache/
+*.pt
+*.bin
+*.onnx
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Local authoring files
+/docs/workspace/

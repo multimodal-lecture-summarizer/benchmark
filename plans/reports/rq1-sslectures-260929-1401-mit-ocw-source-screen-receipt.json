@@ -1,0 +1,24 @@
+{
+  "checked_local": "2026-09-29 14:08 Asia/Bangkok",
+  "sample_receipt": "rq1-sslectures-260929-1401-prelocked-source-screen-receipt.json",
+  "source_csv_sha256_verified": "c9261cccb1f637c25d0e0ccb1cbc72ecf78128dc790bb69eb1c9826efd6be609",
+  "definition": "MIT OCW publisher page contains a visible internal timed chapter list corresponding to the SSLectures lecture row; video link alone is not GT",
+  "sample_size": 9,
+  "publisher_lecture_page_found": 9,
+  "publisher_page_has_download_video_link": 9,
+  "publisher_page_has_internal_timed_chapter_list": 0,
+  "media_downloaded": 0,
+  "d2_eligible_confirmed": 0,
+  "rows": [
+    {"csv_line": 4, "publisher_url": "https://ocw.mit.edu/courses/8-421-atomic-and-optical-physics-i-spring-2014/resources/lecture-10-atoms-in-external-fields-ii/", "html_sha256": "e54c0b5405ad163d670dbd426af6e1393013e3bd2bff2b19a0cad4eaa8012242", "publisher_timed_gt_on_page": false, "status": "gt_provenance_hold"},
+    {"csv_line": 404, "publisher_url": "https://ocw.mit.edu/courses/2-627-fundamentals-of-photovoltaics-fall-2013/resources/2011-lecture-13-thin-films-materials-choices-and-manufacturing-part-ii/", "html_sha256": "607c31fc8ff008bb28f53ebc46d255093a247ac4234b84090170c3262f1f1e73", "publisher_timed_gt_on_page": false, "status": "gt_provenance_hold"},
+    {"csv_line": 405, "publisher_url": "https://ocw.mit.edu/courses/2-627-fundamentals-of-photovoltaics-fall-2013/resources/2011-lecture-16-solar-cell-characterization/", "html_sha256": "97b0bac6e0549ba884fba4cebaf2a7a545219c0300d2373e2cc82d0674d8bc56", "publisher_timed_gt_on_page": false, "status": "gt_provenance_hold"},
+    {"csv_line": 740, "publisher_url": "https://ocw.mit.edu/courses/5-310-laboratory-chemistry-fall-2019/resources/lecture-11-catalase-part-1/", "html_sha256": "5aa49a625187e7b7cf4ded7b5610d62970b5ce79e88b9b3704359cc3eb889b4a", "publisher_timed_gt_on_page": false, "status": "gt_provenance_hold"},
+    {"csv_line": 736, "publisher_url": "https://ocw.mit.edu/courses/5-310-laboratory-chemistry-fall-2019/resources/lecture-2-the-ferrocene-lecture/", "html_sha256": "2280c1cac4b6d9bc0b43dc656b9929eb56d847f0a88dfa997cd06b917db85fc6", "publisher_timed_gt_on_page": false, "status": "gt_provenance_hold"},
+    {"csv_line": 1016, "publisher_url": "https://ocw.mit.edu/courses/14-13-psychology-and-economics-spring-2020/resources/lec11-social-pref-ii/", "html_sha256": "20db17ba2999b1a4718c03210646442067a132bbbec34e0c1be3a9470c16d28c", "publisher_timed_gt_on_page": false, "status": "gt_provenance_hold"},
+    {"csv_line": 1017, "publisher_url": "https://ocw.mit.edu/courses/14-13-psychology-and-economics-spring-2020/resources/lec13-social-pref-iv/", "html_sha256": "58436c155fff57a6e1a29965e353df810573df7ffd1ed75842a4ef2ebcdc4af9", "publisher_timed_gt_on_page": false, "status": "gt_provenance_hold"},
+    {"csv_line": 1365, "publisher_url": "https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/resources/lecture-1-introduction-financial-terms-and-concepts/", "html_sha256": "e9fa29d4b21226a0fb1e6a76e3664f3b7d1222f183f86b800298703eae9c2317", "publisher_timed_gt_on_page": false, "status": "gt_provenance_hold"},
+    {"csv_line": 1370, "publisher_url": "https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/resources/lecture-11-time-series-analysis-ii/", "html_sha256": "c34e03f053983758b1d1f43b256897095b2603ae552937a883f3c2941056a0ee", "publisher_timed_gt_on_page": false, "status": "gt_provenance_hold"}
+  ],
+  "limitation": "Only the MIT OCW lecture resource pages were checked for publisher timed GT. A separately published original chapter source, if any, has not been verified. No claim that the SSLectures labels are false or that linked media is unavailable."
+}

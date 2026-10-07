@@ -1,0 +1,37 @@
+# RQ1: qualification of the two locked Yale batches
+
+**2026-09-29; source-only, pre-score decision.** The six original VidChapters Yale IDs and 12 Yale publisher-native lectures were [locked before media inspection](rq1-expansion-batch-260929-2015-locked.csv), [locked as the second batch](rq1-yale-native-batch-260929-locked.csv), and acquired through the three byte-counted [VidChapters A](rq1-yale-vidchapters-media-acquisition-260929.csv), [VidChapters B](rq1-yale-vidchapters-media-acquisition-b-260929.csv), and [native](rq1-yale-native-media-acquisition-260929.csv) manifests. The prior six qualified units were not reselected or split. No candidate predictions, scores or final-test metrics entered this review; no source `label,time` was moved or rewritten.
+
+## Full media and GT review
+
+- [Full decode receipt](rq1-locked-yale-260929-full-media-decode-receipt.json): **18/18** exact-byte publisher `.m4v` files, **3,937,792,491 bytes** total, SHA-256 per file, audio and video streams present, and every audio/video stream decoded by FFmpeg with error-on-decode. Largest absolute duration difference from the locked manifest was **0.527 s**. A nonfatal missing QuickTime chapter-track warning on some files did not affect decode.
+- The locked sources contain **109 original paired `label,time` rows**: one structural zero per video and **91 internal starts**. The [per-start review](rq1-locked-yale-260929-boundary-review.csv) preserves each original pair and links the exact media hash, diagnostic ASR excerpt, contact-sheet hash, fixed ±3 s window, separate title status and boundary status. The [source-only decision file](rq1-locked-yale-260929-review-decisions.json) records reasons for uncertain/error marks; original source-pair files remain [VidChapters](rq1-expansion-batch-260929-source-pairs.csv) and [native](rq1-yale-native-batch-260929-source-pairs.csv). Contact sheets, 24 s boundary audio diagnostics and 120 s full-lecture storyboards remain in the ignored local qualification directory. Diagnostic ASR supports review; it is not model chaptering output.
+- Boundary decisions across all internal starts: **73 pass, 15 uncertain, 3 boundary_error**. Title decisions: **72 pass, 12 uncertain, 7 title_error**. Under the [predeclared rule](../../multimodal-lecture-summarizer/plans/260901-unified-scientific-benchmark/framework/rq1-boundary-qualification-rule-260929.md), a title error alone does not exclude a boundary-only unit, while one uncertain/error boundary holds the whole unit. For example, CLCV 205 at 538 s remains about the name Mycenaean in wider source audio; HIST 210 has transitions outside the fixed collar; neither timestamp was moved to rescue a pass.
+
+## Component rights and observed yield
+
+[OYC terms](https://oyc.yale.edu/terms) license most Yale lecture material for noncommercial use but explicitly exclude third-party components unless the applicable credit says otherwise. The disposition below is for restricted, noncommercial research handling of the exact media, without republishing MP4, clips, frames or transcript. A `hold_component` records an unresolved component basis, not a finding that all research use is forbidden. Review included publisher lecture pages/credits, full-lecture visual samples, boundary windows and relevant publisher transcripts. The [unit gate table](rq1-locked-yale-260929-final-gates.csv) gives all 18 individual outcomes.
+
+| Batch | Full decode | Newly pass | Hold rights only | Hold boundary only | Hold both |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Six Yale VidChapters | 6/6 | 0 | 3 | 0 | 3 |
+| Twelve Yale native | 12/12 | 1 | 6 | 3 | 2 |
+| **Total** | **18/18** | **1** | **9** | **3** | **5** |
+
+The sole new pass is **`zsb6B8HrNVA` / BENG 100 lecture 21 / W. Mark Saltzman**: five source-media speech onsets match the fixed collar, the exact publisher video fully decodes, and the reviewed media shows the Yale lecturer/board without a separately identified third-party component. Its publisher page is [BENG 100 lecture 21](https://oyc.yale.edu/biomedical-engineering/beng-100/lecture-21). This is one new course/lecturer group relative to the earlier six, so the undivided qualified pool is **N=7/G=7**. The earlier six stay intact.
+
+Important rights holds are component-specific: [AFAM 162 lecture 20 credits](https://oyc.yale.edu/sites/default/files/AFAM162_20.pdf) explicitly name songs and film clips seen in the video; [RLST 145 lecture 3](https://oyc.yale.edu/religious-studies/rlst-145/lecture-3) says it reads extended passages from Speiser's *Enuma Elish* translation; [RLST 152 lecture 14](https://oyc.yale.edu/religious-studies/rlst-152/lecture-14) names the New Revised Standard Version used for extended spoken reading; [PSYC 110 lecture 3](https://oyc.yale.edu/psychology/psyc-110/lecture-3) quotes contemporary horoscope and *The Onion* text in audio. The [ITAL 310 syllabus](https://oyc.yale.edu/italian-language-and-literature/ital-310) specifies John D. Sinclair's 1968 Oxford translation, and lecture 5 reads translated passages. ASTR 160's [lecture notes PDF](https://oyc.yale.edu/sites/default/files/astr160_lec4_3_0.pdf), p. 12, embeds a printed 51 Pegasi plot without an identified reuse basis. These findings explain why lecturer-only frames do not automatically clear audio or slide rights. Other image/poem holds and precise per-unit reasons are in the gate table.
+
+## Scale decision before test
+
+The selected 18 yielded **1/18 = 5.6%**, descriptive only; it does not estimate the pass rate of all Yale courses. The deferred **20/10/20 = 50 groups** could not have been filled by the prior six plus these 18 even at zero attrition (maximum 24). Actual qualification reached **seven**, so no defensible group-disjoint train/validation/final-test split is available now. In particular, these seven are not split into tiny partitions to open test.
+
+The [scale and precision amendment](../../multimodal-lecture-summarizer/plans/260901-unified-scientific-benchmark/framework/rq1-scale-precision-plan-260929.md) reduces the prospective narrower-study floor to **8/4/8 = 20 independent groups**, with a desired grouped-bootstrap CI half-width **≤0.20 F1** rather than ±0.10. This still requires **13 additional eligible, independent groups**; it is not a claim that the selected catalogue will supply them. Validation-group variability may raise the required test count; if unavailable, official test stays blocked. The narrower scope cannot be described as the original 50-group confirmatory design.
+
+**Current execution state:** cohort not locked; project-use history for assigning final-test roles not yet checked; no group split; D2 not closed; candidate/checkpoint/config not locked; **official RQ1 not run**. These steps occur in that order only after the group target is feasible. The six previously qualified units remain unassigned. No additional dataset was opened in this batch.
+
+## Unresolved questions
+
+1. Can future preselected course/lecturer groups reach the revised 20-group floor without weakening the current GT/media/rights rule?
+2. Can a documented scoped component-use basis clear any of the present rights holds before cohort lock, without consulting model output or editing source labels/times?
+3. Once enough groups exist, is development-only paired-effect variability low enough to support the reduced ±0.20 planning precision with eight sealed test groups?

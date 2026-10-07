@@ -1,0 +1,127 @@
+{
+  "video_id": "-7xg8pGcP6w",
+  "source_page": "https://cs50.harvard.edu/python/weeks/2/",
+  "source_mp4_url": "https://cdn.cs50.net/python/2022/x/lectures/2/lecture2-360p.mp4",
+  "publisher_srt_url": "https://cdn.cs50.net/python/2022/x/lectures/2/lang/en/lecture2.srt",
+  "ytseg_revision": "4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+  "ytseg_shard": "datasets/retkowski/ytseg@4ee1c1fccc5a9e118ff0918f3df1e61aadca8970/text/train-00002-of-00004.parquet",
+  "ytseg_row_index": 1594,
+  "media_size_bytes": 963059289,
+  "media_sha256": "a58685b0ad2424ae6bc995521c7c5cb22b652d42fe964a0448e14c137e2ce719",
+  "publisher_srt_sha256": "0b660488fd0cd1cefea48b88ba41ebee7dd358d7de2464f0b8941b1ab087f496",
+  "ytseg_duration_sec": 4847.0,
+  "publisher_mp4_duration_sec": 4846.805333,
+  "raw_chapters_count": 12,
+  "chapter_titles_count": 12,
+  "chapter_timestamps_count": 11,
+  "first_chapter_start_sec": 0.0,
+  "last_chapter_end_sec": 4847.0,
+  "publisher_srt_cue_count": 1581,
+  "chapter_fields_match_raw": true,
+  "checks": [
+    {
+      "kind": "pct10",
+      "timestamp_sec": 484.7,
+      "checked_at_sec": 484.7,
+      "chapter_index": 3,
+      "chapter_title": "while",
+      "publisher_srt_cue_count": 9,
+      "publisher_excerpt": "I'm updating i to be one less, one less, one less, it should eventually hit 0, at which point the answer to 9.2's question will now be false. So let's see if this works. I'm going to go down to my terminal window and run",
+      "five_word_gram_coverage_in_ytseg_chapter": 1.0,
+      "publisher_srt_cue_min_sec": 471.31,
+      "publisher_srt_cue_max_sec": 497.36
+    },
+    {
+      "kind": "pct50",
+      "timestamp_sec": 2423.5,
+      "checked_at_sec": 2423.5,
+      "chapter_index": 6,
+      "chapter_title": "Iteration with Lists",
+      "publisher_srt_cue_count": 10,
+      "publisher_excerpt": "So can this for loop work with either hash tables or different kind of tables or arrays? DAVID MALAN: Indeed. So we're getting ahead of ourselves there, but there are yet other types of data in Python, and indeed, you ca",
+      "five_word_gram_coverage_in_ytseg_chapter": 0.8556,
+      "publisher_srt_cue_min_sec": 2411.21,
+      "publisher_srt_cue_max_sec": 2437.967
+    },
+    {
+      "kind": "pct90",
+      "timestamp_sec": 4362.3,
+      "checked_at_sec": 4362.3,
+      "chapter_index": 10,
+      "chapter_title": "Nested Loops",
+      "publisher_srt_cue_count": 9,
+      "publisher_excerpt": "Well, let me propose we come back to VS Code and let me propose that we think about this in a couple of different ways. I could do this like this. If I know where I'm going, maybe I'm a seasoned programmer, let me go ahe",
+      "five_word_gram_coverage_in_ytseg_chapter": 1.0,
+      "publisher_srt_cue_min_sec": 4349.57,
+      "publisher_srt_cue_max_sec": 4376.18
+    },
+    {
+      "kind": "first_internal_boundary",
+      "timestamp_sec": 24.0,
+      "checked_at_sec": 32.0,
+      "chapter_index": 1,
+      "chapter_title": "Loops",
+      "publisher_srt_cue_count": 7,
+      "publisher_excerpt": "DAVID MALAN: All right. This is CS50's Introduction to Programming with Python. My name is David Malan, and this week we focus on loops, this ability in Python and a lot of other programming languages to do something aga",
+      "five_word_gram_coverage_in_ytseg_chapter": 0.9394,
+      "publisher_srt_cue_min_sec": 24.16,
+      "publisher_srt_cue_max_sec": 45.31
+    },
+    {
+      "kind": "middle_internal_boundary",
+      "timestamp_sec": 2099.0,
+      "checked_at_sec": 2107.0,
+      "chapter_index": 6,
+      "chapter_title": "Iteration with Lists",
+      "publisher_srt_cue_count": 10,
+      "publisher_excerpt": "to express ourselves cyclically, but get back some interesting answers as well. And let me propose, for instance, that we look a little more closely at these lists. It turns out that in Python, and really, in programs in",
+      "five_word_gram_coverage_in_ytseg_chapter": 0.7358,
+      "publisher_srt_cue_min_sec": 2091.8,
+      "publisher_srt_cue_max_sec": 2119.85
+    },
+    {
+      "kind": "last_internal_boundary",
+      "timestamp_sec": 4817.0,
+      "checked_at_sec": 4825.0,
+      "chapter_index": 11,
+      "chapter_title": "Conclusion",
+      "publisher_srt_cue_count": 10,
+      "publisher_excerpt": "and to decompose it into these smaller components, that once assembled, achieve your final idea. Seeing no questions, that's the end of our look at loops in Python, this ability to do things cyclically again and again, a",
+      "five_word_gram_coverage_in_ytseg_chapter": 0.8404,
+      "publisher_srt_cue_min_sec": 4808.12,
+      "publisher_srt_cue_max_sec": 4839.1
+    }
+  ],
+  "text_wt_head": "Welcome back.",
+  "text_wl_head": "welcome back all right so we're talking about vector calculus div grad and curl divergence gradient and rotation of your",
+  "full_decode": {
+    "command": "ffmpeg -nostdin -v error -xerror -i <mp4> -map 0:v:0 -map 0:a:0 -f null NUL",
+    "exit_code": 0,
+    "stderr": "",
+    "video_stream": "h264 640x360 24fps",
+    "audio_stream": "aac stereo 48000Hz"
+  },
+  "packet_pts": {
+    "ffprobe_exit_code": 0,
+    "video": {
+      "packets": 116322,
+      "first_sec": 0.0,
+      "last_sec": 4846.708333,
+      "nonmonotonic_count": 0,
+      "missing_count": 0
+    },
+    "audio": {
+      "packets": 227194,
+      "first_sec": -0.044,
+      "last_sec": 4846.74,
+      "nonmonotonic_count": 0,
+      "missing_count": 0
+    }
+  },
+  "source_expected_bytes": 963059289,
+  "bytes_match_source_expected": true,
+  "media_status": "pass_technical",
+  "gt_status": "hold_upstream_conversion_code_missing",
+  "rights_status": "hold_component_rights_review",
+  "warning": "text_wt and text_wl reference vector-calculus material, not this CS50 lecture; their intended semantics are not assumed here. Only text_ref/target_text_ts_ref were compared."
+}

@@ -1,0 +1,86 @@
+{
+  "source": "VidChapters-7M author project page and public Google Drive links",
+  "authors_project_page": "https://antoyang.github.io/vidchapters.html",
+  "authors_code": "https://github.com/antoyang/VidChapters",
+  "authors_code_revision": "fa3900c6508d53ea9d490a07f079703b163c78ea",
+  "files": {
+    "train.json": {
+      "bytes": 12010140,
+      "sha256": "d0201fc1172c8f30799ac28a99021690603ff91cbda7cf60bcdf1b6c566e586a"
+    },
+    "val.json": {
+      "bytes": 123000,
+      "sha256": "2bec679986bc459e954ddd75cb54bbdb68367023b285ab13375fcc4a63b9dda3"
+    },
+    "test.json": {
+      "bytes": 123000,
+      "sha256": "c1d9e977bc1cb41fc5e40a8dc0b8fd4afe6cc29d9085e19dc371297bd1f05cb0"
+    },
+    "tagged.pkl": {
+      "bytes": 155133,
+      "sha256": "0ad2e689c79485dcdc4860de10c2c5377f6560774b5f5038da1d4aaf1257053d"
+    },
+    "chapters.pkl": {
+      "bytes": 2039261340,
+      "sha256": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e"
+    }
+  },
+  "split_counts": {
+    "train": {
+      "rows": 800676,
+      "unique_ids": 800676
+    },
+    "val": {
+      "rows": 8200,
+      "unique_ids": 8200
+    },
+    "test": {
+      "rows": 8200,
+      "unique_ids": 8200
+    }
+  },
+  "split_pairwise_exact_id_overlap": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  },
+  "tags": {
+    "nsfw": 5716,
+    "toxic_chapters": 355,
+    "toxic_asr": 1368
+  },
+  "tag_union_count": 7413,
+  "ytseg_locked_12_overlap": {
+    "train": [
+      "-dOX_4lI6HY",
+      "3sB64Au76h0",
+      "PHtPau1c5sU",
+      "Th2N_rDfkDw",
+      "alLh1Jdqwvg",
+      "kiCNa95DnnE",
+      "ksyY5wa5_50",
+      "shHvE6yV4IM",
+      "tCKk22kaZi4",
+      "xsO2Ip6eiaY"
+    ],
+    "val": [],
+    "test": []
+  },
+  "mitfld_selected_35_overlap": {
+    "train": [],
+    "val": [],
+    "test": []
+  },
+  "mitfld_prior_pilot_10_overlap": {
+    "train": [],
+    "val": [],
+    "test": []
+  },
+  "annotation_file_status": "downloaded_complete_bytes_and_sha256; not_unpickled_or_fully_audited",
+  "qualification_status": "candidate_only_no_lecture_cohort_locked",
+  "gt_status": "unqualified_individual_rows",
+  "rights_status": "unqualified_individual_videos",
+  "media_status": "unqualified_individual_videos",
+  "split_status": "source_video_id_disjoint_only_course_lecturer_unverified",
+  "official_rq1": "not_run"
+}

@@ -1,0 +1,542 @@
+{
+  "xsO2Ip6eiaY": {
+    "source_mapping": {
+      "publisher_page": "https://ocw.mit.edu/courses/16-687-private-pilot-ground-school-january-iap-2019/resources/lecture-16-seaplanes/",
+      "publisher_embedded_youtube_id": "xsO2Ip6eiaY",
+      "publisher_download_url": "https://archive.org/download/MIT16.687IAP19/MIT16_687IAP19_lec16_300k.mp4",
+      "ytseg_pinned_train_shard": "datasets/retkowski/ytseg@4ee1c1fccc5a9e118ff0918f3df1e61aadca8970/text/train-00002-of-00004.parquet"
+    },
+    "media_download": {
+      "http_status": 200,
+      "head_content_length": 59842706,
+      "download_bytes": 59842706,
+      "content_length_match": true,
+      "sha256": "bfd2f8627a5b87590cf69322c6907556b1f0e7b6c22071fb2de01c48f43e9a75",
+      "local_ignored_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\ytseg_qualification\\xsO2Ip6eiaY.mp4"
+    },
+    "media_probe": {
+      "duration_s": 1474.474,
+      "ytseg_duration_s": 1475.0,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 640,
+          "height": 360,
+          "duration": "1474.439633",
+          "nb_frames": "44189",
+          "tags": {
+            "language": "eng"
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "duration": "1474.474000",
+          "nb_frames": "69118",
+          "tags": {
+            "language": "eng"
+          }
+        },
+        {
+          "index": 2,
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "duration": "1459.700000",
+          "nb_frames": "545",
+          "tags": {
+            "language": "eng"
+          }
+        },
+        {
+          "index": 3,
+          "codec_name": "png",
+          "codec_type": "video",
+          "width": 1400,
+          "height": 1400,
+          "duration": "1474.474000"
+        },
+        {
+          "index": 4,
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "width": 640,
+          "height": 360,
+          "duration": "1474.474000",
+          "nb_frames": "545",
+          "tags": {
+            "language": "eng"
+          }
+        }
+      ]
+    },
+    "full_decode": {
+      "exit_code": 0,
+      "video_audio_mapped": true,
+      "decoded_pts": {
+        "video": {
+          "frames": 44189,
+          "first_s": 0.0,
+          "last_s": 1474.406267,
+          "negative_steps": 0,
+          "exit_code": 0
+        },
+        "audio": {
+          "frames": 69116,
+          "first_s": 0.0,
+          "last_s": 1474.452,
+          "negative_steps": 0,
+          "exit_code": 0
+        }
+      }
+    },
+    "subtitle_cues": 523,
+    "checks": [
+      {
+        "fraction": 0.1,
+        "time_s": 147.4474,
+        "subtitle_cue_start_s": 147.77,
+        "subtitle_text": "bought 15 or 20 years ago for Fish and Wildlife patrol",
+        "ytseg_raw_chapter": "Bush Pilot Wisdom",
+        "sampled_frame_topic": "Maine seaplane photographs, Bush Pilot Wisdom"
+      },
+      {
+        "fraction": 0.5,
+        "time_s": 737.237,
+        "subtitle_cue_start_s": 736.96,
+        "subtitle_text": "So if it gets water on it, it'll be eroded.",
+        "ytseg_raw_chapter": "Bad things to do in a Seaplane",
+        "sampled_frame_topic": "lecturer speaking, Bad things to do in a Seaplane"
+      },
+      {
+        "fraction": 0.9,
+        "time_s": 1327.0266,
+        "subtitle_cue_start_s": 1328.24,
+        "subtitle_text": "at an economical price.",
+        "ytseg_raw_chapter": "Light Sport flying boats",
+        "sampled_frame_topic": "lecturer speaking, Light Sport flying boats"
+      },
+      {
+        "position": "first",
+        "ytseg_raw_start_s": 21,
+        "ytseg_raw_title": "Boats or Floats",
+        "caption_before": [
+          20.09,
+          "or you can have a conventional airplane on floats."
+        ],
+        "caption_after": [
+          22.97,
+          "So there at the bottom left is part of the Grumman series."
+        ],
+        "frame_at_plus_2_s_topic": "see narrative report",
+        "sampled_frame_at_plus_2_s": "Boats or Floats slide"
+      },
+      {
+        "position": "middle",
+        "ytseg_raw_start_s": 837,
+        "ytseg_raw_title": "Seaplane Pilot Skills",
+        "caption_before": [
+          832.492,
+          "Ah!"
+        ],
+        "caption_after": [
+          837.45,
+          "All right."
+        ],
+        "frame_at_plus_2_s_topic": "see narrative report",
+        "sampled_frame_at_plus_2_s": "Seaplane Pilot Skills slide"
+      },
+      {
+        "position": "last",
+        "ytseg_raw_start_s": 1346,
+        "ytseg_raw_title": "Questions?",
+        "caption_before": [
+          1344.22,
+          "Questions about seaplanes?"
+        ],
+        "caption_after": [
+          1348.81,
+          "Who wants one?"
+        ],
+        "frame_at_plus_2_s_topic": "see narrative report",
+        "sampled_frame_at_plus_2_s": "Questions? slide"
+      }
+    ],
+    "technical_media_status": "pass",
+    "overall_resource_status": "hold",
+    "blocking_gates": [
+      "hold_gt: upstream conversion code not found; no reinterpretation of derived fields",
+      "hold_rights: whole-component rights of lecture slides and third-party media unverified",
+      "near-duplicate content comparison against prior pilots is delegated to main audit"
+    ],
+    "limits": [
+      "Embedded publisher MP4 captions and YTSeg text may share source; no independent ASR",
+      "Six sampled locations do not validate every chapter boundary",
+      "No model selection, D2, or official RQ1 run"
+    ]
+  },
+  "ksyY5wa5_50": {
+    "source_mapping": {
+      "publisher_page": "https://ocw.mit.edu/courses/16-687-private-pilot-ground-school-january-iap-2019/resources/lecture-19-multi-engine-and-jets/",
+      "publisher_embedded_youtube_id": "ksyY5wa5_50",
+      "publisher_download_url": "https://archive.org/download/MIT16.687IAP19/MIT16_687IAP19_lec19_300k.mp4",
+      "ytseg_pinned_train_shard": "datasets/retkowski/ytseg@4ee1c1fccc5a9e118ff0918f3df1e61aadca8970/text/train-00001-of-00004.parquet"
+    },
+    "media_download": {
+      "http_status": 200,
+      "head_content_length": 68665567,
+      "download_bytes": 68665567,
+      "content_length_match": true,
+      "sha256": "9a34df4cba1a1061822f517670dc1d4d1525656374428cc34800df0aca80323a",
+      "local_ignored_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\ytseg_qualification\\ksyY5wa5_50.mp4"
+    },
+    "media_probe": {
+      "duration_s": 1702.271,
+      "ytseg_duration_s": 1702.0,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 640,
+          "height": 360,
+          "duration": "1702.233867",
+          "nb_frames": "51016",
+          "tags": {
+            "language": "eng"
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "duration": "1702.271000",
+          "nb_frames": "79796",
+          "tags": {
+            "language": "eng"
+          }
+        },
+        {
+          "index": 2,
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "duration": "1687.510000",
+          "nb_frames": "602",
+          "tags": {
+            "language": "eng"
+          }
+        },
+        {
+          "index": 3,
+          "codec_name": "png",
+          "codec_type": "video",
+          "width": 1400,
+          "height": 1400,
+          "duration": "1702.271000"
+        },
+        {
+          "index": 4,
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "width": 640,
+          "height": 360,
+          "duration": "1702.271000",
+          "nb_frames": "602",
+          "tags": {
+            "language": "eng"
+          }
+        }
+      ]
+    },
+    "full_decode": {
+      "exit_code": 0,
+      "video_audio_mapped": true,
+      "decoded_pts": {
+        "video": {
+          "frames": 51016,
+          "first_s": 0.0,
+          "last_s": 1702.2005,
+          "negative_steps": 0,
+          "exit_code": 0
+        },
+        "audio": {
+          "frames": 79794,
+          "first_s": 0.0,
+          "last_s": 1702.249333,
+          "negative_steps": 0,
+          "exit_code": 0
+        }
+      }
+    },
+    "subtitle_cues": 590,
+    "checks": [
+      {
+        "fraction": 0.1,
+        "time_s": 170.2271,
+        "subtitle_cue_start_s": 170.93,
+        "subtitle_text": "Can anybody immediately see what one problem might be?",
+        "ytseg_raw_chapter": "Where the problems happen",
+        "sampled_frame_topic": "Where the problems happen slide"
+      },
+      {
+        "fraction": 0.5,
+        "time_s": 851.1355,
+        "subtitle_cue_start_s": 850.06,
+        "subtitle_text": "jets with one pilot.",
+        "ytseg_raw_chapter": "Pilot Requirements",
+        "sampled_frame_topic": "Pilot Requirements slide"
+      },
+      {
+        "fraction": 0.9,
+        "time_s": 1532.0439,
+        "subtitle_cue_start_s": 1532.05,
+        "subtitle_text": "On the left is the ramp at Teterboro.",
+        "ytseg_raw_chapter": "Questions?",
+        "sampled_frame_topic": "lecturer speaking, Questions?"
+      },
+      {
+        "position": "first",
+        "ytseg_raw_start_s": 124,
+        "ytseg_raw_title": "Eisenhower's Air Force One",
+        "caption_before": [
+          123.39,
+          "Piston twins have an illustrious history."
+        ],
+        "caption_after": [
+          126.02,
+          "Here is a Aero Commander piston-driven"
+        ],
+        "frame_at_plus_2_s_topic": "see narrative report",
+        "sampled_frame_at_plus_2_s": "Eisenhower's Air Force One slide"
+      },
+      {
+        "position": "middle",
+        "ytseg_raw_start_s": 829,
+        "ytseg_raw_title": "Pilot Requirements",
+        "caption_before": [
+          826.6,
+          "And you have to pass a check ride specific to that aircraft."
+        ],
+        "caption_after": [
+          831.7,
+          "So most of you guys, except for Francis,"
+        ],
+        "frame_at_plus_2_s_topic": "see narrative report",
+        "sampled_frame_at_plus_2_s": "Pilot Requirements slide"
+      },
+      {
+        "position": "last",
+        "ytseg_raw_start_s": 1456,
+        "ytseg_raw_title": "Questions?",
+        "caption_before": [
+          1454.71,
+          "the second engine as a backup."
+        ],
+        "caption_after": [
+          1457.32,
+          "And while you're formulating your questions, I'll show you."
+        ],
+        "frame_at_plus_2_s_topic": "see narrative report",
+        "sampled_frame_at_plus_2_s": "Questions? slide"
+      }
+    ],
+    "technical_media_status": "pass",
+    "overall_resource_status": "hold",
+    "blocking_gates": [
+      "hold_gt: upstream conversion code not found; no reinterpretation of derived fields",
+      "hold_rights: whole-component rights of lecture slides and third-party media unverified",
+      "near-duplicate content comparison against prior pilots is delegated to main audit"
+    ],
+    "limits": [
+      "Embedded publisher MP4 captions and YTSeg text may share source; no independent ASR",
+      "Six sampled locations do not validate every chapter boundary",
+      "No model selection, D2, or official RQ1 run"
+    ]
+  },
+  "kiCNa95DnnE": {
+    "source_mapping": {
+      "publisher_page": "https://ocw.mit.edu/courses/16-687-private-pilot-ground-school-january-iap-2019/resources/lecture-21-weather-minimums-and-final-tips/",
+      "publisher_embedded_youtube_id": "kiCNa95DnnE",
+      "publisher_download_url": "https://archive.org/download/MIT16.687IAP19/MIT16_687IAP19_lec21_300k.mp4",
+      "ytseg_pinned_train_shard": "datasets/retkowski/ytseg@4ee1c1fccc5a9e118ff0918f3df1e61aadca8970/text/train-00000-of-00004.parquet"
+    },
+    "media_download": {
+      "http_status": 200,
+      "head_content_length": 52449855,
+      "download_bytes": 52449855,
+      "content_length_match": true,
+      "sha256": "d74ef9673385a27a72aebae7c8186de516cb37ac10df8fa02d9b5f21791265d3",
+      "local_ignored_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\ytseg_qualification\\kiCNa95DnnE.mp4"
+    },
+    "media_probe": {
+      "duration_s": 1292.351,
+      "ytseg_duration_s": 1292.0,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 640,
+          "height": 360,
+          "duration": "1292.324367",
+          "nb_frames": "38731",
+          "tags": {
+            "language": "eng"
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "duration": "1292.351000",
+          "nb_frames": "60581",
+          "tags": {
+            "language": "eng"
+          }
+        },
+        {
+          "index": 2,
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "duration": "1263.680000",
+          "nb_frames": "446",
+          "tags": {
+            "language": "eng"
+          }
+        },
+        {
+          "index": 3,
+          "codec_name": "png",
+          "codec_type": "video",
+          "width": 1400,
+          "height": 1400,
+          "duration": "1292.351000"
+        },
+        {
+          "index": 4,
+          "codec_name": "mov_text",
+          "codec_type": "subtitle",
+          "width": 640,
+          "height": 360,
+          "duration": "1292.351000",
+          "nb_frames": "446",
+          "tags": {
+            "language": "eng"
+          }
+        }
+      ]
+    },
+    "full_decode": {
+      "exit_code": 0,
+      "video_audio_mapped": true,
+      "decoded_pts": {
+        "video": {
+          "frames": 38731,
+          "first_s": 0.0,
+          "last_s": 1292.291,
+          "negative_steps": 0,
+          "exit_code": 0
+        },
+        "audio": {
+          "frames": 60579,
+          "first_s": 0.0,
+          "last_s": 1292.329333,
+          "negative_steps": 0,
+          "exit_code": 0
+        }
+      }
+    },
+    "subtitle_cues": 437,
+    "checks": [
+      {
+        "fraction": 0.1,
+        "time_s": 129.23510000000002,
+        "subtitle_cue_start_s": 129.729,
+        "subtitle_text": "I think it's more to enable people to say, take off and do",
+        "ytseg_raw_chapter": "91.155 - Basic VFR Weather Minimums",
+        "sampled_frame_topic": "Basic VFR Weather Minimums slide"
+      },
+      {
+        "fraction": 0.5,
+        "time_s": 646.1755,
+        "subtitle_cue_start_s": 646.38,
+        "subtitle_text": "Remember L/D MAX for best glide speed.",
+        "ytseg_raw_chapter": "Best Glide Ratio",
+        "sampled_frame_topic": "Best Glide Ratio slide"
+      },
+      {
+        "fraction": 0.9,
+        "time_s": 1163.1159000000002,
+        "subtitle_cue_start_s": 1162.2,
+        "subtitle_text": "not in one of their own PDFs.",
+        "ytseg_raw_chapter": "Study Guide",
+        "sampled_frame_topic": "Study Guide slide"
+      },
+      {
+        "position": "first",
+        "ytseg_raw_start_s": 49,
+        "ytseg_raw_title": "Airspace Diagram",
+        "caption_before": [
+          46.69,
+          "these non-local flights, really pay attention to weather."
+        ],
+        "caption_after": [
+          51.59,
+          "Airspace, go and study this a little bit before the exam."
+        ],
+        "frame_at_plus_2_s_topic": "see narrative report",
+        "sampled_frame_at_plus_2_s": "Airspace Diagram slide"
+      },
+      {
+        "position": "middle",
+        "ytseg_raw_start_s": 663,
+        "ytseg_raw_title": "Thunderstorms",
+        "caption_before": [
+          662.31,
+          "a minimum, or a minimum per mile traveled."
+        ],
+        "caption_after": [
+          666.81,
+          "Thunderstorms, the one thing you--"
+        ],
+        "frame_at_plus_2_s_topic": "see narrative report",
+        "sampled_frame_at_plus_2_s": "Thunderstorms slide"
+      },
+      {
+        "position": "last",
+        "ytseg_raw_start_s": 1208,
+        "ytseg_raw_title": "Next Steps",
+        "caption_before": [
+          1207.43,
+          "And we'll be happy."
+        ],
+        "caption_after": [
+          1208.56,
+          "All right, next steps-- if you want to continue your journey"
+        ],
+        "frame_at_plus_2_s_topic": "see narrative report",
+        "sampled_frame_at_plus_2_s": "Next Steps slide"
+      }
+    ],
+    "technical_media_status": "pass",
+    "overall_resource_status": "hold",
+    "blocking_gates": [
+      "hold_gt: upstream conversion code not found; no reinterpretation of derived fields",
+      "hold_rights: whole-component rights of lecture slides and third-party media unverified",
+      "near-duplicate content comparison against prior pilots is delegated to main audit"
+    ],
+    "limits": [
+      "Embedded publisher MP4 captions and YTSeg text may share source; no independent ASR",
+      "Six sampled locations do not validate every chapter boundary",
+      "No model selection, D2, or official RQ1 run"
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+course_id,lecture_no,filename,source_url,expected_bytes,duration_s,rights_status,acquisition_action,known_sha256
+chem125b,38,chem125_38_042911.m4v,https://openmedia.yale.edu/projects/courses/spring11/chem125b/iphone/chem125_38_042911.m4v,125576306,3128.943,pending_component_review,download,
+gg140,26,gg140_26_110211.m4v,https://openmedia.yale.edu/projects/courses/fall11/gg140/iphone/gg140_26_110211.m4v,101038169,2842.456,pending_component_review,download,
+engl310,18,engl310_18_040407.m4v,https://openmedia.yale.edu/projects/courses/spring07/engl310/iphone/engl310_18_040407.m4v,227629434,2564.257,pending_component_review,download,

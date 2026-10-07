@@ -1,0 +1,5 @@
+video_id,group_id,gt_pair_parity,exact_media,decode,duration_delta_seconds,boundary,rights_internal,decision
+EuNXVy5-KgA,mit-16.687-iap-2019,pass_14_of_14,pass,pass,-0.009,pass_13_internal,pass_scoped,pass
+js34ZxECiCA,mit-22.033-fall-2011,pass_21_of_21,pass_inferred_title_duration_channel,pass,-0.000667,hold_boundary_1984,hold_explicit_third_party_exclusion,hold
+qdbkvD4N-us,mit-18.s096-fall-2013,pass_3_of_3,pass,pass,0.054333,hold_boundary_1275_2547,pass_scoped,hold
+09vU-wVwW3U,mit-6.046j-spring-2015,pass_5_of_5,pass,pass,-0.002,pass_4_internal,pass_scoped,pass

@@ -1,0 +1,25 @@
+course_id,lecture_no,publisher_start_s,clip_start_s,mov_url,ffmpeg_exit,srt_bytes,error,cue_count_in_window,subtitle_probe_status
+econ159,2,407.0,395.0,https://openmedia.yale.edu/projects/courses/fall07/econ159/mov/econ159_02_091007.mov,4294967274,0,":0/srt @ 000002879cc500c0] Error binding an input stream
+Error opening output file C:\Users\hung\AppData\Local\Temp\rq1_yale_subqa_wwxmvfql\econ159_2.srt.
+Error opening output files: Invalid argument
+",0,present_unknown_codec
+econ251,1,616.0,604.0,https://openmedia.yale.edu/projects/courses/fall09/econ251/mov/econ251_01_090309.mov,4294967274,0,":0/srt @ 000002178cebed00] Error binding an input stream
+Error opening output file C:\Users\hung\AppData\Local\Temp\rq1_yale_subqa_wwxmvfql\econ251_1.srt.
+Error opening output files: Invalid argument
+",0,present_unknown_codec
+econ25208,6,388.0,376.0,https://openmedia.yale.edu/projects/courses/spring08/econ252/mov/econ252_06_020108.mov,0,835,,9,extractable_mov_text
+engl220,23,117.0,105.0,https://openmedia.yale.edu/projects/courses/fall07/engl220/mov/engl220_23_120307.mov,4294967274,0,"0/srt @ 000001f661146e40] Error binding an input stream
+Error opening output file C:\Users\hung\AppData\Local\Temp\rq1_yale_subqa_wwxmvfql\engl220_23.srt.
+Error opening output files: Invalid argument
+",0,present_unknown_codec
+engl291,10,505.0,493.0,https://openmedia.yale.edu/projects/courses/spring08/engl291/mov/engl291_10_021308.mov,0,727,,8,extractable_mov_text
+engl300,16,572.0,560.0,https://openmedia.yale.edu/projects/courses/spring09/engl300/mov/engl300_16_030509.mov,4294967274,0,"0/srt @ 0000021bd0d50d80] Error binding an input stream
+Error opening output file C:\Users\hung\AppData\Local\Temp\rq1_yale_subqa_wwxmvfql\engl300_16.srt.
+Error opening output files: Invalid argument
+",0,present_unknown_codec
+engl310,4,388.0,376.0,https://openmedia.yale.edu/projects/courses/spring07/engl310/mov/engl310_04_012907.mov,4294967274,0,":0/srt @ 0000022bd05255c0] Error binding an input stream
+Error opening output file C:\Users\hung\AppData\Local\Temp\rq1_yale_subqa_wwxmvfql\engl310_4.srt.
+Error opening output files: Invalid argument
+",0,present_unknown_codec
+phys200,19,531.0,519.0,https://openmedia.yale.edu/projects/courses/fall06/phys200/mov/phys200_19_111306.mov,0,1242,,14,extractable_mov_text
+phys201,10,526.0,514.0,https://openmedia.yale.edu/projects/courses/spring10/phys201/mov/phys201_10_021010.mov,0,973,,12,extractable_mov_text

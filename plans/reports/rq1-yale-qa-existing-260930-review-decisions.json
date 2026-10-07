@@ -1,0 +1,41 @@
+{
+  "schema": "rq1-yale-qa-existing-review-decisions/1",
+  "source_only": true,
+  "no_timestamp_or_label_edits": true,
+  "no_candidate_prediction_or_metric_consulted": true,
+  "scope": "Qualification only; prior QA use bars automatic final-test assignment pending project-use history.",
+  "decisions": {
+    "qQ3kFydI_xQ": {
+      "boundary_pass": [407, 961, 2129, 3937],
+      "boundary_uncertain": [],
+      "boundary_error": [],
+      "title_uncertain": [407, 961],
+      "title_error": [],
+      "boundary_reason": {
+        "407": "At 404 s the lecturer closes the prize aside and begins the new formal-game exposition; the GT start at 407 s is at the edge of the fixed collar. The title is broader than this spoken lead-in.",
+        "961": "After ending the notation explanation, 'All right. So let's have an example' begins around 960.3-961.3 s; the exact weak-dominance wording follows later, so title meaning is uncertain but the topic onset is aligned.",
+        "2129": "The previous Hannibal aside ends before 2129 s; 'Now that I promised you we'd get back to the game' begins around 2130 s.",
+        "3937": "The prior real-world application closes at 3937 s; 'Now I've got five minutes ... small aside' begins at the original start and develops common versus mutual knowledge."
+      },
+      "rights": "pass_scoped",
+      "rights_reason": "OYC internal noncommercial research scope; full-lecture storyboard shows Yale lecturer, classroom audience and chalkboard, without an identified extended third-party media component. No media/transcript redistribution."
+    },
+    "BulqGSY_FlE": {
+      "boundary_pass": [1059, 1802, 2338, 2937, 3690],
+      "boundary_uncertain": [],
+      "boundary_error": [531],
+      "title_uncertain": [531, 2937],
+      "title_error": [],
+      "boundary_reason": {
+        "531": "At 531 s the lecturer explicitly says 'That's a summary of what I did last time' and continues the prior wave-equation derivation. A distinguishable next-section lead-in appears around 541 s, beyond ±3 s; board content also continues. Keep original GT and hold unit.",
+        "1059": "A pause ends prior velocity explanation; 'OK. So now I consider another aspect of these waves' begins around 1059.2-1059.8 s and introduces energy.",
+        "1802": "Prior decibel explanation ends before 1802 s; 'OK, now for another totally different property' begins about 1802.3 s and leads into Doppler effect.",
+        "2338": "After the source/observer special cases, 'Okay, so now the rest of the class' begins around 2338 s and initiates the new wave-property section.",
+        "2937": "After beats and a simple trigonometric problem, 'Now I will do slightly more complicated problem' begins around 2938 s; the interference title is broader than this lead-in.",
+        "3690": "Prior double-slit path-length explanation ends near 3690 s; 'OK, last of the interference problem has to do with all these musical instruments' begins around 3690.6 s."
+      },
+      "rights": "pass_scoped",
+      "rights_reason": "OYC internal noncommercial research scope; full-lecture storyboard shows Yale lecturer and his chalkboard equations/diagrams, without an identified extended third-party media component. No media/transcript redistribution."
+    }
+  }
+}

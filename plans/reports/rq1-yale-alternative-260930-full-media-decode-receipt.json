@@ -1,0 +1,183 @@
+{
+  "schema": "rq1-yale-full-media-decode/1",
+  "qualification_only": true,
+  "created_utc": "2026-09-30T02:26:57.849211+00:00",
+  "manifest_sha256": "11d7c919cfc06eeb301bbeda33985bc98f08d05a37608616810a449af5cb9d82",
+  "files": [
+    {
+      "video_id": "YxGHbnwqd14",
+      "course_code": "PHYS 200",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\alternative_batch\\phys200_22_112906.m4v",
+      "source_url": "https://openmedia.yale.edu/projects/courses/fall06/phys200/iphone/phys200_22_112906.m4v",
+      "bytes": 380021518,
+      "sha256": "cac21cfdbb974632b6b5126937e61befb33ae8abe9e898ab5a49d5b64a631cdb",
+      "duration_sec": 4480.013356,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "full_audio_video_decode": "pass",
+      "decode_warning": "[mov,mp4,m4a,3gp,3g2,mj2 @ 000001af486b7580] Referenced QT chapter track not found"
+    },
+    {
+      "video_id": "nd6hBBPWHvg",
+      "course_code": "HIST 276",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\alternative_batch\\hist276_14_102207.m4v",
+      "source_url": "https://openmedia.yale.edu/projects/courses/fall07/hist276/iphone/hist276_14_102207.m4v",
+      "bytes": 171641617,
+      "sha256": "ec020cf450982b11a881a1a68db8449b00a2b2ee691612fca44f0dfe5f075cbc",
+      "duration_sec": 2710.977644,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "full_audio_video_decode": "pass",
+      "decode_warning": ""
+    },
+    {
+      "video_id": "JSXUrNZJKiI",
+      "course_code": "MCDB 150",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\alternative_batch\\mcdb150_18_040209.m4v",
+      "source_url": "https://openmedia.yale.edu/projects/courses/spring09/mcdb150/iphone/mcdb150_18_040209.m4v",
+      "bytes": 392400910,
+      "sha256": "11b1ae33c78eaa11dcdc0775c5460b7aebf3305f495b1f897cd734c7d18e7377",
+      "duration_sec": 4286.448448,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "full_audio_video_decode": "pass",
+      "decode_warning": ""
+    },
+    {
+      "video_id": "yYrhDxApqgg",
+      "course_code": "PLSC 270",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\alternative_batch\\plsc270_05_091609.m4v",
+      "source_url": "https://openmedia.yale.edu/projects/courses/fall09/plsc270/m4v/plsc270_05_091609.m4v",
+      "bytes": 240265116,
+      "sha256": "c9b9327f063e90604e35e555efec2c6bbaa8392738f718e037bebceebb6be715",
+      "duration_sec": 2847.514181,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "full_audio_video_decode": "pass",
+      "decode_warning": ""
+    },
+    {
+      "video_id": "-cu29S-jvxQ",
+      "course_code": "SOCY 151",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\alternative_batch\\socy151_24_120109.m4v",
+      "source_url": "https://openmedia.yale.edu/projects/courses/fall09/socy151/m4v/socy151_24_120109.m4v",
+      "bytes": 261297249,
+      "sha256": "74d703b2103107d1e66c5666e73e6b5e0873c9b899d919b8f61db8f210d7dd55",
+      "duration_sec": 3048.148148,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "full_audio_video_decode": "pass",
+      "decode_warning": ""
+    },
+    {
+      "video_id": "_lEPUrBdxx8",
+      "course_code": "HSAR 252",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\alternative_batch\\hsar252_08_020509.m4v",
+      "source_url": "https://openmedia.yale.edu/projects/courses/spring09/hsar252/iphone/hsar252_08_020509.m4v",
+      "bytes": 368719996,
+      "sha256": "d343258335988ecd38d03fde68100043afbe81748eee5fe2f097c6751f92923c",
+      "duration_sec": 4027.756757,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "full_audio_video_decode": "pass",
+      "decode_warning": "[null @ 000002a2e3a01280] Application provided invalid, non monotonically increasing dts to muxer in stream 1: 177623596 >= 177623596"
+    },
+    {
+      "video_id": "KnFe-YvrS60",
+      "course_code": "EEB 122",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\alternative_batch\\eeb122_19_022509.m4v",
+      "source_url": "https://openmedia.yale.edu/projects/courses/spring09/eeb122/iphone/eeb122_19_022509.m4v",
+      "bytes": 263146172,
+      "sha256": "521ef481062d75bc4ad35b82cdce1fefbdb884afb255a273e6a4ab86cb3cc592",
+      "duration_sec": 2874.371705,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "full_audio_video_decode": "pass",
+      "decode_warning": ""
+    }
+  ]
+}

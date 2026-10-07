@@ -1,0 +1,16 @@
+{
+  "schema": "rq1-validation-precision-preflight/1",
+  "date_local": "2026-09-30",
+  "split_sha256": "1bb28edc0c48849d72b827bcf98b7ea35eecbcce7c8da4160693e0041956cbe8",
+  "validation_video_ids": ["tCKk22kaZi4", "f_55cmhHq3g", "VX4eYYmvQ78", "Hy7ou5R_vjE"],
+  "independent_validation_groups": 4,
+  "predeclared_contrasts": ["C2-C1", "C3-C1", "C4-C1", "C5-C6"],
+  "desired_grouped_ci_half_width_f1": 0.20,
+  "planning_formula": "G_test=max(8,ceil((1.96*max_sample_sd_of_validation_group_paired_F1_3s_deltas/0.20)^2))",
+  "eight_test_group_max_sample_sd": 0.2886150127292031,
+  "validation_score_receipt_path": null,
+  "s_val": null,
+  "required_test_groups": null,
+  "status": "not_estimable_no_locked_validation_candidate_scores",
+  "reason": "No executed candidate prediction/score receipts for these four validation IDs; C5-C6 additionally lacks two admissible learned checkpoints. No final-test GT or model outcomes were used for planning."
+}

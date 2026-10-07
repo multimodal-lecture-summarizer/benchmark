@@ -1,0 +1,145 @@
+{
+  "schema": "rq1-yale-recruitment-source-only-review/1",
+  "source_only": true,
+  "no_timestamp_or_label_edits": true,
+  "no_candidate_prediction_or_metric_consulted": true,
+  "boundary_collar_sec": 3,
+  "decisions": {
+    "9FrHGAd_yto": {
+      "boundary_pass": [786, 1490],
+      "boundary_uncertain": [],
+      "boundary_error": [],
+      "title_error": [],
+      "title_uncertain": [],
+      "boundary_reason": {
+        "786": "Word-level source audio starts 'Now, the second great strand' at 786.7 s after the Greek section ends.",
+        "1490": "Word-level source audio starts 'In the last two centuries' at 1490.2 s, introducing the new problem section."
+      },
+      "rights": "pass_scoped",
+      "rights_reason": "The full-lecture storyboard shows Donald Kagan at the lectern only; the selected lecture page lists no separate third-party credits. Internal noncommercial research scope under Open Yale terms, without redistribution."
+    },
+    "VX4eYYmvQ78": {
+      "boundary_pass": [424, 810, 1481, 2279, 2720],
+      "boundary_uncertain": [],
+      "boundary_error": [],
+      "title_error": [],
+      "title_uncertain": [1481, 2279],
+      "boundary_reason": {
+        "424": "Word-level source audio begins a new second-problem discussion with 'So I want to talk today' at 424.3 s; model wording follows.",
+        "810": "Source audio begins the historical market account with 'So the first people' at 810.0 s.",
+        "1481": "Source audio pivots from football-ticket facts to 'Now you need a model' at 1482.4 s; the broad published title is separately uncertain.",
+        "2279": "Source audio leaves course difficulty/logistics and says 'I'm going to keep going now to extend the model' near 2280.5 s; marginal-utility title scope is separately uncertain.",
+        "2720": "Source audio starts the more general equilibrium model at 2720.6 s."
+      },
+      "rights": "pass_scoped",
+      "rights_reason": "The full-lecture storyboard shows John Geanakoplos, his chalkboard derivations and lecture presentation diagrams/text; no identifiable external photo or film component or separate lecture credits. Internal noncommercial research scope under Open Yale terms."
+    },
+    "WMkD8HKJQCM": {
+      "boundary_pass": [601, 938, 1992, 3039, 3826],
+      "boundary_uncertain": [],
+      "boundary_error": [],
+      "title_error": [],
+      "title_uncertain": [601, 938, 3826],
+      "boundary_reason": {
+        "601": "After the historical gambling anecdote, source audio explicitly returns to probability theory at 601.8 s; the historical chapter title is broad.",
+        "938": "Source audio says 'now I'm going to go through some of the terms of probability' at about 936 s, inside the collar; the compound title is broad.",
+        "1992": "Source audio contrasts central tendency with the need for a dispersion measure at 1992.4 s.",
+        "3039": "Source audio explicitly moves away from statistics to present value at 3039.1 s.",
+        "3826": "Source audio opens a final concept with 'I wanted to say one more thing' at 3826 s; title coverage is separately uncertain."
+      },
+      "rights": "pass_scoped",
+      "rights_reason": "The full-lecture storyboard shows Robert Shiller speaking and writing his own equations/graphs on the board, without a separately identifiable third-party visual component or lecture credits. Internal noncommercial research scope under Open Yale terms."
+    },
+    "QXXp1bHd6gI": {
+      "boundary_pass": [189, 647, 931, 1320, 2326],
+      "boundary_uncertain": [],
+      "boundary_error": [],
+      "title_error": [],
+      "title_uncertain": [189, 2326],
+      "boundary_reason": {
+        "189": "Source audio leaves the opening and introduces today's course topic at about 188 s; the course-text title covers the following section.",
+        "647": "Source audio opens the Martin Luther King Jr. passage at 647.6 s.",
+        "931": "Source audio closes the King homage and opens the books ritual at 931 s.",
+        "1320": "Source audio moves from books to why the Civil War holds the historical imagination at about 1322 s.",
+        "2326": "Source audio opens the closing thought at about 2324-2329 s; title coverage of Whitman is broad."
+      },
+      "rights": "hold_component",
+      "rights_reason": "The publisher transcript documents an extended spoken reproduction of Martin Luther King Jr.'s I Have a Dream speech in chapter 3. No component-specific basis for the planned audio processing was established by the general Open Yale license; lecturer-only frames do not clear audio rights."
+    },
+    "2B9b9mUPJik": {
+      "boundary_pass": [64, 579, 1025, 1337, 1537],
+      "boundary_uncertain": [],
+      "boundary_error": [],
+      "title_error": [],
+      "title_uncertain": [],
+      "boundary_reason": {
+        "64": "Source audio leaves section logistics and introduces the third-century crisis at 65.5 s.",
+        "579": "Source audio explicitly states succession as the major problem at 579.0 s.",
+        "1025": "Source audio introduces inflation as another widespread problem at 1025.9 s.",
+        "1337": "Source audio explicitly names a final problem, the ruin of the local elite, at 1337.9 s.",
+        "1537": "Word-level source audio starts 'So into this mess, Diocletian' at 1538.8 s after ending the previous religious discussion."
+      },
+      "rights": "pass_scoped",
+      "rights_reason": "The full-lecture storyboard shows Paul Freedman and his own chalkboard outline, without projected external imagery or a separately identified extended third-party audiovisual component. Internal noncommercial research scope under Open Yale terms."
+    },
+    "4vK73R51rwU": {
+      "boundary_pass": [348, 1147, 1579],
+      "boundary_uncertain": [],
+      "boundary_error": [],
+      "title_error": [],
+      "title_uncertain": [1147],
+      "boundary_reason": {
+        "348": "Source audio starts the reading-list discussion at 348.7 s.",
+        "1147": "Source audio leaves email/logistics to introduce three or four course themes at about 1146-1150 s; the national-identity title is broader than the first spoken sentence.",
+        "1579": "Source audio explicitly introduces the world wars at 1579.5 s."
+      },
+      "rights": "hold_component",
+      "rights_reason": "A detailed modern classroom wall map appears repeatedly through the full-lecture storyboard. Its cartographic component provenance or reuse basis is not identified on the selected publisher lecture page; the general Open Yale license excludes uncredited third-party components."
+    },
+    "679FGDpZBew": {
+      "boundary_pass": [448, 1036],
+      "boundary_uncertain": [],
+      "boundary_error": [],
+      "title_error": [],
+      "title_uncertain": [448],
+      "boundary_reason": {
+        "448": "Word-level source audio starts 'But let me go to the other part' at 448.8 s, moving from syllabus logistics into concrete lecture content; the historical-context label is broader than the lead-in.",
+        "1036": "Source audio ends the lecture argument and begins questions at 1036.7 s."
+      },
+      "rights": "pass_scoped",
+      "rights_reason": "The full-lecture storyboard shows Giuseppe Mazzotta, his board and brief classroom questions; the selected introduction discusses Dante without an identified extended modern translation reading or projected third-party material. Internal noncommercial research scope under Open Yale terms."
+    },
+    "Hy7ou5R_vjE": {
+      "boundary_pass": [285, 1377, 2300, 2620, 3240],
+      "boundary_uncertain": [],
+      "boundary_error": [],
+      "title_error": [],
+      "title_uncertain": [1377, 3240],
+      "boundary_reason": {
+        "285": "Source audio ends book logistics and opens the lecture subject at 285.5 s.",
+        "1377": "Source audio starts a new components/basis explanation at 1378.0 s; the detailed basis-axis title is broader than the opening sentence.",
+        "2300": "Source audio opens a moving-particle example to derive vector velocity at 2300.0 s.",
+        "2620": "Source audio opens a concrete derivative application to circular motion at 2620.4 s.",
+        "3240": "Word-level source audio begins 'One miscellaneous result' at 3240.6 s after the circular-motion calculation; the later projectile-motion title is separately uncertain."
+      },
+      "rights": "pass_scoped",
+      "rights_reason": "The full-lecture storyboard shows Ramamurti Shankar and his own chalkboard equations and diagrams only; no projected third-party component or separate lecture credits were identified. Internal noncommercial research scope under Open Yale terms."
+    },
+    "4YY4CTSQ8nY": {
+      "boundary_pass": [269, 608, 790, 1091, 1930],
+      "boundary_uncertain": [],
+      "boundary_error": [],
+      "title_error": [608],
+      "title_uncertain": [1930],
+      "boundary_reason": {
+        "269": "Source audio explicitly begins the theory/philosophy comparison at 269.2 s.",
+        "608": "Word-level source audio begins 'Now in addition to defining literature' at 608.4 s, pivoting to other questions. The printed 'What Is Literature?' title describes material already covered before this boundary and is a separate title error.",
+        "790": "Source audio explicitly pauses over the word 'introduction' at about 789.5 s.",
+        "1091": "Source audio asks how literary theory relates to the history of criticism at 1091.0 s.",
+        "1930": "Source audio pivots from Freud to Ricoeur at 1930.2 s; the broad hermeneutics title is separately uncertain."
+      },
+      "rights": "pass_scoped",
+      "rights_reason": "The full-lecture storyboard shows Paul Fry and the classroom board. A targeted frame check at 205-230 s shows only the unreadable white back of a briefly held book; no third-party page, cover text or extended reading is visible or transcribed in this lecture. Internal noncommercial research scope under Open Yale terms."
+    }
+  }
+}

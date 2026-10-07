@@ -1,0 +1,75 @@
+{
+  "video_id": "MoEaRpLNo9A",
+  "ytseg_revision": "4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+  "ytseg_split": "train",
+  "locked_cohort_sha256": "4DEDB0EFACECF547F1BF2EAC773A0B6CED3CEA9ED1330875CF6E9B493E9F0719",
+  "course_id": "mit-6.s897-spring-2019",
+  "lecturer_ids": ["peter-szolovits", "david-sontag", "rahul-deo"],
+  "publisher_page": "https://ocw.mit.edu/courses/6-s897-machine-learning-for-healthcare-spring-2019/resources/lecture-10-application-of-machine-learning-to-cardiac-imaging/",
+  "publisher_linked_media": "https://archive.org/download/MIT6.S897S19/MIT6_S897S19_lec10_300k.mp4",
+  "download": {
+    "http_status": 200,
+    "resolved_url": "https://dn711109.ca.archive.org/0/items/MIT6.S897S19/MIT6_S897S19_lec10_300k.mp4",
+    "content_type": "video/mp4",
+    "content_length_header": 189783912,
+    "local_bytes": 189783912,
+    "sha256": "b65bdecc58df31a66705aa3e4a243db0a675bceea6aecd9ca8485193506e0eb0",
+    "etag": "\"5e7bdbe8-b4fdf68\"",
+    "local_path": "multimodal-lecture-summarizer/experiments/datasets/ytseg_qualification/MoEaRpLNo9A.mp4",
+    "git_ignored": true
+  },
+  "probe": {
+    "format_duration_seconds": 4882.068,
+    "ytseg_duration_seconds": 4882.0,
+    "video_stream": "h264 640x360 30000/1001 fps",
+    "audio_stream": "aac",
+    "subtitle_stream": "mov_text",
+    "full_av_decode": "pass",
+    "decoded_video_frames": 146315,
+    "decoded_audio_frames": 228847,
+    "video_pts_regressions": 0,
+    "audio_pts_regressions": 0,
+    "video_last_pts_seconds": 4882.010467,
+    "audio_last_pts_seconds": 4882.046667,
+    "subtitle_cues": 2145
+  },
+  "pinned_train_row": {
+    "shard": "train-00001-of-00004.parquet",
+    "row_offset_in_shard": 3644,
+    "raw_chapters_count": 10,
+    "chapter_titles_count": 10,
+    "chapter_timestamps_count": 9,
+    "raw_chapter_starts_seconds": [0, 922, 1155, 1833, 2119, 2344, 3009, 3215, 3680, 4197],
+    "raw_chapter_final_end_seconds": 4882,
+    "text_ref_segments": 975,
+    "gt_conversion_code_provenance": "hold"
+  },
+  "alignment_checks": {
+    "method": "For each point, compare embedded MP4 subtitle text in +/-12 seconds with pinned YTSeg text_ref by exact normalized six-token windows; separately transcribe 20-second audio at 10, 50, 90 percent with locally cached tiny.en for qualitative speech corroboration. No model score or GT modification.",
+    "points": [
+      {"second": 488.2, "kind": "10_percent", "sixgrams_matched": 77, "sixgrams_total": 77, "audio_spot_check": "speech agrees; EKG conduction, PR interval"},
+      {"second": 922, "kind": "chapter_boundary", "sixgrams_matched": 79, "sixgrams_total": 79},
+      {"second": 1155, "kind": "chapter_boundary", "sixgrams_matched": 70, "sixgrams_total": 70},
+      {"second": 1833, "kind": "chapter_boundary", "sixgrams_matched": 89, "sixgrams_total": 89},
+      {"second": 2119, "kind": "chapter_boundary", "sixgrams_matched": 81, "sixgrams_total": 81},
+      {"second": 2344, "kind": "chapter_boundary", "sixgrams_matched": 84, "sixgrams_total": 84},
+      {"second": 2441, "kind": "50_percent", "sixgrams_matched": 87, "sixgrams_total": 87, "audio_spot_check": "speech agrees; emergency cardiac image reviewed by cardiologist"},
+      {"second": 3009, "kind": "chapter_boundary", "sixgrams_matched": 75, "sixgrams_total": 75},
+      {"second": 3215, "kind": "chapter_boundary", "sixgrams_matched": 78, "sixgrams_total": 78},
+      {"second": 3680, "kind": "chapter_boundary", "sixgrams_matched": 66, "sixgrams_total": 66},
+      {"second": 4197, "kind": "chapter_boundary", "sixgrams_matched": 52, "sixgrams_total": 52},
+      {"second": 4393.8, "kind": "90_percent", "sixgrams_matched": 62, "sixgrams_total": 62, "audio_spot_check": "speech agrees; handheld ultrasound pricing"}
+    ],
+    "limits": "Subtitle and YTSeg text_ref agreement establishes source identity and sampled timeline, but subtitles may be the upstream source for text_ref. Audio was independently spot checked at three fixed positions. Chapter title semantics were not exhaustively adjudicated."
+  },
+  "rights": {
+    "ocw_terms": "https://ocw.mit.edu/pages/privacy-and-terms-of-use/",
+    "lecture_slides": "https://ocw.mit.edu/courses/6-s897-machine-learning-for-healthcare-spring-2019/4714b64e996e834409e4abab3628ebd7_MIT6_S897S19_lec10.pdf",
+    "finding": "Official slides explicitly mark numerous third-party images/logos All rights reserved and excluded from the Creative Commons license, including pages 0, 3, 4, 5, 6, 7, 9, and 11. Complete component-level permission for the video is not established.",
+    "status": "hold_rights"
+  },
+  "status": "hold",
+  "status_reasons": ["hold_gt_upstream_conversion_code", "hold_rights_third_party_components"],
+  "d2": false,
+  "official_rq1_run": false
+}

@@ -1,0 +1,36 @@
+cohort_version,role,split_proposed,course_id,video_id,rank_in_course,canonical_course_url,mapping_evidence,video_title
+mitfld-rq1-35-v1,selected,train,15.S12,_Ycy0Dy-B1c,1,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,"14. Payments, Part 2"
+mitfld-rq1-35-v1,selected,train,15.S12,w7HDA8gUbpQ,2,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,4. Blockchain Basics & Consensus
+mitfld-rq1-35-v1,selected,train,9.13,vFZY--lgmHs,1,https://ocw.mit.edu/9-13S19,youtube_description_course_url,4. Cognitive Neuroscience Methods I
+mitfld-rq1-35-v1,selected,train,7.016,CALYA11terw,1,https://ocw.mit.edu/7-016F18,youtube_description_course_url,5. Carbohydrates and Glycoproteins
+mitfld-rq1-35-v1,selected,train,7.016,Chv8dlBVXpw,2,https://ocw.mit.edu/7-016F18,youtube_description_course_url,9. Chromatin Remodeling and Splicing
+mitfld-rq1-35-v1,selected,train,22.01,9uqKU5ZDwfM,1,https://ocw.mit.edu/22-01F16,youtube_description_course_url,28. Chernobyl Trip Report by Jake Hecla
+mitfld-rq1-35-v1,selected,train,22.01,7LyvAVjQUR8,2,https://ocw.mit.edu/22-01F16,youtube_description_course_url,1. Radiation History to the Present — Understanding the Discovery of the Neutron
+mitfld-rq1-35-v1,selected,train,8.962,JNWXzIFcf3g,1,https://ocw.mit.edu/8-962S20,youtube_description_course_url,13. The Einstein field equation (variant derivation).
+mitfld-rq1-35-v1,selected,train,8.962,gnWKpHUj11w,2,https://ocw.mit.edu/8-962S20,youtube_description_course_url,7. Principle of equivalence continued; parallel transport.
+mitfld-rq1-35-v1,selected,train,18.404J,KAySmSEGc9U,1,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,"3. Regular Pumping Lemma, Conversion of FA to Regular Expressions"
+mitfld-rq1-35-v1,selected,train,18.404J,7J1HD9rqEB4,2,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,24. Probabilistic Computation (cont.)
+mitfld-rq1-35-v1,selected,train,18.100A,gXPX29KfEc4,1,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,"Lecture 24: Uniform Convergence, the Weierstrass M-Test, and Interchanging Limits"
+mitfld-rq1-35-v1,selected,train,18.100A,M2d4HsBsu8Y,2,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,"Lecture 5: The Archimedian Property, Density of the Rationals, and Absolute Value"
+mitfld-rq1-35-v1,selected,train,6.006,2NMtS1ecb3o,1,https://ocw.mit.edu/6-006S20,youtube_description_course_url,20. Course Review
+mitfld-rq1-35-v1,selected,train,6.006,EmSmaW-ud6A,2,https://ocw.mit.edu/6-006S20,youtube_description_course_url,14. APSP and Johnson
+mitfld-rq1-35-v1,selected,train,15.S08,JuKKBf-uSDI,1,https://ocw.mit.edu/15-S08S20,youtube_description_course_url,Class 7: Credit & Lending
+mitfld-rq1-35-v1,selected,train,8.20,_S1CREXGfvE,1,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,1.2. Prof. Klute’s Research
+mitfld-rq1-35-v1,selected,train,8.20,gtQ046Tu2S4,2,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,6.1 Pole-in-the-Barn Paradox
+mitfld-rq1-35-v1,selected,train,11.382,neBeTYziSLo,1,https://ocw.mit.edu/11-382S21,youtube_description_course_url,Singapore-Malaysia Water Conflict
+mitfld-rq1-35-v1,selected,validation,24.900,qb1U3_Q-7o8,1,https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022,youtube_description_course_url,"Lecture 10: Phonology, Part 3"
+mitfld-rq1-35-v1,selected,validation,6.801,XSUjp-cDyeY,1,https://ocw.mit.edu/6-801F20,youtube_description_course_url,"Lecture 10: Characteristic Strip Expansion, Shape from Shading, Iterative Solutions"
+mitfld-rq1-35-v1,selected,validation,6.801,J4gbaRyWpoM,2,https://ocw.mit.edu/6-801F20,youtube_description_course_url,"Lecture 9: Shape from Shading, General Case - From First Order Nonlinear PDE to Five ODEs"
+mitfld-rq1-35-v1,selected,validation,18.217,Rlvwagd2BmY,1,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,12. Pseudorandom graphs II: second eigenvalue
+mitfld-rq1-35-v1,selected,validation,18.217,vcsxCFSLyP8,2,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,6. Szemerédi's graph regularity lemma I: statement and proof
+mitfld-rq1-35-v1,selected,validation,9.40,Hf1Ma9YkOMY,1,https://ocw.mit.edu/9-40S18,youtube_description_course_url,12: Spectral Analysis Part 2 - Intro to Neural Computation
+mitfld-rq1-35-v1,selected,validation,9.40,r1VX3WXrYUw,2,https://ocw.mit.edu/9-40S18,youtube_description_course_url,7: Synapses - Intro to Neural Computation
+mitfld-rq1-35-v1,selected,validation,5.310,JIw9mnVeFig,1,https://ocw.mit.edu/5-310F19,youtube_description_course_url,"7. Ellen Swallow Richards, Part 3"
+mitfld-rq1-35-v1,selected,final_test,7.05,Ed0Wg-5YYCk,1,https://ocw.mit.edu/7-05S20,youtube_description_course_url,32. Nucleotide Metabolism
+mitfld-rq1-35-v1,selected,final_test,14.04,o8sje-b-BCk,1,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Lecture 4: Production and Profit Maximization
+mitfld-rq1-35-v1,selected,final_test,14.04,ySqVVEBTy2o,2,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Lecture 21: Bubbles
+mitfld-rq1-35-v1,selected,final_test,3.091,tKyaGnPni3U,1,https://ocw.mit.edu/3-091F18,youtube_description_course_url,20. X-ray Emission and Absorption (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,selected,final_test,3.091,DvGNpuan4rw,2,https://ocw.mit.edu/3-091F18,youtube_description_course_url,9. Lewis Structures I (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,selected,final_test,11.165,AhK3YeJP8Ts,1,https://ocw.mit.edu/courses/11-165j-urban-energy-systems-and-policy-fall-2022,youtube_description_course_url,Lecture 9: Building Energy Policies
+mitfld-rq1-35-v1,selected,final_test,MAS.S62,muwNEvhy6Po,1,https://ocw.mit.edu/MAS-S62S18,youtube_description_course_url,"10. PoW Recap, Other Fork Types"
+mitfld-rq1-35-v1,selected,final_test,MAS.S62,74_BKWR3n0k,2,https://ocw.mit.edu/MAS-S62S18,youtube_description_course_url,23. New Directions in Crypto

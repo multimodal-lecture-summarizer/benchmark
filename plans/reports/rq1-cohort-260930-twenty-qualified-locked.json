@@ -1,0 +1,403 @@
+[
+  {
+    "video_id": "-7xg8pGcP6w",
+    "course_id": "harvard-cs50p-2022",
+    "lecturer_ids": [
+      "david-j-malan"
+    ],
+    "dataset_ids": [
+      "ytseg"
+    ],
+    "source_refs": {
+      "ytseg": {
+        "source": "https://huggingface.co/datasets/retkowski/ytseg",
+        "revision": "qualification-gate-sha256:e839fef4cd5f28febe53f796360bc1ba1098f359c7245e2606e2fd2ded25ede4"
+      }
+    },
+    "qualification_gate": {
+      "path": "ytseg-qualification-260929-1811-scoped-research-gate-decision.csv",
+      "sha256": "e839fef4cd5f28febe53f796360bc1ba1098f359c7245e2606e2fd2ded25ede4"
+    }
+  },
+  {
+    "video_id": "tCKk22kaZi4",
+    "course_id": "mit-14.01-fall-2018",
+    "lecturer_ids": [
+      "jonathan-gruber"
+    ],
+    "dataset_ids": [
+      "ytseg"
+    ],
+    "source_refs": {
+      "ytseg": {
+        "source": "https://huggingface.co/datasets/retkowski/ytseg",
+        "revision": "qualification-gate-sha256:e839fef4cd5f28febe53f796360bc1ba1098f359c7245e2606e2fd2ded25ede4"
+      }
+    },
+    "qualification_gate": {
+      "path": "ytseg-qualification-260929-1811-scoped-research-gate-decision.csv",
+      "sha256": "e839fef4cd5f28febe53f796360bc1ba1098f359c7245e2606e2fd2ded25ede4"
+    }
+  },
+  {
+    "video_id": "AW3a2ECNFlE",
+    "course_id": "mit-14.772-spring-2013",
+    "lecturer_ids": [
+      "robert-m-townsend"
+    ],
+    "dataset_ids": [
+      "vidchapters"
+    ],
+    "source_refs": {
+      "vidchapters": {
+        "source": "https://github.com/antoyang/VidChapters",
+        "revision": "qualification-gate-sha256:a61b2832f035f4a0521b7858782b626e3e0aa148b2717fb1337ebf84206349ea"
+      }
+    },
+    "qualification_gate": {
+      "path": "vidchapters-qualification-260929-1925-six-groups-gates.csv",
+      "sha256": "a61b2832f035f4a0521b7858782b626e3e0aa148b2717fb1337ebf84206349ea"
+    }
+  },
+  {
+    "video_id": "oo1ZZlvT2LQ",
+    "course_id": "mit-res.18-005-spring-2010",
+    "lecturer_ids": [
+      "gilbert-strang"
+    ],
+    "dataset_ids": [
+      "vidchapters"
+    ],
+    "source_refs": {
+      "vidchapters": {
+        "source": "https://github.com/antoyang/VidChapters",
+        "revision": "qualification-gate-sha256:a61b2832f035f4a0521b7858782b626e3e0aa148b2717fb1337ebf84206349ea"
+      }
+    },
+    "qualification_gate": {
+      "path": "vidchapters-qualification-260929-1925-six-groups-gates.csv",
+      "sha256": "a61b2832f035f4a0521b7858782b626e3e0aa148b2717fb1337ebf84206349ea"
+    }
+  },
+  {
+    "video_id": "EuNXVy5-KgA",
+    "course_id": "mit-16.687-iap-2019",
+    "lecturer_ids": [
+      "philip-greenspun",
+      "tina-srivastava"
+    ],
+    "dataset_ids": [
+      "vidchapters"
+    ],
+    "source_refs": {
+      "vidchapters": {
+        "source": "https://github.com/antoyang/VidChapters",
+        "revision": "qualification-gate-sha256:3ca2ec386ae2af05823040de7c26fe46e113a48a080882fd9609672abf2601bc"
+      }
+    },
+    "qualification_gate": {
+      "path": "rq1-batch-260929-2008-final-gates.csv",
+      "sha256": "3ca2ec386ae2af05823040de7c26fe46e113a48a080882fd9609672abf2601bc"
+    }
+  },
+  {
+    "video_id": "09vU-wVwW3U",
+    "course_id": "mit-6.046j-spring-2015",
+    "lecturer_ids": [
+      "ling-ren"
+    ],
+    "dataset_ids": [
+      "vidchapters"
+    ],
+    "source_refs": {
+      "vidchapters": {
+        "source": "https://github.com/antoyang/VidChapters",
+        "revision": "qualification-gate-sha256:3ca2ec386ae2af05823040de7c26fe46e113a48a080882fd9609672abf2601bc"
+      }
+    },
+    "qualification_gate": {
+      "path": "rq1-batch-260929-2008-final-gates.csv",
+      "sha256": "3ca2ec386ae2af05823040de7c26fe46e113a48a080882fd9609672abf2601bc"
+    }
+  },
+  {
+    "video_id": "zsb6B8HrNVA",
+    "course_id": "yale-beng-100",
+    "lecturer_ids": [
+      "w-mark-saltzman"
+    ],
+    "dataset_ids": [
+      "yale_publisher_native"
+    ],
+    "source_refs": {
+      "yale_publisher_native": {
+        "source": "https://oyc.yale.edu/biomedical-engineering/beng-100/lecture-21",
+        "revision": "qualification-gate-sha256:e050f13669c94c31733a87fc5f39e8025fd8af295c0fc08e609f80b42324042e"
+      }
+    },
+    "qualification_gate": {
+      "path": "rq1-locked-yale-260929-final-gates.csv",
+      "sha256": "e050f13669c94c31733a87fc5f39e8025fd8af295c0fc08e609f80b42324042e"
+    }
+  },
+  {
+    "video_id": "-W4kU1YFSck",
+    "course_id": "yale-hist-116",
+    "lecturer_ids": [
+      "joanne-freeman"
+    ],
+    "dataset_ids": [
+      "yale_publisher_native"
+    ],
+    "source_refs": {
+      "yale_publisher_native": {
+        "source": "https://oyc.yale.edu/history/hist-116/lecture-4",
+        "revision": "qualification-gate-sha256:c8994690007aa7c13ac9af5c9660b8c37dfcd47ecec44d64babf83c0965c39a2"
+      }
+    },
+    "qualification_gate": {
+      "path": "rq1-yale-remaining-260929-final-gates.csv",
+      "sha256": "c8994690007aa7c13ac9af5c9660b8c37dfcd47ecec44d64babf83c0965c39a2"
+    }
+  },
+  {
+    "video_id": "f_55cmhHq3g",
+    "course_id": "yale-phil-176",
+    "lecturer_ids": [
+      "shelly-kagan"
+    ],
+    "dataset_ids": [
+      "yale_publisher_native"
+    ],
+    "source_refs": {
+      "yale_publisher_native": {
+        "source": "https://oyc.yale.edu/death/phil-176/lecture-20",
+        "revision": "qualification-gate-sha256:c8994690007aa7c13ac9af5c9660b8c37dfcd47ecec44d64babf83c0965c39a2"
+      }
+    },
+    "qualification_gate": {
+      "path": "rq1-yale-remaining-260929-final-gates.csv",
+      "sha256": "c8994690007aa7c13ac9af5c9660b8c37dfcd47ecec44d64babf83c0965c39a2"
+    }
+  },
+  {
+    "video_id": "e3uBi2TZdUY",
+    "course_id": "yale-hist-251",
+    "lecturer_ids": [
+      "keith-e-wrightson"
+    ],
+    "dataset_ids": [
+      "yale_publisher_native"
+    ],
+    "source_refs": {
+      "yale_publisher_native": {
+        "source": "https://oyc.yale.edu/history/hist-251/lecture-1",
+        "revision": "qualification-gate-sha256:c8994690007aa7c13ac9af5c9660b8c37dfcd47ecec44d64babf83c0965c39a2"
+      }
+    },
+    "qualification_gate": {
+      "path": "rq1-yale-remaining-260929-final-gates.csv",
+      "sha256": "c8994690007aa7c13ac9af5c9660b8c37dfcd47ecec44d64babf83c0965c39a2"
+    }
+  },
+  {
+    "video_id": "LZkoBeI6gVM",
+    "course_id": "yale-span-300",
+    "lecturer_ids": [
+      "roberto-gonzalez-echevarria"
+    ],
+    "dataset_ids": [
+      "yale_publisher_native"
+    ],
+    "source_refs": {
+      "yale_publisher_native": {
+        "source": "https://oyc.yale.edu/spanish-and-portuguese/span-300/lecture-2",
+        "revision": "qualification-gate-sha256:c8994690007aa7c13ac9af5c9660b8c37dfcd47ecec44d64babf83c0965c39a2"
+      }
+    },
+    "qualification_gate": {
+      "path": "rq1-yale-remaining-260929-final-gates.csv",
+      "sha256": "c8994690007aa7c13ac9af5c9660b8c37dfcd47ecec44d64babf83c0965c39a2"
+    }
+  },
+  {
+    "video_id": "Y3S1uqgGfB4",
+    "course_id": "yale-plsc-114",
+    "lecturer_ids": [
+      "steven-b-smith"
+    ],
+    "dataset_ids": [
+      "yale_publisher_native"
+    ],
+    "source_refs": {
+      "yale_publisher_native": {
+        "source": "https://oyc.yale.edu/political-science/plsc-114/lecture-12",
+        "revision": "qualification-gate-sha256:c8994690007aa7c13ac9af5c9660b8c37dfcd47ecec44d64babf83c0965c39a2"
+      }
+    },
+    "qualification_gate": {
+      "path": "rq1-yale-remaining-260929-final-gates.csv",
+      "sha256": "c8994690007aa7c13ac9af5c9660b8c37dfcd47ecec44d64babf83c0965c39a2"
+    }
+  },
+  {
+    "video_id": "qQ3kFydI_xQ",
+    "course_id": "yale-econ-159",
+    "lecturer_ids": [
+      "ben-polak"
+    ],
+    "dataset_ids": [
+      "yale_publisher_native"
+    ],
+    "source_refs": {
+      "yale_publisher_native": {
+        "source": "https://oyc.yale.edu/economics/econ-159/lecture-2",
+        "revision": "qualification-gate-sha256:7b52673eef377bbff4bf39eb57cd33af547e882c914599c3fd0726cf3786ad8a"
+      }
+    },
+    "qualification_gate": {
+      "path": "rq1-yale-qa-existing-260930-final-gates.csv",
+      "sha256": "7b52673eef377bbff4bf39eb57cd33af547e882c914599c3fd0726cf3786ad8a"
+    }
+  },
+  {
+    "video_id": "9FrHGAd_yto",
+    "course_id": "yale-clcv-205",
+    "lecturer_ids": [
+      "donald-kagan"
+    ],
+    "dataset_ids": [
+      "yale_publisher_native"
+    ],
+    "source_refs": {
+      "yale_publisher_native": {
+        "source": "https://oyc.yale.edu/classics/clcv-205/lecture-1",
+        "revision": "qualification-gate-sha256:3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc"
+      }
+    },
+    "qualification_gate": {
+      "path": "rq1-recruitment-260930-ten-group-final-gates.csv",
+      "sha256": "3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc"
+    }
+  },
+  {
+    "video_id": "VX4eYYmvQ78",
+    "course_id": "yale-econ-251",
+    "lecturer_ids": [
+      "john-geanakoplos"
+    ],
+    "dataset_ids": [
+      "yale_publisher_native"
+    ],
+    "source_refs": {
+      "yale_publisher_native": {
+        "source": "https://oyc.yale.edu/economics/econ-251/lecture-2",
+        "revision": "qualification-gate-sha256:3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc"
+      }
+    },
+    "qualification_gate": {
+      "path": "rq1-recruitment-260930-ten-group-final-gates.csv",
+      "sha256": "3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc"
+    }
+  },
+  {
+    "video_id": "WMkD8HKJQCM",
+    "course_id": "yale-econ-252-2008",
+    "lecturer_ids": [
+      "robert-j-shiller"
+    ],
+    "dataset_ids": [
+      "yale_publisher_native"
+    ],
+    "source_refs": {
+      "yale_publisher_native": {
+        "source": "https://oyc.yale.edu/economics/econ-252-08/lecture-2",
+        "revision": "qualification-gate-sha256:3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc"
+      }
+    },
+    "qualification_gate": {
+      "path": "rq1-recruitment-260930-ten-group-final-gates.csv",
+      "sha256": "3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc"
+    }
+  },
+  {
+    "video_id": "2B9b9mUPJik",
+    "course_id": "yale-hist-210",
+    "lecturer_ids": [
+      "paul-freedman"
+    ],
+    "dataset_ids": [
+      "yale_publisher_native"
+    ],
+    "source_refs": {
+      "yale_publisher_native": {
+        "source": "https://oyc.yale.edu/history/hist-210/lecture-2",
+        "revision": "qualification-gate-sha256:3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc"
+      }
+    },
+    "qualification_gate": {
+      "path": "rq1-recruitment-260930-ten-group-final-gates.csv",
+      "sha256": "3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc"
+    }
+  },
+  {
+    "video_id": "679FGDpZBew",
+    "course_id": "yale-ital-310",
+    "lecturer_ids": [
+      "giuseppe-mazzotta"
+    ],
+    "dataset_ids": [
+      "yale_publisher_native"
+    ],
+    "source_refs": {
+      "yale_publisher_native": {
+        "source": "https://oyc.yale.edu/italian-language-and-literature/ital-310/lecture-1",
+        "revision": "qualification-gate-sha256:3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc"
+      }
+    },
+    "qualification_gate": {
+      "path": "rq1-recruitment-260930-ten-group-final-gates.csv",
+      "sha256": "3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc"
+    }
+  },
+  {
+    "video_id": "Hy7ou5R_vjE",
+    "course_id": "yale-phys-200",
+    "lecturer_ids": [
+      "ramamurti-shankar"
+    ],
+    "dataset_ids": [
+      "yale_publisher_native"
+    ],
+    "source_refs": {
+      "yale_publisher_native": {
+        "source": "https://oyc.yale.edu/physics/phys-200/lecture-2",
+        "revision": "qualification-gate-sha256:3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc"
+      }
+    },
+    "qualification_gate": {
+      "path": "rq1-recruitment-260930-ten-group-final-gates.csv",
+      "sha256": "3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc"
+    }
+  },
+  {
+    "video_id": "4YY4CTSQ8nY",
+    "course_id": "yale-engl-300",
+    "lecturer_ids": [
+      "paul-h-fry"
+    ],
+    "dataset_ids": [
+      "yale_publisher_native"
+    ],
+    "source_refs": {
+      "yale_publisher_native": {
+        "source": "https://oyc.yale.edu/english/engl-300/lecture-1",
+        "revision": "qualification-gate-sha256:3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc"
+      }
+    },
+    "qualification_gate": {
+      "path": "rq1-recruitment-260930-ten-group-final-gates.csv",
+      "sha256": "3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc"
+    }
+  }
+]

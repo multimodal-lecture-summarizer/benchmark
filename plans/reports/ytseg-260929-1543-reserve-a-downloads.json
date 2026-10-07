@@ -1,0 +1,32 @@
+{
+  "3sB64Au76h0": {
+    "url": "https://archive.org/download/MIT16.687IAP19/MIT16_687IAP19_lec12_300k.mp4",
+    "resolved_url": "https://dn720400.ca.archive.org/0/items/MIT16.687IAP19/MIT16_687IAP19_lec12_300k.mp4",
+    "content_length": 155177690,
+    "local_bytes": 155177690,
+    "sha256": "4e0c3d2e86366585acf497e83e5ba618403fa95dad232e4640ef06565d2647f2",
+    "etag": "\"5e8770a5-93fd2da\"",
+    "last_modified": "Fri, 03 Apr 2020 17:21:41 GMT",
+    "elapsed_s": 22.62
+  },
+  "Th2N_rDfkDw": {
+    "url": "https://archive.org/download/MIT16.687IAP19/MIT16_687IAP19_lec07_300k.mp4",
+    "resolved_url": "https://dn720400.ca.archive.org/0/items/MIT16.687IAP19/MIT16_687IAP19_lec07_300k.mp4",
+    "content_length": 99442554,
+    "local_bytes": 99442554,
+    "sha256": "46a203a37f6e364871a5c51e692cdd71279f2d69b79c69bda250b74636027415",
+    "etag": "\"5e87701c-5ed5f7a\"",
+    "last_modified": "Fri, 03 Apr 2020 17:19:24 GMT",
+    "elapsed_s": 13.9
+  },
+  "alLh1Jdqwvg": {
+    "url": "https://archive.org/download/MIT16.687IAP19/MIT16_687IAP19_lec10_300k.mp4",
+    "resolved_url": "https://dn720400.ca.archive.org/0/items/MIT16.687IAP19/MIT16_687IAP19_lec10_300k.mp4",
+    "content_length": 86983502,
+    "local_bytes": 86983502,
+    "sha256": "ec070d8d4abc1f41e6db71f562390136ac9f1fceec9c26cf1eb1909aba639f55",
+    "etag": "\"5e87706d-52f434e\"",
+    "last_modified": "Fri, 03 Apr 2020 17:20:45 GMT",
+    "elapsed_s": 12.88
+  }
+}

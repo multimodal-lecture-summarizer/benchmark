@@ -1,0 +1,361 @@
+{
+  "experiment": "RQ2_Summarization",
+  "seeds": [
+    42,
+    1337,
+    2026
+  ],
+  "hardware_target": "Tesla T4 (16GB VRAM) / CPU Verification",
+  "metrics": {
+    "S0": {
+      "rouge_1": {
+        "mean": 62.14,
+        "std": 11.63,
+        "ci_95": [
+          58.93,
+          65.14
+        ]
+      },
+      "rouge_2": {
+        "mean": 47.55,
+        "std": 13.43,
+        "ci_95": [
+          44.11,
+          51.13
+        ]
+      },
+      "rouge_l": {
+        "mean": 52.06,
+        "std": 12.58,
+        "ci_95": [
+          48.79,
+          55.41
+        ]
+      },
+      "tokens": {
+        "mean": 490.05,
+        "std": 86.96,
+        "ci_95": [
+          463.45,
+          510.0
+        ]
+      },
+      "hallucination_rate_pct": {
+        "mean": 27.87,
+        "std": 0.0,
+        "ci_95": [
+          27.87,
+          27.87
+        ]
+      },
+      "claim_density_per_100_tokens": {
+        "mean": 0.43,
+        "std": 0.93,
+        "ci_95": [
+          0.22,
+          0.72
+        ]
+      }
+    },
+    "S1": {
+      "rouge_1": {
+        "mean": 2.25,
+        "std": 1.08,
+        "ci_95": [
+          1.98,
+          2.52
+        ]
+      },
+      "rouge_2": {
+        "mean": 0.65,
+        "std": 0.64,
+        "ci_95": [
+          0.5,
+          0.83
+        ]
+      },
+      "rouge_l": {
+        "mean": 1.82,
+        "std": 0.96,
+        "ci_95": [
+          1.58,
+          2.05
+        ]
+      },
+      "tokens": {
+        "mean": 15.45,
+        "std": 2.4,
+        "ci_95": [
+          14.72,
+          16.0
+        ]
+      },
+      "hallucination_rate_pct": {
+        "mean": 27.87,
+        "std": 0.0,
+        "ci_95": [
+          27.87,
+          27.87
+        ]
+      },
+      "claim_density_per_100_tokens": {
+        "mean": 6.94,
+        "std": 3.0,
+        "ci_95": [
+          6.25,
+          7.85
+        ]
+      }
+    },
+    "S2": {
+      "rouge_1": {
+        "mean": 57.16,
+        "std": 11.9,
+        "ci_95": [
+          54.14,
+          59.98
+        ]
+      },
+      "rouge_2": {
+        "mean": 37.13,
+        "std": 18.85,
+        "ci_95": [
+          32.06,
+          41.6
+        ]
+      },
+      "rouge_l": {
+        "mean": 41.44,
+        "std": 17.28,
+        "ci_95": [
+          36.83,
+          45.55
+        ]
+      },
+      "tokens": {
+        "mean": 510.0,
+        "std": 0.0,
+        "ci_95": [
+          510.0,
+          510.0
+        ]
+      },
+      "hallucination_rate_pct": {
+        "mean": 27.87,
+        "std": 0.0,
+        "ci_95": [
+          27.87,
+          27.87
+        ]
+      },
+      "claim_density_per_100_tokens": {
+        "mean": 0.43,
+        "std": 0.94,
+        "ci_95": [
+          0.22,
+          0.72
+        ]
+      }
+    },
+    "S3": {
+      "rouge_1": {
+        "mean": 2.25,
+        "std": 1.08,
+        "ci_95": [
+          1.98,
+          2.52
+        ]
+      },
+      "rouge_2": {
+        "mean": 0.65,
+        "std": 0.64,
+        "ci_95": [
+          0.5,
+          0.83
+        ]
+      },
+      "rouge_l": {
+        "mean": 1.82,
+        "std": 0.96,
+        "ci_95": [
+          1.58,
+          2.05
+        ]
+      },
+      "tokens": {
+        "mean": 15.45,
+        "std": 2.4,
+        "ci_95": [
+          14.72,
+          16.0
+        ]
+      },
+      "hallucination_rate_pct": {
+        "mean": 27.87,
+        "std": 0.0,
+        "ci_95": [
+          27.87,
+          27.87
+        ]
+      },
+      "claim_density_per_100_tokens": {
+        "mean": 6.94,
+        "std": 3.0,
+        "ci_95": [
+          6.25,
+          7.85
+        ]
+      }
+    },
+    "S3_plus_ev": {
+      "rouge_1": {
+        "mean": 2.25,
+        "std": 1.08,
+        "ci_95": [
+          1.98,
+          2.52
+        ]
+      },
+      "rouge_2": {
+        "mean": 0.65,
+        "std": 0.64,
+        "ci_95": [
+          0.5,
+          0.83
+        ]
+      },
+      "rouge_l": {
+        "mean": 1.82,
+        "std": 0.96,
+        "ci_95": [
+          1.58,
+          2.05
+        ]
+      },
+      "tokens": {
+        "mean": 15.45,
+        "std": 2.4,
+        "ci_95": [
+          14.72,
+          16.0
+        ]
+      },
+      "hallucination_rate_pct": {
+        "mean": 2.39,
+        "std": 0.0,
+        "ci_95": [
+          2.39,
+          2.39
+        ]
+      },
+      "claim_density_per_100_tokens": {
+        "mean": 6.94,
+        "std": 3.0,
+        "ci_95": [
+          6.25,
+          7.85
+        ]
+      }
+    },
+    "S4": {
+      "rouge_1": {
+        "mean": 59.55,
+        "std": 10.9,
+        "ci_95": [
+          56.49,
+          62.14
+        ]
+      },
+      "rouge_2": {
+        "mean": 45.55,
+        "std": 12.91,
+        "ci_95": [
+          41.91,
+          48.93
+        ]
+      },
+      "rouge_l": {
+        "mean": 49.76,
+        "std": 11.57,
+        "ci_95": [
+          46.58,
+          52.71
+        ]
+      },
+      "tokens": {
+        "mean": 494.35,
+        "std": 68.22,
+        "ci_95": [
+          473.48,
+          510.0
+        ]
+      },
+      "hallucination_rate_pct": {
+        "mean": 2.39,
+        "std": 0.0,
+        "ci_95": [
+          2.39,
+          2.39
+        ]
+      },
+      "claim_density_per_100_tokens": {
+        "mean": 0.67,
+        "std": 0.52,
+        "ci_95": [
+          0.55,
+          0.82
+        ]
+      }
+    }
+  },
+  "hypothesis_tests": {
+    "S3_vs_S0": {
+      "comparison": "S3 vs S0 (Flat Baseline)",
+      "mean_diff": -50.24,
+      "ci_95": [
+        -53.54,
+        -46.95
+      ],
+      "cohen_d": -3.9818,
+      "raw_p_value": 0.0,
+      "corrected_p_value": 0.0,
+      "reject_null": false
+    },
+    "S3_vs_S1": {
+      "comparison": "S3 vs S1 (Fixed-Chunk Map-Reduce)",
+      "mean_diff": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "cohen_d": 0.0,
+      "raw_p_value": 1.0,
+      "corrected_p_value": 1.0,
+      "reject_null": false
+    },
+    "S3+ev_vs_S3": {
+      "comparison": "S3+ev vs S3 (Slide Evidence Grounding Lift)",
+      "mean_diff": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "cohen_d": 0.0,
+      "raw_p_value": 1.0,
+      "corrected_p_value": 1.0,
+      "reject_null": false
+    },
+    "S4_vs_S3": {
+      "comparison": "S4 vs S3 (Full Multimodal Grounding Lift)",
+      "mean_diff": 47.95,
+      "ci_95": [
+        44.69,
+        50.91
+      ],
+      "cohen_d": 4.0885,
+      "raw_p_value": 0.0,
+      "corrected_p_value": 0.0,
+      "reject_null": true
+    }
+  }
+}

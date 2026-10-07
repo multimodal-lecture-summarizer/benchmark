@@ -1,0 +1,97 @@
+{
+  "schema": "rq1-yale-existing-qa-source-bridge/1",
+  "qualification_only": true,
+  "source_selection": "preselected nine-course Yale QA sample; no replacement",
+  "files": [
+    {
+      "video_id": "qQ3kFydI_xQ",
+      "course_id": "econ159",
+      "lecturer": "Ben Polak",
+      "lecture_no": 2,
+      "publisher_page": "https://oyc.yale.edu/economics/econ-159/lecture-2",
+      "page_html_sha256_current": "bdf96b87c4d434eb48643497bd5062bd7de495dc21337d15c3217b763ac99043",
+      "page_html_sha256_prior": "8decd028af50067b0dc6b6bc8341160fb30809a5bdcdc68a34af72b6db9a51a4",
+      "publisher_gt_sha256_prior": "0790cd8ca798f30016340bf8b0665ee58dfbf50cca09b8c8c2892e2ca923a2d1",
+      "local_media_path": "C:\\Users\\hung\\Downloads\\econ159_02_091007.mov",
+      "local_media_sha256": "a25dbe7b4de66f7978c6c503da1b20548d301c116a9d4b9fd6224d7889113edf",
+      "previous_full_decode_exit_code": 0,
+      "pairs": [
+        {
+          "chapter_index": 1,
+          "original_label": "Recap of Previous Lecture: Prisoners' Dilemma and Payoffs",
+          "original_time_sec": 0
+        },
+        {
+          "chapter_index": 2,
+          "original_label": "The Formal Ingredients of a Game",
+          "original_time_sec": 407
+        },
+        {
+          "chapter_index": 3,
+          "original_label": "Weakly Dominant Strategies",
+          "original_time_sec": 961
+        },
+        {
+          "chapter_index": 4,
+          "original_label": "Rationality and Common Knowledge",
+          "original_time_sec": 2129
+        },
+        {
+          "chapter_index": 5,
+          "original_label": "Common Knowledge vs. Mutual Knowledge",
+          "original_time_sec": 3937
+        }
+      ]
+    },
+    {
+      "video_id": "BulqGSY_FlE",
+      "course_id": "phys200",
+      "lecturer": "Ramamurti Shankar",
+      "lecture_no": 19,
+      "publisher_page": "https://oyc.yale.edu/physics/phys-200/lecture-19",
+      "page_html_sha256_current": "ed9a28315a36c6aa51eb55d7b6cbc7cdd1ba62d1c3d306d6adfc521e282c020d",
+      "page_html_sha256_prior": "ed9a28315a36c6aa51eb55d7b6cbc7cdd1ba62d1c3d306d6adfc521e282c020d",
+      "publisher_gt_sha256_prior": "5c5649e2222c7f265512f85fd9d32ee2a4fadce779ff4c1634c7cfc647fa3ff4",
+      "local_media_path": "C:\\Users\\hung\\Downloads\\phys200_19_111306.mov",
+      "local_media_sha256": "47dbc049c2c7998e84325d5819ff4257f32d992be2e275fa10c2f0fe26a6ddb9",
+      "previous_full_decode_exit_code": 0,
+      "pairs": [
+        {
+          "chapter_index": 1,
+          "original_label": "General Solution of Wave Equation",
+          "original_time_sec": 0
+        },
+        {
+          "chapter_index": 2,
+          "original_label": "Spatial and Temporal Periodicity: Frequency, Period",
+          "original_time_sec": 531
+        },
+        {
+          "chapter_index": 3,
+          "original_label": "Wave Energy and Power Transmitted",
+          "original_time_sec": 1059
+        },
+        {
+          "chapter_index": 4,
+          "original_label": "Doppler Effect",
+          "original_time_sec": 1802
+        },
+        {
+          "chapter_index": 5,
+          "original_label": "Superposition of Waves",
+          "original_time_sec": 2338
+        },
+        {
+          "chapter_index": 6,
+          "original_label": "Constructive and Destructive Interference, Double Slit Experiment",
+          "original_time_sec": 2937
+        },
+        {
+          "chapter_index": 7,
+          "original_label": "Modes of Vibration: Application to Musical Instruments",
+          "original_time_sec": 3690
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "source": "experiments/datasets/vidchapters_qualification/chapters.pkl",
+  "source_sha256": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+  "method": "bounded pickletools opcode inspection from discovery offsets; no pickle.load; original pairs unchanged",
+  "rows": [
+    {"video_id": "qdbkvD4N-us", "annotation_byte_offset": 1924263104, "duration_seconds": 3364.974, "original_label_time": [["Stochastic Differential Equations", 21], ["Numerical methods", 1275], ["Heat Equation", 2547]], "description_pair_parity": "pass_3_of_3"},
+    {"video_id": "09vU-wVwW3U", "annotation_byte_offset": 1990465035, "duration_seconds": 3225.666, "original_label_time": [["Title slate", 0], ["Recitation intro", 20], ["Weighted Interval Scheduling", 136], ["Strassen algorithm", 1360], ["Master Theorem", 1993]], "description_pair_parity": "pass_5_of_5"}
+  ],
+  "scope_limit": "description parity and structural GT only; no media alignment or component-rights decision"
+}

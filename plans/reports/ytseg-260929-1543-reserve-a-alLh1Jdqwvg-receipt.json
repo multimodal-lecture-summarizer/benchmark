@@ -1,0 +1,230 @@
+{
+  "video_id": "alLh1Jdqwvg",
+  "cohort_lock_sha256": "4dedb0efacecf547f1bf2eac773a0b6ced3cea9ed1330875cf6e9b493e9f0719",
+  "ytseg_revision": "4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+  "ytseg_split": "train",
+  "locked_role": "reserve",
+  "course_id": "mit-16.687-iap-2019",
+  "lecturer_ids": [
+    "philip-greenspun",
+    "tina-srivastava"
+  ],
+  "publisher_page": "https://ocw.mit.edu/courses/16-687-private-pilot-ground-school-january-iap-2019/resources/lecture-10-communication-and-flight-information/",
+  "publisher_page_contains_exact_video_id": true,
+  "publisher_page_links_exact_media": true,
+  "rights_page": "https://ocw.mit.edu/pages/privacy-and-terms-of-use/",
+  "publisher_media_download": {
+    "url": "https://archive.org/download/MIT16.687IAP19/MIT16_687IAP19_lec10_300k.mp4",
+    "resolved_url": "https://dn720400.ca.archive.org/0/items/MIT16.687IAP19/MIT16_687IAP19_lec10_300k.mp4",
+    "content_length": 86983502,
+    "local_bytes": 86983502,
+    "sha256": "ec070d8d4abc1f41e6db71f562390136ac9f1fceec9c26cf1eb1909aba639f55",
+    "etag": "\"5e87706d-52f434e\"",
+    "last_modified": "Fri, 03 Apr 2020 17:20:45 GMT",
+    "elapsed_s": 12.88
+  },
+  "local_media_path": "multimodal-lecture-summarizer/experiments/datasets/ytseg_qualification/alLh1Jdqwvg.mp4",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 640,
+        "height": 360,
+        "duration": "2172.803967"
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "2172.842000"
+      },
+      {
+        "index": 2,
+        "codec_name": "mov_text",
+        "codec_type": "subtitle",
+        "duration": "2152.860000"
+      },
+      {
+        "index": 3,
+        "codec_name": "png",
+        "codec_type": "video",
+        "width": 1400,
+        "height": 1400,
+        "duration": "2172.842000"
+      },
+      {
+        "index": 4,
+        "codec_name": "mov_text",
+        "codec_type": "subtitle",
+        "width": 640,
+        "height": 360,
+        "duration": "2172.842000"
+      }
+    ],
+    "format": {
+      "duration": "2172.842000",
+      "size": "86983502"
+    }
+  },
+  "full_av_decode": {
+    "exit_code": 0,
+    "stderr_tail": "[mov,mp4,m4a,3gp,3g2,mj2 @ 000001f077fc6dc0] stream 0, timescale not set\n"
+  },
+  "decoded_pts": {
+    "video": {
+      "frames": 65119,
+      "first_s": 0.0,
+      "last_s": 2172.7706,
+      "negative_steps": 0,
+      "ffprobe_exit_code": 0,
+      "stderr_tail": ""
+    },
+    "audio": {
+      "frames": 101852,
+      "first_s": 0.0,
+      "last_s": 2172.82,
+      "negative_steps": 0,
+      "ffprobe_exit_code": 0,
+      "stderr_tail": ""
+    }
+  },
+  "pinned_train": {
+    "shard": 2,
+    "row_offset": 2667,
+    "duration_s": 2173.0,
+    "raw_chapters_count": 19,
+    "titles_count": 19,
+    "timestamps_count": 18,
+    "title_sequence_matches_raw": true,
+    "timestamps_equal_raw_starts_after_zero": true,
+    "raw_chapter_starts_s": [
+      0.0,
+      149.0,
+      317.0,
+      356.0,
+      678.0,
+      865.0,
+      964.0,
+      1067.0,
+      1095.0,
+      1160.0,
+      1275.0,
+      1409.0,
+      1526.0,
+      1641.0,
+      1665.0,
+      1737.0,
+      1890.0,
+      2020.0,
+      2066.0
+    ],
+    "final_end_s": 2173.0,
+    "text_ref_segments": 445
+  },
+  "embedded_subtitle_cues": 788,
+  "alignment_checks": [
+    {
+      "kind": "10_percent",
+      "checked_at_s": 217.3,
+      "chapter_index": 1,
+      "chapter_title": "What is a Transponder?",
+      "publisher_subtitle_cues": 7,
+      "sixgram_hits": 58,
+      "sixgram_total": 58,
+      "sixgram_coverage": 1.0,
+      "median_pinned_text_position_fraction": 0.077,
+      "relative_time_fraction": 0.1,
+      "publisher_caption_sample_sha256": "95cf52526040e08cba5c66b9d2e985a08bdef06fdcc3c58bbfb0419734473020",
+      "qualitative_topic_check": "transponder radar explanation"
+    },
+    {
+      "kind": "50_percent",
+      "checked_at_s": 1086.5,
+      "chapter_index": 7,
+      "chapter_title": "Example ATIS",
+      "publisher_subtitle_cues": 6,
+      "sixgram_hits": 41,
+      "sixgram_total": 41,
+      "sixgram_coverage": 1.0,
+      "median_pinned_text_position_fraction": 0.5033,
+      "relative_time_fraction": 0.5,
+      "publisher_caption_sample_sha256": "3e95e9970973c2e46be0603ec32c8ce049a77ac67082570fa1111f8a5bac3a98",
+      "qualitative_topic_check": "ATIS telephone access example"
+    },
+    {
+      "kind": "90_percent",
+      "checked_at_s": 1955.7,
+      "chapter_index": 16,
+      "chapter_title": "Emergency Procedures",
+      "publisher_subtitle_cues": 6,
+      "sixgram_hits": 40,
+      "sixgram_total": 40,
+      "sixgram_coverage": 1.0,
+      "median_pinned_text_position_fraction": 0.9146,
+      "relative_time_fraction": 0.9,
+      "publisher_caption_sample_sha256": "bb1440473baacc010a62ba788b363bf48d9839afa48b5db95705bf17053e2189",
+      "qualitative_topic_check": "emergency locator transmitter"
+    },
+    {
+      "kind": "first_internal_boundary",
+      "checked_at_s": 157.0,
+      "chapter_index": 1,
+      "chapter_title": "What is a Transponder?",
+      "publisher_subtitle_cues": 7,
+      "sixgram_hits": 37,
+      "sixgram_total": 37,
+      "sixgram_coverage": 1.0,
+      "median_pinned_text_position_fraction": 0.0537,
+      "relative_time_fraction": 0.0723,
+      "publisher_caption_sample_sha256": "b3ea45aa48126771b37f4d1645de6999c5b253fb6759e350525f400d484c0469",
+      "qualitative_topic_check": "lecturer explicitly introduces transponder"
+    },
+    {
+      "kind": "middle_internal_boundary",
+      "checked_at_s": 1168.0,
+      "chapter_index": 9,
+      "chapter_title": "Phonetic Alphabet",
+      "publisher_subtitle_cues": 7,
+      "sixgram_hits": 60,
+      "sixgram_total": 60,
+      "sixgram_coverage": 1.0,
+      "median_pinned_text_position_fraction": 0.5446,
+      "relative_time_fraction": 0.5375,
+      "publisher_caption_sample_sha256": "9ce124889456a94c72002a4c7347793351ed74858e317ae90e279c07ea9b2af4",
+      "qualitative_topic_check": "radio procedure and alphabet test"
+    },
+    {
+      "kind": "last_internal_boundary",
+      "checked_at_s": 2074.0,
+      "chapter_index": 18,
+      "chapter_title": "Advisory Circular",
+      "publisher_subtitle_cues": 6,
+      "sixgram_hits": 30,
+      "sixgram_total": 30,
+      "sixgram_coverage": 1.0,
+      "median_pinned_text_position_fraction": 0.9637,
+      "relative_time_fraction": 0.9544,
+      "publisher_caption_sample_sha256": "e7848704e1422e91dd239876b970d23bb5f0df62f36d4184d2e98c656ecbab46",
+      "qualitative_topic_check": "lecturer explicitly introduces advisory circular"
+    }
+  ],
+  "technical_media_status": "pass",
+  "resource_status": "hold",
+  "blocking_gates": [
+    "hold_gt_upstream_conversion_code",
+    "hold_rights_whole_component_review",
+    "content_near_duplicate_check_pending"
+  ],
+  "limits": [
+    "Embedded MP4 subtitles may be the upstream source of YTSeg text_ref, so sixgram agreement is not independent speech transcription.",
+    "Six predefined points do not validate every chapter boundary.",
+    "Course-level terms and a downloadable MP4 do not prove reuse rights for every third-party component.",
+    "No model selection, D2, or official RQ1 run."
+  ]
+}

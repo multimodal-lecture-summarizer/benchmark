@@ -1,0 +1,41 @@
+{
+  "candidate_count_after_filter": 459,
+  "cohort_version": "mitfld-rq1-35-v1",
+  "dataset_revision": "f5a5047e040ecf0f80a3cb67d64e324407f323ec",
+  "excluded_pilot_ids": [
+    "-Pg11JHzUTo",
+    "6MssatXXAzc",
+    "EXYw8_pnKr0",
+    "LMSTMBX_2F4",
+    "R2vL2wLqGYg",
+    "Z2ScgFh81Dc",
+    "g0bXSXuLVb0",
+    "mhQebe1Y4d0",
+    "smHwRzk81b0",
+    "z_xyx-z6arc"
+  ],
+  "extra_course_quotas": {
+    "final_test": 3,
+    "train": 8,
+    "validation": 3
+  },
+  "filter": "lecture_video_candidate_course; exclude title containing Problem Session; exclude prior 10 pilot IDs",
+  "replacement_rule": "next reserve rank in same course/split only; retain all failed selected IDs in attrition",
+  "reserve_count": 424,
+  "reserve_sha256": "9800197d737eb8e68da02d51cbee1325a79067d6aa12938ef18ef91d32de0040",
+  "seed": "rq1-mitfld-qualification-20260928",
+  "selected_count": 35,
+  "selected_sha256": "238d232624d5fa200264d21f8f2378cd20a3af868d4b03626430854fc93e3360",
+  "selected_split_counts": {
+    "final_test": 8,
+    "train": 19,
+    "validation": 8
+  },
+  "source_sha256": "b9fced1fb98d24c21fc0bc0480bcf2f18acfc8dc125e57276203b93e7d9c2a62",
+  "split_course_quotas": {
+    "final_test": 5,
+    "train": 11,
+    "validation": 5
+  },
+  "status": "candidate_only_not_d2"
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "video_id": "xsO2Ip6eiaY",
+    "publisher_link": "https://archive.org/download/MIT16.687IAP19/MIT16_687IAP19_lec16_300k.mp4",
+    "archive_final_url": "https://dn720400.ca.archive.org/0/items/MIT16.687IAP19/MIT16_687IAP19_lec16_300k.mp4",
+    "head_status": 200,
+    "head_content_length": 59842706,
+    "download_bytes": 59842706,
+    "sha256": "bfd2f8627a5b87590cf69322c6907556b1f0e7b6c22071fb2de01c48f43e9a75",
+    "size_matches_head": true,
+    "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\ytseg_qualification\\xsO2Ip6eiaY.mp4"
+  },
+  {
+    "video_id": "ksyY5wa5_50",
+    "publisher_link": "https://archive.org/download/MIT16.687IAP19/MIT16_687IAP19_lec19_300k.mp4",
+    "archive_final_url": "https://dn720400.ca.archive.org/0/items/MIT16.687IAP19/MIT16_687IAP19_lec19_300k.mp4",
+    "head_status": 200,
+    "head_content_length": 68665567,
+    "download_bytes": 68665567,
+    "sha256": "9a34df4cba1a1061822f517670dc1d4d1525656374428cc34800df0aca80323a",
+    "size_matches_head": true,
+    "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\ytseg_qualification\\ksyY5wa5_50.mp4"
+  },
+  {
+    "video_id": "kiCNa95DnnE",
+    "publisher_link": "https://archive.org/download/MIT16.687IAP19/MIT16_687IAP19_lec21_300k.mp4",
+    "archive_final_url": "https://dn720400.ca.archive.org/0/items/MIT16.687IAP19/MIT16_687IAP19_lec21_300k.mp4",
+    "head_status": 200,
+    "head_content_length": 52449855,
+    "download_bytes": 52449855,
+    "sha256": "d74ef9673385a27a72aebae7c8186de516cb37ac10df8fa02d9b5f21791265d3",
+    "size_matches_head": true,
+    "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\ytseg_qualification\\kiCNa95DnnE.mp4"
+  }
+]

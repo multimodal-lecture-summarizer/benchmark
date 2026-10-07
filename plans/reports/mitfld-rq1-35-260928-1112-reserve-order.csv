@@ -1,0 +1,425 @@
+cohort_version,role,split_proposed,course_id,video_id,rank_in_course,canonical_course_url,mapping_evidence,video_title
+mitfld-rq1-35-v1,reserve,train,15.S12,ojcOUtUwIe4,3,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,"13. Payments, Part 1"
+mitfld-rq1-35-v1,reserve,train,15.S12,lPD9fx8fK1k,4,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,"15. Central Banks &  Commercial Banking, Part 1"
+mitfld-rq1-35-v1,reserve,train,15.S12,_eGNSuTBc60,5,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,11. Blockchain Economics
+mitfld-rq1-35-v1,reserve,train,15.S12,JPkgJwJHYSc,6,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,6. Smart Contracts and DApps
+mitfld-rq1-35-v1,reserve,train,15.S12,zGDTt9Q3vyM,7,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,"5. Blockchain Basics & Transactions, UTXO and Script Code"
+mitfld-rq1-35-v1,reserve,train,15.S12,sMnBl0g3Ev4,8,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,8. Public Policy
+mitfld-rq1-35-v1,reserve,train,15.S12,CJCKTixMb70,9,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,24. Conclusion
+mitfld-rq1-35-v1,reserve,train,15.S12,l0vD_FBWk0g,10,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,10. Financial System Challenges & Opportunities
+mitfld-rq1-35-v1,reserve,train,15.S12,W06Le8fw0vU,11,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,23. Digital ID
+mitfld-rq1-35-v1,reserve,train,15.S12,EH6vE97qIP4,12,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,"1. Introduction for 15.S12 Blockchain and Money, Fall 2018"
+mitfld-rq1-35-v1,reserve,train,15.S12,ObGYNQLG3us,13,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,12. Assessing Use Cases
+mitfld-rq1-35-v1,reserve,train,15.S12,0UvVOMZqpEA,14,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,3. Blockchain Basics & Cryptography
+mitfld-rq1-35-v1,reserve,train,15.S12,GLVrOlHLJ1U,15,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,7. Technical Challenges
+mitfld-rq1-35-v1,reserve,train,15.S12,7EXcHqLg7BI,16,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,"20. Primary Markets, ICOs & Venture Capital, Part 2"
+mitfld-rq1-35-v1,reserve,train,15.S12,uNqMBBbb6UI,17,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,"16. Central Banks &  Commercial Banking, Part 2"
+mitfld-rq1-35-v1,reserve,train,15.S12,5auv_xrvoJk,18,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,"2. Money, Ledgers & Bitcoin"
+mitfld-rq1-35-v1,reserve,train,15.S12,vPJ8oQ99r9c,19,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,9. Permissioned Systems
+mitfld-rq1-35-v1,reserve,train,15.S12,DsSzQfejwMk,20,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,22. Trade Finance & Supply Chain
+mitfld-rq1-35-v1,reserve,train,15.S12,KHBi3n0hUSU,21,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,17. Secondary Markets & Crypto-Exchanges
+mitfld-rq1-35-v1,reserve,train,15.S12,iWpQpPbo7rM,22,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,"19. Primary Markets, ICOs & Venture Capital, Part 1"
+mitfld-rq1-35-v1,reserve,train,15.S12,-cZPoqnRZq4,23,https://ocw.mit.edu/15-S12F18,youtube_description_course_url,"21. Post Trade Clearing, Settlement & Processing"
+mitfld-rq1-35-v1,reserve,train,9.13,W2PY6z1Wddg,2,https://ocw.mit.edu/9-13S19,youtube_description_course_url,13. Number
+mitfld-rq1-35-v1,reserve,train,9.13,ppxK4R8XWfU,3,https://ocw.mit.edu/9-13S19,youtube_description_course_url,9. Navigation II
+mitfld-rq1-35-v1,reserve,train,9.13,otriwYhNtm0,4,https://ocw.mit.edu/9-13S19,youtube_description_course_url,"7. Category Selectivity, Controversies, and MVPA"
+mitfld-rq1-35-v1,reserve,train,9.13,9Bz-5-RC690,5,https://ocw.mit.edu/9-13S19,youtube_description_course_url,15. Hearing and Speech
+mitfld-rq1-35-v1,reserve,train,9.13,YVHM8dSkimo,6,https://ocw.mit.edu/9-13S19,youtube_description_course_url,16. Music
+mitfld-rq1-35-v1,reserve,train,9.13,kAX_PRnliMo,7,https://ocw.mit.edu/9-13S19,youtube_description_course_url,"10. Development, Nature & Nurture I"
+mitfld-rq1-35-v1,reserve,train,9.13,B4a0WdGp52g,8,https://ocw.mit.edu/9-13S19,youtube_description_course_url,24. Attention and Awareness
+mitfld-rq1-35-v1,reserve,train,9.13,MuRVOQY8KoY,9,https://ocw.mit.edu/9-13S19,youtube_description_course_url,8. Navigation I
+mitfld-rq1-35-v1,reserve,train,9.13,bAkuNXtgrLA,10,https://ocw.mit.edu/9-13S19,youtube_description_course_url,2. Neuroanatomy
+mitfld-rq1-35-v1,reserve,train,9.13,pfZY5aDJazA,11,https://ocw.mit.edu/9-13S19,youtube_description_course_url,20. Theory of Mind & Mentalizing
+mitfld-rq1-35-v1,reserve,train,9.13,XRdJ5mXBo8A,12,https://ocw.mit.edu/9-13S19,youtube_description_course_url,18. Language I
+mitfld-rq1-35-v1,reserve,train,9.13,YD7QG4G7WVg,13,https://ocw.mit.edu/9-13S19,youtube_description_course_url,5. Cognitive Neuroscience Methods II
+mitfld-rq1-35-v1,reserve,train,9.13,SchmVoc5NzY,14,https://ocw.mit.edu/9-13S19,youtube_description_course_url,21. Brain Networks
+mitfld-rq1-35-v1,reserve,train,9.13,ba-HMvDn_vU,15,https://ocw.mit.edu/9-13S19,youtube_description_course_url,1. Introduction to the Human Brain
+mitfld-rq1-35-v1,reserve,train,9.13,xA00vkxG3lE,16,https://ocw.mit.edu/9-13S19,youtube_description_course_url,"11. Development, Nature & Nurture II (2018)"
+mitfld-rq1-35-v1,reserve,train,9.13,Nk0H3o-hRMA,17,https://ocw.mit.edu/9-13S19,youtube_description_course_url,6. Introduction to the Human Brain
+mitfld-rq1-35-v1,reserve,train,7.016,5ejPI6QqKBU,3,https://ocw.mit.edu/7-016F18,youtube_description_course_url,20. Cell Signaling 1 – Overview
+mitfld-rq1-35-v1,reserve,train,7.016,6rOvXGoXoJc,4,https://ocw.mit.edu/7-016F18,youtube_description_course_url,26. Cancer 2
+mitfld-rq1-35-v1,reserve,train,7.016,hDppkpYcBdg,5,https://ocw.mit.edu/7-016F18,youtube_description_course_url,28. Visualizing Life - Fluorescent Proteins
+mitfld-rq1-35-v1,reserve,train,7.016,QTdJiG7mV40,6,https://ocw.mit.edu/7-016F18,youtube_description_course_url,4. Enzymes & Metabolism
+mitfld-rq1-35-v1,reserve,train,7.016,s1MoBTEcVYY,7,https://ocw.mit.edu/7-016F18,youtube_description_course_url,6. Nucleic Acids
+mitfld-rq1-35-v1,reserve,train,7.016,Qfw0C0Ac-Tk,8,https://ocw.mit.edu/7-016F18,youtube_description_course_url,19. Cell Trafficking and Protein Localization
+mitfld-rq1-35-v1,reserve,train,7.016,SqGmQ6CFYHw,9,https://ocw.mit.edu/7-016F18,youtube_description_course_url,"31. Immunology 2 – Memory, T cells, & Autoimmunity"
+mitfld-rq1-35-v1,reserve,train,7.016,_fWt9yHslDo,10,https://ocw.mit.edu/7-016F18,youtube_description_course_url,35. Reproductive Cloning and Embryonic Stem Cells
+mitfld-rq1-35-v1,reserve,train,7.016,kVu37T6sB_E,11,https://ocw.mit.edu/7-016F18,youtube_description_course_url,"16. Recombinant DNA, Cloning, & Editing"
+mitfld-rq1-35-v1,reserve,train,7.016,7afYLl70cO0,12,https://ocw.mit.edu/7-016F18,youtube_description_course_url,"22. Neurons, Action Potential, & Optogenetics"
+mitfld-rq1-35-v1,reserve,train,7.016,7gLcuMtM_HY,13,https://ocw.mit.edu/7-016F18,youtube_description_course_url,"32. Infectious Disease, Viruses, and Bacteria"
+mitfld-rq1-35-v1,reserve,train,7.016,aKTOS0Nrlug,14,https://ocw.mit.edu/7-016F18,youtube_description_course_url,2. Chemical Bonding and Molecular Interactions; Lipids and Membranes
+mitfld-rq1-35-v1,reserve,train,7.016,E8BihX2hGss,15,https://ocw.mit.edu/7-016F18,youtube_description_course_url,33. Bacteria and Antibiotic Resistance
+mitfld-rq1-35-v1,reserve,train,7.016,apP5SWitnyw,16,https://ocw.mit.edu/7-016F18,youtube_description_course_url,8. Transcription
+mitfld-rq1-35-v1,reserve,train,7.016,EJ6Sjn1c04Y,17,https://ocw.mit.edu/7-016F18,youtube_description_course_url,"24. Stem Cells, Apoptosis, & Tissue Homeostasis"
+mitfld-rq1-35-v1,reserve,train,7.016,nvxvcbaoayM,18,https://ocw.mit.edu/7-016F18,youtube_description_course_url,27. Visualizing Life – Dyes and Stains
+mitfld-rq1-35-v1,reserve,train,7.016,jeNPvqRXI9I,19,https://ocw.mit.edu/7-016F18,youtube_description_course_url,"14. Genetics 3 – Linkage, Crossing Over"
+mitfld-rq1-35-v1,reserve,train,7.016,L4tEwAsVW0I,20,https://ocw.mit.edu/7-016F18,youtube_description_course_url,25. Cancer 1
+mitfld-rq1-35-v1,reserve,train,7.016,FpXIGTFD8Qs,21,https://ocw.mit.edu/7-016F18,youtube_description_course_url,"30. Immunology 1 – Diversity, Specificity, & B cells"
+mitfld-rq1-35-v1,reserve,train,7.016,iz7rWK5cqjE,22,https://ocw.mit.edu/7-016F18,youtube_description_course_url,23. Cell Cycle and Checkpoints
+mitfld-rq1-35-v1,reserve,train,7.016,8jLy33vbtYM,23,https://ocw.mit.edu/7-016F18,youtube_description_course_url,7. Replication
+mitfld-rq1-35-v1,reserve,train,7.016,68KXOYTc1mk,24,https://ocw.mit.edu/7-016F18,youtube_description_course_url,15. Genetics 4 – The power of model organisms in biological discovery
+mitfld-rq1-35-v1,reserve,train,7.016,7xJPSuSVmSk,25,https://ocw.mit.edu/7-016F18,youtube_description_course_url,10. Translation
+mitfld-rq1-35-v1,reserve,train,7.016,qtGHKiAROig,26,https://ocw.mit.edu/7-016F18,youtube_description_course_url,13. Genetics 2 – Rules of Inheritance
+mitfld-rq1-35-v1,reserve,train,7.016,KlVHqq38KJU,27,https://ocw.mit.edu/7-016F18,youtube_description_course_url,"1. Introduction, Course Organization of MIT 7.016 Introductory Biology, Fall 2018"
+mitfld-rq1-35-v1,reserve,train,7.016,SA8dRTq3qUA,28,https://ocw.mit.edu/7-016F18,youtube_description_course_url,"11. Cells, the Simplest Functional Units"
+mitfld-rq1-35-v1,reserve,train,7.016,Ao-r2nsib_Y,29,https://ocw.mit.edu/7-016F18,youtube_description_course_url,34. Viruses and Anti-Viral Resistance
+mitfld-rq1-35-v1,reserve,train,7.016,LhbtCTwtdDU,30,https://ocw.mit.edu/7-016F18,youtube_description_course_url,29. Cell Imaging Techniques
+mitfld-rq1-35-v1,reserve,train,7.016,oOya3cFmAMc,31,https://ocw.mit.edu/7-016F18,youtube_description_course_url,"3. Structures of Amino Acids, Peptides, and Proteins"
+mitfld-rq1-35-v1,reserve,train,7.016,JuwErrBz3b4,32,https://ocw.mit.edu/7-016F18,youtube_description_course_url,17. Genomes and DNA Sequencing
+mitfld-rq1-35-v1,reserve,train,7.016,83-yKXuRDGc,33,https://ocw.mit.edu/7-016F18,youtube_description_course_url,18. SNPs & Human genetics
+mitfld-rq1-35-v1,reserve,train,7.016,mvjXFh4P08I,34,https://ocw.mit.edu/7-016F18,youtube_description_course_url,21. Cell Signaling 2 – Examples
+mitfld-rq1-35-v1,reserve,train,7.016,rZjwF5z-Xfw,35,https://ocw.mit.edu/7-016F18,youtube_description_course_url,12. Genetics 1 – Cell Division & Segregating Genetic Material
+mitfld-rq1-35-v1,reserve,train,22.01,nAtTW8ZW33s,3,https://ocw.mit.edu/22-01F16,youtube_description_course_url,7. Q-Equation Continued and Examples
+mitfld-rq1-35-v1,reserve,train,22.01,i3CzkU4Ft9U,4,https://ocw.mit.edu/22-01F16,youtube_description_course_url,"24. Transients, Feedback, and Time-Dependent Neutronics"
+mitfld-rq1-35-v1,reserve,train,22.01,HSm76SpZl7o,5,https://ocw.mit.edu/22-01F16,youtube_description_course_url,34. Radiation Hormesis
+mitfld-rq1-35-v1,reserve,train,22.01,Gd0QPYVYnQg,6,https://ocw.mit.edu/22-01F16,youtube_description_course_url,"3. Nuclear Mass and Stability, Nuclear Reactions and Notation, Introduction to Cross Section"
+mitfld-rq1-35-v1,reserve,train,22.01,RW2DPHAoXiQ,7,https://ocw.mit.edu/22-01F16,youtube_description_course_url,20. How Nuclear Energy Works
+mitfld-rq1-35-v1,reserve,train,22.01,SgM2wxELF4U,8,https://ocw.mit.edu/22-01F16,youtube_description_course_url,"4. Binding Energy, the Semi-Empirical Liquid Drop Nuclear Model, and Mass Parabolas"
+mitfld-rq1-35-v1,reserve,train,22.01,CjZjVUWMEz0,9,https://ocw.mit.edu/22-01F16,youtube_description_course_url,27. Nuclear Materials — Radiation Damage and Effects in Matter
+mitfld-rq1-35-v1,reserve,train,22.01,yYto-sIfHjo,10,https://ocw.mit.edu/22-01F16,youtube_description_course_url,"33. Long-Term Biological Effects of Radiation, Statistics, Radiation Risk"
+mitfld-rq1-35-v1,reserve,train,22.01,YLp8RziRbpg,11,https://ocw.mit.edu/22-01F16,youtube_description_course_url,"8. Radioactive Decay — Modes, Energetics, and Trends"
+mitfld-rq1-35-v1,reserve,train,22.01,kzOFhSJFihI,12,https://ocw.mit.edu/22-01F16,youtube_description_course_url,"31. Frontiers in Nuclear Medicine, Where One Finds Ionizing Radiation (Background and Other Sources)"
+mitfld-rq1-35-v1,reserve,train,22.01,b2VMwG1MTHg,13,https://ocw.mit.edu/22-01F16,youtube_description_course_url,19. Uses of Photon and Ion Nuclear Interactions — Characterization Techniques
+mitfld-rq1-35-v1,reserve,train,22.01,es6f90JcJ2k,14,https://ocw.mit.edu/22-01F16,youtube_description_course_url,10. Radioactive Decay Continued
+mitfld-rq1-35-v1,reserve,train,22.01,qHPp458m1cs,15,https://ocw.mit.edu/22-01F16,youtube_description_course_url,16. Nuclear Reactor Construction and Operation
+mitfld-rq1-35-v1,reserve,train,22.01,KhT9m9kFzv8,16,https://ocw.mit.edu/22-01F16,youtube_description_course_url,22. Simplifying Neutron Transport to Neutron Diffusion
+mitfld-rq1-35-v1,reserve,train,22.01,HfRpkTG7Iow,17,https://ocw.mit.edu/22-01F16,youtube_description_course_url,"32. Chemical and Biological Effects of Radiation, Smelling Nuclear Bullshit"
+mitfld-rq1-35-v1,reserve,train,22.01,KWaGHCjsSAM,18,https://ocw.mit.edu/22-01F16,youtube_description_course_url,25. Review of All Nuclear Interactions and Problem Set 7 Help
+mitfld-rq1-35-v1,reserve,train,22.01,jJSwWRaU9rA,19,https://ocw.mit.edu/22-01F16,youtube_description_course_url,"12. Numerical Examples of Activity, Half Life, and Series Decay"
+mitfld-rq1-35-v1,reserve,train,22.01,kjX4HCtlJBY,20,https://ocw.mit.edu/22-01F16,youtube_description_course_url,14. Photon Interactions with Matter I — Interaction Methods and Gamma Spectral Identification
+mitfld-rq1-35-v1,reserve,train,22.01,Hz7ouec7dKo,21,https://ocw.mit.edu/22-01F16,youtube_description_course_url,"30. Radiation Dose, Dosimetry, and Background Radiation"
+mitfld-rq1-35-v1,reserve,train,22.01,ORbfdLUl0ik,22,https://ocw.mit.edu/22-01F16,youtube_description_course_url,13. Practical Radiation Counting Experiments
+mitfld-rq1-35-v1,reserve,train,22.01,3yqpirzxudw,23,https://ocw.mit.edu/22-01F16,youtube_description_course_url,21. Neutron Transport
+mitfld-rq1-35-v1,reserve,train,22.01,UDAuMq-0mEo,24,https://ocw.mit.edu/22-01F16,youtube_description_course_url,29. Nuclear Materials Science Continued
+mitfld-rq1-35-v1,reserve,train,22.01,NXrGOd7gdMw,25,https://ocw.mit.edu/22-01F16,youtube_description_course_url,2. Radiation Utilizing Technology
+mitfld-rq1-35-v1,reserve,train,22.01,kZAFntUFx8I,26,https://ocw.mit.edu/22-01F16,youtube_description_course_url,6. The Q-Equation — The Most General Nuclear Reaction
+mitfld-rq1-35-v1,reserve,train,22.01,mJ54DfN95Zo,27,https://ocw.mit.edu/22-01F16,youtube_description_course_url,"5. Mass Parabolas Continued, Stability, and Half Life"
+mitfld-rq1-35-v1,reserve,train,22.01,rsDEuRpOHqs,28,https://ocw.mit.edu/22-01F16,youtube_description_course_url,"18. Ion-Nuclear Interactions II — Bremsstrahlung, X-Ray Spectra, Cross Sections"
+mitfld-rq1-35-v1,reserve,train,22.01,kJu5qVfSphw,29,https://ocw.mit.edu/22-01F16,youtube_description_course_url,"17. Ion-Nuclear Interactions I — Scattering and Stopping Power Derivation, Ion Range"
+mitfld-rq1-35-v1,reserve,train,22.01,Ijst4g5KFN0,30,https://ocw.mit.edu/22-01F16,youtube_description_course_url,26. Chernobyl — How It Happened
+mitfld-rq1-35-v1,reserve,train,22.01,G8LHGY3i01Q,31,https://ocw.mit.edu/22-01F16,youtube_description_course_url,35. Food Irradiation and Its Safety
+mitfld-rq1-35-v1,reserve,train,22.01,RCSCg40NgD4,32,https://ocw.mit.edu/22-01F16,youtube_description_course_url,"23. Solving the Neutron Diffusion Equation, and Criticality Relations"
+mitfld-rq1-35-v1,reserve,train,22.01,qAVtgc3I6ig,33,https://ocw.mit.edu/22-01F16,youtube_description_course_url,"15. Photon Interaction with Matter II — More Details, Shielding Calculations"
+mitfld-rq1-35-v1,reserve,train,8.962,9lIgAPvppk0,3,https://ocw.mit.edu/8-962S20,youtube_description_course_url,14. Linearized gravity I: Principles and static limit.
+mitfld-rq1-35-v1,reserve,train,8.962,4QPKWFme0k4,4,https://ocw.mit.edu/8-962S20,youtube_description_course_url,9. Geodesics.
+mitfld-rq1-35-v1,reserve,train,8.962,H6eR3sG524M,5,https://ocw.mit.edu/8-962S20,youtube_description_course_url,3. Tensors continued.
+mitfld-rq1-35-v1,reserve,train,8.962,K1vpc9YwlQI,6,https://ocw.mit.edu/8-962S20,youtube_description_course_url,21. Spherical compact sources II
+mitfld-rq1-35-v1,reserve,train,8.962,OIjLUzS6SQA,7,https://ocw.mit.edu/8-962S20,youtube_description_course_url,12. The Einstein field equation.
+mitfld-rq1-35-v1,reserve,train,8.962,JWSdeg4jkoY,8,https://ocw.mit.edu/8-962S20,youtube_description_course_url,10. Spacetime curvature.
+mitfld-rq1-35-v1,reserve,train,8.962,Oxk2nnuC130,9,https://ocw.mit.edu/8-962S20,youtube_description_course_url,15. Linearized gravity II: Dynamic sources
+mitfld-rq1-35-v1,reserve,train,8.962,PVYTNKZDHBo,10,https://ocw.mit.edu/8-962S20,youtube_description_course_url,20. Spherical compact sources I
+mitfld-rq1-35-v1,reserve,train,8.962,_uNWqE3LS1E,11,https://ocw.mit.edu/8-962S20,youtube_description_course_url,23. Black holes II
+mitfld-rq1-35-v1,reserve,train,8.962,TiHHz3sKDbY,12,https://ocw.mit.edu/8-962S20,youtube_description_course_url,2. Introduction to tensors.
+mitfld-rq1-35-v1,reserve,train,8.962,d1dtqw7f6pw,13,https://ocw.mit.edu/8-962S20,youtube_description_course_url,11. More on spacetime curvature.
+mitfld-rq1-35-v1,reserve,train,8.962,ZqF-7bjnzCU,14,https://ocw.mit.edu/8-962S20,youtube_description_course_url,22. Black holes I
+mitfld-rq1-35-v1,reserve,train,8.962,pUqA_iHLBWQ,15,https://ocw.mit.edu/8-962S20,youtube_description_course_url,17. Gravitational radiation II
+mitfld-rq1-35-v1,reserve,train,8.962,wBvXOb59l-k,16,https://ocw.mit.edu/8-962S20,youtube_description_course_url,18. Cosmology I
+mitfld-rq1-35-v1,reserve,train,8.962,iRVfaR3N5K4,17,https://ocw.mit.edu/8-962S20,youtube_description_course_url,1. Introduction and the geometric viewpoint on physics.
+mitfld-rq1-35-v1,reserve,train,8.962,OOmZkNa72t4,18,https://ocw.mit.edu/8-962S20,youtube_description_course_url,5. The stress energy tensor and the Christoffel symbol.
+mitfld-rq1-35-v1,reserve,train,8.962,h9xaoGkyHwg,19,https://ocw.mit.edu/8-962S20,youtube_description_course_url,4. Volumes and volume elements; conservation laws.
+mitfld-rq1-35-v1,reserve,train,8.962,p_10lgn2BiI,20,https://ocw.mit.edu/8-962S20,youtube_description_course_url,19. Cosmology II
+mitfld-rq1-35-v1,reserve,train,8.962,LoIq6KElVxs,21,https://ocw.mit.edu/8-962S20,youtube_description_course_url,"8. Lie transport, Killing vectors, tensor densities."
+mitfld-rq1-35-v1,reserve,train,18.404J,N28g_YBXY8Y,3,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,9. Reducibility
+mitfld-rq1-35-v1,reserve,train,18.404J,q3xvno_KgRY,4,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,"20. L and NL, NL = coNL"
+mitfld-rq1-35-v1,reserve,train,18.404J,iZPzBHGDsWI,5,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,15. NP-Completeness
+mitfld-rq1-35-v1,reserve,train,18.404J,TTArY7ojshU,6,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,"6. TM Variants, Church-Turing Thesis"
+mitfld-rq1-35-v1,reserve,train,18.404J,cT_qwkTigv4,7,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,"17. Space Complexity, PSPACE, Savitch's Theorem"
+mitfld-rq1-35-v1,reserve,train,18.404J,MGqoLm2aAgc,8,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,10. Computation History Method
+mitfld-rq1-35-v1,reserve,train,18.404J,6Az1gtDRaAU,9,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,16. Cook-Levin Theorem
+mitfld-rq1-35-v1,reserve,train,18.404J,1VhnDdQsELo,10,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,"14. P and NP, SAT, Poly-Time Reducibility"
+mitfld-rq1-35-v1,reserve,train,18.404J,vqFRAWeEcUs,11,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,21. Hierarchy Theorems
+mitfld-rq1-35-v1,reserve,train,18.404J,N-_XmLanPYg,12,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,11. Recursion Theorem and Logic
+mitfld-rq1-35-v1,reserve,train,18.404J,9syvZr-9xwk,13,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,"1. Introduction, Finite Automata, Regular Expressions"
+mitfld-rq1-35-v1,reserve,train,18.404J,4MgN6uxd4i4,14,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,7. Decision Problems for Automata and Grammars
+mitfld-rq1-35-v1,reserve,train,18.404J,oNsscmUwjMU,15,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,"2. Nondeterminism, Closure Properties, Conversion of Regular Expressions to FA"
+mitfld-rq1-35-v1,reserve,train,18.404J,IycOPFmEQk8,16,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,"5. CF Pumping Lemma, Turing Machines"
+mitfld-rq1-35-v1,reserve,train,18.404J,3PzuSPQPEU4,17,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,8. Undecidability
+mitfld-rq1-35-v1,reserve,train,18.404J,aVv9WXwW95w,18,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,18. PSPACE-Completeness
+mitfld-rq1-35-v1,reserve,train,18.404J,N32bnUliSzo,19,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,"22. Provably Intractable Problems, Oracles"
+mitfld-rq1-35-v1,reserve,train,18.404J,TSI3LR5WZmo,20,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,"25. Interactive Proof Systems, IP"
+mitfld-rq1-35-v1,reserve,train,18.404J,m9eHViDPAJQ,21,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,"4. Pushdown Automata, Conversion of CFG to PDA and Reverse Conversion"
+mitfld-rq1-35-v1,reserve,train,18.404J,asjAc90L8rE,22,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,12. Time Complexity
+mitfld-rq1-35-v1,reserve,train,18.404J,4dFPVJrNLDs,23,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,"19. Games, Generalized Geography"
+mitfld-rq1-35-v1,reserve,train,18.404J,eEXSv0jChO4,24,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,26. coNP is a subset of IP
+mitfld-rq1-35-v1,reserve,train,18.404J,Vp_AzDGQyrA,25,https://ocw.mit.edu/18-404JF20,youtube_description_course_url,"23. Probabilistic Computation, BPP"
+mitfld-rq1-35-v1,reserve,train,18.100A,ZjjpLMKs7Tc,3,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,"Lecture 12: The Ratio, Root, and Alternating Series Tests"
+mitfld-rq1-35-v1,reserve,train,18.100A,Xn8wL2ItzZw,4,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,"Lecture 9: Limsup, Liminf, and the Bolzano-Weierstrass Theorem"
+mitfld-rq1-35-v1,reserve,train,18.100A,bBESL68iX6s,5,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,Lecture 14: Limits of Functions in Terms of Sequences and Continuity
+mitfld-rq1-35-v1,reserve,train,18.100A,f_sNWn7zujU,6,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,Lecture 17: Uniform Continuity and the Definition of the Derivative
+mitfld-rq1-35-v1,reserve,train,18.100A,ImHAGH_OEow,7,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,Lecture 20: Taylor's Theorem and the Definition of Riemann Sums
+mitfld-rq1-35-v1,reserve,train,18.100A,_HRTdXJgZ0Q,8,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,Lecture 23: Pointwise and Uniform Convergence of Sequences of Functions
+mitfld-rq1-35-v1,reserve,train,18.100A,PnDtMfyZSIE,9,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,Lecture 6: The Uncountabality of the Real Numbers
+mitfld-rq1-35-v1,reserve,train,18.100A,QeYUHA0UMVg,10,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,Lecture 21: The Riemann Integral of a Continuous Function
+mitfld-rq1-35-v1,reserve,train,18.100A,49Ro2zf9hAc,11,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,Lecture 7: Convergent Sequences of Real Numbers
+mitfld-rq1-35-v1,reserve,train,18.100A,os_XGBNPllM,12,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,Lecture 8: The Squeeze Theorem and Operations Involving Convergent Sequences
+mitfld-rq1-35-v1,reserve,train,18.100A,WWZ_CeiRnIo,13,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,"Lecture 22: Fundamental Theorem of Calculus, Integration by Parts, and Change of Variable Formula"
+mitfld-rq1-35-v1,reserve,train,18.100A,PuRJ9IgUW-M,14,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,Lecture 18: Weierstrass's Example of a Continuous and Nowhere Differentiable Function
+mitfld-rq1-35-v1,reserve,train,18.100A,u4qQ1oIQcW8,15,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,Lecture 25: Power Series and the Weierstrass Approximation Theorem
+mitfld-rq1-35-v1,reserve,train,18.100A,mlPLLXHZ8_U,16,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,Lecture 4: The Characterization of the Real Numbers
+mitfld-rq1-35-v1,reserve,train,18.100A,0_w-R_g5lRA,17,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,Lecture 10: The Completeness of the Real Numbers and Basic Properties of Infinite Series
+mitfld-rq1-35-v1,reserve,train,18.100A,dcUKdwHRSD8,18,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,Lecture 16: The Min/Max Theorem and Bolzano's Intermediate Value Theorem
+mitfld-rq1-35-v1,reserve,train,18.100A,RzSp9nIFnbo,19,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,Lecture 11: Absolute Convergence and the Comparison Test for Series
+mitfld-rq1-35-v1,reserve,train,18.100A,9_xG0AGRa-w,20,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,Lecture 2: Cantor's Theory of Cardinality (Size)
+mitfld-rq1-35-v1,reserve,train,18.100A,V3Wg_jrMSQY,21,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,"Lecture 19: Differentiation Rules, Rolle's Theorem, and the Mean Value Theorem"
+mitfld-rq1-35-v1,reserve,train,18.100A,LY7YmuDbuW0,22,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,"Lecture 1: Sets, Set Operations and Mathematical Induction"
+mitfld-rq1-35-v1,reserve,train,18.100A,cjeXg5rJ9D8,23,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,Lecture 13: Limits of Functions
+mitfld-rq1-35-v1,reserve,train,18.100A,smIcuRZybsA,24,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,Lecture 15: The Continuity of Sine and Cosine and the Many Discontinuities of Dirichlet's Function
+mitfld-rq1-35-v1,reserve,train,18.100A,nbENJ-Ce7Nc,25,http://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020,youtube_description_course_url,Lecture 3: Cantor's Remarkable Theorem and the Rationals' Lack of the Least Upper Bound Property
+mitfld-rq1-35-v1,reserve,train,6.006,4nXw-f6NJ9s,3,https://ocw.mit.edu/6-006S20,youtube_description_course_url,21. Algorithms—Next Steps
+mitfld-rq1-35-v1,reserve,train,6.006,e98MPnMHLxE,4,https://ocw.mit.edu/6-006S20,youtube_description_course_url,Quiz 1 review
+mitfld-rq1-35-v1,reserve,train,6.006,wEKFGdo4Sck,5,https://ocw.mit.edu/6-006S20,youtube_description_course_url,Quiz 3 Review
+mitfld-rq1-35-v1,reserve,train,6.006,f9cVS_URPc0,6,https://ocw.mit.edu/6-006S20,youtube_description_course_url,12. Bellman-Ford
+mitfld-rq1-35-v1,reserve,train,6.006,CHhwJjR0mZA,7,https://ocw.mit.edu/6-006S20,youtube_description_course_url,2. Data Structures and Dynamic Arrays
+mitfld-rq1-35-v1,reserve,train,6.006,Xnpo1atN-Iw,8,https://ocw.mit.edu/6-006S20,youtube_description_course_url,8. Binary Heaps
+mitfld-rq1-35-v1,reserve,train,6.006,JbafQJx1CIA,9,https://ocw.mit.edu/6-006S20,youtube_description_course_url,19. Complexity
+mitfld-rq1-35-v1,reserve,train,6.006,r4-cftqTcdI,10,https://ocw.mit.edu/6-006S20,youtube_description_course_url,"15. Dynamic Programming, Part 1: SRTBOT, Fib, DAGs, Bowling"
+mitfld-rq1-35-v1,reserve,train,6.006,vCIa2h1C9UQ,11,https://ocw.mit.edu/6-006S20,youtube_description_course_url,Quiz 2 Review
+mitfld-rq1-35-v1,reserve,train,6.006,i9OAOk0CUQE,12,https://ocw.mit.edu/6-006S20,youtube_description_course_url,"18. Dynamic Programming, Part 4: Rods, Subset Sum, Pseudopolynomial"
+mitfld-rq1-35-v1,reserve,train,6.006,76dhtgZt38A,13,https://ocw.mit.edu/6-006S20,youtube_description_course_url,"6. Binary Trees, Part 1"
+mitfld-rq1-35-v1,reserve,train,6.006,oS9aPzUNG-s,14,https://ocw.mit.edu/6-006S20,youtube_description_course_url,3. Sets and Sorting
+mitfld-rq1-35-v1,reserve,train,6.006,KLBCUx1is2c,15,https://ocw.mit.edu/6-006S20,youtube_description_course_url,"16. Dynamic Programming, Part 2: LCS, LIS, Coins"
+mitfld-rq1-35-v1,reserve,train,6.006,5cF5Bgv59Sc,16,https://ocw.mit.edu/6-006S20,youtube_description_course_url,11. Weighted Shortest Paths
+mitfld-rq1-35-v1,reserve,train,6.006,NSHizBK9JD8,17,https://ocw.mit.edu/6-006S20,youtube_description_course_url,13. Dijkstra
+mitfld-rq1-35-v1,reserve,train,6.006,Nu8YGneFCWE,18,https://ocw.mit.edu/6-006S20,youtube_description_course_url,4. Hashing
+mitfld-rq1-35-v1,reserve,train,6.006,IBfWDYSffUU,19,https://ocw.mit.edu/6-006S20,youtube_description_course_url,10. Depth-First Search
+mitfld-rq1-35-v1,reserve,train,6.006,U1JYwHcFfso,20,https://ocw.mit.edu/6-006S20,youtube_description_course_url,"7. Binary Trees, Part 2: AVL"
+mitfld-rq1-35-v1,reserve,train,6.006,ZA-tUyM_y7s,21,https://ocw.mit.edu/6-006S20,youtube_description_course_url,1. Algorithms and Computation
+mitfld-rq1-35-v1,reserve,train,6.006,TDo3r5M1LNo,22,https://ocw.mit.edu/6-006S20,youtube_description_course_url,"17. Dynamic Programming, Part 3: APSP, Parens, Piano"
+mitfld-rq1-35-v1,reserve,train,6.006,yndgIDO0zQQ,23,https://ocw.mit.edu/6-006S20,youtube_description_course_url,5. Linear Sorting
+mitfld-rq1-35-v1,reserve,train,6.006,oFVYVzlvk9c,24,https://ocw.mit.edu/6-006S20,youtube_description_course_url,9. Breadth-First Search
+mitfld-rq1-35-v1,reserve,train,15.S08,uHUA6M1OEwk,2,https://ocw.mit.edu/15-S08S20,youtube_description_course_url,Class 9: Trading & Capital Markets
+mitfld-rq1-35-v1,reserve,train,15.S08,59Dd5T6crKw,3,https://ocw.mit.edu/15-S08S20,youtube_description_course_url,Class 5: Blockchain Technology & Cryptocurrencies
+mitfld-rq1-35-v1,reserve,train,15.S08,kZ1EqqnUw6M,4,https://ocw.mit.edu/15-S08S20,youtube_description_course_url,Class 12: Conclusion
+mitfld-rq1-35-v1,reserve,train,15.S08,nq8la9qknx8,5,https://ocw.mit.edu/15-S08S20,youtube_description_course_url,"Class 2: Artificial Intelligence, Machine Learning, and Deep Learning"
+mitfld-rq1-35-v1,reserve,train,15.S08,90JWoR9MfYU,6,https://ocw.mit.edu/15-S08S20,youtube_description_course_url,Class 1: Intro and Key Technological Trends Affecting Financial Services
+mitfld-rq1-35-v1,reserve,train,15.S08,4FGNLl9Btfw,7,https://ocw.mit.edu/15-S08S20,youtube_description_course_url,Class 6: Payments
+mitfld-rq1-35-v1,reserve,train,15.S08,pA-AgV8wo0o,8,https://ocw.mit.edu/15-S08S20,youtube_description_course_url,Class 10: Insurance
+mitfld-rq1-35-v1,reserve,train,15.S08,LaP0Ut84GzI,9,https://ocw.mit.edu/15-S08S20,youtube_description_course_url,Class 4: Open APIs & Marketing Channels
+mitfld-rq1-35-v1,reserve,train,15.S08,iahUTx27HUg,10,https://ocw.mit.edu/15-S08S20,youtube_description_course_url,Class 11: Coronavirus Crisis & Finance
+mitfld-rq1-35-v1,reserve,train,15.S08,oYR6xdcFNwc,11,https://ocw.mit.edu/15-S08S20,youtube_description_course_url,Class 8: Challenger Banks
+mitfld-rq1-35-v1,reserve,train,15.S08,OUAMdi281mQ,12,https://ocw.mit.edu/15-S08S20,youtube_description_course_url,Class 3: Artificial Intelligence in Finance
+mitfld-rq1-35-v1,reserve,train,8.20,mBGJOLE7ZUg,3,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,5.3 Spacetime Diagrams
+mitfld-rq1-35-v1,reserve,train,8.20,Wd5s5uLk7xs,4,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,3.4 Stellar Aberration
+mitfld-rq1-35-v1,reserve,train,8.20,8rbXjIqF3IA,5,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,3.3 Michelson-Morley Experiment
+mitfld-rq1-35-v1,reserve,train,8.20,_naTiUQOq34,6,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,4.5 Lorentz Transformation
+mitfld-rq1-35-v1,reserve,train,8.20,o-CZeUT_Ud4,7,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,10.8 Global Positioning System
+mitfld-rq1-35-v1,reserve,train,8.20,24iPsnbS6_0,8,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,1.5 Categories of Physics
+mitfld-rq1-35-v1,reserve,train,8.20,0lPfTMmyzvk,9,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,4.4 Invariance
+mitfld-rq1-35-v1,reserve,train,8.20,4U9B9YgEqe4,10,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,12.4 Redshift Tests
+mitfld-rq1-35-v1,reserve,train,8.20,2YPu29d8RZY,11,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,5.1 Voyager Program
+mitfld-rq1-35-v1,reserve,train,8.20,v5jffYzm5pg,12,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,12.5 General Relativity
+mitfld-rq1-35-v1,reserve,train,8.20,rlC8mLGvong,13,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,6.2 Twin Paradox
+mitfld-rq1-35-v1,reserve,train,8.20,Pf_PvckSdTg,14,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,8.2 Introduction to 4-Vector Notation
+mitfld-rq1-35-v1,reserve,train,8.20,LaTbPEKrE-8,15,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,11.1 Charge and Current
+mitfld-rq1-35-v1,reserve,train,8.20,0YvENlEZwNg,16,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,13.2 Course Review
+mitfld-rq1-35-v1,reserve,train,8.20,5QUe51d_22w,17,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,4.1 Time Dilation
+mitfld-rq1-35-v1,reserve,train,8.20,ijOnv0DUCPE,18,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,10.4 Absorption and Emission of Photons
+mitfld-rq1-35-v1,reserve,train,8.20,PV6lhcTfSGU,19,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,9.3 Collisions
+mitfld-rq1-35-v1,reserve,train,8.20,ZmKaHSXDbn0,20,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,3.1 Light
+mitfld-rq1-35-v1,reserve,train,8.20,lRSMmxJeaKA,21,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,12.6 Experimental Evidence
+mitfld-rq1-35-v1,reserve,train,8.20,d8IDtE-Ea0o,22,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,11.2 Electric and Magnetic Fields
+mitfld-rq1-35-v1,reserve,train,8.20,QP-xHC_naJ4,23,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,3.2 Waves
+mitfld-rq1-35-v1,reserve,train,8.20,EsciE9ws4qw,24,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,"1.4 Guest Lecture: Space, Time, and Spacetime"
+mitfld-rq1-35-v1,reserve,train,8.20,uMc-j5aQTH8,25,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,1.1 Course Organization (8.20 Introduction to Special Relativity)
+mitfld-rq1-35-v1,reserve,train,8.20,aQAhRAn6ewc,26,https://ocw.mit.edu/8-20IAP21,youtube_description_course_url,9.1 Momentum Conservation
+mitfld-rq1-35-v1,reserve,train,11.382,brsHU2jA73E,2,https://ocw.mit.edu/11-382S21,youtube_description_course_url,The Confederated Salish-Kootenai Tribes - State of Montana Water Compact
+mitfld-rq1-35-v1,reserve,train,11.382,oqOtuChgsz4,3,https://ocw.mit.edu/11-382S21,youtube_description_course_url,"The Past, Present and Future of the Columbia River Treaty: A Case for Modernization"
+mitfld-rq1-35-v1,reserve,train,11.382,kAeDRfk6A9w,4,https://ocw.mit.edu/11-382S21,youtube_description_course_url,Integrated Water Resources Management / The Water-Energy-Food Nexus
+mitfld-rq1-35-v1,reserve,train,11.382,w2HASHQ8nYw,5,https://ocw.mit.edu/11-382S21,youtube_description_course_url,Ganges Water Conflicts between India and Bangladesh
+mitfld-rq1-35-v1,reserve,train,11.382,KmoodT_3XPQ,6,https://ocw.mit.edu/11-382S21,youtube_description_course_url,Enabling Conditions for Transboundary Water Agreements
+mitfld-rq1-35-v1,reserve,validation,24.900,TgwDg_svSnM,2,https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022,youtube_description_course_url,"Lecture 14: Syntax, Part 4"
+mitfld-rq1-35-v1,reserve,validation,24.900,vxOO8cIn398,3,https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022,youtube_description_course_url,"Lecture 4: Morphology, Part 3"
+mitfld-rq1-35-v1,reserve,validation,24.900,12UWP2ZhUl0,4,https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022,youtube_description_course_url,Lecture 26: Signed Languages
+mitfld-rq1-35-v1,reserve,validation,24.900,msSCIvkjbHI,5,https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022,youtube_description_course_url,"Lecture 21: Semantics, Part 5"
+mitfld-rq1-35-v1,reserve,validation,24.900,ruzcPdSyn8o,6,https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022,youtube_description_course_url,"Lecture 16: Syntax, Part 6"
+mitfld-rq1-35-v1,reserve,validation,24.900,caLQIEeYpEk,7,https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022,youtube_description_course_url,Lecture 25: Language Acquisition
+mitfld-rq1-35-v1,reserve,validation,24.900,wrcQ5wUVxd0,8,https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022,youtube_description_course_url,"Lecture 15: Syntax, Part 5"
+mitfld-rq1-35-v1,reserve,validation,24.900,5itfLAwQol8,9,https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022,youtube_description_course_url,Lecture 23: Historical Linguistics
+mitfld-rq1-35-v1,reserve,validation,24.900,q7pPG7V2ack,10,https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022,youtube_description_course_url,"Lecture 11: Syntax, Part 1"
+mitfld-rq1-35-v1,reserve,validation,24.900,4ndEWbwbIrA,11,https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022,youtube_description_course_url,"Lecture 13: Syntax, Part 3"
+mitfld-rq1-35-v1,reserve,validation,24.900,Di8e2opeGA0,12,https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022,youtube_description_course_url,"Lecture 17: Syntax, Part 7, and Semantics, Part 1"
+mitfld-rq1-35-v1,reserve,validation,24.900,NVQWWXhbUvs,13,https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022,youtube_description_course_url,"Lecture 6: Phonetics, Part 2"
+mitfld-rq1-35-v1,reserve,validation,24.900,6QRlpk8ZmPI,14,https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022,youtube_description_course_url,Lecture 22: Dialects
+mitfld-rq1-35-v1,reserve,validation,24.900,VymHeBjublw,15,https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022,youtube_description_course_url,"Lecture 20: Semantics, Part 4"
+mitfld-rq1-35-v1,reserve,validation,24.900,xZ8mnJPu95Q,16,https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022,youtube_description_course_url,"Lecture 5: Phonetics, Part 1"
+mitfld-rq1-35-v1,reserve,validation,24.900,vWC6Q3Dv1ws,17,https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022,youtube_description_course_url,"Lecture 19: Semantics, Part 3"
+mitfld-rq1-35-v1,reserve,validation,24.900,Mvy5hjAWeZw,18,https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022,youtube_description_course_url,"Lecture 2: Morphology, Part 1"
+mitfld-rq1-35-v1,reserve,validation,6.801,6SvDRpQeZrA,3,https://ocw.mit.edu/6-801F20,youtube_description_course_url,"Lecture 14: Inspection in PatQuick, Hough Transform, Homography, Position Determination, Multi-Scale"
+mitfld-rq1-35-v1,reserve,validation,6.801,qqtEQsBjh28,4,https://ocw.mit.edu/6-801F20,youtube_description_course_url,"Lecture 7: Gradient Space, Reflectance Map, Image Irradiance Equation, Gnomonic Projection"
+mitfld-rq1-35-v1,reserve,validation,6.801,OOrT17RsVxE,5,https://ocw.mit.edu/6-801F20,youtube_description_course_url,"Lecture 6: Photometric Stereo, Noise Gain, Error Amplification, Eigenvalues and Eigenvectors Review"
+mitfld-rq1-35-v1,reserve,validation,6.801,kigLhcTm_gg,6,https://ocw.mit.edu/6-801F20,youtube_description_course_url,"Lecture 19: Absolute Orientation in Closed Form, Outliers and Robustness, RANSAC"
+mitfld-rq1-35-v1,reserve,validation,6.801,kjCQ2DUn55Y,7,https://ocw.mit.edu/6-801F20,youtube_description_course_url,"Lecture 11: Edge Detection, Subpixel Position, CORDIC, Line Detection (US 6,408,109)"
+mitfld-rq1-35-v1,reserve,validation,6.801,uM5AoUgCA00,8,https://ocw.mit.edu/6-801F20,youtube_description_course_url,"Lecture 2: Image Formation, Perspective Projection, Time Derivative, Motion Field"
+mitfld-rq1-35-v1,reserve,validation,6.801,jLvgNmGuxGk,9,https://ocw.mit.edu/6-801F20,youtube_description_course_url,"Lecture 12: Blob Analysis, Binary Image Processing, Green's Theorem, Derivative and Integral"
+mitfld-rq1-35-v1,reserve,validation,6.801,Mcy-LlcD8jI,10,https://ocw.mit.edu/6-801F20,youtube_description_course_url,"Lecture 20: Space of Rotations, Regular Tessellations, Critical Surfaces, Binocular Stereo"
+mitfld-rq1-35-v1,reserve,validation,6.801,x4F1oqm7ETk,11,https://ocw.mit.edu/6-801F20,youtube_description_course_url,"Lecture 22: Exterior Orientation, Recovering Position & Orientation, Bundle Adjustment, Object Shape"
+mitfld-rq1-35-v1,reserve,validation,6.801,tY2gczObpfU,12,https://ocw.mit.edu/6-801F20,youtube_description_course_url,Lecture 1: Introduction to Machine Vision
+mitfld-rq1-35-v1,reserve,validation,6.801,s9wu_z8EKAc,13,https://ocw.mit.edu/6-801F20,youtube_description_course_url,"Lecture 23: Gaussian Image, Solids of Revolution, Direction Histograms, Regular Polyhedra"
+mitfld-rq1-35-v1,reserve,validation,6.801,LP7z6vVmnms,14,https://ocw.mit.edu/6-801F20,youtube_description_course_url,"Lecture 8: Shading, Special Cases, Lunar Surface, Scanning Electron Microscope, Green's Theorem"
+mitfld-rq1-35-v1,reserve,validation,6.801,-n0cXgPSwOw,15,https://ocw.mit.edu/6-801F20,youtube_description_course_url,"Lecture 21: Relative Orientation, Binocular Stereo, Structure, Quadrics, Calibration, Reprojection"
+mitfld-rq1-35-v1,reserve,validation,6.801,R8O0vlHBeNc,16,https://ocw.mit.edu/6-801F20,youtube_description_course_url,"Lecture 17: Photogrammetry, Orientation, Axes of Inertia, Symmetry, Orientation"
+mitfld-rq1-35-v1,reserve,validation,6.801,R1yLwFOfwwc,17,https://ocw.mit.edu/6-801F20,youtube_description_course_url,"Lecture 15: Alignment, PatMax, Distance Field, Filtering and Sub-Sampling (US 7,065,262)"
+mitfld-rq1-35-v1,reserve,validation,6.801,SSlPV1iYjHw,18,https://ocw.mit.edu/6-801F20,youtube_description_course_url,"Lecture 5: TCC and FOR MontiVision Demos, Vanishing Point, Use of VPs in Camera Calibration"
+mitfld-rq1-35-v1,reserve,validation,6.801,lVfm6C51t_Y,19,https://ocw.mit.edu/6-801F20,youtube_description_course_url,"Lecture 13: Object Detection, Recognition and Pose Determination, PatQuick (US 7,016,539)"
+mitfld-rq1-35-v1,reserve,validation,6.801,uiG6KY0Cqd8,20,https://ocw.mit.edu/6-801F20,youtube_description_course_url,"Lecture 18: Rotation and How to Represent It, Unit Quaternions, the Space of Rotations"
+mitfld-rq1-35-v1,reserve,validation,6.801,t9w_WuyVJ-A,21,https://ocw.mit.edu/6-801F20,youtube_description_course_url,"Lecture 3: Time to Contact, Focus of Expansion, Direct Motion Vision Methods, Noise Gain"
+mitfld-rq1-35-v1,reserve,validation,6.801,3NarS3QpaU0,22,https://ocw.mit.edu/6-801F20,youtube_description_course_url,"Lecture 4: Fixed Optical Flow, Optical Mouse, Constant Brightness Assumption, Closed Form Solution"
+mitfld-rq1-35-v1,reserve,validation,6.801,tblzZhYZtvU,23,https://ocw.mit.edu/6-801F20,youtube_description_course_url,"Lecture 16: Fast Convolution, Low Pass Filter Approximations, Integral Images (US 6,457,032)"
+mitfld-rq1-35-v1,reserve,validation,18.217,RwikpgvkN_o,3,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,22. Structure of set addition II: groups of bounded exponent and modeling lemma
+mitfld-rq1-35-v1,reserve,validation,18.217,YAo1sd4kuOQ,4,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,2. Forbidding a subgraph I: Mantel's theorem and Turán's theorem
+mitfld-rq1-35-v1,reserve,validation,18.217,4LYom0ekars,5,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,4. Forbidding a subgraph III: algebraic constructions
+mitfld-rq1-35-v1,reserve,validation,18.217,NpMv0Nqmy3c,6,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,5. Forbidding a subgraph IV: dependent random choice
+mitfld-rq1-35-v1,reserve,validation,18.217,EnPjyNsEHQM,7,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,13. Sparse regularity and the Green-Tao theorem
+mitfld-rq1-35-v1,reserve,validation,18.217,ydyiq1Z22gc,8,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,26. Sum-product problem and incidence geometry
+mitfld-rq1-35-v1,reserve,validation,18.217,50oEJs-HZHQ,9,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,19. Roth's theorem II: Fourier analytic proof in the integers
+mitfld-rq1-35-v1,reserve,validation,18.217,RD9AWDdj-Yk,10,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,7. Szemerédi's graph regularity lemma II: triangle removal lemma
+mitfld-rq1-35-v1,reserve,validation,18.217,IfwfCe-JZaI,11,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,24. Structure of set addition IV: proof of Freiman's theorem
+mitfld-rq1-35-v1,reserve,validation,18.217,hDwkKrWqdZE,12,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,3. Forbidding a subgraph II: complete bipartite subgraph
+mitfld-rq1-35-v1,reserve,validation,18.217,rBUFitIoE14,13,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,10. Szemerédi's graph regularity lemma V: hypergraph removal and spectral proof
+mitfld-rq1-35-v1,reserve,validation,18.217,TgPcNnUrE24,14,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,11. Pseudorandom graphs I: quasirandomness
+mitfld-rq1-35-v1,reserve,validation,18.217,RDO6Py97IDg,15,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,1. A bridge between graph theory and additive combinatorics
+mitfld-rq1-35-v1,reserve,validation,18.217,DUA6lk7X2VY,16,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,20. Roth's theorem III: polynomial method and arithmetic regularity
+mitfld-rq1-35-v1,reserve,validation,18.217,nCWwhF0TkVI,17,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,16. Graph limits III: compactness and applications
+mitfld-rq1-35-v1,reserve,validation,18.217,P3tGiT72APw,18,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,14. Graph limits I: introduction
+mitfld-rq1-35-v1,reserve,validation,18.217,mJziV7sAZm4,19,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,17. Graph limits IV: inequalities between subgraph densities
+mitfld-rq1-35-v1,reserve,validation,18.217,9gy-CAwx0Ls,20,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,15. Graph limits II: regularity and counting
+mitfld-rq1-35-v1,reserve,validation,18.217,3IxWLibV_tU,21,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,9. Szemerédi's graph regularity lemma IV: induced removal lemma
+mitfld-rq1-35-v1,reserve,validation,18.217,oiKLWa_0dhs,22,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,8. Szemerédi's graph regularity lemma III: further applications
+mitfld-rq1-35-v1,reserve,validation,18.217,buEtwpGvQpI,23,https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019,description_code_term_corrected_ocw_canonical,18. Roth's theorem I: Fourier analytic proof over finite field
+mitfld-rq1-35-v1,reserve,validation,9.40,vQpo3rTwUjc,3,https://ocw.mit.edu/9-40S18,youtube_description_course_url,19: Neural Integrators - Intro to Neural Computation
+mitfld-rq1-35-v1,reserve,validation,9.40,4ip-4ai6kN8,4,https://ocw.mit.edu/9-40S18,youtube_description_course_url,11: Spectral Analysis Part 1 - Intro to Neural Computation
+mitfld-rq1-35-v1,reserve,validation,9.40,Oq_k8F2T1Jc,5,https://ocw.mit.edu/9-40S18,youtube_description_course_url,15: Matrix Operations - Intro to Neural Computation
+mitfld-rq1-35-v1,reserve,validation,9.40,KXnHxZdn8NU,6,https://ocw.mit.edu/9-40S18,youtube_description_course_url,3: Resistor Capacitor Neuron Model - Intro to Neural Computation
+mitfld-rq1-35-v1,reserve,validation,9.40,K1pxJVdqlxw,7,https://ocw.mit.edu/9-40S18,youtube_description_course_url,5: Hodgkin-Huxley Model Part 2 - Intro to Neural Computation
+mitfld-rq1-35-v1,reserve,validation,9.40,VQXxs59Eiak,8,https://ocw.mit.edu/9-40S18,youtube_description_course_url,13: Spectral Analysis Part 3 - Intro to Neural Computation
+mitfld-rq1-35-v1,reserve,validation,9.40,dNHqd6nGr5o,9,https://ocw.mit.edu/9-40S18,youtube_description_course_url,6: Dendrites - Intro to Neural Computation
+mitfld-rq1-35-v1,reserve,validation,9.40,gt52wUN3VrQ,10,https://ocw.mit.edu/9-40S18,youtube_description_course_url,20: Hopfield Networks - Intro to Neural Computation
+mitfld-rq1-35-v1,reserve,validation,9.40,Yjeexoq_WAI,11,https://ocw.mit.edu/9-40S18,youtube_description_course_url,16: Basis Sets - Intro to Neural Computation
+mitfld-rq1-35-v1,reserve,validation,9.40,PnJEj6TokDA,12,https://ocw.mit.edu/9-40S18,youtube_description_course_url,1: Course Overview and Ionic Currents - Intro to Neural Computation
+mitfld-rq1-35-v1,reserve,validation,9.40,88tKZLGOr3M,13,https://ocw.mit.edu/9-40S18,youtube_description_course_url,4: Hodgkin-Huxley Model Part 1 - Intro to Neural Computation
+mitfld-rq1-35-v1,reserve,validation,9.40,EpPtCLkCGOk,14,https://ocw.mit.edu/9-40S18,youtube_description_course_url,18: Recurrent Networks - Intro to Neural Computation
+mitfld-rq1-35-v1,reserve,validation,9.40,5KhcA454er0,15,https://ocw.mit.edu/9-40S18,youtube_description_course_url,14: Rate Models and Perceptrons - Intro to Neural Computation
+mitfld-rq1-35-v1,reserve,validation,9.40,fCqt07IXUPI,16,https://ocw.mit.edu/9-40S18,youtube_description_course_url,9: Receptive Fields - Intro to Neural Computation
+mitfld-rq1-35-v1,reserve,validation,9.40,N-49t1j-XWY,17,https://ocw.mit.edu/9-40S18,youtube_description_course_url,17: Principal Components Analysis_ - Intro to Neural Computation
+mitfld-rq1-35-v1,reserve,validation,9.40,osYGG7TKcz8,18,https://ocw.mit.edu/9-40S18,youtube_description_course_url,8: Spike Trains - Intro to Neural Computation
+mitfld-rq1-35-v1,reserve,validation,9.40,3GC721pNRLE,19,https://ocw.mit.edu/9-40S18,youtube_description_course_url,2: Resistor Capacitor Circuit and Nernst Potential - Intro to Neural Computation
+mitfld-rq1-35-v1,reserve,validation,5.310,EuVpZmQ5v6A,2,https://ocw.mit.edu/5-310F19,youtube_description_course_url,2. The Ferrocene Lecture
+mitfld-rq1-35-v1,reserve,validation,5.310,LNCLrmAvSlU,3,https://ocw.mit.edu/5-310F19,youtube_description_course_url,8. Essential Oils Lecture Part 1
+mitfld-rq1-35-v1,reserve,validation,5.310,OQq7qH74T5E,4,https://ocw.mit.edu/5-310F19,youtube_description_course_url,"5. Ellen Swallow Richards, Part 1"
+mitfld-rq1-35-v1,reserve,validation,5.310,yiSZecIWBIc,5,https://ocw.mit.edu/5-310F19,youtube_description_course_url,12. Catalase Acid Part 2
+mitfld-rq1-35-v1,reserve,validation,5.310,-l9SfGuZJYE,6,https://ocw.mit.edu/5-310F19,youtube_description_course_url,"6. Ellen Swallow Richards, Part 2"
+mitfld-rq1-35-v1,reserve,validation,5.310,oc7sODbVGuA,7,https://ocw.mit.edu/5-310F19,youtube_description_course_url,10. Fischer Esterification Part 1
+mitfld-rq1-35-v1,reserve,validation,5.310,l1hMkDTg2lg,8,https://ocw.mit.edu/5-310F19,youtube_description_course_url,1. Introductory Lecture to 5.310
+mitfld-rq1-35-v1,reserve,validation,5.310,J23egLCM2tc,9,https://ocw.mit.edu/5-310F19,youtube_description_course_url,3. Writing Up the Lab Report
+mitfld-rq1-35-v1,reserve,validation,5.310,TgrNa_Guigs,10,https://ocw.mit.edu/5-310F19,youtube_description_course_url,11. Catalase Part 1
+mitfld-rq1-35-v1,reserve,validation,5.310,dgRLgf4oO2s,11,https://ocw.mit.edu/5-310F19,youtube_description_course_url,14. Mass Spectroscopy Esterification Lecture Part 2
+mitfld-rq1-35-v1,reserve,validation,5.310,sV_yiHbMUF8,12,https://ocw.mit.edu/5-310F19,youtube_description_course_url,4. What's Significant in Laboratory Measurement? Error Analysis Lecture
+mitfld-rq1-35-v1,reserve,validation,5.310,sukzgrxfSx8,13,https://ocw.mit.edu/5-310F19,youtube_description_course_url,9. Essential Oils Lecture Part 2
+mitfld-rq1-35-v1,reserve,validation,5.310,Ea2YTXJrhkM,14,https://ocw.mit.edu/5-310F19,youtube_description_course_url,15. NMR Spectroscopy Esterification Lecture Part 3
+mitfld-rq1-35-v1,reserve,final_test,7.05,33w-baH49rA,2,https://ocw.mit.edu/7-05S20,youtube_description_course_url,26. Oxidative Phosphorylation/Photosynthesis I
+mitfld-rq1-35-v1,reserve,final_test,7.05,KLb5CmPM7YY,3,https://ocw.mit.edu/7-05S20,youtube_description_course_url,12. Carbohydrates/Introduction to Membranes
+mitfld-rq1-35-v1,reserve,final_test,7.05,t0eXy4RKEys,4,https://ocw.mit.edu/7-05S20,youtube_description_course_url,24. Lipids and Fatty Acid Oxidation
+mitfld-rq1-35-v1,reserve,final_test,7.05,o1pSk-sgFCA,5,https://ocw.mit.edu/7-05S20,youtube_description_course_url,27. Photosynthesis II/CO2 Assimilation
+mitfld-rq1-35-v1,reserve,final_test,7.05,NTPCKnYLacw,6,https://ocw.mit.edu/7-05S20,youtube_description_course_url,29. Lipid Synthesis
+mitfld-rq1-35-v1,reserve,final_test,7.05,7uCfPTwwYIc,7,https://ocw.mit.edu/7-05S20,youtube_description_course_url,31. Amino Acid Metabolism II
+mitfld-rq1-35-v1,reserve,final_test,7.05,2Q1GUhhc9is,8,https://ocw.mit.edu/7-05S20,youtube_description_course_url,25. Oxidative Phosphorylation
+mitfld-rq1-35-v1,reserve,final_test,7.05,7Z1CfKUOQVs,9,https://ocw.mit.edu/7-05S20,youtube_description_course_url,30. Nitrogen/Amino Acid Metabolism I
+mitfld-rq1-35-v1,reserve,final_test,7.05,m8-I1iey_4U,10,https://ocw.mit.edu/7-05S20,youtube_description_course_url,19. Introduction Metabolism/Polysaccharides/Bioenergetics/Intro Pathways
+mitfld-rq1-35-v1,reserve,final_test,7.05,PwrmTuwSX0Y,11,https://ocw.mit.edu/7-05S20,youtube_description_course_url,28. Pentose Phosphate Pathway
+mitfld-rq1-35-v1,reserve,final_test,7.05,i6GlN02PDr8,12,https://ocw.mit.edu/7-05S20,youtube_description_course_url,22. Glucogenesis/Carbohydrate Storage/TCA Cycle I
+mitfld-rq1-35-v1,reserve,final_test,7.05,xxydY73V9bQ,13,https://ocw.mit.edu/7-05S20,youtube_description_course_url,20. Bioenergetics/Intro Pathways/Glycolysis I
+mitfld-rq1-35-v1,reserve,final_test,7.05,3fSY92mJwQY,14,https://ocw.mit.edu/7-05S20,youtube_description_course_url,23. TCA Cycle II
+mitfld-rq1-35-v1,reserve,final_test,14.04,cAFh3oWw6Vc,3,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Lecture 11: Contracts and Mechanism Design
+mitfld-rq1-35-v1,reserve,final_test,14.04,aaLDUlJXXNM,4,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Lecture 6:  Dynamics and Programming
+mitfld-rq1-35-v1,reserve,final_test,14.04,FGxxnOLvSfg,5,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,"Lecture 12: Contract Application, Obstacles"
+mitfld-rq1-35-v1,reserve,final_test,14.04,O5YwAGe8rmk,6,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Lecture 15: Data and Policy in the United States
+mitfld-rq1-35-v1,reserve,final_test,14.04,lUqwzrkO5fw,7,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Lecture 20: Failure of Welfare Theorems
+mitfld-rq1-35-v1,reserve,final_test,14.04,QcUUGlsSXmY,8,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Lecture 9: Risk-Sharing with Production
+mitfld-rq1-35-v1,reserve,final_test,14.04,EK1pgrHeqpQ,9,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Lecture 7: Pareto Optimality
+mitfld-rq1-35-v1,reserve,final_test,14.04,DGoILxx9KsE,10,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Lecture 3: Income and Substitution Effects
+mitfld-rq1-35-v1,reserve,final_test,14.04,s0gfi3OrtQk,11,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Lecture 5: Uncertainty and Linear Programs
+mitfld-rq1-35-v1,reserve,final_test,14.04,Dqko567cE9I,12,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Final Exam Review for Intermediate Microeconomic Theory
+mitfld-rq1-35-v1,reserve,final_test,14.04,XSTSfCs74bg,13,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Lecture 1: Economic Science
+mitfld-rq1-35-v1,reserve,final_test,14.04,eBb1BLE4am0,14,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Lecture 17: Existence of Equilibria
+mitfld-rq1-35-v1,reserve,final_test,14.04,ANprMjSgTZY,15,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Exam #1 Review for Intermediate Microeconomic Theory
+mitfld-rq1-35-v1,reserve,final_test,14.04,5rjoqINtRbs,16,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Lecture 10: Ledgers and Management
+mitfld-rq1-35-v1,reserve,final_test,14.04,3X3b1GMniC4,17,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Lecture 13: Walrasian Equilibrium and Trade
+mitfld-rq1-35-v1,reserve,final_test,14.04,JZplGZVCdN8,18,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Exam #2 Review for Intermediate Microeconomic Theory
+mitfld-rq1-35-v1,reserve,final_test,14.04,rWnyP-iZGu4,19,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Lecture 19: Identification and Falsification
+mitfld-rq1-35-v1,reserve,final_test,14.04,6Tm4bHa28Ck,20,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Lecture 8: Risk-Sharing Application
+mitfld-rq1-35-v1,reserve,final_test,14.04,R8k2x5qJgO4,21,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Lecture 14: Real and Financial Flows: Thailand
+mitfld-rq1-35-v1,reserve,final_test,14.04,rhOpABGewYA,22,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Lecture 2: Consumer Choice
+mitfld-rq1-35-v1,reserve,final_test,14.04,h0IfCMqepfM,23,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Lecture 16: Fundamental Welfare Theorems
+mitfld-rq1-35-v1,reserve,final_test,14.04,pAP1HKzueqc,24,https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020,youtube_description_course_url,Lecture 18: Aggregation
+mitfld-rq1-35-v1,reserve,final_test,3.091,S1kqa_qGmHs,3,https://ocw.mit.edu/3-091F18,youtube_description_course_url,22. X-ray Diffraction Techniques II (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,Yap0AKRczf0,4,https://ocw.mit.edu/3-091F18,youtube_description_course_url,17. Metals (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,ZSv_gYLBi8E,5,https://ocw.mit.edu/3-091F18,youtube_description_course_url,29. Acids and Bases I (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,iPzRbK3wApI,6,https://ocw.mit.edu/3-091F18,youtube_description_course_url,34. Introduction to Organic Chemistry (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,AqCz_b7VJK8,7,https://ocw.mit.edu/3-091F18,youtube_description_course_url,21. X-ray Diffraction Techniques I (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,uOEXP2WEo3M,8,https://ocw.mit.edu/3-091F18,youtube_description_course_url,Additional Lecture 2. The Chemistry of Batteries (Intro to Solid-State Chemistry 2019)
+mitfld-rq1-35-v1,reserve,final_test,3.091,R0sw85RkKCY,9,https://ocw.mit.edu/3-091F18,youtube_description_course_url,18. Introduction to Crystallography (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,UzDqh-1Koyc,10,https://ocw.mit.edu/3-091F18,youtube_description_course_url,13. Hybridization (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,Ep7mkm_T0Po,11,https://ocw.mit.edu/3-091F18,youtube_description_course_url,16. Doping (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,iLCVVag7Z7M,12,https://ocw.mit.edu/3-091F18,youtube_description_course_url,Goodie Bag 3: Ionic Solids (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,LV3l9yqJwio,13,https://ocw.mit.edu/3-091F18,youtube_description_course_url,8. Ionization Energy and Potential Energy Surface (PES) (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,bhPMi2IvZXs,14,https://ocw.mit.edu/3-091F18,youtube_description_course_url,7. Aufbau Principle and Atomic Orbitals (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,4Dr3Q-ezMZk,15,https://ocw.mit.edu/3-091F18,youtube_description_course_url,"6. Electron Shell Model, Quantum Numbers, and PES (Intro to Solid-State Chemistry)"
+mitfld-rq1-35-v1,reserve,final_test,3.091,cMIRECEsKHM,16,https://ocw.mit.edu/3-091F18,youtube_description_course_url,33. Polymers II (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,j4m0Ye5Qgcg,17,https://ocw.mit.edu/3-091F18,youtube_description_course_url,35. Diffusion I (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,Ji20_qhjk2Y,18,https://ocw.mit.edu/3-091F18,youtube_description_course_url,4. Atomic Spectra (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,KBgF_4xmahM,19,https://ocw.mit.edu/3-091F18,youtube_description_course_url,Goodie Bag 2: Electronic Transitions (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,L0b9wq0js4I,20,https://ocw.mit.edu/3-091F18,youtube_description_course_url,12. Molecular Orbitals (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,CxAkraYlBuE,21,https://ocw.mit.edu/3-091F18,youtube_description_course_url,15. Semiconductors (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,e_WABkM-Kxo,22,https://ocw.mit.edu/3-091F18,youtube_description_course_url,3. Atomic Models (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,xrf39mMxPZg,23,https://ocw.mit.edu/3-091F18,youtube_description_course_url,30. Acids and Bases II (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,rkFY8WB8tfs,24,https://ocw.mit.edu/3-091F18,youtube_description_course_url,5. Shell Models and Quantum Numbers (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,u0h5IUouNk0,25,https://ocw.mit.edu/3-091F18,youtube_description_course_url,Goodie Bag 5: Electronic Materials (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,9SvAZgd0J_A,26,https://ocw.mit.edu/3-091F18,youtube_description_course_url,28. Introduction to Aqueous Solutions (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,g4lxRZ7T5_o,27,https://ocw.mit.edu/3-091F18,youtube_description_course_url,19. Crystallographic Notation (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,aCJECIYz8gM,28,https://ocw.mit.edu/3-091F18,youtube_description_course_url,10. Lewis Structures II (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,vewtUlemzto,29,https://ocw.mit.edu/3-091F18,youtube_description_course_url,Goodie Bag 1: Atoms and Reactions (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,UF94OiDYgBY,30,https://ocw.mit.edu/3-091F18,youtube_description_course_url,36. Diffusion II (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,AbyrF4VtlYY,31,https://ocw.mit.edu/3-091F18,youtube_description_course_url,25. Introduction to Glassy Solids (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,GhwBpZx3LjI,32,https://ocw.mit.edu/3-091F18,youtube_description_course_url,27. Reaction Rates (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,P34zaLtmsn0,33,https://ocw.mit.edu/3-091F18,youtube_description_course_url,Additional Lecture 1. Phases (Intro to Solid-State Chemistry 2019)
+mitfld-rq1-35-v1,reserve,final_test,3.091,BbascVoYf_E,34,https://ocw.mit.edu/3-091F18,youtube_description_course_url,Goodie Bag 7: Defects (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,Ao41FrJFgvQ,35,https://ocw.mit.edu/3-091F18,youtube_description_course_url,1. Introduction (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,7_IoLAXtQ3k,36,https://ocw.mit.edu/3-091F18,youtube_description_course_url,24. Point and Line Defects II (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,1rgmGwAqMYc,37,https://ocw.mit.edu/3-091F18,youtube_description_course_url,31. Exam Review (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,HaL1Q8f7M_o,38,https://ocw.mit.edu/3-091F18,youtube_description_course_url,2. The Periodic Table (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,wFuIzicEWD8,39,https://ocw.mit.edu/3-091F18,youtube_description_course_url,Goodie Bag 6: Crystallography (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,KPJvO_00LKQ,40,https://ocw.mit.edu/3-091F18,youtube_description_course_url,26. Engineering Glass Properties (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,YROT1JTNLWs,41,https://ocw.mit.edu/3-091F18,youtube_description_course_url,23. Point and Line Defects I (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,cSER5tjagqE,42,https://ocw.mit.edu/3-091F18,youtube_description_course_url,Goodie Bag 8: Reactions (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,OMFpHmfC1pY,43,https://ocw.mit.edu/3-091F18,youtube_description_course_url,14. Intermolecular Forces (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,3.091,g9v8zj6VObw,44,https://ocw.mit.edu/3-091F18,youtube_description_course_url,11. Shapes of Molecules and VSEPR (Intro to Solid-State Chemistry)
+mitfld-rq1-35-v1,reserve,final_test,11.165,pCR98Hv-HUk,2,https://ocw.mit.edu/courses/11-165j-urban-energy-systems-and-policy-fall-2022,youtube_description_course_url,Lecture 15: Cities and the Grid
+mitfld-rq1-35-v1,reserve,final_test,11.165,aPdgRxcP2lA,3,https://ocw.mit.edu/courses/11-165j-urban-energy-systems-and-policy-fall-2022,youtube_description_course_url,Lecture 11: Cities and Industrial Emissions
+mitfld-rq1-35-v1,reserve,final_test,11.165,IdG07-Ga4BM,4,https://ocw.mit.edu/courses/11-165j-urban-energy-systems-and-policy-fall-2022,youtube_description_course_url,Lecture 6: Cities and Transport Systems
+mitfld-rq1-35-v1,reserve,final_test,11.165,ITE9w9wKVKU,5,https://ocw.mit.edu/courses/11-165j-urban-energy-systems-and-policy-fall-2022,youtube_description_course_url,"Lecture 13: Cities and Renewable Energy, part 1: Wind"
+mitfld-rq1-35-v1,reserve,final_test,11.165,rL25BoFW1V4,6,https://ocw.mit.edu/courses/11-165j-urban-energy-systems-and-policy-fall-2022,youtube_description_course_title,Lecture 7: Transportation Systems: What Can Cities Do?
+mitfld-rq1-35-v1,reserve,final_test,11.165,Q9XXlbNaOXI,7,https://ocw.mit.edu/courses/11-165j-urban-energy-systems-and-policy-fall-2022,youtube_description_course_url,Lecture 3: Cities and a Just Energy Transition
+mitfld-rq1-35-v1,reserve,final_test,11.165,V2P5SXVl2KA,8,https://ocw.mit.edu/courses/11-165j-urban-energy-systems-and-policy-fall-2022,youtube_description_course_url,"Lecture 4: The Built Environment, Land Use, and Decarbonization"
+mitfld-rq1-35-v1,reserve,final_test,11.165,3WXWESx6jWY,9,https://ocw.mit.edu/courses/11-165j-urban-energy-systems-and-policy-fall-2022,youtube_description_course_url,"Lecture 14: Cities and Renewable Energy, part 2: Solar"
+mitfld-rq1-35-v1,reserve,final_test,11.165,u1_Wq00b4J8,10,https://ocw.mit.edu/courses/11-165j-urban-energy-systems-and-policy-fall-2022,youtube_description_course_url,Lecture 10: Cities and the Idea of Energy Efficiency
+mitfld-rq1-35-v1,reserve,final_test,11.165,axV4oIluQwY,11,https://ocw.mit.edu/courses/11-165j-urban-energy-systems-and-policy-fall-2022,youtube_description_course_url,"Lecture 1: Cities and Climate Action: Or, Why Take This Class?"
+mitfld-rq1-35-v1,reserve,final_test,11.165,3jtSEeDiYvE,12,https://ocw.mit.edu/courses/11-165j-urban-energy-systems-and-policy-fall-2022,youtube_description_course_url,Lecture 2: Cities and Decarbonization
+mitfld-rq1-35-v1,reserve,final_test,11.165,EWFGkZ64ng4,13,https://ocw.mit.edu/courses/11-165j-urban-energy-systems-and-policy-fall-2022,youtube_description_course_url,Lecture 5: Energy and Personal Transport
+mitfld-rq1-35-v1,reserve,final_test,11.165,fQm97XdYErA,14,https://ocw.mit.edu/courses/11-165j-urban-energy-systems-and-policy-fall-2022,youtube_description_course_url,"Lecture 12: Cities, Future Fossil Fuel Use, CCUS, and Nuclear Energy"
+mitfld-rq1-35-v1,reserve,final_test,MAS.S62,7o5shPC0R2k,3,https://ocw.mit.edu/MAS-S62S18,youtube_description_course_url,12. Transaction Malleability and Segregated Witness
+mitfld-rq1-35-v1,reserve,final_test,MAS.S62,hNR3WTboo_U,4,https://ocw.mit.edu/MAS-S62S18,youtube_description_course_url,14. Lightning Network and Cross-chain Swaps
+mitfld-rq1-35-v1,reserve,final_test,MAS.S62,gF4Mkkhyz1Q,5,https://ocw.mit.edu/MAS-S62S18,youtube_description_course_url,"16. MAST, Taproot, Graftroot"
+mitfld-rq1-35-v1,reserve,final_test,MAS.S62,CCeq5PChvuk,6,https://ocw.mit.edu/MAS-S62S18,youtube_description_course_url,7. Catena: Efficient Non-equivocation via Bitcoin
+mitfld-rq1-35-v1,reserve,final_test,MAS.S62,zYzEmBlJ77s,7,https://ocw.mit.edu/MAS-S62S18,youtube_description_course_url,2. Proof of Work and Mining
+mitfld-rq1-35-v1,reserve,final_test,MAS.S62,BFwc2XA8rSk,8,https://ocw.mit.edu/MAS-S62S18,youtube_description_course_url,"17. Anonymity, Coinjoin and Signature Aggregation"
+mitfld-rq1-35-v1,reserve,final_test,MAS.S62,P6AX8KdXAts,9,https://ocw.mit.edu/MAS-S62S18,youtube_description_course_url,15. Discreet Log Contracts
+mitfld-rq1-35-v1,reserve,final_test,MAS.S62,1Qws70XGSq4,10,https://ocw.mit.edu/MAS-S62S18,youtube_description_course_url,5. Synchronization Process and Pruning
+mitfld-rq1-35-v1,reserve,final_test,MAS.S62,U2yAcsj7P_E,11,https://ocw.mit.edu/MAS-S62S18,youtube_description_course_url,8. Forks
+mitfld-rq1-35-v1,reserve,final_test,MAS.S62,IJquEYhiq_U,12,https://ocw.mit.edu/MAS-S62S18,youtube_description_course_url,"1. Signatures, Hashing, Hash Chains, e-cash, and Motivation"
+mitfld-rq1-35-v1,reserve,final_test,MAS.S62,Hzv9WuqIzA0,13,https://ocw.mit.edu/MAS-S62S18,youtube_description_course_url,13. Payment Channels and Lightning Network
+mitfld-rq1-35-v1,reserve,final_test,MAS.S62,mBdrvfytLDQ,14,https://ocw.mit.edu/MAS-S62S18,youtube_description_course_url,22. Alternative Consensus Mechanisms
+mitfld-rq1-35-v1,reserve,final_test,MAS.S62,UySc4jxbqi4,15,https://ocw.mit.edu/MAS-S62S18,youtube_description_course_url,18. Confidential Transactions
+mitfld-rq1-35-v1,reserve,final_test,MAS.S62,VT2o4KCEbes,16,https://ocw.mit.edu/MAS-S62S18,youtube_description_course_url,4. Transactions and the UTXO model
+mitfld-rq1-35-v1,reserve,final_test,MAS.S62,wXWbdiOBW5w,17,https://ocw.mit.edu/MAS-S62S18,youtube_description_course_url,11. Fees
+mitfld-rq1-35-v1,reserve,final_test,MAS.S62,yKa-KxY-YJk,18,https://ocw.mit.edu/MAS-S62S18,youtube_description_course_url,24. zkLedger
+mitfld-rq1-35-v1,reserve,final_test,MAS.S62,0Q5IimX-AAc,19,https://ocw.mit.edu/MAS-S62S18,youtube_description_course_url,3. Signatures

@@ -1,0 +1,4 @@
+course_id,lecture_no,filename,source_url,expected_bytes,duration_s,rights_status,acquisition_action,known_sha256
+amst246,9,amst246_09_092911.m4v,https://openmedia.yale.edu/projects/courses/fall11/amst246/iphone/amst246_09_092911.m4v,112094523,3063.138,pending_component_review,download,
+phil181,1,phil181_01_011111.m4v,https://openmedia.yale.edu/projects/courses/spring11/phil181/iphone/phil181_01_011111.m4v,217882600,2570.678,pending_component_review,download,
+rlst145,3,rlst145_03_091306.m4v,https://openmedia.yale.edu/projects/courses/fall06/rlst145/iphone/rlst145_03_091306.m4v,255272327,2862.901,pending_component_review,download,

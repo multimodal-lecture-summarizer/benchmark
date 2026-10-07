@@ -1,0 +1,10 @@
+course_id,lecture_no,component_signal,evidence_url,internal_metrics_only_status,next_evidence
+econ159,2,no_specific_third_party_signal_in_reviewed_page,https://oyc.yale.edu/economics/econ-159/lecture-2,full_mov_rights_unverified,review_full_decoded_media_and_attached_material
+econ251,1,dow_and_case_shiller_charts_mentioned,https://oyc.yale.edu/economics/econ-251/lecture-1,visual_source_review,identify_chart_source_and_apparition_in_mov
+econ25208,6,stock_market_charts_in_course_slides,https://oyc.yale.edu/sites/default/files/Lecture06_0.pdf,visual_source_review,identify_chart_source_and_apparition_in_mov
+engl220,23,no_specific_third_party_signal_in_reviewed_page,https://oyc.yale.edu/english/engl-220/lecture-23,full_mov_rights_unverified,review_full_decoded_media_and_attached_material
+engl291,10,substantial_modern_literary_reading,https://oyc.yale.edu/english/engl-291/lecture-10,rights_hold,establish_basis_for_internal_processing_of_excerpt
+engl300,16,modern_theory_excerpts_in_handout,https://oyc.yale.edu/sites/default/files/jaussbakhtin_0.pdf,rights_hold,establish_basis_for_internal_processing_of_excerpts
+engl310,4,modern_poems_and_external_images_in_handout,https://oyc.yale.edu/sites/default/files/handout4_0.pdf,rights_hold,establish_basis_for_internal_processing_of_poems_and_images
+phys200,19,no_specific_third_party_signal_in_reviewed_page,https://oyc.yale.edu/physics/phys-200/lecture-19,full_mov_rights_unverified,review_full_decoded_media_and_attached_material
+phys201,10,no_specific_third_party_signal_in_reviewed_page,https://oyc.yale.edu/physics/phys-201/lecture-10,full_mov_rights_unverified,review_full_decoded_media_and_attached_material

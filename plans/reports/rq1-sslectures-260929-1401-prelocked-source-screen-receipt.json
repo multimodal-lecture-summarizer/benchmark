@@ -1,0 +1,23 @@
+{
+  "created_local": "2026-09-29 14:03 Asia/Bangkok",
+  "purpose": "metadata-only qualification sample; not chapter GT or D2",
+  "source_url": "https://zenodo.org/api/records/10498680/files/mit_videos_all_courses_segmentations.csv/content",
+  "source_bytes": 83829839,
+  "source_sha256": "c9261cccb1f637c25d0e0ccb1cbc72ecf78128dc790bb69eb1c9826efd6be609",
+  "source_rows": 1378,
+  "course_count": 69,
+  "selection_rule": "Sort distinct Course Name values ordinally; select rounded positions i*(N-1)/4 for i=0..4; within each course sort Lecture name case-insensitively, tie-break by CSV line; take first two available. No GT values or model outputs used for selection.",
+  "course_indices_zero_based": [0, 17, 34, 51, 68],
+  "selected": [
+    {"csv_line_one_based": 4, "course": "Atomic and Optical Physics I", "lecture": "10. Atoms in External Fields II"},
+    {"csv_line_one_based": 404, "course": "Fundamentals of Photovoltaics", "lecture": "13. Thin Films: Material Choices & Manufacturing, Part II"},
+    {"csv_line_one_based": 405, "course": "Fundamentals of Photovoltaics", "lecture": "16. Solar Cell Characterization"},
+    {"csv_line_one_based": 740, "course": "Laboratory Chemistry", "lecture": "11. Catalase Part 1"},
+    {"csv_line_one_based": 736, "course": "Laboratory Chemistry", "lecture": "2. The Ferrocene Lecture"},
+    {"csv_line_one_based": 1016, "course": "Psychology and Economics", "lecture": "Lecture 11: Social Preferences II"},
+    {"csv_line_one_based": 1017, "course": "Psychology and Economics", "lecture": "Lecture 13: Social Preferences IV"},
+    {"csv_line_one_based": 1365, "course": "Topics in Mathematics with Applications in Finance", "lecture": "1. Introduction, Financial Terms and Concepts"},
+    {"csv_line_one_based": 1370, "course": "Topics in Mathematics with Applications in Finance", "lecture": "11. Time Series Analysis II"}
+  ],
+  "screening_state": "prelocked_before_publisher_page_review"
+}

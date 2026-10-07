@@ -1,0 +1,507 @@
+{
+  "schema": "rq1-locked-yale-media-decode/1",
+  "qualification_only": true,
+  "created_utc": "2026-09-29T16:16:00.587329+00:00",
+  "manifests": [
+    {
+      "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\plans\\reports\\rq1-yale-vidchapters-media-acquisition-260929.csv",
+      "sha256": "011e68a777f471deb65d55eba560474b9158743dd6a33e2e0ae1c5934eb5a592"
+    },
+    {
+      "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\plans\\reports\\rq1-yale-vidchapters-media-acquisition-b-260929.csv",
+      "sha256": "baa51619c9a0d417854a7155d88d52c4bc816aec1afc5d208ec117b020abb78d"
+    },
+    {
+      "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\plans\\reports\\rq1-yale-native-media-acquisition-260929.csv",
+      "sha256": "23a82125463f9e7768e91ac557502fee7ca8938ab09dad9a9c105fe04fef6a1f"
+    }
+  ],
+  "files": [
+    {
+      "course_id": "amst246",
+      "lecture_no": 9,
+      "publisher_media_url": "https://openmedia.yale.edu/projects/courses/fall11/amst246/iphone/amst246_09_092911.m4v",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\vidchapters_batch\\amst246_09_092911.m4v",
+      "bytes": 112094523,
+      "sha256": "482592e24c6b40f213c8193a0b1b46b568ff0b24076490840f410ce454b255fe",
+      "manifest_duration_sec": 3063.138,
+      "decoded_duration_sec": 3063.133333,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "ffprobe_warning": "[mov,mp4,m4a,3gp,3g2,mj2 @ 000001f758eba980] Referenced QT chapter track not found",
+      "ffmpeg_warning": "[mov,mp4,m4a,3gp,3g2,mj2 @ 00000293fa3f7580] Referenced QT chapter track not found",
+      "full_audio_video_decode": "pass"
+    },
+    {
+      "course_id": "phil181",
+      "lecture_no": 1,
+      "publisher_media_url": "https://openmedia.yale.edu/projects/courses/spring11/phil181/iphone/phil181_01_011111.m4v",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\vidchapters_batch\\phil181_01_011111.m4v",
+      "bytes": 217882600,
+      "sha256": "62451962c55ec55b7050963ca7a9980178f66e64c24cca0ae2a24979bc1970eb",
+      "manifest_duration_sec": 2570.678,
+      "decoded_duration_sec": 2570.637304,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "ffprobe_warning": "",
+      "ffmpeg_warning": "",
+      "full_audio_video_decode": "pass"
+    },
+    {
+      "course_id": "rlst145",
+      "lecture_no": 3,
+      "publisher_media_url": "https://openmedia.yale.edu/projects/courses/fall06/rlst145/iphone/rlst145_03_091306.m4v",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\vidchapters_batch\\rlst145_03_091306.m4v",
+      "bytes": 255272327,
+      "sha256": "8e54c362fa710ee078eed00aa0f2f4d93599c5c91076023a610abf2007ebe9fc",
+      "manifest_duration_sec": 2862.901,
+      "decoded_duration_sec": 2862.862863,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "ffprobe_warning": "[mov,mp4,m4a,3gp,3g2,mj2 @ 000001bb21d9a980] Referenced QT chapter track not found",
+      "ffmpeg_warning": "[mov,mp4,m4a,3gp,3g2,mj2 @ 0000019ad29a7580] Referenced QT chapter track not found",
+      "full_audio_video_decode": "pass"
+    },
+    {
+      "course_id": "chem125b",
+      "lecture_no": 38,
+      "publisher_media_url": "https://openmedia.yale.edu/projects/courses/spring11/chem125b/iphone/chem125_38_042911.m4v",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\vidchapters_batch_b\\chem125_38_042911.m4v",
+      "bytes": 125576306,
+      "sha256": "0aa6c10f36a1f020d2548ec3616dc5170f9cb4680ca0a0f6981b50961cf2eb9a",
+      "manifest_duration_sec": 3128.943,
+      "decoded_duration_sec": 3128.933333,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "ffprobe_warning": "[mov,mp4,m4a,3gp,3g2,mj2 @ 000001cc9fb1a980] Referenced QT chapter track not found",
+      "ffmpeg_warning": "[mov,mp4,m4a,3gp,3g2,mj2 @ 000001feb87e75c0] Referenced QT chapter track not found",
+      "full_audio_video_decode": "pass"
+    },
+    {
+      "course_id": "gg140",
+      "lecture_no": 26,
+      "publisher_media_url": "https://openmedia.yale.edu/projects/courses/fall11/gg140/iphone/gg140_26_110211.m4v",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\vidchapters_batch_b\\gg140_26_110211.m4v",
+      "bytes": 101038169,
+      "sha256": "367fd3ba3ecf22e20e267b48fc0317d8a38cd74868583102466475d063d4c8c8",
+      "manifest_duration_sec": 2842.456,
+      "decoded_duration_sec": 2842.466667,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "ffprobe_warning": "[mov,mp4,m4a,3gp,3g2,mj2 @ 000001338e4fa980] Referenced QT chapter track not found",
+      "ffmpeg_warning": "[mov,mp4,m4a,3gp,3g2,mj2 @ 000002a2a4dd7580] Referenced QT chapter track not found",
+      "full_audio_video_decode": "pass"
+    },
+    {
+      "course_id": "engl310",
+      "lecture_no": 18,
+      "publisher_media_url": "https://openmedia.yale.edu/projects/courses/spring07/engl310/iphone/engl310_18_040407.m4v",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\vidchapters_batch_b\\engl310_18_040407.m4v",
+      "bytes": 227629434,
+      "sha256": "326fc43b67467f8dadf42722095e6bee432610ba78b753c32067a8b9a0ced0fa",
+      "manifest_duration_sec": 2564.257,
+      "decoded_duration_sec": 2564.230907,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "ffprobe_warning": "[mov,mp4,m4a,3gp,3g2,mj2 @ 00000272c87fa980] Referenced QT chapter track not found",
+      "ffmpeg_warning": "[mov,mp4,m4a,3gp,3g2,mj2 @ 000001f3b45175c0] Referenced QT chapter track not found",
+      "full_audio_video_decode": "pass"
+    },
+    {
+      "course_id": "evst255",
+      "lecture_no": 24,
+      "publisher_media_url": "https://openmedia.yale.edu/projects/courses/spring10/evst255/m4v/evst255_24_042210.m4v",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\native_batch\\evst255_24_042210.m4v",
+      "bytes": 255318279,
+      "sha256": "cd2644343ec5cabc67db756fd37333b48f608e602f1868a6effb3b29010cff48",
+      "manifest_duration_sec": 3002.0,
+      "decoded_duration_sec": 3001.701702,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "ffprobe_warning": "",
+      "ffmpeg_warning": "",
+      "full_audio_video_decode": "pass"
+    },
+    {
+      "course_id": "psyc110",
+      "lecture_no": 3,
+      "publisher_media_url": "https://openmedia.yale.edu/projects/courses/spring07/psyc110/iphone/psyc110_03_012407.m4v",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\native_batch\\psyc110_03_012407.m4v",
+      "bytes": 295441463,
+      "sha256": "a8931ea29ccd44a17fe8a2b02e03ccba337574be468f21529584aada8e258598",
+      "manifest_duration_sec": 3390.0,
+      "decoded_duration_sec": 3390.256924,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "ffprobe_warning": "",
+      "ffmpeg_warning": "",
+      "full_audio_video_decode": "pass"
+    },
+    {
+      "course_id": "beng100",
+      "lecture_no": 21,
+      "publisher_media_url": "https://openmedia.yale.edu/projects/courses/spring08/beng100/iphone/beng100_21_041008.m4v",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\native_batch\\beng100_21_041008.m4v",
+      "bytes": 169243350,
+      "sha256": "7e345dec14d01746ff3d1fd119c598f8f1ea701aadd08884a58132359c53abca",
+      "manifest_duration_sec": 3238.0,
+      "decoded_duration_sec": 3238.27161,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "ffprobe_warning": "",
+      "ffmpeg_warning": "",
+      "full_audio_video_decode": "pass"
+    },
+    {
+      "course_id": "afam162",
+      "lecture_no": 20,
+      "publisher_media_url": "https://openmedia.yale.edu/projects/courses/spring10/afam162/iphone/afam162_20_040510.m4v",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\native_batch\\afam162_20_040510.m4v",
+      "bytes": 265949167,
+      "sha256": "9e72f9dda53b4d91d3db9ab5a9158336c4c355dab6a10525d446e746b399a95d",
+      "manifest_duration_sec": 2970.0,
+      "decoded_duration_sec": 2970.337007,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "ffprobe_warning": "",
+      "ffmpeg_warning": "",
+      "full_audio_video_decode": "pass"
+    },
+    {
+      "course_id": "psyc123",
+      "lecture_no": 20,
+      "publisher_media_url": "https://openmedia.yale.edu/projects/courses/fall08/psyc123/iphone/psyc123_20_111208.m4v",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\native_batch\\psyc123_20_111208.m4v",
+      "bytes": 360616830,
+      "sha256": "eb76718874dce36f6cdc28e7bf22bd14babf3f58f93aee6a5cc685b141c96662",
+      "manifest_duration_sec": 3939.0,
+      "decoded_duration_sec": 3938.868202,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "ffprobe_warning": "",
+      "ffmpeg_warning": "",
+      "full_audio_video_decode": "pass"
+    },
+    {
+      "course_id": "rlst152",
+      "lecture_no": 14,
+      "publisher_media_url": "https://openmedia.yale.edu/projects/courses/spring09/rlst152/iphone/rlst152_14_022509.m4v",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\native_batch\\rlst152_14_022509.m4v",
+      "bytes": 275928005,
+      "sha256": "b9ded111fb9821253dd7684e9254c2d05018490d66e606a58a6e3b0ba4347b13",
+      "manifest_duration_sec": 3014.0,
+      "decoded_duration_sec": 3014.311645,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "ffprobe_warning": "",
+      "ffmpeg_warning": "",
+      "full_audio_video_decode": "pass"
+    },
+    {
+      "course_id": "clcv205",
+      "lecture_no": 2,
+      "publisher_media_url": "https://openmedia.yale.edu/projects/courses/fall07/clcv205/iphone/clcv205_02_091107.m4v",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\native_batch\\clcv205_02_091107.m4v",
+      "bytes": 210498997,
+      "sha256": "979ee2cc4b7ff6c565dcdd8796ad3a22b870d60b8712a929b9ca423a082b65ac",
+      "manifest_duration_sec": 4091.0,
+      "decoded_duration_sec": 4090.790794,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "ffprobe_warning": "",
+      "ffmpeg_warning": "",
+      "full_audio_video_decode": "pass"
+    },
+    {
+      "course_id": "hist234",
+      "lecture_no": 25,
+      "publisher_media_url": "https://openmedia.yale.edu/projects/courses/spring10/hist234/m4v/hist234_25_042110.m4v",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\native_batch\\hist234_25_042110.m4v",
+      "bytes": 207764844,
+      "sha256": "487f2ac004e667963aa3a38db88107ee99eba80465303f96e18000e624d265ba",
+      "manifest_duration_sec": 2447.0,
+      "decoded_duration_sec": 2447.213881,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "ffprobe_warning": "",
+      "ffmpeg_warning": "",
+      "full_audio_video_decode": "pass"
+    },
+    {
+      "course_id": "hist210",
+      "lecture_no": 3,
+      "publisher_media_url": "https://openmedia.yale.edu/projects/courses/fall11/hist210/iphone/hist210_03_090711.m4v",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\native_batch\\hist210_03_090711.m4v",
+      "bytes": 105366797,
+      "sha256": "78cb824b7a14c5695e0572dbd45d7b3413644246ed64d408030bfde834f18939",
+      "manifest_duration_sec": 2717.0,
+      "decoded_duration_sec": 2716.933333,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "ffprobe_warning": "[mov,mp4,m4a,3gp,3g2,mj2 @ 00000204babea8c0] Referenced QT chapter track not found",
+      "ffmpeg_warning": "[mov,mp4,m4a,3gp,3g2,mj2 @ 00000295ee707580] Referenced QT chapter track not found",
+      "full_audio_video_decode": "pass"
+    },
+    {
+      "course_id": "ital310",
+      "lecture_no": 5,
+      "publisher_media_url": "https://openmedia.yale.edu/projects/courses/fall08/ital310/iphone/ital310_05_091808.m4v",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\native_batch\\ital310_05_091808.m4v",
+      "bytes": 426841574,
+      "sha256": "f553c7051e3f51b5f36200a3d505fbf71284b6ab0f01d3805a802aab8318166e",
+      "manifest_duration_sec": 4663.0,
+      "decoded_duration_sec": 4662.725058,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "ffprobe_warning": "",
+      "ffmpeg_warning": "",
+      "full_audio_video_decode": "pass"
+    },
+    {
+      "course_id": "hist119",
+      "lecture_no": 7,
+      "publisher_media_url": "https://openmedia.yale.edu/projects/courses/spring08/hist119/iphone/hist119_07_020508.m4v",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\native_batch\\hist119_07_020508.m4v",
+      "bytes": 181145233,
+      "sha256": "39a42940d11f8c7cca88504146554e2ea342ba4196b07cf20ea3568a2cd49638",
+      "manifest_duration_sec": 2874.0,
+      "decoded_duration_sec": 2873.473473,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "ffprobe_warning": "",
+      "ffmpeg_warning": "",
+      "full_audio_video_decode": "pass"
+    },
+    {
+      "course_id": "astr160",
+      "lecture_no": 4,
+      "publisher_media_url": "https://openmedia.yale.edu/projects/courses/spring07/astr160/iphone/astr160_04_012507.m4v",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\native_batch\\astr160_04_012507.m4v",
+      "bytes": 144184593,
+      "sha256": "5c5dc639aca22db6980fa3c9efdfb86fb60d28c7e724e494a1718892c5f1b37f",
+      "manifest_duration_sec": 2800.0,
+      "decoded_duration_sec": 2800.233567,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "ffprobe_warning": "",
+      "ffmpeg_warning": "",
+      "full_audio_video_decode": "pass"
+    }
+  ]
+}

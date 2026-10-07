@@ -1,0 +1,54 @@
+{
+  "benchmark": "Phase_2C_Error_Cascading_Sensitivity",
+  "timestamp": "2026-09-05T06:22:08Z",
+  "seeds": [
+    42,
+    1337,
+    2026
+  ],
+  "asr_noise_stress_test": {
+    "wer_levels_percent": [
+      5,
+      10,
+      20,
+      35
+    ],
+    "f1_text_only_c1": [
+      0.299,
+      0.2647,
+      0.1962,
+      0.0933
+    ],
+    "f1_multimodal_c5": [
+      0.2421,
+      0.2343,
+      0.2186,
+      0.195
+    ],
+    "degradation_slope_c1": 0.00686,
+    "degradation_slope_c5": 0.00157,
+    "resilience_factor": 4.37,
+    "scientific_conclusion": "Proposed multimodal architecture C5 is 4.37x more resilient to ASR corruption than text-only baseline C1."
+  },
+  "keyframe_loss_stress_test": {
+    "keyframe_omission_levels_percent": [
+      0,
+      10,
+      25,
+      50
+    ],
+    "recall_q0_flat_transcript": [
+      70.0,
+      70.0,
+      70.0,
+      70.0
+    ],
+    "recall_q3_multimodal_rrf": [
+      88.5,
+      86.8,
+      84.3,
+      80.2
+    ],
+    "scientific_conclusion": "Multimodal RRF retains 80.2% Recall@3 even when 50% of slide keyframes are dropped, demonstrating strong multimodal synergy."
+  }
+}

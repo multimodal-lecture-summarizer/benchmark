@@ -1,0 +1,235 @@
+{
+  "video_id": "Th2N_rDfkDw",
+  "cohort_lock_sha256": "4dedb0efacecf547f1bf2eac773a0b6ced3cea9ed1330875cf6e9b493e9f0719",
+  "ytseg_revision": "4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+  "ytseg_split": "train",
+  "locked_role": "reserve",
+  "course_id": "mit-16.687-iap-2019",
+  "lecturer_ids": [
+    "philip-greenspun",
+    "tina-srivastava"
+  ],
+  "publisher_page": "https://ocw.mit.edu/courses/16-687-private-pilot-ground-school-january-iap-2019/resources/lecture-7-navigation/",
+  "publisher_page_contains_exact_video_id": true,
+  "publisher_page_links_exact_media": true,
+  "rights_page": "https://ocw.mit.edu/pages/privacy-and-terms-of-use/",
+  "publisher_media_download": {
+    "url": "https://archive.org/download/MIT16.687IAP19/MIT16_687IAP19_lec07_300k.mp4",
+    "resolved_url": "https://dn720400.ca.archive.org/0/items/MIT16.687IAP19/MIT16_687IAP19_lec07_300k.mp4",
+    "content_length": 99442554,
+    "local_bytes": 99442554,
+    "sha256": "46a203a37f6e364871a5c51e692cdd71279f2d69b79c69bda250b74636027415",
+    "etag": "\"5e87701c-5ed5f7a\"",
+    "last_modified": "Fri, 03 Apr 2020 17:19:24 GMT",
+    "elapsed_s": 13.9
+  },
+  "local_media_path": "multimodal-lecture-summarizer/experiments/datasets/ytseg_qualification/Th2N_rDfkDw.mp4",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 640,
+        "height": 360,
+        "duration": "2514.879033"
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "2514.900000"
+      },
+      {
+        "index": 2,
+        "codec_name": "mov_text",
+        "codec_type": "subtitle",
+        "duration": "2490.350000"
+      },
+      {
+        "index": 3,
+        "codec_name": "png",
+        "codec_type": "video",
+        "width": 1400,
+        "height": 1400,
+        "duration": "2514.900000"
+      },
+      {
+        "index": 4,
+        "codec_name": "mov_text",
+        "codec_type": "subtitle",
+        "width": 640,
+        "height": 360,
+        "duration": "2514.900000"
+      }
+    ],
+    "format": {
+      "duration": "2514.900000",
+      "size": "99442554"
+    }
+  },
+  "full_av_decode": {
+    "exit_code": 0,
+    "stderr_tail": "[mov,mp4,m4a,3gp,3g2,mj2 @ 00000227a76c6dc0] stream 0, timescale not set\n"
+  },
+  "decoded_pts": {
+    "video": {
+      "frames": 75371,
+      "first_s": 0.0,
+      "last_s": 2514.845667,
+      "negative_steps": 0,
+      "ffprobe_exit_code": 0,
+      "stderr_tail": ""
+    },
+    "audio": {
+      "frames": 117886,
+      "first_s": 0.0,
+      "last_s": 2514.878667,
+      "negative_steps": 0,
+      "ffprobe_exit_code": 0,
+      "stderr_tail": ""
+    }
+  },
+  "pinned_train": {
+    "shard": 0,
+    "row_offset": 2968,
+    "duration_s": 2515.0,
+    "raw_chapters_count": 24,
+    "titles_count": 24,
+    "timestamps_count": 23,
+    "title_sequence_matches_raw": true,
+    "timestamps_equal_raw_starts_after_zero": true,
+    "raw_chapter_starts_s": [
+      0.0,
+      24.0,
+      147.0,
+      163.0,
+      232.0,
+      319.0,
+      334.0,
+      370.0,
+      536.0,
+      556.0,
+      587.0,
+      898.0,
+      1183.0,
+      1188.0,
+      1204.0,
+      1238.0,
+      1356.0,
+      1388.0,
+      1474.0,
+      1691.0,
+      1898.0,
+      2066.0,
+      2086.0,
+      2128.0
+    ],
+    "final_end_s": 2515.0,
+    "text_ref_segments": 485
+  },
+  "embedded_subtitle_cues": 866,
+  "alignment_checks": [
+    {
+      "kind": "10_percent",
+      "checked_at_s": 251.5,
+      "chapter_index": 4,
+      "chapter_title": "Dead Reckoning",
+      "publisher_subtitle_cues": 8,
+      "sixgram_hits": 50,
+      "sixgram_total": 50,
+      "sixgram_coverage": 1.0,
+      "median_pinned_text_position_fraction": 0.1037,
+      "relative_time_fraction": 0.1,
+      "publisher_caption_sample_sha256": "c2986aa4a0ac14cdefe0126c9dce5e440212cc563e30ff2ba438fd103e11a486",
+      "qualitative_topic_check": "dead reckoning and landmark navigation"
+    },
+    {
+      "kind": "50_percent",
+      "checked_at_s": 1257.5,
+      "chapter_index": 15,
+      "chapter_title": "Movable Card ADF",
+      "publisher_subtitle_cues": 5,
+      "sixgram_hits": 39,
+      "sixgram_total": 39,
+      "sixgram_coverage": 1.0,
+      "median_pinned_text_position_fraction": 0.5044,
+      "relative_time_fraction": 0.5,
+      "publisher_caption_sample_sha256": "a7f8a767a3bbeed26910c0624bd178a6c97afce98bd163664da4e9f92eb1269c",
+      "qualitative_topic_check": "ADF movable-card heading and bearings"
+    },
+    {
+      "kind": "90_percent",
+      "checked_at_s": 2263.5,
+      "chapter_index": 23,
+      "chapter_title": "After the navigation mistake...",
+      "publisher_subtitle_cues": 4,
+      "sixgram_hits": 28,
+      "sixgram_total": 28,
+      "sixgram_coverage": 1.0,
+      "median_pinned_text_position_fraction": 0.9035,
+      "relative_time_fraction": 0.9,
+      "publisher_caption_sample_sha256": "067f5344f98fa73ad3ad24fdda270db0d8f73861eb3d59ca904cf1d4f9ef784c",
+      "qualitative_topic_check": "navigation error and celestial cue"
+    },
+    {
+      "kind": "first_internal_boundary",
+      "checked_at_s": 32.0,
+      "chapter_index": 1,
+      "chapter_title": "Outline",
+      "publisher_subtitle_cues": 8,
+      "sixgram_hits": 53,
+      "sixgram_total": 53,
+      "sixgram_coverage": 1.0,
+      "median_pinned_text_position_fraction": 0.0062,
+      "relative_time_fraction": 0.0127,
+      "publisher_caption_sample_sha256": "d11632c7ce2c7feb637d8785c0ee2909beb26067b7f1b500160c5d30db03a75f",
+      "qualitative_topic_check": "navigation lecture outline"
+    },
+    {
+      "kind": "middle_internal_boundary",
+      "checked_at_s": 1191.0,
+      "chapter_index": 13,
+      "chapter_title": "How to use the ADF",
+      "publisher_subtitle_cues": 7,
+      "sixgram_hits": 38,
+      "sixgram_total": 38,
+      "sixgram_coverage": 1.0,
+      "median_pinned_text_position_fraction": 0.4821,
+      "relative_time_fraction": 0.4736,
+      "publisher_caption_sample_sha256": "7a41cf43c4ab7443ef27e9bc9493328c2a4ba79cf5bca6614e85c218c31f97e2",
+      "qualitative_topic_check": "ADF needle use begins"
+    },
+    {
+      "kind": "last_internal_boundary",
+      "checked_at_s": 2136.0,
+      "chapter_index": 23,
+      "chapter_title": "After the navigation mistake...",
+      "publisher_subtitle_cues": 8,
+      "sixgram_hits": 43,
+      "sixgram_total": 43,
+      "sixgram_coverage": 1.0,
+      "median_pinned_text_position_fraction": 0.8502,
+      "relative_time_fraction": 0.8493,
+      "publisher_caption_sample_sha256": "ec02cc8bb2481e1fe877b88760c75e05f8add6863715b8d5893d6f1adf9ee6fd",
+      "qualitative_topic_check": "lecturer explicitly introduces navigation mistakes"
+    }
+  ],
+  "technical_media_status": "pass",
+  "resource_status": "hold",
+  "blocking_gates": [
+    "hold_gt_upstream_conversion_code",
+    "hold_rights_whole_component_review",
+    "content_near_duplicate_check_pending"
+  ],
+  "limits": [
+    "Embedded MP4 subtitles may be the upstream source of YTSeg text_ref, so sixgram agreement is not independent speech transcription.",
+    "Six predefined points do not validate every chapter boundary.",
+    "Course-level terms and a downloadable MP4 do not prove reuse rights for every third-party component.",
+    "No model selection, D2, or official RQ1 run."
+  ]
+}

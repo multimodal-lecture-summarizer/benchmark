@@ -1,0 +1,34 @@
+# D2 dataset identity for the pretest-locked 20-unit RQ1 mixed cohort.
+# Exact per-unit GT/media/rights and hashes: plans/reports/rq1-d2-source-bundle-260930-twenty-units.json
+# Validated frozen package: plans/reports/rq1-d2-frozen-dataset-260930-twenty-units.json
+# This dataset freeze does not authorize learned candidates or final-test inference.
+schema_version: 1
+dataset_id: rq1_locked_mixed_20
+source: "Curated YTSeg, VidChapters and Open Yale publisher chapter sources; see per-unit source bundle"
+release: "locked-cohort-2026-09-30"
+revision: "source-bundle-sha256:996be6ce301bc60a0012924e1a84bf04e528646ea34a1c557fbda48ac2f55d00"
+rights: "Per-unit scoped internal noncommercial research decisions bound in source bundle"
+access_status: available
+leakage_exception: null
+data_root_key: "multimodal-lecture-summarizer/experiments/datasets"
+receipt_path: "plans/reports/rq1-d2-source-bundle-260930-twenty-units.json"
+endpoint: chapter
+ground_truth_status_label: "original creator or publisher internal chapter starts"
+freeze_reason: "20 exact decoded media units, source GT, scoped rights and connected course/lecturer-disjoint split"
+eligibility_reason: "D2 data eligibility only; candidate/checkpoint/feature and validation precision remain separate gates"
+expected_bytes: 5001861970
+predicted_peak_bytes: 0
+estimated_completion_hours: 0.0
+min_schema_success_rate: 1.0
+min_checksum_success_rate: 1.0
+min_download_success_rate: 1.0
+min_decode_success_rate: 1.0
+ground_truth:
+  status: released
+  source: "unit-specific source URL and original annotation in the hashed D2 source bundle"
+  revision: "unit-specific pinned source revision or publisher GT hash"
+  annotation_protocol: "internal chapter starts in original media seconds; exclude 0 and D; no retiming"
+chapter_gt:
+  annotation_origin: "creator_chapters or publisher_timed_toc, unit-specific"
+  timestamp_convention: "seconds from exact media start"
+fallback_dataset: null

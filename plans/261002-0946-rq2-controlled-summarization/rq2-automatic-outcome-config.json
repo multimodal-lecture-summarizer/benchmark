@@ -1,0 +1,34 @@
+{
+  "protocol_amendment_date": "2026-10-02",
+  "study": "RQ2 controlled text-only S1 versus S3",
+  "dataset": "gigant/tib",
+  "dataset_revision": "e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee",
+  "unit": "one paired lecture DOI",
+  "contrast": "S3_minus_S1",
+  "primary_outcome": "rouge_l_f1_against_creator_abstract",
+  "primary_eligibility": "paired eligible talk with nonempty creator-provided abstract",
+  "primary_interpretation": "agreement with noisy creator abstract, not factual correctness",
+  "secondary_descriptive": [
+    "source_unique_word_type_overlap_proxy",
+    "summary_word_count",
+    "measured_prompt_and_output_tokens",
+    "latency"
+  ],
+  "sensitivity": [
+    "abstract_suitability_screen_if_predeclared_for_holdout",
+    "abstract_under_30_words",
+    "source_truncation",
+    "prompt_token_imbalance",
+    "train_author_or_series_overlap"
+  ],
+  "statistic": "paired_mean_s3_minus_s1",
+  "interval": "record-level percentile paired bootstrap 95%",
+  "bootstrap_samples": 5000,
+  "bootstrap_seed": 20261002,
+  "human_scoring": false,
+  "minimum_sample_size": null,
+  "sealed_test_accessed": false,
+  "generation_config_status": "real_qwen_validation_interrupted_gpu_device_lost_5_of_20",
+  "selected_generator": "Qwen/Qwen2.5-1.5B-Instruct@989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "current_local_gpu_status": "disabled_after_device_lost_crash"
+}

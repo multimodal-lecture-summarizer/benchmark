@@ -1,0 +1,30 @@
+python: "3.11"
+cuda_wheel_indexes:
+  base: https://download.pytorch.org/whl/cu124
+  nemo: https://download.pytorch.org/whl/cu121
+  funasr: https://download.pytorch.org/whl/cu121
+groups:
+  base:
+    torch: "2.6.0"
+    torchaudio: "2.6.0"
+    faster-whisper: "1.1.0"
+    ctranslate2: "4.4.0"
+    transformers: "4.57.6"
+    qwen-asr: "0.0.6"
+    huggingface-hub: "0.36.2"
+    numpy: "1.26.4"
+    soundfile: "0.14.0"
+    accelerate: "1.12.0"
+    PyYAML: "6.0.2"
+  nemo:
+    torch: "2.5.1"
+    torchaudio: "2.5.1"
+    "nemo-toolkit[asr]": "2.4.0"
+    huggingface-hub: "0.36.2"
+    soundfile: "0.14.0"
+  funasr:
+    torch: "2.5.1"
+    torchaudio: "2.5.1"
+    funasr: "1.2.6"
+    huggingface-hub: "0.36.2"
+    soundfile: "0.14.0"

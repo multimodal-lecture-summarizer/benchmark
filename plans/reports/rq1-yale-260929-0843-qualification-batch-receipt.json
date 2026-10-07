@@ -1,0 +1,75 @@
+{
+  "manifest": "rq1-yale-260929-0843-qualification-batch-manifest.csv",
+  "qualification_only": true,
+  "file_count": 6,
+  "byte_total": 4054394835,
+  "failures": [],
+  "files": [
+    {
+      "course_id": "econ159",
+      "lecture_no": 2,
+      "filename": "econ159_02_091007.mov",
+      "source_url": "https://openmedia.yale.edu/projects/courses/fall07/econ159/mov/econ159_02_091007.mov",
+      "bytes": 601595188,
+      "sha256": "a25dbe7b4de66f7978c6c503da1b20548d301c116a9d4b9fd6224d7889113edf",
+      "acquisition_status": "reused_existing",
+      "rights_status": "full_mov_rights_unverified",
+      "qualification_only": true
+    },
+    {
+      "course_id": "econ251",
+      "lecture_no": 1,
+      "filename": "econ251_01_090309.mov",
+      "source_url": "https://openmedia.yale.edu/projects/courses/fall09/econ251/mov/econ251_01_090309.mov",
+      "bytes": 939375786,
+      "sha256": "a28ecd0df64eafcfb6aadd804e3fa6159239583f805dce812b7843aac4220f2a",
+      "acquisition_status": "downloaded",
+      "rights_status": "visual_source_review",
+      "qualification_only": true
+    },
+    {
+      "course_id": "econ25208",
+      "lecture_no": 6,
+      "filename": "econ252_06_020108.mov",
+      "source_url": "https://openmedia.yale.edu/projects/courses/spring08/econ252/mov/econ252_06_020108.mov",
+      "bytes": 603398593,
+      "sha256": "bcf1ed9b582c7d25fe3f29398ffe98d90554e7308de3a395cb29c21e7ac42232",
+      "acquisition_status": "downloaded",
+      "rights_status": "visual_source_review",
+      "qualification_only": true
+    },
+    {
+      "course_id": "engl220",
+      "lecture_no": 23,
+      "filename": "engl220_23_120307.mov",
+      "source_url": "https://openmedia.yale.edu/projects/courses/fall07/engl220/mov/engl220_23_120307.mov",
+      "bytes": 386792955,
+      "sha256": "8413c9e25b94db5cbc43123b468f55fb42f9c5995d5d569654bccb034eee1dd8",
+      "acquisition_status": "downloaded",
+      "rights_status": "full_mov_rights_unverified",
+      "qualification_only": true
+    },
+    {
+      "course_id": "phys200",
+      "lecture_no": 19,
+      "filename": "phys200_19_111306.mov",
+      "source_url": "https://openmedia.yale.edu/projects/courses/fall06/phys200/mov/phys200_19_111306.mov",
+      "bytes": 639913047,
+      "sha256": "47dbc049c2c7998e84325d5819ff4257f32d992be2e275fa10c2f0fe26a6ddb9",
+      "acquisition_status": "reused_existing",
+      "rights_status": "full_mov_rights_unverified",
+      "qualification_only": true
+    },
+    {
+      "course_id": "phys201",
+      "lecture_no": 10,
+      "filename": "phys201_10_021010.mov",
+      "source_url": "https://openmedia.yale.edu/projects/courses/spring10/phys201/mov/phys201_10_021010.mov",
+      "bytes": 883319266,
+      "sha256": "ecbec411b1a7602c08df621734460b80058a2952de079dbde22df1f8735f1724",
+      "acquisition_status": "downloaded",
+      "rights_status": "full_mov_rights_unverified",
+      "qualification_only": true
+    }
+  ]
+}

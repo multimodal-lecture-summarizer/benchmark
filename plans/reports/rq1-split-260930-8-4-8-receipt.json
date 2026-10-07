@@ -1,0 +1,148 @@
+{
+  "schema": "rq1-split-lock-receipt/1",
+  "source_only": true,
+  "assignment_rule": "rq1-split-260930-rule-locked.md",
+  "cohort_sha256": "8596d3aad4421ff2e38a86c4e890090ad52f42f33b87e0a7d0babd080135fb4d",
+  "history_sha256": "aaa04ffd5097638e2b5dc8ce786c7cddcbbdb132d7a67e1689619aefc4265326",
+  "split_sha256": "1bb28edc0c48849d72b827bcf98b7ea35eecbcce7c8da4160693e0041956cbe8",
+  "source_stratum_quotas": {
+    "legacy": {
+      "train": 3,
+      "validation": 1,
+      "final_test": 2
+    },
+    "yale": {
+      "train": 5,
+      "validation": 3,
+      "final_test": 6
+    }
+  },
+  "group_count": 20,
+  "counts": {
+    "train": 8,
+    "validation": 4,
+    "final_test": 8
+  },
+  "assignment": [
+    {
+      "video_id": "-7xg8pGcP6w",
+      "course_id": "harvard-cs50p-2022",
+      "split": "train",
+      "rank_sha256": "412aefd6883d62ad22a6c129668447d6855908d52d08925d2b516d9fee44c309"
+    },
+    {
+      "video_id": "tCKk22kaZi4",
+      "course_id": "mit-14.01-fall-2018",
+      "split": "validation",
+      "rank_sha256": "da1ef302033490b3969445b66c97dead21b3655fd98a507d00c5b68c5f7b9300"
+    },
+    {
+      "video_id": "AW3a2ECNFlE",
+      "course_id": "mit-14.772-spring-2013",
+      "split": "final_test",
+      "rank_sha256": "fa8e58551f87ed65b0aa42ebf152b9dfc7d32d0e76707c5ab143c4a288d0dcd4"
+    },
+    {
+      "video_id": "oo1ZZlvT2LQ",
+      "course_id": "mit-res.18-005-spring-2010",
+      "split": "train",
+      "rank_sha256": "63285aab5e62b81279cb72d73213ef072552818beb7109d7da5627e401eb6b03"
+    },
+    {
+      "video_id": "EuNXVy5-KgA",
+      "course_id": "mit-16.687-iap-2019",
+      "split": "train",
+      "rank_sha256": "3b31b47d2a6cc6e584cc6c48d53255e673f0e1792da68cd6b27e7523a52eba13"
+    },
+    {
+      "video_id": "09vU-wVwW3U",
+      "course_id": "mit-6.046j-spring-2015",
+      "split": "final_test",
+      "rank_sha256": "f3dde6c1cc8368054caa173436bbe538a66264698276b6c994f1094e2c3f2fb2"
+    },
+    {
+      "video_id": "zsb6B8HrNVA",
+      "course_id": "yale-beng-100",
+      "split": "train",
+      "rank_sha256": "1fef6146fc74ea2a4d4a66b6b3320a1bdb1e5c4ed8cd1fe12b75ee62bb374736"
+    },
+    {
+      "video_id": "-W4kU1YFSck",
+      "course_id": "yale-hist-116",
+      "split": "train",
+      "rank_sha256": "6b0d15c0b13c6a5f0692fb9170142f022a2eb8d5d95eeae9e4b13e2995437a91"
+    },
+    {
+      "video_id": "f_55cmhHq3g",
+      "course_id": "yale-phil-176",
+      "split": "validation",
+      "rank_sha256": "741f7f8cdb4653f8c9d3dcc47b45dad2df03543c4a9a7d8650b692e0080b7392"
+    },
+    {
+      "video_id": "e3uBi2TZdUY",
+      "course_id": "yale-hist-251",
+      "split": "final_test",
+      "rank_sha256": "e90e7e237f4ca7f6ae1af7daa9474b0f285205ab3dfb9518705c4f94b279d208"
+    },
+    {
+      "video_id": "LZkoBeI6gVM",
+      "course_id": "yale-span-300",
+      "split": "train",
+      "rank_sha256": "07d457b2a651eca6d6d149f26147dba07e120be0e18f403b5ad3206169498b91"
+    },
+    {
+      "video_id": "Y3S1uqgGfB4",
+      "course_id": "yale-plsc-114",
+      "split": "final_test",
+      "rank_sha256": "f14136e30506177c4b063d53fd0d2605ece651c520b97ed9e67b35c8ef285525"
+    },
+    {
+      "video_id": "qQ3kFydI_xQ",
+      "course_id": "yale-econ-159",
+      "split": "final_test",
+      "rank_sha256": "a898ea4cccde7c10b79c2dba734be03613e1a8336609a2a3bd85845a9431af87"
+    },
+    {
+      "video_id": "9FrHGAd_yto",
+      "course_id": "yale-clcv-205",
+      "split": "final_test",
+      "rank_sha256": "fff9804ce95990cee9a3d83a27896ff32ab717479dda20bc38c19b8badf38c96"
+    },
+    {
+      "video_id": "VX4eYYmvQ78",
+      "course_id": "yale-econ-251",
+      "split": "validation",
+      "rank_sha256": "73cb1971d970e3f583473d9062c6589caa81154cd4f97949e7e7ce38928077eb"
+    },
+    {
+      "video_id": "WMkD8HKJQCM",
+      "course_id": "yale-econ-252-2008",
+      "split": "final_test",
+      "rank_sha256": "d098970fb6fcb4d0c763791a32a20d5800740bdaea1f54cc2c4cbb925a01b0e9"
+    },
+    {
+      "video_id": "2B9b9mUPJik",
+      "course_id": "yale-hist-210",
+      "split": "train",
+      "rank_sha256": "30facec2fadb79289aa4f5ed9a58a2feba504ae2de79787292c80ef726d23a78"
+    },
+    {
+      "video_id": "679FGDpZBew",
+      "course_id": "yale-ital-310",
+      "split": "train",
+      "rank_sha256": "630919597c6f9cf84317cf2b3a3875f6c4bd1821fe69aab7a51a73475ab06186"
+    },
+    {
+      "video_id": "Hy7ou5R_vjE",
+      "course_id": "yale-phys-200",
+      "split": "validation",
+      "rank_sha256": "77855948e75e3e5ab6c067703ef69419608a89eb20ce950eee6601abc8357065"
+    },
+    {
+      "video_id": "4YY4CTSQ8nY",
+      "course_id": "yale-engl-300",
+      "split": "final_test",
+      "rank_sha256": "f0561b39b75fd78463609b745ac489daa65b060ee07b4cc1807ff65a7ba42eae"
+    }
+  ]
+}

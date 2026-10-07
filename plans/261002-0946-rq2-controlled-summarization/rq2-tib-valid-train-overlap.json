@@ -1,0 +1,29 @@
+{
+  "revision": "e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee",
+  "train_records_scanned": 7282,
+  "columns_read": [
+    "doi",
+    "title",
+    "author"
+  ],
+  "test_content_accessed": false,
+  "selected_doi_in_train": [],
+  "selected_exact_title_in_train": [
+    "10.5446/49247 (DOI)"
+  ],
+  "selected_author_train_record_counts": {
+    "10.5446/38638 (DOI)": 1,
+    "10.5446/50934 (DOI)": 1,
+    "10.5446/15101 (DOI)": 53,
+    "10.5446/49452 (DOI)": 2,
+    "10.5446/45978 (DOI)": 6,
+    "10.5446/49247 (DOI)": 3,
+    "10.5446/18890 (DOI)": 17,
+    "10.5446/16294 (DOI)": 1,
+    "10.5446/46066 (DOI)": 11,
+    "10.5446/35254 (DOI)": 1,
+    "10.5446/48908 (DOI)": 4,
+    "10.5446/19217 (DOI)": 31,
+    "10.5446/49509 (DOI)": 2
+  }
+}

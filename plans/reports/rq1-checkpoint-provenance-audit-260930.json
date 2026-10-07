@@ -1,0 +1,22 @@
+{
+  "schema": "rq1-checkpoint-provenance-audit/1",
+  "date_local": "2026-09-30",
+  "split_sha256": "1bb28edc0c48849d72b827bcf98b7ea35eecbcce7c8da4160693e0041956cbe8",
+  "train_only_proof_status": "not_proven",
+  "c5": {
+    "checkpoint_path": "multimodal-lecture-summarizer/checkpoints/c5_real.pt",
+    "checkpoint_sha256": "94d22d232ce23dcf2ce11176104db8932928c0642d1f83adea32c124b2e4c17d",
+    "checkpoint_bytes": 19269941,
+    "sibling_provenance_path": "multimodal-lecture-summarizer/checkpoints/c5_real.provenance.json",
+    "sibling_provenance_exists": false,
+    "admissibility": "not_run",
+    "reason": "No checkpoint-bound train unit, course, lecturer, code, config, data hash or seed receipt. The old benchmark's random cached-feature split is not bound to this locked 8/4/8 cohort."
+  },
+  "c6": {
+    "checkpoint_path": "multimodal-lecture-summarizer/checkpoints/c6_real.pt",
+    "checkpoint_exists": false,
+    "admissibility": "not_run"
+  },
+  "guard_gap": "The existing learned_candidate_status checks train/evaluation unit and course IDs but not shared lecturers or the locked split hash; a future RQ1 training receipt must bind and verify both.",
+  "required_proof": "Train a new checkpoint using exactly the locked train components, record all train IDs and course/lecturer IDs, hash input features and GT, code/config/seed, checkpoint bytes and split; use only validation for checkpoint selection."
+}

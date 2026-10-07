@@ -1,0 +1,22 @@
+{
+  "revision": "e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee",
+  "test_content_accessed": false,
+  "valid": {
+    "split": "valid",
+    "doi": "10.5446/49247 (DOI)",
+    "shard": 0,
+    "row_group": 0,
+    "words": 882,
+    "sha256": "35d6db0a68624b70bea5af8eeef3cc585bd799e3cae68aa92e3c9be1ba317a09"
+  },
+  "train": {
+    "split": "train",
+    "doi": "10.5446/49248 (DOI)",
+    "shard": 0,
+    "row_group": 3,
+    "words": 1841,
+    "sha256": "c81eafc5c15a6ce815e52058eae753dddad42cba85027a56d2c910e855fa9150"
+  },
+  "normalized_transcript_equal": false,
+  "five_word_shingle_jaccard": 0.0022
+}

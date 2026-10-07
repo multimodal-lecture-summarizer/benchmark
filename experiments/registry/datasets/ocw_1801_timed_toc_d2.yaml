@@ -1,0 +1,84 @@
+# RQ1 candidate config: MIT OCW 18.01 Single Variable Calculus (Fall 2006) full
+# lectures with published timed table-of-contents offsets from 18.01SC (Fall 2010).
+#
+# STATUS: NOT ELIGIBLE FOR D2.  This file records the Phase-1 qualification
+# evidence and the blockers; it must not be used to freeze a cohort until the
+# blockers below are resolved by a recorded research decision.
+#
+# Evidence (2026-09-27, bounded metadata probe, no media download):
+#   experiments/outputs/diagnostic/rq1_qualification/candidate_ledger.json
+#   produced by experiments/scripts/rq1_candidate_ledger.py
+#   - 268 18.01SC clip pages; each embeds the full 18.01 F06 lecture video with
+#     published youtube start/end offsets and "From Lecture N of 18.01 F06".
+#   - 35 source lectures; 30 without exclusion; 6 sampled (sha256 order) for a
+#     remote ffprobe header read; 5 aligned (last clip end within ~1 s of the
+#     archive.org media duration); lec11 excluded (clip end 3104 s > media 2982 s).
+#   - Chapter boundary = published start of every clip after the first; offsets
+#     are used exactly as published (first clip starts at 20 s: intro trimmed).
+#   - Rights: every clip page carries CC BY-NC-SA 4.0 and no reserved-content
+#     marking; the archive.org media item MIT18.01JF07 declares CC BY-NC-SA 3.0,
+#     creator MIT OpenCourseWare.  Human rights review is still pending.
+#
+# BLOCKERS
+#   1. Single source course (18-01-single-variable-calculus-fall-2006): a
+#      course-disjoint train/validation/final_test design is impossible, so the
+#      D2 validator's course leakage gate cannot pass for more than one split.
+#      Only a validation-only, baseline-only diagnostic pilot is admissible.
+#   2. Master research plan names YTSeg as the RQ1 primary dataset; switching or
+#      adding a primary dataset requires a recorded decision (with GT/metric
+#      implications) before any final-test inference.
+#   3. Boundaries are editorial excerpt offsets (publisher_timed_toc), not
+#      expert annotation; disagreement audit against the video is pending.
+#   4. Full media not downloaded/decoded; no per-unit sha256 yet.
+
+schema_version: 1
+dataset_id: ocw_1801_timed_toc
+
+source: "mit_ocw_18.01sc_clip_pages+archive.org_MIT18.01JF07"
+release: "ocw_18.01sc_fall2010_timed_toc"
+revision: "sitemap-1f576af9"   # sha256 prefix of the probed 18.01SC sitemap.xml
+
+rights: "CC BY-NC-SA (OCW pages 4.0, archive.org media item 3.0); noncommercial research; attribution MIT OpenCourseWare; human review pending"
+access_status: "blocked_decision"
+leakage_exception: null
+
+data_root_key: "experiments/datasets/ocw_1801_timed_toc"
+receipt_path: "datasets/ocw_1801_timed_toc/diagnostic/full/payloads/dataset.feasibility_receipts.json"
+
+# Shared endpoint admitted by both 04a and 04b (see _NOTEBOOK_TO_ENDPOINTS).
+endpoint: "chapter"
+
+ground_truth_status_label: "publisher_timed_toc_editorial_offsets_not_expert"
+freeze_reason: >-
+  not_eligible: single source course prevents course-disjoint splits;
+  primary-dataset change requires a recorded research decision; media not
+  decoded; rights human review pending
+eligibility_reason: >-
+  not_eligible: validation-only baseline diagnostics at most; no learned-model
+  or official RQ1 claim
+
+expected_bytes: 0
+predicted_peak_bytes: 0
+estimated_completion_hours: 0.0
+
+min_schema_success_rate: 1.0
+min_checksum_success_rate: 1.0
+min_download_success_rate: 1.0
+min_decode_success_rate: 0.95
+
+ground_truth:
+  status: "released"
+  source: "MIT OCW 18.01SC clip pages: published youtube start/end offsets into 18.01 F06 lectures"
+  revision: "sitemap-1f576af9"
+  annotation_protocol: >
+    Chapter boundary = published start offset of every clip after the first
+    clip of the same source lecture, in seconds of the archive.org lecture
+    media.  Offsets are copied verbatim; gaps and overlaps are counted, never
+    repaired; lectures with overlapping offsets, ambiguous source mapping or a
+    clip end after the media end are excluded.
+
+chapter_gt:
+  annotation_origin: "publisher_timed_toc"
+  timestamp_convention: "seconds from start of archive.org MIT18.01JF07 lecture mp4"
+
+fallback_dataset: null

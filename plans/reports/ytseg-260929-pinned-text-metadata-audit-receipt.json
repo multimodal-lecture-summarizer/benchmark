@@ -1,0 +1,114 @@
+{
+  "checked_at_utc": "2026-09-29T08:28:05.755951+00:00",
+  "source": "retkowski/ytseg text config pinned repository parquet",
+  "revision": "4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+  "files": [
+    {
+      "name": "train-00000-of-00004.parquet",
+      "size_bytes": 218307537,
+      "lfs_sha256": "feb4ae49080e43128315ba4c5338eca339a17b7fc7b8e66628d9cf539310f691",
+      "rows": 4101
+    },
+    {
+      "name": "train-00001-of-00004.parquet",
+      "size_bytes": 215070090,
+      "lfs_sha256": "004434130e68aa9f48f6cc75961161f25eea1dd0c42e7c2ebc0a7887efbc347b",
+      "rows": 4101
+    },
+    {
+      "name": "train-00002-of-00004.parquet",
+      "size_bytes": 220885824,
+      "lfs_sha256": "1ef803d268644ef6e19e201510893a1234c2f55f3f0d1a8883a52da85c837eaf",
+      "rows": 4101
+    },
+    {
+      "name": "train-00003-of-00004.parquet",
+      "size_bytes": 216295241,
+      "lfs_sha256": "7c8456986faf1782f4fdb855370fdb790f53bccbfeff3ecad5ef4f166ad3c7a4",
+      "rows": 4101
+    },
+    {
+      "name": "validation-00000-of-00001.parquet",
+      "size_bytes": 78392708,
+      "lfs_sha256": "1cb785f253865fe6872e2e41e870a6eb30ef7e6e704aa4eeb88eceab0943c4c6",
+      "rows": 1447
+    },
+    {
+      "name": "test-00000-of-00001.parquet",
+      "size_bytes": 79195359,
+      "lfs_sha256": "8074825291812a242e4cd7ebcb13524d4acae474ea40dab803593e7fcb611b41",
+      "rows": 1448
+    }
+  ],
+  "split_summary": {
+    "train": {
+      "rows": 16404,
+      "unique_video_ids": 16387,
+      "unique_channels": 386
+    },
+    "validation": {
+      "rows": 1447,
+      "unique_video_ids": 1446,
+      "unique_channels": 281
+    },
+    "test": {
+      "rows": 1448,
+      "unique_video_ids": 1448,
+      "unique_channels": 280
+    }
+  },
+  "split_overlap": {
+    "train_validation": {
+      "shared_video_ids": [
+        "VKmOXCEq-6A",
+        "nP-nMZpLM1A",
+        "xZ3k7Fd6_eU",
+        "z6qATR0VLnk"
+      ],
+      "shared_channel_count": 278
+    },
+    "train_test": {
+      "shared_video_ids": [],
+      "shared_channel_count": 276
+    },
+    "validation_test": {
+      "shared_video_ids": [],
+      "shared_channel_count": 238
+    }
+  },
+  "train_gt_structure": {
+    "title_minus_timestamp_1": 15813,
+    "title_minus_timestamp_2": 556,
+    "title_minus_timestamp_0": 35
+  },
+  "mitfld_selected_count": 35,
+  "mitfld_selected_exact_id_overlap": [],
+  "mitfld_prior_pilot_count": 10,
+  "mitfld_prior_pilot_exact_id_overlap": [],
+  "example_video_id": "-dOX_4lI6HY",
+  "example_splits": [
+    "train"
+  ],
+  "limits": [
+    "No source media downloaded or decoded",
+    "No content or semantic GT QC",
+    "Course and lecturer identity not in the queried columns",
+    "Only train GT columns inspected; validation/test GT remained unread",
+    "Video-level and platform rights not established"
+  ],
+  "mit_ocw_example_channel": {
+    "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+    "source_identified_by": "YTSeg train example -dOX_4lI6HY and official MIT OCW page",
+    "rows_by_split": {
+      "train": 9,
+      "validation": 1,
+      "test": 1
+    },
+    "unique_ids_by_split": {
+      "train": 9,
+      "validation": 1,
+      "test": 1
+    },
+    "limits": "A channel can contain multiple courses; this does not establish verified lecture or course counts"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "checked_at_utc": "2026-09-29T04:31:24+00:00",
+  "scope": "HF Dataset Viewer text metadata only; no video download or content labels",
+  "dataset": "retkowski/ytseg-cc-by",
+  "config": "text",
+  "split": "train",
+  "rows_endpoint_conversion_revision_pinned": false,
+  "rows": 276,
+  "unique_video_ids": 276,
+  "channels": 14,
+  "total_duration_h": 99.144,
+  "median_duration_s": 820.0,
+  "sum_shortest_video_per_channel_h": 5.57,
+  "internal_timestamps_structurally_valid": 276,
+  "title_count_equals_internal_count_plus_one": 262,
+  "per_channel": [
+    {
+      "channel_id": "UC4EY_qnSeAP1xGsh61eOoJA",
+      "rows": 47,
+      "duration_h": 37.404,
+      "shortest_video_s": 2092.0
+    },
+    {
+      "channel_id": "UC4JUCn3COsxmiBsswo19S_Q",
+      "rows": 6,
+      "duration_h": 1.494,
+      "shortest_video_s": 537.0
+    },
+    {
+      "channel_id": "UC6RujIChTIUawQ7WLCoogGA",
+      "rows": 6,
+      "duration_h": 4.697,
+      "shortest_video_s": 2637.0
+    },
+    {
+      "channel_id": "UC7-CyoYfsrVI-dsuHRQx0IQ",
+      "rows": 26,
+      "duration_h": 6.635,
+      "shortest_video_s": 461.0
+    },
+    {
+      "channel_id": "UCCKpicnIwBP3VPxBAZWDeNA",
+      "rows": 1,
+      "duration_h": 0.239,
+      "shortest_video_s": 862.0
+    },
+    {
+      "channel_id": "UCJWCJCWOxBYSi5DhCieLOLQ",
+      "rows": 121,
+      "duration_h": 23.765,
+      "shortest_video_s": 97.0
+    },
+    {
+      "channel_id": "UCUVwk67-aItVVAQZiCWka0g",
+      "rows": 20,
+      "duration_h": 3.651,
+      "shortest_video_s": 322.0
+    },
+    {
+      "channel_id": "UCVVPtGaSlsoTWOLqvXshpuA",
+      "rows": 3,
+      "duration_h": 0.585,
+      "shortest_video_s": 565.0
+    },
+    {
+      "channel_id": "UCX7Y2qWriXpqocG97SFW2OQ",
+      "rows": 4,
+      "duration_h": 7.026,
+      "shortest_video_s": 4951.0
+    },
+    {
+      "channel_id": "UCb0MyY46T9ZYOzDHkYnIoXg",
+      "rows": 30,
+      "duration_h": 9.195,
+      "shortest_video_s": 666.0
+    },
+    {
+      "channel_id": "UClcE-kVhqyiHCcjYwcpfj9w",
+      "rows": 2,
+      "duration_h": 0.949,
+      "shortest_video_s": 1523.0
+    },
+    {
+      "channel_id": "UCqos1tl0RntucGGtPXNxkkA",
+      "rows": 8,
+      "duration_h": 2.189,
+      "shortest_video_s": 600.0
+    },
+    {
+      "channel_id": "UCuDv5p8E-evaRSh542hDV5g",
+      "rows": 1,
+      "duration_h": 0.205,
+      "shortest_video_s": 738.0
+    },
+    {
+      "channel_id": "UCuYPfoECBRYdBxBAPYeSx4Q",
+      "rows": 1,
+      "duration_h": 1.112,
+      "shortest_video_s": 4002.0
+    }
+  ],
+  "rows_with_extra_unpaired_title": 14,
+  "unpaired_title_examples": [
+    {
+      "video_id": "TrbEIQeqZtw",
+      "unpaired_final_title": "Outro"
+    },
+    {
+      "video_id": "5MJmCanZDyk",
+      "unpaired_final_title": "Outro"
+    },
+    {
+      "video_id": "veFwXrEHPsk",
+      "unpaired_final_title": "Outro"
+    },
+    {
+      "video_id": "BzoB6jH4CcU",
+      "unpaired_final_title": "Outro"
+    },
+    {
+      "video_id": "FLmHfwkMAaU",
+      "unpaired_final_title": "Outro"
+    },
+    {
+      "video_id": "QnL4eYpb5Iw",
+      "unpaired_final_title": "Outro"
+    },
+    {
+      "video_id": "73GYFVJ7LTM",
+      "unpaired_final_title": "Outro"
+    },
+    {
+      "video_id": "kY4JAXYyByQ",
+      "unpaired_final_title": "Outro"
+    },
+    {
+      "video_id": "SvQEoq-5Y4Q",
+      "unpaired_final_title": "Outro"
+    },
+    {
+      "video_id": "lIvD2agDBnM",
+      "unpaired_final_title": "Outro"
+    },
+    {
+      "video_id": "bRAR2bv2HSM",
+      "unpaired_final_title": "Outro"
+    },
+    {
+      "video_id": "zhm8SvPNK24",
+      "unpaired_final_title": "Outro"
+    },
+    {
+      "video_id": "j-0iv5ch8Lw",
+      "unpaired_final_title": "Outro"
+    },
+    {
+      "video_id": "3EmuCJiX_ag",
+      "unpaired_final_title": "Outro"
+    }
+  ]
+}

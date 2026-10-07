@@ -1,0 +1,88 @@
+{
+  "benchmark": "RQ0-V_Visual_Scene_and_OCR",
+  "timestamp": "2026-09-05T03:40:30Z",
+  "video_evaluated": "experiments/datasets/eduviqa/Videos/CA01.mp4",
+  "scene_detection": {
+    "V0_FixedGrid_30s": {
+      "num_cuts": 35,
+      "detection_time_sec": 0.05,
+      "collars": {
+        "collar_1s": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "collar_sec": 1.0
+        },
+        "collar_2s": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "collar_sec": 2.0
+        },
+        "collar_3s": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "collar_sec": 3.0
+        }
+      }
+    },
+    "V1_ContentDetector_27": {
+      "num_cuts": 11,
+      "detection_time_sec": 7.51,
+      "collars": {
+        "collar_1s": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0,
+          "collar_sec": 1.0
+        },
+        "collar_2s": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0,
+          "collar_sec": 2.0
+        },
+        "collar_3s": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0,
+          "collar_sec": 3.0
+        }
+      }
+    },
+    "V2_AdaptiveDetector_3": {
+      "num_cuts": 14,
+      "detection_time_sec": 6.59,
+      "collars": {
+        "collar_1s": {
+          "precision": 78.57,
+          "recall": 100.0,
+          "f1": 88.0,
+          "collar_sec": 1.0
+        },
+        "collar_2s": {
+          "precision": 78.57,
+          "recall": 100.0,
+          "f1": 88.0,
+          "collar_sec": 2.0
+        },
+        "collar_3s": {
+          "precision": 78.57,
+          "recall": 100.0,
+          "f1": 88.0,
+          "collar_sec": 3.0
+        }
+      }
+    }
+  },
+  "ocr_evaluation": {
+    "engine": "PaddleOCR_v4",
+    "frames_processed": 10,
+    "total_time_sec": 24.33,
+    "throughput_fps": 0.41,
+    "mean_latency_ms": 2064.7,
+    "total_words_extracted": 276,
+    "total_chars_extracted": 2728
+  }
+}

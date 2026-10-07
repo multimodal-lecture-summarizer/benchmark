@@ -1,0 +1,58 @@
+{
+  "_comment": "Frozen baseline of TED-LIUM D2 payload SHA-256. Captured 2026-09-26 before any code change, then refreshed once Phase 2 appended the 6 audio modality figures. dataset.figure_manifest.json is an intentional append target (modality figures are appended, never rewritten); every other payload must stay byte-identical when a second D2 dataset (iiit_cvid) or new figures are added.",
+  "dataset_id": "tedlium3",
+  "artifact_root": "experiments/outputs/phase2_tedlium_d2/official/full/payloads",
+  "appendable_payloads": [
+    "dataset.figure_manifest.json"
+  ],
+  "immutable_payload_count": 24,
+  "figure_manifest_entry_count": 14,
+  "audio_figure_manifest_record": {
+    "acquisition_level": "D2",
+    "code_revision": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "dataset_id": "tedlium3",
+    "exclusion_policy": "none - all eligible units included, no exclusions",
+    "figure_id": "audio_duration_ecdf",
+    "missing_policy": "missing values reported, never imputed",
+    "n": 20,
+    "path": "official/full/figures/audio/tedlium3-audio_duration_ecdf.png",
+    "plot_config": {
+      "kind": "ecdf",
+      "measure": "duration_sec"
+    },
+    "profile": "full",
+    "revision": "release3-snapshot-e51a4a2a93f3",
+    "sha256": "f934c9949e40d8e6a53bc5f23dc5878ced15a6b16b6dd9ae4d5af30f9d39efaf",
+    "source_artifact": "dataset.statistics",
+    "source_table_sha256": "6e582ac4536f584bc21ebcefa85c1e7fa400270fbd2ce80a341ba0e7e39beaf0",
+    "split_scope": "all_profiled_splits",
+    "unit": "seconds"
+  },
+  "payload_sha256": {
+    "asr.ablation_metrics.json": "5e52de011285a7b8c2c4607ba37aeea67d67919e851ba16397db22ce5458cc94",
+    "asr.ablation_predictions.json": "00b1228fdff0c709c87fbb682df95e4965a193f981e00edcbe709ce4f1e5a66d",
+    "asr.aggregate.json": "920543f40ad10a9dd8370a6ea0edd1e718b61152f51cf83e6cd9a117eefe70ea",
+    "asr.frozen_configuration.json": "265f728b34d400f80c1cd7cd5aeb7b6233235acbbead07ae3a17b8fdcd6c2f97",
+    "asr.per_unit_metrics.json": "12b7114f6e3ec2484c5c911cb47cebe33a12fec3e4509f312b61f34a1ffd7a8e",
+    "asr.raw_predictions.json": "8498ab5d1e5c0c5512d7668d0a1eb17f7d9d4eabc86cca06863b0588744bd612",
+    "asr.shortlist.json": "ea8bd004fe85423f6fc9a3554be83e0994194494c94c501bfb1965c02c665f49",
+    "dataset.acquisition_inventory.json": "64734fb13dd347d7bed74b5581565e1abf1281f995e5b1080250ab70e3b4c867",
+    "dataset.attrition.json": "3a6efcf07373153e755a345081380eeabac939bb9d03f2d1d37ef1c108fbbe1e",
+    "dataset.cross_dataset_comparison.json": "a59c71449a88ec5a7404d2e2d273f1dde481a35ca9e1b861d2eca81aba3422dd",
+    "dataset.d2_registry.json": "d09824c8d1dad2b897c62126a6d49123d173428138bec7c93596d0aaebf68ce9",
+    "dataset.eda_report.md": "34c5112ea812ade2798dce931660d09bb321f165e686c5fc091b6ad91c5306e0",
+    "dataset.endpoint_matrix.json": "67bb6cdf56610dc723324450293dd94019c880747d0ed846e088b8a6e96ab403",
+    "dataset.feasibility_receipts.json": "6139535ea813aa442254e0a516a553aafb12396af846ea724af31f1d36122721",
+    "dataset.figure_manifest.json": "c8613a265a0dd3ad820f67834d400a2864829214118ed2bab2a624b695b0a972",
+    "dataset.frozen_manifest.json": "6ffcc78cf6218dc1914a2ccdcacde6d978671d2db34d4738c207ca3056b0ec10",
+    "dataset.leakage_audit.json": "be2ae90618433275cf24bca5444d613e9ebe5b057ca1e92b1b51182ea32c1983",
+    "dataset.profile.json": "bdf4ac52ca86cbad340e34b860232c77b3734eaaa768ce129c50a11beb038882",
+    "dataset.quality_issues.json": "2ec14bbfce4e40279c6e578a35951bd4f4a373b250f5232b036ef0f3be7075de",
+    "dataset.registry.json": "d09824c8d1dad2b897c62126a6d49123d173428138bec7c93596d0aaebf68ce9",
+    "dataset.split_statistics.json": "4add0146bb2ec01ae8107c592524135699952ecd6b8fa156b161cadb06f79c47",
+    "dataset.statistics.json": "75406bf48e251322847fa011004225d042106228b7ffe42aa2aa5add15ba2103",
+    "dataset.unit_profile.json": "36cf47ed8768412407b7f9b7dbd320238ce2d2574a298d45c46858abbd34f199",
+    "environment.preflight_receipt.json": "5b2102818168e2dd9174e47fcc2ff2d67c50e5a3ad9ff52a4a71dcb179313197",
+    "environment.profile.json": "87ee5cae9bb0c442e44f02522c4a4fd7d235bb34353ec634d73f16409ed777e3"
+  }
+}

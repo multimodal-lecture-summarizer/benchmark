@@ -1,0 +1,10 @@
+course_id,lecture_no,filename,source_url,expected_bytes,duration_s,rights_status,acquisition_action,known_sha256
+econ159,2,econ159_02_091007.mov,https://openmedia.yale.edu/projects/courses/fall07/econ159/mov/econ159_02_091007.mov,601595188,4128.531,full_mov_rights_unverified,reuse,a25dbe7b4de66f7978c6c503da1b20548d301c116a9d4b9fd6224d7889113edf
+econ251,1,econ251_01_090309.mov,https://openmedia.yale.edu/projects/courses/fall09/econ251/mov/econ251_01_090309.mov,939375786,4456.258,visual_source_review,download,
+econ25208,6,econ252_06_020108.mov,https://openmedia.yale.edu/projects/courses/spring08/econ252/mov/econ252_06_020108.mov,603398593,4097.3,visual_source_review,download,
+engl220,23,engl220_23_120307.mov,https://openmedia.yale.edu/projects/courses/fall07/engl220/mov/engl220_23_120307.mov,386792955,2643.986,full_mov_rights_unverified,download,
+engl291,10,engl291_10_021308.mov,https://openmedia.yale.edu/projects/courses/spring08/engl291/mov/engl291_10_021308.mov,416690365,2849.901,rights_hold,hold,
+engl300,16,engl300_16_030509.mov,https://openmedia.yale.edu/projects/courses/spring09/engl300/mov/engl300_16_030509.mov,570335139,3009.175,rights_hold,hold,
+engl310,4,engl310_04_012907.mov,https://openmedia.yale.edu/projects/courses/spring07/engl310/mov/engl310_04_012907.mov,405911056,2742.184,rights_hold,hold,
+phys200,19,phys200_19_111306.mov,https://openmedia.yale.edu/projects/courses/fall06/phys200/mov/phys200_19_111306.mov,639913047,4313.548,full_mov_rights_unverified,reuse,47dbc049c2c7998e84325d5819ff4257f32d992be2e275fa10c2f0fe26a6ddb9
+phys201,10,phys201_10_021010.mov,https://openmedia.yale.edu/projects/courses/spring10/phys201/mov/phys201_10_021010.mov,883319266,4240.289,full_mov_rights_unverified,download,

@@ -1,0 +1,4 @@
+order,course_code,lecturer,lecture_url,video_id,source_url,expected_bytes,filename,source_status,acquisition_action
+1,ECON251,John Geanakoplos,https://oyc.yale.edu/economics/econ-251/lecture-1,vTs2IQ8OefQ,https://openmedia.yale.edu/projects/courses/fall09/econ251/m4v/econ251_01_090309.m4v,366101378,econ251_01_090309.m4v,source_gt_present_media_head_pass,download
+2,ECON25208,Robert J. Shiller,https://oyc.yale.edu/economics/econ-252-08/lecture-6,pXJb29s3nmY,https://openmedia.yale.edu/projects/courses/spring08/econ252/iphone/econ252_06_020108.m4v,210805128,econ252_06_020108.m4v,source_gt_present_media_head_pass,download
+3,PHYS201,Ramamurti Shankar,https://oyc.yale.edu/physics/phys-201/lecture-10,d8AIoU8vtzo,https://openmedia.yale.edu/projects/courses/spring10/phys201/m4v/phys201_10_021010.m4v,371635594,phys201_10_021010.m4v,source_gt_present_media_head_pass,download

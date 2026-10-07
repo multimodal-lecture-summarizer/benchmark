@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "plan_id": "260925-2304-d2-frozen-gt-runners",
+  "snippets": [
+    {
+      "file": "experiments/scripts/phase2_freeze_tedlium.py",
+      "purpose": "Load official manual verbatim transcripts from Arrow tables into inventory records and verify reference_text presence."
+    },
+    {
+      "file": "experiments/scripts/stage_benchmark_helpers.py",
+      "purpose": "Filter eligible units by endpoint matrix when available; fail closed on uneligible endpoints."
+    }
+  ]
+}

@@ -1,0 +1,483 @@
+{
+  "timestamp": "2026-09-05 17:31:45",
+  "eda_version": "v1.1.0-comprehensive",
+  "datasets": {
+    "tedlium3_speech": {
+      "dataset_name": "TED-LIUM Release 3",
+      "split_counts": {
+        "train": 268263,
+        "validation": 591,
+        "test": 1469
+      },
+      "total_utterances": 270323,
+      "evaluated_test_utterances": 1155,
+      "total_test_audio_hours": 2.617,
+      "vocabulary_size": 3599,
+      "duration_sec": {
+        "mean": 8.16,
+        "std": 4.32,
+        "median": 8.19,
+        "min": 0.35,
+        "max": 32.55
+      },
+      "words_per_utterance": {
+        "mean": 24.61,
+        "std": 14.95,
+        "median": 24.0
+      },
+      "speaking_rate_wpm": {
+        "mean": 179.1,
+        "std": 47.5,
+        "median": 179.7
+      }
+    },
+    "eduviqa_multimodal_qa": {
+      "dataset_name": "EduVidQA",
+      "total_videos": 20,
+      "total_qa_pairs": 883,
+      "mean_qa_per_video": 44.1,
+      "question_taxonomy": {
+        "What": 356,
+        "How": 298,
+        "Why": 46,
+        "Which": 4,
+        "When": 0,
+        "Where": 0,
+        "Who": 0,
+        "Verification (Is/Can/Do)": 2,
+        "Other": 177
+      },
+      "question_length_words": {
+        "mean": 14.3,
+        "std": 2.57,
+        "median": 14.0,
+        "min": 8,
+        "max": 24
+      },
+      "answer_length_words": {
+        "mean": 34.19,
+        "std": 10.39,
+        "median": 33.0,
+        "min": 7,
+        "max": 86
+      },
+      "video_distribution": [
+        {
+          "video_name": "Thailand Stock Market Update March 2024 - Fundamentals FY 2023 vs",
+          "question_count": 50,
+          "slide_transitions": 38
+        },
+        {
+          "video_name": "Applied Business Strategy 02 - Porter's Five Forces: Some common pitfalls",
+          "question_count": 20,
+          "slide_transitions": 18
+        },
+        {
+          "video_name": "Applied Business Strategy 01 - Macroeconomic Analysis",
+          "question_count": 30,
+          "slide_transitions": 31
+        },
+        {
+          "video_name": "Business Research 02 - Research Methods",
+          "question_count": 50,
+          "slide_transitions": 32
+        },
+        {
+          "video_name": "What is Differentiated Instruction? (4 Types Explained)",
+          "question_count": 50,
+          "slide_transitions": 10
+        },
+        {
+          "video_name": "Regions in Human Geography (Explained in 3 Minutes)",
+          "question_count": 29,
+          "slide_transitions": 10
+        },
+        {
+          "video_name": "Descriptive Research: Definition & Examples (Explained in 3 Minutes)",
+          "question_count": 40,
+          "slide_transitions": 0
+        },
+        {
+          "video_name": "21 Soft Skills for Teachers (Explained!)",
+          "question_count": 50,
+          "slide_transitions": 22
+        },
+        {
+          "video_name": "System Dynamics and Control: Module 7c - Introduction to Modeling with Simulink",
+          "question_count": 50,
+          "slide_transitions": 4
+        },
+        {
+          "video_name": "System Dynamics and Control: Module 4 - Modeling Mechanical Systems",
+          "question_count": 50,
+          "slide_transitions": 23
+        },
+        {
+          "video_name": "CA01",
+          "question_count": 25,
+          "slide_transitions": 13
+        },
+        {
+          "video_name": "CA02",
+          "question_count": 50,
+          "slide_transitions": 68
+        },
+        {
+          "video_name": "DS11-Recursion-Stack",
+          "question_count": 50,
+          "slide_transitions": 44
+        },
+        {
+          "video_name": "DS6-AlgorithmAnalysis",
+          "question_count": 50,
+          "slide_transitions": 22
+        },
+        {
+          "video_name": "CA03",
+          "question_count": 50,
+          "slide_transitions": 37
+        },
+        {
+          "video_name": "CA05",
+          "question_count": 50,
+          "slide_transitions": 27
+        },
+        {
+          "video_name": "DS12-Queue",
+          "question_count": 50,
+          "slide_transitions": 44
+        },
+        {
+          "video_name": "DS16-Tree",
+          "question_count": 47,
+          "slide_transitions": 47
+        },
+        {
+          "video_name": "CA04",
+          "question_count": 50,
+          "slide_transitions": 25
+        },
+        {
+          "video_name": "DS20Haep",
+          "question_count": 42,
+          "slide_transitions": 40
+        }
+      ]
+    },
+    "slidevqa_presentation_qa": {
+      "dataset_name": "SlideVQA (Multi-Slide Presentation QA)",
+      "split_counts": {
+        "train": 10617,
+        "val": 1652,
+        "test": 2215
+      },
+      "total_qa_pairs": 14484,
+      "total_unique_decks": 2619,
+      "arithmetic_qa_count": 1683,
+      "arithmetic_qa_ratio_pct": 11.62,
+      "multi_page_evidence_count": 2018,
+      "multi_page_evidence_ratio_pct": 13.93,
+      "evidence_pages_per_qa": {
+        "mean": 1.14,
+        "max": 3,
+        "single_page_count": 12466,
+        "multi_page_count": 2018
+      },
+      "question_taxonomy": {
+        "What": 6214,
+        "How": 1836,
+        "Why": 23,
+        "Which": 1640,
+        "When": 295,
+        "Where": 107,
+        "Who": 338,
+        "Verification (Is/Can/Do)": 409,
+        "Other": 3622
+      },
+      "question_length_words": {
+        "mean": 13.84,
+        "std": 7.86,
+        "median": 12.0,
+        "min": 3,
+        "max": 60
+      },
+      "answer_length_words": {
+        "mean": 1.81,
+        "std": 1.75,
+        "median": 1.0,
+        "min": 1,
+        "max": 26
+      }
+    },
+    "iiit_cvid_classroom_ocr": {
+      "dataset_name": "IIIT-CVid Classroom Lecture Text OCR",
+      "split_counts": {
+        "train": 82263,
+        "val": 15379,
+        "test": 40103
+      },
+      "total_word_annotations": 137745,
+      "total_frames": {
+        "train": 3171,
+        "test": 1755,
+        "total": 4926
+      },
+      "modality_word_breakdown_test": {
+        "slides": 17097,
+        "paper": 10581,
+        "blackboard": 6479,
+        "whiteboard": 5946
+      },
+      "modality_frame_breakdown_test": {
+        "slides": 368,
+        "paper": 527,
+        "blackboard": 616,
+        "whiteboard": 244
+      },
+      "vocabulary_size": 18622,
+      "lexicon_size": 18273,
+      "word_character_length": {
+        "mean": 4.83,
+        "std": 2.9,
+        "median": 4.0,
+        "min": 1,
+        "max": 22
+      }
+    },
+    "core_evaluation_lectures": {
+      "dataset_name": "Core TIB Multimodal Academic Lectures",
+      "total_lectures": 20,
+      "total_duration_hours": 1.56,
+      "lecture_duration_min": {
+        "mean": 4.68,
+        "std": 8.93,
+        "median": 0.5,
+        "min": 0.04,
+        "max": 34.74
+      },
+      "sentences_per_lecture": {
+        "mean": 24.2,
+        "std": 14.7,
+        "median": 21.5,
+        "min": 3,
+        "max": 56
+      },
+      "boundaries_per_lecture": {
+        "total_boundaries": 25,
+        "mean": 1.2,
+        "std": 1.0,
+        "median": 1.0,
+        "min": 0,
+        "max": 3
+      },
+      "tensor_schema": {
+        "text_features": "384-dimensional dense semantic embeddings (BERT / E5)",
+        "acoustic_features": "32-dimensional prosodic pitch/energy/cadence features",
+        "visual_features": "384-dimensional DINOv2 ViT-S/14 frame representations",
+        "ocr_features": "384-dimensional slide character & term representations"
+      },
+      "single_author_audit": {
+        "audited_author": "Lead Researcher / Author",
+        "total_lectures_audited": 20,
+        "keep_count": 20,
+        "keep_rate_pct": 100.0,
+        "flagged_count": 0,
+        "excluded_count": 0,
+        "mean_source_support_score": 2.0,
+        "mean_coverage_score": 2.0,
+        "frozen_exclusion_list": [],
+        "zero_leakage_status": "PASS (0 synthetic labels, 100% authentic multimodal features)",
+        "equal_budget_guardrails": {
+          "max_source_tokens": 32000,
+          "max_summary_tokens": 512,
+          "max_visual_keyframes": 200,
+          "status": "COMPLIANT (D-T08 Invariant Enforced)"
+        }
+      },
+      "lectures_summary": [
+        {
+          "lecture_id": "21_Soft_Skills_for_Teachers_Explained",
+          "title": "21 Soft Skills for Teachers (Explained!)",
+          "duration_min": 14.42,
+          "sentences": 17,
+          "boundaries": 3,
+          "mean_chapter_length_min": 3.6
+        },
+        {
+          "lecture_id": "Applied_Business_Strategy_01_-_Macroeconomic_Analysis",
+          "title": "Applied Business Strategy 01 - Macroeconomic Analysis",
+          "duration_min": 0.93,
+          "sentences": 24,
+          "boundaries": 3,
+          "mean_chapter_length_min": 0.23
+        },
+        {
+          "lecture_id": "Applied_Business_Strategy_02_-_Porter_s_Five_Forces_Some_common_pitfalls",
+          "title": "Applied Business Strategy 02 - Porter's Five Forces_ Some common pitfalls",
+          "duration_min": 0.69,
+          "sentences": 8,
+          "boundaries": 1,
+          "mean_chapter_length_min": 0.35
+        },
+        {
+          "lecture_id": "Business_Research_02_-_Research_Methods",
+          "title": "Business Research 02 - Research Methods",
+          "duration_min": 34.74,
+          "sentences": 29,
+          "boundaries": 3,
+          "mean_chapter_length_min": 8.69
+        },
+        {
+          "lecture_id": "CA01",
+          "title": "CA01",
+          "duration_min": 0.18,
+          "sentences": 11,
+          "boundaries": 0,
+          "mean_chapter_length_min": 0.18
+        },
+        {
+          "lecture_id": "CA02",
+          "title": "CA02",
+          "duration_min": 0.23,
+          "sentences": 39,
+          "boundaries": 0,
+          "mean_chapter_length_min": 0.23
+        },
+        {
+          "lecture_id": "CA03",
+          "title": "CA03",
+          "duration_min": 0.5,
+          "sentences": 27,
+          "boundaries": 1,
+          "mean_chapter_length_min": 0.25
+        },
+        {
+          "lecture_id": "CA04",
+          "title": "CA04",
+          "duration_min": 0.06,
+          "sentences": 16,
+          "boundaries": 1,
+          "mean_chapter_length_min": 0.03
+        },
+        {
+          "lecture_id": "CA05",
+          "title": "CA05",
+          "duration_min": 0.5,
+          "sentences": 13,
+          "boundaries": 2,
+          "mean_chapter_length_min": 0.17
+        },
+        {
+          "lecture_id": "Descriptive_Research_Definition_Examples_Explained_in_3_Minutes",
+          "title": "Descriptive Research_ Definition & Examples (Explained in 3 Minutes)",
+          "duration_min": 0.37,
+          "sentences": 4,
+          "boundaries": 1,
+          "mean_chapter_length_min": 0.18
+        },
+        {
+          "lecture_id": "DS11-Recursion-Stack",
+          "title": "DS11-Recursion-Stack",
+          "duration_min": 0.04,
+          "sentences": 35,
+          "boundaries": 1,
+          "mean_chapter_length_min": 0.02
+        },
+        {
+          "lecture_id": "DS12-Queue",
+          "title": "DS12-Queue",
+          "duration_min": 0.46,
+          "sentences": 42,
+          "boundaries": 2,
+          "mean_chapter_length_min": 0.15
+        },
+        {
+          "lecture_id": "DS16-Tree",
+          "title": "DS16-Tree",
+          "duration_min": 0.28,
+          "sentences": 41,
+          "boundaries": 1,
+          "mean_chapter_length_min": 0.14
+        },
+        {
+          "lecture_id": "DS20Haep",
+          "title": "DS20Haep",
+          "duration_min": 0.44,
+          "sentences": 38,
+          "boundaries": 0,
+          "mean_chapter_length_min": 0.44
+        },
+        {
+          "lecture_id": "DS6-AlgorithmAnalysis",
+          "title": "DS6-AlgorithmAnalysis",
+          "duration_min": 0.17,
+          "sentences": 40,
+          "boundaries": 1,
+          "mean_chapter_length_min": 0.08
+        },
+        {
+          "lecture_id": "Regions_in_Human_Geography_Explained_in_3_Minutes",
+          "title": "Regions in Human Geography (Explained in 3 Minutes)",
+          "duration_min": 3.07,
+          "sentences": 3,
+          "boundaries": 2,
+          "mean_chapter_length_min": 1.02
+        },
+        {
+          "lecture_id": "System_Dynamics_and_Control_Module_4_-_Modeling_Mechanical_Systems",
+          "title": "System Dynamics and Control_ Module 4 - Modeling Mechanical Systems",
+          "duration_min": 0.94,
+          "sentences": 56,
+          "boundaries": 2,
+          "mean_chapter_length_min": 0.31
+        },
+        {
+          "lecture_id": "System_Dynamics_and_Control_Module_7c_-_Introduction_to_Modeling_with_Simulink",
+          "title": "System Dynamics and Control_ Module 7c - Introduction to Modeling with Simulink",
+          "duration_min": 0.87,
+          "sentences": 8,
+          "boundaries": 0,
+          "mean_chapter_length_min": 0.87
+        },
+        {
+          "lecture_id": "Thailand_Stock_Market_Update_March_2024_-_Fundamentals_FY_2023_vs",
+          "title": "Thailand Stock Market Update March 2024 - Fundamentals FY 2023 vs",
+          "duration_min": 18.58,
+          "sentences": 15,
+          "boundaries": 1,
+          "mean_chapter_length_min": 9.29
+        },
+        {
+          "lecture_id": "What_is_Differentiated_Instruction_4_Types_Explained",
+          "title": "What is Differentiated Instruction_ (4 Types Explained)",
+          "duration_min": 16.05,
+          "sentences": 19,
+          "boundaries": 0,
+          "mean_chapter_length_min": 16.05
+        }
+      ]
+    },
+    "tvsum_exploratory_provenance": {
+      "dataset_name": "TVSum50 (Exploratory / Historical Benchmark)",
+      "total_videos_investigated": 50,
+      "categories_count": 10,
+      "categories": [
+        "BK (Book)",
+        "BT (Beauty)",
+        "DS (Dog Show)",
+        "FM (Food)",
+        "GA (Gaming)",
+        "MS (Movie)",
+        "PK (Parkour)",
+        "PR (Product)",
+        "VT (Vehicle)",
+        "VU (Video Gaming)"
+      ],
+      "annotator_workers_per_video": 20,
+      "mean_importance_score": 2.7661,
+      "importance_consensus_std": 0.819,
+      "local_storage_status": "PROVENANCE_AUDITED",
+      "scientific_disposition": "Excluded from primary lecture chaptering & summarization benchmark because TVSum comprises general YouTube vlogs without academic lecture slides or structured discourse. Raw video files retained externally to conserve local storage."
+    }
+  }
+}

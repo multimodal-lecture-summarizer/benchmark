@@ -1,0 +1,47 @@
+{
+  "schema": "rq1-yale-qa-extension-review-decisions/1",
+  "source_only": true,
+  "no_timestamp_or_label_edits": true,
+  "no_candidate_prediction_or_metric_consulted": true,
+  "decisions": {
+    "vTs2IQ8OefQ": {
+      "boundary_pass": [616, 1074, 3013, 3502],
+      "boundary_uncertain": [2027, 2773],
+      "boundary_error": [],
+      "title_uncertain": [2027, 2773],
+      "title_error": [],
+      "boundary_reason": {
+        "2027": "The lecturer moves from a social-security example into more finance examples across the marker, but the exact onset is gradual and not independently fixed within ±3 s.",
+        "2773": "The lecturer closes one example then returns to the 2007 crisis; the broader 'why study finance' section is not a distinguishable onset within ±3 s."
+      },
+      "rights": "pass_scoped",
+      "rights_reason": "Full-lecture storyboard shows Yale lecturer, his classroom experiment and course presentation/charts; no separately identified extended third-party media component on the selected lecture page. Internal noncommercial research scope only; no redistribution."
+    },
+    "pXJb29s3nmY": {
+      "boundary_pass": [388, 3090],
+      "boundary_uncertain": [1200],
+      "boundary_error": [2504, 3419],
+      "title_uncertain": [1200, 2504],
+      "title_error": [3419],
+      "boundary_reason": {
+        "1200": "At the original marker the lecturer says he has doubts about the prior efficient-markets endorsement; the precise new subsection onset is gradual within the fixed collar.",
+        "2504": "The speaker continues the preceding efficient-markets explanation through the original marker; random-walk onset is not independently observed within ±3 s.",
+        "3419": "At 3419 s the lecturer switches to problem-set logistics, rather than a distinguishable new forecasting-challenges chapter; preserve the title and boundary errors separately."
+      },
+      "rights": "pass_scoped",
+      "rights_reason": "Full-lecture storyboard shows Yale lecturer, his chalkboard derivations and course-generated looking graphs/spreadsheet; no separately identified extended third-party media component on the selected lecture page. Internal noncommercial research scope only; no redistribution."
+    },
+    "d8AIoU8vtzo": {
+      "boundary_pass": [526, 2994],
+      "boundary_uncertain": [],
+      "boundary_error": [4027],
+      "title_uncertain": [526],
+      "title_error": [4027],
+      "boundary_reason": {
+        "4027": "At the original 4027 s marker the lecturer summarizes and reworks the already-discussed Faraday/Lenz formula, then assigns reflection; no new Faraday-law onset lies within ±3 s."
+      },
+      "rights": "pass_scoped",
+      "rights_reason": "Full-lecture storyboard shows Yale lecturer and his chalkboard equations/diagrams only; internal noncommercial research scope under OYC terms, without media or transcript redistribution."
+    }
+  }
+}

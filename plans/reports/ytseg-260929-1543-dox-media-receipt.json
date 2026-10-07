@@ -1,0 +1,41 @@
+{
+  "video_id": "-dOX_4lI6HY",
+  "ytseg_source": "retkowski/ytseg text train-00000-of-00004.parquet @ 4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+  "publisher_page": "https://ocw.mit.edu/courses/16-687-private-pilot-ground-school-january-iap-2019/resources/lecture-13-interpreting-weather-data/",
+  "media_url": "https://archive.org/download/MIT16.687IAP19/MIT16_687IAP19_lec13_300k.mp4",
+  "resolved_download_url": "https://dn720400.ca.archive.org/0/items/MIT16.687IAP19/MIT16_687IAP19_lec13_300k.mp4",
+  "http_status": 200,
+  "http_content_type": "video/mp4",
+  "http_content_length": 123297321,
+  "downloaded_bytes": 123297321,
+  "content_length_match": true,
+  "http_etag": "\"5e8770c7-7595e29\"",
+  "http_last_modified": "Fri, 03 Apr 2020 17:22:15 GMT",
+  "local_ignored_media_path": "multimodal-lecture-summarizer/experiments/datasets/ytseg_qualification/-dOX_4lI6HY.mp4",
+  "sha256": "6535760144bb69fbee50d8386c4f16a59e3a12634ed785d06264f68908c51a29",
+  "probe": {
+    "container_duration_s": 3122.324,
+    "ytseg_duration_s": 3122.0,
+    "video": {"codec": "h264", "width": 640, "height": 360, "duration_s": 3122.285833, "reported_frames": 93575},
+    "audio": {"codec": "aac", "sample_rate_hz": 48000, "channels": 2, "duration_s": 3122.324},
+    "embedded_english_subtitle_streams": 2,
+    "embedded_first_subtitle_events_extracted": 1108
+  },
+  "full_decode": {"ffmpeg_exit_code": 0, "mapped_streams": ["0:v:0", "0:a:0"], "command_options": ["-loglevel warning", "-xerror", "-f null"], "warning": "attached picture stream 0 has no timescale; it was not mapped"},
+  "decoded_frame_pts": {
+    "video": {"frames": 93575, "first_s": 0.0, "last_s": 3122.252467, "negative_steps": 0},
+    "audio": {"frames": 146359, "first_s": 0.0, "last_s": 3122.302667, "negative_steps": 0}
+  },
+  "checks": [
+    {"point": "10_percent", "time_s": 312.2324, "ytseg_chapter": "Don't Despair, Use Softwair", "subtitle_topic": "turbulence AIRMET and flight levels", "ytseg_text_match": true, "frame_topic": "weather application maps"},
+    {"point": "50_percent", "time_s": 1561.162, "ytseg_chapter": "Weather Depiction Chart", "subtitle_topic": "weather chart and cloud cover", "ytseg_text_match": true, "frame_topic": "Weather Depiction Chart slide"},
+    {"point": "90_percent", "time_s": 2810.092, "ytseg_chapter": "Hazardous Inflight Weather Advisory Service HIWAS", "subtitle_topic": "ADS-B weather feed before next chapter", "ytseg_text_match": true, "frame_topic": "lecturer speaking"},
+    {"point": "first_internal_boundary", "time_s": 39.0, "ytseg_chapter_after": "Definitions", "subtitle_topic": "VFR visibility and ceiling", "ytseg_text_match": true, "frame_title_match": true},
+    {"point": "middle_internal_boundary", "time_s": 1508.0, "ytseg_chapter_after": "Weather Depiction Chart", "subtitle_topic": "weather depiction chart", "ytseg_text_match": true, "frame_title_match": true},
+    {"point": "last_internal_boundary", "time_s": 3006.0, "ytseg_chapter_after": "Questions?", "subtitle_topic": "coding magazine before audience Q&A", "ytseg_text_match": true, "frame_title_match": true}
+  ],
+  "technical_media_status": "pass",
+  "overall_resource_status": "hold",
+  "blocking_gates": ["hold_gt: upstream conversion code unavailable", "hold_rights: third-party slide imagery and whole-component rights not cleared", "content_duplicate_check pending; exact YouTube ID overlap was previously zero"],
+  "limits": ["Subtitle comparison uses captions embedded in publisher MP4, which may share source with YTSeg text; no independent speech transcription was made", "Six fixed points and full decoding do not prove every chapter boundary", "No license inference from MP4 metadata was used to clear third-party content", "No D2 or official RQ1 run"]
+}

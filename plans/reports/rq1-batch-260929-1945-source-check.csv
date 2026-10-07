@@ -1,0 +1,5 @@
+video_id,course_id,publisher_page_identity,description_pair_parity,gt_media_alignment,rights_component_scope,qualification_status,reason
+EuNXVy5-KgA,MIT-16.687-IAP2019,official_iframe_exact_id,pass_14_of_14,not_checked,site_license_reviewed_component_scope_pending,hold_media_rights_boundary,exact official page and source-description parity only
+js34ZxECiCA,MIT-22.033-Fall2011,title_course_page_only,pass_21_of_21,not_checked,site_license_reviewed_slides_component_scope_pending,hold_identity_media_rights_boundary,official resource has video and slides but page-to-ID binding not established
+qdbkvD4N-us,MIT-18.S096-Fall2013,official_iframe_exact_id,pass_3_of_3,not_checked,site_license_reviewed_component_scope_pending,hold_media_rights_boundary,official page confirms video ID and lecturer; original pairs match description
+09vU-wVwW3U,MIT-6.046J-Spring2015,official_iframe_exact_id,pass_5_of_5,not_checked,site_license_reviewed_component_scope_pending,hold_media_rights_boundary,official page confirms video ID and presenter; original pairs match description

@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "plan_id": "260925-2304-d2-frozen-gt-runners",
+  "autoStopRequired": false,
+  "humanApproved": true,
+  "risk_triggers": [],
+  "evaluation": "Low risk. No database migrations, auth or public breaking API changes. 100% test compatibility preserved."
+}

@@ -1,0 +1,60 @@
+{
+  "record_type": "historical_partial_asr_validation_export",
+  "source_archive": "full-20261004T041611Z-1-001.zip",
+  "source_archive_sha256": "d4f0a4320dedfa6768e7ac54d765db1d5dc0831aa3523cc7211d6725810cacf4",
+  "source_member_count": 2664,
+  "source_uncompressed_bytes": 6715746,
+  "source_run_config": {
+    "source_sha256": "8a190d957905e31ef2b8f7c3fb20e39834fe20cf49b924031c521b756c0ca0f6",
+    "config_sha256": "2647b3328604aa5e14be5199aae921cbd5214ceebd3e1efd185b81e00a410605",
+    "dependency_state_sha256": "b83c6ea51e791ce670439d1a717da1c3eab44334ae87df909fc5ec7f5a657c04",
+    "run_id": "755d34a3-f3d4-410e-a8d1-1adf7d67198f"
+  },
+  "validation_checkpoint_counts": {
+    "RQ0_ARCH.A0_WhisperBase": {
+      "completed": 507,
+      "failed": 0
+    },
+    "RQ0_ARCH.A1_Wav2Vec2CTC": {
+      "completed": 507,
+      "failed": 0
+    },
+    "RQ0_ARCH.A2_FastConformerCTC": {
+      "completed": 507,
+      "failed": 0
+    },
+    "RQ0_ARCH.A3_FastConformerRNNT": {
+      "completed": 507,
+      "failed": 0
+    },
+    "RQ0_ARCH.A4_ParaformerEN": {
+      "completed": 504,
+      "failed": 3
+    },
+    "RQ0_ARCH.A5_Qwen3ASR_0_6B": {
+      "completed": 121,
+      "failed": 0
+    }
+  },
+  "validation_failed_units": [
+    {
+      "candidate": "RQ0_ARCH.A4_ParaformerEN",
+      "unit_id": "validation:Barry_Schwartz-756.48-776.65-<F0_M>",
+      "reason": "RuntimeError: IndexError: OUT_OF_RANGE: piece id is out of range."
+    },
+    {
+      "candidate": "RQ0_ARCH.A4_ParaformerEN",
+      "unit_id": "validation:Blaise_Agueray_Arcas-24.25-40.62-<F0_M>",
+      "reason": "RuntimeError: IndexError: OUT_OF_RANGE: piece id is out of range."
+    },
+    {
+      "candidate": "RQ0_ARCH.A4_ParaformerEN",
+      "unit_id": "validation:Wade_Davis-1282.74-1296.34-<F0_M>",
+      "reason": "RuntimeError: IndexError: OUT_OF_RANGE: piece id is out of range."
+    }
+  ],
+  "native_test_present": false,
+  "selection_receipt_present": false,
+  "asr_aggregate_present": false,
+  "interpretation": "Incomplete 2026-10-04 validation checkpoint export; not the completed 2026-10-05 six-candidate benchmark. Existing dataset manifests and receipts match local copies byte-for-byte; successful per-unit checkpoints were not imported."
+}

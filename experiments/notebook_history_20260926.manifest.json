@@ -1,0 +1,443 @@
+{
+  "schema_version": 1,
+  "archive": "experiments/notebook_history_20260926.zip",
+  "entries": [
+    {
+      "original": "experiments/legacy_notebooks/01_audio_asr_benchmark_old.ipynb",
+      "member": "history/experiments/legacy_notebooks/01_audio_asr_benchmark_old.ipynb",
+      "sha256": "276d1920befdad822a756b13d650fed8bfdb7a851eafa498914c47296026d40c",
+      "bytes": 9901,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks/02_visual_scene_ocr_benchmark_old.ipynb",
+      "member": "history/experiments/legacy_notebooks/02_visual_scene_ocr_benchmark_old.ipynb",
+      "sha256": "e71b870d892a67d8aeb2b0ba9ab8f023a78961f7d2b58a367735fef94b10eeac",
+      "bytes": 9863,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks/03_multimodal_chaptering_benchmark_old.ipynb",
+      "member": "history/experiments/legacy_notebooks/03_multimodal_chaptering_benchmark_old.ipynb",
+      "sha256": "745430e4446747a27f292b562aa92e371256f2928032d2f416708299aff65231",
+      "bytes": 39358,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks/04_hierarchical_summarization_benchmark_old.ipynb",
+      "member": "history/experiments/legacy_notebooks/04_hierarchical_summarization_benchmark_old.ipynb",
+      "sha256": "afb42eeb14bc30853aecc0c5d76cb6aa13d5b826c2c057b09375af2bf3015a90",
+      "bytes": 46296,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks/05_evidence_retrieval_qa_benchmark_old.ipynb",
+      "member": "history/experiments/legacy_notebooks/05_evidence_retrieval_qa_benchmark_old.ipynb",
+      "sha256": "3cadcff9461b8ca4f0b0785ad23c56bc09ee066bc65004452f7855d04e4657f0",
+      "bytes": 45309,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks/06_efficiency_pareto_error_cascading_old.ipynb",
+      "member": "history/experiments/legacy_notebooks/06_efficiency_pareto_error_cascading_old.ipynb",
+      "sha256": "f729e2db700889c0e92fcb853eb9dff73f6d28e08310e91787b47771c2345f25",
+      "bytes": 923536,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks_backup/01_phase1_qualification_and_pilot.ipynb",
+      "member": "history/experiments/legacy_notebooks_backup/01_phase1_qualification_and_pilot.ipynb",
+      "sha256": "2a0b5bb2e8164770021b985a490ed6af52643d87efe14dc42137a0bff53da2dc",
+      "bytes": 1271129,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks_backup/02_phase2_frozen_data_and_runner.ipynb",
+      "member": "history/experiments/legacy_notebooks_backup/02_phase2_frozen_data_and_runner.ipynb",
+      "sha256": "118e56c0b0c0e421b9970a7ba3d9cefbaedd0d526f0e298daeb7e6c35ddec9f3",
+      "bytes": 536915,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks_backup/03_phase3_representation_and_chaptering.ipynb",
+      "member": "history/experiments/legacy_notebooks_backup/03_phase3_representation_and_chaptering.ipynb",
+      "sha256": "745430e4446747a27f292b562aa92e371256f2928032d2f416708299aff65231",
+      "bytes": 39358,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks_backup/04_phase4_hierarchical_summarization.ipynb",
+      "member": "history/experiments/legacy_notebooks_backup/04_phase4_hierarchical_summarization.ipynb",
+      "sha256": "afb42eeb14bc30853aecc0c5d76cb6aa13d5b826c2c057b09375af2bf3015a90",
+      "bytes": 46296,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks_backup/05_phase5_evidence_retrieval_and_qa.ipynb",
+      "member": "history/experiments/legacy_notebooks_backup/05_phase5_evidence_retrieval_and_qa.ipynb",
+      "sha256": "3cadcff9461b8ca4f0b0785ad23c56bc09ee066bc65004452f7855d04e4657f0",
+      "bytes": 45309,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks_backup/06_phase6_rq4_efficiency_and_pareto.ipynb",
+      "member": "history/experiments/legacy_notebooks_backup/06_phase6_rq4_efficiency_and_pareto.ipynb",
+      "sha256": "f729e2db700889c0e92fcb853eb9dff73f6d28e08310e91787b47771c2345f25",
+      "bytes": 923536,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks_backup/audio_transcription_realtime.ipynb",
+      "member": "history/experiments/legacy_notebooks_backup/audio_transcription_realtime.ipynb",
+      "sha256": "31462161e0c9ec817ab6ec53c9eb8ade6168617f7c2bea0dcf63cc798304d06f",
+      "bytes": 135823,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks_backup/benchmark_test_set.ipynb",
+      "member": "history/experiments/legacy_notebooks_backup/benchmark_test_set.ipynb",
+      "sha256": "10e718bb6cfee074b72500e11e1217df53c8ddde2967feb471166abf491009d5",
+      "bytes": 217497,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks_backup/Clip_on_tedlium.ipynb",
+      "member": "history/experiments/legacy_notebooks_backup/Clip_on_tedlium.ipynb",
+      "sha256": "ad753fbc77e9f1a07150b424ba29d5fcc8963a7a628111437e8e827fe76faa8d",
+      "bytes": 446314,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks_backup/connect_drive.ipynb",
+      "member": "history/experiments/legacy_notebooks_backup/connect_drive.ipynb",
+      "sha256": "6d8de42d771cb948620aecfb731f78958200f58d0a1237d97294bb004ad6bc31",
+      "bytes": 9985,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks_backup/eda_datasets.ipynb",
+      "member": "history/experiments/legacy_notebooks_backup/eda_datasets.ipynb",
+      "sha256": "604edbdcfc53d965c19e73225d8663d87ce36ca1a60b4acd86cc6479f08df5f0",
+      "bytes": 580725,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks_backup/evaluate_deepfilternet.ipynb",
+      "member": "history/experiments/legacy_notebooks_backup/evaluate_deepfilternet.ipynb",
+      "sha256": "c6285c3ab60de2c0c1a8d3814a55892795fc74352051e1e0414cf7b345b12e8d",
+      "bytes": 65909,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks_backup/rag_experiment.ipynb",
+      "member": "history/experiments/legacy_notebooks_backup/rag_experiment.ipynb",
+      "sha256": "a4db1b9ebf2e230b67970bc8a1d74f4c586f29c5982ec7eefc06bc7ef155edc2",
+      "bytes": 17004,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks_backup/tedlium.ipynb",
+      "member": "history/experiments/legacy_notebooks_backup/tedlium.ipynb",
+      "sha256": "e604c519734f219da39d9ecafe205270bda3733aeace10721d4beffb05416f83",
+      "bytes": 1254962,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks_backup/test_optimize_model.ipynb",
+      "member": "history/experiments/legacy_notebooks_backup/test_optimize_model.ipynb",
+      "sha256": "ad093cd5323cdbdd74dad0fec4c2a6ac06eff1ebe9b7a6d9ab30d9ade74e8c65",
+      "bytes": 37920,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks_backup/test_pipeline.ipynb",
+      "member": "history/experiments/legacy_notebooks_backup/test_pipeline.ipynb",
+      "sha256": "320bb1b7be1d732ca17771785527f4ec70ff827d23b4a6946f3d64ab8606d3e2",
+      "bytes": 64259,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks_backup/train_fusion_network.ipynb",
+      "member": "history/experiments/legacy_notebooks_backup/train_fusion_network.ipynb",
+      "sha256": "87c0c702e13e2e046f71376c7a01d43ac4e0de66e366a2a9ad3e8a7fab4b5dce",
+      "bytes": 33355,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks_backup/visual.ipynb",
+      "member": "history/experiments/legacy_notebooks_backup/visual.ipynb",
+      "sha256": "a2a0ca92274450be7a828d347df8287ee55e3bf7e00bec212dc7ba6defc6c200",
+      "bytes": 344389,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/legacy_notebooks_backup/visual_pipeline_demo.ipynb",
+      "member": "history/experiments/legacy_notebooks_backup/visual_pipeline_demo.ipynb",
+      "sha256": "425a899c258ad562b9ea96b6c7b3d197d94cbb86cc50b25019e371b4209eea04",
+      "bytes": 57625,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/datasets/tedlium3/official/full/00a_environment_preflight.ipynb",
+      "member": "history/experiments/outputs/executed_notebooks/datasets/tedlium3/official/full/00a_environment_preflight.ipynb",
+      "sha256": "8a3b4d571ecca7c4025bad1f1357a69b0a6b4e3f01a51c6fea2b0bea342fd30b",
+      "bytes": 8099,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/datasets/tedlium3/official/full/00a_environment_preflight.run.json",
+      "member": "history/experiments/outputs/executed_notebooks/datasets/tedlium3/official/full/00a_environment_preflight.run.json",
+      "sha256": "71adbf42641d6b0dde306468fb24879a8953dccb5b78661feed99f22b6cb4b2c",
+      "bytes": 744,
+      "kind": "run_receipt"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/datasets/tedlium3/official/full/00b_dataset_feasibility.ipynb",
+      "member": "history/experiments/outputs/executed_notebooks/datasets/tedlium3/official/full/00b_dataset_feasibility.ipynb",
+      "sha256": "de4019fc85b662708bc8625b714bb6077f2a8007cb758a8cd46a0be64fbd9f5e",
+      "bytes": 8230,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/datasets/tedlium3/official/full/00b_dataset_feasibility.run.json",
+      "member": "history/experiments/outputs/executed_notebooks/datasets/tedlium3/official/full/00b_dataset_feasibility.run.json",
+      "sha256": "b29986c9ce86591f6425e67876e072f72e8f001d49da2f50019d6329f28bfe76",
+      "bytes": 748,
+      "kind": "run_receipt"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/official/full/00a_environment_preflight.ipynb",
+      "member": "history/experiments/outputs/executed_notebooks/official/full/00a_environment_preflight.ipynb",
+      "sha256": "73ffb37a91e4de62daa18e7107fe932e46011d4b6ccdf27b904e860d20a2801f",
+      "bytes": 8075,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/official/full/00a_environment_preflight.run.json",
+      "member": "history/experiments/outputs/executed_notebooks/official/full/00a_environment_preflight.run.json",
+      "sha256": "50948399806300394c96a22a0636371d78d4aef93033846e8764fee444d7ef45",
+      "bytes": 744,
+      "kind": "run_receipt"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/official/full/00b_dataset_feasibility.ipynb",
+      "member": "history/experiments/outputs/executed_notebooks/official/full/00b_dataset_feasibility.ipynb",
+      "sha256": "91fc768982eae1c529f8c74c7c8c2960753ff79d95a8bd8b24a79941cc8d3f55",
+      "bytes": 8206,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/official/full/00b_dataset_feasibility.run.json",
+      "member": "history/experiments/outputs/executed_notebooks/official/full/00b_dataset_feasibility.run.json",
+      "sha256": "74e30ccbec668169eba377c1455dde682f9f25ad3b93ee9406cda8882d660dff",
+      "bytes": 748,
+      "kind": "run_receipt"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/official/full/00c_dataset_eda_and_freeze.ipynb",
+      "member": "history/experiments/outputs/executed_notebooks/official/full/00c_dataset_eda_and_freeze.ipynb",
+      "sha256": "3420eee44ddb5d2162206272b42ee0948c1c8f91c7a931e8961fd6295523bb54",
+      "bytes": 8918,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/official/full/00c_dataset_eda_and_freeze.run.json",
+      "member": "history/experiments/outputs/executed_notebooks/official/full/00c_dataset_eda_and_freeze.run.json",
+      "sha256": "ca39370e3939a18c5dc54ce8b76df217bf13faabcdbcd05984f6145736f82a01",
+      "bytes": 745,
+      "kind": "run_receipt"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/official/full/01a_asr_model_benchmark.ipynb",
+      "member": "history/experiments/outputs/executed_notebooks/official/full/01a_asr_model_benchmark.ipynb",
+      "sha256": "502d34a88112f9879ef3b2ecd510c3f9f32d015679a488258dabf2424d30278f",
+      "bytes": 8189,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/official/full/01a_asr_model_benchmark.run.json",
+      "member": "history/experiments/outputs/executed_notebooks/official/full/01a_asr_model_benchmark.run.json",
+      "sha256": "15f0f2ca55ad25c88584417939a1e319785ee1ca503a6a3394bcd10974575b88",
+      "bytes": 742,
+      "kind": "run_receipt"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/official/full/01b_asr_preprocessing_ablation.ipynb",
+      "member": "history/experiments/outputs/executed_notebooks/official/full/01b_asr_preprocessing_ablation.ipynb",
+      "sha256": "755cc396b773672d20d93b18c15c8aaba0378e3e3485761dff648f984685b66b",
+      "bytes": 8353,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/official/full/01b_asr_preprocessing_ablation.run.json",
+      "member": "history/experiments/outputs/executed_notebooks/official/full/01b_asr_preprocessing_ablation.run.json",
+      "sha256": "9ff89f1c0f1e74eb38f2ca105433da4f5584dc18baa1b16c3f89e6617dcad210",
+      "bytes": 749,
+      "kind": "run_receipt"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/official/smoke/00a_environment_preflight.run.json",
+      "member": "history/experiments/outputs/executed_notebooks/official/smoke/00a_environment_preflight.run.json",
+      "sha256": "6cb40229752267f75abe9979f9c8e164049c1d3d15a743f037b4bbd97825fe78",
+      "bytes": 718,
+      "kind": "run_receipt"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/official/smoke/00b_dataset_feasibility.run.json",
+      "member": "history/experiments/outputs/executed_notebooks/official/smoke/00b_dataset_feasibility.run.json",
+      "sha256": "7cd1cdacc12845236d48922f93c47c56138d5b101b6b67d93ca244253f07df54",
+      "bytes": 716,
+      "kind": "run_receipt"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/official/smoke/00c_dataset_eda_and_freeze.run.json",
+      "member": "history/experiments/outputs/executed_notebooks/official/smoke/00c_dataset_eda_and_freeze.run.json",
+      "sha256": "5f89ec7a0b9ce310e7feca52ad869a3fef0f9f3205f621d157083ae79a1bb4e4",
+      "bytes": 719,
+      "kind": "run_receipt"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/phase12_repair_260926/dataset_readiness-20260926T101150685463Z.ipynb",
+      "member": "history/experiments/outputs/executed_notebooks/phase12_repair_260926/dataset_readiness-20260926T101150685463Z.ipynb",
+      "sha256": "3a73fa8ca80587c527a5136fc2d323c9e489f6512f0d12943ff08f4399632867",
+      "bytes": 1190913,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/phase12_repair_260926/dataset_readiness-20260926T101743497388Z.ipynb",
+      "member": "history/experiments/outputs/executed_notebooks/phase12_repair_260926/dataset_readiness-20260926T101743497388Z.ipynb",
+      "sha256": "55cfecfd39542312370ee0c3dc7015bd4b9d062d0b6dbf7be274dff0dcb8a97b",
+      "bytes": 1189552,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/phase12_repair_260926/phase12-evidence-repair-20260926T093245106345Z.ipynb",
+      "member": "history/experiments/outputs/executed_notebooks/phase12_repair_260926/phase12-evidence-repair-20260926T093245106345Z.ipynb",
+      "sha256": "2bcb35055644ec830bd4070dedc6f7e1dcd8de3b92cdfb3954d78e5f030bf586",
+      "bytes": 15955,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/phase12_repair_260926/phase12-evidence-repair-20260926T093311344732Z.ipynb",
+      "member": "history/experiments/outputs/executed_notebooks/phase12_repair_260926/phase12-evidence-repair-20260926T093311344732Z.ipynb",
+      "sha256": "ff3813449b344e5a3d73dd459f89c057109b0de3797fa9437173fd1ec4caca29",
+      "bytes": 700724,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/phase12_repair_260926/phase12-evidence-repair-20260926T094151043461Z.ipynb",
+      "member": "history/experiments/outputs/executed_notebooks/phase12_repair_260926/phase12-evidence-repair-20260926T094151043461Z.ipynb",
+      "sha256": "9bbbe417cb7bc1780bf9a522002440a0240f339aa00e4d2af95483af1bfe907b",
+      "bytes": 688535,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/outputs/executed_notebooks/phase12_repair_260926/phase12_qualification_supplement-20260926T094714806867Z.ipynb",
+      "member": "history/experiments/outputs/executed_notebooks/phase12_repair_260926/phase12_qualification_supplement-20260926T094714806867Z.ipynb",
+      "sha256": "bda64987e1cb53c360cbe9a3e13c5f6d634b627a464e148d6eb4f8ec44615abe",
+      "bytes": 6102,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/outputs/phase1_smoke_audit/executed/official/smoke/00a_environment_preflight.run.json",
+      "member": "history/experiments/outputs/phase1_smoke_audit/executed/official/smoke/00a_environment_preflight.run.json",
+      "sha256": "a4d88a4e1ff06054f3099ae1a72998652d94067cc5b81c270a3141f0a0dfcbcf",
+      "bytes": 745,
+      "kind": "run_receipt"
+    },
+    {
+      "original": "experiments/outputs/phase1_smoke_audit/executed/official/smoke/00b_dataset_feasibility.run.json",
+      "member": "history/experiments/outputs/phase1_smoke_audit/executed/official/smoke/00b_dataset_feasibility.run.json",
+      "sha256": "ae31417ff0b3fdc3fcf39b8885ff1ae47ea64bf4897bb634590c6b331368f156",
+      "bytes": 743,
+      "kind": "run_receipt"
+    },
+    {
+      "original": "experiments/outputs/phase1_smoke_audit/executed/official/smoke/00c_dataset_eda_and_freeze.run.json",
+      "member": "history/experiments/outputs/phase1_smoke_audit/executed/official/smoke/00c_dataset_eda_and_freeze.run.json",
+      "sha256": "3deebb90e0860191cf2f9e60f6ec9b3cbbca6ebd1c6c148d49514f9993ed8ca6",
+      "bytes": 746,
+      "kind": "run_receipt"
+    },
+    {
+      "original": "experiments/notebooks/legacy/00_dataset_eda_and_quality_audit.ipynb",
+      "member": "history/experiments/notebooks/legacy/00_dataset_eda_and_quality_audit.ipynb",
+      "sha256": "7c50e9fe8f50c867a1acf72cb807a05856b4d492a3c1249bb1fa43f512425181",
+      "bytes": 252383,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/notebooks/legacy/01_audio_asr_benchmark.ipynb",
+      "member": "history/experiments/notebooks/legacy/01_audio_asr_benchmark.ipynb",
+      "sha256": "276d1920befdad822a756b13d650fed8bfdb7a851eafa498914c47296026d40c",
+      "bytes": 9901,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/notebooks/legacy/02_visual_scene_ocr_benchmark.ipynb",
+      "member": "history/experiments/notebooks/legacy/02_visual_scene_ocr_benchmark.ipynb",
+      "sha256": "e71b870d892a67d8aeb2b0ba9ab8f023a78961f7d2b58a367735fef94b10eeac",
+      "bytes": 9863,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/notebooks/legacy/02b_object_detection_benchmark.ipynb",
+      "member": "history/experiments/notebooks/legacy/02b_object_detection_benchmark.ipynb",
+      "sha256": "2c1c37b54669c46dd4ef4bb54c2e5755c12000ad8e66d7cb74d4d2b305246264",
+      "bytes": 9875,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/notebooks/legacy/03_multimodal_chaptering_benchmark.ipynb",
+      "member": "history/experiments/notebooks/legacy/03_multimodal_chaptering_benchmark.ipynb",
+      "sha256": "658ed7d10cd28cdeeadb0bf84dea6e4a1f26fb2d70b663e98354f3c7e4b848e9",
+      "bytes": 9913,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/notebooks/legacy/04_hierarchical_summarization_benchmark.ipynb",
+      "member": "history/experiments/notebooks/legacy/04_hierarchical_summarization_benchmark.ipynb",
+      "sha256": "a6928f36741992909565e75a6e959cd570642b090a04f415d8343f7ee2e570da",
+      "bytes": 9891,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/notebooks/legacy/05_evidence_retrieval_qa_benchmark.ipynb",
+      "member": "history/experiments/notebooks/legacy/05_evidence_retrieval_qa_benchmark.ipynb",
+      "sha256": "b143a1ae85464a6a54e9c4d4f890509b9b892b6b8698ccdc9c1c7cf1c2c0f92a",
+      "bytes": 9884,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/notebooks/legacy/06_efficiency_pareto_error_cascading.ipynb",
+      "member": "history/experiments/notebooks/legacy/06_efficiency_pareto_error_cascading.ipynb",
+      "sha256": "ff16cf86f7651bafc67ce96737606dce503880dbdac936c0ecc057cfb5803a7a",
+      "bytes": 9862,
+      "kind": "notebook"
+    },
+    {
+      "original": "experiments/notebooks/legacy/07_cross_task_leaderboard.ipynb",
+      "member": "history/experiments/notebooks/legacy/07_cross_task_leaderboard.ipynb",
+      "sha256": "7425a4f336fb9ff6109b2f05d0d61952ea1d9015607810b230854d81bbdb4719",
+      "bytes": 9677,
+      "kind": "notebook"
+    }
+  ],
+  "diagnostic_migrations": [
+    {
+      "canonical": "experiments/notebooks/diagnostics/dataset_readiness.ipynb",
+      "historical": "experiments/outputs/executed_notebooks/phase12_repair_260926/dataset_readiness-20260926T101743497388Z.ipynb",
+      "outputs": 55
+    },
+    {
+      "canonical": "experiments/notebooks/diagnostics/phase12_evidence_repair.ipynb",
+      "historical": "experiments/outputs/executed_notebooks/phase12_repair_260926/phase12-evidence-repair-20260926T094151043461Z.ipynb",
+      "outputs": 101
+    },
+    {
+      "canonical": "experiments/notebooks/diagnostics/phase12_qualification_supplement.ipynb",
+      "historical": "experiments/outputs/executed_notebooks/phase12_repair_260926/phase12_qualification_supplement-20260926T094714806867Z.ipynb",
+      "outputs": 5
+    }
+  ]
+}

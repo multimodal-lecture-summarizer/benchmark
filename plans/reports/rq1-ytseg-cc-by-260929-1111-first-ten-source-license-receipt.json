@@ -1,0 +1,431 @@
+{
+  "checked_at_utc": "2026-09-29T04:27:20+00:00",
+  "purpose": "read-only current metadata spot check of first ten rows; no video download or content labels",
+  "hf_dataset": "retkowski/ytseg-cc-by",
+  "hf_repo_sha_observed": "282b0a039e82ed78f85adc1f99a94f87e1d47a97",
+  "hf_rows_endpoint": "https://datasets-server.huggingface.co/rows?dataset=retkowski%2Fytseg-cc-by&config=text&split=train&offset=0&length=10",
+  "hf_rows_conversion_revision_pinned": false,
+  "youtube_tool": "yt-dlp --skip-download --dump-single-json --proxy empty",
+  "videos": [
+    {
+      "video_id": "0GRLhpMao3I",
+      "hf_channel_id": "UC7-CyoYfsrVI-dsuHRQx0IQ",
+      "hf_duration_s": 583.0,
+      "hf_chapter_count": 6,
+      "metadata_exit_code": 0,
+      "youtube_license": "Creative Commons Attribution license (reuse allowed)",
+      "youtube_availability": "public",
+      "youtube_channel_id": "UC7-CyoYfsrVI-dsuHRQx0IQ",
+      "youtube_duration_s": 583,
+      "youtube_url": "https://www.youtube.com/watch?v=0GRLhpMao3I",
+      "channel_matches": true,
+      "hf_internal_starts_s": [
+        65,
+        159,
+        292,
+        340,
+        432,
+        507
+      ],
+      "hf_titles": [
+        "Introduction",
+        "Calling printf(3) in a signal handler",
+        "Calling getpwnam(3) in a signal handler",
+        "async-signal-safe functions",
+        "Blocking functions",
+        "Restarted syscalls by example",
+        "Recap"
+      ],
+      "youtube_starts_s": [
+        0,
+        65,
+        159,
+        292,
+        340,
+        432,
+        507
+      ],
+      "youtube_titles": [
+        "Introduction",
+        "Calling printf(3) in a signal handler",
+        "Calling getpwnam(3) in a signal handler",
+        "async-signal-safe functions",
+        "Blocking functions",
+        "Restarted syscalls by example",
+        "Recap"
+      ],
+      "internal_starts_exact_match": true,
+      "titles_exact_match": true,
+      "first_youtube_start_zero": true
+    },
+    {
+      "video_id": "UBUoleSuP1Y",
+      "hf_channel_id": "UC4EY_qnSeAP1xGsh61eOoJA",
+      "hf_duration_s": 3077.0,
+      "hf_chapter_count": 5,
+      "metadata_exit_code": 0,
+      "youtube_license": "Creative Commons Attribution license (reuse allowed)",
+      "youtube_availability": "public",
+      "youtube_channel_id": "UC4EY_qnSeAP1xGsh61eOoJA",
+      "youtube_duration_s": 3077,
+      "youtube_url": "https://www.youtube.com/watch?v=UBUoleSuP1Y",
+      "channel_matches": true,
+      "hf_internal_starts_s": [
+        273,
+        972,
+        1518,
+        1777,
+        2273
+      ],
+      "hf_titles": [
+        "Chapter 1. Introduction: Wallace Stevens's Late Poems",
+        "Chapter 2. Wallace Stevens Poem: \"Large Red Man Reading\"",
+        "Chapter 3. Wallace Stevens Poem: \"The Poem that Took the Place of a Mountain\"",
+        "Chapter 4. Wallace Stevens Poem: \"The Plain Sense of Things\"",
+        "Chapter 5. Wallace Stevens Poem: \"Not Ideas About the Thing but the Thing Itself\"",
+        "Chapter 6. Wallace Stevens Poem: \"A Primitive Like an Orb\""
+      ],
+      "youtube_starts_s": [
+        0,
+        273,
+        972,
+        1518,
+        1777,
+        2273
+      ],
+      "youtube_titles": [
+        "Chapter 1. Introduction: Wallace Stevens's Late Poems",
+        "Chapter 2. Wallace Stevens Poem: \"Large Red Man Reading\"",
+        "Chapter 3. Wallace Stevens Poem: \"The Poem that Took the Place of a Mountain\"",
+        "Chapter 4. Wallace Stevens Poem: \"The Plain Sense of Things\"",
+        "Chapter 5. Wallace Stevens Poem: \"Not Ideas About the Thing but the Thing Itself\"",
+        "Chapter 6. Wallace Stevens Poem: \"A Primitive Like an Orb\""
+      ],
+      "internal_starts_exact_match": true,
+      "titles_exact_match": true,
+      "first_youtube_start_zero": true
+    },
+    {
+      "video_id": "Hq_oiMDDUK0",
+      "hf_channel_id": "UCqos1tl0RntucGGtPXNxkkA",
+      "hf_duration_s": 600.0,
+      "hf_chapter_count": 4,
+      "metadata_exit_code": 0,
+      "youtube_license": "Creative Commons Attribution license (reuse allowed)",
+      "youtube_availability": "public",
+      "youtube_channel_id": "UCqos1tl0RntucGGtPXNxkkA",
+      "youtube_duration_s": 600,
+      "youtube_url": "https://www.youtube.com/watch?v=Hq_oiMDDUK0",
+      "channel_matches": true,
+      "hf_internal_starts_s": [
+        96,
+        350,
+        450,
+        480
+      ],
+      "hf_titles": [
+        "Introduction",
+        "Content and structure",
+        "Parable of the Madman: God is Dead",
+        "Nihilism",
+        "Eternal Recurrence"
+      ],
+      "youtube_starts_s": [
+        0,
+        96,
+        350,
+        450,
+        480
+      ],
+      "youtube_titles": [
+        "Introduction",
+        "Content and structure",
+        "Parable of the Madman: God is Dead",
+        "Nihilism",
+        "Eternal Recurrence"
+      ],
+      "internal_starts_exact_match": true,
+      "titles_exact_match": true,
+      "first_youtube_start_zero": true
+    },
+    {
+      "video_id": "EDaM8A-tAck",
+      "hf_channel_id": "UCJWCJCWOxBYSi5DhCieLOLQ",
+      "hf_duration_s": 333.0,
+      "hf_chapter_count": 2,
+      "metadata_exit_code": 0,
+      "youtube_license": "Creative Commons Attribution license (reuse allowed)",
+      "youtube_availability": "public",
+      "youtube_channel_id": "UCJWCJCWOxBYSi5DhCieLOLQ",
+      "youtube_duration_s": 333,
+      "youtube_url": "https://www.youtube.com/watch?v=EDaM8A-tAck",
+      "channel_matches": true,
+      "hf_internal_starts_s": [
+        72,
+        202
+      ],
+      "hf_titles": [
+        "What are Bulletproofs? What does it mean? How does it work? What will be the practical benefits?",
+        "Confidential transactions",
+        "Bulletproofs is in development because a problem with non-interactive zero-knowledge proofs is that they tend to be very large, use a large amount of data"
+      ],
+      "youtube_starts_s": [
+        0,
+        72,
+        202
+      ],
+      "youtube_titles": [
+        "What are Bulletproofs? What does it mean? How does it work? What will be the practical benefits?",
+        "Confidential transactions",
+        "Bulletproofs is in development because a problem with non-interactive zero-knowledge proofs is that they tend to be very large, use a large amount of data"
+      ],
+      "internal_starts_exact_match": true,
+      "titles_exact_match": true,
+      "first_youtube_start_zero": true
+    },
+    {
+      "video_id": "zAQYtolfB4g",
+      "hf_channel_id": "UCqos1tl0RntucGGtPXNxkkA",
+      "hf_duration_s": 600.0,
+      "hf_chapter_count": 4,
+      "metadata_exit_code": 0,
+      "youtube_license": "Creative Commons Attribution license (reuse allowed)",
+      "youtube_availability": "public",
+      "youtube_channel_id": "UCqos1tl0RntucGGtPXNxkkA",
+      "youtube_duration_s": 600,
+      "youtube_url": "https://www.youtube.com/watch?v=zAQYtolfB4g",
+      "channel_matches": true,
+      "hf_internal_starts_s": [
+        19,
+        465,
+        468,
+        473
+      ],
+      "hf_titles": [
+        "Intro",
+        "EXISTENTIALISM",
+        "FACTICITY",
+        "FALLENNESS",
+        "DAS MAN"
+      ],
+      "youtube_starts_s": [
+        0,
+        19,
+        465,
+        468,
+        473
+      ],
+      "youtube_titles": [
+        "<Untitled Chapter 1>",
+        "EXISTENTIALISM",
+        "FACTICITY",
+        "FALLENNESS",
+        "DAS MAN"
+      ],
+      "internal_starts_exact_match": true,
+      "titles_exact_match": false,
+      "first_youtube_start_zero": true
+    },
+    {
+      "video_id": "hrVCd6Pt4l4",
+      "hf_channel_id": "UCJWCJCWOxBYSi5DhCieLOLQ",
+      "hf_duration_s": 965.0,
+      "hf_chapter_count": 2,
+      "metadata_exit_code": 0,
+      "youtube_license": "Creative Commons Attribution license (reuse allowed)",
+      "youtube_availability": "public",
+      "youtube_channel_id": "UCJWCJCWOxBYSi5DhCieLOLQ",
+      "youtube_duration_s": 965,
+      "youtube_url": "https://www.youtube.com/watch?v=hrVCd6Pt4l4",
+      "channel_matches": true,
+      "hf_internal_starts_s": [
+        559,
+        752
+      ],
+      "hf_titles": [
+        "Is it still profitable to mine bitcoin now that the price has dropped?",
+        "Will the ongoing reduction in energy prices effect the bitcoin price and Bitcoin mining?",
+        "After 2140, when the Bitcoin block reward is zero and all coins have been issued, should we expect transaction fees to rise, in order to maintain an incentive to secure the Bitcoin network?"
+      ],
+      "youtube_starts_s": [
+        0,
+        559,
+        752
+      ],
+      "youtube_titles": [
+        "Is it still profitable to mine bitcoin now that the price has dropped?",
+        "Will the ongoing reduction in energy prices effect the bitcoin price and Bitcoin mining?",
+        "After 2140, when the Bitcoin block reward is zero and all coins have been issued, should we expect transaction fees to rise, in order to maintain an incentive to secure the Bitcoin network?"
+      ],
+      "internal_starts_exact_match": true,
+      "titles_exact_match": true,
+      "first_youtube_start_zero": true
+    },
+    {
+      "video_id": "fzjskzxXTqk",
+      "hf_channel_id": "UC4EY_qnSeAP1xGsh61eOoJA",
+      "hf_duration_s": 2938.0,
+      "hf_chapter_count": 4,
+      "metadata_exit_code": 0,
+      "youtube_license": "Creative Commons Attribution license (reuse allowed)",
+      "youtube_availability": "public",
+      "youtube_channel_id": "UC4EY_qnSeAP1xGsh61eOoJA",
+      "youtube_duration_s": 2938,
+      "youtube_url": "https://www.youtube.com/watch?v=fzjskzxXTqk",
+      "channel_matches": true,
+      "hf_internal_starts_s": [
+        809,
+        1080,
+        1555,
+        2207
+      ],
+      "hf_titles": [
+        "Chapter 1. Historical Background for and Major Themes of the Book of Hosea",
+        "Chapter 2. Doom and Hope as Two Conceptions of Covenant",
+        "Chapter 3. Historical Background for and Structure of the Book of Isaiah",
+        "Chapter 4. Emphasis on the Davidic Covenant",
+        "Chapter 5. Major Themes in the Book of Isaiah"
+      ],
+      "youtube_starts_s": [
+        0,
+        809,
+        1080,
+        1555,
+        2207
+      ],
+      "youtube_titles": [
+        "Chapter 1. Historical Background for and Major Themes of the Book of Hosea",
+        "Chapter 2. Doom and Hope as Two Conceptions of Covenant",
+        "Chapter 3. Historical Background for and Structure of the Book of Isaiah",
+        "Chapter 4. Emphasis on the Davidic Covenant",
+        "Chapter 5. Major Themes in the Book of Isaiah"
+      ],
+      "internal_starts_exact_match": true,
+      "titles_exact_match": true,
+      "first_youtube_start_zero": true
+    },
+    {
+      "video_id": "LjbREINFrZk",
+      "hf_channel_id": "UCJWCJCWOxBYSi5DhCieLOLQ",
+      "hf_duration_s": 683.0,
+      "hf_chapter_count": 3,
+      "metadata_exit_code": 0,
+      "youtube_license": "Creative Commons Attribution license (reuse allowed)",
+      "youtube_availability": "public",
+      "youtube_channel_id": "UCJWCJCWOxBYSi5DhCieLOLQ",
+      "youtube_duration_s": 683,
+      "youtube_url": "https://www.youtube.com/watch?v=LjbREINFrZk",
+      "channel_matches": true,
+      "hf_internal_starts_s": [
+        198,
+        338,
+        400
+      ],
+      "hf_titles": [
+        "What does the following sentence mean? 'when transactions are broadcast to the network, the SHA-256 function is used to verify data integrity.'",
+        "Many wallets offer an option to sign a message. What does this mean? How is it displayed on the blockchain?",
+        "Compressed versus uncompressed keys, and validation of uncompressed keys",
+        "How can we determine if a Coinbase account uses a compressed or uncompressed public key, and therefore will be valid going forward?"
+      ],
+      "youtube_starts_s": [
+        0,
+        198,
+        338,
+        400
+      ],
+      "youtube_titles": [
+        "What does the following sentence mean? 'when transactions are broadcast to the network, the SHA-256 function is used to verify data integrity.'",
+        "Many wallets offer an option to sign a message. What does this mean? How is it displayed on the blockchain?",
+        "Compressed versus uncompressed keys, and validation of uncompressed keys",
+        "How can we determine if a Coinbase account uses a compressed or uncompressed public key, and therefore will be valid going forward?"
+      ],
+      "internal_starts_exact_match": true,
+      "titles_exact_match": true,
+      "first_youtube_start_zero": true
+    },
+    {
+      "video_id": "MsdW0CTYwyY",
+      "hf_channel_id": "UCJWCJCWOxBYSi5DhCieLOLQ",
+      "hf_duration_s": 546.0,
+      "hf_chapter_count": 3,
+      "metadata_exit_code": 0,
+      "youtube_license": "Creative Commons Attribution license (reuse allowed)",
+      "youtube_availability": "public",
+      "youtube_channel_id": "UCJWCJCWOxBYSi5DhCieLOLQ",
+      "youtube_duration_s": 546,
+      "youtube_url": "https://www.youtube.com/watch?v=MsdW0CTYwyY",
+      "channel_matches": true,
+      "hf_internal_starts_s": [
+        89,
+        207,
+        395
+      ],
+      "hf_titles": [
+        "What happens to transactions in stale shares or orphaned blocks that end up on a minority chain?",
+        "I submitted a small transaction to send BTC to another address. It has been pending for over a week. I was testing to see if I could send a transaction for the lowest fee of one satoshi per byte. I'm afraid the transaction is stuck and cannot be double-spent with a higher fee; the wallet gives me an error that says the transaction is already in the mempool.",
+        "My wallet gives me two ways to un-stick transactions (RBF and CPFP)",
+        "Back to your question: you are afraid the transaction is stuck and cannot be double-spent with a higher fee..."
+      ],
+      "youtube_starts_s": [
+        0,
+        89,
+        207,
+        395
+      ],
+      "youtube_titles": [
+        "What happens to transactions in stale shares or orphaned blocks that end up on a minority chain?",
+        "I submitted a small transaction to send BTC to another address. It has been pending for over a week. I was testing to see if I could send a transaction for the lowest fee of one satoshi per byte. I'm afraid the transaction is stuck and cannot be double-spent with a higher fee; the wallet gives me an error that says the transaction is already in the mempool.",
+        "My wallet gives me two ways to un-stick transactions (RBF and CPFP)",
+        "Back to your question: you are afraid the transaction is stuck and cannot be double-spent with a higher fee..."
+      ],
+      "internal_starts_exact_match": true,
+      "titles_exact_match": true,
+      "first_youtube_start_zero": true
+    },
+    {
+      "video_id": "vS6abFjN3ZY",
+      "hf_channel_id": "UC7-CyoYfsrVI-dsuHRQx0IQ",
+      "hf_duration_s": 627.0,
+      "hf_chapter_count": 4,
+      "metadata_exit_code": 0,
+      "youtube_license": "Creative Commons Attribution license (reuse allowed)",
+      "youtube_availability": "public",
+      "youtube_channel_id": "UC7-CyoYfsrVI-dsuHRQx0IQ",
+      "youtube_duration_s": 627,
+      "youtube_url": "https://www.youtube.com/watch?v=vS6abFjN3ZY",
+      "channel_matches": true,
+      "hf_internal_starts_s": [
+        26,
+        236,
+        341,
+        582
+      ],
+      "hf_titles": [
+        "Introduction",
+        "Permissions",
+        "Access grants",
+        "Examples",
+        "Recap"
+      ],
+      "youtube_starts_s": [
+        0,
+        26,
+        236,
+        341,
+        582
+      ],
+      "youtube_titles": [
+        "Introduction",
+        "Permissions",
+        "Access grants",
+        "Examples",
+        "Recap"
+      ],
+      "internal_starts_exact_match": true,
+      "titles_exact_match": true,
+      "first_youtube_start_zero": true
+    }
+  ],
+  "chapter_check_at_utc": "2026-09-29T04:28:29+00:00",
+  "chapter_check_scope": "mechanical comparison of published YouTube chapter metadata against pre-existing HF title/internal start arrays; no new labels"
+}

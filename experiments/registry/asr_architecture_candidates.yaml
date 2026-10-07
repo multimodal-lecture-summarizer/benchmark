@@ -1,0 +1,64 @@
+version: "1.0.0"
+benchmark: asr_architecture_t4
+task: TED-LIUM-3 English ASR architecture comparison
+candidates:
+  - id: RQ0_ARCH.A0_WhisperBase
+    display_name: Whisper Base (Faster-Whisper, T4 FP16)
+    family: whisper_encoder_decoder
+    framework: faster_whisper
+    model_repo: Systran/faster-whisper-base
+    revision: ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66
+    package_group: base
+    device: cuda
+    compute_type: float16
+    decode: {language: en, beam_size: 5}
+    license: mit
+  - id: RQ0_ARCH.A1_Wav2Vec2CTC
+    display_name: Wav2Vec2 Large 960h (CTC)
+    family: ssl_encoder_ctc
+    framework: transformers_ctc
+    model_repo: facebook/wav2vec2-large-960h-lv60-self
+    revision: b91e708eeb1a28886fdcf9906f8a7c49d0baae24
+    package_group: base
+    device: cuda
+    license: apache-2.0
+  - id: RQ0_ARCH.A2_FastConformerCTC
+    display_name: NVIDIA FastConformer Large (CTC)
+    family: conformer_ctc
+    framework: nemo_ctc
+    model_repo: nvidia/stt_en_fastconformer_ctc_large
+    revision: 330c1b6694fed5ae3797bdbca754a315fa382df7
+    package_group: nemo
+    device: cuda
+    license: cc-by-4.0
+  - id: RQ0_ARCH.A3_FastConformerRNNT
+    display_name: NVIDIA FastConformer Large (RNNT)
+    family: conformer_transducer
+    framework: nemo_rnnt
+    model_repo: nvidia/stt_en_fastconformer_transducer_large
+    revision: 3a4e74f2585fc5b1258d58eed640faf5322423ed
+    package_group: nemo
+    device: cuda
+    license: cc-by-4.0
+  - id: RQ0_ARCH.A4_ParaformerEN
+    display_name: Paraformer English (non-autoregressive)
+    family: non_autoregressive_asr
+    framework: funasr_paraformer
+    model_repo: funasr/paraformer-en
+    revision: d043d60434a65ae49b2b2462a09660049871b8e9
+    package_group: funasr
+    device: cuda
+    vad: false
+    punctuation: false
+    decode: {tokenizer: checkpoint_tokens_json_10020}
+    license: model-license
+  - id: RQ0_ARCH.A5_Qwen3ASR_0_6B
+    display_name: Qwen3-ASR 0.6B (English forced)
+    family: modern_multilingual_generative_asr
+    framework: qwen3_asr
+    model_repo: Qwen/Qwen3-ASR-0.6B
+    revision: c4468bdb552ddc559e464f6081e22dd4034f2e68
+    package_group: base
+    device: cuda
+    language: English
+    license: apache-2.0

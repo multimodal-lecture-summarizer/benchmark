@@ -1,0 +1,52 @@
+{
+  "video_id": "tCKk22kaZi4",
+  "ytseg_source": "retkowski/ytseg text/train-00000-of-00004.parquet row 1607 @ 4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+  "ytseg_duration_s": 2483.0,
+  "ytseg_raw_chapter_count": 12,
+  "publisher_course": "https://dspace.mit.edu/entities/publication/dd0b94b3-283f-4fb9-b6b8-a66e52cdb2f1",
+  "publisher_transcript": "https://ocw.mit.edu/courses/14-01-principles-of-microeconomics-fall-2018/fe938934133a619ebb6b08ad366fd63c_tCKk22kaZi4.pdf",
+  "archive_item": "https://archive.org/details/MIT14.01F18",
+  "archive_item_creator": "MIT OpenCourseWare",
+  "archive_item_uploader": "ocw-prod@mit.edu",
+  "media_url": "https://archive.org/download/MIT14.01F18/MIT14_01F18_lec02_300k.mp4",
+  "subtitle_url": "https://archive.org/download/MIT14.01F18/MIT14_01F18_lec02_300k.srt",
+  "http_status": 200,
+  "http_content_type": "video/mp4",
+  "http_content_length": 98407054,
+  "downloaded_bytes": 98407054,
+  "sha256": "fcd4a38165cd2abf4eb244faa2f67d00da2fefd3d7418935812f705c2a88737d",
+  "sha1_matches_archive_file_metadata": "0dcba2add5e58bd690063e0c3b132779912fef78",
+  "subtitle_bytes": 76025,
+  "subtitle_sha256": "cb827b119f71e5fff797c28e02969b9a6464f0278b2dd08dac67f50c48c565c7",
+  "probe": {
+    "duration_s": 2483.412,
+    "video_codec": "h264",
+    "video_size": "640x360",
+    "audio_codec": "aac",
+    "embedded_subtitle_codec": "mov_text"
+  },
+  "full_decode": {
+    "ffmpeg_exit_code": 0,
+    "mapped_streams": ["0:v:0", "0:a:0"],
+    "decoded_video_frames": 74427,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 2483.347533,
+    "video_nonmonotone_decoded_pts": 0,
+    "decoded_audio_frames": 116410,
+    "audio_first_pts_s": 0.0,
+    "audio_last_pts_s": 2483.390667,
+    "audio_nonmonotone_decoded_pts": 0
+  },
+  "alignment_checks": [
+    {"point": "10_percent", "time_s": 248.341, "ytseg_chapter": "Model Assumptions", "publisher_subtitle_topic": "completeness of preferences", "status": "topic_match"},
+    {"point": "50_percent", "time_s": 1241.706, "ytseg_chapter": "Margin Utility", "publisher_subtitle_topic": "cookie example and marginal utility", "status": "topic_match"},
+    {"point": "90_percent", "time_s": 2235.071, "ytseg_chapter": "Price of Different Sizes of Goods", "publisher_subtitle_topic": "price of 16 ounce goods and supply/demand", "status": "topic_match"},
+    {"point": "first_internal_boundary", "time_s": 11.0, "ytseg_chapter_after": "Lecture Start", "publisher_subtitle_topic": "Gruber begins lecture on supply and demand", "status": "topic_match"},
+    {"point": "middle_internal_boundary", "time_s": 928.0, "ytseg_chapter_after": "Utility Functions", "publisher_subtitle_topic": "explicit transition from indifference curves to utility functions", "status": "topic_match"},
+    {"point": "last_internal_boundary", "time_s": 2071.0, "ytseg_chapter_after": "Price of Different Sizes of Goods", "publisher_subtitle_topic": "explicit transition to convenience-store goods sizes", "status": "topic_match"}
+  ],
+  "technical_media_status": "pass",
+  "overall_resource_status": "hold",
+  "blocking_gates": ["hold_gt: no YTSeg upstream conversion code", "hold_rights: whole-file component rights not audited and MIT DSpace/Archive license labels differ", "hold_duplicate: no pairwise pilot content fingerprints"],
+  "limits": ["YTSeg text_ref chapter blocks do not time-align each sentence", "Six landmark checks do not prove every chapter boundary", "No official RQ1 run"]
+}

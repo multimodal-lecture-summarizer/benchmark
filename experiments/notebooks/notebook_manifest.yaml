@@ -1,0 +1,7 @@
+schema_version: 1
+manifest_status: on_demand
+official_default_profile: full
+allowed_profiles: [full]
+allowed_network_policies: [none, bounded_acquisition, registry_controlled]
+
+notebooks: []

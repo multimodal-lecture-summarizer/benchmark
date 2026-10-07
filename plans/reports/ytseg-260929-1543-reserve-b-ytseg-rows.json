@@ -1,0 +1,476 @@
+{
+  "kiCNa95DnnE": {
+    "source": "datasets/retkowski/ytseg@4ee1c1fccc5a9e118ff0918f3df1e61aadca8970/text/train-00000-of-00004.parquet",
+    "raw_chapters": [
+      {
+        "end_time": 49.0,
+        "start_time": 0.0,
+        "title": "Introduction"
+      },
+      {
+        "end_time": 70.0,
+        "start_time": 49.0,
+        "title": "Airspace Diagram"
+      },
+      {
+        "end_time": 171.0,
+        "start_time": 70.0,
+        "title": "91.155 - Basic VFR Weather Minimums"
+      },
+      {
+        "end_time": 208.0,
+        "start_time": 171.0,
+        "title": "91.157 - Special VFR Weather Minimums"
+      },
+      {
+        "end_time": 347.0,
+        "start_time": 208.0,
+        "title": "Cirrus Personal Minimum Matrix"
+      },
+      {
+        "end_time": 378.0,
+        "start_time": 347.0,
+        "title": "Certificate Types Category & Class"
+      },
+      {
+        "end_time": 397.0,
+        "start_time": 378.0,
+        "title": "Four Forces of Flight"
+      },
+      {
+        "end_time": 423.0,
+        "start_time": 397.0,
+        "title": "Three Axes of Flight"
+      },
+      {
+        "end_time": 439.0,
+        "start_time": 423.0,
+        "title": "The Flight Controls"
+      },
+      {
+        "end_time": 570.0,
+        "start_time": 439.0,
+        "title": "Why Johnny Cessna can't hover"
+      },
+      {
+        "end_time": 598.0,
+        "start_time": 570.0,
+        "title": "Altitude Definitions"
+      },
+      {
+        "end_time": 645.0,
+        "start_time": 598.0,
+        "title": "Taxiway and Runway Markings"
+      },
+      {
+        "end_time": 663.0,
+        "start_time": 645.0,
+        "title": "Best Glide Ratio"
+      },
+      {
+        "end_time": 767.0,
+        "start_time": 663.0,
+        "title": "Thunderstorms"
+      },
+      {
+        "end_time": 785.0,
+        "start_time": 767.0,
+        "title": "Mountain Wave Turbulence"
+      },
+      {
+        "end_time": 805.0,
+        "start_time": 785.0,
+        "title": "Structural Icing"
+      },
+      {
+        "end_time": 840.0,
+        "start_time": 805.0,
+        "title": "Aviation Routine Weather Report METAR"
+      },
+      {
+        "end_time": 875.0,
+        "start_time": 840.0,
+        "title": "Our Human Factors Summary"
+      },
+      {
+        "end_time": 903.0,
+        "start_time": 875.0,
+        "title": "Magnetic Variation"
+      },
+      {
+        "end_time": 924.0,
+        "start_time": 903.0,
+        "title": "Flight Planning Tip"
+      },
+      {
+        "end_time": 929.0,
+        "start_time": 924.0,
+        "title": "Night flying advice"
+      },
+      {
+        "end_time": 944.0,
+        "start_time": 929.0,
+        "title": "Owner/Operator is Responsible"
+      },
+      {
+        "end_time": 1011.0,
+        "start_time": 944.0,
+        "title": "91.3 - Responsibility and Authority of PIC"
+      },
+      {
+        "end_time": 1145.0,
+        "start_time": 1011.0,
+        "title": "Safety is not high-tech"
+      },
+      {
+        "end_time": 1208.0,
+        "start_time": 1145.0,
+        "title": "Study Guide"
+      },
+      {
+        "end_time": 1292.0,
+        "start_time": 1208.0,
+        "title": "Next Steps"
+      }
+    ],
+    "chapter_titles": [
+      "Introduction",
+      "Airspace Diagram",
+      "91.155 - Basic VFR Weather Minimums",
+      "91.157 - Special VFR Weather Minimums",
+      "Cirrus Personal Minimum Matrix",
+      "Certificate Types Category & Class",
+      "Four Forces of Flight",
+      "Three Axes of Flight",
+      "The Flight Controls",
+      "Why Johnny Cessna can't hover",
+      "Altitude Definitions",
+      "Taxiway and Runway Markings",
+      "Best Glide Ratio",
+      "Thunderstorms",
+      "Mountain Wave Turbulence",
+      "Structural Icing",
+      "Aviation Routine Weather Report METAR",
+      "Our Human Factors Summary",
+      "Magnetic Variation",
+      "Flight Planning Tip",
+      "Night flying advice",
+      "Owner/Operator is Responsible",
+      "91.3 - Responsibility and Authority of PIC",
+      "Safety is not high-tech",
+      "Study Guide",
+      "Next Steps"
+    ],
+    "chapter_timestamps": [
+      49.0,
+      70.0,
+      171.0,
+      208.0,
+      347.0,
+      378.0,
+      397.0,
+      423.0,
+      439.0,
+      570.0,
+      598.0,
+      645.0,
+      663.0,
+      767.0,
+      785.0,
+      805.0,
+      840.0,
+      875.0,
+      903.0,
+      924.0,
+      929.0,
+      944.0,
+      1011.0,
+      1145.0,
+      1208.0
+    ],
+    "duration": 1292.0,
+    "text_ref_first": "[\"PHILIP GREENSPUN: So remember, as VFR pilots, you're actually going to be doing stuff that is in some ways more challenging than what airline pilots do, because you're always trying to keep clearances from clouds that the IFR pilots don't care about.\", \"And if you're flying a low performance airplane, you're also dealing with flying through the weather instead of just going on top of it.\", \"So w",
+    "target_text_ts_ref_type": "str"
+  },
+  "ksyY5wa5_50": {
+    "source": "datasets/retkowski/ytseg@4ee1c1fccc5a9e118ff0918f3df1e61aadca8970/text/train-00001-of-00004.parquet",
+    "raw_chapters": [
+      {
+        "end_time": 124.0,
+        "start_time": 0.0,
+        "title": "Introduction"
+      },
+      {
+        "end_time": 145.0,
+        "start_time": 124.0,
+        "title": "Eisenhower's Air Force One"
+      },
+      {
+        "end_time": 161.0,
+        "start_time": 145.0,
+        "title": "Your trainer: Piper Seminole"
+      },
+      {
+        "end_time": 202.0,
+        "start_time": 161.0,
+        "title": "Where the problems happen"
+      },
+      {
+        "end_time": 321.0,
+        "start_time": 202.0,
+        "title": "Piston Twin Engine Failure"
+      },
+      {
+        "end_time": 434.0,
+        "start_time": 321.0,
+        "title": "Within Human Capability?"
+      },
+      {
+        "end_time": 501.0,
+        "start_time": 434.0,
+        "title": "Baron vs Bonanza Insurance"
+      },
+      {
+        "end_time": 640.0,
+        "start_time": 501.0,
+        "title": "Limits to piston engine power?"
+      },
+      {
+        "end_time": 662.0,
+        "start_time": 640.0,
+        "title": "Frank Whittle"
+      },
+      {
+        "end_time": 724.0,
+        "start_time": 662.0,
+        "title": "Turbofan (\"Turbojet\")"
+      },
+      {
+        "end_time": 829.0,
+        "start_time": 724.0,
+        "title": "Twin Turbojets"
+      },
+      {
+        "end_time": 893.0,
+        "start_time": 829.0,
+        "title": "Pilot Requirements"
+      },
+      {
+        "end_time": 958.0,
+        "start_time": 893.0,
+        "title": "Turbojets that you might own"
+      },
+      {
+        "end_time": 1053.0,
+        "start_time": 958.0,
+        "title": "Phenom 300 = smallest practical"
+      },
+      {
+        "end_time": 1082.0,
+        "start_time": 1053.0,
+        "title": "Single-engine jets"
+      },
+      {
+        "end_time": 1183.0,
+        "start_time": 1082.0,
+        "title": "Twin Turboprops"
+      },
+      {
+        "end_time": 1341.0,
+        "start_time": 1183.0,
+        "title": "Single Turboprops"
+      },
+      {
+        "end_time": 1379.0,
+        "start_time": 1341.0,
+        "title": "Jet Maintenance"
+      },
+      {
+        "end_time": 1415.0,
+        "start_time": 1379.0,
+        "title": "Fun: B737 or A320 type rating"
+      },
+      {
+        "end_time": 1456.0,
+        "start_time": 1415.0,
+        "title": "Summary"
+      },
+      {
+        "end_time": 1702.0,
+        "start_time": 1456.0,
+        "title": "Questions?"
+      }
+    ],
+    "chapter_titles": [
+      "Introduction",
+      "Eisenhower's Air Force One",
+      "Your trainer: Piper Seminole",
+      "Where the problems happen",
+      "Piston Twin Engine Failure",
+      "Within Human Capability?",
+      "Baron vs Bonanza Insurance",
+      "Limits to piston engine power?",
+      "Frank Whittle",
+      "Turbofan (\"Turbojet\")",
+      "Twin Turbojets",
+      "Pilot Requirements",
+      "Turbojets that you might own",
+      "Phenom 300 = smallest practical",
+      "Single-engine jets",
+      "Twin Turboprops",
+      "Single Turboprops",
+      "Jet Maintenance",
+      "Fun: B737 or A320 type rating",
+      "Summary",
+      "Questions?"
+    ],
+    "chapter_timestamps": [
+      124.0,
+      145.0,
+      161.0,
+      202.0,
+      321.0,
+      434.0,
+      501.0,
+      640.0,
+      662.0,
+      724.0,
+      829.0,
+      893.0,
+      958.0,
+      1053.0,
+      1082.0,
+      1183.0,
+      1341.0,
+      1379.0,
+      1415.0,
+      1456.0
+    ],
+    "duration": 1702.0,
+    "text_ref_first": "['PHILIP GREENSPUN: Welcome back.', \"I hope you've got your coffee.\", 'I see somebody has a muffin.', \"They'll be in a carb coma, Francis, I'm relying on you to answer all the hard questions.\", \"That's not authorized.\", \"All right, so multi-engine jets-- the piston twin, the good news is, when both engines are spinning, it's easier to fly than a single.\", \"Because you don't need as much right rudd",
+    "target_text_ts_ref_type": "str"
+  },
+  "xsO2Ip6eiaY": {
+    "source": "datasets/retkowski/ytseg@4ee1c1fccc5a9e118ff0918f3df1e61aadca8970/text/train-00002-of-00004.parquet",
+    "raw_chapters": [
+      {
+        "end_time": 21.0,
+        "start_time": 0.0,
+        "title": "Introduction"
+      },
+      {
+        "end_time": 54.0,
+        "start_time": 21.0,
+        "title": "Boats or Floats"
+      },
+      {
+        "end_time": 164.0,
+        "start_time": 54.0,
+        "title": "Bush Pilot Wisdom"
+      },
+      {
+        "end_time": 199.0,
+        "start_time": 164.0,
+        "title": "Moosehead fly-in every Sept"
+      },
+      {
+        "end_time": 260.0,
+        "start_time": 199.0,
+        "title": "Get on the Step"
+      },
+      {
+        "end_time": 310.0,
+        "start_time": 260.0,
+        "title": "Crosswind Landing"
+      },
+      {
+        "end_time": 397.0,
+        "start_time": 310.0,
+        "title": "Glassy Water Landing"
+      },
+      {
+        "end_time": 480.0,
+        "start_time": 397.0,
+        "title": "Docking/Beaching"
+      },
+      {
+        "end_time": 837.0,
+        "start_time": 480.0,
+        "title": "Bad things to do in a Seaplane"
+      },
+      {
+        "end_time": 878.0,
+        "start_time": 837.0,
+        "title": "Seaplane Pilot Skills"
+      },
+      {
+        "end_time": 943.0,
+        "start_time": 878.0,
+        "title": "Land vs. Sea"
+      },
+      {
+        "end_time": 957.0,
+        "start_time": 943.0,
+        "title": "830.2 - Definitions"
+      },
+      {
+        "end_time": 1009.0,
+        "start_time": 957.0,
+        "title": "830.5 - Immediate Notification"
+      },
+      {
+        "end_time": 1238.0,
+        "start_time": 1009.0,
+        "title": "Bottom Line"
+      },
+      {
+        "end_time": 1346.0,
+        "start_time": 1238.0,
+        "title": "Light Sport flying boats"
+      },
+      {
+        "end_time": 1475.0,
+        "start_time": 1346.0,
+        "title": "Questions?"
+      }
+    ],
+    "chapter_titles": [
+      "Introduction",
+      "Boats or Floats",
+      "Bush Pilot Wisdom",
+      "Moosehead fly-in every Sept",
+      "Get on the Step",
+      "Crosswind Landing",
+      "Glassy Water Landing",
+      "Docking/Beaching",
+      "Bad things to do in a Seaplane",
+      "Seaplane Pilot Skills",
+      "Land vs. Sea",
+      "830.2 - Definitions",
+      "830.5 - Immediate Notification",
+      "Bottom Line",
+      "Light Sport flying boats",
+      "Questions?"
+    ],
+    "chapter_timestamps": [
+      21.0,
+      54.0,
+      164.0,
+      199.0,
+      260.0,
+      310.0,
+      397.0,
+      480.0,
+      837.0,
+      878.0,
+      943.0,
+      957.0,
+      1009.0,
+      1238.0,
+      1346.0
+    ],
+    "duration": 1475.0,
+    "text_ref_first": "['PHILIP GREENSPUN: Hi.', \"We're going to talk about seaplanes.\", \"And there's two different designs.\", 'You can have a boat hull seaplane, or you can have a conventional airplane on floats.', 'So there at the bottom left is part of the Grumman series.', 'They made a huge number of these around World War II, and many of them are still flying.', 'You can see always probably 15 or 20 of these at Osh",
+    "target_text_ts_ref_type": "str"
+  }
+}

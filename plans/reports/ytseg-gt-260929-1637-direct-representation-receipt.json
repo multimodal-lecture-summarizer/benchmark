@@ -1,0 +1,284 @@
+{
+  "source_dataset": "retkowski/ytseg",
+  "config": "text",
+  "split": "train",
+  "revision": "4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+  "source_kind": "pinned_parquet_rows_not_dataset_card",
+  "shards": [
+    {
+      "shard": 0,
+      "path": "multimodal-lecture-summarizer/experiments/datasets/ytseg_qualification/text/train-00000-of-00004.parquet",
+      "sha256": "feb4ae49080e43128315ba4c5338eca339a17b7fc7b8e66628d9cf539310f691",
+      "expected_lfs_sha256": "feb4ae49080e43128315ba4c5338eca339a17b7fc7b8e66628d9cf539310f691",
+      "sha256_matches_lfs": true
+    },
+    {
+      "shard": 1,
+      "path": "multimodal-lecture-summarizer/experiments/datasets/ytseg_qualification/text/train-00001-of-00004.parquet",
+      "sha256": "004434130e68aa9f48f6cc75961161f25eea1dd0c42e7c2ebc0a7887efbc347b",
+      "expected_lfs_sha256": "004434130e68aa9f48f6cc75961161f25eea1dd0c42e7c2ebc0a7887efbc347b",
+      "sha256_matches_lfs": true
+    },
+    {
+      "shard": 2,
+      "path": "multimodal-lecture-summarizer/experiments/datasets/ytseg_qualification/text/train-00002-of-00004.parquet",
+      "sha256": "1ef803d268644ef6e19e201510893a1234c2f55f3f0d1a8883a52da85c837eaf",
+      "expected_lfs_sha256": "1ef803d268644ef6e19e201510893a1234c2f55f3f0d1a8883a52da85c837eaf",
+      "sha256_matches_lfs": true
+    },
+    {
+      "shard": 3,
+      "path": "multimodal-lecture-summarizer/experiments/datasets/ytseg_qualification/text/train-00003-of-00004.parquet",
+      "sha256": "7c8456986faf1782f4fdb855370fdb790f53bccbfeff3ecad5ef4f166ad3c7a4",
+      "expected_lfs_sha256": "7c8456986faf1782f4fdb855370fdb790f53bccbfeff3ecad5ef4f166ad3c7a4",
+      "sha256_matches_lfs": true
+    }
+  ],
+  "locked_train_video_ids": [
+    "-dOX_4lI6HY",
+    "MoEaRpLNo9A",
+    "-7xg8pGcP6w",
+    "tCKk22kaZi4",
+    "3sB64Au76h0",
+    "Th2N_rDfkDw",
+    "alLh1Jdqwvg",
+    "xsO2Ip6eiaY",
+    "ksyY5wa5_50",
+    "kiCNa95DnnE"
+  ],
+  "video_ids_found_once_each": true,
+  "total_raw_chapters": 195,
+  "rows": [
+    {
+      "video_id": "-dOX_4lI6HY",
+      "shard": 0,
+      "row_zero_based": 1,
+      "raw_chapter_count": 22,
+      "target_ts_marker_count": 22,
+      "duration_metadata_seconds": 3122.0,
+      "checks": {
+        "raw_chapters_nonempty": true,
+        "all_raw_titles_nonempty": true,
+        "all_raw_intervals_valid_within_metadata_duration": true,
+        "first_start_zero": true,
+        "adjacent_intervals_continuous": true,
+        "last_end_equals_metadata_duration": true,
+        "target_ts_marker_count_equals_raw_count": true,
+        "target_ts_markers_equal_raw_starts_titles": true,
+        "target_ts_exact_full_string_equals_raw_reconstruction": true,
+        "chapter_titles_equal_raw_titles": true,
+        "chapter_timestamps_equal_raw_starts_except_first": true,
+        "target_text_ref_has_all_title_markers": true,
+        "target_text_ts_ref_has_all_time_title_markers": true
+      }
+    },
+    {
+      "video_id": "MoEaRpLNo9A",
+      "shard": 1,
+      "row_zero_based": 3644,
+      "raw_chapter_count": 10,
+      "target_ts_marker_count": 10,
+      "duration_metadata_seconds": 4882.0,
+      "checks": {
+        "raw_chapters_nonempty": true,
+        "all_raw_titles_nonempty": true,
+        "all_raw_intervals_valid_within_metadata_duration": true,
+        "first_start_zero": true,
+        "adjacent_intervals_continuous": true,
+        "last_end_equals_metadata_duration": true,
+        "target_ts_marker_count_equals_raw_count": true,
+        "target_ts_markers_equal_raw_starts_titles": true,
+        "target_ts_exact_full_string_equals_raw_reconstruction": true,
+        "chapter_titles_equal_raw_titles": true,
+        "chapter_timestamps_equal_raw_starts_except_first": true,
+        "target_text_ref_has_all_title_markers": true,
+        "target_text_ts_ref_has_all_time_title_markers": true
+      }
+    },
+    {
+      "video_id": "-7xg8pGcP6w",
+      "shard": 2,
+      "row_zero_based": 1594,
+      "raw_chapter_count": 12,
+      "target_ts_marker_count": 12,
+      "duration_metadata_seconds": 4847.0,
+      "checks": {
+        "raw_chapters_nonempty": true,
+        "all_raw_titles_nonempty": true,
+        "all_raw_intervals_valid_within_metadata_duration": true,
+        "first_start_zero": true,
+        "adjacent_intervals_continuous": true,
+        "last_end_equals_metadata_duration": true,
+        "target_ts_marker_count_equals_raw_count": true,
+        "target_ts_markers_equal_raw_starts_titles": true,
+        "target_ts_exact_full_string_equals_raw_reconstruction": true,
+        "chapter_titles_equal_raw_titles": true,
+        "chapter_timestamps_equal_raw_starts_except_first": true,
+        "target_text_ref_has_all_title_markers": true,
+        "target_text_ts_ref_has_all_time_title_markers": true
+      }
+    },
+    {
+      "video_id": "tCKk22kaZi4",
+      "shard": 0,
+      "row_zero_based": 1607,
+      "raw_chapter_count": 12,
+      "target_ts_marker_count": 12,
+      "duration_metadata_seconds": 2483.0,
+      "checks": {
+        "raw_chapters_nonempty": true,
+        "all_raw_titles_nonempty": true,
+        "all_raw_intervals_valid_within_metadata_duration": true,
+        "first_start_zero": true,
+        "adjacent_intervals_continuous": true,
+        "last_end_equals_metadata_duration": true,
+        "target_ts_marker_count_equals_raw_count": true,
+        "target_ts_markers_equal_raw_starts_titles": true,
+        "target_ts_exact_full_string_equals_raw_reconstruction": true,
+        "chapter_titles_equal_raw_titles": true,
+        "chapter_timestamps_equal_raw_starts_except_first": true,
+        "target_text_ref_has_all_title_markers": true,
+        "target_text_ts_ref_has_all_time_title_markers": true
+      }
+    },
+    {
+      "video_id": "3sB64Au76h0",
+      "shard": 1,
+      "row_zero_based": 2105,
+      "raw_chapter_count": 33,
+      "target_ts_marker_count": 33,
+      "duration_metadata_seconds": 3932.0,
+      "checks": {
+        "raw_chapters_nonempty": true,
+        "all_raw_titles_nonempty": true,
+        "all_raw_intervals_valid_within_metadata_duration": true,
+        "first_start_zero": true,
+        "adjacent_intervals_continuous": true,
+        "last_end_equals_metadata_duration": true,
+        "target_ts_marker_count_equals_raw_count": true,
+        "target_ts_markers_equal_raw_starts_titles": true,
+        "target_ts_exact_full_string_equals_raw_reconstruction": true,
+        "chapter_titles_equal_raw_titles": true,
+        "chapter_timestamps_equal_raw_starts_except_first": true,
+        "target_text_ref_has_all_title_markers": true,
+        "target_text_ts_ref_has_all_time_title_markers": true
+      }
+    },
+    {
+      "video_id": "Th2N_rDfkDw",
+      "shard": 0,
+      "row_zero_based": 2968,
+      "raw_chapter_count": 24,
+      "target_ts_marker_count": 24,
+      "duration_metadata_seconds": 2515.0,
+      "checks": {
+        "raw_chapters_nonempty": true,
+        "all_raw_titles_nonempty": true,
+        "all_raw_intervals_valid_within_metadata_duration": true,
+        "first_start_zero": true,
+        "adjacent_intervals_continuous": true,
+        "last_end_equals_metadata_duration": true,
+        "target_ts_marker_count_equals_raw_count": true,
+        "target_ts_markers_equal_raw_starts_titles": true,
+        "target_ts_exact_full_string_equals_raw_reconstruction": true,
+        "chapter_titles_equal_raw_titles": true,
+        "chapter_timestamps_equal_raw_starts_except_first": true,
+        "target_text_ref_has_all_title_markers": true,
+        "target_text_ts_ref_has_all_time_title_markers": true
+      }
+    },
+    {
+      "video_id": "alLh1Jdqwvg",
+      "shard": 2,
+      "row_zero_based": 2667,
+      "raw_chapter_count": 19,
+      "target_ts_marker_count": 19,
+      "duration_metadata_seconds": 2173.0,
+      "checks": {
+        "raw_chapters_nonempty": true,
+        "all_raw_titles_nonempty": true,
+        "all_raw_intervals_valid_within_metadata_duration": true,
+        "first_start_zero": true,
+        "adjacent_intervals_continuous": true,
+        "last_end_equals_metadata_duration": true,
+        "target_ts_marker_count_equals_raw_count": true,
+        "target_ts_markers_equal_raw_starts_titles": true,
+        "target_ts_exact_full_string_equals_raw_reconstruction": true,
+        "chapter_titles_equal_raw_titles": true,
+        "chapter_timestamps_equal_raw_starts_except_first": true,
+        "target_text_ref_has_all_title_markers": true,
+        "target_text_ts_ref_has_all_time_title_markers": true
+      }
+    },
+    {
+      "video_id": "xsO2Ip6eiaY",
+      "shard": 2,
+      "row_zero_based": 2762,
+      "raw_chapter_count": 16,
+      "target_ts_marker_count": 16,
+      "duration_metadata_seconds": 1475.0,
+      "checks": {
+        "raw_chapters_nonempty": true,
+        "all_raw_titles_nonempty": true,
+        "all_raw_intervals_valid_within_metadata_duration": true,
+        "first_start_zero": true,
+        "adjacent_intervals_continuous": true,
+        "last_end_equals_metadata_duration": true,
+        "target_ts_marker_count_equals_raw_count": true,
+        "target_ts_markers_equal_raw_starts_titles": true,
+        "target_ts_exact_full_string_equals_raw_reconstruction": true,
+        "chapter_titles_equal_raw_titles": true,
+        "chapter_timestamps_equal_raw_starts_except_first": true,
+        "target_text_ref_has_all_title_markers": true,
+        "target_text_ts_ref_has_all_time_title_markers": true
+      }
+    },
+    {
+      "video_id": "ksyY5wa5_50",
+      "shard": 1,
+      "row_zero_based": 3600,
+      "raw_chapter_count": 21,
+      "target_ts_marker_count": 21,
+      "duration_metadata_seconds": 1702.0,
+      "checks": {
+        "raw_chapters_nonempty": true,
+        "all_raw_titles_nonempty": true,
+        "all_raw_intervals_valid_within_metadata_duration": true,
+        "first_start_zero": true,
+        "adjacent_intervals_continuous": true,
+        "last_end_equals_metadata_duration": true,
+        "target_ts_marker_count_equals_raw_count": true,
+        "target_ts_markers_equal_raw_starts_titles": true,
+        "target_ts_exact_full_string_equals_raw_reconstruction": true,
+        "chapter_titles_equal_raw_titles": true,
+        "chapter_timestamps_equal_raw_starts_except_first": true,
+        "target_text_ref_has_all_title_markers": true,
+        "target_text_ts_ref_has_all_time_title_markers": true
+      }
+    },
+    {
+      "video_id": "kiCNa95DnnE",
+      "shard": 0,
+      "row_zero_based": 2257,
+      "raw_chapter_count": 26,
+      "target_ts_marker_count": 26,
+      "duration_metadata_seconds": 1292.0,
+      "checks": {
+        "raw_chapters_nonempty": true,
+        "all_raw_titles_nonempty": true,
+        "all_raw_intervals_valid_within_metadata_duration": true,
+        "first_start_zero": true,
+        "adjacent_intervals_continuous": true,
+        "last_end_equals_metadata_duration": true,
+        "target_ts_marker_count_equals_raw_count": true,
+        "target_ts_markers_equal_raw_starts_titles": true,
+        "target_ts_exact_full_string_equals_raw_reconstruction": true,
+        "chapter_titles_equal_raw_titles": true,
+        "chapter_timestamps_equal_raw_starts_except_first": true,
+        "target_text_ref_has_all_title_markers": true,
+        "target_text_ts_ref_has_all_time_title_markers": true
+      }
+    }
+  ],
+  "scope_note": "GT representation only; no rights or official RQ1 decision; no transcript text stored"
+}

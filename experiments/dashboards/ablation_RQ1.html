@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ablation Heatmap — RQ1</title>
+<style>
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #faf7f2;
+    color: #0a0a0a;
+    margin: 0;
+    padding: 0;
+    line-line-height:1.5;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em 3em;
+  }
+  .header {
+    border-bottom: 2px solid #0a0a0a;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+  }
+  .eyebrow {
+    font-family: 'Courier New', monospace;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #6b6258;
+    margin-bottom: 0.25em;
+  }
+  h1 {
+    font-size: 2.5em;
+    margin: 0 0 0.25em;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 1.5em;
+    margin-top: 2em;
+    border-left: 3px solid #b8232c;
+    padding-left: 0.5em;
+  }
+  .winner {
+    font-size: 2em;
+    font-style: italic;
+    color: #b8232c;
+    margin-top: 0.5em;
+  }
+  .winner-meta {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: #6b6258;
+    margin-top: 0.25em;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    font-size: 0.95em;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.5em 0.75em;
+    border-bottom: 1px solid #6b6258;
+  }
+  th {
+    font-family: 'Courier New', monospace;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    letter-spacing: 0.1em;
+    color: #6b6258;
+    border-bottom: 2px solid #0a0a0a;
+  }
+  tr.winner-row td {
+    font-weight: 700;
+    color: #b8232c;
+    background: rgba(184, 35, 44, 0.05);
+  }
+  .plot-div {
+    margin: 1.5em 0;
+  }
+  .footer {
+    margin-top: 3em;
+    padding-top: 1em;
+    border-top: 1px solid #6b6258;
+    font-size: 0.85em;
+    color: #6b6258;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="eyebrow">MULTIMODAL LECTURE SUMMARIZER / RQ1 / ABLATION</div>
+    <h1>Ablation Heatmap — RQ1</h1>
+    
+  </div>
+  <main>
+    
+    <p>2^k ablation grid for task <strong>RQ1</strong>. Color intensity shows
+    primary metric value (window_diff).</p>
+    <div class="plot-div"><div style="height:400px; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="7fc3053f-6c96-48c0-97c1-8dce71025988" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("7fc3053f-6c96-48c0-97c1-8dce71025988")) {                    Plotly.newPlot(                        "7fc3053f-6c96-48c0-97c1-8dce71025988",                        [{"colorscale":[[0,"#6b6258"],[0.5,"#f5d76e"],[1,"#b8232c"]],"hovertemplate":"Base: %{y}\u003cbr\u003eCombo: %{x}\u003cbr\u003eMetric: %{z:.4f}\u003cextra\u003e\u003c\u002fextra\u003e","text":[["0.184","0.183","0.177","0.184","0.134","0.139","0.161","0.102","0.192","0.188","0.199","—"],["0.106","0.108","0.120","0.146","0.166","0.143","0.171","0.120","0.160","0.126","0.199","0.195"],["0.197","0.199","0.123","—","0.119","0.175","0.185","0.100","0.199","0.128","0.190","0.148"]],"textfont":{"color":"#0a0a0a","size":9},"texttemplate":"%{text}","x":["{\"dynamic_nms\": false, \"pos_weight\": 1.0, \"visual_...","{\"dynamic_nms\": false, \"pos_weight\": 1.0, \"visual_...","{\"dynamic_nms\": false, \"pos_weight\": 4.0, \"visual_...","{\"dynamic_nms\": false, \"pos_weight\": 4.0, \"visual_...","{\"dynamic_nms\": false, \"pos_weight\": 8.0, \"visual_...","{\"dynamic_nms\": false, \"pos_weight\": 8.0, \"visual_...","{\"dynamic_nms\": true, \"pos_weight\": 1.0, \"visual_s...","{\"dynamic_nms\": true, \"pos_weight\": 1.0, \"visual_s...","{\"dynamic_nms\": true, \"pos_weight\": 4.0, \"visual_s...","{\"dynamic_nms\": true, \"pos_weight\": 4.0, \"visual_s...","{\"dynamic_nms\": true, \"pos_weight\": 8.0, \"visual_s...","{\"dynamic_nms\": true, \"pos_weight\": 8.0, \"visual_s..."],"y":["RQ1.C1_TextOnly","RQ1.C3_Visual_DINOv2","RQ1.C5_CrossAttentionProposed"],"z":[[0.184,0.183,0.177,0.184,0.134,0.139,0.161,0.102,0.192,0.188,0.199,null],[0.106,0.108,0.12,0.146,0.166,0.143,0.171,0.12,0.16,0.126,0.199,0.195],[0.197,0.199,0.123,null,0.119,0.175,0.185,0.1,0.199,0.128,0.19,0.148]],"type":"heatmap"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"bgcolor":"white","angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"ternary":{"bgcolor":"white","aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8","gridwidth":2},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8","gridwidth":2},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"white","subunitcolor":"#C8D4E3","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05}}},"font":{"family":"Georgia, serif","color":"#0a0a0a"},"xaxis":{"tickangle":-45},"yaxis":{"autorange":"reversed"},"title":{"text":"Ablation Heatmap — RQ1 (window_diff)"},"plot_bgcolor":"#faf7f2","paper_bgcolor":"#faf7f2","height":400},                        {"responsive": true}                    )                };            </script>        </div></div>
+    <h2>How to Interpret</h2>
+    <ul>
+      <li><strong>Rows</strong>: Base candidates</li>
+      <li><strong>Columns</strong>: Toggle value combinations (capped at 8 per base, sampled reproducibly)</li>
+      <li><strong>Color</strong>: Primary metric value (brighter = higher; direction varies per metric)</li>
+    </ul>
+    
+  </main>
+  <div class="footer">
+    Generated  • Multimodal Lecture Summarizer Comparison Framework
+  </div>
+</div>
+</body>
+</html>

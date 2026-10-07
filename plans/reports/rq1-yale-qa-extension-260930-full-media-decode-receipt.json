@@ -1,0 +1,83 @@
+{
+  "schema": "rq1-yale-full-media-decode/1",
+  "qualification_only": true,
+  "created_utc": "2026-09-30T02:39:02.043031+00:00",
+  "manifest_sha256": "c7efaa78d47edd2900273fb59ae3f40185c6ccbaf68e4a3c770c4f8f4379141f",
+  "files": [
+    {
+      "video_id": "vTs2IQ8OefQ",
+      "course_code": "ECON251",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\qa_extension_batch\\econ251_01_090309.m4v",
+      "source_url": "https://openmedia.yale.edu/projects/courses/fall09/econ251/m4v/econ251_01_090309.m4v",
+      "bytes": 366101378,
+      "sha256": "64484739082f2d4609e2cb0d6c0016db83b6708bceccd260cff183716108c5d8",
+      "duration_sec": 4456.256259,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "full_audio_video_decode": "pass",
+      "decode_warning": ""
+    },
+    {
+      "video_id": "pXJb29s3nmY",
+      "course_code": "ECON25208",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\qa_extension_batch\\econ252_06_020108.m4v",
+      "source_url": "https://openmedia.yale.edu/projects/courses/spring08/econ252/iphone/econ252_06_020108.m4v",
+      "bytes": 210805128,
+      "sha256": "59669ae5a8650786711530198c68b69fadc5e5ca03be1eda92cbf23065f51096",
+      "duration_sec": 4097.297302,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "full_audio_video_decode": "pass",
+      "decode_warning": ""
+    },
+    {
+      "video_id": "d8AIoU8vtzo",
+      "course_code": "PHYS201",
+      "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\qa_extension_batch\\phys201_10_021010.m4v",
+      "source_url": "https://openmedia.yale.edu/projects/courses/spring10/phys201/m4v/phys201_10_021010.m4v",
+      "bytes": 371635594,
+      "sha256": "dbb7f800c0023eec44cf437a77e946a96fdbc9f8ca8ef02615163e28c3de9ddc",
+      "duration_sec": 4240.273607,
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "full_audio_video_decode": "pass",
+      "decode_warning": ""
+    }
+  ]
+}

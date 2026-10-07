@@ -1,0 +1,1799 @@
+{
+  "schema": "rq1-d2-source-bundle/1",
+  "status": "source_gt_media_rights_bound",
+  "scope": "locked_cohort_only_no_predictions_no_feature_or_checkpoint_freeze",
+  "generator_sha256": "130b164b2eabd6a63d77eb5ea976b12b42b900953ffe993a2f5b3b318894e00e",
+  "cohort_sha256": "8596d3aad4421ff2e38a86c4e890090ad52f42f33b87e0a7d0babd080135fb4d",
+  "split_sha256": "1bb28edc0c48849d72b827bcf98b7ea35eecbcce7c8da4160693e0041956cbe8",
+  "annotation_source_sha256": {
+    "ytseg_receipt": "e926a3791b832c330ad7ae364cf8215e80cb412a6451a1b55b82ac4ed138bbd2",
+    "vidchapters_pickle": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e"
+  },
+  "unit_count": 20,
+  "units": [
+    {
+      "unit": {
+        "dataset_id": "ytseg",
+        "unit_id": "-7xg8pGcP6w",
+        "course_id": "harvard-cs50p-2022",
+        "speaker_id": "david-j-malan",
+        "talk_id": "-7xg8pGcP6w",
+        "lecture_id": "-7xg8pGcP6w",
+        "split": "train",
+        "source": "https://huggingface.co/datasets/retkowski/ytseg",
+        "revision": "4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+        "rights": "pass_public_license_scoped_noncommercial;qualification_gate_sha256:e839fef4cd5f28febe53f796360bc1ba1098f359c7245e2606e2fd2ded25ede4",
+        "bytes": 963059289,
+        "sha256": "a58685b0ad2424ae6bc995521c7c5cb22b652d42fe964a0448e14c137e2ce719",
+        "decoded": true,
+        "ground_truth": {
+          "status": "released",
+          "source": "https://huggingface.co/datasets/retkowski/ytseg",
+          "revision": "4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+          "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+        },
+        "duration_sec": 4847.0,
+        "chapter_boundaries_sec": [
+          24.0,
+          50.0,
+          204.0,
+          981.0,
+          1620.0,
+          2099.0,
+          2436.0,
+          2747.0,
+          3422.0,
+          3902.0,
+          4817.0
+        ],
+        "chapter_gt": {
+          "source": "https://huggingface.co/datasets/retkowski/ytseg",
+          "revision": "4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+          "annotation_origin": "creator_chapters",
+          "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+        }
+      },
+      "original_label_time": [
+        {
+          "time_sec": 0.0,
+          "label": "Introduction"
+        },
+        {
+          "time_sec": 24.0,
+          "label": "Loops"
+        },
+        {
+          "time_sec": 50.0,
+          "label": "cat.py"
+        },
+        {
+          "time_sec": 204.0,
+          "label": "while"
+        },
+        {
+          "time_sec": 981.0,
+          "label": "for"
+        },
+        {
+          "time_sec": 1620.0,
+          "label": "Validating Input"
+        },
+        {
+          "time_sec": 2099.0,
+          "label": "Iteration with Lists"
+        },
+        {
+          "time_sec": 2436.0,
+          "label": "len"
+        },
+        {
+          "time_sec": 2747.0,
+          "label": "Dictionaries"
+        },
+        {
+          "time_sec": 3422.0,
+          "label": "Lists of Dictionaries"
+        },
+        {
+          "time_sec": 3902.0,
+          "label": "Nested Loops"
+        },
+        {
+          "time_sec": 4817.0,
+          "label": "Conclusion"
+        }
+      ],
+      "annotation": {
+        "path": "multimodal-lecture-summarizer/experiments/datasets/ytseg_qualification/text/train-00002-of-00004.parquet",
+        "shard_sha256": "1ef803d268644ef6e19e201510893a1234c2f55f3f0d1a8883a52da85c837eaf",
+        "row_zero_based": 1594,
+        "target_ts_sha256": "9aba72ec9b263f4ac60f5f5631f032edb39bafb122f45080d89473c8c55807be"
+      },
+      "media": {
+        "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\ytseg_qualification\\-7xg8pGcP6w.mp4",
+        "sha256": "a58685b0ad2424ae6bc995521c7c5cb22b652d42fe964a0448e14c137e2ce719",
+        "bytes": 963059289,
+        "receipt_file_sha256": "08c5fa5f5e3bc8ebf8dbab64f05d3fe5810e64a1ec40f8ea74e406b2a0a7b263",
+        "receipt": "ytseg-260929-1543-cs50-media-receipt.json",
+        "receipt_sha256": "a58685b0ad2424ae6bc995521c7c5cb22b652d42fe964a0448e14c137e2ce719"
+      },
+      "rights": {
+        "gate_path": "ytseg-qualification-260929-1811-scoped-research-gate-decision.csv",
+        "gate_sha256": "e839fef4cd5f28febe53f796360bc1ba1098f359c7245e2606e2fd2ded25ede4",
+        "status": "pass_public_license_scoped_noncommercial",
+        "reason": "see_qualification_gate"
+      }
+    },
+    {
+      "unit": {
+        "dataset_id": "ytseg",
+        "unit_id": "tCKk22kaZi4",
+        "course_id": "mit-14.01-fall-2018",
+        "speaker_id": "jonathan-gruber",
+        "talk_id": "tCKk22kaZi4",
+        "lecture_id": "tCKk22kaZi4",
+        "split": "validation",
+        "source": "https://huggingface.co/datasets/retkowski/ytseg",
+        "revision": "4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+        "rights": "pass_public_license_scoped_noncommercial;qualification_gate_sha256:e839fef4cd5f28febe53f796360bc1ba1098f359c7245e2606e2fd2ded25ede4",
+        "bytes": 98407054,
+        "sha256": "fcd4a38165cd2abf4eb244faa2f67d00da2fefd3d7418935812f705c2a88737d",
+        "decoded": true,
+        "ground_truth": {
+          "status": "released",
+          "source": "https://huggingface.co/datasets/retkowski/ytseg",
+          "revision": "4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+          "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+        },
+        "duration_sec": 2483.0,
+        "chapter_boundaries_sec": [
+          11.0,
+          73.0,
+          354.0,
+          563.0,
+          807.0,
+          928.0,
+          1111.0,
+          1489.0,
+          1813.0,
+          1957.0,
+          2071.0
+        ],
+        "chapter_gt": {
+          "source": "https://huggingface.co/datasets/retkowski/ytseg",
+          "revision": "4ee1c1fccc5a9e118ff0918f3df1e61aadca8970",
+          "annotation_origin": "creator_chapters",
+          "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+        }
+      },
+      "original_label_time": [
+        {
+          "time_sec": 0.0,
+          "label": "Title slate"
+        },
+        {
+          "time_sec": 11.0,
+          "label": "Lecture Start"
+        },
+        {
+          "time_sec": 73.0,
+          "label": "Model Assumptions"
+        },
+        {
+          "time_sec": 354.0,
+          "label": "Indifference Curves"
+        },
+        {
+          "time_sec": 563.0,
+          "label": "Four Properties"
+        },
+        {
+          "time_sec": 807.0,
+          "label": "Real Example ( job search )"
+        },
+        {
+          "time_sec": 928.0,
+          "label": "Utility Functions"
+        },
+        {
+          "time_sec": 1111.0,
+          "label": "Margin Utility"
+        },
+        {
+          "time_sec": 1489.0,
+          "label": "Marginal Rate of Substitution"
+        },
+        {
+          "time_sec": 1813.0,
+          "label": "Why graph's not concave"
+        },
+        {
+          "time_sec": 1957.0,
+          "label": "(Q) Addictives & MRS"
+        },
+        {
+          "time_sec": 2071.0,
+          "label": "Price of Different Sizes of Goods"
+        }
+      ],
+      "annotation": {
+        "path": "multimodal-lecture-summarizer/experiments/datasets/ytseg_qualification/text/train-00000-of-00004.parquet",
+        "shard_sha256": "feb4ae49080e43128315ba4c5338eca339a17b7fc7b8e66628d9cf539310f691",
+        "row_zero_based": 1607,
+        "target_ts_sha256": "f0f984ec9cd503dff1a77072efb37b058aecdcb047f5d1e36bf95e90ca23802d"
+      },
+      "media": {
+        "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\ytseg_qualification\\tCKk22kaZi4.mp4",
+        "sha256": "fcd4a38165cd2abf4eb244faa2f67d00da2fefd3d7418935812f705c2a88737d",
+        "bytes": 98407054,
+        "receipt_file_sha256": "5dbf2a1e5374ec04199b8e784e15a5090e0930d7d801a748ea98d80ad213a379",
+        "receipt": "ytseg-260929-1543-tck-media-receipt.json",
+        "receipt_sha256": "fcd4a38165cd2abf4eb244faa2f67d00da2fefd3d7418935812f705c2a88737d"
+      },
+      "rights": {
+        "gate_path": "ytseg-qualification-260929-1811-scoped-research-gate-decision.csv",
+        "gate_sha256": "e839fef4cd5f28febe53f796360bc1ba1098f359c7245e2606e2fd2ded25ede4",
+        "status": "pass_public_license_scoped_noncommercial",
+        "reason": "see_qualification_gate"
+      }
+    },
+    {
+      "unit": {
+        "dataset_id": "vidchapters",
+        "unit_id": "AW3a2ECNFlE",
+        "course_id": "mit-14.772-spring-2013",
+        "speaker_id": "robert-m-townsend",
+        "talk_id": "AW3a2ECNFlE",
+        "lecture_id": "AW3a2ECNFlE",
+        "split": "final_test",
+        "source": "https://github.com/antoyang/VidChapters",
+        "revision": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+        "rights": "pass_scoped_noncommercial_ocw_terms_with_special_credit;qualification_gate_sha256:a61b2832f035f4a0521b7858782b626e3e0aa148b2717fb1337ebf84206349ea",
+        "bytes": 273048607,
+        "sha256": "b3d4dbb35935cef4c16d573d11cdd2d9eb62b16d8ed15cd9277a50093148eb20",
+        "decoded": true,
+        "ground_truth": {
+          "status": "released",
+          "source": "https://github.com/antoyang/VidChapters",
+          "revision": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+          "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+        },
+        "duration_sec": 4923.058792,
+        "chapter_boundaries_sec": [
+          26,
+          302,
+          802,
+          1111,
+          2175,
+          3010,
+          3490,
+          3790,
+          4050,
+          4522
+        ],
+        "chapter_gt": {
+          "source": "https://github.com/antoyang/VidChapters",
+          "revision": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+          "annotation_origin": "creator_chapters",
+          "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+        }
+      },
+      "original_label_time": [
+        {
+          "time_sec": 0,
+          "label": "Title slates"
+        },
+        {
+          "time_sec": 26,
+          "label": "Introduction to lecture"
+        },
+        {
+          "time_sec": 302,
+          "label": "Overview of measurement in economics"
+        },
+        {
+          "time_sec": 802,
+          "label": "Household financial accounts"
+        },
+        {
+          "time_sec": 1111,
+          "label": "Example of a typical household’s balance sheet"
+        },
+        {
+          "time_sec": 2175,
+          "label": "Cash management example"
+        },
+        {
+          "time_sec": 3010,
+          "label": "Example of application: productivity and net worth correlation"
+        },
+        {
+          "time_sec": 3490,
+          "label": "Village product accounts"
+        },
+        {
+          "time_sec": 3790,
+          "label": "Village saving and investment accounts"
+        },
+        {
+          "time_sec": 4050,
+          "label": "Village balance of payments"
+        },
+        {
+          "time_sec": 4522,
+          "label": "Village flow of funds"
+        }
+      ],
+      "annotation": {
+        "path": "experiments/datasets/vidchapters_qualification/chapters.pkl",
+        "sha256": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+        "record_byte_offset": 1898437410
+      },
+      "media": {
+        "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\vidchapters_qualification\\media\\AW3a2ECNFlE.mp4",
+        "sha256": "b3d4dbb35935cef4c16d573d11cdd2d9eb62b16d8ed15cd9277a50093148eb20",
+        "bytes": 273048607,
+        "receipt_file_sha256": "43f4f9ec7ff22b5ae23dc762bf69823c6285df6a18363f290f29f22b92209acb",
+        "receipt": "vidchapters-media-260929-1840-two-priority-receipt.json",
+        "receipt_sha256": "b3d4dbb35935cef4c16d573d11cdd2d9eb62b16d8ed15cd9277a50093148eb20"
+      },
+      "rights": {
+        "gate_path": "vidchapters-qualification-260929-1925-six-groups-gates.csv",
+        "gate_sha256": "a61b2832f035f4a0521b7858782b626e3e0aa148b2717fb1337ebf84206349ea",
+        "status": "pass_scoped_noncommercial_ocw_terms_with_special_credit",
+        "reason": "see_qualification_gate"
+      }
+    },
+    {
+      "unit": {
+        "dataset_id": "vidchapters",
+        "unit_id": "oo1ZZlvT2LQ",
+        "course_id": "mit-res.18-005-spring-2010",
+        "speaker_id": "gilbert-strang",
+        "talk_id": "oo1ZZlvT2LQ",
+        "lecture_id": "oo1ZZlvT2LQ",
+        "split": "train",
+        "source": "https://github.com/antoyang/VidChapters",
+        "revision": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+        "rights": "pass_scoped_noncommercial_ocw_terms_with_subtitle_credit;qualification_gate_sha256:a61b2832f035f4a0521b7858782b626e3e0aa148b2717fb1337ebf84206349ea",
+        "bytes": 90193596,
+        "sha256": "e704ccc54429e5d09050501e87277ec0755888cb763057375b5ea380e881f2ed",
+        "decoded": true,
+        "ground_truth": {
+          "status": "released",
+          "source": "https://github.com/antoyang/VidChapters",
+          "revision": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+          "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+        },
+        "duration_sec": 2333.791202,
+        "chapter_boundaries_sec": [
+          24,
+          75,
+          1640,
+          1800
+        ],
+        "chapter_gt": {
+          "source": "https://github.com/antoyang/VidChapters",
+          "revision": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+          "annotation_origin": "creator_chapters",
+          "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+        }
+      },
+      "original_label_time": [
+        {
+          "time_sec": 0,
+          "label": "Outline"
+        },
+        {
+          "time_sec": 24,
+          "label": "The Exponential Function: y = e^x, The function that calculus created"
+        },
+        {
+          "time_sec": 75,
+          "label": "Properties of the Exponential Function"
+        },
+        {
+          "time_sec": 1640,
+          "label": "The Graph of the Function y = e^x"
+        },
+        {
+          "time_sec": 1800,
+          "label": "Example: Computing Compound Interest"
+        }
+      ],
+      "annotation": {
+        "path": "experiments/datasets/vidchapters_qualification/chapters.pkl",
+        "sha256": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+        "record_byte_offset": 1847323479
+      },
+      "media": {
+        "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\vidchapters_qualification\\media\\oo1ZZlvT2LQ.mp4",
+        "sha256": "e704ccc54429e5d09050501e87277ec0755888cb763057375b5ea380e881f2ed",
+        "bytes": 90193596,
+        "receipt_file_sha256": "0c42d067e601ff067cf0de28703d05728b2386688db0d04b95ba2ff599a0decc",
+        "receipt": "vidchapters-media-260929-1925-exponential-function-receipt.json",
+        "receipt_sha256": "e704ccc54429e5d09050501e87277ec0755888cb763057375b5ea380e881f2ed"
+      },
+      "rights": {
+        "gate_path": "vidchapters-qualification-260929-1925-six-groups-gates.csv",
+        "gate_sha256": "a61b2832f035f4a0521b7858782b626e3e0aa148b2717fb1337ebf84206349ea",
+        "status": "pass_scoped_noncommercial_ocw_terms_with_subtitle_credit",
+        "reason": "see_qualification_gate"
+      }
+    },
+    {
+      "unit": {
+        "dataset_id": "vidchapters",
+        "unit_id": "EuNXVy5-KgA",
+        "course_id": "mit-16.687-iap-2019",
+        "speaker_id": "philip-greenspun;tina-srivastava",
+        "talk_id": "EuNXVy5-KgA",
+        "lecture_id": "EuNXVy5-KgA",
+        "split": "train",
+        "source": "https://github.com/antoyang/VidChapters",
+        "revision": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+        "rights": "pass_scoped;qualification_gate_sha256:3ca2ec386ae2af05823040de7c26fe46e113a48a080882fd9609672abf2601bc",
+        "bytes": 78229335,
+        "sha256": "a369b3aaf61b242e5eb95b31c99073c7c5f9fce8d2c49a9a29d04557a1fb187c",
+        "decoded": true,
+        "ground_truth": {
+          "status": "released",
+          "source": "https://github.com/antoyang/VidChapters",
+          "revision": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+          "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+        },
+        "duration_sec": 1941.802,
+        "chapter_boundaries_sec": [
+          12,
+          159,
+          235,
+          324,
+          405,
+          590,
+          684,
+          755,
+          802,
+          878,
+          977,
+          1134,
+          1688
+        ],
+        "chapter_gt": {
+          "source": "https://github.com/antoyang/VidChapters",
+          "revision": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+          "annotation_origin": "creator_chapters",
+          "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+        }
+      },
+      "original_label_time": [
+        {
+          "time_sec": 0,
+          "label": "Introduction"
+        },
+        {
+          "time_sec": 12,
+          "label": "Tina landing at KBED at Night"
+        },
+        {
+          "time_sec": 159,
+          "label": "When is \"night\"?"
+        },
+        {
+          "time_sec": 235,
+          "label": "No Special Rating!"
+        },
+        {
+          "time_sec": 324,
+          "label": "Night Vision"
+        },
+        {
+          "time_sec": 405,
+          "label": "Night Flying - Head Light"
+        },
+        {
+          "time_sec": 590,
+          "label": "Night Illusions"
+        },
+        {
+          "time_sec": 684,
+          "label": "91.209 - Aircraft Lights"
+        },
+        {
+          "time_sec": 755,
+          "label": "Navigation Lights"
+        },
+        {
+          "time_sec": 802,
+          "label": "Airport Lighting: Beacons"
+        },
+        {
+          "time_sec": 878,
+          "label": "Airport Lighting: Taxiway/Runway"
+        },
+        {
+          "time_sec": 977,
+          "label": "KLWM PAPI Story"
+        },
+        {
+          "time_sec": 1134,
+          "label": "Pilot-Controlled Lighting"
+        },
+        {
+          "time_sec": 1688,
+          "label": "Discussion"
+        }
+      ],
+      "annotation": {
+        "path": "experiments/datasets/vidchapters_qualification/chapters.pkl",
+        "sha256": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+        "record_byte_offset": 1867002601
+      },
+      "media": {
+        "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\vidchapters_qualification\\media\\EuNXVy5-KgA.mp4",
+        "sha256": "a369b3aaf61b242e5eb95b31c99073c7c5f9fce8d2c49a9a29d04557a1fb187c",
+        "bytes": 78229335,
+        "receipt_file_sha256": "d2690bc7f0c9c9a06a9af43816f98db411ed69c5a4e66b9371ac3382c8c7f1e8",
+        "receipt": "rq1-batch-260929-2008-media-boundary-receipt.json",
+        "receipt_sha256": "a369b3aaf61b242e5eb95b31c99073c7c5f9fce8d2c49a9a29d04557a1fb187c"
+      },
+      "rights": {
+        "gate_path": "rq1-batch-260929-2008-final-gates.csv",
+        "gate_sha256": "3ca2ec386ae2af05823040de7c26fe46e113a48a080882fd9609672abf2601bc",
+        "status": "pass_scoped",
+        "reason": "see_qualification_gate"
+      }
+    },
+    {
+      "unit": {
+        "dataset_id": "vidchapters",
+        "unit_id": "09vU-wVwW3U",
+        "course_id": "mit-6.046j-spring-2015",
+        "speaker_id": "ling-ren",
+        "talk_id": "09vU-wVwW3U",
+        "lecture_id": "09vU-wVwW3U",
+        "split": "final_test",
+        "source": "https://github.com/antoyang/VidChapters",
+        "revision": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+        "rights": "pass_scoped;qualification_gate_sha256:3ca2ec386ae2af05823040de7c26fe46e113a48a080882fd9609672abf2601bc",
+        "bytes": 127320647,
+        "sha256": "a254e643a715065291dfd693d1b958989ca3856ad83477cfcf728b5755835ee3",
+        "decoded": true,
+        "ground_truth": {
+          "status": "released",
+          "source": "https://github.com/antoyang/VidChapters",
+          "revision": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+          "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+        },
+        "duration_sec": 3225.664,
+        "chapter_boundaries_sec": [
+          20,
+          136,
+          1360,
+          1993
+        ],
+        "chapter_gt": {
+          "source": "https://github.com/antoyang/VidChapters",
+          "revision": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+          "annotation_origin": "creator_chapters",
+          "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+        }
+      },
+      "original_label_time": [
+        {
+          "time_sec": 0,
+          "label": "Title slate"
+        },
+        {
+          "time_sec": 20,
+          "label": "Recitation intro"
+        },
+        {
+          "time_sec": 136,
+          "label": "Weighted Interval Scheduling"
+        },
+        {
+          "time_sec": 1360,
+          "label": "Strassen algorithm"
+        },
+        {
+          "time_sec": 1993,
+          "label": "Master Theorem"
+        }
+      ],
+      "annotation": {
+        "path": "experiments/datasets/vidchapters_qualification/chapters.pkl",
+        "sha256": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+        "record_byte_offset": 1990465035
+      },
+      "media": {
+        "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\vidchapters_qualification\\media\\09vU-wVwW3U.mp4",
+        "sha256": "a254e643a715065291dfd693d1b958989ca3856ad83477cfcf728b5755835ee3",
+        "bytes": 127320647,
+        "receipt_file_sha256": "d2690bc7f0c9c9a06a9af43816f98db411ed69c5a4e66b9371ac3382c8c7f1e8",
+        "receipt": "rq1-batch-260929-2008-media-boundary-receipt.json",
+        "receipt_sha256": "a254e643a715065291dfd693d1b958989ca3856ad83477cfcf728b5755835ee3"
+      },
+      "rights": {
+        "gate_path": "rq1-batch-260929-2008-final-gates.csv",
+        "gate_sha256": "3ca2ec386ae2af05823040de7c26fe46e113a48a080882fd9609672abf2601bc",
+        "status": "pass_scoped",
+        "reason": "see_qualification_gate"
+      }
+    },
+    {
+      "unit": {
+        "dataset_id": "yale_publisher_native",
+        "unit_id": "zsb6B8HrNVA",
+        "course_id": "yale-beng-100",
+        "speaker_id": "w-mark-saltzman",
+        "talk_id": "zsb6B8HrNVA",
+        "lecture_id": "zsb6B8HrNVA",
+        "split": "train",
+        "source": "https://oyc.yale.edu/biomedical-engineering/beng-100/lecture-21",
+        "revision": "fcef38c83f8df20e0223361875cce57bc15c7d32eb544a98aa21f08acbce76b9",
+        "rights": "pass_scoped;qualification_gate_sha256:e050f13669c94c31733a87fc5f39e8025fd8af295c0fc08e609f80b42324042e",
+        "bytes": 169243350,
+        "sha256": "7e345dec14d01746ff3d1fd119c598f8f1ea701aadd08884a58132359c53abca",
+        "decoded": true,
+        "ground_truth": {
+          "status": "released",
+          "source": "https://oyc.yale.edu/biomedical-engineering/beng-100/lecture-21",
+          "revision": "fcef38c83f8df20e0223361875cce57bc15c7d32eb544a98aa21f08acbce76b9",
+          "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+        },
+        "duration_sec": 3238.27161,
+        "chapter_boundaries_sec": [
+          304,
+          1513,
+          1893,
+          2662,
+          2996
+        ],
+        "chapter_gt": {
+          "source": "https://oyc.yale.edu/biomedical-engineering/beng-100/lecture-21",
+          "revision": "fcef38c83f8df20e0223361875cce57bc15c7d32eb544a98aa21f08acbce76b9",
+          "annotation_origin": "publisher_timed_toc",
+          "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+        }
+      },
+      "original_label_time": [
+        {
+          "time_sec": 0,
+          "label": "Introduction"
+        },
+        {
+          "time_sec": 304,
+          "label": "Magnetic Resonance Imaging"
+        },
+        {
+          "time_sec": 1513,
+          "label": "fMRI"
+        },
+        {
+          "time_sec": 1893,
+          "label": "Ultrasound Imaging"
+        },
+        {
+          "time_sec": 2662,
+          "label": "Nuclear Medicine"
+        },
+        {
+          "time_sec": 2996,
+          "label": "Optical Imaging and Conclusion"
+        }
+      ],
+      "annotation": {
+        "path": "rq1-yale-native-batch-260929-source-pairs.csv",
+        "file_sha256": "9b58e90c63eb55b75ec6cde17f4cf480da460f82d05ce5177756f17ddab439a5",
+        "source_pairs_sha256": "fcef38c83f8df20e0223361875cce57bc15c7d32eb544a98aa21f08acbce76b9",
+        "publisher_metadata": {
+          "path": "rq1-yale-native-batch-260929-source-metadata.csv",
+          "file_sha256": "72dee4b4b42d743662e65c4b56207e24d7d97a6e327ca090d1b0fe87c1223929",
+          "source_html_sha256": null,
+          "publisher_gt_block_sha256": "dc6ac6a55b7bb57a91bb855a2793f4fd2db802e31d9a5eadcd7cabce1022b9f7"
+        }
+      },
+      "media": {
+        "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\native_batch\\beng100_21_041008.m4v",
+        "sha256": "7e345dec14d01746ff3d1fd119c598f8f1ea701aadd08884a58132359c53abca",
+        "bytes": 169243350,
+        "receipt_file_sha256": "0a6bd7e9eb79fd30b58d4858043c0b39dff3dbd8c82f121a783c7851b37dd170",
+        "receipt": "rq1-locked-yale-260929-full-media-decode-receipt.json",
+        "receipt_sha256": "7e345dec14d01746ff3d1fd119c598f8f1ea701aadd08884a58132359c53abca"
+      },
+      "rights": {
+        "gate_path": "rq1-locked-yale-260929-final-gates.csv",
+        "gate_sha256": "e050f13669c94c31733a87fc5f39e8025fd8af295c0fc08e609f80b42324042e",
+        "status": "pass_scoped",
+        "reason": "Publisher has no separate third-party credits; 27 full-lecture samples show lecturer/board only under OYC noncommercial terms."
+      }
+    },
+    {
+      "unit": {
+        "dataset_id": "yale_publisher_native",
+        "unit_id": "-W4kU1YFSck",
+        "course_id": "yale-hist-116",
+        "speaker_id": "joanne-freeman",
+        "talk_id": "-W4kU1YFSck",
+        "lecture_id": "-W4kU1YFSck",
+        "split": "train",
+        "source": "https://oyc.yale.edu/history/hist-116/lecture-4",
+        "revision": "064887f0913bf02b6787200dc12ca53377c4375ca9f79cda66e15399a5472d6a",
+        "rights": "pass_scoped;qualification_gate_sha256:c8994690007aa7c13ac9af5c9660b8c37dfcd47ecec44d64babf83c0965c39a2",
+        "bytes": 221331551,
+        "sha256": "1f57f817d489fa6fa9b3394753242b139a5490e20c18c0f1691fcc278aeec3c0",
+        "decoded": true,
+        "ground_truth": {
+          "status": "released",
+          "source": "https://oyc.yale.edu/history/hist-116/lecture-4",
+          "revision": "064887f0913bf02b6787200dc12ca53377c4375ca9f79cda66e15399a5472d6a",
+          "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+        },
+        "duration_sec": 2498.832165,
+        "chapter_boundaries_sec": [
+          172,
+          704,
+          1438,
+          1843,
+          2190
+        ],
+        "chapter_gt": {
+          "source": "https://oyc.yale.edu/history/hist-116/lecture-4",
+          "revision": "064887f0913bf02b6787200dc12ca53377c4375ca9f79cda66e15399a5472d6a",
+          "annotation_origin": "publisher_timed_toc",
+          "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+        }
+      },
+      "original_label_time": [
+        {
+          "time_sec": 0,
+          "label": "Introduction"
+        },
+        {
+          "time_sec": 172,
+          "label": "Intercolonial Opinions: Notes from Jefferson, Washington, and Adams"
+        },
+        {
+          "time_sec": 704,
+          "label": "Colony Types, and Differences between New England and Middle Colonies"
+        },
+        {
+          "time_sec": 1438,
+          "label": "Education and Social Culture in the Southern Colonies"
+        },
+        {
+          "time_sec": 1843,
+          "label": "Dutch Expansion and the English Dominion: The First Two Unions"
+        },
+        {
+          "time_sec": 2190,
+          "label": "The French and Indian Threats: The Third Colonial Union"
+        }
+      ],
+      "annotation": {
+        "path": "rq1-yale-remaining-260929-source-pairs.csv",
+        "file_sha256": "1573e8d7dd2e1994590b3ce1834753c65c98cd0f77b8872738ff0d9269a22e7e",
+        "source_pairs_sha256": "064887f0913bf02b6787200dc12ca53377c4375ca9f79cda66e15399a5472d6a",
+        "publisher_metadata": {
+          "path": "rq1-yale-remaining-260929-source-metadata.csv",
+          "file_sha256": "a4262b87964b970e8e150ff75e29325a8c4b3bc6426c35357a9a8cbf4a7463cf",
+          "source_html_sha256": "6125d055b3c8450d35f3d0355c95510537841ebf7c4a7481a75db52c8d36a70e",
+          "publisher_gt_block_sha256": "714a66c646a3eefe0d0d031120ddb15b6391a990054b9bbda668d8c04279568e"
+        }
+      },
+      "media": {
+        "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\remaining_batch\\hist116_04_012110.m4v",
+        "sha256": "1f57f817d489fa6fa9b3394753242b139a5490e20c18c0f1691fcc278aeec3c0",
+        "bytes": 221331551,
+        "receipt_file_sha256": "cfde6a6355d67851c39093c01b4ab2cc6f2a77891b0a05e9bca0d5a3ba99d43b",
+        "receipt": "rq1-yale-remaining-260929-full-media-decode-receipt.json",
+        "receipt_sha256": "1f57f817d489fa6fa9b3394753242b139a5490e20c18c0f1691fcc278aeec3c0"
+      },
+      "rights": {
+        "gate_path": "rq1-yale-remaining-260929-final-gates.csv",
+        "gate_sha256": "c8994690007aa7c13ac9af5c9660b8c37dfcd47ecec44d64babf83c0965c39a2",
+        "status": "pass_scoped",
+        "reason": "Whole-lecture storyboard shows Joanne Freeman and lectern only; no separately identified third-party visual or extended contemporary audio component on the lecture page. Internal noncommercial research scope under OYC terms."
+      }
+    },
+    {
+      "unit": {
+        "dataset_id": "yale_publisher_native",
+        "unit_id": "f_55cmhHq3g",
+        "course_id": "yale-phil-176",
+        "speaker_id": "shelly-kagan",
+        "talk_id": "f_55cmhHq3g",
+        "lecture_id": "f_55cmhHq3g",
+        "split": "validation",
+        "source": "https://oyc.yale.edu/death/phil-176/lecture-20",
+        "revision": "d369e09bb49562515eece6232078f9e1718e6d33dadc48c824ccea6b61d5425e",
+        "rights": "pass_scoped;qualification_gate_sha256:c8994690007aa7c13ac9af5c9660b8c37dfcd47ecec44d64babf83c0965c39a2",
+        "bytes": 266845285,
+        "sha256": "e4946787d3140f084dba26910e338e088445acb62edafa7cc7fcf9395033e7e3",
+        "decoded": true,
+        "ground_truth": {
+          "status": "released",
+          "source": "https://oyc.yale.edu/death/phil-176/lecture-20",
+          "revision": "d369e09bb49562515eece6232078f9e1718e6d33dadc48c824ccea6b61d5425e",
+          "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+        },
+        "duration_sec": 3039.239239,
+        "chapter_boundaries_sec": [
+          357,
+          1025,
+          1616,
+          2116,
+          2639
+        ],
+        "chapter_gt": {
+          "source": "https://oyc.yale.edu/death/phil-176/lecture-20",
+          "revision": "d369e09bb49562515eece6232078f9e1718e6d33dadc48c824ccea6b61d5425e",
+          "annotation_origin": "publisher_timed_toc",
+          "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+        }
+      },
+      "original_label_time": [
+        {
+          "time_sec": 0,
+          "label": "What's Missing from the Experience Machine?"
+        },
+        {
+          "time_sec": 357,
+          "label": "The Neutral and Valuable Container Theories: What about Life Is Valuable?"
+        },
+        {
+          "time_sec": 1025,
+          "label": "The Fantastic Valuable Container Theory: The Contents Really Matter"
+        },
+        {
+          "time_sec": 1616,
+          "label": "Is Deprivation the Only Badness of Death? Consideration of Inevitability"
+        },
+        {
+          "time_sec": 2116,
+          "label": "Variability and Unpredictability of Death"
+        },
+        {
+          "time_sec": 2639,
+          "label": "Can an Ideal Life Be Planned?"
+        }
+      ],
+      "annotation": {
+        "path": "rq1-yale-remaining-260929-source-pairs.csv",
+        "file_sha256": "1573e8d7dd2e1994590b3ce1834753c65c98cd0f77b8872738ff0d9269a22e7e",
+        "source_pairs_sha256": "d369e09bb49562515eece6232078f9e1718e6d33dadc48c824ccea6b61d5425e",
+        "publisher_metadata": {
+          "path": "rq1-yale-remaining-260929-source-metadata.csv",
+          "file_sha256": "a4262b87964b970e8e150ff75e29325a8c4b3bc6426c35357a9a8cbf4a7463cf",
+          "source_html_sha256": "74e067006e2e3fce7e1fd910a307954dc682c1fd6602d2a4cd31f1d1b8cd7881",
+          "publisher_gt_block_sha256": "1580cc08c6180ea0bc25aa9738e9358e22bdb9d0de4427b22a417214da6db9a9"
+        }
+      },
+      "media": {
+        "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\remaining_batch\\phil176_20_040507.m4v",
+        "sha256": "e4946787d3140f084dba26910e338e088445acb62edafa7cc7fcf9395033e7e3",
+        "bytes": 266845285,
+        "receipt_file_sha256": "cfde6a6355d67851c39093c01b4ab2cc6f2a77891b0a05e9bca0d5a3ba99d43b",
+        "receipt": "rq1-yale-remaining-260929-full-media-decode-receipt.json",
+        "receipt_sha256": "e4946787d3140f084dba26910e338e088445acb62edafa7cc7fcf9395033e7e3"
+      },
+      "rights": {
+        "gate_path": "rq1-yale-remaining-260929-final-gates.csv",
+        "gate_sha256": "c8994690007aa7c13ac9af5c9660b8c37dfcd47ecec44d64babf83c0965c39a2",
+        "status": "pass_scoped",
+        "reason": "Whole-lecture storyboard shows Shelly Kagan speaking and his own chalkboard diagrams only; no separate third-party visual or extended reading was identified in the publisher page/transcript. Internal noncommercial research scope under OYC terms."
+      }
+    },
+    {
+      "unit": {
+        "dataset_id": "yale_publisher_native",
+        "unit_id": "e3uBi2TZdUY",
+        "course_id": "yale-hist-251",
+        "speaker_id": "keith-e-wrightson",
+        "talk_id": "e3uBi2TZdUY",
+        "lecture_id": "e3uBi2TZdUY",
+        "split": "final_test",
+        "source": "https://oyc.yale.edu/history/hist-251/lecture-1",
+        "revision": "98f6d2c8b1d0ed023c1a9de769545984c45894b23e14c1a1be507880b41f3412",
+        "rights": "pass_scoped;qualification_gate_sha256:c8994690007aa7c13ac9af5c9660b8c37dfcd47ecec44d64babf83c0965c39a2",
+        "bytes": 193644466,
+        "sha256": "6047db7f473d9179676ccba04a1fc52da551e50fef067d1f7d234bac2eebe470",
+        "decoded": true,
+        "ground_truth": {
+          "status": "released",
+          "source": "https://oyc.yale.edu/history/hist-251/lecture-1",
+          "revision": "98f6d2c8b1d0ed023c1a9de769545984c45894b23e14c1a1be507880b41f3412",
+          "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+        },
+        "duration_sec": 2168.802135,
+        "chapter_boundaries_sec": [
+          443,
+          1189,
+          1717
+        ],
+        "chapter_gt": {
+          "source": "https://oyc.yale.edu/history/hist-251/lecture-1",
+          "revision": "98f6d2c8b1d0ed023c1a9de769545984c45894b23e14c1a1be507880b41f3412",
+          "annotation_origin": "publisher_timed_toc",
+          "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+        }
+      },
+      "original_label_time": [
+        {
+          "time_sec": 0,
+          "label": "Early Modern England"
+        },
+        {
+          "time_sec": 443,
+          "label": "Why Study Early Modern England?"
+        },
+        {
+          "time_sec": 1189,
+          "label": "A New Historiography"
+        },
+        {
+          "time_sec": 1717,
+          "label": "Logistics"
+        }
+      ],
+      "annotation": {
+        "path": "rq1-yale-remaining-260929-source-pairs.csv",
+        "file_sha256": "1573e8d7dd2e1994590b3ce1834753c65c98cd0f77b8872738ff0d9269a22e7e",
+        "source_pairs_sha256": "98f6d2c8b1d0ed023c1a9de769545984c45894b23e14c1a1be507880b41f3412",
+        "publisher_metadata": {
+          "path": "rq1-yale-remaining-260929-source-metadata.csv",
+          "file_sha256": "a4262b87964b970e8e150ff75e29325a8c4b3bc6426c35357a9a8cbf4a7463cf",
+          "source_html_sha256": "ec8fcb631e3a7a42ef15085775c18de867b5eb6fc2578b912fefe4b32fe3c470",
+          "publisher_gt_block_sha256": "dfc060739bf35934e60f18e65fd3033e74188ca1a2fbbe554bae39ffc739e0f6"
+        }
+      },
+      "media": {
+        "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\remaining_batch\\hist251_01_090309.m4v",
+        "sha256": "6047db7f473d9179676ccba04a1fc52da551e50fef067d1f7d234bac2eebe470",
+        "bytes": 193644466,
+        "receipt_file_sha256": "cfde6a6355d67851c39093c01b4ab2cc6f2a77891b0a05e9bca0d5a3ba99d43b",
+        "receipt": "rq1-yale-remaining-260929-full-media-decode-receipt.json",
+        "receipt_sha256": "6047db7f473d9179676ccba04a1fc52da551e50fef067d1f7d234bac2eebe470"
+      },
+      "rights": {
+        "gate_path": "rq1-yale-remaining-260929-final-gates.csv",
+        "gate_sha256": "c8994690007aa7c13ac9af5c9660b8c37dfcd47ecec44d64babf83c0965c39a2",
+        "status": "pass_scoped",
+        "reason": "Whole-lecture storyboard shows Keith Wrightson at the lectern only. Publisher transcript contains historical discussion and brief references, not an identified extended third-party audiovisual component. Internal noncommercial research scope under OYC terms."
+      }
+    },
+    {
+      "unit": {
+        "dataset_id": "yale_publisher_native",
+        "unit_id": "LZkoBeI6gVM",
+        "course_id": "yale-span-300",
+        "speaker_id": "roberto-gonzalez-echevarria",
+        "talk_id": "LZkoBeI6gVM",
+        "lecture_id": "LZkoBeI6gVM",
+        "split": "train",
+        "source": "https://oyc.yale.edu/spanish-and-portuguese/span-300/lecture-2",
+        "revision": "b4fe5a0a9d4f3ef25d9d87d2031f48e9b61cb5c324ecbf23059111feb78b5abc",
+        "rights": "pass_scoped;qualification_gate_sha256:c8994690007aa7c13ac9af5c9660b8c37dfcd47ecec44d64babf83c0965c39a2",
+        "bytes": 305378193,
+        "sha256": "eb8e05f3288ab51da4a03eeff53c52bf4e9e4bc1b8ec14c34f3e9b7e68192345",
+        "decoded": true,
+        "ground_truth": {
+          "status": "released",
+          "source": "https://oyc.yale.edu/spanish-and-portuguese/span-300/lecture-2",
+          "revision": "b4fe5a0a9d4f3ef25d9d87d2031f48e9b61cb5c324ecbf23059111feb78b5abc",
+          "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+        },
+        "duration_sec": 3433.5669,
+        "chapter_boundaries_sec": [
+          550,
+          949,
+          1358,
+          2547
+        ],
+        "chapter_gt": {
+          "source": "https://oyc.yale.edu/spanish-and-portuguese/span-300/lecture-2",
+          "revision": "b4fe5a0a9d4f3ef25d9d87d2031f48e9b61cb5c324ecbf23059111feb78b5abc",
+          "annotation_origin": "publisher_timed_toc",
+          "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+        }
+      },
+      "original_label_time": [
+        {
+          "time_sec": 0,
+          "label": "\"Don Quixote\" and Its Effect on Readers"
+        },
+        {
+          "time_sec": 550,
+          "label": "Distinguishing between Novel and Romance"
+        },
+        {
+          "time_sec": 949,
+          "label": "Chivalric Romance and Courtly Romance"
+        },
+        {
+          "time_sec": 1358,
+          "label": "Cervantes within the Genealogy of the Spanish Tradition"
+        },
+        {
+          "time_sec": 2547,
+          "label": "The Prologue and Its Intentions"
+        }
+      ],
+      "annotation": {
+        "path": "rq1-yale-remaining-260929-source-pairs.csv",
+        "file_sha256": "1573e8d7dd2e1994590b3ce1834753c65c98cd0f77b8872738ff0d9269a22e7e",
+        "source_pairs_sha256": "b4fe5a0a9d4f3ef25d9d87d2031f48e9b61cb5c324ecbf23059111feb78b5abc",
+        "publisher_metadata": {
+          "path": "rq1-yale-remaining-260929-source-metadata.csv",
+          "file_sha256": "a4262b87964b970e8e150ff75e29325a8c4b3bc6426c35357a9a8cbf4a7463cf",
+          "source_html_sha256": "cc23a21bf3a95289a9a22f0da164dc2b51b827e3f2fedd9c5479b589a75e3634",
+          "publisher_gt_block_sha256": "1dc6de16244b1cb9af6181f89696cfa78736e4ef52d107ba1e6fdad8d0d6b4d7"
+        }
+      },
+      "media": {
+        "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\remaining_batch\\span300_02_090809.m4v",
+        "sha256": "eb8e05f3288ab51da4a03eeff53c52bf4e9e4bc1b8ec14c34f3e9b7e68192345",
+        "bytes": 305378193,
+        "receipt_file_sha256": "cfde6a6355d67851c39093c01b4ab2cc6f2a77891b0a05e9bca0d5a3ba99d43b",
+        "receipt": "rq1-yale-remaining-260929-full-media-decode-receipt.json",
+        "receipt_sha256": "eb8e05f3288ab51da4a03eeff53c52bf4e9e4bc1b8ec14c34f3e9b7e68192345"
+      },
+      "rights": {
+        "gate_path": "rq1-yale-remaining-260929-final-gates.csv",
+        "gate_sha256": "c8994690007aa7c13ac9af5c9660b8c37dfcd47ecec44d64babf83c0965c39a2",
+        "status": "pass_scoped",
+        "reason": "Whole-lecture storyboard shows Roberto González Echevarría and chalkboard only. The lecture page/transcript has brief literary quotation, with no extended reading from the modern assigned translations identified in this selected lecture. Internal noncommercial research scope under OYC terms."
+      }
+    },
+    {
+      "unit": {
+        "dataset_id": "yale_publisher_native",
+        "unit_id": "Y3S1uqgGfB4",
+        "course_id": "yale-plsc-114",
+        "speaker_id": "steven-b-smith",
+        "talk_id": "Y3S1uqgGfB4",
+        "lecture_id": "Y3S1uqgGfB4",
+        "split": "final_test",
+        "source": "https://oyc.yale.edu/political-science/plsc-114/lecture-12",
+        "revision": "1febcc2a9d8ce7c4e97289c96bfb4af81a536ee832f55de46a5b8b690bf22daf",
+        "rights": "pass_scoped;qualification_gate_sha256:c8994690007aa7c13ac9af5c9660b8c37dfcd47ecec44d64babf83c0965c39a2",
+        "bytes": 171734759,
+        "sha256": "47446f616e94b6b373b4f7a17af36b3050c16034e09ebe66b206dc4191e9ad82",
+        "decoded": true,
+        "ground_truth": {
+          "status": "released",
+          "source": "https://oyc.yale.edu/political-science/plsc-114/lecture-12",
+          "revision": "1febcc2a9d8ce7c4e97289c96bfb4af81a536ee832f55de46a5b8b690bf22daf",
+          "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+        },
+        "duration_sec": 2728.628639,
+        "chapter_boundaries_sec": [
+          448,
+          852,
+          1526,
+          2035,
+          2432
+        ],
+        "chapter_gt": {
+          "source": "https://oyc.yale.edu/political-science/plsc-114/lecture-12",
+          "revision": "1febcc2a9d8ce7c4e97289c96bfb4af81a536ee832f55de46a5b8b690bf22daf",
+          "annotation_origin": "publisher_timed_toc",
+          "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+        }
+      },
+      "original_label_time": [
+        {
+          "time_sec": 0,
+          "label": "Introduction: Thomas Hobbes"
+        },
+        {
+          "time_sec": 448,
+          "label": "Who Was Hobbes?"
+        },
+        {
+          "time_sec": 852,
+          "label": "Comparing Hobbes to Machiavelli and Aristotle"
+        },
+        {
+          "time_sec": 1526,
+          "label": "Hobbes on Art, Science and Politics"
+        },
+        {
+          "time_sec": 2035,
+          "label": "Hobbes' \"Great Question\": What Makes Legitimate Authority Possible?"
+        },
+        {
+          "time_sec": 2432,
+          "label": "What Makes Hobbes' Story a Plausible Account of \"The State of Nature\"?"
+        }
+      ],
+      "annotation": {
+        "path": "rq1-yale-remaining-260929-source-pairs.csv",
+        "file_sha256": "1573e8d7dd2e1994590b3ce1834753c65c98cd0f77b8872738ff0d9269a22e7e",
+        "source_pairs_sha256": "1febcc2a9d8ce7c4e97289c96bfb4af81a536ee832f55de46a5b8b690bf22daf",
+        "publisher_metadata": {
+          "path": "rq1-yale-remaining-260929-source-metadata.csv",
+          "file_sha256": "a4262b87964b970e8e150ff75e29325a8c4b3bc6426c35357a9a8cbf4a7463cf",
+          "source_html_sha256": "93f78ec7427dddde49440d364242468ac84852003623af196f66162f99a8ec23",
+          "publisher_gt_block_sha256": "aef80d1f45348b27c17d15a0bddf6f4800fdfcccffb0b1cfc096887fc8f639a4"
+        }
+      },
+      "media": {
+        "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\remaining_batch\\plsc114_12_101806.m4v",
+        "sha256": "47446f616e94b6b373b4f7a17af36b3050c16034e09ebe66b206dc4191e9ad82",
+        "bytes": 171734759,
+        "receipt_file_sha256": "cfde6a6355d67851c39093c01b4ab2cc6f2a77891b0a05e9bca0d5a3ba99d43b",
+        "receipt": "rq1-yale-remaining-260929-full-media-decode-receipt.json",
+        "receipt_sha256": "47446f616e94b6b373b4f7a17af36b3050c16034e09ebe66b206dc4191e9ad82"
+      },
+      "rights": {
+        "gate_path": "rq1-yale-remaining-260929-final-gates.csv",
+        "gate_sha256": "c8994690007aa7c13ac9af5c9660b8c37dfcd47ecec44d64babf83c0965c39a2",
+        "status": "pass_scoped",
+        "reason": "Whole-lecture storyboard shows Steven B. Smith speaking without projected third-party material; the selected lecture discusses the public-domain original Hobbes text rather than an identified extended modern translation. Internal noncommercial research scope under OYC terms."
+      }
+    },
+    {
+      "unit": {
+        "dataset_id": "yale_publisher_native",
+        "unit_id": "qQ3kFydI_xQ",
+        "course_id": "yale-econ-159",
+        "speaker_id": "ben-polak",
+        "talk_id": "qQ3kFydI_xQ",
+        "lecture_id": "qQ3kFydI_xQ",
+        "split": "final_test",
+        "source": "https://oyc.yale.edu/economics/econ-159/lecture-2",
+        "revision": "0790cd8ca798f30016340bf8b0665ee58dfbf50cca09b8c8c2892e2ca923a2d1",
+        "rights": "pass_scoped;qualification_gate_sha256:7b52673eef377bbff4bf39eb57cd33af547e882c914599c3fd0726cf3786ad8a",
+        "bytes": 601595188,
+        "sha256": "a25dbe7b4de66f7978c6c503da1b20548d301c116a9d4b9fd6224d7889113edf",
+        "decoded": true,
+        "ground_truth": {
+          "status": "released",
+          "source": "https://oyc.yale.edu/economics/econ-159/lecture-2",
+          "revision": "0790cd8ca798f30016340bf8b0665ee58dfbf50cca09b8c8c2892e2ca923a2d1",
+          "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+        },
+        "duration_sec": 4129.0,
+        "chapter_boundaries_sec": [
+          407,
+          961,
+          2129,
+          3937
+        ],
+        "chapter_gt": {
+          "source": "https://oyc.yale.edu/economics/econ-159/lecture-2",
+          "revision": "0790cd8ca798f30016340bf8b0665ee58dfbf50cca09b8c8c2892e2ca923a2d1",
+          "annotation_origin": "publisher_timed_toc",
+          "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+        }
+      },
+      "original_label_time": [
+        {
+          "time_sec": 0,
+          "label": "Recap of Previous Lecture: Prisoners' Dilemma and Payoffs"
+        },
+        {
+          "time_sec": 407,
+          "label": "The Formal Ingredients of a Game"
+        },
+        {
+          "time_sec": 961,
+          "label": "Weakly Dominant Strategies"
+        },
+        {
+          "time_sec": 2129,
+          "label": "Rationality and Common Knowledge"
+        },
+        {
+          "time_sec": 3937,
+          "label": "Common Knowledge vs. Mutual Knowledge"
+        }
+      ],
+      "annotation": {
+        "path": "rq1-yale-qa-existing-260929-source-bridge.json",
+        "file_sha256": "ebf4f7e13f0662b5dbf05db1d56fa7bb7971d78d10c3542d3c4357194ff5d4d1",
+        "publisher_gt_sha256": "0790cd8ca798f30016340bf8b0665ee58dfbf50cca09b8c8c2892e2ca923a2d1"
+      },
+      "media": {
+        "local_path": "C:\\Users\\hung\\Downloads\\econ159_02_091007.mov",
+        "sha256": "a25dbe7b4de66f7978c6c503da1b20548d301c116a9d4b9fd6224d7889113edf",
+        "bytes": 601595188,
+        "receipt_file_sha256": "f5cd42f567e2009ee9981ad55fb394aed68e65a8e5e3d39355b878a6009f6865",
+        "receipt": "rq1-yale-260928-2157-econ159-l2-local-mov-receipt.json"
+      },
+      "rights": {
+        "gate_path": "rq1-yale-qa-existing-260930-final-gates.csv",
+        "gate_sha256": "7b52673eef377bbff4bf39eb57cd33af547e882c914599c3fd0726cf3786ad8a",
+        "status": "pass_scoped",
+        "reason": "OYC internal noncommercial research scope; full-lecture storyboard shows Yale lecturer, classroom audience and chalkboard, without an identified extended third-party media component. No media/transcript redistribution."
+      }
+    },
+    {
+      "unit": {
+        "dataset_id": "yale_publisher_native",
+        "unit_id": "9FrHGAd_yto",
+        "course_id": "yale-clcv-205",
+        "speaker_id": "donald-kagan",
+        "talk_id": "9FrHGAd_yto",
+        "lecture_id": "9FrHGAd_yto",
+        "split": "final_test",
+        "source": "https://oyc.yale.edu/classics/clcv-205/lecture-1",
+        "revision": "7dc2d8614324e1adfa00f9bb219dc979724b8600f7d710cdb9692eb79abcd4ae",
+        "rights": "pass_scoped;qualification_gate_sha256:3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc",
+        "bytes": 102875509,
+        "sha256": "303ec813a20efc63e9659270379cb4c96b48605dd9cb0fd541a3e8ec18da88a5",
+        "decoded": true,
+        "ground_truth": {
+          "status": "released",
+          "source": "https://oyc.yale.edu/classics/clcv-205/lecture-1",
+          "revision": "7dc2d8614324e1adfa00f9bb219dc979724b8600f7d710cdb9692eb79abcd4ae",
+          "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+        },
+        "duration_sec": 1982.51585,
+        "chapter_boundaries_sec": [
+          786,
+          1490
+        ],
+        "chapter_gt": {
+          "source": "https://oyc.yale.edu/classics/clcv-205/lecture-1",
+          "revision": "7dc2d8614324e1adfa00f9bb219dc979724b8600f7d710cdb9692eb79abcd4ae",
+          "annotation_origin": "publisher_timed_toc",
+          "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+        }
+      },
+      "original_label_time": [
+        {
+          "time_sec": 0,
+          "label": "Ancient Greece as the Foundation of Western Civilization"
+        },
+        {
+          "time_sec": 786,
+          "label": "The Judeo Christian Tradition"
+        },
+        {
+          "time_sec": 1490,
+          "label": "Problems Posed by the Western Tradition"
+        }
+      ],
+      "annotation": {
+        "path": "rq1-recruitment-260930-ten-group-source-pairs.csv",
+        "file_sha256": "03d85eac7185a6b54b13b665771c59398af911e37a0c8be72d36f5022497b886",
+        "source_pairs_sha256": "7dc2d8614324e1adfa00f9bb219dc979724b8600f7d710cdb9692eb79abcd4ae",
+        "publisher_metadata": {
+          "path": "rq1-recruitment-260930-ten-group-source-metadata.csv",
+          "file_sha256": "0d881601e5c0ad602ca2e7f1b267c070a27083129430f75a6e4b65973f3dc792",
+          "source_html_sha256": "b9d55ddf28112ff491ce3f01aeaf70ff840279cb608e31cb939c74c0f42eae29",
+          "publisher_gt_block_sha256": "400aa8a1bef0ad7b87392303d9a81f9c4a76c9e1474253b345062e06cb1dfa64"
+        }
+      },
+      "media": {
+        "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\recruitment_260930\\clcv205_01_090607.m4v",
+        "sha256": "303ec813a20efc63e9659270379cb4c96b48605dd9cb0fd541a3e8ec18da88a5",
+        "bytes": 102875509,
+        "receipt_file_sha256": "c0e2b2aa9ef757b0e1d8b8bc27c1158b087fc025b23e5af0538827350c0fb412",
+        "receipt": "rq1-recruitment-260930-ten-group-full-media-decode-receipt.json",
+        "receipt_sha256": "303ec813a20efc63e9659270379cb4c96b48605dd9cb0fd541a3e8ec18da88a5"
+      },
+      "rights": {
+        "gate_path": "rq1-recruitment-260930-ten-group-final-gates.csv",
+        "gate_sha256": "3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc",
+        "status": "pass_scoped",
+        "reason": "The full-lecture storyboard shows Donald Kagan at the lectern only; the selected lecture page lists no separate third-party credits. Internal noncommercial research scope under Open Yale terms, without redistribution."
+      }
+    },
+    {
+      "unit": {
+        "dataset_id": "yale_publisher_native",
+        "unit_id": "VX4eYYmvQ78",
+        "course_id": "yale-econ-251",
+        "speaker_id": "john-geanakoplos",
+        "talk_id": "VX4eYYmvQ78",
+        "lecture_id": "VX4eYYmvQ78",
+        "split": "validation",
+        "source": "https://oyc.yale.edu/economics/econ-251/lecture-2",
+        "revision": "6037265da7eec969ba32184bfceb891f633a72d58f76a31e565d3ab6371cfdaf",
+        "rights": "pass_scoped;qualification_gate_sha256:3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc",
+        "bytes": 360388928,
+        "sha256": "5dd470296f18a7c4279b27dd0c3c43c10db04931e283ebb5c5fb8fea2d6f360b",
+        "decoded": true,
+        "ground_truth": {
+          "status": "released",
+          "source": "https://oyc.yale.edu/economics/econ-251/lecture-2",
+          "revision": "6037265da7eec969ba32184bfceb891f633a72d58f76a31e565d3ab6371cfdaf",
+          "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+        },
+        "duration_sec": 4336.536537,
+        "chapter_boundaries_sec": [
+          424,
+          810,
+          1481,
+          2279,
+          2720
+        ],
+        "chapter_gt": {
+          "source": "https://oyc.yale.edu/economics/econ-251/lecture-2",
+          "revision": "6037265da7eec969ba32184bfceb891f633a72d58f76a31e565d3ab6371cfdaf",
+          "annotation_origin": "publisher_timed_toc",
+          "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+        }
+      },
+      "original_label_time": [
+        {
+          "time_sec": 0,
+          "label": "Introduction"
+        },
+        {
+          "time_sec": 424,
+          "label": "Why Model?"
+        },
+        {
+          "time_sec": 810,
+          "label": "History of Markets"
+        },
+        {
+          "time_sec": 1481,
+          "label": "Supply and Demand and General Equilibrium"
+        },
+        {
+          "time_sec": 2279,
+          "label": "Marginal Utility"
+        },
+        {
+          "time_sec": 2720,
+          "label": "Endowments and Equilibrium"
+        }
+      ],
+      "annotation": {
+        "path": "rq1-recruitment-260930-ten-group-source-pairs.csv",
+        "file_sha256": "03d85eac7185a6b54b13b665771c59398af911e37a0c8be72d36f5022497b886",
+        "source_pairs_sha256": "6037265da7eec969ba32184bfceb891f633a72d58f76a31e565d3ab6371cfdaf",
+        "publisher_metadata": {
+          "path": "rq1-recruitment-260930-ten-group-source-metadata.csv",
+          "file_sha256": "0d881601e5c0ad602ca2e7f1b267c070a27083129430f75a6e4b65973f3dc792",
+          "source_html_sha256": "a30a1369174c27be7cb5b0a69085a5c0d1f0d969f8f1cc87d08ee1ebb34606f1",
+          "publisher_gt_block_sha256": "ffa1801efdee48aacab648349905e096f45176acd4c7d4600ff2aa0433fbb451"
+        }
+      },
+      "media": {
+        "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\recruitment_260930\\econ251_02_090809.m4v",
+        "sha256": "5dd470296f18a7c4279b27dd0c3c43c10db04931e283ebb5c5fb8fea2d6f360b",
+        "bytes": 360388928,
+        "receipt_file_sha256": "c0e2b2aa9ef757b0e1d8b8bc27c1158b087fc025b23e5af0538827350c0fb412",
+        "receipt": "rq1-recruitment-260930-ten-group-full-media-decode-receipt.json",
+        "receipt_sha256": "5dd470296f18a7c4279b27dd0c3c43c10db04931e283ebb5c5fb8fea2d6f360b"
+      },
+      "rights": {
+        "gate_path": "rq1-recruitment-260930-ten-group-final-gates.csv",
+        "gate_sha256": "3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc",
+        "status": "pass_scoped",
+        "reason": "The full-lecture storyboard shows John Geanakoplos, his chalkboard derivations and lecture presentation diagrams/text; no identifiable external photo or film component or separate lecture credits. Internal noncommercial research scope under Open Yale terms."
+      }
+    },
+    {
+      "unit": {
+        "dataset_id": "yale_publisher_native",
+        "unit_id": "WMkD8HKJQCM",
+        "course_id": "yale-econ-252-2008",
+        "speaker_id": "robert-j-shiller",
+        "talk_id": "WMkD8HKJQCM",
+        "lecture_id": "WMkD8HKJQCM",
+        "split": "final_test",
+        "source": "https://oyc.yale.edu/economics/econ-252-08/lecture-2",
+        "revision": "8838e0bf971460dcb01a889ea898584ea18bf106995dc7fc16530f5194171136",
+        "rights": "pass_scoped;qualification_gate_sha256:3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc",
+        "bytes": 215328958,
+        "sha256": "84d52f1532b570963c2e582a29ae772fcd3faf71d277721fe536ccb0405ba66b",
+        "decoded": true,
+        "ground_truth": {
+          "status": "released",
+          "source": "https://oyc.yale.edu/economics/econ-252-08/lecture-2",
+          "revision": "8838e0bf971460dcb01a889ea898584ea18bf106995dc7fc16530f5194171136",
+          "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+        },
+        "duration_sec": 4147.380714,
+        "chapter_boundaries_sec": [
+          601,
+          938,
+          1992,
+          3039,
+          3826
+        ],
+        "chapter_gt": {
+          "source": "https://oyc.yale.edu/economics/econ-252-08/lecture-2",
+          "revision": "8838e0bf971460dcb01a889ea898584ea18bf106995dc7fc16530f5194171136",
+          "annotation_origin": "publisher_timed_toc",
+          "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+        }
+      },
+      "original_label_time": [
+        {
+          "time_sec": 0,
+          "label": "The Etymology of Probability"
+        },
+        {
+          "time_sec": 601,
+          "label": "The Beginning of Probability Theory"
+        },
+        {
+          "time_sec": 938,
+          "label": "Measures of Central Tendency: Independence and Geometric Average"
+        },
+        {
+          "time_sec": 1992,
+          "label": "Measures of Dispersion and Statistical Applications"
+        },
+        {
+          "time_sec": 3039,
+          "label": "Present Value"
+        },
+        {
+          "time_sec": 3826,
+          "label": "The Expected Utility Theory and Conclusion"
+        }
+      ],
+      "annotation": {
+        "path": "rq1-recruitment-260930-ten-group-source-pairs.csv",
+        "file_sha256": "03d85eac7185a6b54b13b665771c59398af911e37a0c8be72d36f5022497b886",
+        "source_pairs_sha256": "8838e0bf971460dcb01a889ea898584ea18bf106995dc7fc16530f5194171136",
+        "publisher_metadata": {
+          "path": "rq1-recruitment-260930-ten-group-source-metadata.csv",
+          "file_sha256": "0d881601e5c0ad602ca2e7f1b267c070a27083129430f75a6e4b65973f3dc792",
+          "source_html_sha256": "020831c63f93f479c789fa4f1f9690e0b1b546fe8a8b997cc53ef6f0be87b590",
+          "publisher_gt_block_sha256": "15e85750dc6c68658b9f15d835d2776d4e8be7c6cf9e98c99d2cf5a4457817fd"
+        }
+      },
+      "media": {
+        "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\recruitment_260930\\econ252_02_011608.m4v",
+        "sha256": "84d52f1532b570963c2e582a29ae772fcd3faf71d277721fe536ccb0405ba66b",
+        "bytes": 215328958,
+        "receipt_file_sha256": "c0e2b2aa9ef757b0e1d8b8bc27c1158b087fc025b23e5af0538827350c0fb412",
+        "receipt": "rq1-recruitment-260930-ten-group-full-media-decode-receipt.json",
+        "receipt_sha256": "84d52f1532b570963c2e582a29ae772fcd3faf71d277721fe536ccb0405ba66b"
+      },
+      "rights": {
+        "gate_path": "rq1-recruitment-260930-ten-group-final-gates.csv",
+        "gate_sha256": "3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc",
+        "status": "pass_scoped",
+        "reason": "The full-lecture storyboard shows Robert Shiller speaking and writing his own equations/graphs on the board, without a separately identifiable third-party visual component or lecture credits. Internal noncommercial research scope under Open Yale terms."
+      }
+    },
+    {
+      "unit": {
+        "dataset_id": "yale_publisher_native",
+        "unit_id": "2B9b9mUPJik",
+        "course_id": "yale-hist-210",
+        "speaker_id": "paul-freedman",
+        "talk_id": "2B9b9mUPJik",
+        "lecture_id": "2B9b9mUPJik",
+        "split": "train",
+        "source": "https://oyc.yale.edu/history/hist-210/lecture-2",
+        "revision": "0a54f438f31bc94a686b9bbb4ed476bcb4087efed321f8e39ba1ce152d0161cd",
+        "rights": "pass_scoped;qualification_gate_sha256:3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc",
+        "bytes": 108294307,
+        "sha256": "4296bedcfc013d654e23734db08aca6d72d99d5b42cce09aa64e5c1142b2213b",
+        "decoded": true,
+        "ground_truth": {
+          "status": "released",
+          "source": "https://oyc.yale.edu/history/hist-210/lecture-2",
+          "revision": "0a54f438f31bc94a686b9bbb4ed476bcb4087efed321f8e39ba1ce152d0161cd",
+          "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+        },
+        "duration_sec": 2916.8,
+        "chapter_boundaries_sec": [
+          64,
+          579,
+          1025,
+          1337,
+          1537
+        ],
+        "chapter_gt": {
+          "source": "https://oyc.yale.edu/history/hist-210/lecture-2",
+          "revision": "0a54f438f31bc94a686b9bbb4ed476bcb4087efed321f8e39ba1ce152d0161cd",
+          "annotation_origin": "publisher_timed_toc",
+          "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+        }
+      },
+      "original_label_time": [
+        {
+          "time_sec": 0,
+          "label": "Introduction and Logistics"
+        },
+        {
+          "time_sec": 64,
+          "label": "Third Century Crisis and Barbarian Invasions"
+        },
+        {
+          "time_sec": 579,
+          "label": "The Problem of Succession"
+        },
+        {
+          "time_sec": 1025,
+          "label": "The Problem of Inflation"
+        },
+        {
+          "time_sec": 1337,
+          "label": "The Ruin of The Local Elite"
+        },
+        {
+          "time_sec": 1537,
+          "label": "Diocletian and his Reforms"
+        }
+      ],
+      "annotation": {
+        "path": "rq1-recruitment-260930-ten-group-source-pairs.csv",
+        "file_sha256": "03d85eac7185a6b54b13b665771c59398af911e37a0c8be72d36f5022497b886",
+        "source_pairs_sha256": "0a54f438f31bc94a686b9bbb4ed476bcb4087efed321f8e39ba1ce152d0161cd",
+        "publisher_metadata": {
+          "path": "rq1-recruitment-260930-ten-group-source-metadata.csv",
+          "file_sha256": "0d881601e5c0ad602ca2e7f1b267c070a27083129430f75a6e4b65973f3dc792",
+          "source_html_sha256": "e7ebedeea79510ebcde44fad39b083cf6cd7cdbfd07c209f402b12af88830ad8",
+          "publisher_gt_block_sha256": "0dda32e968bf36e0f61c01e933d4625779451addbafb7a08a9d216e59908d2f9"
+        }
+      },
+      "media": {
+        "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\recruitment_260930\\hist210_02_090511.m4v",
+        "sha256": "4296bedcfc013d654e23734db08aca6d72d99d5b42cce09aa64e5c1142b2213b",
+        "bytes": 108294307,
+        "receipt_file_sha256": "c0e2b2aa9ef757b0e1d8b8bc27c1158b087fc025b23e5af0538827350c0fb412",
+        "receipt": "rq1-recruitment-260930-ten-group-full-media-decode-receipt.json",
+        "receipt_sha256": "4296bedcfc013d654e23734db08aca6d72d99d5b42cce09aa64e5c1142b2213b"
+      },
+      "rights": {
+        "gate_path": "rq1-recruitment-260930-ten-group-final-gates.csv",
+        "gate_sha256": "3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc",
+        "status": "pass_scoped",
+        "reason": "The full-lecture storyboard shows Paul Freedman and his own chalkboard outline, without projected external imagery or a separately identified extended third-party audiovisual component. Internal noncommercial research scope under Open Yale terms."
+      }
+    },
+    {
+      "unit": {
+        "dataset_id": "yale_publisher_native",
+        "unit_id": "679FGDpZBew",
+        "course_id": "yale-ital-310",
+        "speaker_id": "giuseppe-mazzotta",
+        "talk_id": "679FGDpZBew",
+        "lecture_id": "679FGDpZBew",
+        "split": "train",
+        "source": "https://oyc.yale.edu/italian-language-and-literature/ital-310/lecture-1",
+        "revision": "793345afb3fadebad947469183dd4efcc3e297cca1c9ba06bab5a233c53cb126",
+        "rights": "pass_scoped;qualification_gate_sha256:3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc",
+        "bytes": 103006442,
+        "sha256": "9911c3c7a370129f795de54bd06258b5eead33fe31e30351ef0f44836db7bd52",
+        "decoded": true,
+        "ground_truth": {
+          "status": "released",
+          "source": "https://oyc.yale.edu/italian-language-and-literature/ital-310/lecture-1",
+          "revision": "793345afb3fadebad947469183dd4efcc3e297cca1c9ba06bab5a233c53cb126",
+          "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+        },
+        "duration_sec": 1125.156823,
+        "chapter_boundaries_sec": [
+          448,
+          1036
+        ],
+        "chapter_gt": {
+          "source": "https://oyc.yale.edu/italian-language-and-literature/ital-310/lecture-1",
+          "revision": "793345afb3fadebad947469183dd4efcc3e297cca1c9ba06bab5a233c53cb126",
+          "annotation_origin": "publisher_timed_toc",
+          "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+        }
+      },
+      "original_label_time": [
+        {
+          "time_sec": 0,
+          "label": "Introduction: A Circle of Knowledge"
+        },
+        {
+          "time_sec": 448,
+          "label": "Dante in a Historical Context"
+        },
+        {
+          "time_sec": 1036,
+          "label": "General Housekeeping"
+        }
+      ],
+      "annotation": {
+        "path": "rq1-recruitment-260930-ten-group-source-pairs.csv",
+        "file_sha256": "03d85eac7185a6b54b13b665771c59398af911e37a0c8be72d36f5022497b886",
+        "source_pairs_sha256": "793345afb3fadebad947469183dd4efcc3e297cca1c9ba06bab5a233c53cb126",
+        "publisher_metadata": {
+          "path": "rq1-recruitment-260930-ten-group-source-metadata.csv",
+          "file_sha256": "0d881601e5c0ad602ca2e7f1b267c070a27083129430f75a6e4b65973f3dc792",
+          "source_html_sha256": "8ba90dadf290d55bb36a3b4fcf63814206fd26a1e2e5d08a40965f99696ca972",
+          "publisher_gt_block_sha256": "6e1d9afda48fc06b4301dad09185a3dfff7dbe1abdde9a460b1e937e9a249f5f"
+        }
+      },
+      "media": {
+        "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\recruitment_260930\\ital310_01_090408.m4v",
+        "sha256": "9911c3c7a370129f795de54bd06258b5eead33fe31e30351ef0f44836db7bd52",
+        "bytes": 103006442,
+        "receipt_file_sha256": "c0e2b2aa9ef757b0e1d8b8bc27c1158b087fc025b23e5af0538827350c0fb412",
+        "receipt": "rq1-recruitment-260930-ten-group-full-media-decode-receipt.json",
+        "receipt_sha256": "9911c3c7a370129f795de54bd06258b5eead33fe31e30351ef0f44836db7bd52"
+      },
+      "rights": {
+        "gate_path": "rq1-recruitment-260930-ten-group-final-gates.csv",
+        "gate_sha256": "3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc",
+        "status": "pass_scoped",
+        "reason": "The full-lecture storyboard shows Giuseppe Mazzotta, his board and brief classroom questions; the selected introduction discusses Dante without an identified extended modern translation reading or projected third-party material. Internal noncommercial research scope under Open Yale terms."
+      }
+    },
+    {
+      "unit": {
+        "dataset_id": "yale_publisher_native",
+        "unit_id": "Hy7ou5R_vjE",
+        "course_id": "yale-phys-200",
+        "speaker_id": "ramamurti-shankar",
+        "talk_id": "Hy7ou5R_vjE",
+        "lecture_id": "Hy7ou5R_vjE",
+        "split": "validation",
+        "source": "https://oyc.yale.edu/physics/phys-200/lecture-2",
+        "revision": "7d97eb652161915a7ece863d413b581a53158f8e7c27492f8e613308a0324415",
+        "rights": "pass_scoped;qualification_gate_sha256:3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc",
+        "bytes": 335095827,
+        "sha256": "b02e27d481ac37925b3ea1868519dcd6234faf92f94c49d1dfe893cf2779925a",
+        "decoded": true,
+        "ground_truth": {
+          "status": "released",
+          "source": "https://oyc.yale.edu/physics/phys-200/lecture-2",
+          "revision": "7d97eb652161915a7ece863d413b581a53158f8e7c27492f8e613308a0324415",
+          "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+        },
+        "duration_sec": 4008.375042,
+        "chapter_boundaries_sec": [
+          285,
+          1377,
+          2300,
+          2620,
+          3240
+        ],
+        "chapter_gt": {
+          "source": "https://oyc.yale.edu/physics/phys-200/lecture-2",
+          "revision": "7d97eb652161915a7ece863d413b581a53158f8e7c27492f8e613308a0324415",
+          "annotation_origin": "publisher_timed_toc",
+          "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+        }
+      },
+      "original_label_time": [
+        {
+          "time_sec": 0,
+          "label": "Review of Motion at Constant Acceleration"
+        },
+        {
+          "time_sec": 285,
+          "label": "Vector Motion 2D Space: Properties"
+        },
+        {
+          "time_sec": 1377,
+          "label": "Choice of Basis Axis and Vector Transformation"
+        },
+        {
+          "time_sec": 2300,
+          "label": "Velocity Vectors: Derivatives of Displacement Vectors"
+        },
+        {
+          "time_sec": 2620,
+          "label": "Derivatives of Vectors: Application to Circular Motion"
+        },
+        {
+          "time_sec": 3240,
+          "label": "Projectile Motion"
+        }
+      ],
+      "annotation": {
+        "path": "rq1-recruitment-260930-ten-group-source-pairs.csv",
+        "file_sha256": "03d85eac7185a6b54b13b665771c59398af911e37a0c8be72d36f5022497b886",
+        "source_pairs_sha256": "7d97eb652161915a7ece863d413b581a53158f8e7c27492f8e613308a0324415",
+        "publisher_metadata": {
+          "path": "rq1-recruitment-260930-ten-group-source-metadata.csv",
+          "file_sha256": "0d881601e5c0ad602ca2e7f1b267c070a27083129430f75a6e4b65973f3dc792",
+          "source_html_sha256": "782958729725d9395a05eedb933898c911c5a44f2c53c9d23efd0e21a4fed3ad",
+          "publisher_gt_block_sha256": "a94119504716faab4e472a4ba02e560df657b1b0c5331e3a00aa8dde7079470e"
+        }
+      },
+      "media": {
+        "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\recruitment_260930\\phys200_02_091106.m4v",
+        "sha256": "b02e27d481ac37925b3ea1868519dcd6234faf92f94c49d1dfe893cf2779925a",
+        "bytes": 335095827,
+        "receipt_file_sha256": "c0e2b2aa9ef757b0e1d8b8bc27c1158b087fc025b23e5af0538827350c0fb412",
+        "receipt": "rq1-recruitment-260930-ten-group-full-media-decode-receipt.json",
+        "receipt_sha256": "b02e27d481ac37925b3ea1868519dcd6234faf92f94c49d1dfe893cf2779925a"
+      },
+      "rights": {
+        "gate_path": "rq1-recruitment-260930-ten-group-final-gates.csv",
+        "gate_sha256": "3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc",
+        "status": "pass_scoped",
+        "reason": "The full-lecture storyboard shows Ramamurti Shankar and his own chalkboard equations and diagrams only; no projected third-party component or separate lecture credits were identified. Internal noncommercial research scope under Open Yale terms."
+      }
+    },
+    {
+      "unit": {
+        "dataset_id": "yale_publisher_native",
+        "unit_id": "4YY4CTSQ8nY",
+        "course_id": "yale-engl-300",
+        "speaker_id": "paul-h-fry",
+        "talk_id": "4YY4CTSQ8nY",
+        "lecture_id": "4YY4CTSQ8nY",
+        "split": "final_test",
+        "source": "https://oyc.yale.edu/english/engl-300/lecture-1",
+        "revision": "eecb1b4666a22e4fca8053145b51734840431b8951fbd8cee1c0ff7fa808449d",
+        "rights": "pass_scoped;qualification_gate_sha256:3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc",
+        "bytes": 216840679,
+        "sha256": "793c518c10bb4ba4fb62d34e49ba18e9a74380cd831cfb6ccf069bb5c86544cd",
+        "decoded": true,
+        "ground_truth": {
+          "status": "released",
+          "source": "https://oyc.yale.edu/english/engl-300/lecture-1",
+          "revision": "eecb1b4666a22e4fca8053145b51734840431b8951fbd8cee1c0ff7fa808449d",
+          "annotation_protocol": "original internal chapter starts; structural 0 excluded"
+        },
+        "duration_sec": 2368.6333,
+        "chapter_boundaries_sec": [
+          269,
+          608,
+          790,
+          1091,
+          1930
+        ],
+        "chapter_gt": {
+          "source": "https://oyc.yale.edu/english/engl-300/lecture-1",
+          "revision": "eecb1b4666a22e4fca8053145b51734840431b8951fbd8cee1c0ff7fa808449d",
+          "annotation_origin": "publisher_timed_toc",
+          "timestamp_convention": "original internal chapter starts in seconds from exact media; no retiming"
+        }
+      },
+      "original_label_time": [
+        {
+          "time_sec": 0,
+          "label": "Introduction"
+        },
+        {
+          "time_sec": 269,
+          "label": "Theory and Philosophy"
+        },
+        {
+          "time_sec": 608,
+          "label": "What Is Literature?"
+        },
+        {
+          "time_sec": 790,
+          "label": "The Idea of an \"Introduction\""
+        },
+        {
+          "time_sec": 1091,
+          "label": "Literary Theory and the History of Modern Criticism"
+        },
+        {
+          "time_sec": 1930,
+          "label": "The Hermeneutics of Suspicion"
+        }
+      ],
+      "annotation": {
+        "path": "rq1-recruitment-260930-ten-group-source-pairs.csv",
+        "file_sha256": "03d85eac7185a6b54b13b665771c59398af911e37a0c8be72d36f5022497b886",
+        "source_pairs_sha256": "eecb1b4666a22e4fca8053145b51734840431b8951fbd8cee1c0ff7fa808449d",
+        "publisher_metadata": {
+          "path": "rq1-recruitment-260930-ten-group-source-metadata.csv",
+          "file_sha256": "0d881601e5c0ad602ca2e7f1b267c070a27083129430f75a6e4b65973f3dc792",
+          "source_html_sha256": "921e5e47cd8f6e1b76aad4cef457549a4cacdaf35f70ed991b5459b4c6674d89",
+          "publisher_gt_block_sha256": "073796d580fc7f598d2531479c8e3d41feacd1dc45473b5ba65c3f1e5704ac53"
+        }
+      },
+      "media": {
+        "local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\multimodal-lecture-summarizer\\experiments\\datasets\\yale_rq1_qualification\\recruitment_260930\\engl300_01_011309.m4v",
+        "sha256": "793c518c10bb4ba4fb62d34e49ba18e9a74380cd831cfb6ccf069bb5c86544cd",
+        "bytes": 216840679,
+        "receipt_file_sha256": "c0e2b2aa9ef757b0e1d8b8bc27c1158b087fc025b23e5af0538827350c0fb412",
+        "receipt": "rq1-recruitment-260930-ten-group-full-media-decode-receipt.json",
+        "receipt_sha256": "793c518c10bb4ba4fb62d34e49ba18e9a74380cd831cfb6ccf069bb5c86544cd"
+      },
+      "rights": {
+        "gate_path": "rq1-recruitment-260930-ten-group-final-gates.csv",
+        "gate_sha256": "3ac38b36b85c8feb4d8c06e3992f1ca7993241cdb7f4908eb125ba79fdd3b4dc",
+        "status": "pass_scoped",
+        "reason": "The full-lecture storyboard shows Paul Fry and the classroom board. A targeted frame check at 205-230 s shows only the unreadable white back of a briefly held book; no third-party page, cover text or extended reading is visible or transcribed in this lecture. Internal noncommercial research scope under Open Yale terms."
+      }
+    }
+  ]
+}

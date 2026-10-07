@@ -1,0 +1,110 @@
+video_id,course_id,split_proposed,mark_role,frag_s,frames_each,frame_corr_min,frame_corr_max,frame_mae_max_255,audio_corr_best,audio_lag_samples_4000hz,status,error
+vFZY--lgmHs,9.13,train,first,84.0,3,0.998484,0.998488,6.577,0.992131,-145,local_av_match,
+vFZY--lgmHs,9.13,train,middle,1571.0,3,0.998498,0.998543,6.774,0.990779,-145,local_av_match,
+vFZY--lgmHs,9.13,train,last,3306.0,3,0.998529,0.998536,6.671,0.988989,-145,local_av_match,
+CALYA11terw,7.016,train,first,233.0,3,0.999887,0.999889,3.210,0.990874,-145,local_av_match,
+CALYA11terw,7.016,train,middle,1458.0,3,0.999472,0.999682,3.445,0.988619,-145,local_av_match,
+CALYA11terw,7.016,train,last,2801.0,3,0.999668,0.999739,3.148,0.994843,-145,local_av_match,
+Chv8dlBVXpw,7.016,train,first,22.0,3,0.999582,0.999609,3.031,0.989253,-145,local_av_match,
+Chv8dlBVXpw,7.016,train,middle,1227.0,3,0.999769,0.999850,3.494,0.989517,-145,local_av_match,
+Chv8dlBVXpw,7.016,train,last,2514.0,3,0.999912,0.999912,2.609,0.992030,-145,local_av_match,
+9uqKU5ZDwfM,22.01,train,first,516.0,3,0.999467,0.999491,6.145,0.993221,-145,local_av_match,
+9uqKU5ZDwfM,22.01,train,middle,1297.0,3,0.999217,0.999496,7.339,0.994695,-145,local_av_match,
+9uqKU5ZDwfM,22.01,train,last,1679.0,3,0.999474,0.999571,6.084,0.993706,-145,local_av_match,
+_Ycy0Dy-B1c,15.S12,train,first,22.0,3,0.996245,0.998519,13.140,0.930862,-197,local_av_match,
+_Ycy0Dy-B1c,15.S12,train,middle,1838.0,,,,,,,decode_or_compare_failed,"TimeoutExpired: Command '['ffmpeg', '-nostdin', '-v', 'error', '-ss', '1838.000', '-i', 'https://archive.org/download/MIT15.S12F18/MIT15_S12F18_lec14_300k.mp4', '-t', '3', '-an', '-vf', 'fps=1,scale=64:36,format=gray', '-f', 'rawvideo', '-']' timed out after 40 seconds"
+_Ycy0Dy-B1c,15.S12,train,last,3461.0,3,0.997591,0.999253,3.445,0.911121,-197,local_av_match,
+w7HDA8gUbpQ,15.S12,train,first,52.0,,,,,,,decode_or_compare_failed,"TimeoutExpired: Command '['ffmpeg', '-nostdin', '-v', 'error', '-ss', '52.000', '-i', 'https://archive.org/download/MIT15.S12F18/MIT15_S12F18_lec04_300k.mp4', '-t', '3', '-vn', '-ac', '1', '-ar', '4000', '-f', 's16le', '-']' timed out after 40 seconds"
+w7HDA8gUbpQ,15.S12,train,middle,1446.0,3,0.996367,0.997092,3.686,0.928266,-197,local_av_match,
+w7HDA8gUbpQ,15.S12,train,last,3590.0,,,,,,,decode_or_compare_failed,"TimeoutExpired: Command '['ffmpeg', '-nostdin', '-v', 'error', '-ss', '3590.000', '-i', 'https://archive.org/download/MIT15.S12F18/MIT15_S12F18_lec04_300k.mp4', '-t', '3', '-vn', '-ac', '1', '-ar', '4000', '-f', 's16le', '-']' timed out after 40 seconds"
+7LyvAVjQUR8,22.01,train,first,60.0,3,0.999575,0.999605,5.455,0.990889,-145,local_av_match,
+7LyvAVjQUR8,22.01,train,middle,1921.0,3,0.996971,0.999304,7.465,0.990559,-145,local_av_match,
+7LyvAVjQUR8,22.01,train,last,2971.0,3,0.991459,0.991484,7.718,0.989953,-145,local_av_match,
+KAySmSEGc9U,18.404J,train,first,268.0,3,0.998609,0.998733,1.188,0.992905,-145,local_av_match,
+KAySmSEGc9U,18.404J,train,middle,2327.0,3,0.994844,0.997513,1.902,0.992800,-145,local_av_match,
+KAySmSEGc9U,18.404J,train,last,3037.0,3,0.998208,0.998397,0.882,0.995956,-145,local_av_match,
+JNWXzIFcf3g,8.962,train,first,322.0,3,0.999577,0.999584,3.306,0.982935,-145,local_av_match,
+JNWXzIFcf3g,8.962,train,middle,3150.0,3,0.999560,0.999581,3.349,0.975148,-145,local_av_match,
+JNWXzIFcf3g,8.962,train,last,4647.0,3,0.999800,0.999829,3.378,0.986022,-145,local_av_match,
+gXPX29KfEc4,18.100A,train,first,35.0,3,0.999762,0.999815,2.621,0.984776,-145,local_av_match,
+gXPX29KfEc4,18.100A,train,middle,3011.0,3,0.999752,0.999769,2.490,0.988047,-145,local_av_match,
+gXPX29KfEc4,18.100A,train,last,4256.0,3,0.999768,0.999804,2.714,0.987856,-145,local_av_match,
+gnWKpHUj11w,8.962,train,first,190.0,3,0.999607,0.999623,3.436,0.986185,-145,local_av_match,
+gnWKpHUj11w,8.962,train,middle,1401.0,3,0.999590,0.999647,3.493,0.973075,-145,local_av_match,
+gnWKpHUj11w,8.962,train,last,2842.0,,,,,,,decode_or_compare_failed,"TimeoutExpired: Command '['ffmpeg', '-nostdin', '-v', 'error', '-ss', '2842.000', '-i', 'https://archive.org/download/MIT8.962S20/MIT8_962S20_lec07_300k.mp4', '-t', '3', '-vn', '-ac', '1', '-ar', '4000', '-f', 's16le', '-']' timed out after 40 seconds"
+M2d4HsBsu8Y,18.100A,train,first,86.0,3,0.999772,0.999813,2.502,0.986255,-145,local_av_match,
+M2d4HsBsu8Y,18.100A,train,middle,2927.0,3,0.999735,0.999748,2.540,0.988933,-145,local_av_match,
+M2d4HsBsu8Y,18.100A,train,last,4593.0,3,0.999748,0.999762,2.382,0.985528,-145,local_av_match,
+7J1HD9rqEB4,18.404J,train,first,747.0,3,0.987757,0.997327,2.476,0.990240,-145,local_av_match,
+7J1HD9rqEB4,18.404J,train,middle,2407.0,3,0.995589,0.995735,1.213,0.988905,-145,local_av_match,
+7J1HD9rqEB4,18.404J,train,last,2862.0,3,0.988561,0.988843,2.522,0.996530,-145,local_av_match,
+2NMtS1ecb3o,6.006,train,first,93.0,,,,,,,decode_or_compare_failed,"TimeoutExpired: Command '['ffmpeg', '-nostdin', '-v', 'error', '-ss', '93.000', '-i', 'https://archive.org/download/MIT6.006S20/MIT6_006S20_05_05_Lecture_20_300k.mp4', '-t', '3', '-vn', '-ac', '1', '-ar', '4000', '-f', 's16le', '-']' timed out after 40 seconds"
+2NMtS1ecb3o,6.006,train,middle,2247.0,3,0.999676,0.999692,3.302,0.991802,-145,local_av_match,
+2NMtS1ecb3o,6.006,train,last,3212.0,3,0.999617,0.999656,3.064,0.989865,-145,local_av_match,
+EmSmaW-ud6A,6.006,train,first,95.0,3,0.999476,0.999716,5.323,0.989878,-145,local_av_match,
+EmSmaW-ud6A,6.006,train,middle,835.0,3,0.999690,0.999774,3.403,0.986200,-145,local_av_match,
+EmSmaW-ud6A,6.006,train,last,2827.0,3,0.999340,0.999525,2.961,0.991013,-145,local_av_match,
+gtQ046Tu2S4,8.20,train,first,32.0,3,0.999544,0.999544,3.436,0.997614,-145,local_av_match,
+gtQ046Tu2S4,8.20,train,middle,128.0,3,0.999255,0.999263,3.539,0.997488,-145,local_av_match,
+gtQ046Tu2S4,8.20,train,last,330.0,3,0.999149,0.999162,3.433,0.998146,-145,local_av_match,
+_S1CREXGfvE,8.20,train,first,35.0,3,0.999878,0.999887,3.423,0.997655,-145,local_av_match,
+_S1CREXGfvE,8.20,train,middle,337.0,3,0.999492,0.999501,3.409,0.996890,-145,local_av_match,
+_S1CREXGfvE,8.20,train,last,725.0,3,0.999751,0.999754,3.226,0.997798,-145,local_av_match,
+JuKKBf-uSDI,15.S08,train,first,100.0,,,,,,,decode_or_compare_failed,"TimeoutExpired: Command '['ffmpeg', '-nostdin', '-v', 'error', '-ss', '100.000', '-i', 'https://archive.org/download/MIT15.S08S20/MIT15_S08S20_Class07_300k.mp4', '-t', '3', '-vn', '-ac', '1', '-ar', '4000', '-f', 's16le', '-']' timed out after 40 seconds"
+JuKKBf-uSDI,15.S08,train,middle,2023.0,3,0.999946,0.999948,2.150,0.983958,-145,local_av_match,
+JuKKBf-uSDI,15.S08,train,last,3518.0,3,0.999923,0.999925,2.007,0.988268,-145,local_av_match,
+qb1U3_Q-7o8,24.900,validation,first,155.0,3,0.999818,0.999830,5.781,0.996457,-145,local_av_match,
+qb1U3_Q-7o8,24.900,validation,middle,1457.0,3,0.999777,0.999828,5.619,0.994728,-145,local_av_match,
+qb1U3_Q-7o8,24.900,validation,last,2494.0,3,0.998602,0.999260,5.843,0.997281,-145,local_av_match,
+XSUjp-cDyeY,6.801,validation,first,12.0,3,0.999199,0.999307,3.415,0.994942,-145,local_av_match,
+XSUjp-cDyeY,6.801,validation,middle,2872.0,3,0.999162,0.999207,2.845,0.995536,-145,local_av_match,
+XSUjp-cDyeY,6.801,validation,last,4765.0,3,0.998916,0.999101,2.511,0.994691,-145,local_av_match,
+J4gbaRyWpoM,6.801,validation,first,38.0,3,0.999821,0.999835,2.296,0.995231,-145,local_av_match,
+J4gbaRyWpoM,6.801,validation,middle,2339.0,3,0.999083,0.999479,3.146,0.995666,-145,local_av_match,
+J4gbaRyWpoM,6.801,validation,last,4918.0,3,0.999634,0.999681,3.064,0.995854,-145,local_av_match,
+neBeTYziSLo,11.382,train,first,71.0,3,0.999853,0.999855,2.000,0.993068,-145,local_av_match,
+neBeTYziSLo,11.382,train,middle,1955.0,,,,,,,decode_or_compare_failed,"TimeoutExpired: Command '['ffmpeg', '-nostdin', '-v', 'error', '-ss', '1955.000', '-i', 'https://archive.org/download/MIT11.382S21/MIT11_382S21_6-singapore-malaysia_300k.mp4', '-t', '3', '-an', '-vf', 'fps=1,scale=64:36,format=gray', '-f', 'rawvideo', '-']' timed out after 40 seconds"
+neBeTYziSLo,11.382,train,last,3212.0,3,0.999819,0.999827,2.664,0.994297,-145,local_av_match,
+vcsxCFSLyP8,18.217,validation,first,653.0,,,,,,,decode_or_compare_failed,"TimeoutExpired: Command '['ffmpeg', '-nostdin', '-v', 'error', '-ss', '653.000', '-i', 'https://archive.org/download/MIT18.217F19/MIT18_217F19_lec06_300k.mp4', '-t', '3', '-an', '-vf', 'fps=1,scale=64:36,format=gray', '-f', 'rawvideo', '-']' timed out after 40 seconds"
+vcsxCFSLyP8,18.217,validation,middle,1945.0,,,,,,,decode_or_compare_failed,"TimeoutExpired: Command '['ffmpeg', '-nostdin', '-v', 'error', '-ss', '1945.000', '-i', 'https://archive.org/download/MIT18.217F19/MIT18_217F19_lec06_300k.mp4', '-t', '3', '-an', '-vf', 'fps=1,scale=64:36,format=gray', '-f', 'rawvideo', '-']' timed out after 40 seconds"
+vcsxCFSLyP8,18.217,validation,last,4285.0,,,,,,,decode_or_compare_failed,"RuntimeError: [tcp @ 0000018013fa76c0] Connection to tcp://ia802908.us.archive.org:443 failed: Error number -138 occurred
+[in#0 @ 0000018013fa5940] Error opening input: Error number -138 occurred
+Error opening input file https://archive.org/download/MIT18.217F19/MIT18_217F19_lec06_300k.mp4.
+Error opening input files: Error number -138 occurred
+"
+Hf1Ma9YkOMY,9.40,validation,first,145.0,3,0.997467,0.997468,3.556,0.993383,-145,local_av_match,
+Hf1Ma9YkOMY,9.40,validation,middle,1841.0,3,0.999296,0.999308,3.466,0.990594,-145,local_av_match,
+Hf1Ma9YkOMY,9.40,validation,last,2867.0,,,,,,,decode_or_compare_failed,"TimeoutExpired: Command '['ffmpeg', '-nostdin', '-v', 'error', '-ss', '2867.000', '-i', 'https://archive.org/download/MIT9.40S18/MIT9_40S18_lec12_300k.mp4', '-t', '3', '-an', '-vf', 'fps=1,scale=64:36,format=gray', '-f', 'rawvideo', '-']' timed out after 40 seconds"
+Rlvwagd2BmY,18.217,validation,first,540.0,3,0.999453,0.999554,3.103,0.988227,-145,local_av_match,
+Rlvwagd2BmY,18.217,validation,middle,2118.0,,,,,,,decode_or_compare_failed,"TimeoutExpired: Command '['ffmpeg', '-nostdin', '-v', 'error', '-ss', '2118.000', '-i', 'https://archive.org/download/MIT18.217F19/MIT18_217F19_lec12_300k.mp4', '-t', '3', '-an', '-vf', 'fps=1,scale=64:36,format=gray', '-f', 'rawvideo', '-']' timed out after 40 seconds"
+Rlvwagd2BmY,18.217,validation,last,3048.0,,,,,,,decode_or_compare_failed,"TimeoutExpired: Command '['ffmpeg', '-nostdin', '-v', 'error', '-ss', '3048.000', '-i', 'https://archive.org/download/MIT18.217F19/MIT18_217F19_lec12_300k.mp4', '-t', '3', '-an', '-vf', 'fps=1,scale=64:36,format=gray', '-f', 'rawvideo', '-']' timed out after 40 seconds"
+JIw9mnVeFig,5.310,validation,first,316.0,3,0.999717,0.999748,3.344,0.996070,-145,local_av_match,
+JIw9mnVeFig,5.310,validation,middle,1667.0,3,0.999857,0.999860,2.752,0.994499,-145,local_av_match,
+JIw9mnVeFig,5.310,validation,last,2545.0,3,0.999835,0.999847,2.937,0.996175,-145,local_av_match,
+o8sje-b-BCk,14.04,final_test,first,164.0,3,0.998054,0.998100,3.518,0.997077,-145,local_av_match,
+o8sje-b-BCk,14.04,final_test,middle,1634.0,3,0.999117,0.999120,3.635,0.990955,-145,local_av_match,
+o8sje-b-BCk,14.04,final_test,last,3401.0,3,0.999516,0.999547,3.114,0.994643,-145,local_av_match,
+r1VX3WXrYUw,9.40,validation,first,83.0,3,0.999903,0.999905,2.612,0.991908,-145,local_av_match,
+r1VX3WXrYUw,9.40,validation,middle,2377.0,3,0.998615,0.998616,3.549,0.994428,-145,local_av_match,
+r1VX3WXrYUw,9.40,validation,last,4457.0,,,,,,,decode_or_compare_failed,"TimeoutExpired: Command '['ffmpeg', '-nostdin', '-v', 'error', '-ss', '4457.000', '-i', 'https://archive.org/download/MIT9.40S18/MIT9_40S18_lec07_300k.mp4', '-t', '3', '-an', '-vf', 'fps=1,scale=64:36,format=gray', '-f', 'rawvideo', '-']' timed out after 40 seconds"
+ySqVVEBTy2o,14.04,final_test,first,132.0,3,0.999647,0.999708,3.023,0.994594,-145,local_av_match,
+ySqVVEBTy2o,14.04,final_test,middle,1348.0,3,0.998322,0.998336,3.480,0.992958,-145,local_av_match,
+ySqVVEBTy2o,14.04,final_test,last,3748.0,3,0.997760,0.997764,3.615,0.996448,-145,local_av_match,
+Ed0Wg-5YYCk,7.05,final_test,first,23.0,3,0.997222,0.998217,2.938,0.990523,-145,local_av_match,
+Ed0Wg-5YYCk,7.05,final_test,middle,3133.0,,,,,,,decode_or_compare_failed,"TimeoutExpired: Command '['ffmpeg', '-nostdin', '-v', 'error', '-ss', '3133.000', '-i', 'https://archive.org/download/MIT7.05S20/MIT7_05S20_lec32_300k.mp4', '-t', '3', '-an', '-vf', 'fps=1,scale=64:36,format=gray', '-f', 'rawvideo', '-']' timed out after 40 seconds"
+Ed0Wg-5YYCk,7.05,final_test,last,5049.0,3,0.999901,0.999902,3.049,0.989501,-145,local_av_match,
+AhK3YeJP8Ts,11.165,final_test,first,419.0,3,0.999434,0.999452,5.706,0.999512,-30,local_av_match,
+AhK3YeJP8Ts,11.165,final_test,middle,532.0,3,0.999461,0.999473,6.719,0.999561,-30,local_av_match,
+AhK3YeJP8Ts,11.165,final_test,last,1454.0,3,0.999357,0.999382,6.252,0.999577,-30,local_av_match,
+tKyaGnPni3U,3.091,final_test,first,80.0,,,,,,,decode_or_compare_failed,"TimeoutExpired: Command '['ffmpeg', '-nostdin', '-v', 'error', '-ss', '80.000', '-i', 'https://archive.org/download/MIT3.091F18/MIT3_091F18_lec20_300k.mp4', '-t', '3', '-an', '-vf', 'fps=1,scale=64:36,format=gray', '-f', 'rawvideo', '-']' timed out after 40 seconds"
+tKyaGnPni3U,3.091,final_test,middle,1733.0,3,0.998507,0.999895,3.334,0.907730,-197,local_av_match,
+tKyaGnPni3U,3.091,final_test,last,2702.0,3,0.905868,0.999643,8.396,0.944134,-197,review_low_correlation,
+DvGNpuan4rw,3.091,final_test,first,73.0,3,0.976807,0.998713,5.497,0.893201,-197,review_low_correlation,
+DvGNpuan4rw,3.091,final_test,middle,1755.0,3,0.932940,0.988511,9.591,0.925312,-197,review_low_correlation,
+DvGNpuan4rw,3.091,final_test,last,2625.0,3,0.992100,0.999577,4.157,0.948951,-197,local_av_match,
+74_BKWR3n0k,MAS.S62,final_test,first,70.0,3,0.999811,0.999837,3.202,0.993665,-145,local_av_match,
+74_BKWR3n0k,MAS.S62,final_test,middle,2384.0,3,0.999843,0.999850,3.133,0.990421,-145,local_av_match,
+74_BKWR3n0k,MAS.S62,final_test,last,3250.0,3,0.999846,0.999857,3.183,0.991430,-145,local_av_match,
+muwNEvhy6Po,MAS.S62,final_test,first,90.0,3,0.999365,0.999407,0.673,0.993575,-145,local_av_match,
+muwNEvhy6Po,MAS.S62,final_test,middle,1349.0,3,0.999589,0.999698,3.506,0.994614,-145,local_av_match,
+muwNEvhy6Po,MAS.S62,final_test,last,3138.0,3,0.999805,0.999823,3.446,0.992746,-145,local_av_match,

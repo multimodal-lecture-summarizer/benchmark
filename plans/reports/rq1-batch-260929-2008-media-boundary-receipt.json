@@ -1,0 +1,59 @@
+{
+  "date": "2026-09-29",
+  "purpose": "source_only_qualification_no_model_output",
+  "selection_lock": "plans/reports/rq1-batch-260929-1945-locked.csv",
+  "annotation_source": "experiments/datasets/vidchapters_qualification/chapters.pkl",
+  "annotation_source_sha256": "d476b9aa628d96d015d288a9554fed2e37206670bbcd55b7bf072bf2019b166e",
+  "boundary_rule": "multimodal-lecture-summarizer/plans/260901-unified-scientific-benchmark/framework/rq1-boundary-qualification-rule-260929.md",
+  "methods": ["original paired label,time opcode inspection without unpickling", "official MIT OCW resource to archive MP4", "SHA-256, ffprobe and full ffmpeg decode", "source-only frames at original time minus 3, at time, plus 3 seconds", "offline ASR diagnostic around disputed speech onsets", "publisher rights terms and visible component credits"],
+  "units": [
+    {
+      "video_id": "EuNXVy5-KgA", "course_id": "mit-16.687-iap-2019", "lecturer_ids": ["philip-greenspun", "tina-srivastava"],
+      "annotation_offset": 1867002601, "annotation_duration_sec": 1941.811, "chapter_count": 14,
+      "description_pair_parity": "pass_14_of_14", "publisher_resource": "https://ocw.mit.edu/courses/16-687-private-pilot-ground-school-january-iap-2019/resources/lecture-20-flying-at-night/",
+      "media_url": "https://archive.org/download/MIT16.687IAP19/MIT16_687IAP19_lec20_300k.mp4", "media_bytes": 78229335,
+      "media_sha256": "a369b3aaf61b242e5eb95b31c99073c7c5f9fce8d2c49a9a29d04557a1fb187c", "ffprobe_duration_sec": 1941.802,
+      "full_decode": "pass", "boundary_status": "pass_all_13_internal_slide_topic_onsets_at_original_times",
+      "internal_start_sec": [12,159,235,324,405,590,684,755,802,878,977,1134,1688],
+      "rights_status": "pass_scoped_internal_noncommercial_ocw_processing_examined_video_end_credits_identify_external_figures_as_public_domain",
+      "decision": "pass_boundary_media_rights", "limitation": "Frames at each start show the corresponding new slide; no exhaustive third-party asset audit or final-test history decision"
+    },
+    {
+      "video_id": "js34ZxECiCA", "course_id": "mit-22.033-fall-2011", "lecturer_ids": ["michael-short"],
+      "annotation_offset": 1868181703, "annotation_duration_sec": 2354.198, "chapter_count": 21,
+      "description_pair_parity": "pass_21_of_21", "publisher_resource": "https://ocw.mit.edu/courses/22-033-nuclear-systems-design-project-fall-2011/resources/lecture-8-metals-and-cheeses-uncoventional-pairings/",
+      "identity_evidence": "MIT OCW YouTube channel video ID has exact lecture title and 2354-second duration; publisher resource has same lecture title and archive MP4 of matching duration",
+      "media_url": "https://archive.org/download/MIT22.033F11/MIT22_033F11_lec08_300k.mp4", "media_bytes": 88960651,
+      "media_sha256": "a551c61db0692bb4bb6d15d19f8d25f9b2934d1bcd460b916c3af235833b7eb3", "ffprobe_duration_sec": 2354.197333,
+      "full_decode": "pass", "boundary_status": "hold_boundary_error_at_original_1984", "original_disputed_start_sec": 1984,
+      "boundary_evidence": "IGSCC slide appears around 1962 and remains at 1984; speech at 1983-1989 continues Alloy 600TT rather than opening a new section at 1984",
+      "rights_status": "hold_explicit_third_party_visuals_excluded_from_ocw_cc_on_video_end_credit",
+      "decision": "hold_boundary_and_rights", "limitation": "Other starts need no promotion review after decisive failures; original GT unchanged"
+    },
+    {
+      "video_id": "qdbkvD4N-us", "course_id": "mit-18.s096-fall-2013", "lecturer_ids": ["choongbum-lee"],
+      "annotation_offset": 1924263104, "annotation_duration_sec": 3364.974, "chapter_count": 3,
+      "description_pair_parity": "pass_3_of_3", "publisher_resource": "https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/resources/lecture-21-stochastic-differential-equations/",
+      "media_url": "https://archive.org/download/MIT18.S096F13/MIT18_S096F13_lec21_300k.mp4", "media_bytes": 129899264,
+      "media_sha256": "cdf13dda1e22be69f7665caa93a3113c4dbbb42a525e8ed6677d89f1f31f179a", "ffprobe_duration_sec": 3365.028333,
+      "full_decode": "pass", "boundary_status": "hold_boundary_error_at_original_1275_and_2547",
+      "original_internal_start_sec": [21,1275,2547],
+      "boundary_evidence": "At 1275 board is being wiped, but speech introduces the numerical-method task around 1259-1267, beyond the 3-second collar. At 2547 the speaker has already named the heat-equation topic around 2543; wiping alone does not establish a new onset.",
+      "rights_status": "pass_scoped_internal_noncommercial_ocw_processing_examined_video_has_blackboard_lecture_without_detected_third_party_component",
+      "decision": "hold_boundary", "limitation": "Offline ASR is diagnostic; preserve exact source starts and labels"
+    },
+    {
+      "video_id": "09vU-wVwW3U", "course_id": "mit-6.046j-spring-2015", "lecturer_ids": ["ling-ren"],
+      "annotation_offset": 1990465035, "annotation_duration_sec": 3225.666, "chapter_count": 5,
+      "description_pair_parity": "pass_5_of_5", "publisher_resource": "https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/resources/recitation-1-divide-conquer-smarter-interval-scheduling-master-theorem-strassens-algorithm/",
+      "media_url": "https://archive.org/download/MIT6.046JS15/MIT6_046JS15_rec01_300k.mp4", "media_bytes": 127320647,
+      "media_sha256": "a254e643a715065291dfd693d1b958989ca3856ad83477cfcf728b5755835ee3", "ffprobe_duration_sec": 3225.664,
+      "full_decode": "pass", "boundary_status": "pass_all_4_internal_speech_and_blackboard_topic_onsets_at_original_times",
+      "internal_start_sec": [20,136,1360,1993],
+      "rights_status": "pass_scoped_internal_noncommercial_ocw_processing_examined_blackboard_video_without_detected_third_party_component",
+      "decision": "pass_boundary_media_rights", "limitation": "No exhaustive frame-by-frame rights audit or final-test history decision"
+    }
+  ],
+  "batch_yield": {"locked_units": 4, "qualified_units": 2, "held_units": 2, "qualified_new_course_groups": 2},
+  "overall_recruitment_pool": {"previous_pass_units": 4, "current_pass_units": 6, "current_independent_groups": 6, "split_assigned": false}
+}

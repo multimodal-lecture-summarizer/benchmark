@@ -1,0 +1,7 @@
+original_video_id,original_mark_role,original_frag_s,offset_s,video_id,course_id,split_proposed,mark_role,frag_s,frames_each,frame_corr_min,frame_corr_max,frame_mae_max_255,audio_corr_best,audio_lag_samples_4000hz,status,error
+tKyaGnPni3U,last,2702.0,-5.0,tKyaGnPni3U,3.091,final_test,last,2697.0,3,0.874781,0.988525,10.507,0.955057,-197,review_low_correlation,
+tKyaGnPni3U,last,2702.0,5.0,tKyaGnPni3U,3.091,final_test,last,2707.0,3,0.987037,0.999610,6.595,0.909197,-197,local_av_match,
+DvGNpuan4rw,first,73.0,-5.0,DvGNpuan4rw,3.091,final_test,first,68.0,3,0.999209,0.999482,3.425,0.915359,-197,local_av_match,
+DvGNpuan4rw,first,73.0,5.0,DvGNpuan4rw,3.091,final_test,first,78.0,3,0.971767,0.985477,6.132,0.936815,-197,local_av_match,
+DvGNpuan4rw,middle,1755.0,-5.0,DvGNpuan4rw,3.091,final_test,middle,1750.0,3,0.948147,0.999449,10.076,0.951432,-197,review_low_correlation,
+DvGNpuan4rw,middle,1755.0,5.0,DvGNpuan4rw,3.091,final_test,middle,1760.0,3,0.995079,0.997773,3.512,0.876997,-197,review_low_correlation,
