@@ -1,6 +1,6 @@
 # Decisions Log
 
-> **Historical decisions (2026-08/09), not the active execution protocol.** Several RQ1–RQ4, TIB cohort, human-scoring and VISTA-priority decisions below were superseded. Use [BENCHMARK.md](../../../docs/BENCHMARK.md), [DATASET_EDA.md](../../../docs/DATASET_EDA.md) and the current [RQ2 plan](../../../plans/261002-0946-rq2-controlled-summarization/plan.md) for current scope. This file remains because `benchmarks/docs/frozen_decisions.json` and model-code comments cite it.
+> **Historical decisions (2026-08/09), not the active execution protocol.** Several RQ1–RQ4, TIB cohort, human-scoring and VISTA-priority decisions below were superseded. Use [BENCHMARK.md](../../../docs/BENCHMARK.md), [DATASET_EDA.md](../../../docs/DATASET_EDA.md) and the current [RQ2 plan](../../../plans/261002-0946-rq2-controlled-summarization/plan.md) for current scope. This file remains because `docs/frozen_decisions.json` and model-code comments cite it.
 
 All strategic and technical decisions that affect reproducibility, scope, or timeline are recorded here.
 Answers to the four Pending Decisions (README) are added here as they are resolved.

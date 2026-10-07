@@ -18,4 +18,4 @@ The sequence is dataset and candidate selection → executed EDA notebook → ev
 
 Other files under `docs/` are supporting or historical references, not an execution queue. Do not infer a completed benchmark from a plan, runner, registry entry or unexecuted notebook.
 
-The older `benchmarks/docs/frozen_decisions.json` and `plans/260901-unified-scientific-benchmark/framework/decisions-log.md` record the original design, including RQ2 assumptions superseded by the no-human-scoring amendment and all-split TIB EDA scope. They are not the current RQ2 protocol. The [cleanup record](cleanup-record-2026-10-07.md) summarizes the reviewed deletions and the evidence retained.
+The older `docs/frozen_decisions.json` and `plans/260901-unified-scientific-benchmark/framework/decisions-log.md` record the original design, including RQ2 assumptions superseded by the no-human-scoring amendment and all-split TIB EDA scope. They are not the current RQ2 protocol. The [cleanup record](cleanup-record-2026-10-07.md) summarizes the reviewed deletions and the evidence retained.

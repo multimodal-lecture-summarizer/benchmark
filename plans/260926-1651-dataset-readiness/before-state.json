@@ -84,19 +84,19 @@
     "sha256": "DA86C82A0279D1811AF3A44E91140D1D9AEA3AF834D6D0F6493BE9081A0A5854"
   },
   {
-    "path": "plans/260925-2304-d2-frozen-gt-runners/reports/harness/context-snippets.json",
+    "path": "plans/reports/harness-260925-2304-d2-frozen-gt-runners/context-snippets.json",
     "sha256": "FD910963A282F00C7C17E524F3615251BA1AF0FEA4E96989825C0D639E8C2E4C"
   },
   {
-    "path": "plans/260925-2304-d2-frozen-gt-runners/reports/harness/review-decision.json",
+    "path": "plans/reports/harness-260925-2304-d2-frozen-gt-runners/review-decision.json",
     "sha256": "27A1CF1BA6FD9EA93241577405C67232ACE3DD1EC26511A75517B171F28CB878"
   },
   {
-    "path": "plans/260925-2304-d2-frozen-gt-runners/reports/harness/risk-gate.json",
+    "path": "plans/reports/harness-260925-2304-d2-frozen-gt-runners/risk-gate.json",
     "sha256": "DD520E47F43AAE56865E73A2929A7CE150886EC215FA983614656043E65081E2"
   },
   {
-    "path": "plans/260925-2304-d2-frozen-gt-runners/reports/harness/verification.json",
+    "path": "plans/reports/harness-260925-2304-d2-frozen-gt-runners/verification.json",
     "sha256": "353C4553D0B0CF35CAFF1C637CC738F25EF3C8E01E67DEACE616B19BC9932804"
   },
   {

@@ -2,9 +2,9 @@
 dataset/
 
 # Bỏ qua các thư mục lưu trữ ảnh và kết quả sinh ra trong lúc chạy code
-visual/keyframes/
-visual/pipeline_output/
-visual/results/
+experiments/legacy_visual/keyframes/
+experiments/legacy_visual/pipeline_output/
+experiments/legacy_visual/results/
 
 # Các file tạm của Python
 __pycache__/
