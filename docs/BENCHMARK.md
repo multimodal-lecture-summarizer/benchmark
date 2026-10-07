@@ -6,6 +6,8 @@ Notebook chỉ được tạo khi có dataset, câu hỏi phân tích và phiên
 
 Các runner cũ trong `benchmarks/scripts/` cho RQ0A/RQ0V, RQ1–RQ4, EDA tổng quát, ablation ASR và error cascading tính bằng công thức đã được gỡ ngày 2026-10-07; `frozen_manifest_v1.json` và `provenance_template.json` cũng đã được gỡ. Những lệnh, bảng và manifest trong các mục lịch sử bên dưới mô tả thời điểm nghiên cứu trước, không còn là quy trình chạy hiện hành.
 
+Các script tải/chạy TED-LIUM tại máy, harness sprint, bộ sinh notebook một lần và script thu thập/chạy lại RQ1 cũng đã được gỡ. Output đánh giá chia chương và tóm tắt cũ đã rút để phân tích lại; mã notebook liên quan còn được giữ. Muốn tái chạy notebook RQ1 hoặc sprint cũ cần khôi phục mã từ Git. Các helper cho `01c`, RQ2, dataset readiness và runner video theo tác vụ vẫn còn.
+
 ## Quy trình nghiên cứu hiện hành
 
 1. **Chọn dữ liệu và ứng viên theo tác vụ:** chỉ chọn cohort video bài giảng hoặc bài thuyết trình học thuật có thể xác minh là cùng miền nghiên cứu, với nhãn có sẵn phù hợp đúng tác vụ. Ghi nguồn/phiên bản, quyền, modality, ground truth, đơn vị đánh giá, split/cohort và ít nhất hai họ mô hình hoặc thuật toán có ý nghĩa để so sánh. Không dùng video tổng quát làm benchmark phụ hoặc fallback. Chốt metric chính, normalizer, ngân sách đầu vào/đầu ra và tài nguyên chung trước khi xem điểm.
@@ -121,8 +123,8 @@ Ledger dưới đây ghi trạng thái 21 node tại lần reconciliation trư�
 | `02d_visual_caption_benchmark` | 02 | **BLOCKED** | `visual_caption_benchmark` + `keyframe.raw_predictions` | Thiếu upstream keyframe & visual caption GT |
 | `03a_object_detection_benchmark` | 03 | **BLOCKED** | `object_detection_benchmark` | Thiếu lecture slide/board object detection annotations |
 | `03b_multi_object_tracking_benchmark` | 03 | **BLOCKED** | `multi_object_tracking_benchmark` + `03a` outputs | Thiếu tracking annotations & upstream detection |
-| `04a_chaptering_benchmark` | 04 | **DIAGNOSTIC COMPLETED / OFFICIAL BLOCKED** | `dataset.frozen_manifest`, `dataset.registry`, `dataset.endpoint_matrix`; cùng video có chapter GT độc lập; tạo `chapter.input_features` | MIT001: 35/35 scene/OCR, exit 0; scientific selection vẫn không đủ điều kiện |
-| `04b_chaptering_modality_ablation` | 04 | **DIAGNOSTIC COMPLETED / OFFICIAL BLOCKED** | Cùng dataset với 04a, `chapter.input_features` và `chapter.shortlist` | MIT001: transcript+scene/OCR đã chạy; visual, acoustic và all-modalities `not_run` |
+| `04a_chaptering_benchmark` | 04 | **PENDING REANALYSIS** | Cùng video có chapter GT độc lập và đã xác minh nguồn | Output MIT001 cũ đã rút; cần chốt lại cohort, GT và runner trước khi chấm |
+| `04b_chaptering_modality_ablation` | 04 | **PENDING REANALYSIS** | Cùng cohort và metric với 04a | Output ablation cũ đã rút; chưa có kết quả lựa chọn biến thể |
 | `05a_summarization_benchmark` | 05 | **BLOCKED** | `summarization_benchmark` + upstream config | Thiếu lecture summary reference text & upstream evidence |
 | `05b_summary_factuality_and_human_eval` | 05 | **BLOCKED** | `summary_evidence_evaluation` + `05a` package | Chờ `05a` |
 | `06a_retrieval_benchmark` | 06 | **BLOCKED** | `retrieval_benchmark` + `05a` package | Chờ `05a` |
@@ -133,15 +135,9 @@ Ledger dưới đây ghi trạng thái 21 node tại lần reconciliation trư�
 | `08b_end_to_end_system` | 08 | **BLOCKED** | Multimodal lecture dataset + pipeline shortlist | Thiếu multimodal end-to-end dataset & shortlist |
 | `09_cross_task_report` | 09 | **BLOCKED** | Pareto, compatibility & system aggregate | Thiếu kết quả tích hợp Groups 07 & 08 |
 
-#### RQ1 MIT001: chẩn đoán 35 video (2026-09-27)
+#### RQ1 MIT001: chờ phân tích lại
 
-Lượt `experiments/outputs/diagnostic/rq1_mit001_local_runs/20260927T121111Z/pilot_summary.json` ghi `diagnostic_only=true`, 35/35 video có scene và OCR, 04a/04b đều exit 0. `04a` tạo `chapter.input_features` cùng video, `04b` dùng đặc trưng này và `chapter.shortlist`; đây không phải việc ghép dự đoán từ TED-LIUM và IIIT-CVID. Frozen manifest và endpoint matrix chỉ cho phép diagnostic selection (`scientific_selection_eligible=false`).
-
-Boundary F1 macro theo từng video, collar ±3 giây: duration-only **0.0198**; transcript **0.0294**; transcript+scene **0.0486** (23 thắng/0 hòa/12 thua so với transcript); transcript+OCR **0.0502** (13 thắng/2 hòa/20 thua). OCR lấy tối đa 12 khung hình mỗi video; số trung bình cao hơn không chứng minh cải thiện ổn định. Visual caption, acoustic, all-modalities và learned C5/C6 chưa chạy. Đây là một khóa học, cả 35 nhãn đã được xem trong pilot trước; không có held-out test hoặc bằng chứng khái quát sang khóa khác. Media audit còn 9 `review`/26 `pass`, quyền sử dụng từng video cần rà soát.
-
-Phạm vi công bố đã chốt là phương pháp và số liệu tổng hợp trên **đủ 35 video**; giữ 9 mục `review` trong mẫu chính vì sai lệch chỉ ở mốc GT kết thúc (0,508–0,881 giây), còn mốc chương nội bộ được dùng để tính F1 đều hợp lệ. Kết quả trên 26 video `pass` chỉ là phân tích độ nhạy. Bản công bố giới hạn: [MIT001_CHAPTERING_DIAGNOSTIC.md](results/MIT001_CHAPTERING_DIAGNOSTIC.md). Giữ `diagnostic_only` và `rights_review: pending`; không phát hành media, phụ đề, GT hay dự đoán theo video.
-
-Mục tiêu Chapter boundary F1 ±60 giây ở bảng tiêu chí chung bên dưới là một mục tiêu khác; không so sánh trực tiếp với kết quả RQ1 ±3 giây ở đây.
+Các output và báo cáo điểm số chẩn đoán MIT001 đã được xóa theo quyết định 2026-10-07. Bản rà nguồn, quyền và chất lượng nhãn được giữ để thiết kế cohort mới. Không trích điểm số hoặc thứ hạng biến thể từ lần chạy cũ trong bài báo. Trước lần đánh giá mới cần xác minh nhãn, quyền sử dụng, split độc lập và cùng metric cho mọi ứng viên.
 
 ---
 

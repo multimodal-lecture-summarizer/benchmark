@@ -12,8 +12,8 @@ Tài liệu này phân biệt kết quả đã chạy với ứng viên chưa c�
 
 Scene, keyframe, OCR, caption, detection, tracking, summarization và retrieval/QA có [ma trận dataset–ứng viên–metric](BENCHMARK.md#quy-trình-nghiên-cứu-hiện-hành). Đây là **danh sách dự kiến cần xác minh**, không phải kết quả chọn model. Các số liệu từng dẫn từ `outputs/model_choice/`, `outputs/eval_tables_real/` và luồng bảng cũ không có đủ tệp nguồn trong checkout hiện tại; không dùng chúng để xếp hạng hoặc biện minh model.
 
-- RQ2: [EDA TIB toàn train/valid/test](../experiments/notebooks/diagnostics/rq2-tib-all-splits-eda-colab.ipynb) đã chuẩn bị nhưng chưa chạy trên toàn bộ dữ liệu; cohort và reference đánh giá chưa chốt. Kết quả Qwen trên 70 Lecture validation record chỉ là lịch sử phạm vi hẹp. VISTA cũng chưa hoàn tất qualification. Xem [DATASET_EDA.md](DATASET_EDA.md).
-- RQ1: xem [báo cáo MIT001](results/MIT001_CHAPTERING_DIAGNOSTIC.md), không coi diagnostic là phép chọn model chính thức.
+- RQ2: [EDA TIB toàn train/valid/test](../experiments/notebooks/diagnostics/rq2-tib-all-splits-eda-colab.ipynb) đã chuẩn bị nhưng chưa chạy trên toàn bộ dữ liệu; cohort và reference đánh giá chưa chốt. Output đánh giá Qwen cũ đã được xóa; chưa có kết quả để chọn phương pháp tóm tắt. VISTA cũng chưa hoàn tất qualification. Xem [DATASET_EDA.md](DATASET_EDA.md).
+- RQ1: kết quả chẩn đoán chia chương MIT001 đã được rút để phân tích lại; chưa có phép chọn mô hình hợp lệ.
 - Những tác vụ chưa có nhãn bài giảng phù hợp hoặc chưa chạy cùng cohort phải ghi `not_eligible`/`no_selection`, không suy diễn từ model production hay bảng proxy cũ.
 
 Khi cần một so sánh mới, tạo notebook riêng cho dataset và tác vụ đã chốt; lưu dự đoán, lỗi từng đơn vị, metric, receipt và giới hạn. Không tái tạo pipeline bảng tổng quát cũ chỉ để sinh bảng luận văn.

@@ -7,7 +7,7 @@ Automated tests verifying that the benchmark suite complies with:
   - D-T07: Holm-Bonferroni correction
   - D-T08: Fair budget bounds (source <= 32k, output <= 512)
   - D-T15: Real-data-only constraint (0 mocks in research path)
-  - H4: Pareto dominance of E3 over E1 and E4
+  - Withdrawn RQ1/RQ2/RQ4 outcomes are not exposed as active metrics
 """
 
 import json
@@ -38,12 +38,12 @@ def test_repro_manifest_structure_and_completeness(project_root):
     assert "git_provenance" in manifest
     assert manifest["git_provenance"]["frozen_commit_hash"] is not None
 
-    # Check 4 RQ outcomes recorded
+    # Withdrawn comparisons must not retain numerical result claims.
     rq_outcomes = manifest["research_questions_outcomes"]
-    assert "RQ1" in rq_outcomes
-    assert "RQ2" in rq_outcomes
+    for rq in ("RQ1", "RQ2", "RQ4"):
+        assert rq_outcomes[rq]["status"] == "withdrawn_pending_reanalysis"
+        assert "primary_metrics" not in rq_outcomes[rq]
     assert "RQ3" in rq_outcomes
-    assert "RQ4" in rq_outcomes
 
     # Check frozen decisions
     decisions = manifest["frozen_experimental_decisions"]
@@ -51,21 +51,6 @@ def test_repro_manifest_structure_and_completeness(project_root):
     assert decisions["D-T04"]["visual_dim"] == 384
     assert decisions["D-T08"]["max_source_tokens"] == 32000
     assert decisions["D-T08"]["max_output_tokens"] == 512
-
-
-def test_publication_figures_exist(project_root):
-    fig_dir = project_root / "reports" / "figures"
-    assert fig_dir.exists(), "reports/figures directory must exist"
-
-    required_figs = [
-        "pareto_quality_vs_latency.png",
-        "pareto_quality_vs_vram.png",
-        "component_latency_breakdown.png"
-    ]
-    for fig_name in required_figs:
-        fig_path = fig_dir / fig_name
-        assert fig_path.exists(), f"Figure {fig_name} must exist"
-        assert fig_path.stat().st_size > 10000, f"Figure {fig_name} must not be empty"
 
 
 def test_d15_real_data_only_no_mocks_across_all_notebooks(project_root):
@@ -96,31 +81,6 @@ def test_d15_real_data_only_no_mocks_across_all_notebooks(project_root):
         forbidden_terms = ["synthetic_test_qa", "mock_features", "uniform_gold"]
         for term in forbidden_terms:
             assert term not in code_content, f"Forbidden mock term '{term}' found in {nb_name}"
-
-
-def test_rq1_c5_window_diff_bound(project_root):
-    p = project_root / "reports" / "rq1_benchmark_results.json"
-    assert p.exists(), "rq1_benchmark_results.json must exist"
-    with open(p, "r", encoding="utf-8") as f:
-        data = json.load(f)
-    c5_wd = data["metrics"]["C5"]["window_diff"]["mean"]
-    c3_wd = data["metrics"]["C3"]["window_diff"]["mean"]
-    c6_wd = data["metrics"]["C6"]["window_diff"]["mean"]
-    assert c5_wd <= 0.1500, f"C5 WindowDiff ({c5_wd}) must be <= 0.1500"
-    assert c5_wd < c3_wd, f"C5 ({c5_wd}) must outperform C3 ({c3_wd})"
-    assert c5_wd < c6_wd, f"C5 ({c5_wd}) must outperform C6 Late Fusion ({c6_wd})"
-
-
-def test_rq2_hallucination_reduction_bound(project_root):
-    p = project_root / "reports" / "rq2_benchmark_results.json"
-    assert p.exists(), "rq2_benchmark_results.json must exist"
-    with open(p, "r", encoding="utf-8") as f:
-        data = json.load(f)
-    s3_ev_key = "S3_plus_ev" if "S3_plus_ev" in data["metrics"] else "S3+ev"
-    s3_ev_hal = data["metrics"][s3_ev_key]["hallucination_rate_pct"]["mean"]
-    s3_hal = data["metrics"]["S3"]["hallucination_rate_pct"]["mean"]
-    assert s3_ev_hal <= 3.0, f"S3+ev hallucination rate ({s3_ev_hal}%) must be <= 3.0%"
-    assert s3_hal > 20.0, f"S3 text-only hierarchy must honestly report high hallucination ({s3_hal}%)"
 
 
 def test_rq3_oracle_gap_closed_precision(project_root):
@@ -165,19 +125,6 @@ def test_cached_features_checksum_integrity(project_root):
         assert feat_path.exists(), f"Feature file {fname} must exist"
         h = hashlib.sha256(feat_path.read_bytes()).hexdigest()
         assert h == meta["sha256"], f"Checksum mismatch for {fname}"
-
-
-def test_validation_gate_rq4_report_contents(project_root):
-    report_path = project_root / "reports" / "validation_gate_rq4.md"
-    assert report_path.exists(), "validation_gate_rq4.md must exist"
-
-    with open(report_path, "r", encoding="utf-8") as f:
-        content = f.read()
-
-    assert "Hypothesis H4" in content or "Giả thuyết H4" in content
-    assert "E1" in content and "E2" in content and "E3" in content and "E4" in content
-    assert "Wall time" in content or "total_wall_sec" in content or "Thời gian" in content
-    assert "VRAM" in content
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -275,7 +222,8 @@ def test_semantic_evidence_grounder_and_tensor_fallback():
     # 3. Hallucination rate & claim density
     summary = "First, we introduce the model. Second, we evaluate the loss. Finally, we analyze the results."
     h_m = compute_hallucination_rate(summary, evidence=None)
-    assert h_m["hallucination_rate"] == 27.87, "Without evidence, default S3 rate is reported"
+    assert h_m["hallucination_rate"] is None
+    assert h_m["status"] == "unavailable_no_evidence"
 
     d_m = compute_claim_density(summary)
     assert d_m["claim_count"] == 3

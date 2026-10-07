@@ -16,7 +16,7 @@
 
 ## Kết quả và hiện vật
 
-- [Đánh giá ASR `01c`](results/asr-architecture-evaluation-2026-10-05.md): sáu kiến trúc đã chạy đủ 507 validation và 1.155 native-test unit; Qwen3-ASR 0.6B đứng đầu validation WER 3,91%. Native test chỉ là diagnostic. Xem thêm [ghi nhận lỗi transcript rỗng](results/asr-architecture-empty-transcript-recovery-2026-10-05.md) và [chẩn đoán MIT001](results/MIT001_CHAPTERING_DIAGNOSTIC.md).
+- [Đánh giá ASR `01c`](results/asr-architecture-evaluation-2026-10-05.md): sáu kiến trúc đã chạy đủ 507 validation và 1.155 native-test unit; Qwen3-ASR 0.6B đứng đầu validation WER 3,91%. Native test chỉ là diagnostic. Xem thêm [ghi nhận lỗi transcript rỗng](results/asr-architecture-empty-transcript-recovery-2026-10-05.md). Kết quả đánh giá chia chương và tóm tắt cũ đã rút khỏi repo để phân tích lại.
 - [Sơ đồ cây thư mục hiện tại](visuals/benchmark-directory-tree.drawio) được tạo từ `scripts/generate_benchmark_directory_tree_drawio.py`.
 - [Bản Word EDA](exports/DATASET_EDA.docx) là bản xuất lịch sử; dùng [DATASET_EDA.md](DATASET_EDA.md) cho quy trình và trạng thái hiện hành.
 
@@ -27,5 +27,7 @@
 - [Ghi nhận chuyển repo](archive/research-migration-2026-10-06.md), [nhật ký benchmark đầu kỳ](journals/260922-260925-early-benchmark-journal.md), [nhật ký sửa bằng chứng](workspace/260926-research-evidence-journal.md) và `workspace/`: nhật ký, tài liệu luận văn và bản thảo trình bày. Ba nhật ký có tên và SHA-256 trong manifest vẫn là tệp riêng trong `journals/`.
 
 `benchmarks/references/` không có ground truth cục bộ đã xác minh. Không dùng các ví dụ trong tài liệu như nhãn đánh giá.
+
+Các script tải/chạy TED-LIUM tại máy, harness sprint cũ, bộ sinh notebook một lần và script RQ1/Yale/MITFLD đã được gỡ ngày 2026-10-07. Notebook cùng kết quả lịch sử được giữ để đọc; một số notebook cũ không còn chạy lại được nếu thiếu mã đã gỡ. Các module ASR `01c`, RQ2, dataset readiness, chapter contract/scorer và runner video theo tác vụ vẫn được giữ.
 
 Các runner một lượt RQ0A/RQ0V, RQ1–RQ4, EDA tổng quát, ablation ASR và error cascading tính bằng công thức trong `benchmarks/scripts/` đã ngừng dùng và được gỡ ngày 2026-10-07. Manifest đóng băng v1 cùng mẫu provenance cũ cũng được gỡ. Các mục lịch sử trong tài liệu và kết quả cũ chỉ để đối chiếu; nghiên cứu mới theo notebook được tạo khi dataset, nhãn, ứng viên và metric đã sẵn sàng.

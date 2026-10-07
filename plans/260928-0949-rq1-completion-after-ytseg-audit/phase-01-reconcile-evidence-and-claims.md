@@ -19,8 +19,8 @@ Close the existing MIT001 35-video diagnostic and reconcile older readiness pros
 
 ## Architecture and related files
 
-- Read-only baseline: nested `plans/reports/rq1-mit001-multimodal-260928-0909-paired-diagnostic-report.md`, `plans/reports/260928-0839-mit001-video-rights-media-audit-report.md`, `experiments/outputs/diagnostic/rq1_mit001_local_runs/20260928T022609Z`.
-- Update only if discrepancies exist: nested `docs/results/MIT001_CHAPTERING_DIAGNOSTIC.md`, outer `plans/260927-1152-rq1-dataset-notebook-readiness/plan.md`. Preserve dated historical run entries.
+- Historical MIT001 paired diagnostic outputs and score reports were withdrawn on 2026-10-07. The source-qualification record `plans/reports/260928-0839-mit001-video-rights-media-audit-report.md` remains available.
+- Before new evaluation, update the current benchmark protocol and recheck dataset rights, GT and split; do not reuse old score claims.
 
 ## Implementation Steps
 

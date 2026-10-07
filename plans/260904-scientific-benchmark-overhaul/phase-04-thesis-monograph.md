@@ -26,7 +26,7 @@ Toàn bộ bản thảo được tổ chức thành 7 chương độc lập cùn
 | **Ch 4** | `docs/thesis/04_experimental_setup.md` | 2,000 - 2,500 từ | 20 bài giảng thực tế (EduVidQA), hệ thống độ đo (Collar F1, WindowDiff, Pk, ROUGE, Claim Density), quy trình thống kê Bootstrap 95% CI & Holm-Bonferroni. |
 <!-- Updated: Validation Session 1 - Added delta sensitivity ablation table to Chapter 5 -->
 
-| **Ch 5** | `docs/thesis/05_empirical_results.md` | 3,500 - 4,000 từ | Bảng số liệu thực nghiệm đầy đủ (RQ1: $C_5 \le 0.0950$, RQ2: Ảo giác $2.39\%$, RQ3: Gap closed $78.8\%$), Ablation studies (bao gồm khảo sát độ nhạy $\delta \in \{15, 30, 45, 60\}\text{s}$), Latency & VRAM profiling. |
+| **Ch 5** | `docs/thesis/05_empirical_results.md` | 3,500 - 4,000 từ | Chỉ đưa số liệu có cohort, GT, metric và receipt đã kiểm tra. Kết quả RQ1/RQ2 cũ đã rút; RQ4 phụ thuộc phải đo lại. |
 | **Ch 6** | `docs/thesis/06_discussion_limitations.md` | 2,000 - 2,500 từ | Phân tích dung hòa F1 vi mô vs liên kết vĩ mô, 3 Failure Cases điển hình, giới hạn $N=20$ & phân tích công suất thống kê. |
 | **Ch 7** | `docs/thesis/07_conclusion_future_work.md` | 1,200 - 1,500 từ | Đánh giá giả thuyết H1-H3, tác động thực tiễn EdTech, mở rộng quy mô lớn và streaming. |
 | **Tổng** | `docs/thesis/MASTER_RESEARCH_MANUSCRIPT_EN.md` | **15,000 - 20,000 từ** | Bản thảo hợp nhất hoàn chỉnh, đồng nhất thuật ngữ và ký hiệu toán học. |

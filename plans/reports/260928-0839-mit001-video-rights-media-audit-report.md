@@ -96,7 +96,7 @@ GT kết thúc đều là số giây nguyên; làm tròn là một cách giải 
 - `experiments/datasets/avlectures_mit001/source_receipt.json`: nguồn GT, checksum, `truncated_gzip`, `rights_review`.
 - `experiments/datasets/avlectures_mit001/media_audit.json`: 35 bản ghi MP4, hash và trạng thái.
 - `experiments/datasets/avlectures_mit001/run_local_diagnostic.py`: ánh xạ quyền và mốc GT vào unit.
-- `experiments/outputs/diagnostic/rq1_mit001_local_runs/20260927T121111Z/diagnostic/full/payloads/chapter.ablation_metrics.json`: F1 theo video/biến thể.
+- Output chấm F1 theo video/biến thể đã rút ngày 2026-10-07 để phân tích lại; không dùng nó làm bằng chứng đánh giá hiện hành.
 
 ## Câu hỏi chưa giải quyết
 

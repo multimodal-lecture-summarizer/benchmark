@@ -18,7 +18,7 @@ source: skill
 
 ## Overview
 
-This plan continues the RQ1 work after two verified results: the [35-video MIT001 paired diagnostic](../../multimodal-lecture-summarizer/plans/reports/rq1-mit001-multimodal-260928-0909-paired-diagnostic-report.md) has already run visual, acoustic and full heuristic fusion; the [YTSeg rights/split audit](../../multimodal-lecture-summarizer/plans/reports/research-260928-0936-ytseg-video-rights-channel-split-report.md) found uncleared source-video rights and severe channel overlap in official splits. Do not rerun completed variants merely to change `not_run` labels in older prose. Learned C5/C6 remain `not_run` without eligible training data and checkpoint provenance.
+This is a historical RQ1 plan. The MIT001 paired diagnostic outputs and score report were withdrawn on 2026-10-07 for reanalysis. The [YTSeg rights/split audit](../../multimodal-lecture-summarizer/plans/reports/research-260928-0936-ytseg-video-rights-channel-split-report.md) remains a source-qualification record. No old chaptering score or completed label is current selection evidence.
 
 There are **two deliverables with different claim levels**:
 

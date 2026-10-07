@@ -20,7 +20,7 @@ The [2026-10-02 amendment](./rq2-automatic-evaluation-amendment.md) removes all 
 
 ## Completion evidence
 
-- [x] Executed automated evaluation on all 20 validation diagnostic pairs, with item-level records and descriptive paired uncertainty in `experiments/outputs/diagnostic/rq2_valid_paired/automatic_evaluation.json` and the executed notebook.
+- [ ] Repeat the automatic evaluation after cohort and reference qualification; previous paired outputs and saved notebook results were withdrawn on 2026-10-07.
 - [ ] Controlled generation and measured equal cumulative token budgets on a development/validation cohort.
 - [x] One automatic primary endpoint and analysis config is declared before sealed-test access, with its claim boundary. Generation/backend settings remain to be frozen separately.
 - [ ] No result is described as factual accuracy without a defensible validation measure.

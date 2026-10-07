@@ -18,10 +18,10 @@ Thực hiện rà soát nghiêm ngặt toàn bộ hệ thống thực nghiệm �
 
 | STT | Lỗ hổng phản biện | Giải pháp khắc phục triệt để | Trạng thái kiểm toán |
 |:---:|:------------------|:-----------------------------|:--------------------:|
-| **1** | $C_5$ WindowDiff $0.3217$ tệ nhất bảng nhưng kết luận H1 đúng | Refactor Decoupled Cross-Attn + Visual Snapping đưa WindowDiff $C_5$ xuống $0.1360$ (đánh bại $C_3$ là $0.1939$ và $C_6$ là $0.1545$). | Đạt chuẩn (PASS) |
+| **1** | Kết luận RQ1 cũ dựa trên điểm chia chương chưa đủ điều kiện | Điểm số và kết luận so sánh đã rút ngày 2026-10-07; cần chạy lại theo protocol hiện hành. | Chờ phân tích lại |
 | **2** | F1 ranh giới chi tiết thấp ($\approx 0.08$) | Bổ sung phân tích minh bạch: Phân định ranh giới $\pm 5\text{s}$ phản ánh thách thức vi mô, trong khi mức độ kết dính vĩ mô (5-10 phút) đạt hiệu quả cao cho truy xuất RAG. | Đạt chuẩn (PASS) |
 | **3** | $S_3\text{+ev}$ cắt 5 từ OCR thô thiển | Chuyển sang Semantic Cosine Matching giữa câu tóm tắt và văn bản OCR slide qua SBERT MiniLM-L6 và SemanticEvidenceGrounder ($\tau=0.45$). | Đạt chuẩn (PASS) |
-| **4** | $S_3$ có tỷ lệ ảo giác $27.87\%$ nhưng lại được ca ngợi | Trình bày trung thực: Phân cấp văn bản đơn thuần ($S_3$) gây ảo giác nặng ($27.87\%$), và chỉ khi có neo thị giác ($S_3\text{+ev}$) ảo giác mới giảm về $2.39\%$. | Đạt chuẩn (PASS) |
+| **4** | Kết luận RQ2 cũ dựa trên điểm tóm tắt chưa đủ điều kiện | Điểm số và kết luận so sánh đã rút ngày 2026-10-07; cần kiểm định reference và chấm lại. | Chờ phân tích lại |
 | **5** | Thiếu chỉ số độ dài tóm tắt làm lu mờ tỷ lệ ảo giác | Báo cáo đồng thời: Summary Length (tokens), Claim Count, và Claim Density per 100 tokens qua compute_claim_density(). | Đạt chuẩn (PASS) |
 | **6** | Công thức RAG $0.60\cos + 0.40\text{BM25}$ cộng điểm chưa chuẩn hóa | Thay bằng thuật toán chuẩn hóa Reciprocal Rank Fusion (RRF, $k=60$). | Đạt chuẩn (PASS) |
 | **7** | Tuyên bố "thu hẹp 90% khoảng cách Oracle" bị sai toán | Báo cáo chính xác: Thu hẹp **$84.1\%$** khoảng cách (tương ứng đạt **$96.2\%$** điểm số tuyệt đối của Oracle). | Đạt chuẩn (PASS) |
@@ -49,8 +49,7 @@ Thực hiện rà soát nghiêm ngặt toàn bộ hệ thống thực nghiệm �
 
 2. **Mở rộng bộ kiểm thử tự động trong `tests/test_validation_gate.py`:** [DONE]
    Bổ sung 15 hàm kiểm thử tự động xác thực các ngưỡng nghiệm thu khoa học:
-   - `test_rq1_c5_window_diff_bound`: Xác thực $C_5$ đạt WindowDiff $\le 0.1500$ và vượt trội hơn $C_3$, $C_6$.
-   - `test_rq2_hallucination_reduction_bound`: Xác thực $S_3\text{+ev}$ hạ tỷ lệ ảo giác xuống $\le 3.0\%$ so với $S_3$ ($> 20\%$).
+   - Các test khóa sẵn điểm RQ1/RQ2 đã gỡ cùng kết quả cũ; test mới phải kiểm tra provenance và tính đúng của phép đo, không áp một đáp án định trước.
    - `test_rq3_oracle_gap_closed_precision`: Xác thực tỷ lệ thu hẹp khoảng cách Oracle được báo cáo chính xác là $84.1\%$ ($96.2\%$ điểm số tuyệt đối).
    - `test_d15_real_data_only_no_mocks_across_all_notebooks`: Quét AST/Regex trong 7 clean notebooks xác nhận không có mock/synthetic.
 

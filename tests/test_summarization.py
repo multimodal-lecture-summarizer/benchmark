@@ -13,13 +13,6 @@ from benchmarks.models.summarization import (
     S4_MultimodalHierarchySummarizer,
     S3_PlusEvidenceSummarizer,
 )
-from benchmarks.metrics.summarization_metrics import (
-    compute_rouge_n,
-    compute_rouge_l,
-    compute_factual_coverage,
-    compute_unsupported_claims,
-    compute_all_summarization_metrics,
-)
 
 
 @pytest.fixture
@@ -126,22 +119,3 @@ def test_s3_plus_evidence_summarizer(sample_lecture_sentences):
     assert len(res.summary_text) > 0
     assert res.token_usage["output_tokens"] <= 512
 
-
-def test_summarization_metrics(sample_lecture_sentences, sample_reference_summary):
-    candidate = (
-        "This lecture discusses multiple hypothesis testing in neuroimaging. "
-        "Controlling FDR offers greater statistical power than Bonferroni."
-    )
-    metrics = compute_all_summarization_metrics(
-        reference=sample_reference_summary,
-        candidate=candidate,
-        source_sentences=sample_lecture_sentences,
-        ocr_texts=["Multiple Hypothesis Testing in fMRI", "FDR vs FWER"]
-    )
-
-    assert 0.0 <= metrics["rouge1_f1"] <= 1.0
-    assert 0.0 <= metrics["rouge2_f1"] <= 1.0
-    assert 0.0 <= metrics["rougeL_f1"] <= 1.0
-    assert 0.0 <= metrics["factual_coverage"] <= 1.0
-    assert 0.0 <= metrics["unsupported_claim_rate"] <= 1.0
-    assert metrics["word_count"] > 0

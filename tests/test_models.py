@@ -4,7 +4,6 @@ Unit Tests for Multimodal Chaptering Models (C1 - C6) and Extractors.
 
 import pytest
 import torch
-import numpy as np
 from dataclasses import replace
 
 from benchmarks.models.chaptering import (
@@ -17,7 +16,6 @@ from benchmarks.models.chaptering import (
     C5_TemporalCrossAttentionTransformer,
     C6_LateFusionChapterer,
 )
-from benchmarks.core.extractors import AcousticFeatureExtractor
 
 
 @pytest.fixture
@@ -166,14 +164,3 @@ def test_rq1_single_modality_models_backward(sample_batch, model_factory):
     output.loss.backward()
     assert model.proj.weight.grad is not None
     assert model.transformer.layers[0].self_attn.in_proj_weight.grad is not None
-
-
-def test_acoustic_extractor():
-    extractor = AcousticFeatureExtractor(n_mels=64)
-    segments = [
-        {"start": 0.0, "end": 4.5, "text": "Welcome to our lecture on neuroimaging."},
-        {"start": 5.0, "end": 10.2, "text": "Today we cover multiple hypothesis testing."}
-    ]
-    feats = extractor.extract_from_segments(segments)
-    assert feats.shape == (2, 64)
-    assert feats.dtype == np.float32

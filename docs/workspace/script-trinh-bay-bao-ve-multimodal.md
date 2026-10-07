@@ -22,10 +22,10 @@ Neu co the sua Canva, nen sua cac diem sau:
 | 9 | "Parallel processing" | Doi thanh "Queued staged processing" hoac noi: "cac stage duoc day vao Celery queue, hien tai pipeline xu ly theo tung buoc". |
 | 11 | "filtering out >90% near-duplicate keyframes" | Noi mem: "CLIP giam nhieu keyframe trung lap; ty le phu thuoc threshold va video". |
 | 14, 18 | SlideSpeech, SSLectures | Chi noi neu co log/notebook nguon. Neu khong, noi la bo du lieu mo rong cho evaluation, khong phai evidence chinh. |
-| 18 | WER ASR cu, Scene F1 0.505, Chapter F1 0.69, ROUGE-L ablation | Thay WER cu bang ket qua ASR `01c`: Qwen3-ASR 0.6B validation WER 3,91%, native-test WER 3,53% diagnostic. Cac metric khac can doi chieu artifact goc; Chapter F1 0.69 la so lieu lich su chua xac minh theo giao thuc RQ1 hien tai. |
+| 18 | Bang diem ASR, scene, chapter va summary cu | Chi giu ket qua ASR `01c`: Qwen3-ASR 0.6B validation WER 3,91%, native-test WER 3,53% diagnostic. Bo diem chapter va summary khoi slide cho den khi chay lai danh gia. |
 | 19, 20 | Slide 19 noi co Q&A, slide 20 noi chua co free-form Q&A | Chon mot trang thai. Cach an toan: "RAG/Q&A co thiet ke va prototype, nhung can danh gia Hit@k/citation accuracy them". |
 
-Luu y cho slide 18: diagnostic MIT001 moi chi gom mot khoa hoc, 35 nhan da xuat hien trong pilot truoc, va cham F1 boundary voi collar ±3 giay. Transcript+OCR dat macro F1 0.0502 trong diagnostic nay; khong thay truc tiep Chapter F1 0.69 bang so nay vi chua chung minh hai ket qua dung cung dataset va cach cham. Xem [pilot_summary.json](../../experiments/outputs/diagnostic/rq1_mit001_local_runs/20260927T121111Z/pilot_summary.json) va [BENCHMARK.md](../BENCHMARK.md) truoc khi cap nhat slide.
+Luu y cho slide 18: ket qua chia chuong va tom tat cu da duoc rut de phan tich lai. Khong dua diem cu vao slide; xem [BENCHMARK.md](../BENCHMARK.md) de biet trang thai hien hanh.
 
 ## Loi Mo Dau
 
@@ -305,11 +305,11 @@ Neu khong chac SlideSpeech co evidence trong repo, co the noi ngan hon:
 
 Slide nay tong hop cac dataset va ket qua danh gia theo tung module. Voi ASR, TED-LIUM la benchmark chinh vi co transcript ground truth va co the tinh WER/RTF. Voi visual, TVSum ho tro phan tich frame importance va keyframe. Voi chapter/summary, can co reference boundary hoac reference summary thi moi tinh F1/ROUGE-L mot cach chinh thuc.
 
-Ket qua ASR co the trinh bay la `01c`: sau candidate hoan tat tren TED-LIUM, Qwen3-ASR 0.6B dung dau validation WER 3,91%. Native test chi diagnostic va model ung dung van la Faster-Whisper base.en. Cac ket qua visual, chapter va ROUGE-L nen duoc xem theo dung nguon thuc nghiem.
+Ket qua ASR co the trinh bay la `01c`: sau candidate hoan tat tren TED-LIUM, Qwen3-ASR 0.6B dung dau validation WER 3,91%. Native test chi diagnostic va model ung dung van la Faster-Whisper base.en. Chapter va summary cho phan tich lai, chua trinh bay diem so.
 
 **Cach noi an toan neu giu cac so tren slide:**
 
-"Cac con so o day la ket qua thuc nghiem noi bo theo cac evaluation scripts cua nhom. Diem em muon nhan manh khong phai la no da bao phu moi truong hop, ma la nhom da tach evaluation theo module: ASR dung WER/RTF, scene dung F1, chapter dung boundary F1, summary dung ROUGE-L. Trong bao cao cuoi, moi metric se di kem dataset, ground truth va lenh tai lap."
+"Hien chi trinh bay ket qua ASR co bao cao va notebook doi chieu. Chapter va summary se duoc danh gia lai sau khi chot dataset, ground truth va giao thuc cung thang do."
 
 **Neu bi hoi ve ROUGE-L ablation:**
 

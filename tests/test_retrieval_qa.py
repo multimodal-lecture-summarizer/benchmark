@@ -11,12 +11,6 @@ from benchmarks.models.retrieval_qa import (
     Q2_PredictedHierarchyRetrievalQA,
     Q3_MultimodalHierarchyRetrievalQA,
 )
-from benchmarks.metrics.qa_metrics import (
-    compute_retrieval_metrics,
-    compute_token_f1_and_em,
-    compute_evidence_iou,
-    compute_all_qa_metrics,
-)
 
 
 @pytest.fixture
@@ -104,32 +98,3 @@ def test_q3_multimodal_hierarchy_retrieval(sample_qa_context):
     assert res.variant_id == "Q3_multimodal_hierarchy"
     assert "Grounding:" in res.predicted_answer
 
-
-def test_qa_metrics_computation():
-    ret_m = compute_retrieval_metrics(["chunk_2", "chunk_1", "chunk_0"], ["chunk_2"])
-    assert ret_m["recall_at_1"] == 1.0
-    assert ret_m["recall_at_3"] == 1.0
-    assert ret_m["mrr"] == 1.0
-
-    ans_m = compute_token_f1_and_em(
-        prediction="ResNet introduces shortcut connections to solve degradation.",
-        ground_truth="ResNet introduces identity shortcut connections to solve degradation problem."
-    )
-    assert ans_m["f1"] > 0.7
-
-    iou = compute_evidence_iou((100.0, 200.0), (150.0, 250.0))
-    assert 0.0 < iou < 1.0
-    assert iou == pytest.approx(50.0 / 150.0)
-
-    all_m = compute_all_qa_metrics(
-        retrieved_ids=["chunk_1"],
-        gt_ids=["chunk_1"],
-        predicted_answer="Identity shortcuts solve vanishing gradients.",
-        ground_truth_answer="Identity shortcuts solve vanishing gradients.",
-        pred_timestamp_range=(100.0, 200.0),
-        true_timestamp_range=(100.0, 200.0)
-    )
-    assert all_m["recall_at_1"] == 1.0
-    assert all_m["exact_match"] == 1.0
-    assert all_m["evidence_iou"] == 1.0
-    assert all_m["grounding_rate"] == 1.0

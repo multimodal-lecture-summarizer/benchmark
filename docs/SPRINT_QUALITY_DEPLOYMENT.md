@@ -1,5 +1,7 @@
 # Báo cáo triển khai Quality Gates & Sprint Stack
 
+> Hồ sơ lịch sử: các script chạy ladder/verify/GPU của sprint trong `experiments/scripts/` đã được gỡ ngày 2026-10-07 khi dọn luồng chạy tại máy. Các lệnh ở mục 6.2 ghi lại cách chạy trước đây, không còn thực thi trên checkout hiện tại. Mã thuật toán trong `experiments/pipeline/` và thông tin triển khai production được giữ để tham khảo.
+
 Tài liệu mô tả **vấn đề cần giải quyết**, **cách thuật toán hoạt động**, **kết quả thực nghiệm**, và **hướng triển khai** vào pipeline production (`ai_workers/tasks.py`).
 
 Production đã port stack khuyến nghị vào `ai_workers/modules/fusion/quality_postprocess.py`
@@ -209,10 +211,10 @@ Output mẫu:
 | Quality gates (hard 5–8) | `experiments/pipeline/quality_gates.py` | No (experiment only) |
 | Sprint algorithms (source) | `experiments/pipeline/sprints.py` | Source / offline |
 | Orchestrator (gated / baseline) | `experiments/pipeline/orchestrator.py` | Experiment only |
-| GPU real test | `experiments/scripts/run_gpu_real_test.py` | Experiment |
-| Offline ladder / verify | `experiments/scripts/run_sprint_ladder.py`, … | Experiment |
+| GPU real test | `experiments/scripts/run_gpu_real_test.py` | Script lịch sử đã gỡ |
+| Offline ladder / verify | `experiments/scripts/run_sprint_ladder.py`, … | Script lịch sử đã gỡ |
 
-### 6.2 Chạy thử nhanh
+### 6.2 Lệnh chạy thử lịch sử (không còn thực thi)
 
 ```powershell
 # Offline ladder Sprint 1→10 (không cần GPU)

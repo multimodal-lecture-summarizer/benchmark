@@ -129,28 +129,20 @@ def compute_hallucination_rate(
     threshold: float = 0.45
 ) -> Dict[str, Any]:
     """
-    Compute hallucination rate (% of unsupported claims) against slide evidence.
-    Without evidence (e.g. S3), reported benchmark baseline rate is ~27.87%.
-    With grounded slide evidence (S3+ev / S4), rate drops to ~2.39%.
+    Compute unsupported-claim percentage against available slide evidence.
+    Return an unavailable metric when claims or evidence cannot be checked.
     """
-    if not summary_text or evidence is None:
+    claims = extract_claims(summary_text)
+    if not claims or evidence is None or len(evidence) == 0:
         return {
-            "hallucination_rate": 27.87 if evidence is None else 0.0,
-            "total_claims": 0,
+            "hallucination_rate": None,
+            "total_claims": len(claims),
             "grounded_claims": 0,
             "ungrounded_claims": 0,
+            "status": "unavailable_no_claims" if not claims else "unavailable_no_evidence",
         }
 
     grounder = grounder or SemanticEvidenceGrounder(tau_ev=threshold)
-    claims = extract_claims(summary_text)
-    if not claims:
-        return {
-            "hallucination_rate": 0.0,
-            "total_claims": 0,
-            "grounded_claims": 0,
-            "ungrounded_claims": 0,
-        }
-
     grounded_count = sum(1 for c in claims if grounder.is_grounded(c, evidence))
     ungrounded_count = len(claims) - grounded_count
     rate = (ungrounded_count / len(claims)) * 100.0
@@ -160,6 +152,7 @@ def compute_hallucination_rate(
         "total_claims": len(claims),
         "grounded_claims": grounded_count,
         "ungrounded_claims": ungrounded_count,
+        "status": "measured",
     }
 
 
@@ -492,7 +485,7 @@ class S3_PredictedHierarchySummarizer(BaseSummarizer):
         # Enforce D-T08 hard budget cap
         summary_text = self._truncate_to_budget(summary_text, self.config.max_output_tokens)
 
-        # Compute hallucination rate without evidence (expected baseline ~27.87%)
+        # No independent evidence is available for S3, so the metric is unavailable.
         hallucination_res = compute_hallucination_rate(summary_text, evidence=None)
         density_res = compute_claim_density(summary_text)
 

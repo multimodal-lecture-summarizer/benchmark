@@ -36,7 +36,7 @@ Do cả 10 cặp HF/OCW có kích thước khác nhau, không được gán GT M
 
 [YTSeg paper](https://aclanthology.org/2024.eacl-long.25.pdf) mô tả chapters do người tạo video cung cấp và split phân tầng theo channel. Subset 276 video chỉ có train, 14 channel rất lệch và không có `course_id`. Channel-disjoint split có thể thử như phép kiểm khác nếu sửa protocol, nhưng không đồng nghĩa course-disjoint hoặc expert GT. Không trộn nhãn YTSeg với MITFLD hay 35 video MIT001 theo vị trí hoặc theo tên.
 
-35 video MIT001 đã có [paired diagnostic visual/acoustic/full](../../multimodal-lecture-summarizer/plans/reports/rq1-mit001-multimodal-260928-0909-paired-diagnostic-report.md), nhưng thuộc một khóa và nhãn đã từng được nhìn thấy; không được biến thành final test độc lập. Nguồn mới cần qua quyền, GT, split và D2 rồi mới chạy official RQ1. Thay dataset, split, GT hoặc claim phải sửa [master plan](../../multimodal-lecture-summarizer/plans/260901-unified-scientific-benchmark/framework/00-master-plan.md) trước khi đóng băng.
+Output và báo cáo điểm số paired diagnostic MIT001 đã được rút ngày 2026-10-07 để phân tích lại. Nguồn này chỉ thuộc một khóa và nhãn đã từng được nhìn thấy; không được biến thành final test độc lập. Nguồn mới cần qua quyền, GT và split trước khi đánh giá RQ1. Thay dataset, split, GT hoặc claim phải sửa [master plan](../../multimodal-lecture-summarizer/plans/260901-unified-scientific-benchmark/framework/00-master-plan.md) trước khi đóng băng.
 
 ## Quyết định nghiên cứu hiện tại
 

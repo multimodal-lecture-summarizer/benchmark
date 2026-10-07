@@ -34,7 +34,7 @@ The exact title `Old Irish – Morphosyntactic Structures, Part 3` and author `G
 
 ## Eligible-cohort and sample-size follow-up
 
-The executed EDA notebook now exports [metadata for all 70 structurally eligible `valid` Lecture records](./rq2-tib-valid-eligible-metadata.json). The export matches the pinned revision and selected DOI digest; it contains 70 distinct DOI values and no test content. The [executed sample-size notebook](../../experiments/notebooks/diagnostics/rq2-tib-valid-sample-size-eda.ipynb) compares this pool with the original 20 and uses the saved v2 paired ROUGE-L results for planning precision.
+The executed EDA notebook exported [metadata for all 70 structurally eligible `valid` Lecture records](./rq2-tib-valid-eligible-metadata.json). The export matches the pinned revision and selected DOI digest; it contains 70 distinct DOI values and no test content. The [sample-size notebook code](../../experiments/notebooks/diagnostics/rq2-tib-valid-sample-size-eda.ipynb) remains, but its score-based estimates and saved outputs were withdrawn on 2026-10-07.
 
 | Creator subject tag | Eligible 70 | Selected 20 | One-per-exact-author candidate 52 |
 | --- | ---: | ---: | ---: |
@@ -49,19 +49,15 @@ The executed EDA notebook now exports [metadata for all 70 structurally eligible
 
 The selected 20 omit Engineering, under-sample Physics relative to the eligible pool, and miss the longest eligible talks (maximum 12,131 versus 20,409 transcript words). Short abstracts occur in 9/20 selected and 23/70 eligible items. There are 52 distinct normalized author strings among the 70; taking the first DOI hash per author yields a deterministic 52-item **planning candidate** that includes the original 20 and covers all eight subject tags. Exact author distinction does not prove series independence or final input-token eligibility.
 
-The 20 v2 paired ROUGE-L differences have sample SD 0.03599. Under an unchanged variance and independent-talk normal approximation, 50 pairs would give an approximate 95% half-width of 0.0100 ROUGE-L; 52 give 0.0098. This is a precision scenario, not a required threshold or power proof. The chat-prompt recipe and output budgets changed after v2, and creator abstracts remain heterogeneous, so this estimate must not be used to claim factual quality or a guaranteed S3 effect. A practical expansion is the 52 distinct-author candidates after series and Qwen token-budget checks, with per-subject counts and failed items retained in the ledger.
+The old paired-score variance and precision estimates were withdrawn with the summarization results. The 52 distinct-author count is dataset metadata only; it is not a sample-size recommendation. Recompute precision after qualifying the full selected cohort and its evaluation protocol.
 
 ## Decision
 
-**LIMIT:** Keep the 20-record validation cohort for a text-only S1–S3 development diagnostic, recording the same-title cross-split pair separately. The title collision is not a near-text duplicate; author/series grouping is still unresolved for formal holdout. Do not require a long abstract, raw video, slide or oracle chapter for source-grounded factual-support work. Mark reference-based ROUGE/BERTScore/QA as unavailable for any record without an independently verified summary target. Do not call this a formal H2 cohort or a passed group/quality gate.
+**PENDING:** Reassess the cohort across all TIB splits as currently required. The title collision is not a near-text duplicate; author/series grouping is still unresolved. Mark reference-based scores unavailable until a summary target is qualified. The previous 20-item evaluation cohort is no longer an active result.
 
 ## Early execution smoke
 
-One real validation record (`10.5446/45978`, 2,046 words, 168 timed segments, 994 seconds) previously passed both S1 and S3 summarizer paths using `DeterministicAbstractiveEngine` and the locally cached sentence embedder. S3 used a one-boundary, source-only TF-IDF adjacent-window cohesion detector (boundary at 371 seconds, novelty 0.9845); no GT was read. The S1 and S3 outputs were source-specific and fit the 128-token cap (98 and 72 words). S1 made 7 generator calls; S3 made 3. The local smoke output `rq2_tib_s1_s3_smoke.json` was removed on 2026-10-07; these historical figures can no longer be independently checked from that local artifact.
-
-This is an **engineering smoke**, not an S1-vs-S3 result. Its S3 input is a simple unsupervised lexical-cohesion baseline, not the registered learned C5 predictor. The common 8,000-token input ceiling and 128-token output ceiling were set; cumulative input usage across map/reduce calls differs and the local engine exposes only approximate counts. No quality metric, reference or human rating was run. Each one-record run took about 85 seconds, largely local model startup/inference.
-
-The smoke exposed a bug in `DeterministicAbstractiveEngine`: reduction prompts ended in `FINAL SUMMARY:`, and its parser extracted the empty text after that cue. The parser now takes the preceding map summaries, and the rerun produced source-based outputs for both arms. The legacy RQ2 benchmark runner remains invalid because it injects GT boundaries, synthetic references and preset hallucination rates.
+The prior one-item engineering output was already removed. Its measurements are withdrawn and are not part of the current evaluation workflow.
 
 ## Unresolved questions
 

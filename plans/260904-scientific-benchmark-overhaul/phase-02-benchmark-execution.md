@@ -8,6 +8,8 @@ dependencies: [1]
 
 # Phase 2: Comprehensive Benchmark Execution (Unimodal RQ0 + Multimodal RQ1-4 + Error Cascading)
 
+**Historical plan:** RQ1 chaptering, RQ2 summarization and dependent RQ4 result artifacts were withdrawn on 2026-10-07. Paths and preset thresholds below are archival tasks, not current results or execution instructions. Use `docs/BENCHMARK.md` for the active workflow.
+
 ## 1. Overview
 
 Thực thi lại toàn bộ các thực nghiệm khoa học theo phương pháp luận chuẩn tắc **Bottom-Up Empirical Evaluation** (từ thành phần cơ sở đến hệ thống hoàn chỉnh) phục vụ cho Luận văn Thạc sĩ và Bài báo khoa học. 
@@ -54,7 +56,7 @@ Phase 2 được cấu trúc thành 3 phân kỳ nối tiếp:
 
 #### RQ2 Targets (Hierarchical Summarization & Evidence Grounding):
 - **Tỷ lệ ảo giác (Hallucination Rate):**
-  - Mô hình thứ bậc văn bản đơn thuần $S_3$: Báo cáo trung thực tỷ lệ ảo giác là $27.87\%$ (do thiếu neo thị giác).
+  - Đo lại tỷ lệ claim không được nguồn hỗ trợ trên cohort và reference đã xác minh; không dùng tỷ lệ cũ.
   - Mô hình có neo chứng cứ slide $S_3\text{+ev}$ / $S_4$: Tỷ lệ ảo giác giảm sâu xuống **$\le 2.50\%$**.
 - **Chỉ số mật độ thông tin:** Báo cáo đồng thời: Độ dài bản tóm tắt (tokens), Số lượng mệnh đề (Claim Count), và Mật độ mệnh đề (Claim Density per 100 tokens).
 
@@ -185,7 +187,7 @@ Toàn bộ 20 tệp notebook cũ, rời rạc và trùng lặp trong `experiment
 - [ ] **RQ0-A:** Faster-Whisper Small GPU float16 đạt $\text{WER} \le 12.0\%$ (TED-LIUM v3) và $\text{RTF} \le 0.15$; DeepFilterNet3 cải thiện SNR $\ge 3.5\text{dB}$.
 - [ ] **RQ0-V:** PySceneDetect/DINOv2 đạt $\text{Collar F1}@2\text{s} \ge 0.8500$, Omission Rate $\le 5.0\%$; PaddleOCR đạt $\text{CER} \le 6.0\%$ với tốc độ $\ge 15\text{ FPS}$.
 - [ ] **RQ1:** $C_5$ đạt WindowDiff $\le 0.0950$, đánh bại $C_3$ ($0.1094$) có ý nghĩa thống kê ($p_{\text{adj}} < 0.01$); F1 $\pm 5\text{s} \ge 0.0800$.
-- [ ] **RQ2:** $S_3\text{+ev}$ duy trì tỷ lệ ảo giác $< 3.0\%$ (so với $S_3$ là $27.87\%$), với Claim Density $\ge 3.5$ claims / 100 tokens.
+- [ ] **RQ2:** Chốt cách chấm factual support, cohort và reference trước khi so sánh S3 với S3+ev; không dùng ngưỡng kết quả định trước.
 - [ ] **RQ3:** $Q_3$ RRF đạt tỷ lệ thu hẹp khoảng cách Oracle chính xác $78.8\%$ ($90.0\%$ điểm số tuyệt đối).
 - [ ] **RQ4:** Xác lập biểu đồ Pareto rõ ràng chứng minh $E_3$ vượt trội hơn $E_1$ và $E_4$ về tỷ lệ chất lượng trên chi phí tính toán.
 - [ ] **Phase 2C:** Hoàn thành bảng phân tích độ nhạy lan truyền lỗi chứng minh mô hình đa phương thức vượt trội khi có nhiễu đầu vào.

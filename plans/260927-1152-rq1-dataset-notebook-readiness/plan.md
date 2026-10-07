@@ -75,19 +75,17 @@ Evidence: `experiments/outputs/diagnostic/rq1_qualification/candidate_ledger.jso
 
 Decision (2026-09-27, user): keep RQ1 multimodal. YTSeg audio/text may remain a supporting comparison, but it does not replace the multimodal primary cohort. Seek AVLectures timed-TOC courses with independent video, chapter GT and rights evidence; do not run official selection or final test until course-disjoint splits and D2 gates pass.
 
-### New MIT001 local diagnostic evidence (2026-09-27)
+### MIT001 local diagnostic outputs withdrawn (2026-10-07)
 
 Paths in this section are relative to the nested `multimodal-lecture-summarizer/` app.
 
-`experiments/datasets/avlectures_mit001/run_local_diagnostic.py` ran 04a and 04b on 35 local MIT18.01JF07 MP4/SRT lecture pairs with AVLectures `segments_ts.txt` chapter GT. The run at `experiments/outputs/diagnostic/rq1_mit001_local_runs/20260927T103316Z` completed both notebooks and is validation-only. Its source receipt records a truncated gzip archive and rights review pending; the media audit has 26 pass and 9 review rows. All 35 units belong to one course, so this is not a course-disjoint D2 cohort or an official RQ1 result.
+The former MIT001 local diagnostic output trees were removed for reanalysis. Source and media qualification notes remain historical evidence; the cohort was one course and did not meet the independent-test requirement.
 
 The earlier OCW ledger's 35 found/30 unexcluded counts use a different source of GT: published OCW clip offsets. Its `lec11` exclusion does not apply to the AVLectures GT run; the two cohorts must be reported separately.
 
-Subsequent diagnostic run `experiments/outputs/diagnostic/rq1_mit001_local_runs/20260927T121111Z` completed 04a and 04b with exit code 0 on all 35 units. Scene and OCR input features are available for 35/35, bound to each source video; transcript+scene and transcript+OCR ablations ran. Visual caption, acoustic and all-modality ablations remain `not_run`; learned C5/C6 remain `not_run`. The frozen manifest and endpoint matrix mark `diagnostic_selection_eligible=true` and `scientific_selection_eligible=false`. This run is not an official RQ1 claim.
+The old 04a/04b score claims and per-video metrics are withdrawn. Requalify media, GT and group-safe split before comparing variants again.
 
-Paired diagnostic macro boundary F1 (±3 s): fixed-duration 0.0198, transcript 0.0294, transcript+scene 0.0486 (23 wins, 0 ties, 12 losses against transcript), transcript+OCR 0.0502 (13 wins, 2 ties, 20 losses). The OCR mean does not imply consistent per-video improvement. The OCR extractor sampled at most 12 frames per lecture. All 35 labels had appeared in the earlier pilot, so no result here is held-out. Inspect the per-lecture errors, especially the nine `review` media-audit rows, before changing extraction density or thresholds.
-
-Earlier feasibility check: the existing production `SceneDetector` decoded `ocw-18.01-f07-lec01_300k.mp4` and returned 138 scenes with the default content threshold and frame skipping. This preceded the source-bound 35-video diagnostic run above and is retained as chronology, not counted as a separate evaluated result.
+An earlier media feasibility check is historical chronology, not an evaluated chaptering result.
 
 ### Scope amendment: only 35 MIT001 videos available (2026-09-27)
 
@@ -99,7 +97,7 @@ Next execution order after the 35-video diagnostic: (1) resolve nine media-audit
 
 ### Current-state amendment — 2026-09-28
 
-The 2026-09-27 `not_run` description for MIT001 visual/acoustic/full fusion is historical. The [paired 35-video diagnostic](../../multimodal-lecture-summarizer/plans/reports/rq1-mit001-multimodal-260928-0909-paired-diagnostic-report.md) and [current diagnostic write-up](../../docs/results/MIT001_CHAPTERING_DIAGNOSTIC.md) show all seven 04b heuristic variants executed on the same 35 units; visual, acoustic and `all_modalities` now have real per-video results. Learned C5/C6 remain `not_run`. The [MIT001 rights/media audit](../../multimodal-lecture-summarizer/plans/reports/260928-0839-mit001-video-rights-media-audit-report.md) fixes an aggregate-only publication scope and retains all nine media `review` rows; it does not clear redistribution of source assets.
+The MIT001 paired diagnostic outputs and score reports were withdrawn on 2026-10-07 for reanalysis. Earlier `not_run` and completed labels in this historical plan are not current evidence. The [MIT001 rights/media audit](../../multimodal-lecture-summarizer/plans/reports/260928-0839-mit001-video-rights-media-audit-report.md) remains a source-qualification record; it does not clear redistribution of source assets.
 
 The [full 19,299-row YTSeg audit](../../multimodal-lecture-summarizer/plans/reports/research-260928-0936-ytseg-video-rights-channel-split-report.md) supersedes the 40+40 sample overlap statement above: 276 train/test channels overlap and 1,444/1,448 test rows belong to channels in train. Video rights are not cleared, and no `course_id` is available. The scoped [completion plan](../260928-0949-rq1-completion-after-ytseg-audit/plan.md) lists the remaining rights, split, D2 and official-run gates. Phase 2 of this readiness plan remains blocked for an official independent cohort; the completed MIT001 run remains a single-course diagnostic.
 

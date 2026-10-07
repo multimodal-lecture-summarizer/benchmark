@@ -11,8 +11,6 @@ from typing import Any
 import pytest
 
 from benchmarks.scripts import (
-    run_efficiency_pareto,
-    run_error_propagation_benchmark,
     run_keyframe_selection_benchmark,
     run_ocr_benchmark,
     run_scene_boundary_benchmark,
@@ -167,34 +165,3 @@ def test_group_02_dependency_propagation(tmp_path: Path) -> None:
     )
     assert any("keyframe.raw_predictions" in e for e in errs_02d)
 
-
-def test_07a_blocks_when_required_aggregates_missing(tmp_path: Path) -> None:
-    """07a runner fails before Pareto analysis when required upstream aggregates are missing."""
-    artifact_root = tmp_path / "artifacts"
-
-    # Direct runner negative check in isolated root with no aggregates
-    rc = run_efficiency_pareto.main(
-        _runner_args(artifact_root, "07a_efficiency_pareto", str(uuid.uuid4()))
-    )
-    assert rc == 1, "07a must return error code 1 when no aggregates are available"
-
-
-def test_07b_blocks_when_required_inputs_missing(tmp_path: Path) -> None:
-    """07b runner fails before kernel when required shortlist and raw predictions are missing."""
-    artifact_root = tmp_path / "artifacts"
-
-    rc = run_error_propagation_benchmark.main(
-        _runner_args(artifact_root, "07b_error_propagation", str(uuid.uuid4()))
-    )
-    assert rc == 1, "07b must return error code 1 when required inputs are missing"
-
-
-def test_07b_blocks_on_audio_only_dataset(tmp_path: Path) -> None:
-    """07b blocks on an audio-only fixture before requiring model inputs."""
-    artifact_root = tmp_path / "artifacts"
-    _seed_audio_only_dataset(artifact_root)
-
-    rc = run_error_propagation_benchmark.main(
-        _runner_args(artifact_root, "07b_error_propagation", str(uuid.uuid4()))
-    )
-    assert rc == 1, "07b must fail closed when dataset lacks required visual/scene capabilities"

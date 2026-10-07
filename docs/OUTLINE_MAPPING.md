@@ -24,8 +24,8 @@ Bảng này ánh xạ từng mục trong đề cương sang plan & code tương 
 | Multimodal / Video-Language | ✅ | Florence-2 (`visual_v2/florence_runtime.py`), Qwen3-VL trong RQ4 |
 | WER metric | ✅ diagnostic | [Báo cáo ASR `01c`](results/asr-architecture-evaluation-2026-10-05.md): sáu candidate hoàn tất, Qwen3-ASR 0.6B validation WER 3,91%; native test không phải holdout độc lập. |
 | **Precision / Recall / mAP (object detection)** | 🆕 ✅ | Sẽ đo trong `benchmarks/scripts/run_object_detection_benchmark.py` |
-| ROUGE / BERTScore | ✅ | `reports/rq2_benchmark_results.json` |
-| Thời gian xử lý, success rate | ✅ | `reports/rq4_efficiency_summary.json` |
+| ROUGE / BERTScore | 🟡 | Metric dự kiến; kết quả tóm tắt cũ đã rút để phân tích lại. |
+| Thời gian xử lý, success rate | 🟡 | Bảng RQ4 cũ đã rút vì phụ thuộc kết quả RQ1/RQ2; cần đo lại trên cùng cohort. |
 | Python + ReactJS | ✅ | Backend FastAPI, Frontend Vite/React |
 | **PostgreSQL** | ✅ | `backend/app/core/config.py:37-41` (PSQL w/ SQLite fallback) |
 
@@ -101,8 +101,8 @@ Bảng này ánh xạ từng mục trong đề cương sang plan & code tương 
 | Số video thành công/thất bại | ✅ | `JobStatusDistribution` |
 | Thống kê độ dài video & thời gian | 🟡 | Có duration, chưa có dashboard rõ |
 | **Đánh giá chất lượng transcript** | 🟡 | [Kết quả ASR `01c`](results/asr-architecture-evaluation-2026-10-05.md) có WER/CER sáu candidate; chưa có dashboard tích hợp và scientific eligibility còn false. |
-| **Đánh giá chất lượng tóm tắt** | 🟡 | ROUGE có trong `rq2_*`, cần aggregate dashboard |
-| **So sánh chất lượng giữa các phương pháp** | 🟡 | RQ1/RQ2/RQ3 JSON có, cần UI comparison table |
+| **Đánh giá chất lượng tóm tắt** | 🟡 | Chưa có kết quả hiện hành; cần đánh giá lại trên cohort và tham chiếu đã xác minh. |
+| **So sánh chất lượng giữa các phương pháp** | 🟡 | Kết quả RQ1/RQ2 cũ đã rút; cần chấm lại trước khi xây bảng so sánh. |
 | **Thống kê objects theo label** | 🆕 ✅ | `/api/v1/objects/stats/label-distribution` |
 
 ---
@@ -132,5 +132,5 @@ Phần còn lại (Phase 2 của plan 260921):
 
 - **Plan chi tiết**: `plans/260921-outline-alignment-overhaul/plan.md`
 - **Benchmark script**: `benchmarks/scripts/run_object_detection_benchmark.py`
-- **Validation gate (đã sửa)**: `reports/validation_gate_summary.md`
+- **Validation gate lịch sử**: `reports/validation_gate_summary.md` đã rút các kết luận RQ1/RQ2 cũ; không dùng làm bằng chứng kết quả hiện hành.
 - **Architecture**: `docs/ARCHITECTURE.md` (đã thêm Stage 4b — Object Detection)

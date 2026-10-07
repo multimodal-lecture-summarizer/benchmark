@@ -274,47 +274,12 @@
       "source": "reports/rq0v_visual_results.json"
     },
     "RQ1": {
-      "title": "Multimodal Temporal Representation & Chaptering",
-      "notebook": "experiments/notebooks/03_multimodal_chaptering_benchmark.ipynb",
-      "checkpoint": "checkpoints/c5_real.pt",
-      "evaluated_models": [
-        "C1 (Text-only)",
-        "C2 (Acoustic)",
-        "C3 (Visual)",
-        "C4 (OCR)",
-        "C5 (Cross-Attention Proposed)",
-        "C6 (Late Fusion)"
-      ],
-      "primary_metrics": {
-        "C1_window_diff": 0.2304,
-        "C3_window_diff": 0.1939,
-        "C5_window_diff": 0.136,
-        "C5_window_diff_bound": "<= 0.1500 (loose test threshold; plan target <= 0.0950 not yet achieved)",
-        "C5_collar_f1_5s": 0.25,
-        "C5_pk": 0.136
-      },
-      "statistical_significance": "Holm-Bonferroni corrected p-values NOT significant on N=20 videos (3 seeds) due to high std; plan claim of p<0.01 is incorrect vs raw data"
+      "status": "withdrawn_pending_reanalysis",
+      "reason": "Prior chaptering/summarization results and dependent RQ4 comparison were withdrawn on 2026-10-07."
     },
     "RQ2": {
-      "title": "Hierarchical Lecture Summarization & Evidence Grounding",
-      "notebook": "experiments/notebooks/04_hierarchical_summarization_benchmark.ipynb",
-      "evaluated_models": [
-        "S0 (Flat)",
-        "S1 (MapReduce)",
-        "S2 (Oracle)",
-        "S3 (Text Hierarchy)",
-        "S3+ev (Slide Grounded)",
-        "S4 (Multimodal)"
-      ],
-      "primary_metrics": {
-        "S1_hallucination_pct": 15.94,
-        "S3_hallucination_pct": 27.87,
-        "S3_ev_hallucination_pct": 2.39,
-        "S4_hallucination_pct": 2.39,
-        "S3_ev_claim_density": 6.94,
-        "S3_ev_rouge_l": 0.1143,
-        "S4_claim_density": 0.67
-      }
+      "status": "withdrawn_pending_reanalysis",
+      "reason": "Prior chaptering/summarization results and dependent RQ4 comparison were withdrawn on 2026-10-07."
     },
     "RQ3": {
       "title": "Evidence Retrieval & Grounded QA",
@@ -335,23 +300,8 @@
       }
     },
     "RQ4": {
-      "title": "Controlled Efficiency, Pareto Frontier & Error Cascading",
-      "notebook": "experiments/notebooks/06_efficiency_pareto_error_cascading.ipynb",
-      "systems": [
-        "E1 (Text)",
-        "E2 (Structured)",
-        "E3 (Proposed Multimodal)",
-        "E4 (VLM 4B)"
-      ],
-      "primary_metrics": {
-        "E3_latency_sec": 18.3,
-        "E3_vram_mb": 5420.0,
-        "E3_pareto_optimal": true,
-        "E3_dominates": [
-          "E4"
-        ],
-        "asr_noise_resilience_factor": 2.7
-      }
+      "status": "withdrawn_pending_reanalysis",
+      "reason": "Prior chaptering/summarization results and dependent RQ4 comparison were withdrawn on 2026-10-07."
     }
   }
 }
