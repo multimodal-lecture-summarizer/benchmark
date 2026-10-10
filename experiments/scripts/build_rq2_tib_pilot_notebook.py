@@ -9,7 +9,8 @@ def build():
     names = ['rq2_tib_benchmark', 'rq2_tib_benchmark_dataset', 'rq2_tib_benchmark_bundle',
              'rq2_tib_benchmark_pair', 'rq2_tib_benchmark_results', 'rq2_tib_benchmark_metrics',
              'rq2_controlled_validation', 'rq2_local_hf_backend', 'rq2_tib_pilot',
-             'rq2_tib_pilot_runtime', 'rq2_tib_pilot_cohort', 'rq2_tib_pilot_forecast', 'rq2_tib_pilot_data']
+             'rq2_tib_pilot_runtime', 'rq2_tib_pilot_cohort', 'rq2_tib_pilot_forecast', 'rq2_tib_pilot_data',
+             'rq2_tib_pilot_display']
     sources = {name:(root/'experiments/scripts'/f'{name}.py').read_text(encoding='utf-8') for name in names}
     cells = []
     def md(source):
@@ -29,6 +30,9 @@ Otherwise this notebook reuses the existing full TIB cache, or fetches the pinne
 the existing integrated preparation entry point. No source truncation. Previously inspected references are not unseen.
 The two-hour generation limit is a soft stop between calls. Colab disconnection/idle expiry can interrupt a run;
 Drive checkpoints preserve predictions, but resumed timings cannot justify a uniform runtime forecast.
+All review information is rendered in notebook output: coverage, per-record timings/tokens/VRAM,
+paired metrics, failures and the runtime forecast. Save this notebook with outputs or copy the final report;
+you do not need to inspect/export individual JSON files. JSON checkpoints remain internal resume evidence.
 ''')
     code('''import time, subprocess, sys
 SESSION_START = time.perf_counter()
@@ -58,6 +62,7 @@ from experiments.scripts.rq2_tib_benchmark_bundle import load_benchmark_bundle, 
 from experiments.scripts.rq2_tib_benchmark import BenchmarkConfig
 from experiments.scripts.rq2_tib_pilot import run_pilot, evaluate_pilot, forecast_receipt
 from experiments.scripts.rq2_tib_pilot_runtime import code_identity
+from experiments.scripts.rq2_tib_pilot_display import show_pilot_report
 print('Code identity:', code_identity()['sha256'])
 ''')
     code('''from transformers import AutoTokenizer
@@ -125,7 +130,7 @@ receipt = run_pilot(backend, bundle, design, output_dir=RUN,
     wall_limit_seconds=7200, on_event=progress)
 display(pd.DataFrame([{'id':r['id'], 'stratum':r['length_stratum'], 'status':r['status'],
     **{a+'_seconds':r.get('arms',{}).get(a,{}).get('wall_seconds') for a in ('S1','S3')}} for r in receipt['rows']]))
-print(receipt['counts'])
+_ = show_pilot_report(receipt, forecast=forecast_receipt(receipt), dispatch_path=RUN/'dispatches.jsonl')
 ''')
     md('''## Score saved predictions after releasing the generator
 CUDA failure: restart the runtime before further GPU work. Keep all receipts. Do not silently lower batch size.
@@ -143,22 +148,23 @@ if any(any(word in str(r).lower() for word in ('cuda', 'out of memory', 'fresh_r
     raise RuntimeError('Restart runtime after CUDA failure; preserve failed pilot and do not forecast it')
 from experiments.scripts.rq2_tib_benchmark_metrics import SemanticScorer
 metric_started = time.perf_counter()
-scorer = SemanticScorer(device='cuda', batch_size=16).load()
+try:
+    scorer = SemanticScorer(device='cuda', batch_size=16).load()
+except Exception as exc:
+    print('Semantic scorer initialization failed:', type(exc).__name__, str(exc))
+    show_pilot_report(receipt, forecast=forecast_receipt(receipt), dispatch_path=RUN/'dispatches.jsonl')
+    raise
 metric_initialization_seconds = time.perf_counter()-metric_started
 receipt = evaluate_pilot(receipt, bundle, scorer, output_dir=RUN,
     metric_initialization_seconds=metric_initialization_seconds)
 print(receipt['counts'])
 ''')
-    code('''forecast = forecast_receipt(receipt)
+    code('''# This output cell can reopen saved evidence without regenerating summaries.
+receipt = json.loads((RUN/'pilot-receipt.json').read_text())
+forecast = forecast_receipt(receipt)
 (RUN/'runtime-forecast.json').write_text(json.dumps(forecast, indent=2))
-display(pd.DataFrame([{'id':r['id'], 'status':r['status'], 'stratum':r['length_stratum'],
-    'scoring_seconds':r.get('scoring_seconds'), 'checkpoint_seconds':r.get('checkpoint_seconds'),
-    **{f'{a}_{k}':r.get('arms',{}).get(a,{}).get(k) for a in ('S1','S3') for k in
-       ('wall_seconds','prompt_tokens','output_tokens','generation_request_count','peak_gpu_allocated_bytes')}
-    } for r in receipt['rows']]))
-print(json.dumps(forecast, indent=2))
-print('Return pilot-receipt.json, dispatches.jsonl, runtime-forecast.json and context-preflight.json for review.')
-print('No cohort/protocol frozen. Full 8,769-pool forecast is a scenario, not an execution instruction.')
+report = show_pilot_report(receipt, forecast=forecast, dispatch_path=RUN/'dispatches.jsonl')
+print('Save this notebook with outputs, or copy the report above into chat. No separate JSON export needed.')
 ''')
     md('''## Next decision after receipts
 Compare measured costs across short/medium/long, including initialization, both arms, semantic scoring,
@@ -168,6 +174,7 @@ The observed min/max scenario range is not a statistical confidence interval; 30
 Any extra model/configuration/repetition requires separate measured cost. Reduce extensions first if over 12 hours.
 Choose evaluation IDs without seeing comparative scores, review dependence groups, then freeze IDs and protocol.
 Future paired uncertainty uses video/dependence groups, never chunks as independent samples.
+The printed report is the review handoff; checkpoints stay on Drive for resume/provenance.
 ''')
     target = root/'experiments/notebooks/rq2-tib-technical-pilot-colab.ipynb'
     notebook = dict(cells=cells, metadata={'kernelspec':{'display_name':'Python 3','language':'python','name':'python3'},
