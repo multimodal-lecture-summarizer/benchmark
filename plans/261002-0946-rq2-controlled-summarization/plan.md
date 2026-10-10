@@ -2,13 +2,17 @@
 
 ## Active execution decision — 2026-10-10
 
-**Run the development technical pilot first; do not launch the 8,769-record benchmark yet.** Use [rq2-tib-technical-pilot-colab.ipynb](../../experiments/notebooks/rq2-tib-technical-pilot-colab.ipynb) on Colab GPU, fresh root `MyDrive/RQ2_TIB_PILOT_20261010`. Nine train IDs are selected by min/middle/max source-length ranks within three numeric strata, without comparative scores. CPU tokenization is complete; GPU generation and semantic evaluation are **not executed**. [Technical audit and handoff](../reports/rq2-pilot-261010-1632-technical-design-report.md).
+**Decision TIB-RQ2-RQ4-120-20261010: approve a target of 120 evaluation records, 40 short / 40 medium / 40 long, one configuration and one repetition, paired S1/S3 (240 planned summaries).** The nine-record train development pilot has executed: 18/18 arms complete, 9/9 paired scores for each of three metrics, zero failures. Do not rerun it. Formal evaluation remains **0 records**, with **zero selected formal IDs** and **cohort/protocol NOT FROZEN**. The [canonical decision](../../experiments/registry/datasets/tib-rq2-rq4-120-decision-261010.json) supersedes full-pool execution and the historical 12-item valid protocol.
+
+On the measured T4 / map-batch-2 profile, the 120-record planning scenario is **5.00 hours central / 8.37 hours upper scenario**, including initialization, both arms, preparation, three metrics, checkpoints and 30% margin. These are nonprobability cost scenarios, not a runtime guarantee, confidence interval or statistical-power justification. The 150-record upper scenario (10.45h) leaves less margin; 180 (12.53h) exceeds the 12-hour objective. Full 8,769 execution (central 360.35h) is superseded as the default. Retain all 8,769 candidates, including 900 flagged records, as the selection pool.
+
+**Notebook follow-up (2026-10-10):** the integrated notebook now displays the approved decision in its first output and fails closed before installation/data/model execution. Full-pool auto-preparation was removed from its preparation cell; batch size is fixed at 2. Historical outputs remain marked as historical. This is a blocked handoff, not a runnable 120-ID benchmark: implement reviewed cohort/hash/group/scorer binding after freeze. The executed pilot notebook remains byte-for-byte unchanged.
 
 Actual S3 predicts at most five spaced boundaries using adjacent-window lexical Jaccard novelty, forms boundary-constrained chunks, then flattens them into the same map/reduce prompts as S1. There is no separate hierarchy-aware synthesis layer to ablate. S1/S3 answers a pipeline comparison; it cannot isolate boundary placement from chunk-count/length changes. A matched-count boundary-placement control would be a separately designed extension requiring its own timing. Oracle chapters and creator abstracts never enter structure prediction/generation.
 
 Pilot profile: existing pinned Qwen2.5-1.5B checkpoint/tokenizer, greedy seed 42, 512-token source chunks, map batch 2, common map-output allocation `96 * max(n_S1,n_S3)` distributed by exact divmod, final cap 384, shared permissive cumulative prompt cap. These are **equal allocated output caps**, not equal actual total tokens or padded compute. Structure uses zero LLM tokens; CPU/tokenization cost is included in S3 segmentation. Actual input/output tokens are logged; unknown failed usage stays null. No automatic retry. Empty output fails the arm. Two-hour generation deadline is a soft stop between dispatches, not a hard per-call timeout. CUDA failure stops further GPU dispatches. S1/S3 order alternates across selected IDs.
 
-Freeze remains pending: measured receipts → size/extension decision within 12 hours → source-dependence review → locked evaluation IDs/protocol. All 8,769 candidates and 900 flagged candidates remain in the preparation pool. No hard/long/failed ID is removed by outcome. Development pilot IDs cannot become confirmatory evaluation IDs. Creator valid/test references were already inspected: future evaluation is a declared exposed-reference cohort, never an unseen test.
+Freeze remains pending: source-dependence review → declared evaluation split and deterministic score-independent selection → locked 120 evaluation IDs/source/reference hashes → frozen scoring, denominators, failure/timeout rules and group-analysis protocol. Length cutpoints are 4,271 and 7,142 tokens (inclusive upper bounds); formal IDs remain unselected. The pilot two-hour soft deadline is historical pilot configuration; formal deadline policy remains to be frozen. All 8,769 candidates and 900 flagged candidates remain in the preparation pool. No hard/long/failed ID is removed by outcome. Development pilot IDs cannot become confirmatory evaluation IDs. Creator valid/test references were already inspected: future evaluation is a declared exposed-reference cohort, never an unseen test.
 
 Primary metric: `unicode_word_lcs_rouge_l_f1_v1`, Unicode `\b\w+\b` tokens, casefold, no stemming, word LCS, `2*LCS/(reference_words+hypothesis_words)`, macro across records. Future reporting uses paired per-record S3−S1 on the successful intersection, alongside all selected IDs and per-arm success/failure coverage. Do not impute failed quality as zero. Secondary BERTScore and source SBERTScore stay separate. Pilot quality does not select IDs/configurations by S3 wins.
 
@@ -22,7 +26,11 @@ Prepare the complete **8,769-record TIB pool** across all creator splits, genres
 
 The [executed EDA](../../experiments/notebooks/diagnostics/rq2-tib-all-splits-eda-colab.ipynb) has 10 successful code cells: 9,103 source records, 9,002 structurally usable transcripts, eight empty abstracts and 225 reused-abstract records excluded. All 900 flagged candidates remain included.
 
-## Integrated benchmark notebook
+## Historical full-pool execution instructions — superseded
+
+The instructions and default all-pool entry point below document the earlier implementation. **Do not Run all for formal evaluation:** first bind the runner to the reviewed 120-ID cohort, verify count/identity guards and freeze its protocol. No such execution is authorized by this decision.
+
+### Integrated benchmark notebook
 
 Open [rq2-tib-benchmark-colab.ipynb](../../experiments/notebooks/rq2-tib-benchmark-colab.ipynb), choose GPU, and Run all. The benchmark calls `load_or_prepare_data` itself before generation: cache present means reload; cache absent means load all pinned splits, process and select the complete pool, then save it. No separate preparation notebook run is required. One workflow handles preprocessing, S1/S3 generation, ROUGE-L, BERTScore, source-based SBERTScore, saved predictions and resume.
 
@@ -73,7 +81,10 @@ Report per-arm segmentation seconds (S3 includes boundary prediction), synchroni
 - [x] Reusable preparation and compressed dataset save/reload code implemented.
 - [x] Integrated benchmark entry point automatically calls preprocessing, generation and scoring.
 - [x] Three metrics, per-metric paired bootstrap, per-arm costs and independent evaluation resume implemented.
-- [ ] Execute the full paired benchmark notebook on Colab.
+- [x] Execute nine-record development pilot: 18/18 arms and 9/9 paired scores for all three metrics.
+- [x] Approve evaluation scale: 120 records, 40 per length stratum.
+- [ ] Review dependence groups, declare split, select and freeze 120 formal IDs and protocol.
+- [ ] Bind notebook inputs/count guards to frozen IDs, then execute the paired evaluation on Colab.
 
 Historical [20-item audit](../reports/rq2-valid-dataset-audit-261002-report.md), [70-item screen](../reports/tib-cohort-review-261009-0923-benchmark-readiness-report.md) and [broad-pool inspection](../reports/tib-diverse-pool-261009-0943-benchmark-scope-report.md) remain records of earlier work. Their manual qualification requirements do not gate the current automatic study.
 

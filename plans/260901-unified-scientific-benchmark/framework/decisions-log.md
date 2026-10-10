@@ -1,4 +1,12 @@
-## 2026-10-10 — TIB technical pilot before evaluation freeze
+## 2026-10-10 — TIB-RQ2-RQ4-120-20261010: approved scale, freeze pending
+
+**Decision:** user approved 120 formal evaluation records: 40 short / 40 medium / 40 long, paired S1/S3, one configuration and one repetition (240 summaries). [Canonical decision and evidence hashes](../../../experiments/registry/datasets/tib-rq2-rq4-120-decision-261010.json). Development pilot is complete: selected/observed/label-valid 9, media-valid 0 (text-only), evaluated 9 per metric, failed 0; 18/18 arms. Its nine train IDs are excluded from formal evaluation.
+
+**Reason:** measured T4 batch-2 planning cost is 5.00h central / 8.37h upper scenario including initialization, both arms, all three metrics and 30% margin. 150 records reaches 10.45h upper; 180 reaches 12.53h. These are cost scenarios, not guarantees, confidence bounds or power claims. Full 8,769 default execution and the older 12-item valid protocol are superseded; preserve historical artifacts and the 8,769-candidate / 900-flagged pool.
+
+**Pending:** verified source/dependence review, evaluation split and score-independent deterministic ID selection, source/reference hashes, scorer/denominator/failure/timeout/group-analysis freeze and 120-bound input/count guards. Formal selected 0, evaluated 0; cohort/protocol not frozen; no benchmark started. Creator references already observed; no unseen-test or factual video-summary-quality claim. Endpoint: text-only creator-abstract agreement plus same-record pipeline costs. Pilot scores must not select IDs/configurations by S3 wins.
+
+## Historical 2026-10-10 — TIB technical pilot before evaluation freeze (pending status superseded)
 
 User-approved scope: RQ2 creator-abstract agreement and same-record RQ4 costs; OCR follows. Do not reopen unrelated media HOLDs. Audit confirms S3 changes boundary-constrained chunking, using S1's shared flattened map/reduce. Equal allocated map/final output caps do not mean equal actual tokens. Prepare nine source-length-selected train records, retain all failures, counterbalance arm order, record dispatches/VRAM/tokens and all scorers on Colab. CPU preparation executed; GPU pilot and <=12h feasibility unverified. Evaluation IDs/protocol and grouped uncertainty remain pending. Full 8,769-pool execution instruction is superseded by pilot-first. Historical results remain historical.
 
