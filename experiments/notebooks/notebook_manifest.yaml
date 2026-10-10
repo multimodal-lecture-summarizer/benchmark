@@ -11,7 +11,12 @@ notebooks: []
 development_pilots:
 - path: experiments/notebooks/rq2-tib-technical-pilot-colab.ipynb
   purpose: source_length_selected_train_timing_RQ2_RQ4
-  model_execution_status: not_executed
+  model_execution_status: executed_9_pairs_three_metrics
+  selected_records: 9
+  completed_arms: 18
+  paired_scored_each_metric: 9
+  failed: 0
+  execution_decision: experiments/registry/datasets/tib-rq2-rq4-120-decision-261010.json
   cpu_preparation_receipt: experiments/outputs/rq2_tib_pilot_261010/cpu-preparation-receipt.json
   cohort_frozen: false
   official_benchmark: false
@@ -65,3 +70,18 @@ dataset_eda_notebooks:
   executed_followup_cells: 1
   cohort_frozen: false
   status: HOLD
+
+# Scale approved; executable formal notebook is blocked until cohort/protocol binding.
+pending_evaluation_notebooks:
+- dataset: tib
+  path: experiments/notebooks/rq2-tib-benchmark-colab.ipynb
+  execution_decision: experiments/registry/datasets/tib-rq2-rq4-120-decision-261010.json
+  status: BLOCKED_PENDING_COHORT_AND_PROTOCOL_FREEZE
+  target_records: 120
+  target_strata: {short: 40, medium: 40, long: 40}
+  formal_selected: 0
+  formal_evaluated: 0
+  cohort_frozen: false
+  protocol_frozen: false
+  benchmark_execution_enabled: false
+  historical_outputs_preserved: true

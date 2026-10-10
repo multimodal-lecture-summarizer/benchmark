@@ -30,7 +30,7 @@ local_snapshot_fingerprint: "e51a4a2a93f32b22ca1ddfa13bc58c4f97fefe5c1134badf11c
 
 # --- Rights (adjudicated 2026-09-25) ---
 rights: "CC BY-NC-ND 3.0 — non-commercial academic benchmark only; no redistribution of audio"
-access_status: "available"
+access_status: "unavailable"  # 2026-10-10: original Arrow absent; pinned builder's media host returns 401
 leakage_exception: null    # speaker_id and talk_id are present; no exception needed
 
 # --- Data root ---
@@ -73,3 +73,16 @@ ground_truth:
 
 # --- Fallback ---
 fallback_dataset: null
+
+# Historical D1/D2 pilot estimates above do not qualify the current full corpus.
+current_qualification:
+  reviewed_at: "2026-10-10"
+  status: "HOLD"
+  cohort_frozen: false
+  original_arrow_restored: false
+  retained_diagnostic_selected: 50
+  retained_diagnostic_label_valid: 42
+  retained_diagnostic_ignore_markers: 8
+  full_corpus_media_audit_completed: false
+  native_test_unseen: false
+  receipt: "experiments/outputs/dataset_qualification_261010/tedlium3-qualification-receipt.json"

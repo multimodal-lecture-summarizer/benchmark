@@ -1,5 +1,7 @@
 # TIB bounded validation benchmark protocol — frozen before generation
 
+> **Superseded execution policy — 2026-10-10.** This 12-item valid-only protocol, its length caps and author-selection rules are historical and superseded for future execution. Preserve its original manifest and freeze record as historical evidence. Current approved scale: 120 (40/40/40); formal IDs and protocol remain unfrozen. Do not reuse this cohort as the current plan. See [current decision](../../experiments/registry/datasets/tib-rq2-rq4-120-decision-261010.json).
+
 ## Claim and evidence boundary
 
 This run compares **S1 fixed chunks** with **S3 source-only predicted hierarchy** on the same complete transcript segments and the same Qwen2.5-1.5B-Instruct checkpoint. The primary endpoint is ROUGE-L F1 **agreement with the creator-provided abstract**. The abstract is neither independently checked factual ground truth nor a verified video-summary reference. The released TIB test abstracts were inspected in earlier EDA, so no unseen-test claim is made. This run uses creator `valid` only, does not train or tune on those abstracts, and makes no population or lecture-domain performance claim.

@@ -1,5 +1,7 @@
 # TIB RQ2/RQ4 — technical audit and Colab pilot handoff
 
+> **Superseded execution policy — 2026-10-10.** The GPU-pending status below is historical. The saved nine-record notebook now completes 18/18 arms and all three paired metrics (9/9 each), zero failures. Approved evaluation scale: 120 (40/40/40); IDs/protocol remain unfrozen. See [current decision](../../experiments/registry/datasets/tib-rq2-rq4-120-decision-261010.json).
+
 Date: 2026-10-10. Status: **CPU preparation verified; GPU pilot NOT EXECUTED; evaluation cohort/protocol NOT FROZEN.** No local model inference, large benchmark, or unrelated dataset recovery was started.
 
 ## Scientific scope and actual mechanism
@@ -77,11 +79,11 @@ Length-rank probes are nonprobability technical scenarios, not unbiased populati
 ## Delivery and verification
 
 - Notebook: `experiments/notebooks/rq2-tib-technical-pilot-colab.ipynb`; seven code cells, all unexecuted GPU cells explicitly blank.
-- Builder: `build_rq2_tib_pilot_notebook.py`; embeds 13 current modules so uncommitted local code is reproducible on Colab without relying on remote Git state.
+- Builder: `build_rq2_tib_pilot_notebook.py`; embeds 14 current modules (including the notebook display helper) so uncommitted local code is reproducible on Colab without relying on remote Git state.
 - New modules: `rq2_tib_pilot.py`, `rq2_tib_pilot_runtime.py`, `rq2_tib_pilot_data.py`, `rq2_tib_pilot_cohort.py`, `rq2_tib_pilot_forecast.py`.
 - Shared pair module adds optional arm order/failure continuation; defaults preserve existing caller behavior.
 - Tests: `test_rq2_tib_pilot_design.py`, `test_rq2_tib_pilot_runtime.py`, plus existing cost/map-batching/stage-logging suites: **52 passed in 0.94 s, exit 0**. Earlier runs emitted an ignored Windows pyreadline destructor OSError after exit 0; the final run exited cleanly. No test failed.
-- Parsed all seven notebook code cells and 13 embedded modules; embedded source matches current files. ZIP CRC verified. These checks do not establish Colab dependency installation or GPU success.
+- Parsed all seven notebook code cells and 14 embedded modules; embedded source matches current files. ZIP CRC verified. These checks do not establish Colab dependency installation or GPU success.
 - Updated owning RQ2 plan, master evidence map, decision log, benchmark README, claim register and notebook manifest. Existing EDA outputs/historical scores preserved. Formal grouped bootstrap and final cohort are pending, not falsely marked implemented/frozen.
 
 ## Run on Colab
@@ -89,7 +91,7 @@ Length-rank probes are nonprobability technical scenarios, not unbiased populati
 1. Extract `experiments/outputs/rq2_tib_pilot_261010/rq2-tib-technical-pilot-colab.zip`.
 2. Upload its `data` directory into **`MyDrive/RQ2_TIB_PILOT_20261010/data`**. It contains nine prepared records, design and full-pool token-length ledger, not another full-text copy of 8,769 records.
 3. Open the enclosed notebook in Colab, choose GPU, Run all. Use a fresh root; never run two sessions writing the same result directory. Changed configuration/code/hardware requires a new result directory.
-4. Return `pilot-run-v1/pilot-receipt.json`, `dispatches.jsonl`, `runtime-forecast.json`, and root `context-preflight.json` for review. Drive checkpoints survive browser closure, but runtime idle/disconnection can interrupt execution. Reopen metric stage using saved predictions; do not count resumed costs as a fresh uniform pilot.
+4. Save the executed notebook with outputs or copy its rendered report into chat. Coverage, per-ID/per-arm time/tokens/VRAM, metrics, failures and forecast are printed directly; no separate JSON export is required. JSON receipts/logs remain internal checkpoints for resume/provenance. Drive checkpoints survive browser closure, but runtime idle/disconnection can interrupt execution. Reopen metric stage using saved predictions; do not count resumed costs as a fresh uniform pilot.
 
 ## Unresolved decisions
 

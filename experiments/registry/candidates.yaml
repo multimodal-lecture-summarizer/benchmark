@@ -10,117 +10,110 @@ last_updated: "2026-09-21"
 candidates:
 
   # ==========================================================================
-  # RQ0-A: Audio ASR (6 candidates)
+  # RQ0-A: Audio ASR (6 evaluated architecture candidates)
   # ==========================================================================
 
-  - id: RQ0_A.A0_WhisperBase
+  - id: RQ0_ARCH.A0_WhisperBase
     task: RQ0_A
-    display_name: "Whisper Base (CPU baseline)"
+    display_name: "Whisper Base (Faster-Whisper, T4 FP16)"
     model_class: faster_whisper.WhisperModel
     model_kwargs:
-      model_size: base
-      device: cpu
-      compute_type: int8
       model_repo: Systran/faster-whisper-base
       revision: ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66
-    required_features: [audio.wav]
-    compute_budget:
-      max_vram_mb: 0
-      max_latency_ms: 30000
-    family: transformer_aser
-    reference_paper: "https://arxiv.org/abs/2212.04356"
-    tags: [asr, cpu, baseline]
-
-  - id: RQ0_A.A1_FasterWhisperSmall_GPU
-    task: RQ0_A
-    display_name: "Faster-Whisper Small (GPU float16)"
-    model_class: faster_whisper.WhisperModel
-    model_kwargs:
-      model_size: small
       device: cuda
       compute_type: float16
-      model_repo: Systran/faster-whisper-small
-      revision: 2ec96c5472da50d38d40c0cfe0602af2e94b4c8a
+      decode: {language: en, beam_size: 5}
     required_features: [audio.wav]
     compute_budget:
       max_vram_mb: 2048
       max_latency_ms: 10000
-    family: transformer_aser
-    reference_paper: "https://github.com/guillaumekln/faster-whisper"
-    tags: [asr, gpu, baseline, primary]
+    family: whisper_encoder_decoder
+    reference_paper: "https://arxiv.org/abs/2212.04356"
+    tags: [asr, gpu, baseline]
 
-  - id: RQ0_A.A2_DistilWhisper
+  - id: RQ0_ARCH.A1_Wav2Vec2CTC
     task: RQ0_A
-    display_name: "Distil-Whisper (distilled small)"
-    model_class: transformers.WhisperForConditionalGeneration
+    display_name: "Wav2Vec2 Large 960h (CTC)"
+    model_class: transformers.Wav2Vec2ForCTC
     model_kwargs:
-      model_name: distil-whisper/distil-small.en
+      model_repo: facebook/wav2vec2-large-960h-lv60-self
+      revision: b91e708eeb1a28886fdcf9906f8a7c49d0baae24
       device: cuda
-      torch_dtype: float16
-      revision: 618c8e50d9ac2ff79ea122f6650514ca35fc9f02
-      processor_revision: f0c287fed55f3e595d75cb09ae0738353c098eb0
     required_features: [audio.wav]
     compute_budget:
-      max_vram_mb: 2048
+      max_vram_mb: 3072
       max_latency_ms: 8000
-    family: distilled_transformer
-    reference_paper: "https://arxiv.org/abs/2311.00430"
-    tags: [asr, gpu, distilled]
+    family: ssl_encoder_ctc
+    reference_paper: "https://arxiv.org/abs/2006.11477"
+    tags: [asr, gpu, ctc]
 
-  - id: RQ0_A.A3_FasterWhisperMedium_GPU
+  - id: RQ0_ARCH.A2_FastConformerCTC
     task: RQ0_A
-    display_name: "Faster-Whisper Medium (GPU float16)"
-    model_class: faster_whisper.WhisperModel
+    display_name: "NVIDIA FastConformer Large (CTC)"
+    model_class: nemo.collections.asr.models.EncDecCTCModelBPE
     model_kwargs:
-      model_size: medium
+      model_repo: nvidia/stt_en_fastconformer_ctc_large
+      revision: 330c1b6694fed5ae3797bdbca754a315fa382df7
       device: cuda
-      compute_type: float16
-      model_repo: Systran/faster-whisper-medium
-      revision: 4d9f76bb96174a5625e9ed85e89be563d98d528c
+    required_features: [audio.wav]
+    compute_budget:
+      max_vram_mb: 4096
+      max_latency_ms: 10000
+    family: conformer_ctc
+    reference_paper: "https://arxiv.org/abs/2305.05084"
+    tags: [asr, gpu, conformer, ctc]
+
+  - id: RQ0_ARCH.A3_FastConformerRNNT
+    task: RQ0_A
+    display_name: "NVIDIA FastConformer Large (RNNT)"
+    model_class: nemo.collections.asr.models.EncDecRNNTBPEModel
+    model_kwargs:
+      model_repo: nvidia/stt_en_fastconformer_transducer_large
+      revision: 3a4e74f2585fc5b1258d58eed640faf5322423ed
+      device: cuda
     required_features: [audio.wav]
     compute_budget:
       max_vram_mb: 5120
-      max_latency_ms: 20000
-    family: transformer_aser
-    reference_paper: "https://github.com/guillaumekln/faster-whisper"
-    tags: [asr, gpu, larger]
+      max_latency_ms: 12000
+    family: conformer_transducer
+    reference_paper: "https://arxiv.org/abs/2305.05084"
+    tags: [asr, gpu, conformer, rnnt]
 
-  - id: RQ0_A.A4_WhisperX
+  - id: RQ0_ARCH.A4_ParaformerEN
     task: RQ0_A
-    display_name: "WhisperX (wav2vec2 alignment)"
-    model_class: whisperx.load_model
+    display_name: "Paraformer English (non-autoregressive)"
+    model_class: funasr.Paraformer
     model_kwargs:
-      model_name: small
+      model_repo: funasr/paraformer-en
+      revision: d043d60434a65ae49b2b2462a09660049871b8e9
       device: cuda
-      compute_type: float16
-      model_repo: Systran/faster-whisper-small
-      revision: 2ec96c5472da50d38d40c0cfe0602af2e94b4c8a
-      alignment: true
-      alignment_model: WAV2VEC2_ASR_BASE_960H
+      vad: false
+      punctuation: false
+      decode: {tokenizer: checkpoint_tokens_json_10020}
+    required_features: [audio.wav]
+    compute_budget:
+      max_vram_mb: 3072
+      max_latency_ms: 6000
+    family: non_autoregressive_asr
+    reference_paper: "https://arxiv.org/abs/2206.08317"
+    tags: [asr, gpu, nar]
+
+  - id: RQ0_ARCH.A5_Qwen3ASR_0_6B
+    task: RQ0_A
+    display_name: "Qwen3-ASR 0.6B (English forced)"
+    model_class: transformers.AutoModelForSpeechSeq2Seq
+    model_kwargs:
+      model_repo: Qwen/Qwen3-ASR-0.6B
+      revision: c4468bdb552ddc559e464f6081e22dd4034f2e68
+      device: cuda
+      language: English
     required_features: [audio.wav]
     compute_budget:
       max_vram_mb: 4096
       max_latency_ms: 15000
-    family: transformer_aser_with_alignment
-    reference_paper: "https://arxiv.org/abs/2303.00747"
-    tags: [asr, gpu, alignment]
-
-  - id: RQ0_A.A5_DeepFilterNet
-    task: RQ0_A
-    display_name: "DeepFilterNet (denoise + ASR)"
-    model_class: "df.enhance.init_df + faster_whisper.WhisperModel (A1)"
-    model_kwargs:
-      model_dir: pre-trained-models
-      post_filter: true
-      decoder_candidate: RQ0_A.A1_FasterWhisperSmall_GPU
-      decoder_revision: 2ec96c5472da50d38d40c0cfe0602af2e94b4c8a
-    required_features: [audio.wav]
-    compute_budget:
-      max_vram_mb: 2048
-      max_latency_ms: 20000
-    family: denoise_asr
-    reference_paper: "https://arxiv.org/abs/2305.08227"
-    tags: [asr, denoise]
+    family: modern_multilingual_generative_asr
+    reference_paper: "https://github.com/QwenLM/Qwen3-ASR"
+    tags: [asr, gpu, generative, selected]
 
   # ==========================================================================
   # RQ0-V: Visual Scene Detection + OCR (4 candidates)

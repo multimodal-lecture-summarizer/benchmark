@@ -13,9 +13,11 @@
       "required_inputs": "released transcript + creator abstract",
       "status": "EVIDENCE_AVAILABLE_FOR_SCOPED_PROTOCOL",
       "remaining_gates": [
-        "execute source-length-stratified development pilot and inspect cost/failure receipts",
-        "freeze evaluation IDs, allocated-output-cap protocol and dependence-group analysis after pilot",
-        "executed formal model predictions"
+        "review verified source/DOI/content dependence groups",
+        "declare evaluation split and deterministic source-group-aware selection without quality scores",
+        "freeze 120 IDs with source/reference hashes and overlap decisions",
+        "freeze scorer, denominators, failure/timeout policy and grouped paired analysis",
+        "create a 120-bound benchmark input and verify count/identity guard before execution"
       ],
       "not_required_for_this_scope": [
         "original video recovery",
@@ -160,8 +162,22 @@
     "notebook": "experiments/notebooks/rq2-tib-technical-pilot-colab.ipynb",
     "selected_train_records": 9,
     "cpu_preparation": "executed",
-    "gpu_execution": "not_executed",
-    "under_12_hours": "unverified",
-    "cohort_frozen": false
+    "gpu_execution": "executed_9_pairs_all_three_metrics",
+    "under_12_hours": "120_target_cost_scenario_8.37h_not_guaranteed",
+    "cohort_frozen": false,
+    "notebook_sha256": "be6d42ab3a36868b6dc9938d3d5915a227845f87362deb40f8841c40c8771695",
+    "completed_arms": 18
+  },
+  "execution_decision": {
+    "path": "experiments/registry/datasets/tib-rq2-rq4-120-decision-261010.json",
+    "status": "SCALE_APPROVED_IDS_AND_PROTOCOL_PENDING",
+    "target_records": 120,
+    "target_strata": {
+      "short": 40,
+      "medium": 40,
+      "long": 40
+    },
+    "cohort_frozen": false,
+    "formal_evaluated": 0
   }
 }
