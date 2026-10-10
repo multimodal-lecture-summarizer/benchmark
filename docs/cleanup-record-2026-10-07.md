@@ -21,3 +21,11 @@ The maintained entry points are the repository [README](../README.md), [document
 ## Claim boundaries
 
 No chaptering or summarization winner is established. The withdrawn saved chaptering and summarization outputs are not restored by keeping source-qualification reports. TIB all-split EDA and full VISTA validation inspection remain pending. The RQ2 primary metric measures agreement with creator abstracts, not factual correctness; no human scoring is planned.
+
+## Follow-up notebook cleanup — 2026-10-08
+
+At the user's request, removed five tracked notebooks from `experiments/notebooks/diagnostics/`: `rq2-tib-valid-eda.ipynb`, `rq2-tib-valid-sample-size-eda.ipynb`, `vista-validation-media-eda-colab.ipynb`, `dataset_readiness.ipynb`, and `full-corpus-pre-split-eda.ipynb`. Their historical Git revisions remain recoverable. The dataset-readiness initial and final executed copies also remain in `experiments/notebook_history_20260926.zip`; that archive does not contain the other four current notebook files.
+
+Retained the TIB 20-item decision, audit, analysis script and receipts; the VISTA 40-video report; the local full-corpus JSON receipts; and the dataset-readiness archive, manifest and result summary. Removing notebooks does not make their historical diagnostics official results. The all-split TIB notebook remains the current EDA entry point; VISTA full-validation EDA is no longer planned.
+
+Later on 2026-10-08, the all-split TIB notebook acquired saved Colab structural-scan outputs for 9,103 records (9,002 text-usable, 101 excluded). Visualization and interpretation cells were added but have not yet been executed against the saved Drive receipts. Reference and media qualification remain open.

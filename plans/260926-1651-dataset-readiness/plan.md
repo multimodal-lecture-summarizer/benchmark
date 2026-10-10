@@ -36,7 +36,7 @@ Plan review approved. Protocol additionally requires uniquely resolved historica
 
 ## Implementation checkpoint — 2026-09-26
 
-Selection/extraction, container validation, bounded duplicate screening, real universal-plot renderer and notebook orchestration are implemented. Source notebook: nested `experiments/notebooks/diagnostics/dataset_readiness.ipynb`. Tests, dataset run, final cohort counts, sixteen rendered plots and historical preservation are verified in the final results below.
+Selection/extraction, container validation, bounded duplicate screening, real universal-plot renderer and notebook orchestration are implemented. The source notebook was removed on 2026-10-08; its initial and final executed copies remain in `experiments/notebook_history_20260926.zip`. Tests, dataset run, final cohort counts, sixteen rendered plots and historical preservation are verified in the final results below.
 
 Output is an independent preparation bundle: protocol, selected IDs, extracted metadata, screening/decision log, retained split manifests, figure source tables/PNGs and a hash-bound bundle receipt. Existing official D2 bundles stay untouched and pending; no model inference or official eligibility promotion. Master phases 1/2 stay in progress and 3–7 pending.
 

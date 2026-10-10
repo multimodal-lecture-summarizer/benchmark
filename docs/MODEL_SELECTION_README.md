@@ -4,7 +4,7 @@ Select candidates only after choosing a lecture-domain dataset with the right ex
 
 ## Existing result: ASR diagnostic
 
-The [ASR Colab notebook](../experiments/notebooks/asr_architecture_colab_t4.ipynb) compared six candidates on 507 TED-LIUM validation units and 1,155 native-test units. Qwen3-ASR 0.6B ranked first on validation WER (3.91%). Native-test values are diagnostic because the test split had prior exposure; the comparison does not isolate model architecture from training data, checkpoint or toolchain differences. See the [evaluation report](results/asr-architecture-evaluation-2026-10-05.md) before citing a number. No ASR rerun is planned, and the application model default has not changed.
+The [ASR Colab notebook](../experiments/notebooks/asr_architecture_colab_t4.ipynb) compared six architecture candidates on 507 TED-LIUM validation units and 1,155 native-test units: Whisper Base (A0), Wav2Vec2 Large CTC (A1), FastConformer Large CTC (A2), FastConformer Large RNNT (A3), Paraformer English (A4), and Qwen3-ASR 0.6B (A5). Qwen3-ASR 0.6B ranked first on validation WER (3.91%). Native-test values are diagnostic because the test split had prior exposure; the comparison does not isolate model architecture from training data, checkpoint or toolchain differences. See the [evaluation report](results/asr-architecture-evaluation-2026-10-05.md) before citing a number. No ASR rerun is planned, and the application model default has not changed.
 
 ## Remaining video tasks
 

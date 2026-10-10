@@ -29,7 +29,6 @@ HISTORY_DIRS = (
 ARCHIVE = EXPERIMENTS / "notebook_history_20260926.zip"
 INDEX = EXPERIMENTS / "notebook_history_20260926.manifest.json"
 DIAGNOSTIC_MIGRATIONS = {
-    "dataset_readiness.ipynb": "phase12_repair_260926/dataset_readiness-20260926T101743497388Z.ipynb",
     "phase12_evidence_repair.ipynb": "phase12_repair_260926/phase12-evidence-repair-20260926T094151043461Z.ipynb",
     "phase12_qualification_supplement.ipynb": "phase12_repair_260926/phase12_qualification_supplement-20260926T094714806867Z.ipynb",
 }

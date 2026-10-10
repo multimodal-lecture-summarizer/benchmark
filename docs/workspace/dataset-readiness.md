@@ -23,7 +23,7 @@ Sixteen actual universal plots were rendered in the initial run; corrected GT co
 
 ## Execution and verification
 
-Canonical notebook with saved outputs in the benchmark repo: [dataset_readiness.ipynb](../../experiments/notebooks/diagnostics/dataset_readiness.ipynb). The initial and corrected final executions remain available as original bytes in `experiments/notebook_history_20260926.zip`; its manifest records original paths and SHA-256. Counts and preservation results are recorded below.
+The canonical notebook was removed on 2026-10-08. Initial and corrected final executions remain available as original bytes in [the notebook history archive](../../experiments/notebook_history_20260926.zip); its [manifest](../../experiments/notebook_history_20260926.manifest.json) records original paths and SHA-256. Counts and preservation results are recorded below.
 
 ## References and remaining gates
 
@@ -55,7 +55,7 @@ The corrected notebook passed **33 tests in 4.65 seconds**. All commands returne
 
 The final bundle contains **122 files**. **602 historical artifacts** and **82 pre-existing files from the dirty worktree** remained unchanged. Initial/final protocol and selection SHA-256 identities match: no refills or threshold changes occurred after inspecting results. Initial-run coverage/comparison issues and their corrections remain recorded above.
 
-- Canonical notebook with the verified final output (nested app): `experiments/notebooks/diagnostics/dataset_readiness.ipynb`. Original executed bytes are indexed in `experiments/notebook_history_20260926.manifest.json`.
+- The canonical notebook with the verified final output was removed on 2026-10-08. Original executed bytes remain indexed in `experiments/notebook_history_20260926.manifest.json`.
 - Fresh bundle (nested app): `experiments/outputs/dataset_readiness_260926/20260926T101747121197Z/bundle`.
 
 The scoped preparation plan is complete. These fresh cohort plots and screening results do not overwrite the old official eight-card SVG bundles or promote them to D2. Split manifests retain `scientific_selection_eligible=false`; bounded screening is not proof of semantic uniqueness. No model inference was performed. Master Phase 1/2 remain in progress; Phases 3–7 remain pending.

@@ -10,10 +10,10 @@ ablation_specs:
   # RQ0-A: ASR — ablate denoise + VAD
   # ==========================================================================
   RQ0_A:
-    description: "ASR ablation với denoise + VAD preprocessors"
+    description: "ASR architecture evaluated candidates"
     base_candidates:
-      - RQ0_A.A1_FasterWhisperSmall_GPU
-      - RQ0_A.A2_DistilWhisper
+      - RQ0_ARCH.A0_WhisperBase
+      - RQ0_ARCH.A5_Qwen3ASR_0_6B
     toggles:
       denoise:
         - false
