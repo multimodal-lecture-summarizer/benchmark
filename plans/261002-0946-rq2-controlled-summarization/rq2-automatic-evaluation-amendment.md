@@ -1,6 +1,6 @@
 # RQ2 automatic evaluation amendment — 2026-10-02
 
-**Scope amendment, 2026-10-07:** The user requested EDA on all creator-TIB train/valid/test records. The sealed-test language below documents the earlier design; after that EDA executes, creator `test` is inspected and cannot serve as an unseen final test. Any independent-test claim needs another source and an updated protocol before scoring.
+**Active scope, 2026-10-09:** The all-split EDA, including full-transcript reference screening, has completed. The current pool is all **8,769 candidates**; all 900 flagged candidates stay included. Automatic data preparation has no manual-review gate and no 70-item cap. The [preparation notebook](../../experiments/notebooks/rq2-tib-benchmark-preparation-colab.ipynb) creates the reusable dataset for paired creator-abstract ROUGE-L agreement. Follow the [active plan](plan.md); sealed-test and small-cohort procedures below describe the historical design.
 
 ## User decision and claim
 

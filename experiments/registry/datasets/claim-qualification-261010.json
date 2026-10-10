@@ -1,0 +1,167 @@
+{
+  "review_date": "2026-10-10",
+  "qualification_unit": "dataset_revision/cohort/input/annotation_target/comparison/claim",
+  "cohort_frozen": false,
+  "benchmark_started": false,
+  "report": "../../../plans/reports/research-scope-261010-1621-claim-qualification-report.md",
+  "primary_route": "TIB RQ2 paired abstract agreement with same-run RQ4 costs",
+  "claim_entries": [
+    {
+      "dataset": "tib",
+      "rq": "RQ2",
+      "claim": "creator_abstract_agreement",
+      "required_inputs": "released transcript + creator abstract",
+      "status": "EVIDENCE_AVAILABLE_FOR_SCOPED_PROTOCOL",
+      "remaining_gates": [
+        "execute source-length-stratified development pilot and inspect cost/failure receipts",
+        "freeze evaluation IDs, allocated-output-cap protocol and dependence-group analysis after pilot",
+        "executed formal model predictions"
+      ],
+      "not_required_for_this_scope": [
+        "original video recovery",
+        "validated factual-summary reference"
+      ]
+    },
+    {
+      "dataset": "iiit-cvid",
+      "rq": "component_OCR",
+      "claim": "released_crop_recognition",
+      "required_inputs": "released crop + paired transcription",
+      "status": "EVIDENCE_AVAILABLE_FOR_SCOPED_PROTOCOL",
+      "remaining_gates": [
+        "freeze crop pairing, ambiguous-label policy and scorer",
+        "declare observed-reference scope"
+      ],
+      "not_required_for_this_scope": [
+        "original video recovery",
+        "frame geometry repair for independently released crops"
+      ]
+    },
+    {
+      "dataset": "iiit-cvid",
+      "rq": "component_OCR",
+      "claim": "released_frame_spotting",
+      "required_inputs": "frame + valid box/transcription",
+      "status": "SCOPED_PROTOCOL_REVIEW_REQUIRED",
+      "remaining_gates": [
+        "lock geometry-valid IDs and derived metadata",
+        "freeze matching/normalizer",
+        "source-safe split if training or generalization claimed"
+      ],
+      "not_required_for_this_scope": [
+        "all original videos restored"
+      ]
+    },
+    {
+      "dataset": "lvvo",
+      "rq": "component_detection",
+      "claim": "released_image_four_class_detection",
+      "required_inputs": "released JPG + four-class boxes",
+      "status": "EVIDENCE_AVAILABLE_FOR_SCOPED_PROTOCOL",
+      "remaining_gates": [
+        "freeze taxonomy, cohort, scorer and candidates",
+        "no adaptation on evaluation labels",
+        "declare duplicate dependence and finite-cohort scope"
+      ],
+      "not_required_for_this_scope": [
+        "all source videos restored for image-only scoring",
+        "source-independent generalization claim"
+      ]
+    },
+    {
+      "dataset": "tedlium3",
+      "rq": "component_ASR",
+      "claim": "historical_diagnostic_WER",
+      "required_inputs": "historical run-specific audio/reference receipt",
+      "status": "HISTORICAL_DIAGNOSTIC_AVAILABLE",
+      "remaining_gates": [
+        "cite original run and denominator",
+        "retain reference-exposure limits"
+      ],
+      "not_required_for_this_scope": [
+        "new full-corpus ASR run"
+      ]
+    },
+    {
+      "dataset": "mlpdataset",
+      "rq": "component_transition",
+      "claim": "slide_transition_prediction",
+      "required_inputs": "source media + aligned released boundaries",
+      "status": "INPUT_BLOCKED_FOR_PROPOSED_COMPARISON",
+      "remaining_gates": [
+        "media/alignment on selected cohort",
+        "review selected anomaly IDs",
+        "freeze collar and scoring"
+      ],
+      "not_required_for_this_scope": [
+        "every video in release restored"
+      ]
+    },
+    {
+      "dataset": "accessmath",
+      "rq": "component_board",
+      "claim": "video_keyframe_extraction",
+      "required_inputs": "aligned source video + task-matched released keyframes",
+      "status": "INPUT_BLOCKED_FOR_PROPOSED_COMPARISON",
+      "remaining_gates": [
+        "verify camera/multipart timebase",
+        "match actual target semantics",
+        "review orphan only where applicable"
+      ],
+      "not_required_for_this_scope": [
+        "all other datasets READY"
+      ]
+    },
+    {
+      "dataset": "lecturemath",
+      "rq": "component_board",
+      "claim": "video_summary_keyframe_extraction",
+      "required_inputs": "aligned source video + author summary/keyframe target",
+      "status": "INPUT_BLOCKED_FOR_PROPOSED_COMPARISON",
+      "remaining_gates": [
+        "verify edited timeline",
+        "match actual target semantics",
+        "source groups for held-out claims"
+      ],
+      "not_required_for_this_scope": [
+        "required-state GT when claim explicitly concerns a different author target"
+      ]
+    },
+    {
+      "dataset": "eduvidqa",
+      "rq": "RQ3_answer",
+      "claim": "released_answer_agreement",
+      "required_inputs": "source transcript/context + released QA",
+      "status": "INPUT_BLOCKED_FOR_PROPOSED_COMPARISON",
+      "remaining_gates": [
+        "recover qualified source context",
+        "freeze reader, retrieval pipeline and answer scorer",
+        "avoid reference leakage"
+      ],
+      "not_required_for_this_scope": [
+        "video/timestamp for explicitly full-transcript text-only QA",
+        "independent evidence-span GT for answer-only agreement"
+      ]
+    },
+    {
+      "dataset": "eduvidqa",
+      "rq": "RQ3_retrieval",
+      "claim": "retrieval_evidence_quality",
+      "required_inputs": "source context + independent relevance/evidence GT",
+      "status": "GT_BLOCKED_FOR_PROPOSED_COMPARISON",
+      "remaining_gates": [
+        "independent task-matched evidence labels",
+        "qualified source context"
+      ],
+      "not_required_for_this_scope": []
+    }
+  ],
+  "technical_pilot": {
+    "notebook": "experiments/notebooks/rq2-tib-technical-pilot-colab.ipynb",
+    "selected_train_records": 9,
+    "cpu_preparation": "executed",
+    "gpu_execution": "not_executed",
+    "under_12_hours": "unverified",
+    "cohort_frozen": false
+  }
+}

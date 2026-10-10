@@ -1,0 +1,234 @@
+{
+  "full_bundle": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\benchmark\\experiments\\outputs\\rq2_tib_benchmark\\tib-benchmark-data.jsonl.gz",
+  "full_selection_sha256": "1fb97c72742dd6157d174f455054adfecab1a302be242398d723c5b3674968b3",
+  "limited_bundle": {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\benchmark\\experiments\\outputs\\rq2_tib_benchmark\\limited\\tib-benchmark-data.jsonl.gz",
+    "bytes": 154881,
+    "payload_sha256": "68c457bb6c8f80fa1d8e7d999ffebe2b8f7262468e075802e46064efddf0bc02",
+    "records": 12
+  },
+  "execution_cohort": {
+    "scope": "bounded_valid_split_creator_abstract_agreement",
+    "parent_selection_sha256": "1fb97c72742dd6157d174f455054adfecab1a302be242398d723c5b3674968b3",
+    "seed": "tib-valid-bounded-20261010-v1",
+    "source_words_inclusive": [
+      500,
+      7000
+    ],
+    "duration_quotas": [
+      [
+        0,
+        15,
+        1,
+        1
+      ],
+      [
+        15,
+        30,
+        2,
+        2
+      ],
+      [
+        30,
+        60,
+        2,
+        2
+      ],
+      [
+        60,
+        null,
+        1,
+        1
+      ]
+    ],
+    "linked_source_cluster_held_out_from_execution": [
+      "train/2341",
+      "valid/433",
+      "test/782"
+    ],
+    "creator_test_used_for_model_evaluation": false,
+    "unseen_reference_claim": false,
+    "sampling_claim": "purposive_length_and_subject_coverage_not_population_representative"
+  },
+  "selected": [
+    {
+      "split": "valid",
+      "source_index": 269,
+      "doi": "10.5446/30670 (DOI)",
+      "title": "How to Talk to Humans",
+      "author": "Steed, Sharon",
+      "genre": "Conference/Talk",
+      "subject": "Computer Science",
+      "source_words": 5447,
+      "duration_minutes": 61.132666015625,
+      "source_sha256": "1f67db74e41fc56213f761f0291c77d3fae1b45ff1e1e870848a8fb335cbb9f6",
+      "reference_sha256": "5d120ffc10c2c35d6c6f2e295111af720b7573d081ed7dccd432b8ab83c33800",
+      "audit_flags": [
+        "cross_split_author_group",
+        "overlapping_segments"
+      ]
+    },
+    {
+      "split": "valid",
+      "source_index": 357,
+      "doi": "10.5446/21853 (DOI)",
+      "title": "Folding Spaces, Unfolding Action",
+      "author": "Mrongovius, Martina",
+      "genre": "Conference/Talk",
+      "subject": "Computer Science",
+      "source_words": 1863,
+      "duration_minutes": 13.005999755859374,
+      "source_sha256": "4cb4552b998da2ffcf90c721c54d2368a1482f525313050956d91e59762259e1",
+      "reference_sha256": "430df6292afc5f6531922b9438f31ea0e8db1d8833d31643e57174076bc43c30",
+      "audit_flags": []
+    },
+    {
+      "split": "valid",
+      "source_index": 419,
+      "doi": "10.5446/58079 (DOI)",
+      "title": "Poster presentation: How to support early career researchers with identifying trustworthy academic events?",
+      "author": "Franken, Julian",
+      "genre": "Conference/Talk",
+      "subject": "Information Science",
+      "source_words": 749,
+      "duration_minutes": 5.229999796549479,
+      "source_sha256": "79bc40dee1ecd7cf58316efaf41083d4f69df7da47b19b25c9c5ec7eaca4965f",
+      "reference_sha256": "ced03566479cddc0dd993919e91b56836f971f587bbd09655d08262e654ad35f",
+      "audit_flags": []
+    },
+    {
+      "split": "valid",
+      "source_index": 462,
+      "doi": "10.5446/43742 (DOI)",
+      "title": "Semi-infinite topology of the complexified path integral",
+      "author": "Kontsevich, Maxim",
+      "genre": "Lecture",
+      "subject": "Mathematics\nPhysics",
+      "source_words": 6781,
+      "duration_minutes": 71.95400390625,
+      "source_sha256": "58630c4e935ac8bd5f7c88cfc5cf6eaffb1a7578b7e5d3bfb1ba20c3dc2ec86f",
+      "reference_sha256": "3997cd1972f8143bc26c9ab12c12c9e7cde5d29deb75f8e9a1a824ba26eff960",
+      "audit_flags": [
+        "cross_split_author_group"
+      ]
+    },
+    {
+      "split": "valid",
+      "source_index": 473,
+      "doi": "10.5446/58087 (DOI)",
+      "title": "Support Services for Systematic Literature Reviews in Economic and Business Studies – How Can Business Librarians Cooperate",
+      "author": "Rauchmann, Sabine",
+      "genre": "Conference/Talk",
+      "subject": "Information Science",
+      "source_words": 3426,
+      "duration_minutes": 23.95999959309896,
+      "source_sha256": "c2165eac32adc9a7f13b84bcefec9b045068618e49c88661a48678048e64ec09",
+      "reference_sha256": "43f8d9a82cf4e1f14e73356ffaef9cb0711b22ead045f5e3458e2c6c67657792",
+      "audit_flags": []
+    },
+    {
+      "split": "valid",
+      "source_index": 576,
+      "doi": "10.5446/46339 (DOI)",
+      "title": "Towards a generalised approach for defining, organising and storing metadata from all experiments at the ESRF.",
+      "author": "Götz, Andrew",
+      "genre": "Conference/Talk",
+      "subject": "Physics",
+      "source_words": 4674,
+      "duration_minutes": 28.996000162760417,
+      "source_sha256": "61cbd563c4bef1b4803e06a714e69095636d9eaca96894513d2b2043a5a0f13f",
+      "reference_sha256": "4e052b5e499716ccd6f582def5e1f8ec4d459324bcef8f9b43dded8b390fa202",
+      "audit_flags": []
+    },
+    {
+      "split": "valid",
+      "source_index": 588,
+      "doi": "10.5446/19645 (DOI)",
+      "title": "What Symfony Has To Do With My Garage - Home Automation With PHP",
+      "author": "Unger, Jan",
+      "genre": "Conference/Talk",
+      "subject": "Computer Science",
+      "source_words": 4107,
+      "duration_minutes": 33.255332438151044,
+      "source_sha256": "8132ac3a8cbf44e0ec5634dd17b66e5cdc0209610fbdacce2b2a1b4dfcab51ca",
+      "reference_sha256": "783c863c631a1d7dfb7a30ebe06c5113dda6b5f749b03f7f2f28de071f04e247",
+      "audit_flags": []
+    },
+    {
+      "split": "valid",
+      "source_index": 740,
+      "doi": "10.5446/45015 (DOI)",
+      "title": "Photosynthetic Light Reactions, Revisited",
+      "author": "Deisenhofer, Johann",
+      "genre": "Conference/Talk",
+      "subject": "Chemistry",
+      "source_words": 2732,
+      "duration_minutes": 30.73933308919271,
+      "source_sha256": "e6ba214d9ac57d525a98fe7d66444cb790b2ff37be818e8ccf020af1bbbbf7c6",
+      "reference_sha256": "5bd855b778ecc955b52c99a61e0337ee97d1fd2c13e06e829e091f7dd2ef8ca0",
+      "audit_flags": [
+        "cross_split_author_group"
+      ]
+    },
+    {
+      "split": "valid",
+      "source_index": 741,
+      "doi": "10.5446/47588 (DOI)",
+      "title": "Finnish National Bibliography Fennica as Linked Data",
+      "author": "Suominen, Osma",
+      "genre": "Conference/Talk",
+      "subject": "Information Science",
+      "source_words": 4690,
+      "duration_minutes": 34.5239990234375,
+      "source_sha256": "8dc7158b5af16e3f3e8591a14097187fe27b5d0570d81e7979a9a13854de992f",
+      "reference_sha256": "7ffe387678dd91d939f65336dd3ef5b6217ed3f2d22b735f68d9751d37f23b19",
+      "audit_flags": []
+    },
+    {
+      "split": "valid",
+      "source_index": 756,
+      "doi": "10.5446/44792 (DOI)",
+      "title": "Testing Microservices: fast and with confidence",
+      "author": "Jaensch, Stephan",
+      "genre": "Conference/Talk",
+      "subject": "Computer Science",
+      "source_words": 3565,
+      "duration_minutes": 23.75666707356771,
+      "source_sha256": "f84bf9ecfddcf9d625ea2db63a60ea569c616d111bdec5e490b199af484f1612",
+      "reference_sha256": "9e9be3e739abe0558f3b26b2e283303b298258ee402ec5b1ed5a9f26577e263d",
+      "audit_flags": [
+        "cross_split_author_group"
+      ]
+    },
+    {
+      "split": "valid",
+      "source_index": 852,
+      "doi": "10.5446/31255 (DOI)",
+      "title": "​Keeping Code Style Sanity in a 10-year-old Codebase",
+      "author": "Stefanini, Gabi",
+      "genre": "Conference/Talk",
+      "subject": "Computer Science",
+      "source_words": 4827,
+      "duration_minutes": 33.71999918619792,
+      "source_sha256": "0b891e37456b979b9b33adf09ef33a135401b81bb645772f15fc1aa4780f9a1a",
+      "reference_sha256": "6714be9d88d35d0bd44fe4cd197c6c4be17c57c3294d32ac397b88ccce8cf507",
+      "audit_flags": []
+    },
+    {
+      "split": "valid",
+      "source_index": 906,
+      "doi": "10.5446/34732 (DOI)",
+      "title": "Ember.JS Performance",
+      "author": "Penner, Stefan",
+      "genre": "Conference/Talk",
+      "subject": "Computer Science",
+      "source_words": 4050,
+      "duration_minutes": 26.33066609700521,
+      "source_sha256": "f94d1efa1845d5de9fffbf2d953b03ab6b3a0ab2edd3a2bd56851750d3b7d3e9",
+      "reference_sha256": "e3baa0b8200269d3c1d81a11fb701c7f30eaecdda8f55e796274976369616b0a",
+      "audit_flags": [
+        "cross_split_author_group"
+      ]
+    }
+  ]
+}

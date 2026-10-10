@@ -1,0 +1,24 @@
+# TIB bounded validation benchmark protocol — frozen before generation
+
+## Claim and evidence boundary
+
+This run compares **S1 fixed chunks** with **S3 source-only predicted hierarchy** on the same complete transcript segments and the same Qwen2.5-1.5B-Instruct checkpoint. The primary endpoint is ROUGE-L F1 **agreement with the creator-provided abstract**. The abstract is neither independently checked factual ground truth nor a verified video-summary reference. The released TIB test abstracts were inspected in earlier EDA, so no unseen-test claim is made. This run uses creator `valid` only, does not train or tune on those abstracts, and makes no population or lecture-domain performance claim.
+
+The pinned `gigant/tib@e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee` all-split preparation read 9,103 source records and mechanically retained 8,769 candidates. The complete bundle selection hash is `1fb97c72742dd6157d174f455054adfecab1a302be242398d723c5b3674968b3`. Those 8,769 are **candidates, not evaluated examples**. All 900 flagged candidates remain in that pool. The [cross-split audit](./tib-cross-split-source-content-audit-261010-report.md) found no exact DOI/source URL/video URL/transcript match among its queued pairs, but identified a high-overlap cluster at train/2341, valid/433, test/782. Course/series identity is not authoritative; same author/title alone causes no exclusion.
+
+## Execution cohort
+
+The local RTX 4050 has 6 GiB VRAM. The execution cohort is a **purposive, bounded 12-item validation study**, frozen in [the per-ID manifest](./tib-bounded-valid-cohort-261010-manifest.json) before model generation. It is newly selected from the complete 8,769-candidate bundle; the retired 70-item cohort and its scores are not used. Selection is deterministic by `tib-valid-bounded-20261010-v1` SHA order within each duration/subject cell, with one author per selected record. Source length is 500–7,000 words; full eligible text is used without truncation. Duration quotas are two under 15 minutes, four 15–30, four 30–60, and two at least 60 minutes; each cell is half Computer Science and half another subject. The high-overlap three-record cluster is **held out of this execution cohort** for sensitivity, not removed from the candidate pool. The broader duration, genre and subject distribution is not represented by this purposive sample.
+
+Frozen IDs: `valid/269`, `valid/357`, `valid/419`, `valid/462`, `valid/473`, `valid/576`, `valid/588`, `valid/740`, `valid/741`, `valid/756`, `valid/852`, `valid/906`. The limited bundle is saved under ignored `experiments/outputs/rq2_tib_benchmark/limited/tib-benchmark-data.jsonl.gz`; its payload SHA-256 is `68c457bb6c8f80fa1d8e7d999ffebe2b8f7262468e075802e46064efddf0bc02`. The manifest includes source/reference hashes and source-audit flags for every ID. Selection changes require a new bundle identity and new run directory.
+
+## Paired procedure and denominators
+
+- Use the [integrated notebook](../../experiments/notebooks/rq2-tib-benchmark-colab.ipynb), pointing `RQ2_TIB_OUTPUT_DIR` to the limited bundle directory. The notebook calls the same `load_or_prepare_data` used by the benchmark runner; it does not create a second preprocessing route. Keep checkpoint `Qwen/Qwen2.5-1.5B-Instruct@989aa7980e4cf806f80c7fef2b1adb7bc71aa306`, token cap 512 per chunk, total map output cap 96 and final cap 384 in **both** arms, greedy seed 42, and equal raw-text prompt accounting.
+- Store one item-level receipt per ID, with source/reference hash, model and run identity, S1/S3 predictions, failures and usage. Resuming an identical run may reuse these receipts; any changed selection or generation configuration starts a new identity.
+- Primary metric: lowercase Unicode-word LCS ROUGE-L F1 against the creator abstract. Secondary metrics, if encoders run successfully: XLM-R-large BERTScore against that abstract and multilingual MPNet SBERTScore against the full transcript. Report **each metric's paired scored count** and S3−S1 interval; do not infer equivalence when an interval contains zero. Subject/duration slices are descriptive only at this sample size.
+- Accounting at freeze: candidate pool 8,769; **selected 12 / observed 12 full source-plus-abstract records / label-valid 12 under mechanical screen / media-valid N/A** (text-only run; source video/audio not opened). `evaluated` and `failed` will be filled only from actual model receipts. Count an item as evaluated for a metric only when both arms and that metric succeed. A semantic-scoring failure must not erase a successful ROUGE-L result.
+
+## Holds
+
+This protocol does not certify TIB source video, creator abstract factuality, authoritative course membership, or an unseen final test. A broader validation claim would require a substantially larger, group-aware execution cohort and explicit treatment of the 98 lexical/high-content cross-split pairs in uncertainty or sensitivity analysis.

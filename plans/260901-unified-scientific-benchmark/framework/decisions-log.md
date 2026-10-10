@@ -1,4 +1,22 @@
+## 2026-10-10 — TIB technical pilot before evaluation freeze
+
+User-approved scope: RQ2 creator-abstract agreement and same-record RQ4 costs; OCR follows. Do not reopen unrelated media HOLDs. Audit confirms S3 changes boundary-constrained chunking, using S1's shared flattened map/reduce. Equal allocated map/final output caps do not mean equal actual tokens. Prepare nine source-length-selected train records, retain all failures, counterbalance arm order, record dispatches/VRAM/tokens and all scorers on Colab. CPU preparation executed; GPU pilot and <=12h feasibility unverified. Evaluation IDs/protocol and grouped uncertainty remain pending. Full 8,769-pool execution instruction is superseded by pilot-first. Historical results remain historical.
+
 # Decisions Log
+
+## D-EDA-20261010 — Seven-dataset qualification follow-up
+
+**Subsequent scope clarification:** [the claim matrix](../../../../plans/reports/research-scope-261010-1621-claim-qualification-report.md) and [machine-readable claim register](../../../experiments/registry/datasets/claim-qualification-261010.json) distinguish usable narrow comparisons from blocked broader claims. TIB text-only abstract agreement, OCR crop recognition and LVVO released-image detection have evidence available for scoped protocols. Missing original videos do not impose a universal veto. Previous HOLD decisions retain their original endpoint scope; no cohort is automatically frozen and no benchmark was started.
+
+**Decision:** preserve all historical outputs and original labels; add hash-bound ID ledgers and executed qualification cells. The [current register](../../../experiments/registry/datasets/qualification-261010.json) and [report](../../../../plans/reports/dataset-qualification-261010-report.md) supersede older availability and eligibility claims.
+
+- TED-LIUM: EXCLUDE eight source ignore-marker segments from scored ASR; retain 42 bounded diagnostic candidates. Original Arrow recovery and full intended-cohort media remain HOLD.
+- IIIT-CVID: full 5,475-frame ZIP review completed; allow 120 derived dimension overrides only. Hold 22 boxes on 20 frames and the complete 469-pair source/content review queue. No clipping or text edits.
+- LVVO: 39 public source-token matches are documented; 100 groups and underlying media/rights remain unresolved. Save group-split design only, with zero assigned roles.
+- Remaining four sources: ledger structural findings separately from original-media and target-label qualification. Preserve uncertain timestamp interpretations and board/keyframe semantics; never manufacture GT.
+- All seven native test references inspected in EDA are observed references. No unseen-final-test claim, no scientific cohort/protocol freeze and no new model benchmark follows from this review.
+
+**Status:** bounded review executed; scientific endpoint gates remain HOLD. No large model evaluation was initiated by this review.
 
 > **Historical decisions (2026-08/09), not the active execution protocol.** Several RQ1–RQ4, TIB cohort, human-scoring and VISTA-priority decisions below were superseded. Use [BENCHMARK.md](../../../docs/BENCHMARK.md), [DATASET_EDA.md](../../../docs/DATASET_EDA.md) and the current [RQ2 plan](../../../plans/261002-0946-rq2-controlled-summarization/plan.md) for current scope. This file remains because `docs/frozen_decisions.json` and model-code comments cite it.
 

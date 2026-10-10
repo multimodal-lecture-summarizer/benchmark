@@ -1,7 +1,67 @@
 schema_version: 1
 manifest_status: on_demand
 official_default_profile: full
-allowed_profiles: [full]
-allowed_network_policies: [none, bounded_acquisition, registry_controlled]
-
+allowed_profiles:
+- full
+allowed_network_policies:
+- none
+- bounded_acquisition
+- registry_controlled
 notebooks: []
+development_pilots:
+- path: experiments/notebooks/rq2-tib-technical-pilot-colab.ipynb
+  purpose: source_length_selected_train_timing_RQ2_RQ4
+  model_execution_status: not_executed
+  cpu_preparation_receipt: experiments/outputs/rq2_tib_pilot_261010/cpu-preparation-receipt.json
+  cohort_frozen: false
+  official_benchmark: false
+dataset_eda_notebooks:
+- dataset: tedlium3
+  path: experiments/notebooks/diagnostics/tedlium3-full-corpus-asr-eda.ipynb
+  receipt: experiments/outputs/dataset_qualification_261010/tedlium3-qualification-receipt.json
+  receipt_sha256: 63d31b004874198e983dfffc80c70fdb1d10a39a709c7028ed2e86cd2edbb415
+  executed_followup_cells: 1
+  cohort_frozen: false
+  status: bounded_42_item_diagnostic_candidate_only_no_scientific_freeze
+- dataset: iiit-cvid
+  path: experiments/notebooks/diagnostics/iiit-cvid-validation-ocr-eda.ipynb
+  receipt: experiments/outputs/dataset_qualification_261010/iiit-cvid-qualification-receipt.json
+  receipt_sha256: 5173ec68a60845d0969374f60c1017bb39b861e6b8ea466cefae32086482ad86
+  executed_followup_cells: 1
+  cohort_frozen: false
+  status: full_frame_geometry_review_complete_duplicate_content_and_source_mapping_HOLD
+- dataset: lvvo
+  path: experiments/notebooks/diagnostics/lvvo-four-class-detection-eda.ipynb
+  receipt: experiments/outputs/dataset_qualification_261010/lvvo-qualification-receipt.json
+  receipt_sha256: 6422bda8d6c6bf131d5619838debe82a744a898a847ab9a18cbe4cead846e6d9
+  executed_followup_cells: 1
+  cohort_frozen: false
+  status: HOLD_formal_benchmark
+- dataset: mlpdataset
+  path: experiments/notebooks/diagnostics/mlpdataset-slide-transition-eda.ipynb
+  receipt: experiments/outputs/dataset_qualification_261010/mlpdataset-qualification-receipt.json
+  receipt_sha256: 1602371a4d2f3db36ae03b265bd4fd5e25ecd91a11bde8a759e0a990845e75b7
+  executed_followup_cells: 1
+  cohort_frozen: false
+  status: HOLD
+- dataset: accessmath
+  path: experiments/notebooks/diagnostics/accessmath-board-annotations-eda.ipynb
+  receipt: experiments/outputs/dataset_qualification_261010/accessmath-qualification-receipt.json
+  receipt_sha256: 53ba72e5b4004d9a67c554cea0ecaef02311a14cf5d7e6e216e79f61b6996f4e
+  executed_followup_cells: 1
+  cohort_frozen: false
+  status: HOLD
+- dataset: lecturemath
+  path: experiments/notebooks/diagnostics/lecturemath-keyframe-annotations-eda.ipynb
+  receipt: experiments/outputs/dataset_qualification_261010/lecturemath-qualification-receipt.json
+  receipt_sha256: 3d8794a6fc7c0b4b9eb6cc0aa3ceaf39835ec29ad35d77625e88316f37c2f05e
+  executed_followup_cells: 1
+  cohort_frozen: false
+  status: HOLD
+- dataset: eduvidqa
+  path: experiments/notebooks/diagnostics/eduvidqa-official-annotations-eda.ipynb
+  receipt: experiments/outputs/dataset_qualification_261010/eduvidqa-qualification-receipt.json
+  receipt_sha256: 41e777044ac49318f4f375752f96a3403c098439f59e1a2832782196eee27eee
+  executed_followup_cells: 1
+  cohort_frozen: false
+  status: HOLD

@@ -9,6 +9,8 @@
 
 ## 1. Core dataset matrix
 
+**Current qualification override — 2026-10-10:** consult [the seven-dataset evidence register](../../../experiments/registry/datasets/qualification-261010.json) and [consolidated follow-up](../../../../plans/reports/dataset-qualification-261010-report.md). The register includes per-ID ledger hashes and scoped `selected / observed / label-valid / media-valid / evaluated / failed` counts. No scientific cohort or evaluation protocol was frozen. The historical EduVidQA estimate below is superseded by **5,234 released CSV rows**; source media/transcripts are not assumed present.
+
 | Tier | Dataset | Scale | Inputs | Targets | Research role | Main caveat |
 |------|---------|-------|--------|---------|---------------|-------------|
 | A | **YTSeg** | 19,299 videos / 6,533 h | Transcripts, audio; source video download script | Creator chapter timestamps/titles | RQ1 chaptering | English, multi-domain, creator labels, media attrition |

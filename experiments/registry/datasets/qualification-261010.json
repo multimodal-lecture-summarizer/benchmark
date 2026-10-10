@@ -1,0 +1,995 @@
+{
+  "review_date": "2026-10-10",
+  "cohort_frozen": false,
+  "scientific_benchmark_cohorts": [],
+  "model_inference_run": false,
+  "datasets": [
+    {
+      "dataset": "tedlium3",
+      "path": "experiments/notebooks/diagnostics/tedlium3-full-corpus-asr-eda.ipynb",
+      "receipt": "experiments/outputs/dataset_qualification_261010/tedlium3-qualification-receipt.json",
+      "receipt_sha256": "63d31b004874198e983dfffc80c70fdb1d10a39a709c7028ed2e86cd2edbb415",
+      "executed_followup_cells": 1,
+      "cohort_frozen": false,
+      "status": "bounded_42_item_diagnostic_candidate_only_no_scientific_freeze",
+      "counts": {
+        "selected": 50,
+        "observed": 50,
+        "label_valid": 42,
+        "media_valid": 50,
+        "evaluated": 0,
+        "failed": 0
+      },
+      "evidence": {
+        "dataset": "tedlium3",
+        "observed_at_utc": "2026-10-10T08:56:21.879253+00:00",
+        "counts": {
+          "selected": 50,
+          "observed": 50,
+          "label_valid": 42,
+          "media_valid": 50,
+          "evaluated": 0,
+          "failed": 0
+        },
+        "artifacts": [
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\tedlium3-id-ledger.csv",
+            "sha256": "ded2e9d9c4bce066932aa59e49b261d58493cb5447fe61ec84d6ddd8212a764e",
+            "rows": 50
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\tedlium-recovery-probes.json",
+            "sha256": "1be7e2ac9ab98fd293b5d792c4c16cb6644237c3cfb56254967221fdf0911dd3"
+          }
+        ],
+        "model_inference_run": false,
+        "unseen_reference_claim": false,
+        "decisions": {
+          "KEEP": 42,
+          "EXCLUDE": 8
+        },
+        "source_group_intersection": [],
+        "invalid_trace": {
+          "ignore_marker": 8,
+          "validation_ignore": 4,
+          "test_gap_ignore": 4
+        },
+        "source_recovery": {
+          "original_pin": "local Arrow fingerprint, not an upstream Git commit",
+          "builder_probed_revision": "db6c0314dee6cc8e2770b34fda08f4a3bf1ebd59",
+          "builder_preserves_ignore_marker": true,
+          "LIUM_API_status": 401,
+          "original_Arrow_bytes_recovered": false
+        },
+        "media_scope": "reuse prior 50-WAV decode, reverify immutable file hashes; no full-corpus decode",
+        "status": "bounded_42_item_diagnostic_candidate_only_no_scientific_freeze"
+      }
+    },
+    {
+      "dataset": "iiit-cvid",
+      "path": "experiments/notebooks/diagnostics/iiit-cvid-validation-ocr-eda.ipynb",
+      "receipt": "experiments/outputs/dataset_qualification_261010/iiit-cvid-qualification-receipt.json",
+      "receipt_sha256": "5173ec68a60845d0969374f60c1017bb39b861e6b8ea466cefae32086482ad86",
+      "executed_followup_cells": 1,
+      "cohort_frozen": false,
+      "status": "full_frame_geometry_review_complete_duplicate_content_and_source_mapping_HOLD",
+      "counts": {
+        "selected": 5475,
+        "observed": 5475,
+        "label_valid": 5455,
+        "media_valid": 5475,
+        "evaluated": 0,
+        "failed": 0
+      },
+      "evidence": {
+        "dataset": "iiit-cvid",
+        "observed_at_utc": "2026-10-10T08:51:18.445999+00:00",
+        "counts": {
+          "selected": 5475,
+          "observed": 5475,
+          "label_valid": 5455,
+          "media_valid": 5475,
+          "evaluated": 0,
+          "failed": 0
+        },
+        "artifacts": [
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\iiit-cvid-frame-ledger.csv",
+            "sha256": "f2bd1cc64e25a0dac3ebbbc5541caef1068eb4982a2ca6334de87d65c19e7c05",
+            "rows": 5475
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\iiit-cvid-box-issue-ledger.csv",
+            "sha256": "f96bd4a80b491c5c155f20f1f55fa19b6d6ddf311df01ab1183511e7be5ec19e",
+            "rows": 22
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\iiit-cvid-derived-metadata-ledger.csv",
+            "sha256": "78290250e08449e625809420eff9843f61717acfd74f73cf620bb92b87cc94b7",
+            "rows": 124
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\iiit-cvid-cross-split-pairs.csv",
+            "sha256": "541789c71a4a7070289bdecb5a6b7654769e68be82a010d667d60726630aeb65",
+            "rows": 469
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\iiit-cvid-source-groups.csv",
+            "sha256": "d4f9605db086c7c22ea2964d2ca15ddbeb2b316a07a5634ca9519bade7558e75",
+            "rows": 811
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\iiit-cvid-read-failures.csv",
+            "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+            "rows": 0
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\iiit-cvid-geometry-contact-sheet.png",
+            "sha256": "d4040f66132b486f260ec7d7a213936294cf7303551ed4ce183abe909e005b78"
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\iiit-cvid-geometry-adjudication.csv",
+            "sha256": "3f5b5da582d471344e1e8fe9f5b0818afe2964a60e37a1cd226c8488b854aa70",
+            "rows": 22
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\iiit-cvid-derived-dimension-overrides.json",
+            "sha256": "b7ded6fb47e0af84d0bfe2434e656ae14ce8f31035462039ffe0ac2d54d7419a"
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\iiit-cvid-adjudication-summary.json",
+            "sha256": "29269b9ec79b8dbd2c7e69e9eb662bcc30112264890fc2b5c68955fcb4cfee29"
+          }
+        ],
+        "model_inference_run": false,
+        "unseen_reference_claim": false,
+        "source_archive_sha256": "b5b562580e250ee3336462b7699bc79d0d1149d3b8cc82f1b221a0d0ce4fb489",
+        "archive_restored_locally": true,
+        "split_counts": {
+          "test": 1755,
+          "train": 3171,
+          "val": 549
+        },
+        "decisions": {
+          "KEEP": 5335,
+          "REPAIR": 120,
+          "HOLD": 20
+        },
+        "invalid_boxes": 22,
+        "invalid_frames": 20,
+        "XML_size_mismatches": 124,
+        "cross_split_candidate_pairs": 469,
+        "cross_split_source_groups": [],
+        "status": "full_frame_geometry_review_complete_duplicate_content_and_source_mapping_HOLD",
+        "label_valid_scope": "geometry_and_nonblank_names_not_independent_text_correctness",
+        "derived_dimension_overrides": 120,
+        "geometry_adjudication": "22 boxes remain HOLD; no clipping without source-coordinate evidence",
+        "cohort_frozen": false
+      }
+    },
+    {
+      "dataset": "lvvo",
+      "path": "experiments/notebooks/diagnostics/lvvo-four-class-detection-eda.ipynb",
+      "receipt": "experiments/outputs/dataset_qualification_261010/lvvo-qualification-receipt.json",
+      "receipt_sha256": "6422bda8d6c6bf131d5619838debe82a744a898a847ab9a18cbe4cead846e6d9",
+      "executed_followup_cells": 1,
+      "cohort_frozen": false,
+      "status": "HOLD_formal_benchmark",
+      "counts": {
+        "selected": 1000,
+        "observed": 1000,
+        "label_valid": 1000,
+        "media_valid": 1000,
+        "evaluated": 0,
+        "failed": 0
+      },
+      "evidence": {
+        "dataset": "lvvo",
+        "observed_at_utc": "2026-10-10T08:58:45.152428+00:00",
+        "counts": {
+          "selected": 1000,
+          "observed": 1000,
+          "label_valid": 1000,
+          "media_valid": 1000,
+          "evaluated": 0,
+          "failed": 0
+        },
+        "artifacts": [
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\lvvo-id-ledger.csv",
+            "sha256": "5dd58e135b84e9e363dbdd1fddb6fa7b93d7c569238d237aa18549eabc39e2dd",
+            "rows": 1000
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\lvvo-video-group-ledger.csv",
+            "sha256": "a61ad8c1348aef30899c7b26aecc272dd45e3946560f21793187fdd139dcc9c5",
+            "rows": 139
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\lvvo-historical-displayed-duplicate-pairs.csv",
+            "sha256": "f98ca9b4d8ed95b901d80227b715f3448feff2e2fb14c6d7bb45072dfea322f3",
+            "rows": 20
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\lvvo-network-probes.json",
+            "sha256": "4a245e997732ae1477657e2782aad22a1c059d1fa3e9bfb952540cccd9fecdd1"
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\lvvo-provisional-split-design.json",
+            "sha256": "4a77563dbbc2195ef676a8aa12734ca9316311429dc8e7df799ba7716195fb44"
+          }
+        ],
+        "model_inference_run": false,
+        "unseen_reference_claim": false,
+        "status": "HOLD_formal_benchmark",
+        "evidence_reused": [
+          {
+            "path": "experiments\\outputs\\lvvo_four_class_eda\\LVVO_1k_withCategories.zip",
+            "sha256": "f049217c51c45d532f394d7082e69da95397dee106fede1d743ff3dee80bf7cf"
+          },
+          {
+            "path": "experiments\\outputs\\lvvo_four_class_eda\\image_ledger.csv",
+            "sha256": "2986d79f7df4cdfc6eb9b592411c495811d62104eb076c7c6d6d3488d024d33d"
+          },
+          {
+            "path": "plans\\reports\\lvvo-provenance-split-261010-image-ledger.csv",
+            "sha256": "65ba5480db558756fb3ff30b9399dd2f9ad853d89b0346f4f9af32c564e0aec4"
+          },
+          {
+            "path": "plans\\reports\\lvvo-provenance-split-261010-video-group-ledger.csv",
+            "sha256": "a42210d75e7c66d00206b4527ae23eaaefdcda56bade9549bb7302b324098228"
+          }
+        ],
+        "source_video_groups": 139,
+        "public_HTML_source_token_matches": 39,
+        "public_HTML_linked_frames": 245,
+        "source_video_media_valid": 0,
+        "source_frame_alignment_verified": 0,
+        "media_valid_scope": "1000 released JPG frames decoded in prior executed EDA; not videos",
+        "historical_duplicate_candidate_pairs": 313,
+        "historical_cross_token_pairs": 257,
+        "historical_pairs_recovered_from_display": 20,
+        "duplicate_review_status": "HOLD_full_pair_queue_and_visual_review_missing",
+        "source_group_leakage_status": "HOLD_no_split_and_incomplete_verified_source_identity",
+        "archive_or_images_decoded_this_run": false,
+        "assigned_split_count": 0,
+        "rights": "author CC BY 4.0 release statement verified at pinned commit; underlying video scope unverified",
+        "author_repository_revision": "d53418d8846c5c08abf9cfa7380da8a4f16626ce",
+        "decision_counts": {
+          "HOLD": 1000
+        },
+        "blockers": [
+          "underlying video rights and frame alignment",
+          "100 groups without observed public source-token match",
+          "257 cross-token candidate pairs unadjudicated; only first20 retained",
+          "all labels previously observed; no unseen-reference final test"
+        ]
+      }
+    },
+    {
+      "dataset": "mlpdataset",
+      "path": "experiments/notebooks/diagnostics/mlpdataset-slide-transition-eda.ipynb",
+      "receipt": "experiments/outputs/dataset_qualification_261010/mlpdataset-qualification-receipt.json",
+      "receipt_sha256": "1602371a4d2f3db36ae03b265bd4fd5e25ecd91a11bde8a759e0a990845e75b7",
+      "executed_followup_cells": 1,
+      "cohort_frozen": false,
+      "status": "HOLD",
+      "counts": {
+        "selected": 333,
+        "observed": 333,
+        "label_valid": 315,
+        "media_valid": 0,
+        "evaluated": 0,
+        "failed": 0,
+        "unit": "source video",
+        "label_valid_definition": "structural annotation only; not independent task GT",
+        "media_valid_definition": "original source videos verified for target endpoint",
+        "failed_definition": "record read/parse failures; HOLD is not a processing failure"
+      },
+      "evidence": {
+        "dataset": "mlpdataset",
+        "observed_at_utc": "2026-10-10T08:57:58.777896+00:00",
+        "counts": {
+          "selected": 333,
+          "observed": 333,
+          "label_valid": 315,
+          "media_valid": 0,
+          "evaluated": 0,
+          "failed": 0,
+          "unit": "source video",
+          "label_valid_definition": "structural annotation only; not independent task GT",
+          "media_valid_definition": "original source videos verified for target endpoint",
+          "failed_definition": "record read/parse failures; HOLD is not a processing failure"
+        },
+        "artifacts": [
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\mlpdataset-id-ledger.csv",
+            "sha256": "760f7589385fd113d3369f9becae69b24616322990b1f7ad0564c7e57fb48119",
+            "rows": 333
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\mlpdataset-boundary-ledger.csv",
+            "sha256": "4313fad1ec17bdb4b050022740197dfc7f1fbb996db837f96180a4b32ca41b42",
+            "rows": 9021
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\mlpdataset-parse-failures.csv",
+            "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+            "rows": 0
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\mlpdataset-json-anomalies.csv",
+            "sha256": "899fa8f87cb774b2494c77cb9b0e81a4f90498d4b156e4a3b7d532400b677d45",
+            "rows": 1
+          }
+        ],
+        "model_inference_run": false,
+        "unseen_reference_claim": false,
+        "source": {
+          "path": "experiments\\outputs\\mlp_eda_source\\mlp_anon.zip",
+          "sha256": "dbd07ef37de603a22abb7be7d81245034b3c487f4878227cbef36ae3d451cfa7"
+        },
+        "boundary_records": 9021,
+        "nonincreasing_boundaries": 15,
+        "empty_boundary_files": 6,
+        "json_parse_failures": [
+          {
+            "member": "data/dental/dental.json",
+            "decision": "HOLD",
+            "reason": "Expecting property name enclosed in double quotes: line 5120653 column 15 (char 131727360)"
+          }
+        ],
+        "frozen": false,
+        "media_probe_rule": "first released video in sorted source ID order; metadata and 0-20s clip attempt",
+        "endpoint": "slide transition: annotation-only diagnostics; no transition F1 permitted",
+        "blocker": "Original frames, rights and boundary alignment not verified; do not sort annotations as GT.",
+        "source_probes": [
+          {
+            "dataset": "mlpdataset",
+            "id": "-8QB3Rbeqoc",
+            "url": "https://www.youtube.com/watch?v=-8QB3Rbeqoc",
+            "observed_at_utc": "2026-10-10T08:59:02.111497+00:00",
+            "scope": "one deterministic source video; metadata extraction only; no media decoded",
+            "exit_code": 0,
+            "stderr": "",
+            "response_path": "experiments\\outputs\\dataset_qualification_261010\\mlpdataset-media-probe--8QB3Rbeqoc.txt",
+            "sha256": "ca69b48ad42291d5004820fb124426f76b7b287917a0a136b9ea26602cb85dbb",
+            "duration": 819,
+            "title": "Oral Medicine | ASA Classification | INBDE",
+            "license": null,
+            "uploader": "Mental Dental",
+            "media_restored": false,
+            "decision": "HOLD_alignment_and_rights_review"
+          }
+        ],
+        "media_probe_limit": "Bounded deterministic source probes only; no full availability survey or original media decode.",
+        "bounded_media_samples": [
+          {
+            "dataset": "mlpdataset",
+            "id": "-8QB3Rbeqoc",
+            "url": "https://www.youtube.com/watch?v=-8QB3Rbeqoc",
+            "section": "0-20s",
+            "max_bytes": 30000000,
+            "observed_at_utc": "2026-10-10T09:00:41.109026+00:00",
+            "decision": "HOLD_sample_download_failed",
+            "exit_code": 1,
+            "log_path": "experiments\\outputs\\dataset_qualification_261010\\mlpdataset-clip-probe--8QB3Rbeqoc.txt",
+            "log_sha256": "d6504bd8535eb28f1929a94c0fc856c11783268facfbdd080690b1d3b24d1292"
+          }
+        ],
+        "source_aligned_media_valid": 0,
+        "json_issue_scope": "Malformed dental conversation JSON does not invalidate independently parsed segments.txt; dialogue endpoint remains HOLD."
+      }
+    },
+    {
+      "dataset": "accessmath",
+      "path": "experiments/notebooks/diagnostics/accessmath-board-annotations-eda.ipynb",
+      "receipt": "experiments/outputs/dataset_qualification_261010/accessmath-qualification-receipt.json",
+      "receipt_sha256": "53ba72e5b4004d9a67c554cea0ecaef02311a14cf5d7e6e216e79f61b6996f4e",
+      "executed_followup_cells": 1,
+      "cohort_frozen": false,
+      "status": "HOLD",
+      "counts": {
+        "selected": 12,
+        "observed": 12,
+        "label_valid": 11,
+        "media_valid": 0,
+        "evaluated": 0,
+        "failed": 0,
+        "unit": "annotated video",
+        "label_valid_definition": "structural annotation only; not independent task GT",
+        "media_valid_definition": "original source videos verified for target endpoint",
+        "failed_definition": "record read/parse failures; HOLD is not a processing failure"
+      },
+      "evidence": {
+        "dataset": "accessmath",
+        "observed_at_utc": "2026-10-10T08:58:01.914738+00:00",
+        "counts": {
+          "selected": 12,
+          "observed": 12,
+          "label_valid": 11,
+          "media_valid": 0,
+          "evaluated": 0,
+          "failed": 0,
+          "unit": "annotated video",
+          "label_valid_definition": "structural annotation only; not independent task GT",
+          "media_valid_definition": "original source videos verified for target endpoint",
+          "failed_definition": "record read/parse failures; HOLD is not a processing failure"
+        },
+        "artifacts": [
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\accessmath-id-ledger.csv",
+            "sha256": "802445eb5df29d49690414bc55d6e23908d67c588d05493b610aa151cafcb4c7",
+            "rows": 12
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\accessmath-segment-ledger.csv",
+            "sha256": "d98daeaebc8ce5bc33f064a0eaf2e11e142c4c5b3a50955455a4c0faa734ff4b",
+            "rows": 129
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\accessmath-source-group-ledger.csv",
+            "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+            "rows": 0
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\accessmath-historical-notebook-decision.json",
+            "sha256": "0194d38f3a436d6b8f1a1d0e3eb3bdb67516a8458bf3bd6fa585ef7705187dbb"
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\accessmath-keyframe-ledger.csv",
+            "sha256": "848da0a1cf8eff897ff5d4503a632fcad8acdd90f16fae462bad1ae374f0f708",
+            "rows": 129
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\accessmath-lecturemath-source-bridge-ledger.csv",
+            "sha256": "017ba640dab0564a0abee4a375ca4c868b235097761e3aea6648cd21a0e48744",
+            "rows": 12
+          }
+        ],
+        "model_inference_run": false,
+        "unseen_reference_claim": false,
+        "source": {
+          "path": "experiments\\outputs\\board_eda_downloads\\accessmath-official-2017.zip",
+          "sha256": "7bffabf04ecf5ee5c03fb36089dba81bbef8c6a0f310002207df6ed51bfd9fee"
+        },
+        "keyframe_records": 129,
+        "released_pngs": 130,
+        "original_media_decoded_this_followup": 0,
+        "image_decoding_rerun": false,
+        "historical_evidence": [
+          {
+            "source_ids": 12,
+            "annotated_ids": 12,
+            "missing_annotation_ids": [],
+            "extra_annotation_ids": [],
+            "structural_bad_ids": [
+              "lecture_08"
+            ],
+            "source_group_id_cross_split_overlap_review_signal": {
+              "testing": [],
+              "training": []
+            },
+            "exact_source_link_cross_split_overlap": {
+              "testing": [],
+              "training": []
+            },
+            "reused_video_paths": {},
+            "keyframe_pngs": 130,
+            "exact_duplicate_keyframe_groups": 0,
+            "cross_split_exact_keyframe_groups": 0,
+            "decoded_sample_pngs": 2,
+            "original_videos_decoded": 0,
+            "decoded_all_keyframe_pngs_for_dhash": 130,
+            "keyframe_png_read_failures": [],
+            "cross_split_dhash_candidates_le4": 0,
+            "dhash_candidate_video_ids": [],
+            "test_references_seen": true,
+            "decision": "HOLD for formal required-state benchmark: annotation package inspected, but original video media and semantic required-state interpretation not audited."
+          }
+        ],
+        "frozen": false,
+        "endpoint": "released keyframe/summary annotation diagnostics; required board-state endpoint HOLD",
+        "blocker": "Original video, edit/multipart timebase, source dependence and required-state label semantics unresolved.",
+        "source_probes": [
+          {
+            "dataset": "accessmath",
+            "label": "official-project-page",
+            "url": "https://www.cs.rit.edu/~rlaz/Projects/AccessMath.html",
+            "observed_at_utc": "2026-10-10T08:59:07.999045+00:00",
+            "status": 404,
+            "final_url": "https://www.cs.rit.edu/~rlaz/Projects/AccessMath.html",
+            "sha256": "59086cc58cbdd515bed2645bf99f2de91d7cbf6bcaf36a5f58a22c9b235e881f",
+            "bytes": 277,
+            "response_path": "experiments\\outputs\\dataset_qualification_261010\\accessmath-official-project-page.txt"
+          },
+          {
+            "dataset": "accessmath",
+            "label": "potential-official-source-bridge",
+            "source_url": "https://www.youtube.com/watch?v=6arlCAT3Hb4",
+            "lecturemath_id": "00000_000_001",
+            "source_group": "00000",
+            "decision": "HOLD",
+            "reason": "LectureMath released source 00000 references AccessMath; multipart camera timebase not verified"
+          }
+        ],
+        "media_probe_limit": "Bounded deterministic source probes only; no full availability survey or original media decode.",
+        "bounded_media_samples": [],
+        "source_aligned_media_valid": 0,
+        "time_unit_review": {
+          "status": "verified_from_author_code",
+          "unit": "milliseconds",
+          "sources": [
+            {
+              "dataset": "lecturemath",
+              "label": "keyframe-code",
+              "url": "https://raw.githubusercontent.com/kdavila/lecturemath/245d58a20393166addacb9ece75326ef3455b16f/ACCESS2021_release/AccessMath/annotation/keyframe_annotation.py",
+              "observed_at_utc": "2026-10-10T09:01:29.180900+00:00",
+              "status": 200,
+              "final_url": "https://raw.githubusercontent.com/kdavila/lecturemath/245d58a20393166addacb9ece75326ef3455b16f/ACCESS2021_release/AccessMath/annotation/keyframe_annotation.py",
+              "sha256": "4f6f19aecb5aeb4a4f36eaaa788e6f4905220adadd4d51514bcc15c363a9a447",
+              "bytes": 23484,
+              "response_path": "experiments\\outputs\\dataset_qualification_261010\\lecturemath-keyframe-code.txt"
+            },
+            {
+              "dataset": "lecturemath",
+              "label": "keyframe-extractor-code",
+              "url": "https://raw.githubusercontent.com/kdavila/lecturemath/245d58a20393166addacb9ece75326ef3455b16f/ACCESS2021_release/AccessMath/preprocessing/content/keyframe_extractor.py",
+              "observed_at_utc": "2026-10-10T09:01:29.700005+00:00",
+              "status": 200,
+              "final_url": "https://raw.githubusercontent.com/kdavila/lecturemath/245d58a20393166addacb9ece75326ef3455b16f/ACCESS2021_release/AccessMath/preprocessing/content/keyframe_extractor.py",
+              "sha256": "0c5ea127cbaf4c54b381291bafc84563bf1e7f3cc500ddf8f2a6596a69685948",
+              "bytes": 10150,
+              "response_path": "experiments\\outputs\\dataset_qualification_261010\\lecturemath-keyframe-extractor-code.txt"
+            },
+            {
+              "dataset": "lecturemath",
+              "label": "timehelper-code",
+              "url": "https://raw.githubusercontent.com/kdavila/lecturemath/245d58a20393166addacb9ece75326ef3455b16f/ACCESS2021_release/AM_CommonTools/util/time_helper.py",
+              "observed_at_utc": "2026-10-10T09:01:30.186498+00:00",
+              "status": 200,
+              "final_url": "https://raw.githubusercontent.com/kdavila/lecturemath/245d58a20393166addacb9ece75326ef3455b16f/ACCESS2021_release/AM_CommonTools/util/time_helper.py",
+              "sha256": "4a188d18f7e2f926e5c0af498d1c509721d32c2dcf9f93d9cf4b37a6e2686a0c",
+              "bytes": 2313,
+              "response_path": "experiments\\outputs\\dataset_qualification_261010\\lecturemath-timehelper-code.txt"
+            }
+          ],
+          "media_alignment": "HOLD; author annotation clock is not proof of downloaded video clock"
+        },
+        "label_semantics_review": "Released extractive keyframes, segments and handwritten-content annotations; not independently verified required board-state GT.",
+        "cross_dataset_source_bridge_candidates": 12,
+        "cross_dataset_leakage": "Potential author-title source reuse across datasets; no independent-source claim until media alignment."
+      }
+    },
+    {
+      "dataset": "lecturemath",
+      "path": "experiments/notebooks/diagnostics/lecturemath-keyframe-annotations-eda.ipynb",
+      "receipt": "experiments/outputs/dataset_qualification_261010/lecturemath-qualification-receipt.json",
+      "receipt_sha256": "3d8794a6fc7c0b4b9eb6cc0aa3ceaf39835ec29ad35d77625e88316f37c2f05e",
+      "executed_followup_cells": 1,
+      "cohort_frozen": false,
+      "status": "HOLD",
+      "counts": {
+        "selected": 34,
+        "observed": 34,
+        "label_valid": 34,
+        "media_valid": 0,
+        "evaluated": 0,
+        "failed": 0,
+        "unit": "annotated video",
+        "label_valid_definition": "structural annotation only; not independent task GT",
+        "media_valid_definition": "original source videos verified for target endpoint",
+        "failed_definition": "record read/parse failures; HOLD is not a processing failure"
+      },
+      "evidence": {
+        "dataset": "lecturemath",
+        "observed_at_utc": "2026-10-10T08:58:02.890591+00:00",
+        "counts": {
+          "selected": 34,
+          "observed": 34,
+          "label_valid": 34,
+          "media_valid": 0,
+          "evaluated": 0,
+          "failed": 0,
+          "unit": "annotated video",
+          "label_valid_definition": "structural annotation only; not independent task GT",
+          "media_valid_definition": "original source videos verified for target endpoint",
+          "failed_definition": "record read/parse failures; HOLD is not a processing failure"
+        },
+        "artifacts": [
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\lecturemath-id-ledger.csv",
+            "sha256": "ee63b2f14712f141ff1a92be3bd2fc6a0608947155dcde2bf59a70b31e31eb9c",
+            "rows": 34
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\lecturemath-segment-ledger.csv",
+            "sha256": "fbf0f1ccd47a65f4502903801c20b5ba60a08d4762289507fcc27b45043fadbe",
+            "rows": 303
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\lecturemath-source-group-ledger.csv",
+            "sha256": "3148d1f52bd959c8afcebc845a7b7e56236b35cc19ee1087cfd11024d91cb63f",
+            "rows": 8
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\lecturemath-historical-notebook-decision.json",
+            "sha256": "8c7ae4ff124cd119bf228b847f4310a8eeaa9d0644c88bba1649cb7b5f591c0f"
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\lecturemath-keyframe-ledger.csv",
+            "sha256": "d1e611fa02cd83de01d055400741ebf40c4960ab764dbcbad7fbafd401b4e2f2",
+            "rows": 330
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\lecturemath-historical-dhash-30-of-33.csv",
+            "sha256": "382cce04a93914785e4a2fdb39a36b4ee29c8bd93d0dc968c8f4b365767929eb",
+            "rows": 30
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\accessmath-lecturemath-source-bridge-ledger.csv",
+            "sha256": "017ba640dab0564a0abee4a375ca4c868b235097761e3aea6648cd21a0e48744",
+            "rows": 12
+          }
+        ],
+        "model_inference_run": false,
+        "unseen_reference_claim": false,
+        "source": {
+          "path": "experiments\\outputs\\board_eda_downloads\\lecturemath-official-annotations.zip",
+          "sha256": "cf0129f4d71a21d7be9b43f71d184e6b711d76375855d873e75636472ca72f45"
+        },
+        "keyframe_records": 330,
+        "released_pngs": 330,
+        "original_media_decoded_this_followup": 0,
+        "image_decoding_rerun": false,
+        "historical_evidence": [
+          {
+            "source_ids": 34,
+            "annotated_ids": 34,
+            "missing_annotation_ids": [],
+            "extra_annotation_ids": [],
+            "structural_bad_ids": [],
+            "source_group_id_cross_split_overlap_review_signal": {
+              "testing": [
+                "00000",
+                "00005",
+                "00008",
+                "00009",
+                "00010",
+                "00011",
+                "00012",
+                "00013"
+              ],
+              "training": [
+                "00000",
+                "00005",
+                "00008",
+                "00009",
+                "00010",
+                "00011",
+                "00012",
+                "00013"
+              ]
+            },
+            "exact_source_link_cross_split_overlap": {
+              "testing": [],
+              "training": []
+            },
+            "reused_video_paths": {},
+            "keyframe_pngs": 330,
+            "exact_duplicate_keyframe_groups": 0,
+            "cross_split_exact_keyframe_groups": 0,
+            "decoded_sample_pngs": 2,
+            "original_videos_decoded": 0,
+            "decoded_all_keyframe_pngs_for_dhash": 330,
+            "keyframe_png_read_failures": [],
+            "cross_split_dhash_candidates_le4": 33,
+            "dhash_candidate_video_ids": [
+              "00000_000_001",
+              "00005_011_010",
+              "00005_027_011",
+              "00009_006_004",
+              "00012_006_003",
+              "00012_008_004",
+              "00013_001_026",
+              "00013_001_088",
+              "00013_005_080"
+            ],
+            "test_references_seen": true,
+            "decision": "HOLD for formal required-state benchmark: annotation package inspected, but original video media and semantic required-state interpretation not audited."
+          }
+        ],
+        "frozen": false,
+        "endpoint": "released keyframe/summary annotation diagnostics; required board-state endpoint HOLD",
+        "blocker": "Original video, edit/multipart timebase, source dependence and required-state label semantics unresolved.",
+        "source_probes": [
+          {
+            "dataset": "lecturemath",
+            "label": "official-commit",
+            "url": "https://api.github.com/repos/kdavila/lecturemath/commits/master",
+            "observed_at_utc": "2026-10-10T08:59:08.835682+00:00",
+            "status": 200,
+            "final_url": "https://api.github.com/repos/kdavila/lecturemath/commits/master",
+            "sha256": "ac0cf7a5e33f0ac60723c66b3939ff03a9f7eb34fd1ef4111f6fff11eca1639e",
+            "bytes": 23914,
+            "response_path": "experiments\\outputs\\dataset_qualification_261010\\lecturemath-official-commit.json"
+          },
+          {
+            "dataset": "lecturemath",
+            "label": "official-readme",
+            "url": "https://raw.githubusercontent.com/kdavila/lecturemath/245d58a20393166addacb9ece75326ef3455b16f/ACCESS2021_release/README.md",
+            "observed_at_utc": "2026-10-10T08:59:09.474464+00:00",
+            "status": 200,
+            "final_url": "https://raw.githubusercontent.com/kdavila/lecturemath/245d58a20393166addacb9ece75326ef3455b16f/ACCESS2021_release/README.md",
+            "sha256": "dc0d01de90e7225bc18de5568df74b913778f7e50f7f661beafc48e6b5117b83",
+            "bytes": 9581,
+            "response_path": "experiments\\outputs\\dataset_qualification_261010\\lecturemath-official-readme.txt",
+            "revision": "245d58a20393166addacb9ece75326ef3455b16f"
+          },
+          {
+            "dataset": "lecturemath",
+            "label": "official-db",
+            "url": "https://raw.githubusercontent.com/kdavila/lecturemath/245d58a20393166addacb9ece75326ef3455b16f/ACCESS2021_release/lecture_data/db_LectureMath.xml",
+            "observed_at_utc": "2026-10-10T08:59:10.124753+00:00",
+            "status": 200,
+            "final_url": "https://raw.githubusercontent.com/kdavila/lecturemath/245d58a20393166addacb9ece75326ef3455b16f/ACCESS2021_release/lecture_data/db_LectureMath.xml",
+            "sha256": "e67d3e90b8d06658af09cacf1c022560d8bb0d83550a534c02f22bfda7cad834",
+            "bytes": 52712,
+            "response_path": "experiments\\outputs\\dataset_qualification_261010\\lecturemath-official-db.txt",
+            "revision": "245d58a20393166addacb9ece75326ef3455b16f"
+          },
+          {
+            "dataset": "lecturemath",
+            "label": "official-edited",
+            "url": "https://raw.githubusercontent.com/kdavila/lecturemath/245d58a20393166addacb9ece75326ef3455b16f/ACCESS2021_release/lecture_data/video_edited_gt_34.json",
+            "observed_at_utc": "2026-10-10T08:59:10.622880+00:00",
+            "status": 200,
+            "final_url": "https://raw.githubusercontent.com/kdavila/lecturemath/245d58a20393166addacb9ece75326ef3455b16f/ACCESS2021_release/lecture_data/video_edited_gt_34.json",
+            "sha256": "136568963e657f1b206e8136e8a7263e40390b9374c00ec6b8112e7009c10d15",
+            "bytes": 1210,
+            "response_path": "experiments\\outputs\\dataset_qualification_261010\\lecturemath-official-edited.txt",
+            "revision": "245d58a20393166addacb9ece75326ef3455b16f"
+          },
+          {
+            "dataset": "lecturemath",
+            "label": "official-tree",
+            "url": "https://api.github.com/repos/kdavila/lecturemath/git/trees/245d58a20393166addacb9ece75326ef3455b16f?recursive=1",
+            "observed_at_utc": "2026-10-10T08:59:11.142946+00:00",
+            "status": 200,
+            "final_url": "https://api.github.com/repos/kdavila/lecturemath/git/trees/245d58a20393166addacb9ece75326ef3455b16f?recursive=1",
+            "sha256": "925cbf51b1be16c2cc097a8d03ee2b60af1985ce9d76a15e5b95ffd74e290fba",
+            "bytes": 57059,
+            "response_path": "experiments\\outputs\\dataset_qualification_261010\\lecturemath-official-tree.json",
+            "revision": "245d58a20393166addacb9ece75326ef3455b16f"
+          },
+          {
+            "dataset": "lecturemath",
+            "id": "00000_000_001",
+            "url": "https://www.youtube.com/watch?v=6arlCAT3Hb4",
+            "observed_at_utc": "2026-10-10T08:59:11.660542+00:00",
+            "scope": "one deterministic source video; metadata extraction only; no media decoded",
+            "exit_code": 0,
+            "stderr": "",
+            "response_path": "experiments\\outputs\\dataset_qualification_261010\\lecturemath-media-probe-00000_000_001.txt",
+            "sha256": "d09002e991c82f5e75e3a75fb6c5fc882872fb042d822292eeed0ccf59afad01",
+            "duration": 1508,
+            "title": "AccessMath - NM Lecture 01",
+            "license": "Creative Commons Attribution license (reuse allowed)",
+            "uploader": "Kenny Davila Castellanos",
+            "media_restored": false,
+            "decision": "HOLD_alignment_and_rights_review"
+          }
+        ],
+        "media_probe_limit": "Bounded deterministic source probes only; no full availability survey or original media decode.",
+        "bounded_media_samples": [
+          {
+            "dataset": "lecturemath",
+            "id": "00000_000_001",
+            "url": "https://www.youtube.com/watch?v=6arlCAT3Hb4",
+            "section": "0-20s",
+            "max_bytes": 30000000,
+            "observed_at_utc": "2026-10-10T09:00:44.190300+00:00",
+            "decision": "HOLD_sample_download_failed",
+            "exit_code": 1,
+            "log_path": "experiments\\outputs\\dataset_qualification_261010\\lecturemath-clip-probe-00000_000_001.txt",
+            "log_sha256": "3e954e33371e0b77271040fc8086aa8c9322655bde64f72961e20dc2997b0fcc"
+          }
+        ],
+        "source_aligned_media_valid": 0,
+        "time_unit_review": {
+          "status": "verified_from_author_code",
+          "unit": "milliseconds",
+          "sources": [
+            {
+              "dataset": "lecturemath",
+              "label": "keyframe-code",
+              "url": "https://raw.githubusercontent.com/kdavila/lecturemath/245d58a20393166addacb9ece75326ef3455b16f/ACCESS2021_release/AccessMath/annotation/keyframe_annotation.py",
+              "observed_at_utc": "2026-10-10T09:01:29.180900+00:00",
+              "status": 200,
+              "final_url": "https://raw.githubusercontent.com/kdavila/lecturemath/245d58a20393166addacb9ece75326ef3455b16f/ACCESS2021_release/AccessMath/annotation/keyframe_annotation.py",
+              "sha256": "4f6f19aecb5aeb4a4f36eaaa788e6f4905220adadd4d51514bcc15c363a9a447",
+              "bytes": 23484,
+              "response_path": "experiments\\outputs\\dataset_qualification_261010\\lecturemath-keyframe-code.txt"
+            },
+            {
+              "dataset": "lecturemath",
+              "label": "keyframe-extractor-code",
+              "url": "https://raw.githubusercontent.com/kdavila/lecturemath/245d58a20393166addacb9ece75326ef3455b16f/ACCESS2021_release/AccessMath/preprocessing/content/keyframe_extractor.py",
+              "observed_at_utc": "2026-10-10T09:01:29.700005+00:00",
+              "status": 200,
+              "final_url": "https://raw.githubusercontent.com/kdavila/lecturemath/245d58a20393166addacb9ece75326ef3455b16f/ACCESS2021_release/AccessMath/preprocessing/content/keyframe_extractor.py",
+              "sha256": "0c5ea127cbaf4c54b381291bafc84563bf1e7f3cc500ddf8f2a6596a69685948",
+              "bytes": 10150,
+              "response_path": "experiments\\outputs\\dataset_qualification_261010\\lecturemath-keyframe-extractor-code.txt"
+            },
+            {
+              "dataset": "lecturemath",
+              "label": "timehelper-code",
+              "url": "https://raw.githubusercontent.com/kdavila/lecturemath/245d58a20393166addacb9ece75326ef3455b16f/ACCESS2021_release/AM_CommonTools/util/time_helper.py",
+              "observed_at_utc": "2026-10-10T09:01:30.186498+00:00",
+              "status": 200,
+              "final_url": "https://raw.githubusercontent.com/kdavila/lecturemath/245d58a20393166addacb9ece75326ef3455b16f/ACCESS2021_release/AM_CommonTools/util/time_helper.py",
+              "sha256": "4a188d18f7e2f926e5c0af498d1c509721d32c2dcf9f93d9cf4b37a6e2686a0c",
+              "bytes": 2313,
+              "response_path": "experiments\\outputs\\dataset_qualification_261010\\lecturemath-timehelper-code.txt"
+            }
+          ],
+          "media_alignment": "HOLD; author annotation clock is not proof of downloaded video clock"
+        },
+        "label_semantics_review": "Released extractive keyframes, segments and handwritten-content annotations; not independently verified required board-state GT.",
+        "duplicate_review": {
+          "historical_candidate_count": 33,
+          "persisted_identified_pairs": 30,
+          "unresolved_unretained_pairs": 3,
+          "decision": "HOLD; original signature list not persisted; do not pretend 30 rows cover 33 pairs"
+        },
+        "cross_dataset_source_bridge_candidates": 12,
+        "cross_dataset_leakage": "Potential author-title source reuse across datasets; no independent-source claim until media alignment."
+      }
+    },
+    {
+      "dataset": "eduvidqa",
+      "path": "experiments/notebooks/diagnostics/eduvidqa-official-annotations-eda.ipynb",
+      "receipt": "experiments/outputs/dataset_qualification_261010/eduvidqa-qualification-receipt.json",
+      "receipt_sha256": "41e777044ac49318f4f375752f96a3403c098439f59e1a2832782196eee27eee",
+      "executed_followup_cells": 1,
+      "cohort_frozen": false,
+      "status": "HOLD",
+      "counts": {
+        "selected": 5234,
+        "observed": 5234,
+        "label_valid": 5234,
+        "media_valid": 0,
+        "evaluated": 0,
+        "failed": 0,
+        "unit": "QA CSV row",
+        "label_valid_definition": "structural annotation only; not independent task GT",
+        "media_valid_definition": "original source videos verified for target endpoint",
+        "failed_definition": "record read/parse failures; HOLD is not a processing failure"
+      },
+      "evidence": {
+        "dataset": "eduvidqa",
+        "observed_at_utc": "2026-10-10T08:58:03.066279+00:00",
+        "counts": {
+          "selected": 5234,
+          "observed": 5234,
+          "label_valid": 5234,
+          "media_valid": 0,
+          "evaluated": 0,
+          "failed": 0,
+          "unit": "QA CSV row",
+          "label_valid_definition": "structural annotation only; not independent task GT",
+          "media_valid_definition": "original source videos verified for target endpoint",
+          "failed_definition": "record read/parse failures; HOLD is not a processing failure"
+        },
+        "artifacts": [
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\eduvidqa-id-ledger.csv",
+            "sha256": "b139365e65cd2e87d2e229f953aca9ab9d2550289f59435a2406f6005e0c9044",
+            "rows": 5234
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\eduvidqa-source-group-ledger.csv",
+            "sha256": "6dec070a47062ef16958af54482f39ea4a928c5b56c51216455bf468a0469d8a",
+            "rows": 296
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\eduvidqa-sampled-three-part-timebase-review.csv",
+            "sha256": "851b97b6f3eb90f0f69b398754ab44d0b923d620a84114fdbd4ef7d8126e59f8",
+            "rows": 6
+          },
+          {
+            "path": "experiments\\outputs\\dataset_qualification_261010\\eduvidqa-sample-transcript-probe.json",
+            "sha256": "bcabe9632a67312e9a122fce6bdf0ede0eb324e6339b9c11027c5920e666a4f5"
+          }
+        ],
+        "model_inference_run": false,
+        "unseen_reference_claim": false,
+        "sources": [
+          {
+            "path": "research-data\\eduvidqa-official\\data\\synthetic_train.csv",
+            "sha256": "3c6471d5c01b92a8092a8dcff367f701fbdd80b34f8b02f5c55e0e8ba0a971f5"
+          },
+          {
+            "path": "research-data\\eduvidqa-official\\data\\synthetic_test.csv",
+            "sha256": "0c44b89987ea1f112e5a46843036320132cebd111b37c1203591d31110c2bbaf"
+          },
+          {
+            "path": "research-data\\eduvidqa-official\\data\\real_world_test.csv",
+            "sha256": "2b8553dd454cb7038c914809a9c4e3908161955b243de97dc490493c8c092055"
+          }
+        ],
+        "source_videos": 296,
+        "frozen": false,
+        "three_part_timestamps": 456,
+        "blank_synthetic_test_timestamps": 1038,
+        "cross_split_video_groups": 0,
+        "endpoint": "released-answer agreement diagnostic only after source-context qualification; retrieval relevance HOLD",
+        "blocker": "Official release has no independent evidence spans; media/transcripts and timestamp semantics unverified.",
+        "source_probes": [
+          {
+            "dataset": "eduvidqa",
+            "label": "pinned-readme",
+            "url": "https://raw.githubusercontent.com/sourjyadip/eduvidqa-emnlp25/aab6cc03e43182cc916f14ed2aca495f57a1ed96/README.md",
+            "observed_at_utc": "2026-10-10T08:59:13.883344+00:00",
+            "status": 200,
+            "final_url": "https://raw.githubusercontent.com/sourjyadip/eduvidqa-emnlp25/aab6cc03e43182cc916f14ed2aca495f57a1ed96/README.md",
+            "sha256": "f1c876697540e34da0ce555b271ea0e1043971a163ddf6d1e47910743780ace2",
+            "bytes": 5564,
+            "response_path": "experiments\\outputs\\dataset_qualification_261010\\eduvidqa-pinned-readme.txt"
+          },
+          {
+            "dataset": "eduvidqa",
+            "id": "-Lw8isQCi4g",
+            "url": "https://youtube.com/watch?v=-Lw8isQCi4g",
+            "observed_at_utc": "2026-10-10T08:59:14.419347+00:00",
+            "scope": "one deterministic source video; metadata extraction only; no media decoded",
+            "exit_code": 0,
+            "stderr": "",
+            "response_path": "experiments\\outputs\\dataset_qualification_261010\\eduvidqa-media-probe--Lw8isQCi4g.txt",
+            "sha256": "95f2f5b9abcc01170320eb02eacd5d748afafd57d1a7175864ae4c026fea9ef1",
+            "duration": 1636,
+            "title": "Lecture 4 : Recurrence of Merge Sort",
+            "license": null,
+            "uploader": "Introduction to Algorithms and Analysis",
+            "media_restored": false,
+            "decision": "HOLD_alignment_and_rights_review"
+          }
+        ],
+        "media_probe_limit": "Bounded deterministic source probes only; no full availability survey or original media decode.",
+        "bounded_media_samples": [
+          {
+            "dataset": "eduvidqa",
+            "id": "-Lw8isQCi4g",
+            "url": "https://youtube.com/watch?v=-Lw8isQCi4g",
+            "section": "0-20s",
+            "max_bytes": 30000000,
+            "observed_at_utc": "2026-10-10T09:00:47.722408+00:00",
+            "decision": "HOLD_sample_download_failed",
+            "exit_code": 1,
+            "log_path": "experiments\\outputs\\dataset_qualification_261010\\eduvidqa-clip-probe--Lw8isQCi4g.txt",
+            "log_sha256": "f04f2c43d21bcb6296572e63bd33c5cab376dc1bbd0f47ee4e41458ab66c9b92"
+          }
+        ],
+        "source_aligned_media_valid": 0,
+        "timestamp_timebase_review": {
+          "sampled_video": "-Lw8isQCi4g",
+          "sampled_three_part_records": 6,
+          "hh_mm_ss_contradicted_records": 6,
+          "scope": "metadata duration only; media clip acquisition HTTP403; no verified transcript/frame alignment",
+          "author_repository_parser": "Pinned release contains evaluation-only scripts; no released timestamp parser found",
+          "decision": "HOLD; preserve raw timestamps; do not globally convert to HH:MM:SS or MM:SS"
+        },
+        "sampled_transcript_probe": {
+          "dataset": "eduvidqa",
+          "video_id": "-Lw8isQCi4g",
+          "observed_at_utc": "2026-10-10T09:04:24.814717+00:00",
+          "scope": "One deterministic source; no independent evidence-span labels",
+          "status": "HOLD",
+          "error_type": "ParseError",
+          "error": "no element found: line 1, column 0"
+        }
+      }
+    }
+  ]
+}

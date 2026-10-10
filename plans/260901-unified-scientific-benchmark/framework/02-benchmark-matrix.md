@@ -1,4 +1,6 @@
-﻿# Controlled Benchmark Matrix
+# Controlled Benchmark Matrix
+
+> **Historical design (2026-08/09), superseded as an execution protocol.** The fixed candidates, C5 dependencies, VISTA/TIB priorities, human-scoring requirements and calendar gates below are not the current plan. Use the [master RQ map](00-master-plan.md), [benchmark protocol](../../../docs/BENCHMARK.md) and [RQ2 plan](../../../plans/261002-0946-rq2-controlled-summarization/plan.md) for current scope and evidence gates.
 
 No full matrix runs before the two-week dataset/compute gate.
 

@@ -1,35 +1,41 @@
 # Master plan: lecture video understanding, summarization and retrieval
 
-**Updated:** 2026-10-07. This file records the research questions and current decision gates. The [benchmark protocol](../../../docs/BENCHMARK.md) defines the executable sequence and [Dataset EDA](../../../docs/DATASET_EDA.md) distinguishes executed evidence from plans.
+**Updated:** 2026-10-09. This file maps research questions, evidence gates and claim limits. The [benchmark protocol](../../../docs/BENCHMARK.md) owns task eligibility, candidate families and metrics; [Dataset EDA](../../../docs/DATASET_EDA.md) records executed versus pending inspection; task plans own run details. The adjacent [original benchmark matrix](02-benchmark-matrix.md) and [decisions log](decisions-log.md) are historical references.
 
 ## Objective
 
-Study whether temporal structure and grounded multimodal evidence improve lecture summarization and knowledge retrieval under controlled input and compute budgets. The central comparisons remain hypotheses; earlier proposed architectures, model IDs and calendar milestones do not establish implementation or results.
+The near-term question is whether source-only predicted structure improves lecture-text summarization over fixed chunks under a shared generator and equal allocated intermediate/final output caps, with actual token use measured. The initial RQ2 comparison is text-only and depends on TIB cohort and reference qualification.
+
+Video-grounded multimodal summarization and knowledge retrieval remain conditional extensions: their media, task-matched labels and outcomes must qualify before evaluation. Earlier architectures, model IDs and calendar milestones remain proposals unless supported by executed evidence.
 
 ## Research questions
 
-| Question | Comparison to investigate | Evidence needed now |
-|---|---|---|
-| RQ1 — Chaptering | Multimodal versus transcript-only boundary prediction. | Historical diagnostics only. Saved results were withdrawn for reanalysis; no rerun is planned. Do not use its old chapter labels as scene-cut GT. |
-| RQ2 — Summarization | Fixed-chunk S1 versus hierarchical S3 with one generator and measured equal token budgets; other arms only if their inputs qualify. | Execute full-cohort TIB EDA, audit reference suitability and choose a valid evaluation cohort and automatic outcome. Qualify VISTA media/GT separately. See [RQ2 plan](../../../plans/261002-0946-rq2-controlled-summarization/plan.md). |
-| RQ3 — Retrieval and QA | Flat, dense and hierarchy-aware retrieval with a fixed reader. | Verify lecture-video source, answer/evidence labels and media for EduVidQA or another suitable source; evaluate retrieval and answers on separate metrics. |
-| RQ4 — Efficiency | Quality and latency/VRAM/cost of fixed pipeline compositions. | Use the same eligible lecture units, hardware profile and quality gates; report Pareto results only after measured runs. |
+| Question | Status and comparison | Next evidence gate | Claim limit |
+|---|---|---|---|
+| RQ1 — Chaptering | Historical only; multimodal versus transcript-only boundary prediction. Saved results withdrawn; no rerun planned. | No new run scheduled; retain provenance and limitations. | No current chaptering winner. Chapter boundaries do not establish scene-cut GT. |
+| RQ2 — Summarization | All-split EDA has 10 executed cells and 8,769 mechanically eligible candidates. Fixed-chunk S1 versus source-only boundary-constrained chunking S3 has no new completed paired result. | Run the train-only technical pilot on Colab, then review measured budget and source dependence before freezing evaluation IDs/protocol. | Creator-abstract agreement on the declared cohort; no factuality, unseen-generalization or visual/audio-contribution claim. Abstracts need not be certified factual summaries for this outcome. |
+| RQ3 — Retrieval and QA | Proposed; compare pipelines with a fixed reader after source context is recovered. | Answer agreement needs qualified context and released QA labels; retrieval/evidence-quality conclusions additionally need independent relevance/evidence GT. Video/timestamps are required only for claims that consume or locate them. | Answer improvement is not evidence of better retrieval relevance. No current result; grounded/evidence claims remain conditional. |
+| RQ4 — Efficiency | Dependent; quality versus latency, VRAM and cost for fixed pipeline compositions. | Establish suitable quality outcomes, identical eligible units and measured resource runs on a shared hardware profile. | No current Pareto result; any comparison is limited to the measured cohort, configurations and compute profile. |
 
-ASR architecture comparison is preserved in the [diagnostic report](../../../docs/results/asr-architecture-evaluation-2026-10-05.md). No ASR rerun is planned. It is not evidence that any remaining video task has been evaluated.
+The completed six-candidate ASR comparison is preserved in the [diagnostic report](../../../docs/results/asr-architecture-evaluation-2026-10-05.md), including checkpoint details, scores and qualification limits. No ASR rerun is planned. Native-test results do not establish performance on an independent unseen holdout.
 
-## Task sequence
+## Shared evidence gates
 
-1. Select lecture-domain datasets with existing annotations matching each target. Verify media, source revision, rights, annotation origin and source-video linkage. General-video datasets are not fallback benchmarks. Keep detection of slide/board elements and detection of natural objects as **two separate tracks** with their own taxonomy and scores.
-2. Predeclare candidate families, comparison units, primary metric, scorer details and shared compute conditions for that task. An entry in a registry is a proposal until run.
-3. Create and execute an EDA notebook for the actual selected cohort. Account for every unit and exclusion; inspect distributions, label/media quality, duplicates, leakage and failure groups. Record sampled inspections and decisions explicitly.
-4. Freeze the cohort and evaluate the candidate families in a task-specific notebook on identical units, GT, metric and resource profile. Save item-level predictions, failures, receipts and uncertainty estimates. If inputs or labels remain unsuitable, report `not_eligible`; if the comparison is incomplete, report `no_selection`.
-5. Interpret negative results and limitations without replacing the predeclared metric or inferring quality from lexical overlap alone.
+**2026-10-10 scope clarification:** qualify dataset/cohort against the exact question, inputs, annotation target and conclusion. The [claim matrix](../../reports/research-scope-261010-1621-claim-qualification-report.md) prioritizes TIB text-only creator-abstract agreement for RQ2, with RQ4 costs measured on the same run; OCR recognition and LVVO released-image detection are narrower component comparisons. Missing source-video media must not block a comparison that consumes released text/images only. Video extraction, fine-tuning splits and unseen/generalization claims retain their relevant gates. None of these scope decisions is a completed benchmark or automatic cohort freeze.
 
-Do not create placeholder or smoke notebooks. The [on-demand manifest](../../../experiments/notebooks/notebook_manifest.yaml) currently lists none. Existing historical notebooks may retain code without saved results and may require retired dependencies before reuse.
+1. **Qualification and executed EDA:** verify lecture-domain source, rights, media and existing task-matched annotation provenance. Account for every selected unit, missing input, exclusion, duplicate group and leakage concern. Metadata coverage and sampled media inspection have different limits.
+2. **Frozen comparison:** after EDA, fix eligible units, candidates, primary outcome, scorer, failure policy, input/token budgets and resource conditions before examining comparison scores. Compare candidates on the same units and task target.
+3. **Claim supported by artifacts:** retain item-level predictions, failures, denominators, receipts and paired uncertainty. Report `not_eligible` for unsuitable inputs or labels and `no_selection` for an incomplete or inconclusive comparison. Negative results are valid outcomes.
 
-## RQ2 data decision
+The active [task matrix](../../../docs/BENCHMARK.md#task-matrix) covers slide transitions, board keyframes, OCR recognition/spotting, caption/grounding, separate slide/board-element and natural-object detection tracks, and tracking. These are candidates to qualify, not completed benchmarks. General-video datasets and self-created proxy labels cannot replace missing lecture-task GT.
 
-Inspect **all records** of the pinned creator TIB `train`, `valid` and `test` splits without filtering by genre. Track each source row by `(split, source_index)`, and report missing input, abstract quality, grouping and leakage. The [all-split EDA notebook](../../../experiments/notebooks/diagnostics/rq2-tib-all-splits-eda-colab.ipynb) is prepared but its new full-cohort cells have not been executed. Reading creator `test` references removes its unseen-holdout status for future claims; a new independent source would be needed for that claim. VISTA has only partial validation-media evidence and is not yet a qualified full-cohort summarization benchmark.
+Create notebooks for concrete EDA or evaluation runs under the benchmark protocol. Historical notebooks and registries do not establish execution or selection.
+
+## RQ2 evidence boundary
+
+The executed [all-split EDA notebook](../../../experiments/notebooks/diagnostics/rq2-tib-all-splits-eda-colab.ipynb) shows 9,103 pinned creator-TIB records without a genre filter; 9,002 are structurally text-usable, with 98 invalid-time and three unordered-segment exclusions. Excluding eight empty and 225 reused abstracts yields 8,769 candidates. Its ten executed cells retain the inline evidence. The [source/content audit](../../../plans/reports/tib-cross-split-source-content-audit-261010-report.md) supports a limited creator-abstract agreement study with dependence sensitivity; this does not certify references as factual summaries. Creator `test` content was read, so it cannot support an unseen-holdout claim. Broader lecture-only or independent-generalization claims require their own qualification.
+
+RQ2 uses no human scoring. Reconcile the prior ROUGE-L F1 outcome with abstract suitability before the new comparison; creator abstracts and lexical overlap do not establish factuality. Freeze S3's source-only predicted structure without oracle chapters or reference content, and do not inherit withdrawn RQ1 performance. VISTA requires separate media and reference qualification before any video-based extension. See the [RQ2 plan](../../../plans/261002-0946-rq2-controlled-summarization/plan.md) for the current protocol.
 
 The withdrawn 20-/70-item TIB outputs cannot be treated as current RQ2 results. The next result must come from an executed EDA decision, frozen comparison and saved item-level evaluation evidence.
 

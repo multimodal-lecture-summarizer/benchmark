@@ -132,6 +132,37 @@ def _source(record: dict[str, Any], doi: str, backend: UsageBackend,
 
 
 def _fixed_chunks(text: str, backend: UsageBackend, limit: int) -> list[str]:
+    batch_counter = getattr(backend, "count_tokens_batch", None)
+    if callable(batch_counter):
+        # Scan every prefix in source order: BPE token counts can decrease when
+        # another word is appended, so binary search would change boundaries.
+        # Bounded speculation moves tokenizer work into its native batch path.
+        words = text.split()
+        chunks: list[str] = []
+        current = ""
+        index = 0
+        while index < len(words):
+            candidates: list[str] = []
+            candidate = current
+            for word in words[index:index + 32]:
+                candidate = f"{candidate} {word}" if candidate else word
+                candidates.append(candidate)
+            counts = batch_counter(candidates)
+            if len(counts) != len(candidates):
+                raise ValueError("Batched token counts do not match source prefixes")
+            for candidate, count in zip(candidates, counts):
+                word = words[index]
+                index += 1
+                if count > limit:
+                    if not current or backend.count_tokens(word) > limit:
+                        raise ValueError("A source word exceeds the per-call token cap")
+                    chunks.append(current)
+                    current = word
+                    break
+                current = candidate
+        if current:
+            chunks.append(current)
+        return chunks
     chunks: list[str] = []
     current: list[str] = []
     for word in text.split():

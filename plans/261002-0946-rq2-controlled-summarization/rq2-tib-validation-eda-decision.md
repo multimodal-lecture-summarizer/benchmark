@@ -7,7 +7,7 @@
 ## Scope and receipt
 
 - Source: creator `gigant/tib`, revision `e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee`, `valid` split only. No final-test record or content was read in this run.
-- Reproducible analysis: [`rq2-tib-valid-eda.ipynb`](../../experiments/notebooks/diagnostics/rq2-tib-valid-eda.ipynb) and [`rq2-tib-valid-eda.py`](../../experiments/scripts/rq2-tib-valid-eda.py). Selected DOI and metadata: [`rq2-tib-valid-diagnostic-receipt.json`](./rq2-tib-valid-diagnostic-receipt.json), SHA-256 DOI-list digest `690512dcbc220b9a7da3f2ec72448abc685e9c3fd9f4c1a40f8ae4ebee085759`.
+- Reproducible analysis script: [`rq2-tib-valid-eda.py`](../../experiments/scripts/rq2-tib-valid-eda.py). The executed notebook was removed on 2026-10-08; its historical revision remains in Git. Selected DOI and metadata: [`rq2-tib-valid-diagnostic-receipt.json`](./rq2-tib-valid-diagnostic-receipt.json), SHA-256 DOI-list digest `690512dcbc220b9a7da3f2ec72448abc685e9c3fd9f4c1a40f8ae4ebee085759`.
 - Selection: sort validation Lecture records by SHA-256 of DOI, retain first 20 that have DOI, source URL, nonempty transcript and at least two aligned, time-ordered segments, with one record per exact normalized author string. License is not an eligibility gate. This is deterministic and declared before any summary scores.
 - Cross-split metadata comparison: projected only `doi`, `title`, `author` from 7,282 `train` rows; see [`rq2-tib-valid-train-overlap.json`](./rq2-tib-valid-train-overlap.json). No `test` record or content was read.
 
@@ -34,7 +34,7 @@ The exact title `Old Irish – Morphosyntactic Structures, Part 3` and author `G
 
 ## Eligible-cohort and sample-size follow-up
 
-The executed EDA notebook exported [metadata for all 70 structurally eligible `valid` Lecture records](./rq2-tib-valid-eligible-metadata.json). The export matches the pinned revision and selected DOI digest; it contains 70 distinct DOI values and no test content. The [sample-size notebook code](../../experiments/notebooks/diagnostics/rq2-tib-valid-sample-size-eda.ipynb) remains, but its score-based estimates and saved outputs were withdrawn on 2026-10-07.
+The historical EDA exported [metadata for all 70 structurally eligible `valid` Lecture records](./rq2-tib-valid-eligible-metadata.json). The export matches the pinned revision and selected DOI digest; it contains 70 distinct DOI values and no test content. The sample-size notebook was removed on 2026-10-08; its score-based estimates and saved outputs were withdrawn on 2026-10-07.
 
 | Creator subject tag | Eligible 70 | Selected 20 | One-per-exact-author candidate 52 |
 | --- | ---: | ---: | ---: |

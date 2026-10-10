@@ -41,6 +41,15 @@ class LocalHfUsageBackend:
     def count_tokens(self, text: str) -> int:
         return len(self.tokenizer.encode(text, add_special_tokens=False))
 
+    def count_tokens_batch(self, texts: list[str]) -> list[int]:
+        """Count exact raw tokens with one fast-tokenizer dispatch per block."""
+        if not texts:
+            return []
+        encoded = self.tokenizer(texts, add_special_tokens=False,
+                                 padding=False, truncation=False,
+                                 return_attention_mask=False)
+        return [len(ids) for ids in encoded["input_ids"]]
+
     def generate(self, prompt: str, *, max_output_tokens: int,
                  temperature: float, seed: int) -> dict:
         import torch
@@ -99,10 +108,19 @@ class LocalHfUsageBackend:
                 pad_token_id=self.tokenizer.pad_token_id,
             )
         responses = []
+        terminal_ids = getattr(self.model.generation_config, "eos_token_id", None)
+        if terminal_ids is None:
+            terminal_ids = self.tokenizer.eos_token_id
+        terminal_ids = set(terminal_ids if isinstance(terminal_ids, (list, tuple))
+                           else [terminal_ids])
         for row, prompt_tokens in zip(output[:, padded_length:], prompt_counts):
             generated = row.tolist()
-            if self.tokenizer.eos_token_id in generated:
-                generated = generated[:generated.index(self.tokenizer.eos_token_id) + 1]
+            # Some generators (including Qwen) accept several terminal IDs.
+            # Later tokens on an already finished row are batch padding.
+            terminal = next((i for i, token in enumerate(generated)
+                             if token in terminal_ids), None)
+            if terminal is not None:
+                generated = generated[:terminal + 1]
             text = self.tokenizer.decode(generated, skip_special_tokens=True).strip()
             responses.append({
                 "text": text,
