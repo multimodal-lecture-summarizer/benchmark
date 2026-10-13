@@ -1,0 +1,33 @@
+# TIB RQ2/RQ4: 120-record cohort and protocol freeze
+
+Date: 2026-10-12. This report covers preparation and execution readiness, not model results.
+
+## Design and scientific claim
+
+The study compares paired S1 fixed chunks with S3 source-only lexical-boundary chunks on the same complete transcript, model and allocated output caps. Primary endpoint: Unicode-word ROUGE-L F1 agreement with the creator's released abstract. Secondary BERTScore and source SBERTScore are reported separately. Costs are actual per-arm prompt/output tokens, generation time, segmentation time, dispatch failures and GPU peaks. S3 can change both boundary placement and chunk count/length; this comparison cannot isolate boundary placement. Creator abstracts were exposed during EDA and their factual accuracy has not been verified. No unseen-test, video-quality, population-superiority or statistical-power claim follows.
+
+## Selection before scoring
+
+Pinned `gigant/tib@e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee` full bundle: 9,103 sources, 8,769 mechanically eligible text/reference candidates. Cached exact Qwen tokenizer lengths were joined only after matching all 8,769 `(split, source_index, source_sha256)` identities to the bundle. Train-only technical pilot: nine separate development IDs; none enters evaluation.
+
+Evaluation frame is the 887 eligible creator `valid` items: 296 short (<=4,271 source tokens), 289 medium (4,272–7,142), 302 long (>7,142). The cutpoints came from train-rank thirds in the pre-existing pilot design. For each stratum, rank candidates by SHA-256 of `tib-valid-120-20261012-v1|valid/<source_index>` and select the first 40. This yields a reproducible score-independent 40/40/40 cohort, not a population-proportional sample. No item was excluded for a hard length, a weak abstract, an audit flag or later model failure. Selected full-source token ranges: 656–4,250, 4,290–6,993 and 7,183–19,112. The selected ledger retains 30 cross-split author flags, six abstracts under 30 words, one overlap-segment flag, one transcript-segment-mismatch flag and one cross-split title flag. These flags are disclosure, not outcome-based removal.
+
+The source/content audit checked 2,658 queued cross-split pairs: three high-content links and 95 lexical-series cues. The cohort freezer also compared all 7,140 pairs within the selected 120 using contiguous five-word shingle Jaccard >=0.30 or shorter-set containment >=0.80; no pair met this threshold. Exact DOI/source URL/source hash and reviewed content/series links form the evidence graph across the full candidate pool and audit endpoints. The selected 120 map to 120 separate evidence components. A conservative exact-author graph maps them to 119 components; author name does not certify course/source equivalence. The historical audit does not exhaust off-cohort within-valid near matches, and video/audio identity has not been checked.
+
+Manifest: `experiments/registry/datasets/tib-rq2-rq4-120-cohort-261012.json`; bundle: ignored `experiments/outputs/rq2_tib_120_261012/data/tib-evaluation-120.jsonl.gz`. Manifest and bundle include source/reference hashes, token ledger and audit input hashes, IDs, stratum and group membership, alternating S1/S3 order, complete source text and creator reference. The bundle is local and should be uploaded to the user's Drive for this authorized Colab run; it is not staged in Git.
+
+## Estimand and missingness
+
+Primary descriptive estimate: record-weighted mean paired S3−S1 ROUGE-L among selected records with both arms and ROUGE successfully scored. Report that successful denominator and each stratum's successful count against all 120 selected, alongside every arm and scorer failure/unattempted ID. If any failures occur, the estimate is conditional on the successful intersection; it is not the effect on all 120. Do not impute missing quality as zero. A separate equal-stratum success mean, when defined, is secondary. Resample whole evidence components with record weighting for exploratory 95% intervals; repeat with conservative author components as sensitivity. Neither interval supports population superiority because dependence/course metadata are incomplete and the study's target is finite.
+
+The frozen protocol fixes Qwen2.5-1.5B-Instruct revision `989aa7980e4cf806f80c7fef2b1adb7bc71aa306`, FP16, Tesla T4, batch 2, greedy seed 42, source chunks <=512 tokens, equal allocated intermediate budget `96 * max(n_S1,n_S3)` and final cap 384. Actual token use may differ. One configuration/repetition, no automatic retries or replacement. Generation has a 10-hour soft stop and the whole session 12-hour soft budget, checked between dispatches; an in-flight GPU call is not forcibly terminated. Every selected ID stays in the denominator and checkpoints retain partial attempts and unknown output usage. BERTScore and source SBERTScore use pinned existing encoders after generator release. Changing any cohort, code, model, scoring or hardware identity requires a new protocol/run root.
+
+## Current evidence and next action
+
+Formal selected: 120. Formal evaluated: 0 until Colab model receipts exist. Source/token/group/identity checks and 15 passing focused tests are preparation evidence. The standalone notebook and ZIP are a handoff, not an executed result. Independent review found a crash-recovery risk; the runner now seals `in_progress` before any dispatch and marks a lost in-flight attempt with unknown usage without automatically retrying. The notebook renders all 120 IDs with expandable full creator abstracts and final S1/S3 summaries, metric/stratum and missingness tables, grouped sensitivity, per-arm costs and GPU peaks. It saves `per-item-results.csv`, `aggregate-report.json`, four descriptive figures and the sealed receipt to the Drive run folder. A secondary-scorer failure still leaves generation and available metrics visible, with missing scores left null. Local display checks exercised both scored and no-score cases; no model outcome is implied. If GPU execution is authorized and available, run the notebook in order, then inspect saved outputs and receipts before reporting an outcome. The earlier 9-record pilot remains a cost study; it does not choose S1 or S3.
+
+## Unresolved questions
+
+- Is a Tesla T4 runtime available long enough for one complete or resumable run?
+- Browser access to signed-in Google Drive was denied by automatic approval review pending explicit authorization to access Drive and upload the frozen bundle/manifest/protocol to the named folder.
+- Authoritative course/video identity remains unavailable; broader generalization needs a separate design.

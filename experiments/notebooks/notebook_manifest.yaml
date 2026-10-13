@@ -71,17 +71,49 @@ dataset_eda_notebooks:
   cohort_frozen: false
   status: HOLD
 
-# Scale approved; executable formal notebook is blocked until cohort/protocol binding.
-pending_evaluation_notebooks:
+# Completed evidence inventory; notebooks above remains the on-demand execution queue.
+pending_evaluation_notebooks: []
+executed_evaluation_notebooks:
 - dataset: tib
-  path: experiments/notebooks/rq2-tib-benchmark-colab.ipynb
+  path: experiments/notebooks/rq2-tib-120-evaluation-colab.ipynb
   execution_decision: experiments/registry/datasets/tib-rq2-rq4-120-decision-261010.json
-  status: BLOCKED_PENDING_COHORT_AND_PROTOCOL_FREEZE
+  cohort_manifest: experiments/registry/datasets/tib-rq2-rq4-120-cohort-261012.json
+  protocol: experiments/registry/datasets/tib-rq2-rq4-120-protocol-261012.json
+  status: EXECUTED_GENERATION_COMPLETE_SEMANTIC_V1_PARTIAL
   target_records: 120
   target_strata: {short: 40, medium: 40, long: 40}
-  formal_selected: 0
-  formal_evaluated: 0
-  cohort_frozen: false
-  protocol_frozen: false
-  benchmark_execution_enabled: false
+  formal_selected: 120
+  formal_evaluated: 120
+  completed_generation_arms: 240
+  paired_rouge_l: 120
+  paired_bertscore_v1: 28
+  paired_source_sbertscore_v1: 28
+  semantic_v1_evaluation_failed: 1
+  evidence_verification: notebook_outputs_checked_independent_drive_receipt_audit_pending
+  cohort_frozen: true
+  protocol_frozen: true
+  benchmark_execution_enabled: true
   historical_outputs_preserved: true
+- dataset: tib
+  path: experiments/notebooks/rq2-tib-120-semantic-rescore-colab.ipynb
+  source_generation_notebook: experiments/notebooks/rq2-tib-120-evaluation-colab.ipynb
+  cohort_manifest: experiments/registry/datasets/tib-rq2-rq4-120-cohort-261012.json
+  generation_protocol: experiments/registry/datasets/tib-rq2-rq4-120-protocol-261012.json
+  semantic_implementation: tib_semantic_v2
+  status: EXECUTED_AMENDED_SEMANTIC_COMPLETE
+  selected_records: 120
+  target_strata: {short: 40, medium: 40, long: 40}
+  paired_rouge_l: 120
+  paired_bertscore_v2: 120
+  paired_source_sbertscore_v2: 120
+  failed: 0
+  interrupted: 0
+  not_attempted: 0
+  executed_code_cells: 6
+  embedded_pngs: 6
+  notebook_sha256: ce6c3cc09255e67dd79843122193d5bc3091e7b03d5e59e9fdabcb45edb758a4
+  device: Tesla_T4
+  generation_rerun: false
+  original_displayed_texts_preserved: true
+  evidence_verification: notebook_outputs_checked_independent_drive_receipt_audit_pending
+  result_decision: no_selection

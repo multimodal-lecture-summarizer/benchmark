@@ -12,6 +12,12 @@ For an untouched final test, inspect only data allowed by the declared protocol 
 
 ## Current notebook evidence
 
+### Current dataset-use scope — 2026-10-13
+
+EduViQA and SSLectures are **historical sources only**, outside the current experimental plan. Preserve their source/audit artifacts; do not schedule further qualification or evaluation from these historical entries. EduViQA's local 20-video snapshot and 583 generated transition markers must not be mixed with EduVidQA. SSLectures annotation provenance remains unresolved and RQ1 has no rerun planned. Exclusion reflects the current task scope and qualification evidence, not whether a paper PDF was downloaded.
+
+EduVidQA remains the RQ3 preparation source: annotation EDA completed for **5,234 QA rows / 296 video groups**. Source transcript/media restoration, timebase review and independent retrieval-evidence GT remain HOLD; no RQ3 model evaluation is complete. See the [dataset-use scope](results/dataset-use-scope-261013.md).
+
 ### IIIT-CVID OCR update — 2026-10-13
 
 The [validation OCR EDA notebook](../experiments/notebooks/diagnostics/iiit-cvid-validation-ocr-eda.ipynb) now retains **17 executed code cells, 16 PNG and zero saved errors**; the eleven-cell entry below is historical baseline evidence. Fresh-kernel replay remains unverified. Supplemental analysis joins all 15,379 validation word crops across five courses / 140 video folders with historical predictions; flagged dHash candidates are review signals, not automatic exclusions or label repairs.
@@ -54,7 +60,7 @@ The table below preserves earlier executed results. Its local availability and c
 ## Findings that affect the next run
 
 - IIIT-CVID's local annotation inventory found 5,475 frames and 137,745 labeled crops. The EDA recorded 22 invalid box geometries, 124 XML image-size mismatches and near-duplicate candidates across splits. These need adjudication before fixing a frame-level OCR/spotting cohort; the current descriptive recognition comparison uses released validation word crops. A dHash candidate is not an automatic exclusion.
-- The 20-video local EduViQA snapshot is not the proposed EduVidQA source. Its 583 generated transition markers are not independent scene-boundary ground truth.
+- The 20-video local EduViQA snapshot is historical only, outside the current experimental plan and separate from EduVidQA. Its 583 generated transition markers are not independent scene-boundary ground truth.
 - YTSeg creator chapter annotations are not generic scene-cut labels. RQ1 is not planned for rerun.
 - TIB genre is a descriptive stratum, not an exclusion rule. Keep a row ledger keyed by `(split, source_index)` so missing or repeated DOI values do not erase records. For the current TIB abstract-agreement study, all nonempty unique creator abstracts are accepted automatically; short/scope/lexical flags do not exclude candidates.
 - The TIB source is dominated by exact `Conference/Talk` metadata (7,966/9,103); exact `Lecture` appears on 827/9,103. These labels alone do not certify or reject educational relevance. Figure 03 uses all source rows for short-abstract flags (621/7,282 train; 74/910 valid; 95/911 test); the reference review queue uses only text-usable rows (612/7,199; 74/904; 91/899). Keep those denominators separate.
@@ -72,7 +78,7 @@ These checks document earlier candidate screening, not current dataset approval 
 | YTSeg / VidChapters | A historical gate marked two YTSeg and one VidChapters source records as qualified for further review; per-ID rights and GT caveats remained. Creator chapters are not generic scene-cut ground truth. | These are not approved benchmark cohorts. See the [joint qualification report](../plans/reports/qualification-260929-1637-ytseg-vidchapters-gate-report.md) and [VidChapters semantic review](../plans/reports/vidchapters-semantic-260929-1818-selected-groups-report.md). |
 | Yale / MITFLD | Yale screening selected 18 records but only one passed the later new-source gate; component and third-party rights exceptions remained. The 35-item MITFLD cohort was a pilot; provenance and license for `frags` labels were unresolved, leaving **0 items officially eligible**. | Do not describe either as a completed benchmark cohort. See [Yale qualification](../plans/reports/rq1-locked-yale-260929-qualification-report.md) and [MITFLD rights/GT review](../plans/reports/rq1-followup-260928-1319-mitfld-35-rights-alignment-gt-report.md). |
 | MIT001 | A 35-video diagnostic had nine end-time cases needing review; prior aggregate chapter scores were withdrawn. | Do not reuse old scores as evidence. See [rights and media audit](../plans/reports/260928-0839-mit001-video-rights-media-audit-report.md). |
-| SSLectures | Nine records linked to source pages, but creator identity and annotation provenance were unverified for all nine. | Remains HOLD for ground-truth use. See [package provenance report](../plans/reports/rq1-sslectures-260929-1432-package-provenance-nine-row-report.md). |
+| SSLectures | Nine records linked to source pages, but creator identity and annotation provenance were unverified for all nine. | Historical source only; outside the current experimental plan as of 2026-10-13. Annotation provenance remains unresolved; no RQ1 rerun or further qualification scheduled. See [package provenance report](../plans/reports/rq1-sslectures-260929-1432-package-provenance-nine-row-report.md). |
 
 Keep these linked source reports and the associated CSV/JSON receipts as historical provenance. They do not authorize an RQ1 rerun or establish an eligible cohort.
 

@@ -2,7 +2,7 @@
 
 ## Sản phẩm
 
-Phạm vi commit tài liệu: notebook, source/runtime và output bổ sung được giữ ở workspace local, chưa nằm trong commit này. Các liên kết notebook mô tả bằng chứng local; commit tài liệu này chưa tự cung cấp đầy đủ artifact để tái lập.
+Phạm vi repository: notebook có output, source/runtime và tests được lưu cùng tài liệu. Dữ liệu tải xuống, output bổ sung bị ignore và artifact Drive giữ ngoài Git; audit artifact Drive và replay tuần tự vẫn còn pending.
 
 - EDA đã có output: `benchmark/experiments/notebooks/diagnostics/iiit-cvid-validation-ocr-eda.ipynb` — 17 code cells có execution count, 16 PNG, không có saved error. Giữ output lịch sử; thêm 5 code cells thực thi bằng in-process IPython. Fresh-kernel replay chưa xác minh do kernel startup bị treo.
 - Notebook Colab độc lập: [iiit_cvid_ocr_comparison_colab.ipynb](../../experiments/notebooks/iiit_cvid_ocr_comparison_colab.ipynb). Có source nhúng, tải nguồn ở revision cố định, kiểm SHA-256/CRC, EDA crop, môi trường Python 3.11 riêng, tải và kiểm trọng số, inference preflight, chạy tuần tự hai engine, checkpoint, receipts, failure ledger, micro CER, exact-word accuracy, bootstrap theo video, feature strata và error galleries.

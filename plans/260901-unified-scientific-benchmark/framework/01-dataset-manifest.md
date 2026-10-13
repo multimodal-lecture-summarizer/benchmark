@@ -9,7 +9,9 @@
 
 ## 1. Core dataset matrix
 
-**Current qualification override — 2026-10-10:** consult [the seven-dataset evidence register](../../../experiments/registry/datasets/qualification-261010.json) and [consolidated follow-up](../../../../plans/reports/dataset-qualification-261010-report.md). The register includes per-ID ledger hashes and scoped `selected / observed / label-valid / media-valid / evaluated / failed` counts. No scientific cohort or evaluation protocol was frozen. The historical EduVidQA estimate below is superseded by **5,234 released CSV rows**; source media/transcripts are not assumed present.
+**Current-use override — 2026-10-13:** EduViQA and SSLectures are historical sources only and excluded from the current experimental plan; preserve their prior audits but do not schedule them as fallbacks/extensions. EduVidQA remains the RQ3 preparation source: annotation EDA is executed for 5,234 released QA rows/296 videos, while qualified context and independent retrieval-evidence GT remain unavailable. No RQ3 model benchmark is complete. See [current dataset use decision](../../../docs/results/dataset-use-scope-261013.md); historical source tables below do not override it.
+
+**Current qualification override — 2026-10-10:** consult [the seven-dataset evidence register](../../../experiments/registry/datasets/qualification-261010.json) and [consolidated follow-up](../../reports/dataset-qualification-261010-report.md). The register includes per-ID ledger hashes and scoped `selected / observed / label-valid / media-valid / evaluated / failed` counts. No scientific cohort or evaluation protocol was frozen. The historical EduVidQA estimate below is superseded by **5,234 released CSV rows**; source media/transcripts are not assumed present.
 
 | Tier | Dataset | Scale | Inputs | Targets | Research role | Main caveat |
 |------|---------|-------|--------|---------|---------------|-------------|
