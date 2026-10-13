@@ -19,6 +19,12 @@ Video-grounded multimodal summarization and knowledge retrieval remain condition
 
 The completed six-candidate ASR comparison is preserved in the [diagnostic report](../../../docs/results/asr-architecture-evaluation-2026-10-05.md), including checkpoint details, scores and qualification limits. No ASR rerun is planned. Native-test results do not establish performance on an independent unseen holdout.
 
+## OCR component progress — 2026-10-13
+
+The [IIIT-CVID recognition notebook](../../../experiments/notebooks/iiit_cvid_ocr_comparison_colab.ipynb) saves successful EasyOCR/PaddleOCR subprocesses and scores all **15,379 validation crops** per engine with zero inference failures. CER is **24.44% / 11.72%**; the paired PaddleOCR-minus-EasyOCR delta is −12.72 percentage points (video-cluster bootstrap 95% interval [−15.58, −9.98], 140 clusters / 2,000 draws). This is crop **recognition**, not OCR spotting; spotting remains unexecuted.
+
+The [OCR report](../../../docs/results/ocr-eda-comparison-261013.md) distinguishes historical CPU analysis from new saved Colab outputs and records the expanded EDA (17 executed code cells / 16 PNG). Comparison outputs retain counts in 11/12 code cells and ten PNG; one intermediate analysis cell has no saved count/output. Next gate: independently audit Drive receipts, item predictions and environment/source/model hashes, then verify sequential fresh-kernel replay. The descriptive inspected-validation result establishes no timing superiority, unseen generalization or production selection.
+
 ## Shared evidence gates
 
 **2026-10-10 scope clarification:** qualify dataset/cohort against the exact question, inputs, annotation target and conclusion. The [claim matrix](../../reports/research-scope-261010-1621-claim-qualification-report.md) prioritizes TIB text-only creator-abstract agreement for RQ2, with RQ4 costs measured on the same run; OCR recognition and LVVO released-image detection are narrower component comparisons. Missing source-video media must not block a comparison that consumes released text/images only. Video extraction, fine-tuning splits and unseen/generalization claims retain their relevant gates. None of these scope decisions is a completed benchmark or automatic cohort freeze.
@@ -27,7 +33,7 @@ The completed six-candidate ASR comparison is preserved in the [diagnostic repor
 2. **Frozen comparison:** after EDA, fix eligible units, candidates, primary outcome, scorer, failure policy, input/token budgets and resource conditions before examining comparison scores. Compare candidates on the same units and task target.
 3. **Claim supported by artifacts:** retain item-level predictions, failures, denominators, receipts and paired uncertainty. Report `not_eligible` for unsuitable inputs or labels and `no_selection` for an incomplete or inconclusive comparison. Negative results are valid outcomes.
 
-The active [task matrix](../../../docs/BENCHMARK.md#task-matrix) covers slide transitions, board keyframes, OCR recognition/spotting, caption/grounding, separate slide/board-element and natural-object detection tracks, and tracking. These are candidates to qualify, not completed benchmarks. General-video datasets and self-created proxy labels cannot replace missing lecture-task GT.
+The active [task matrix](../../../docs/BENCHMARK.md#task-matrix) covers slide transitions, board keyframes, OCR recognition/spotting, caption/grounding, separate slide/board-element and natural-object detection tracks, and tracking. Task entries are candidates to qualify; the OCR recognition notebook evidence above has its own explicit completion and claim boundaries. General-video datasets and self-created proxy labels cannot replace missing lecture-task GT.
 
 Create notebooks for concrete EDA or evaluation runs under the benchmark protocol. Historical notebooks and registries do not establish execution or selection.
 
