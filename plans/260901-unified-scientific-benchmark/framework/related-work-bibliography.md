@@ -37,8 +37,8 @@
 
 ## 3. Video Question Answering & Multimodal RAG (10 papers)
 
-21. **EduVidQA (EMNLP 2025 Main):** Mukhopadhyay et al. *EduVidQA: A Benchmark for Question Answering on Educational Videos with Temporal Grounding*.
-22. **SlideVQA (ACL 2023):** Tanaka et al. *SlideVQA: A Dataset for Video Question Answering on Multi-Slide Presentations*.
+21. **EduVidQA (EMNLP 2025 Main):** Sourjyadip Ray, Shubham Sharma, Somak Aditya and Pawan Goyal. *EduVidQA: Generating and Evaluating Long-form Answers to Student Questions based on Lecture Videos*. https://aclanthology.org/2025.emnlp-main.1760/ . Current RQ3 preparation source; annotation EDA only, context/retrieval qualification pending. EduViQA is a different, historical source excluded from current experiments.
+22. **SlideVQA (AAAI 2023):** Tanaka et al. *SlideVQA: A Dataset for Document Visual Question Answering on Multiple Images*. https://arxiv.org/abs/2301.04883 . Historical/source research, not a completed current RQ3 benchmark.
 23. **VideoQA Survey (IEEE TPAMI 2023):** Yang et al. *Video Question Answering: Datasets, Applications and Future Directions*.
 24. **ActivityNet-QA (AAAI 2019):** Yu et al. *ActivityNet-QA: A Dataset for Understanding Complex Web Videos via Question Answering*.
 25. **Multimodal RAG for Long Videos (NAACL 2024):** Zhao et al. *Multi-Modal Retrieval-Augmented Generation for Hierarchical Document and Video Knowledge Retrieval*.

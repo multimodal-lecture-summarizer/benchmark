@@ -1,8 +1,26 @@
-# RQ2 — TIB S1/S3 benchmark preparation
+# RQ2 — TIB S1/S3 benchmark evidence and protocol
 
-## Active execution decision — 2026-10-10
+## Completed notebook evidence — 2026-10-13
 
-**Decision TIB-RQ2-RQ4-120-20261010: approve a target of 120 evaluation records, 40 short / 40 medium / 40 long, one configuration and one repetition, paired S1/S3 (240 planned summaries).** The nine-record train development pilot has executed: 18/18 arms complete, 9/9 paired scores for each of three metrics, zero failures. Do not rerun it. Formal evaluation remains **0 records**, with **zero selected formal IDs** and **cohort/protocol NOT FROZEN**. The [canonical decision](../../experiments/registry/datasets/tib-rq2-rq4-120-decision-261010.json) supersedes full-pool execution and the historical 12-item valid protocol.
+The [original formal notebook](../../experiments/notebooks/rq2-tib-120-evaluation-colab.ipynb) generated all 240 S1/S3 summaries and all 120 paired ROUGE-L scores. Original semantic scoring stopped after 28 pairs on the retokenized-window capacity error at `valid/208`. The executed [semantic rescore notebook](../../experiments/notebooks/rq2-tib-120-semantic-rescore-colab.ipynb) uses the repaired token-ID window implementation and reports **120/120 pairs for all three metrics, zero evaluation failures**, on Tesla T4; `valid/208` passes preflight. All sources, references and 240 predictions remain identical. The original run and frozen protocol are preserved; v2 scoring is a disclosed implementation amendment with separate receipts, not an unmodified execution of the original scorer.
+
+| Outcome | S1 mean | S3 mean | S3-S1 | Exploratory dependence-group bootstrap 95% interval |
+|---|---:|---:|---:|---|
+| ROUGE-L | 0.12050 | 0.12376 | +0.00327 | [-0.00250, +0.00900] |
+| BERTScore | 0.84955 | 0.85166 | +0.00211 | [-0.00075, +0.00500] |
+| Source SBERTScore | 0.62227 | 0.62584 | +0.00357 | [-0.00837, +0.01582] |
+
+All intervals cross zero: **no clear winner (`no_selection`)**. Source SBERTScore differences vary by length: short -0.01072, medium +0.01324, long +0.00820. One fixed configuration and repetition on this exposed-reference cohort support finite-cohort descriptive conclusions only, not factuality, statistical power, unseen generalization or full multimodal claims. Original segmentation/generation time and actual tokens are separate from the v2 rescore's 74.98s initialization/preflight and 205.05s scoring session. These resource observations do not establish monetary cost or a formal Pareto result.
+
+Receipt/source/dispatch checks executed inside the notebook; independent local audit of the sealed Drive artifacts remains pending. The [dated results report](../../docs/results/rq2-tib-120-results-261013.md) owns detailed evidence and limitations.
+
+## 2026-10-12 cohort and protocol freeze
+
+The approved 120 evaluation IDs are now selected from creator `valid`, 40 per source-token stratum, by the predetermined SHA-256 rule. The [freeze report](../reports/tib-120-cohort-and-protocol-freeze-261012-report.md) records the sample frame, source-dependence review, limitations, missingness policy and fixed analysis. The [cohort manifest](../../experiments/registry/datasets/tib-rq2-rq4-120-cohort-261012.json) and [protocol](../../experiments/registry/datasets/tib-rq2-rq4-120-protocol-261012.json) bind IDs, hashes, model, scorers, groups and code. The standalone [formal Colab notebook](../../experiments/notebooks/rq2-tib-120-evaluation-colab.ipynb) uses the local frozen 120-bundle. **Selected 120; generation and metric coverage now complete in saved notebook evidence; independent sealed Drive audit pending.** The historical guarded full-pool notebook remains blocked. Earlier pending statements below describe the 2026-10-10 decision before this freeze.
+
+## Historical execution decision — 2026-10-10 (status superseded above)
+
+**Decision TIB-RQ2-RQ4-120-20261010: approve a target of 120 evaluation records, 40 short / 40 medium / 40 long, one configuration and one repetition, paired S1/S3 (240 planned summaries).** The nine-record train development pilot has executed: 18/18 arms complete, 9/9 paired scores for each of three metrics, zero failures. Do not rerun it. At this historical decision, formal evaluation was **0 records**, with **zero selected formal IDs** and **cohort/protocol NOT FROZEN**; these statuses were superseded by the freeze and completed notebook evidence above. The [canonical decision](../../experiments/registry/datasets/tib-rq2-rq4-120-decision-261010.json) supersedes full-pool execution and the historical 12-item valid protocol.
 
 On the measured T4 / map-batch-2 profile, the 120-record planning scenario is **5.00 hours central / 8.37 hours upper scenario**, including initialization, both arms, preparation, three metrics, checkpoints and 30% margin. These are nonprobability cost scenarios, not a runtime guarantee, confidence interval or statistical-power justification. The 150-record upper scenario (10.45h) leaves less margin; 180 (12.53h) exceeds the 12-hour objective. Full 8,769 execution (central 360.35h) is superseded as the default. Retain all 8,769 candidates, including 900 flagged records, as the selection pool.
 
@@ -12,7 +30,7 @@ Actual S3 predicts at most five spaced boundaries using adjacent-window lexical 
 
 Pilot profile: existing pinned Qwen2.5-1.5B checkpoint/tokenizer, greedy seed 42, 512-token source chunks, map batch 2, common map-output allocation `96 * max(n_S1,n_S3)` distributed by exact divmod, final cap 384, shared permissive cumulative prompt cap. These are **equal allocated output caps**, not equal actual total tokens or padded compute. Structure uses zero LLM tokens; CPU/tokenization cost is included in S3 segmentation. Actual input/output tokens are logged; unknown failed usage stays null. No automatic retry. Empty output fails the arm. Two-hour generation deadline is a soft stop between dispatches, not a hard per-call timeout. CUDA failure stops further GPU dispatches. S1/S3 order alternates across selected IDs.
 
-Freeze remains pending: source-dependence review → declared evaluation split and deterministic score-independent selection → locked 120 evaluation IDs/source/reference hashes → frozen scoring, denominators, failure/timeout rules and group-analysis protocol. Length cutpoints are 4,271 and 7,142 tokens (inclusive upper bounds); formal IDs remain unselected. The pilot two-hour soft deadline is historical pilot configuration; formal deadline policy remains to be frozen. All 8,769 candidates and 900 flagged candidates remain in the preparation pool. No hard/long/failed ID is removed by outcome. Development pilot IDs cannot become confirmatory evaluation IDs. Creator valid/test references were already inspected: future evaluation is a declared exposed-reference cohort, never an unseen test.
+At the 2026-10-10 decision, freeze remained pending: source-dependence review → declared evaluation split and deterministic score-independent selection → locked 120 evaluation IDs/source/reference hashes → frozen scoring, denominators, failure/timeout rules and group-analysis protocol. Length cutpoints are 4,271 and 7,142 tokens (inclusive upper bounds); formal IDs remain unselected. The pilot two-hour soft deadline is historical pilot configuration; formal deadline policy remains to be frozen. All 8,769 candidates and 900 flagged candidates remain in the preparation pool. No hard/long/failed ID is removed by outcome. Development pilot IDs cannot become confirmatory evaluation IDs. Creator valid/test references were already inspected: future evaluation is a declared exposed-reference cohort, never an unseen test.
 
 Primary metric: `unicode_word_lcs_rouge_l_f1_v1`, Unicode `\b\w+\b` tokens, casefold, no stemming, word LCS, `2*LCS/(reference_words+hypothesis_words)`, macro across records. Future reporting uses paired per-record S3−S1 on the successful intersection, alongside all selected IDs and per-arm success/failure coverage. Do not impute failed quality as zero. Secondary BERTScore and source SBERTScore stay separate. Pilot quality does not select IDs/configurations by S3 wins.
 
@@ -83,8 +101,10 @@ Report per-arm segmentation seconds (S3 includes boundary prediction), synchroni
 - [x] Three metrics, per-metric paired bootstrap, per-arm costs and independent evaluation resume implemented.
 - [x] Execute nine-record development pilot: 18/18 arms and 9/9 paired scores for all three metrics.
 - [x] Approve evaluation scale: 120 records, 40 per length stratum.
-- [ ] Review dependence groups, declare split, select and freeze 120 formal IDs and protocol.
-- [ ] Bind notebook inputs/count guards to frozen IDs, then execute the paired evaluation on Colab.
+- [x] Review dependence groups, declare `valid` split, select and freeze 120 formal IDs and protocol.
+- [x] Bind a standalone notebook to the frozen IDs/hash/count guards and prepare the local Colab package.
+- [x] Execute generation and separate repaired semantic scoring for all 120 records; saved notebooks report 240 summaries, complete metric coverage and zero rescore failures.
+- [ ] Independently audit sealed Drive generation/rescore receipts, dispatch logs, failures and original resource artifacts against notebook evidence.
 
 Historical [20-item audit](../reports/rq2-valid-dataset-audit-261002-report.md), [70-item screen](../reports/tib-cohort-review-261009-0923-benchmark-readiness-report.md) and [broad-pool inspection](../reports/tib-diverse-pool-261009-0943-benchmark-scope-report.md) remain records of earlier work. Their manual qualification requirements do not gate the current automatic study.
 

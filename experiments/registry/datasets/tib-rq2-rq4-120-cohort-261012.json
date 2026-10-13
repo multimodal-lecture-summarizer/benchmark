@@ -1,0 +1,2057 @@
+{
+ "format": "tib-rq2-rq4-120-cohort-v1",
+ "status": "frozen_not_evaluated",
+ "dataset": "gigant/tib",
+ "dataset_revision": "e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee",
+ "parent_selection_sha256": "1fb97c72742dd6157d174f455054adfecab1a302be242398d723c5b3674968b3",
+ "selection_sha256": "a7a84a4b9c569d153208d9006192851b2382e362a0bf33ad631ae966d725cfc2",
+ "bundle": {
+  "payload_sha256": "7f889316aff0bca9fa6e780df10f475371e0d581948db3acd572c5554da08a46",
+  "bytes": 2159457,
+  "records": 120
+ },
+ "inputs_sha256": {
+  "token_ledger": "19993be28ce1a8d9804eb6951a4d3074d6f4c4d2ce3be59e3e54c3633756e656",
+  "pilot_design": "84c41b1228db3219213f6525f972a146f2200fac73d4cd2f3476af042b0111b4",
+  "cross_split_pair_evidence": "c3576fb2b34ac90312914ecd1c904e2c3dd74c7e5af256f6f610330d01df6fb0"
+ },
+ "tokenizer": {
+  "id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "add_special_tokens": false,
+  "truncation": false
+ },
+ "seed": "tib-valid-120-20261012-v1",
+ "split": "valid",
+ "source_token_cutpoints_inclusive": [
+  4271,
+  7142
+ ],
+ "frame_counts": {
+  "short": 296,
+  "medium": 289,
+  "long": 302
+ },
+ "strata_counts": {
+  "short": 40,
+  "long": 40,
+  "medium": 40
+ },
+ "selected_count": 120,
+ "pilot_excluded_ids": [
+  "train/55",
+  "train/1646",
+  "train/2014",
+  "train/3741",
+  "train/4930",
+  "train/5753",
+  "train/5880",
+  "train/6036",
+  "train/6748"
+ ],
+ "audit_pair_classes": {
+  "shared_metadata_only": 2560,
+  "high_content_similarity_review": 3,
+  "possible_series_review": 95
+ },
+ "within_selected_high_overlap_pairs": 0,
+ "group_policy": "exact DOI/URL/source hash plus reviewed content/series links; author union as sensitivity only",
+ "group_limit": "All 120 selected pairs screened for high transcript overlap; off-cohort within-valid similarity and course identities unverified",
+ "estimand": "finite balanced selected-cohort record-weighted paired delta conditional on scored intersection",
+ "reference_status": "creator abstracts inspected in EDA; factuality unverified; test not unseen",
+ "selected": [
+  {
+   "id": "valid/0",
+   "source_sha256": "92e2ed843d585608c90daf0d209bd75e149ad5bfbcf4351c940927eeea6a7ee2",
+   "reference_sha256": "f55eb745aa65104f39ef6f4cf66e6b3f2b473b9547641380a0fb9e83468b4186",
+   "source_tokens": 2512,
+   "length_stratum": "short",
+   "dependence_group": "valid/0",
+   "author_group": "valid/0",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/56919 (DOI)",
+   "title": "Anatomy of GNOME Calls",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/7",
+   "source_sha256": "e8a73bce028bcc6585d81af4ab879710431a6b34a9c496346d43f0cdad202921",
+   "reference_sha256": "6c503369b96afeac8f5e34ae89d0e82f08c03b4a4687208a6aa2f82e0939ccc8",
+   "source_tokens": 9109,
+   "length_stratum": "long",
+   "dependence_group": "valid/7",
+   "author_group": "valid/7",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/48463 (DOI)",
+   "title": "PGCon 2016 - Lightning Talks",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/14",
+   "source_sha256": "4af871a2527c439a3db6c15a508707b4ea679bcdec806e181487e797f38a6ae0",
+   "reference_sha256": "ec51c59e8e0da8f053afcda44094c4f01149cec5ec630d412d484526095751e6",
+   "source_tokens": 4489,
+   "length_stratum": "medium",
+   "dependence_group": "valid/14",
+   "author_group": "valid/14",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/41974 (DOI)",
+   "title": "Developers looking for designers? Pitch your project! [Group]",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/34",
+   "source_sha256": "bfffd5d338d7adb7de96c7142c92f5ba3e8068d5c3c137ff390a078019469831",
+   "reference_sha256": "01bd9cc6c47d905785b880d9b6346cee6bb9abf716d829ec85c09cb36aaa0b26",
+   "source_tokens": 6236,
+   "length_stratum": "medium",
+   "dependence_group": "valid/34",
+   "author_group": "train/2197",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/31282 (DOI)",
+   "title": "Reporting on Rails - ActiveRecord and ROLAP Working Together",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/39",
+   "source_sha256": "7d7bb24bfaf5387ca7c0618f9607a4b1b6833af98174db59bf1e46e9ce2f4800",
+   "reference_sha256": "a0c761979e6b81b618e44bcbef8c8edb04bdeecacc9a9086210102436982d364",
+   "source_tokens": 5931,
+   "length_stratum": "medium",
+   "dependence_group": "valid/39",
+   "author_group": "train/2384",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/56895 (DOI)",
+   "title": "Growing Pinecones for P2P Matrix",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/42",
+   "source_sha256": "3622e75b3c9efb8b1a6beed68c782172e559727f4c2ad9dac9246682fc06ad07",
+   "reference_sha256": "8a911e0ad9792dcd435803771596ad2f9c686781c4e06f852ada6a0123c234db",
+   "source_tokens": 3468,
+   "length_stratum": "short",
+   "dependence_group": "valid/42",
+   "author_group": "valid/42",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/32229 (DOI)",
+   "title": "3D will be back but not as we know it",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/44",
+   "source_sha256": "5ff6a7cfd0c60e2923f51e23b272be9860721c94c6a411f93961175079eba46d",
+   "reference_sha256": "f3e73d17a209206f72db4220a5df4de2f799a60e8615640508144fe2059b5629",
+   "source_tokens": 3136,
+   "length_stratum": "short",
+   "dependence_group": "valid/44",
+   "author_group": "valid/44",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/35872 (DOI)",
+   "title": "Code list governance for G-NAF",
+   "audit_flags": [
+    "short_abstract_under_30_words"
+   ]
+  },
+  {
+   "id": "valid/48",
+   "source_sha256": "f9099f8da9d11b6c4aacd487c0ce33ddb847ff1bb96e1ba8164819c24ca83e1f",
+   "reference_sha256": "a91ee9f1072c09555b86dd1e3d7655c9c7374e8d10502851107327ea233c5313",
+   "source_tokens": 7574,
+   "length_stratum": "long",
+   "dependence_group": "valid/48",
+   "author_group": "test/127",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/56820 (DOI)",
+   "title": "Optimal buffer allocation on Wayland",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/49",
+   "source_sha256": "9a0aec35dba881ec807188a4533459fae52906a8947e440aade7e933b60bb897",
+   "reference_sha256": "3a0f7b28fd7b0ff8c90c6bb242d1323588152b34dac6e1acac7f2d213db122ba",
+   "source_tokens": 5619,
+   "length_stratum": "medium",
+   "dependence_group": "valid/49",
+   "author_group": "valid/49",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/48604 (DOI)",
+   "title": "Bio Hacking Village - Building a New Decentralized Internet With the Nodes",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/54",
+   "source_sha256": "2fb7946d6776dccd71b0216a9e46fe4931ae35a66eea7f6905da83c4e2bddb8a",
+   "reference_sha256": "7d42ee6bad3e20e8824435b1a55113677a6ed6862f41e23d0d9094bce2d5f8a7",
+   "source_tokens": 6524,
+   "length_stratum": "medium",
+   "dependence_group": "valid/54",
+   "author_group": "valid/54",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/14912 (DOI)",
+   "title": "Interdisciplinary Dialogue: Real-World Applications in Numerical Ocean Modeling",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/69",
+   "source_sha256": "97090daee2e8fd90c6c2c0ad25ffd5410cf5542aec409834cb828f58658af85e",
+   "reference_sha256": "60590c278994ca2d4c7df54b44c643998cba55ab832826a419bad9b2e431a738",
+   "source_tokens": 3596,
+   "length_stratum": "short",
+   "dependence_group": "valid/69",
+   "author_group": "valid/69",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/20315 (DOI)",
+   "title": "Spatial tools for LiDAR based watershed management and forestry analysis integrated in gvSIG",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/75",
+   "source_sha256": "74178db9c7436ed67495d4d1d9083ffe1b2914cc92f552d5ed09d2b2ccb0a14e",
+   "reference_sha256": "b02d54f0e882014292ed84a33898703c6dfa97c7898b4716722251dbce1aea50",
+   "source_tokens": 8068,
+   "length_stratum": "long",
+   "dependence_group": "valid/75",
+   "author_group": "train/2952",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/37388 (DOI)",
+   "title": "Managing Advanced DSC Configurations and Configuration Data",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/76",
+   "source_sha256": "0097e9dbb14d19ac9b3fa957e42ed51aaf1e59955c2cea7b5b6863568f53b6ac",
+   "reference_sha256": "444984150ef5cb6d5bfe5010db77fc55b4e4869ceaf8b51e983ea1a9aadd1de5",
+   "source_tokens": 3091,
+   "length_stratum": "short",
+   "dependence_group": "valid/76",
+   "author_group": "valid/76",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/52968 (DOI)",
+   "title": "SentText: A Tool for Lexicon-Based Sentiment Analysis in Digital Humanities",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/77",
+   "source_sha256": "a6d57158e4c1c94299c65231b79e9331c60409e62e169d5f55be34c840b2a1e4",
+   "reference_sha256": "1d7edb362aee4e6c008765314e012fbf2f8bef5152e30e892ed7593b45b1689f",
+   "source_tokens": 5521,
+   "length_stratum": "medium",
+   "dependence_group": "valid/77",
+   "author_group": "valid/77",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/21404 (DOI)",
+   "title": "Syria. Citizen empowerment against brutality",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/88",
+   "source_sha256": "814189f3326c38eb9509bc824083c64e9118b761e4f42679076f070141699764",
+   "reference_sha256": "d06c97f0222ddc56ce35c019d3c6fc7596a979b6bad522fcf363625bed65e595",
+   "source_tokens": 7534,
+   "length_stratum": "long",
+   "dependence_group": "valid/88",
+   "author_group": "valid/88",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/47053 (DOI)",
+   "title": "The ultimate guide to HTTP resource prioritization",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/95",
+   "source_sha256": "4f54c771e40d6341256d5735ede06f911f9aab1525743138d54f2b76ea8c37dd",
+   "reference_sha256": "fd3c8064aaf25f0e135b51f422c0a87654f0dca79466a06c4cbf2c52ab8aad77",
+   "source_tokens": 11919,
+   "length_stratum": "long",
+   "dependence_group": "valid/95",
+   "author_group": "train/2344",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/19644 (DOI)",
+   "title": "Web-App-Encryption",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/106",
+   "source_sha256": "89f8c1ee7b508ba5d602ac01352617e5082313cd6aa1324cc597b668de605e4e",
+   "reference_sha256": "becc696fbfb8e4a9e820751bdc13e9eaf5bdf4a0c13758629ed84b043a232d75",
+   "source_tokens": 3562,
+   "length_stratum": "short",
+   "dependence_group": "valid/106",
+   "author_group": "train/756",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/39661 (DOI)",
+   "title": "WIRELESS VILLAGE - BLE CTF",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/111",
+   "source_sha256": "4b4a40e7c4b3b70516ddef76d41aa161d4850fee99925682f2225dcc903019ec",
+   "reference_sha256": "e4bbb162619bce24dbc339d057092bc235ec0e769c3c4f58e36f3ec267c9cbc2",
+   "source_tokens": 4891,
+   "length_stratum": "medium",
+   "dependence_group": "valid/111",
+   "author_group": "valid/111",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/33681 (DOI)",
+   "title": "Network visualization and automation",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/123",
+   "source_sha256": "3ea1327c03f22e3b630c3e299b90f724d8c538bbbae4ce34a4284c9f6a59b8df",
+   "reference_sha256": "704170e2d0867554d0667387ec16fa636a1b987107eb62afe1699b7a4b4f492e",
+   "source_tokens": 2339,
+   "length_stratum": "short",
+   "dependence_group": "valid/123",
+   "author_group": "valid/123",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/42804 (DOI)",
+   "title": "From NSIS to MSI: Deploying the ownCloud Client on Windows",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/124",
+   "source_sha256": "a62904ec4ea0109302bf64460af8685dfdd2fedda10e890073c3f43ade423e61",
+   "reference_sha256": "003cd70c71519afbe8c2f4754be265ba7d841d8755baf6870d26a0f66d102fb4",
+   "source_tokens": 4205,
+   "length_stratum": "short",
+   "dependence_group": "valid/124",
+   "author_group": "valid/124",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/53516 (DOI)",
+   "title": "Automorphism groups of Coxeter groups do not have Kazhdan's property (T)",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/127",
+   "source_sha256": "232a9a27ea7f1b725c31f209daaaa9a4e5ff29b5b0673bf48cd4d2c52a49f3b3",
+   "reference_sha256": "8611b78adc444cfdb33d191ff6ac62831495d1320b612ddf845bdde1d6d35f84",
+   "source_tokens": 3274,
+   "length_stratum": "short",
+   "dependence_group": "valid/127",
+   "author_group": "valid/127",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.14288/1.0398145 (DOI)",
+   "title": "On a body with a cavity filled with compressible fluid",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/134",
+   "source_sha256": "367218c45993e89058f33ffd1d1dad3c13c4015bb177bacee739162f27723346",
+   "reference_sha256": "19fdf20db352cbf622656fe00651b054b0e56bd52f40e547091f8c379391836c",
+   "source_tokens": 5064,
+   "length_stratum": "medium",
+   "dependence_group": "valid/134",
+   "author_group": "valid/134",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/43797 (DOI)",
+   "title": "Welcome to the Anthropocene?",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/142",
+   "source_sha256": "2df226315dd83a82bab3621be6631fbaf6427f795ac4659235f584d737b77d56",
+   "reference_sha256": "82fc5f89ff9c482d19f259063e574d5b8a604f2f5090b2550fceeb72f782742e",
+   "source_tokens": 1354,
+   "length_stratum": "short",
+   "dependence_group": "valid/142",
+   "author_group": "valid/142",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/51352 (DOI)",
+   "title": "OJS: Innovating for Everyone",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/177",
+   "source_sha256": "4f33288b3d30ccbb11f42c6481ffc429eae92d295ac97ce70106e3865fee4cfa",
+   "reference_sha256": "05a429c7b83675155a54c872cc7f199d4d60de2254e7753b0fde15d30540898d",
+   "source_tokens": 6403,
+   "length_stratum": "medium",
+   "dependence_group": "valid/177",
+   "author_group": "valid/177",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/46600 (DOI)",
+   "title": "Make Ruby Write Your Code for You",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/192",
+   "source_sha256": "56077176c4cf766803e094be4d5e4c67f60d5d4e509ea3f4ae3956fb8bc2f53a",
+   "reference_sha256": "6f0f9626903e9752f785d9ea50c8507f0edb0a2f4be5f45adb337b0c41417c01",
+   "source_tokens": 9102,
+   "length_stratum": "long",
+   "dependence_group": "valid/192",
+   "author_group": "train/7185",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/45846 (DOI)",
+   "title": "Performance Analysis in the Cloud",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/197",
+   "source_sha256": "1fab120a08092dc75720776def713557d574645a75bc7f884973636dcb92bb3d",
+   "reference_sha256": "fbb974cf0d4983722c19159415cfd7d10bd330dd190c6e19e3bb8b2785bd2c11",
+   "source_tokens": 5110,
+   "length_stratum": "medium",
+   "dependence_group": "valid/197",
+   "author_group": "train/2659",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/32787 (DOI)",
+   "title": "Postgres Performance in 15 Minutes",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/202",
+   "source_sha256": "d072b5f1c4304eed7da607be03e8851ff8943968afb573776cf1c4cf645c2196",
+   "reference_sha256": "c7f8b48e425f92da6084ef804c3e77da98622d7545c1e508f73c9199e213b5f3",
+   "source_tokens": 6275,
+   "length_stratum": "medium",
+   "dependence_group": "valid/202",
+   "author_group": "valid/202",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/53209 (DOI)",
+   "title": "Hacking (with) a TPM",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/206",
+   "source_sha256": "64754a70724e9eed93749d089bea8192cc265bce8721d780073e878de361d98a",
+   "reference_sha256": "b92d68d2ab6566a672d00d0ffdecf477a0cb38c1e1eaa8056779f463e9d93948",
+   "source_tokens": 6630,
+   "length_stratum": "medium",
+   "dependence_group": "valid/206",
+   "author_group": "valid/206",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/48611 (DOI)",
+   "title": "Bio Hacking Village - Employ Cybersecurity Techniques against the Threat of Mediacal Misinformation",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/208",
+   "source_sha256": "5acb46387ef10b6e314bed033d13e436e0c349a3f77103b1465fa4c9d7957271",
+   "reference_sha256": "51f1b408b726c43bad26ba3c49a1745ccf6572fb7cd59b0a97d619645623ac14",
+   "source_tokens": 4205,
+   "length_stratum": "short",
+   "dependence_group": "valid/208",
+   "author_group": "valid/208",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/54148 (DOI)",
+   "title": "Symplectic Carleman approximation on co-adjoint orbits",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/210",
+   "source_sha256": "335abb47ba00224b849f7e52ade5000e783b35df01707fa8b6de6a632a3626c5",
+   "reference_sha256": "2fdbbe8d3540d83a8a6a3361c479fcb0e2aadbb1d50b66467b8b202c25143351",
+   "source_tokens": 4432,
+   "length_stratum": "medium",
+   "dependence_group": "valid/210",
+   "author_group": "valid/210",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/31604 (DOI)",
+   "title": "Gimme some YeSQL ! - and a GIS -",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/215",
+   "source_sha256": "ee14d771683d01c4e8ae012343d3fcf9b6f38a143ed2c43768879465523b1028",
+   "reference_sha256": "281e1b376297373493867e401119508d0ad22a57f5d55d488a42dac5abed80f2",
+   "source_tokens": 9207,
+   "length_stratum": "long",
+   "dependence_group": "valid/215",
+   "author_group": "valid/215",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/19099 (DOI)",
+   "title": "Postgis in the Open Cloud",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/244",
+   "source_sha256": "e9b678c1c992c595e2c78d10bb236803622398f6dbbd59ecacf06b314cdbf891",
+   "reference_sha256": "8bb651840caf70cf0a724743b1fcb5055906a0c46ada4dbcbae7fb59ecbd8269",
+   "source_tokens": 2068,
+   "length_stratum": "short",
+   "dependence_group": "valid/244",
+   "author_group": "valid/244",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/51328 (DOI)",
+   "title": "Aligning Interests, Mobilizing Scholarship: Embedding Sustainable Donor-Funded Open Access in the Factor-Inwentash Faculty of Social Work at the University of Toronto",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/246",
+   "source_sha256": "00f4ee73734c5ad87d34e9eb23afc28d4b20ae24c7fc6d8a14b34639230564ac",
+   "reference_sha256": "67d798852a75306a76f601fe7f04725de99990bae805da013d02c88d59fc122e",
+   "source_tokens": 4475,
+   "length_stratum": "medium",
+   "dependence_group": "valid/246",
+   "author_group": "valid/246",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/52169 (DOI)",
+   "title": "Evolving API design in Rust",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/251",
+   "source_sha256": "222f79e83a64b82a35c0b3cf488351e309eefd99ea39e871ca8ace0a2fd3f1e0",
+   "reference_sha256": "905ffd5f9f0de03f95ba59f2515bb945c824d22607ba5233bc3a9081e099c433",
+   "source_tokens": 10550,
+   "length_stratum": "long",
+   "dependence_group": "valid/251",
+   "author_group": "test/670",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/48827 (DOI)",
+   "title": "Middleware: The HTTP Pipeline in ASP.NET 5",
+   "audit_flags": [
+    "cross_split_author_group",
+    "short_abstract_under_30_words"
+   ]
+  },
+  {
+   "id": "valid/259",
+   "source_sha256": "298292986e1c25f8a2ef682f13f761a4e4bc9209217cf901c2da0494cf7f7ac1",
+   "reference_sha256": "323f60803c28c8d2f15ee395428284622ad36b993ec7ab55e58781a09115f436",
+   "source_tokens": 5349,
+   "length_stratum": "medium",
+   "dependence_group": "valid/259",
+   "author_group": "valid/259",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/52487 (DOI)",
+   "title": "Zoom out to zoom in on the community",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/262",
+   "source_sha256": "fdd5539668eb4abc7b9b4b3eadf2dda8e5cd2f9502271c1e442d15db6c74efc8",
+   "reference_sha256": "5487c6c51d04cdc34c033ff9c82465ebfd6e078cf9bd5d10dc9ec4738325ae6b",
+   "source_tokens": 3980,
+   "length_stratum": "short",
+   "dependence_group": "valid/262",
+   "author_group": "valid/262",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/20406 (DOI)",
+   "title": "GeoMapFish 2 - Ready for the Future",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/263",
+   "source_sha256": "1525926b1101cbd831fa68a9e9fa6a2ab9a05da65bc9e944b149f498de774b21",
+   "reference_sha256": "9c7b2c0c6eb9c4065f88eb8c75f7f15cef0cac2b066ab4c6a8c28b5ec76a60b3",
+   "source_tokens": 4858,
+   "length_stratum": "medium",
+   "dependence_group": "valid/263",
+   "author_group": "train/6323",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/54768 (DOI)",
+   "title": "Plone 6 Theming from Scratch",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/266",
+   "source_sha256": "2161f323d27b650f64bb875bca674b3811b05fc812cd247ba8e286ba1d10c256",
+   "reference_sha256": "69d9c4a2141974eaccec67787d154e684c00d0586de6a0e8119b5731a322e005",
+   "source_tokens": 3816,
+   "length_stratum": "short",
+   "dependence_group": "valid/266",
+   "author_group": "valid/266",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/42811 (DOI)",
+   "title": "ONLYOFFICE: seamless collaboration on documents for your enterprise",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/269",
+   "source_sha256": "1f67db74e41fc56213f761f0291c77d3fae1b45ff1e1e870848a8fb335cbb9f6",
+   "reference_sha256": "5d120ffc10c2c35d6c6f2e295111af720b7573d081ed7dccd432b8ab83c33800",
+   "source_tokens": 6592,
+   "length_stratum": "medium",
+   "dependence_group": "valid/269",
+   "author_group": "train/7051",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/30670 (DOI)",
+   "title": "How to Talk to Humans",
+   "audit_flags": [
+    "cross_split_author_group",
+    "overlapping_segments"
+   ]
+  },
+  {
+   "id": "valid/275",
+   "source_sha256": "4ef7658e7f0c80ee2c349935b2a8f29fe40c7c1ae74fa31d02aed62d8e3fe66a",
+   "reference_sha256": "c10de0d314c85f6df2d3a36e2184bde2c2f3cb352afc34e2e4b1d8dc7f8b1fba",
+   "source_tokens": 6736,
+   "length_stratum": "medium",
+   "dependence_group": "valid/275",
+   "author_group": "test/119",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/42682 (DOI)",
+   "title": "10. van der Waals and Casimir interactions",
+   "audit_flags": [
+    "cross_split_author_group",
+    "short_abstract_under_30_words"
+   ]
+  },
+  {
+   "id": "valid/286",
+   "source_sha256": "213c1b3de076cf2b311af0dfbc871ace558a30beb4c6d432921ee53ba6dc3a95",
+   "reference_sha256": "0ac60a506d9daec3abd64b0ee1b3b1a94bc808dd9bc8f23bd539fca146a6213b",
+   "source_tokens": 5007,
+   "length_stratum": "medium",
+   "dependence_group": "valid/286",
+   "author_group": "valid/286",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/33127 (DOI)",
+   "title": "How to raise money for open source projects",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/300",
+   "source_sha256": "c7473ebb81dbd9549d069490eb18cb8afc15d616febf18919ecc1ab6de8a2ac3",
+   "reference_sha256": "d19855c6d90772c8e25348e127878350538824d1b336b88f5895181adc26d02d",
+   "source_tokens": 7243,
+   "length_stratum": "long",
+   "dependence_group": "valid/300",
+   "author_group": "valid/300",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/21169 (DOI)",
+   "title": "Against the silos: usable encrypted email & the quest for privacy-aware services",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/306",
+   "source_sha256": "a73c4fa27ab5ccee7d7339aa1cf3ae7e42347fdf0e20e82e1f9e60318c54777a",
+   "reference_sha256": "166ad9f7f93d39d1ec8f5b1555efeb9b9ce0f11e26e1dde33a6ce7639e33729d",
+   "source_tokens": 3396,
+   "length_stratum": "short",
+   "dependence_group": "valid/306",
+   "author_group": "valid/306",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/30805 (DOI)",
+   "title": "Writing Gregg Shorthand with LATEX and Metafont",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/309",
+   "source_sha256": "5bea109336f37dcab1337d4af342ae2e0ff9ca69883649ddbeb6157d3078ea4c",
+   "reference_sha256": "79c9f48e96ec803e2ac21cab77af3e121b29eaa23e6d64cd22dffd35a53f73ab",
+   "source_tokens": 13308,
+   "length_stratum": "long",
+   "dependence_group": "valid/309",
+   "author_group": "valid/309",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/50943 (DOI)",
+   "title": "3/3 Algebraic K-theory and Trace Methods",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/321",
+   "source_sha256": "64e8306d146f69804bccdc61c12a11f0f7bdca139af83014cb33055ed3f21cc7",
+   "reference_sha256": "019cf19fac5ded4ca73217f58eeb1da5be39ac148f4884d1dacf21ef57a8cb13",
+   "source_tokens": 8138,
+   "length_stratum": "long",
+   "dependence_group": "valid/321",
+   "author_group": "valid/321",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/49222 (DOI)",
+   "title": "Aerospace Village - Cybersecurity meets Aviation Regulation",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/327",
+   "source_sha256": "222b785e7efca37301e5a51c0c26803e7c2e90d3e0d4953204026724b5865b02",
+   "reference_sha256": "0a17eaaaccb9bcdcf3da0e703896a02fea9eb82df64e31cae2ae8209e3ceca4c",
+   "source_tokens": 6703,
+   "length_stratum": "medium",
+   "dependence_group": "valid/327",
+   "author_group": "train/5747",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/40046 (DOI)",
+   "title": "QA tools for FOSS distributions",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/329",
+   "source_sha256": "ef7bd6b35e3b2a3212a89bdb2760d1cf2d419237f6b55f462030fc944c691921",
+   "reference_sha256": "fedfb5898822904acad3c317c3348d414f367645cb17f5e1f2a202e6e80f10d6",
+   "source_tokens": 10569,
+   "length_stratum": "long",
+   "dependence_group": "valid/329",
+   "author_group": "train/2517",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/44855 (DOI)",
+   "title": "Delta Chat, CFFI, pytest and all the Rust",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/333",
+   "source_sha256": "9e3f92455e8c3db87477e3ef3d58f031526de229ae41afa3a00b8cc9e7fcd60a",
+   "reference_sha256": "9f35491775df1cddf113847bf1ec559fb8e63e90b0c75c635c82d0ba6ff43f88",
+   "source_tokens": 2319,
+   "length_stratum": "short",
+   "dependence_group": "valid/333",
+   "author_group": "valid/333",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/42125 (DOI)",
+   "title": "Introducing LibreOffice SafeMode",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/338",
+   "source_sha256": "4e0a3e7b1f5d36680ba8953cda9dcef905be17a60707635d4defe4c59a20a3d6",
+   "reference_sha256": "458c66caf61b71d1d7c95b9ccb8ce050311941f4f98939b53616605cbd4c6d80",
+   "source_tokens": 4700,
+   "length_stratum": "medium",
+   "dependence_group": "valid/338",
+   "author_group": "valid/338",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/20286 (DOI)",
+   "title": "Open Source as part of an Open Data initiative.",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/343",
+   "source_sha256": "06d9b48d41787c7a698839e904b496fef439c962481ee71165e252a44785da42",
+   "reference_sha256": "1bcb19e2348f69c205bd868c3eba3b99452eaffe79654d03704c3f9255e15115",
+   "source_tokens": 2252,
+   "length_stratum": "short",
+   "dependence_group": "valid/343",
+   "author_group": "valid/343",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/42793 (DOI)",
+   "title": "Data_exporter app showcase - live demo",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/349",
+   "source_sha256": "0f3da47c2dee228d7a87497c646803183c8b371559d3e1c4a44f26e58a37fdaf",
+   "reference_sha256": "acfa9b37756e9bf5352704ba1dead765cbec99875e95612f572c7d705a63f1e9",
+   "source_tokens": 4671,
+   "length_stratum": "medium",
+   "dependence_group": "valid/349",
+   "author_group": "valid/349",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/20379 (DOI)",
+   "title": "Bait and don't switch: Using FOSS4G to attract bright young talent",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/359",
+   "source_sha256": "1178605776d8009817dc679377e6c12be0a2c1e682af115c363308ddc0854d21",
+   "reference_sha256": "ea39d0339f7b7a3bbcf71eb729c64e773f6daafc59fb78d642396e40f9f401ed",
+   "source_tokens": 1434,
+   "length_stratum": "short",
+   "dependence_group": "valid/359",
+   "author_group": "valid/359",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/56875 (DOI)",
+   "title": "Editing Simulation",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/371",
+   "source_sha256": "19478bf8f9d9cbf696a6b4cfee977fb6550ada91163cf6fc9c0ac3592ce9cfb1",
+   "reference_sha256": "5b1f8ee7482cb422d5c1d3cb8f02ac8e9f4cb94e6150b1fd38475cc34b1c16d4",
+   "source_tokens": 8979,
+   "length_stratum": "long",
+   "dependence_group": "valid/371",
+   "author_group": "valid/371",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/46431 (DOI)",
+   "title": "Arithmetic Resurgence of Quantum Invariants",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/372",
+   "source_sha256": "ab6442c65d7b388812c0ba4f840c41f9d5cc6c09264300edae76f74c74c89ee9",
+   "reference_sha256": "9f7014f74834a2475bf363480b20a17ee4573a4d0dd1e60be7848a2ae55573e8",
+   "source_tokens": 4215,
+   "length_stratum": "short",
+   "dependence_group": "valid/372",
+   "author_group": "train/3170",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/44378 (DOI)",
+   "title": "LibreOffice: the origins of a community fork",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/381",
+   "source_sha256": "f46d5be1d75c77997beb454a7c6005eb074eddb5f06dffa1c0a15c4f29f944db",
+   "reference_sha256": "767557bcb8beb8fb6a0fa6ab9aa17f6be2f1ab14ba92e25e9ae397016bc2441e",
+   "source_tokens": 4989,
+   "length_stratum": "medium",
+   "dependence_group": "valid/381",
+   "author_group": "valid/381",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/32993 (DOI)",
+   "title": "The human story behind the last big scoop in tech news: Ahmed Mansoor",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/397",
+   "source_sha256": "5452e8cc7fc75cbe6861878e67a8bda324db4188c4da93317f34a6debc5912c8",
+   "reference_sha256": "5ed61816b919e1d1841e623b26a90a7a1635ff15c47fb696209676f7812a2a95",
+   "source_tokens": 8547,
+   "length_stratum": "long",
+   "dependence_group": "valid/397",
+   "author_group": "valid/397",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/51256 (DOI)",
+   "title": "Bogoliubov Type Recursions for Renormalisation in Regularity Structures",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/401",
+   "source_sha256": "d351aafde2f5a14a05d42f2edd5c851ce5f717c79ab23e59ef918419ca0bd04d",
+   "reference_sha256": "ffbb2d59f20adf90fe1e90f33c6f4d8c15a92433eefa81f61c9b8444b7d1cb3d",
+   "source_tokens": 9035,
+   "length_stratum": "long",
+   "dependence_group": "valid/401",
+   "author_group": "test/400",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/50481 (DOI)",
+   "title": "Web API Security – Patterns & Anti-Patterns",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/402",
+   "source_sha256": "0c0a618304630cd237d970fc7656c2022a3122b8b9d32f14f175d69389658941",
+   "reference_sha256": "493d6e84f3a2f10e154e426800871440be0bb71d330ed5621e20ff4eee527f74",
+   "source_tokens": 16461,
+   "length_stratum": "long",
+   "dependence_group": "valid/402",
+   "author_group": "valid/402",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/39000 (DOI)",
+   "title": "Hostile Hardware reverse engineering by chip de-capping and analysys",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/405",
+   "source_sha256": "db384373f09caa7fba54a310330b1b2a721549d8b88ccded133ec84dc35acb29",
+   "reference_sha256": "4483aea1ac46298bab5f29434102082c3602de6ac5ea1f18b1d00e209f174445",
+   "source_tokens": 8935,
+   "length_stratum": "long",
+   "dependence_group": "valid/405",
+   "author_group": "valid/405",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/48929 (DOI)",
+   "title": "NDC London 2016 - Lightning Talks",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/407",
+   "source_sha256": "abd254bfa9d8650679e90ed2be8da577cdb68541ae727ae3c49b5bd1e1b4f33d",
+   "reference_sha256": "de4e23d8577f69a6372fb36891a3e2c47740055e2c978f9ea8235f92101c6dd5",
+   "source_tokens": 3802,
+   "length_stratum": "short",
+   "dependence_group": "valid/407",
+   "author_group": "valid/407",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/52993 (DOI)",
+   "title": "Standardisation of Open Source Hardware",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/421",
+   "source_sha256": "56ef29f3f53c80f2482c3eb7a4d8b4b9cf53596ea92cfa214b9946de65d95fd7",
+   "reference_sha256": "1f2473b1a092ec8ab8ef80549520ab74f3b25bc5ed438188eeb70545216ee5aa",
+   "source_tokens": 5142,
+   "length_stratum": "medium",
+   "dependence_group": "valid/421",
+   "author_group": "valid/421",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/38633 (DOI)",
+   "title": "Compatible systems along the boundary",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/435",
+   "source_sha256": "bfc513b79faf1ee7fd61cdb8c3f1b528f51b38c36047b61e2b37a14f6c54d5ae",
+   "reference_sha256": "088d0a7a6929395c2ca7d433d2d87a3e91c3c7a00a5f7d521ba57ff37592f9ab",
+   "source_tokens": 3993,
+   "length_stratum": "short",
+   "dependence_group": "valid/435",
+   "author_group": "train/15",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/54909 (DOI)",
+   "title": "Our Castle's strength",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/437",
+   "source_sha256": "7afeb5da65597408cffd7320526c8d7aef54cfc0e3c140955186270bea2d7da9",
+   "reference_sha256": "3ce809b4cfd79445ec65c2b8310530a05a171c5a69c217abea2f86229ab24afa",
+   "source_tokens": 2717,
+   "length_stratum": "short",
+   "dependence_group": "valid/437",
+   "author_group": "valid/437",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/47270 (DOI)",
+   "title": "Eclipse Loves LSP - Achieving More with Less",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/452",
+   "source_sha256": "146f3616116d8857a8b0bbe89e88543bc6042f0d0b3d399c6e5a67e24c270edb",
+   "reference_sha256": "28f4d6f7a8b6380789e598fefc6f87cb70a999fe0e1f3f6d883c5a28555d1b94",
+   "source_tokens": 2865,
+   "length_stratum": "short",
+   "dependence_group": "valid/452",
+   "author_group": "valid/452",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/44239 (DOI)",
+   "title": "Distributed Computing with Ada and CORBA using PolyORB",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/453",
+   "source_sha256": "456aafa462bc349172436f7f613ee964765df1142b02b8a0c6408ded2741984f",
+   "reference_sha256": "ce92a8011fe6afcf8b15ef4c45e73f119d9fd12f549f17f9f9a58ccb4c07c821",
+   "source_tokens": 3899,
+   "length_stratum": "short",
+   "dependence_group": "valid/453",
+   "author_group": "valid/210",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/31592 (DOI)",
+   "title": "OpenSource GIS surveying - water application",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/462",
+   "source_sha256": "58630c4e935ac8bd5f7c88cfc5cf6eaffb1a7578b7e5d3bfb1ba20c3dc2ec86f",
+   "reference_sha256": "3997cd1972f8143bc26c9ab12c12c9e7cde5d29deb75f8e9a1a824ba26eff960",
+   "source_tokens": 8187,
+   "length_stratum": "long",
+   "dependence_group": "valid/462",
+   "author_group": "train/5978",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/43742 (DOI)",
+   "title": "Semi-infinite topology of the complexified path integral",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/471",
+   "source_sha256": "4e245265216f269607b64d92c1e448642bfe405e3e35bc9eadb1c0310c05e07a",
+   "reference_sha256": "13c852acf1ff38caef479fa12c91524caf80f566e65126acbe02f94ddc62f42b",
+   "source_tokens": 3238,
+   "length_stratum": "short",
+   "dependence_group": "valid/471",
+   "author_group": "valid/471",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/53316 (DOI)",
+   "title": "Improving GNU Radio Accelerator Device Dataflow",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/478",
+   "source_sha256": "1eac73c001526cdaec82e272be26ec71ee501ef861bc92c0a3fa186ec61316c9",
+   "reference_sha256": "da433c055ca138f0628623fb12cc59c1e5e061f280c0045a7c62aec3429fddc2",
+   "source_tokens": 4250,
+   "length_stratum": "short",
+   "dependence_group": "valid/478",
+   "author_group": "valid/478",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/37948 (DOI)",
+   "title": "State of the rkt container runtime",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/494",
+   "source_sha256": "ff5abf132e07f653dbbeb19535f0ce6eeddba846be423c848cbdabeb7073e7fe",
+   "reference_sha256": "745fa2b51cf27c9b986e31ab4c5ac88270525f8c1f2570840e32641a4b966a9e",
+   "source_tokens": 9386,
+   "length_stratum": "long",
+   "dependence_group": "valid/494",
+   "author_group": "train/1375",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/19513 (DOI)",
+   "title": "An Overview of Locking in the FreeBSD Kernel",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/500",
+   "source_sha256": "a9b97ea989452e539ecad2228043c745298748d3cc9a105408afce7790e39691",
+   "reference_sha256": "58faa8d9046a3dec70450a2a8bae1e90bba39c7e3cf50d1da170326188428c56",
+   "source_tokens": 3505,
+   "length_stratum": "short",
+   "dependence_group": "valid/500",
+   "author_group": "train/1800",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/21711 (DOI)",
+   "title": "Krita: Professional Digital Painting",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/502",
+   "source_sha256": "fc0706c6123ffaa8cea3857c45fdd08ba4948a51bdef5d0e97fd53ca915a8097",
+   "reference_sha256": "70dfdc83ba557cd5075da64ea77a5b258f3e1c6fc775b22f02822b0dd0563fc0",
+   "source_tokens": 1593,
+   "length_stratum": "short",
+   "dependence_group": "valid/502",
+   "author_group": "valid/502",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/41884 (DOI)",
+   "title": "Alyvix: Under the hood",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/508",
+   "source_sha256": "44be88fa2039bb6515530db2f3a31a9f93e039bcd5664b837a5fc0dbd2998f2f",
+   "reference_sha256": "3dc4760500880e22b8fbbaebbda6865981cd5eca9d124d1f2ff65a1cbf1e1c05",
+   "source_tokens": 6487,
+   "length_stratum": "medium",
+   "dependence_group": "valid/508",
+   "author_group": "valid/508",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/59321 (DOI)",
+   "title": "Non-forking and preservation of NIP types",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/511",
+   "source_sha256": "95fcb6e560a88e858ae0f34211dd24555b169f551bda9f4a7ef7f0c929515cbf",
+   "reference_sha256": "38767f9957d7d37f1648ea6b8507ac1f5110437cd87696be7fb692d12d123b3a",
+   "source_tokens": 7695,
+   "length_stratum": "long",
+   "dependence_group": "valid/511",
+   "author_group": "valid/511",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/33984 (DOI)",
+   "title": "ECB Press Conference - 21 January 2016",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/525",
+   "source_sha256": "aec2000c6d13ba974e04cb081eeeb2c7f9d4d5427cd4ecadd91271b4e732e962",
+   "reference_sha256": "2ac5a5eebd65bfbb282f02c403f16b3d556f67c4a709f33099f221f7b1ef1510",
+   "source_tokens": 3602,
+   "length_stratum": "short",
+   "dependence_group": "train/2960",
+   "author_group": "train/2193",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/49089 (DOI)",
+   "title": "Avestan – Morphology, Part 2",
+   "audit_flags": [
+    "cross_split_author_group",
+    "short_abstract_under_30_words"
+   ]
+  },
+  {
+   "id": "valid/533",
+   "source_sha256": "1ce8461e25cd28326ff821bfe273546cd0da19f0d02ecfd67a4ea0c1a7c68368",
+   "reference_sha256": "6373563250751a9bebee202ca5bacc6b0a6f48d4412b0dfa6f8368ec19b27dbe",
+   "source_tokens": 8404,
+   "length_stratum": "long",
+   "dependence_group": "valid/533",
+   "author_group": "valid/533",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/50733 (DOI)",
+   "title": "IoT Village - IoT under the Microscope",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/539",
+   "source_sha256": "edac77f43d29af3759eb04fc018fc7f45c16986253d41a360cc0685931d13278",
+   "reference_sha256": "5140cbbe61964b28c3afd5b461df1e7a57812bb323c3e4b6ada888e6ee458aac",
+   "source_tokens": 9120,
+   "length_stratum": "long",
+   "dependence_group": "valid/539",
+   "author_group": "valid/539",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/48282 (DOI)",
+   "title": "PGCon 2019 - Lightning Talks",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/540",
+   "source_sha256": "9104609f192c982ed2b541f707d30edb9903f1c16f81704de71301fb6ae22f2e",
+   "reference_sha256": "cc17d5791941e897058c6f6b0dde62231efc9dde343cd0e662d3d85d45720fa3",
+   "source_tokens": 7370,
+   "length_stratum": "long",
+   "dependence_group": "valid/540",
+   "author_group": "valid/540",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/53509 (DOI)",
+   "title": "Gelfand-Tsetlin theory and Coulomb branches",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/546",
+   "source_sha256": "6e94b01b539b9f9ab3d7872c2a446e6789e5cecf65e1bd7c8d7a5238c0cfa762",
+   "reference_sha256": "4b5680576d02dfce4dceafd7a99a4560321d43736bd66801d41791659f711096",
+   "source_tokens": 7183,
+   "length_stratum": "long",
+   "dependence_group": "valid/546",
+   "author_group": "valid/546",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/46623 (DOI)",
+   "title": "The Dangers of Tribal Knowledge",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/555",
+   "source_sha256": "99dd505419c9c6a283027a8c8c095ad5a594a9343c8424b1fca331df7a228b70",
+   "reference_sha256": "7483e6f9870ccf8bce14f89a93f9931283957c8556318bad39194b014edcc658",
+   "source_tokens": 9461,
+   "length_stratum": "long",
+   "dependence_group": "valid/555",
+   "author_group": "test/898",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/48473 (DOI)",
+   "title": "PostgreSQL's buffer manager - Problems & Improvements",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/560",
+   "source_sha256": "f501bb3271de6648af232345a76b204af23efb42cc416f6cc84fd149332c8958",
+   "reference_sha256": "ec960e31cefa90df84eaa64501f27d7f1ddad7d45d920c5e43335edb5c7219a7",
+   "source_tokens": 8869,
+   "length_stratum": "long",
+   "dependence_group": "valid/560",
+   "author_group": "valid/560",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/48470 (DOI)",
+   "title": "pg_paxos: Table Replication through Distributed Consensus",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/567",
+   "source_sha256": "4c24550fc87d3aa0bd2b113fafd5a675f36d0ca1bfa4c5e50dd619a041c8c9c9",
+   "reference_sha256": "3880e73fa4e20a703d17a0a6bd4ae9042dbd49855cffa79639b89e96685acfcd",
+   "source_tokens": 6380,
+   "length_stratum": "medium",
+   "dependence_group": "valid/567",
+   "author_group": "valid/567",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/49948 (DOI)",
+   "title": "Writing and Scaling Collaborative Data Pipelines with Kedro",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/605",
+   "source_sha256": "a9563865a357430ac4b700dd2e8898d38191ee1f871b53be30a6ff2b33993324",
+   "reference_sha256": "e1de3a7c6ea3321f34f9c1896f66a04fe63c86056be827161e1b3d876a6251c4",
+   "source_tokens": 1087,
+   "length_stratum": "short",
+   "dependence_group": "valid/605",
+   "author_group": "valid/605",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/58075 (DOI)",
+   "title": "Poster presentation: Rethinking university librarianship in the post-pandemic scenario",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/607",
+   "source_sha256": "830e3db3b0f7eed39c8ef6072fa5c0881dbba8a4dfdaa4007327b9a35b610557",
+   "reference_sha256": "dab252caee416e47a8829c2945e05671e7c42056c07eaa6b1b1eed8b9250bc85",
+   "source_tokens": 656,
+   "length_stratum": "short",
+   "dependence_group": "valid/607",
+   "author_group": "valid/607",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/35892 (DOI)",
+   "title": "CSIRO ASKAP Science Data Archive (CASDA)",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/618",
+   "source_sha256": "5ac0bdfa12d485e7ad7fe10e9165cb15bffcbb7ca9a1c8bab2de76f5fc762855",
+   "reference_sha256": "6ca64fa88d2f5488e5fe7992c8eb9be5975c18850ec3f825b6df8c3c73bcb64d",
+   "source_tokens": 6993,
+   "length_stratum": "medium",
+   "dependence_group": "valid/618",
+   "author_group": "valid/618",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/56941 (DOI)",
+   "title": "Efficient MySQL Performance",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/624",
+   "source_sha256": "7705660dbcc01f1b214186ce722f069722b4e927845a9f8a15d547b8466a3d6d",
+   "reference_sha256": "48ce0d5d8404a039e3091d0e9f34f7aace8a1e0a226ac424e16b372bf23091ad",
+   "source_tokens": 9082,
+   "length_stratum": "long",
+   "dependence_group": "valid/624",
+   "author_group": "valid/624",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/31547 (DOI)",
+   "title": "Quit Frustrating Your New Developers - Tips From a Teacher",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/629",
+   "source_sha256": "23ab7b5667ac933ae0bee57a085c5d1895887f46d4fe461874ef04975389c8f3",
+   "reference_sha256": "117fa0662cf49b3fe1d12e47f10309c2764cd7351eeb3524e566a06928c7cefd",
+   "source_tokens": 4412,
+   "length_stratum": "medium",
+   "dependence_group": "valid/629",
+   "author_group": "valid/629",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/54215 (DOI)",
+   "title": "Instrument and Find Out: Parasitic Tracers for High Level Languages",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/632",
+   "source_sha256": "26791e5f114e44d2fef79bdb86046a3a3e692057dd84196f457e7d896f6bbd98",
+   "reference_sha256": "0d24c6a096b0dd4e8916c11883e3719b7a0deeab53bb9ededb1f230e96a61de3",
+   "source_tokens": 5601,
+   "length_stratum": "medium",
+   "dependence_group": "valid/632",
+   "author_group": "valid/632",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/44319 (DOI)",
+   "title": "Homebrew 2.0",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/633",
+   "source_sha256": "2efabbd9315bdfa6d4bddc6be0d1fbb234614bf180e1397cfaf98e96bff529f1",
+   "reference_sha256": "749336f562f73d11ee2cbf489c3e04ce54cdf7b5f3f2189ac3e62f01d9fdb38e",
+   "source_tokens": 5367,
+   "length_stratum": "medium",
+   "dependence_group": "valid/633",
+   "author_group": "valid/633",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/45457 (DOI)",
+   "title": "Banking with Django - how to not lose your customer's money",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/647",
+   "source_sha256": "06343b2ee4320cf8133d605882b660aed91efd8d08d15ce5fd9653cfccfbb885",
+   "reference_sha256": "ebc96d36591999327d670f9fa9913bf306e7188b03d60018167a92753f69ce82",
+   "source_tokens": 8418,
+   "length_stratum": "long",
+   "dependence_group": "valid/647",
+   "author_group": "train/2141",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/41984 (DOI)",
+   "title": "DIY: Home monitoring with Ruby & Pi",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/656",
+   "source_sha256": "6dd197a663578622907e7e5e2188e0e967878b017af516cb8e80d8b5698390ed",
+   "reference_sha256": "ba7b7011c808f0f6176d1a3acba1967120f95263f5da64a16fdf64215cff9b72",
+   "source_tokens": 8481,
+   "length_stratum": "long",
+   "dependence_group": "valid/656",
+   "author_group": "valid/656",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/51424 (DOI)",
+   "title": "What’s new in search for SharePoint 2013",
+   "audit_flags": [
+    "transcript_segment_mismatch"
+   ]
+  },
+  {
+   "id": "valid/657",
+   "source_sha256": "33f034d03a9bce4719310866d0b71cea830e3621d1820e8eddf898225891a016",
+   "reference_sha256": "9ea8f7c8b4153a8f07bc1c2f2d9d7ff1a0ce0f8eb0f46408f21fa494f8ba3509",
+   "source_tokens": 2722,
+   "length_stratum": "short",
+   "dependence_group": "valid/657",
+   "author_group": "valid/657",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/53674 (DOI)",
+   "title": "Scalable, Automated ML Model Monitoring with KFServing and Hopsworks",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/677",
+   "source_sha256": "179fcfc7a08ac2341681f8775353506a26bf87dbb4bf61c9ac7ecf79b428ef59",
+   "reference_sha256": "7003a35903db18c0a785e3623b0a4a9cbb66dd844723ea92cf1c22a80bf5b56d",
+   "source_tokens": 7548,
+   "length_stratum": "long",
+   "dependence_group": "valid/677",
+   "author_group": "valid/677",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/35080 (DOI)",
+   "title": "Can we design social herding to enhance cooperation?",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/678",
+   "source_sha256": "413edc3f9ffc7f12819add7e770c57adb63e46e17477d0d6041558a681b6c28d",
+   "reference_sha256": "d6a7e38bd69aa10ad81ee06163e98bcbbfa4816cf2ca603c395b857afd2a443b",
+   "source_tokens": 8939,
+   "length_stratum": "long",
+   "dependence_group": "valid/678",
+   "author_group": "valid/678",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/50902 (DOI)",
+   "title": "Probing the dynamics of complex microbial communities using DNA tridimensional contacts",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/686",
+   "source_sha256": "238f24c770808c23369c57e94cbc8fd3bab1a53c345692d2d6c6a958e1805354",
+   "reference_sha256": "b7b6d642aa061ea45000981ed0329009c2a336c9a843431a3841d3bce7bb1e60",
+   "source_tokens": 10920,
+   "length_stratum": "long",
+   "dependence_group": "valid/686",
+   "author_group": "train/2269",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/19168 (DOI)",
+   "title": "Call your NetBSD",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/687",
+   "source_sha256": "9d0ff72c681ede1605e9ed99b6b02d96d7b39af2ea4943e19d1d5e1f08367e1e",
+   "reference_sha256": "99caf9c833b4f1cf7f9c03d0511de651766c9a3488227a83e58960407d14f108",
+   "source_tokens": 4290,
+   "length_stratum": "medium",
+   "dependence_group": "valid/687",
+   "author_group": "valid/687",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/37956 (DOI)",
+   "title": "Updating Embedded Systems - Putting it all Together",
+   "audit_flags": [
+    "short_abstract_under_30_words"
+   ]
+  },
+  {
+   "id": "valid/692",
+   "source_sha256": "285f07e4b7095301d0c6c3eed7ddb4816bde03701f2a1b34303dec20bc121946",
+   "reference_sha256": "9abc67a2d053daea7d9420703443b06924a2d4421d0bcadfd84c65ce8c6769c5",
+   "source_tokens": 2648,
+   "length_stratum": "short",
+   "dependence_group": "valid/692",
+   "author_group": "valid/692",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/55013 (DOI)",
+   "title": "Interpretation-Based Violation Witness Validation for C: NITWIT",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/694",
+   "source_sha256": "ea2ce68d210053c75c9f88cf8ad6aeb93c756014e770931ea94d10e9f9ac7dfb",
+   "reference_sha256": "09c72e2523db2cf4a70debca80491b4b67814d54b34f8e2455e648eb7cb11aab",
+   "source_tokens": 2229,
+   "length_stratum": "short",
+   "dependence_group": "valid/694",
+   "author_group": "valid/694",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/42478 (DOI)",
+   "title": "Evaluation of the semantic research data management system CaosDB in glaciology",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/701",
+   "source_sha256": "462aff5123c960bbd8456219a4513d1c3b9ac014562ebe5b6e76ec5b5e19ef38",
+   "reference_sha256": "7dfa5b804ebf3e298e8e96cd6271fe2ccfdbca824a848ec95d97bcd14675d8ee",
+   "source_tokens": 4956,
+   "length_stratum": "medium",
+   "dependence_group": "valid/701",
+   "author_group": "valid/701",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/36369 (DOI)",
+   "title": "#HamSammich (A replacement talk)",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/702",
+   "source_sha256": "33c00172bb2003b2756433720655ad90472c3a51ace7dd8a9dc04b3d98cebff9",
+   "reference_sha256": "b2c1b5d69764326db1fc0bf4c2e0441a04125c44b16bbcfa356af06c598f64c7",
+   "source_tokens": 6014,
+   "length_stratum": "medium",
+   "dependence_group": "valid/702",
+   "author_group": "valid/702",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/37273 (DOI)",
+   "title": "Ales on Rails: Making a Smarter Brewery with Ruby",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/705",
+   "source_sha256": "ed41cd1930932d95e06bc8cf3e69e09033dc30ac35fd082f6c8ddf87e6f58f1e",
+   "reference_sha256": "215546eb81fd7e970dfe168fb63167a8f280e8069ef69ff0e2b48037adb8f672",
+   "source_tokens": 4986,
+   "length_stratum": "medium",
+   "dependence_group": "valid/705",
+   "author_group": "valid/705",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/48552 (DOI)",
+   "title": "Crypto and Privacy Village - Telegram - Snoop the messages",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/707",
+   "source_sha256": "49a7d17be43d3d5c9d845ffb34fd9bc9f2ddde02027308c7ee3a9db87335e6d1",
+   "reference_sha256": "a39abae2861e0a3fa45da116fd08b82f2baf9ceee89f0f27e6e3507fece498f2",
+   "source_tokens": 6679,
+   "length_stratum": "medium",
+   "dependence_group": "valid/707",
+   "author_group": "valid/707",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/53775 (DOI)",
+   "title": "Kodaira dimension of algebraic fiber spaces over abelian varieties or projective surfaces",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/713",
+   "source_sha256": "de8b2739f4a1b69a40fee063c9944edcfd41442338bcacfca275ba586f6b0953",
+   "reference_sha256": "779838f8f2c0b75275ca6aa1b35a35926b819bfdee0ea7ebe93df53652c82660",
+   "source_tokens": 8147,
+   "length_stratum": "long",
+   "dependence_group": "valid/713",
+   "author_group": "train/5366",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/30706 (DOI)",
+   "title": "Speed Science",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/741",
+   "source_sha256": "8dc7158b5af16e3f3e8591a14097187fe27b5d0570d81e7979a9a13854de992f",
+   "reference_sha256": "7ffe387678dd91d939f65336dd3ef5b6217ed3f2d22b735f68d9751d37f23b19",
+   "source_tokens": 5580,
+   "length_stratum": "medium",
+   "dependence_group": "valid/741",
+   "author_group": "valid/741",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/47588 (DOI)",
+   "title": "Finnish National Bibliography Fennica as Linked Data",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/743",
+   "source_sha256": "401cdc31724209e8c0c4a0ce6b6947a1b9af5c1db5f2f20ba8852a82ffd63dd0",
+   "reference_sha256": "25c63948c00517749fb1692c4dab1e2a614ea8636dda6053a0fc523516ff3b77",
+   "source_tokens": 8487,
+   "length_stratum": "long",
+   "dependence_group": "valid/743",
+   "author_group": "valid/743",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/39277 (DOI)",
+   "title": "Censored Planet: a Global Censorship Observatory",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/745",
+   "source_sha256": "5f8cd912f4931ca8f4809c1f8810d3935f0bde7f9eb5e7fbf1a3a651ee3d319a",
+   "reference_sha256": "84320ead184be7e1c6f213fb4700807b11bd79f482e71cde05c11b80e95081d5",
+   "source_tokens": 2843,
+   "length_stratum": "short",
+   "dependence_group": "valid/745",
+   "author_group": "valid/745",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/44217 (DOI)",
+   "title": "CubicWeb: a browser for the web of data",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/753",
+   "source_sha256": "dd6edd7e6fc50b0f0e131194048f2408918e4fb779abbba832b2e4cda6f5324d",
+   "reference_sha256": "b6cd1435afd854f14b9f39310e57377d8e48c1953a89ddd72366f4a0da8a815d",
+   "source_tokens": 4585,
+   "length_stratum": "medium",
+   "dependence_group": "valid/753",
+   "author_group": "valid/753",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/31923 (DOI)",
+   "title": "Wearables – Current developments on the path to relevant applications",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/759",
+   "source_sha256": "4b8a9085bd2094bae23a6c479b082ebb25b16ae35035e34224e04503e270a07c",
+   "reference_sha256": "579cc1d2efea6f242748a57bb2a236934a63f24ea19694089eaf5727fa981640",
+   "source_tokens": 9572,
+   "length_stratum": "long",
+   "dependence_group": "valid/759",
+   "author_group": "valid/759",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/42110 (DOI)",
+   "title": "Infrastructure Monitoring with Postgres",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/762",
+   "source_sha256": "88b6b87e3ddd5bca4a289d7888b2cb20c5d149ae57f8549f70d82ddbd29864a6",
+   "reference_sha256": "c85eb63a0fe2f9304445305832d7589e41832f1474a6e4d65296fb19c617ff25",
+   "source_tokens": 6344,
+   "length_stratum": "medium",
+   "dependence_group": "train/1742",
+   "author_group": "train/1742",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/18588 (DOI)",
+   "title": "Physical Metallurgy of Steels - Part 4",
+   "audit_flags": [
+    "cross_split_author_group",
+    "short_abstract_under_30_words"
+   ]
+  },
+  {
+   "id": "valid/766",
+   "source_sha256": "71401ae0eb0dc928b9b7603c8e189dd9fa006dbda5da912e79e30554b2e7da8b",
+   "reference_sha256": "d8c7b2e38d3c9b2c848d31a8d6207c5ac2f9ba0bbdd244a8afde8f2f1bcfd82c",
+   "source_tokens": 8678,
+   "length_stratum": "long",
+   "dependence_group": "valid/766",
+   "author_group": "valid/766",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/48618 (DOI)",
+   "title": "Aviation Village - A Hackers First Solo Airplane Avionics Security 101",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/771",
+   "source_sha256": "9dc58cbce6cc8239b3353467d2e48cd57a40618eff3252962dcc746530dd7d63",
+   "reference_sha256": "7b2e4d1c606018abd19d3afff018ff6c268bf9f97d1659a001b2234a82956e9f",
+   "source_tokens": 10372,
+   "length_stratum": "long",
+   "dependence_group": "valid/771",
+   "author_group": "valid/771",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/36384 (DOI)",
+   "title": "Secure Messaging for Normal People",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/772",
+   "source_sha256": "927ffec2f0a6899500061dd9ec8d7fc7041dc59bd2e9559c67075f6a5a6039bf",
+   "reference_sha256": "2c4381bf053f1b23db69024b1b86014899a99c2e97aacc676f31265800839d25",
+   "source_tokens": 1726,
+   "length_stratum": "short",
+   "dependence_group": "valid/772",
+   "author_group": "valid/772",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/43073 (DOI)",
+   "title": "Cache-oblivious High-performance Similarity Join",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/806",
+   "source_sha256": "34e19460e72c66cc543b337bfcce0c93d19b3754b9c8385c0f381bf4300d608f",
+   "reference_sha256": "2f812b2bba9419d01f104ec1208060857d26cadfa5ff9ef2c6853e13c3907a14",
+   "source_tokens": 5622,
+   "length_stratum": "medium",
+   "dependence_group": "valid/806",
+   "author_group": "valid/806",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/40335 (DOI)",
+   "title": "Trends in Open Source Security",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/832",
+   "source_sha256": "ecc0406c10b97c96e2d4a660cb459089f8c4a142f21b4b8e0ace87679441ccad",
+   "reference_sha256": "c95d052f6a60fccd5929e58e3e35f6d8e50f3fc90a4651e746d07afa5c51bd15",
+   "source_tokens": 3549,
+   "length_stratum": "short",
+   "dependence_group": "valid/832",
+   "author_group": "train/6435",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/57208 (DOI)",
+   "title": "Integrate Spatial Data in your business processes",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/835",
+   "source_sha256": "99d9ecf3a51fdf4213af04d8b898b110b14af9de045b0fb40083b0fb9db7d92b",
+   "reference_sha256": "8252afe84f6fc7395279a85e47d149cce14df244b6fd18fa7738e6c4278cacaf",
+   "source_tokens": 2812,
+   "length_stratum": "short",
+   "dependence_group": "valid/835",
+   "author_group": "valid/835",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/31190 (DOI)",
+   "title": "Automobile Crash Testing Simulation Using ‘SVG Authoring Tools and SVG 3D Virtualization’ for Academic Purposes",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/848",
+   "source_sha256": "afdac4cba2ad1e7494c452828bd9855d963d90c73a84ddf4e011d2af9d40d957",
+   "reference_sha256": "4e579432183b650db141aa2d7a5c10360ba3db4e3fe60d256b487cf223df977a",
+   "source_tokens": 1854,
+   "length_stratum": "short",
+   "dependence_group": "valid/848",
+   "author_group": "valid/848",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/40297 (DOI)",
+   "title": "I'm Luvin' It",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/850",
+   "source_sha256": "55be64c81952a8fab3d3ca101922714c39a759262c0214a9b167cadb3dee8389",
+   "reference_sha256": "327c1d3d9b0acf92961d993842370cc1ff9b431c06318045bed44aef5d4591e3",
+   "source_tokens": 9237,
+   "length_stratum": "long",
+   "dependence_group": "valid/850",
+   "author_group": "valid/850",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/40573 (DOI)",
+   "title": "Security when nanoseconds count",
+   "audit_flags": []
+  },
+  {
+   "id": "valid/853",
+   "source_sha256": "2603be90ae7b8939e2d72ef453b20dfc0a665c0f43fae958ae8dbefcb45f0729",
+   "reference_sha256": "1780ff0f407c78a8306f233b7c866ffbd1fe8cc4ca3cd627b653c5737b7663c0",
+   "source_tokens": 19112,
+   "length_stratum": "long",
+   "dependence_group": "train/4388",
+   "author_group": "train/4388",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/16394 (DOI)",
+   "title": "3/3 Supersymmetric Vacua and Integrability",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/854",
+   "source_sha256": "e20347371aec5b0dfcf5faf5f16ca0ca8f389ae27d1e43aaee44a5bd332db0cb",
+   "reference_sha256": "402697c12276d30921e11bcd748e6f3254fdd03f47745eb0b92f77d2d655e3ca",
+   "source_tokens": 7631,
+   "length_stratum": "long",
+   "dependence_group": "train/345",
+   "author_group": "train/345",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/44154 (DOI)",
+   "title": "Automated firewall testing",
+   "audit_flags": [
+    "cross_split_author_group",
+    "cross_split_title_group"
+   ]
+  },
+  {
+   "id": "valid/862",
+   "source_sha256": "eed73a5a3a01fd0b6109ed2788395f2eee2b812571da7ea0078f7c89e17e624d",
+   "reference_sha256": "638d79efed589ccc6f455c90bae2f8a43bece45973dd55f2a3f6df499039b74a",
+   "source_tokens": 6195,
+   "length_stratum": "medium",
+   "dependence_group": "valid/862",
+   "author_group": "train/1726",
+   "arm_order": [
+    "S1",
+    "S3"
+   ],
+   "doi": "10.5446/37538 (DOI)",
+   "title": "Keynote: Stupid Ideas for Many Computers",
+   "audit_flags": [
+    "cross_split_author_group"
+   ]
+  },
+  {
+   "id": "valid/896",
+   "source_sha256": "62e00f4e0fdf1caa90248ca04243eb08c0a6378d07bdfb4b1d2b5deea5c4a459",
+   "reference_sha256": "291daf76c2711ce17cdcb1b826a37f1aefca5866197b0866f7ca6c10e03a0e23",
+   "source_tokens": 1498,
+   "length_stratum": "short",
+   "dependence_group": "valid/896",
+   "author_group": "valid/896",
+   "arm_order": [
+    "S3",
+    "S1"
+   ],
+   "doi": "10.5446/43147 (DOI)",
+   "title": "Snippet #2 - Supporting the Ethical Management of Research Data",
+   "audit_flags": []
+  }
+ ],
+ "manifest_sha256": "ed52d8a41a89ffbdc033b8ec88c04eaf17c4b36393dc8c6d3701415c4b92e918"
+}

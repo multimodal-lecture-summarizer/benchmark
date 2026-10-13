@@ -1,0 +1,103 @@
+{
+  "format": "tib-rq2-rq4-120-protocol-v1",
+  "status": "frozen",
+  "decision_id": "TIB-RQ2-RQ4-120-20261010",
+  "cohort_manifest_sha256": "ed52d8a41a89ffbdc033b8ec88c04eaf17c4b36393dc8c6d3701415c4b92e918",
+  "selection_sha256": "a7a84a4b9c569d153208d9006192851b2382e362a0bf33ad631ae966d725cfc2",
+  "dataset_revision": "e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee",
+  "selected_count": 120,
+  "strata_counts": {
+    "short": 40,
+    "medium": 40,
+    "long": 40
+  },
+  "tokenizer": {
+    "id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "add_special_tokens": false,
+    "truncation": false
+  },
+  "generation": {
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "precision": "float16",
+    "device": "Tesla T4",
+    "map_batch_size": 2,
+    "chunk_tokens": 512,
+    "map_output_tokens": 96,
+    "final_output_tokens": 384,
+    "seed": 42,
+    "temperature": 0,
+    "arms": [
+      "S1",
+      "S3"
+    ],
+    "repetitions": 1,
+    "output_budget": "same allocated map and final caps; actual token use separately measured",
+    "reference_in_generation": false
+  },
+  "scoring": {
+    "primary": "unicode_word_lcs_rouge_l_f1_v1",
+    "bertscore": {
+      "model": "FacebookAI/xlm-roberta-large",
+      "revision": "c23d21b0620b635a76227c604d44e43a9f0ee389",
+      "tokenizer_revision": "c23d21b0620b635a76227c604d44e43a9f0ee389",
+      "layer": 17,
+      "idf": false,
+      "rescale_with_baseline": false,
+      "long_input": "nonoverlapping_510_token_context_windows_global_alignment",
+      "implementation": "official_bert_score_short_custom_same_alignment_long",
+      "max_tokens": 512,
+      "special_tokens_excluded": "aggregation_only_zero_weight_kept_as_alignment_targets"
+    },
+    "sbertscore": {
+      "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+      "revision": "4328cf26390c98c5e3c738b4460a05b95f4911f5",
+      "tokenizer_revision": "4328cf26390c98c5e3c738b4460a05b95f4911f5",
+      "formula": "mean_summary_sentence_max_source_sentence_cosine",
+      "sentence_splitter": "latin_punctuation_whitespace_cjk_punctuation_or_newline_v1",
+      "long_sentence": "token_weighted_mean_of_all_context_windows_then_l2",
+      "source_coverage": "all_sentences_batched_no_document_truncation"
+    }
+  },
+  "runtime": {
+    "generation_soft_seconds": 36000,
+    "session_soft_seconds": 43200,
+    "automatic_retries": 0
+  },
+  "analysis": {
+    "estimand": "record-weighted paired S3-minus-S1 among successfully scored selected valid records",
+    "full_selected_denominator": 120,
+    "failed_quality": "missing_not_zero; list every missing ID and arm/metric status",
+    "group_fields": [
+      "dependence_group",
+      "author_group"
+    ],
+    "group_intervals": "exploratory component-resampled record-weighted sensitivity",
+    "bootstrap_samples": 5000,
+    "seed": 20261009,
+    "population_superiority_claim": false,
+    "unseen_test_claim": false
+  },
+  "claim": "text-only creator-abstract agreement and measured same-record S1/S3 costs",
+  "limitations": [
+    "creator abstracts not verified factual summaries",
+    "cross-split relation audit not exhaustive within valid",
+    "series and author identity not authoritative",
+    "S3 structure changes boundaries and chunk count/length"
+  ],
+  "code_sha256": {
+    "rq2_tib_frozen_runtime": "29d44022479ef6b4dc9f2ecf58f61d539ca49686fed6e50ba646153131b86f09",
+    "rq2_tib_frozen_analysis": "c2859e18b44607fb1fa1c59f71d22596a0fd0bd6a0567177fe29e4030ad99f3d",
+    "rq2_tib_benchmark": "a873bc00bb58e37763b5964246542bbcc428a8f56e385c592fa43a31b777f00d",
+    "rq2_tib_benchmark_pair": "ff6168e9073a6b3f9d86223a243667fa1ef7bdf32c7e9009f2c4296607c6fb92",
+    "rq2_controlled_validation": "dd4427a53a66c59e13184e0e38f0598ef562bd0faeb0216421764b8344c6bbe7",
+    "rq2_local_hf_backend": "286c0dd5862e730dc626b3b3bc6fa84b92fc4b979195bf8fe3dd48f6c841a4f2",
+    "rq2_tib_benchmark_bundle": "d7718624f37121c9d71c611541d1d16353ce236d5af08996c33311af3cd8e2d4",
+    "rq2_tib_benchmark_dataset": "d34cad271aa32f6b5c6a615dee34cb0852ecc1bd56b16ce0dfdea9ff1cd4ed6c",
+    "rq2_tib_benchmark_metrics": "5ed3e9fbf89d7ac77f41701cb3970db53b638695e50247b702bbe3482f0846b9",
+    "rq2_tib_benchmark_results": "f08d2168983e706525f13ea1379a29d0f2ad9dc13bb186068c630f035f04fd2d",
+    "rq2_tib_pilot_runtime": "fa129ed76979c55f428fdeb051f81d68b6eaa6032dc69aed0b7226108a7a2c54"
+  },
+  "protocol_sha256": "b77d056a26145c3182c53d1fd65d02dc88ba5131d99495c93a9e033024309910"
+}
