@@ -1,0 +1,18 @@
+{
+  "original_download": "C:\\Users\\hung\\Downloads\\iiit_cvid_spotting_colab_t4_v2.ipynb",
+  "original_sha256": "36b2caea65ae959be78df3c6ea92696a79f1eb106123641a96646d59f4293285",
+  "original_backup": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\benchmark\\experiments\\outputs\\cvid-r5-final-audit-261016\\notebook\\iiit_cvid_spotting_colab_t4_v2.original.ipynb",
+  "reviewed_notebook": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\benchmark\\experiments\\outputs\\cvid-r5-final-audit-261016\\notebook\\iiit_cvid_spotting_colab_t4_v2.reviewed.ipynb",
+  "reviewed_sha256": "1d9324b39dda7fc5b28d0d179bd3533b1bcfa12394c2a3126d1a0b6c65bd47a7",
+  "original_code_outputs_preserved": true,
+  "exact_figure_matches": 6,
+  "primary_hmean_html_matches": 12,
+  "original_export_matches_final_evidence": true,
+  "clean_template": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\benchmark\\experiments\\notebooks\\iiit-cvid-spotting-colab-t4-v2.ipynb",
+  "clean_template_sha256": "9f7198dd20dd8ab0a6a344322136536e0aabbe08d4548434d1494eafbb7d61f1",
+  "bound_execution_template_sha256": "11c15fea6025af2fe751aac9dbc5f652475f6bda6a7e7ac7c39c9dac8fde5090",
+  "bundle_unchanged": true,
+  "reviewed_code_cells_rerun": false,
+  "git_execution_notebook": "experiments/notebooks/results/iiit-cvid-spotting-colab-t4-v2-r5-executed.ipynb",
+  "git_execution_notebook_sha256": "1d9324b39dda7fc5b28d0d179bd3533b1bcfa12394c2a3126d1a0b6c65bd47a7"
+}

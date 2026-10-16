@@ -29,12 +29,21 @@ dataset_eda_notebooks:
   cohort_frozen: false
   status: bounded_42_item_diagnostic_candidate_only_no_scientific_freeze
 - dataset: iiit-cvid
-  path: experiments/notebooks/diagnostics/iiit-cvid-validation-ocr-eda.ipynb
-  receipt: experiments/outputs/dataset_qualification_261010/iiit-cvid-qualification-receipt.json
-  receipt_sha256: 5173ec68a60845d0969374f60c1017bb39b861e6b8ea466cefae32086482ad86
-  executed_followup_cells: 1
+  path: experiments/notebooks/diagnostics/iiit-cvid-all-splits-eda.ipynb
+  historical_path: experiments/notebooks/diagnostics/iiit-cvid-validation-ocr-eda.ipynb
+  receipt: experiments/registry/datasets/iiit-cvid-all-splits-eda-261014.json
+  receipt_sha256: f79357888cda6e8407c5521f808bce982ee9b519f7842c7dad747a6f6bcb5a27
+  executed_code_cells: 16
+  fresh_kernel: true
+  scope: all_train_val_test
   cohort_frozen: false
-  status: full_frame_geometry_review_complete_duplicate_content_and_source_mapping_HOLD
+  status: all_split_eda_complete_released_label_scope_no_test_freeze
+  subsequent_cohort_frozen: true
+  subsequent_test_freeze_receipt: experiments/registry/datasets/iiit-cvid-spotting-test-261014-freeze.json
+  subsequent_test_freeze_sha256: 9504e34f69b16f4b63893184e5decf2e3d88d7251833b0efbb85f2eb883438dd
+  subsequent_runtime_loading_verified: true
+  subsequent_runtime_loading_receipt: experiments/registry/datasets/iiit-cvid-spotting-test-runtime-261014.json
+  subsequent_runtime_loading_sha256: 475a72e185716f05645d35a01ff2964c141370dfae9583b3dccc162a8c304d70
 - dataset: lvvo
   path: experiments/notebooks/diagnostics/lvvo-four-class-detection-eda.ipynb
   receipt: experiments/outputs/dataset_qualification_261010/lvvo-qualification-receipt.json
@@ -72,7 +81,47 @@ dataset_eda_notebooks:
   status: HOLD
 
 # Completed evidence inventory; notebooks above remains the on-demand execution queue.
-pending_evaluation_notebooks: []
+pending_evaluation_notebooks:
+- dataset: iiit-cvid
+  path: experiments/notebooks/iiit-cvid-spotting-colab-t4-v2.ipynb
+  status: COMPLETED_R5_EVIDENCE_AUDITED_NO_SELECTION
+  candidate_registry: experiments/registry/datasets/iiit-cvid-spotting-colab-t4-candidates-261015-v2.json
+  cohort_manifest: experiments/registry/datasets/iiit-cvid-spotting-test-261014-cohort.json
+  protocol: experiments/registry/datasets/iiit-cvid-spotting-test-261014-protocol.json
+  local_preparation_receipt: experiments/results/cvid-spotting-t4-r5-261016/readiness.json
+  qualification_audit: experiments/registry/datasets/iiit-cvid-pgnet-t4-qualification-audit-261015.json
+  primary_candidates: 6
+  conditional_candidates: 0
+  target_frames: 1754
+  target_gt_objects: 40063
+  cohort_frozen: true
+  protocol_frozen: true
+  full_comparison_executed: true
+  notebook_sha256: 9f7198dd20dd8ab0a6a344322136536e0aabbe08d4548434d1494eafbb7d61f1
+  bound_execution_template_sha256: 11c15fea6025af2fe751aac9dbc5f652475f6bda6a7e7ac7c39c9dac8fde5090
+  reviewed_execution_notebook: experiments/notebooks/results/iiit-cvid-spotting-colab-t4-v2-r5-executed.ipynb
+  reviewed_execution_notebook_sha256: 1d9324b39dda7fc5b28d0d179bd3533b1bcfa12394c2a3126d1a0b6c65bd47a7
+  original_download_sha256: 36b2caea65ae959be78df3c6ea92696a79f1eb106123641a96646d59f4293285
+  saved_outputs_audited: true
+  historical_errors_retained: true
+  bundle_sha256: 40291c603b60eb564a66a182d12ae50cf4b19579954fac5c69c22d87c8ae57df
+- dataset: iiit-cvid
+  path: experiments/notebooks/iiit-cvid-spotting-colab-t4.ipynb
+  status: PREPARED_UNEXECUTED_T4_PREFLIGHT_PENDING_TESTR_BLOCKED
+  candidate_registry: experiments/registry/datasets/iiit-cvid-spotting-colab-t4-candidates-261015.json
+  cohort_manifest: experiments/registry/datasets/iiit-cvid-spotting-test-261014-cohort.json
+  protocol: experiments/registry/datasets/iiit-cvid-spotting-test-261014-protocol.json
+  local_preparation_receipt: experiments/outputs/cvid-colab-t4-preparation-261015.json
+  primary_candidates: 5
+  conditional_candidates: 1
+  testr_verified: false
+  target_frames: 1754
+  target_gt_objects: 40063
+  notebook_sha256: b9ecec198101a4f584d6e6ffa044d930d10aff267c54dd6ec9c30db8aa150b44
+  bundle_sha256: ff44fdfc654decea11d91ef1bc89912074e12c0a2928386b0db53eb8109aa148
+  cohort_frozen: true
+  protocol_frozen: true
+  model_execution_verified: false
 executed_evaluation_notebooks:
 - dataset: tib
   path: experiments/notebooks/rq2-tib-120-evaluation-colab.ipynb

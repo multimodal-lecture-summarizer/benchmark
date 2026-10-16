@@ -1,0 +1,82 @@
+{
+  "schema": "cvid_r5_git_artifact_inventory_v1",
+  "executed_notebook": {
+    "path": "experiments/notebooks/results/iiit-cvid-spotting-colab-t4-v2-r5-executed.ipynb",
+    "sha256": "1d9324b39dda7fc5b28d0d179bd3533b1bcfa12394c2a3126d1a0b6c65bd47a7",
+    "bytes": 21223670
+  },
+  "files": [
+    {
+      "path": "experiments/results/cvid-spotting-t4-r5-261016/analysis-summary.json",
+      "sha256": "8e558bfc7d85cbe4686f53312615ec47246901f89c1bfe6d64852ac7f7179ada",
+      "bytes": 18256
+    },
+    {
+      "path": "experiments/results/cvid-spotting-t4-r5-261016/audit.json",
+      "sha256": "237fff919fbc5d14fffdc22d1fd34b1d4c3398b16bdd110cf6cc5da89074a198",
+      "bytes": 2195
+    },
+    {
+      "path": "experiments/results/cvid-spotting-t4-r5-261016/bootstrap.csv",
+      "sha256": "84e16d671271d6c26e453b0ef3b1514a3ae3cc4a51bb04be139cf0cdd464d951",
+      "bytes": 6055
+    },
+    {
+      "path": "experiments/results/cvid-spotting-t4-r5-261016/figures/01-primary-hmean.png",
+      "sha256": "c8bb178403b2fe88463ddb8f8999211b531dc1c22c51f671622a5d18eee3aa5c",
+      "bytes": 65761
+    },
+    {
+      "path": "experiments/results/cvid-spotting-t4-r5-261016/figures/02-detection-prf.png",
+      "sha256": "7725284dd1424f6c25495582fdf498e4e9401039aa23f27344c57d3afc8aaf1a",
+      "bytes": 60548
+    },
+    {
+      "path": "experiments/results/cvid-spotting-t4-r5-261016/figures/03-fixed-sensitivity.png",
+      "sha256": "19c683c2b0724db27e56bedbacb1e08e4548b043ae916c0cc111ed357ee81107",
+      "bytes": 169381
+    },
+    {
+      "path": "experiments/results/cvid-spotting-t4-r5-261016/figures/04-course-breakdown.png",
+      "sha256": "df851fdc1361abb12fd9d0dc141f0f25c6c69fab121b86e14f940136d446805e",
+      "bytes": 194822
+    },
+    {
+      "path": "experiments/results/cvid-spotting-t4-r5-261016/figures/05-failure-coverage.png",
+      "sha256": "5ad8bda08170662d59974f4442f09141aba44a25747a687c2f762c717913bf6e",
+      "bytes": 59233
+    },
+    {
+      "path": "experiments/results/cvid-spotting-t4-r5-261016/figures/06-paired-uncertainty.png",
+      "sha256": "ef96750ba94b9eb9f3a16f4b54f50e59d3023b7785d4ff8e7b7c1800d10866a8",
+      "bytes": 110151
+    },
+    {
+      "path": "experiments/results/cvid-spotting-t4-r5-261016/macro-course-means.csv",
+      "sha256": "89727f952da02e5431923d2ec459ef7b116cbd0076db540a665e2f594568abd7",
+      "bytes": 3528
+    },
+    {
+      "path": "experiments/results/cvid-spotting-t4-r5-261016/metrics.csv",
+      "sha256": "8e11ba8c2694b6d1c62e9aba52506d527a263d68e6d4ed63fd1bb14fa68fa477",
+      "bytes": 6527
+    },
+    {
+      "path": "experiments/results/cvid-spotting-t4-r5-261016/notebook-review-receipt.json",
+      "sha256": "60e2c7fbd0d24773f06e11c1f46b112b57abfebebd2164a215174a39ec7488ab",
+      "bytes": 1507
+    },
+    {
+      "path": "experiments/results/cvid-spotting-t4-r5-261016/readiness.json",
+      "sha256": "fed950db364f9c6f7de6bca7e12af138438a2a1233c1a11e026fc7debdc399b2",
+      "bytes": 4564
+    },
+    {
+      "path": "experiments/results/cvid-spotting-t4-r5-261016/visualization-receipt.json",
+      "sha256": "e21cea805ff68c48fb02aa492c086c86f6870d700b4828d0382c6a6c75fd4bb3",
+      "bytes": 1069
+    }
+  ],
+  "full_evidence_sha256": "358a51fa96576cbb77820bcbe2177f1b7658556f0e7af1a0355a9276d7b38151",
+  "selection": "no_selection"
+}

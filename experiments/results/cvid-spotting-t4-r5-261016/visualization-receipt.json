@@ -1,0 +1,31 @@
+{
+  "analysis_sha256": "8e558bfc7d85cbe4686f53312615ec47246901f89c1bfe6d64852ac7f7179ada",
+  "artifacts": [
+    {
+      "path": "figures/01-primary-hmean.png",
+      "sha256": "c8bb178403b2fe88463ddb8f8999211b531dc1c22c51f671622a5d18eee3aa5c"
+    },
+    {
+      "path": "figures/02-detection-prf.png",
+      "sha256": "7725284dd1424f6c25495582fdf498e4e9401039aa23f27344c57d3afc8aaf1a"
+    },
+    {
+      "path": "figures/03-fixed-sensitivity.png",
+      "sha256": "19c683c2b0724db27e56bedbacb1e08e4548b043ae916c0cc111ed357ee81107"
+    },
+    {
+      "path": "figures/04-course-breakdown.png",
+      "sha256": "df851fdc1361abb12fd9d0dc141f0f25c6c69fab121b86e14f940136d446805e"
+    },
+    {
+      "path": "figures/05-failure-coverage.png",
+      "sha256": "5ad8bda08170662d59974f4442f09141aba44a25747a687c2f762c717913bf6e"
+    },
+    {
+      "path": "figures/06-paired-uncertainty.png",
+      "sha256": "ef96750ba94b9eb9f3a16f4b54f50e59d3023b7785d4ff8e7b7c1800d10866a8"
+    }
+  ],
+  "matplotlib": "3.10.1",
+  "purpose": "measured comparison visualization; no selection"
+}

@@ -1,6 +1,6 @@
 # Master plan: lecture video understanding, summarization and retrieval
 
-**Updated:** 2026-10-13. This file maps research questions, evidence gates and claim limits. The [benchmark protocol](../../../docs/BENCHMARK.md) owns task eligibility, candidate families and metrics; [Dataset EDA](../../../docs/DATASET_EDA.md) records executed versus pending inspection; task plans own run details. The adjacent [original benchmark matrix](02-benchmark-matrix.md) and [decisions log](decisions-log.md) are historical references.
+**Updated:** 2026-10-16. This file maps research questions, evidence gates and claim limits. The [benchmark protocol](../../../docs/BENCHMARK.md) owns task eligibility, candidate families and metrics; [Dataset EDA](../../../docs/DATASET_EDA.md) records executed versus pending inspection; task plans own run details. The adjacent [original benchmark matrix](02-benchmark-matrix.md) and [decisions log](decisions-log.md) are historical references.
 
 ## Objective
 
@@ -21,11 +21,21 @@ Video-grounded multimodal summarization and knowledge retrieval remain condition
 
 The completed six-candidate ASR comparison is preserved in the [diagnostic report](../../../docs/results/asr-architecture-evaluation-2026-10-05.md), including checkpoint details, scores and qualification limits. No ASR rerun is planned. Native-test results do not establish performance on an independent unseen holdout.
 
-## OCR component progress — 2026-10-13
+## OCR component progress — 2026-10-16
 
-The [IIIT-CVID recognition notebook](../../../experiments/notebooks/iiit_cvid_ocr_comparison_colab.ipynb) saves successful EasyOCR/PaddleOCR subprocesses and scores all **15,379 validation crops** per engine with zero inference failures. CER is **24.44% / 11.72%**; the paired PaddleOCR-minus-EasyOCR delta is −12.72 percentage points (video-cluster bootstrap 95% interval [−15.58, −9.98], 140 clusters / 2,000 draws). This is crop **recognition**, not OCR spotting; spotting remains unexecuted.
+The [IIIT-CVID recognition notebook](../../../experiments/notebooks/iiit_cvid_ocr_comparison_colab.ipynb) saves successful EasyOCR/PaddleOCR subprocesses and scores all **15,379 validation crops** per engine with zero inference failures. CER is **24.44% / 11.72%**; the paired PaddleOCR-minus-EasyOCR delta is −12.72 percentage points (video-cluster bootstrap 95% interval [−15.58, −9.98], 140 clusters / 2,000 draws). This is crop **recognition**, kept separate from the completed R5 spotting endpoint below.
 
 The [OCR report](../../../docs/results/ocr-eda-comparison-261013.md) distinguishes historical CPU analysis from new saved Colab outputs and records the expanded EDA (17 executed code cells / 16 PNG). Comparison outputs retain counts in 11/12 code cells and ten PNG; one intermediate analysis cell has no saved count/output. Next gate: independently audit Drive receipts, item predictions and environment/source/model hashes, then verify sequential fresh-kernel replay. The descriptive inspected-validation result establishes no timing superiority, unseen generalization or production selection.
+
+### Completed R5 spotting evidence
+
+The six-candidate [CVID v2 notebook](../../../experiments/notebooks/iiit-cvid-spotting-colab-t4-v2.ipynb) completed the frozen **1,754-frame / 40,063-GT** test cohort. The [final artifact audit](../../../experiments/results/cvid-spotting-t4-r5-261016/audit.json) verifies all 10,524 checkpoints, six aggregate/runtime/config/source bindings, 48 pooled metric rows and six figures. One empty docTR checkpoint was recovered from its sealed aggregate with journal/readback verification; no predictions or scientific settings changed. The downloaded saved-output notebook is supplied and presentation-audited: all6 embedded PNGs and12 primary Hmean values match final evidence; historical errors remain annotated.
+
+Pooled E2E Hmean (%): PGNet **45.60**, docTR **38.13**, Tesseract **28.40**, EasyOCR **7.38**, Paddle DBv3+Recv4 **6.80**, PP-OCRv6 Medium **6.47**. PGNet detection P/R/F1 is **81.12/70.44/75.40%**. Equal-course Hmean is PGNet **28.01%** versus docTR **27.66%**, with docTR leading four of seven course proxies. Native word/line grouping differences limit interpretation; no test-driven splitting or tuning is authorized. Released selective annotations, EDA exposure and uncertain semantic/source independence retain `no_selection`; no production winner, pure-recognizer comparison or CPU/GPU speed conclusion.
+
+### Next component gate: slide transition → keyframe
+
+Spotting evidence is complete; do not schedule another OCR benchmark from preparation notes. Next qualify the slide-transition endpoint, then keyframe evaluation as data readiness permits. MLPDataset transition labels still require source-media/frame alignment, anomaly policy, source-disjoint cohort and a frozen boundary collar/matching protocol. AccessMath/LectureMath keyframes require decoded source media, timebase/dependence and required-state semantics before fixing frame budget and scoring. These are separate GT/protocol readiness gates, not completed evaluations or permission to substitute OCR scores for transition/keyframe GT.
 
 ## Shared evidence gates
 

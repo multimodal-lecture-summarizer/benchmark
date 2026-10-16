@@ -1,0 +1,49 @@
+{
+  "evidence_sha256": "358a51fa96576cbb77820bcbe2177f1b7658556f0e7af1a0355a9276d7b38151",
+  "crc_and_export_hashes_verified": true,
+  "all_10524_checkpoints_verified": true,
+  "all_six_runtime_config_source_bindings_verified": true,
+  "recovered_checkpoint_verified": true,
+  "all_prediction_text_download_exact_match": true,
+  "frame_score_rows": 42078,
+  "metric_rows": 48,
+  "six_visualizations_hash_verified": true,
+  "primary_invalid_predictions": {
+    "easyocr_craft_english_g2_t4": 34,
+    "paddle_db_v3_rec_v4_t4": 11,
+    "tesseract5_best_eng_cpu": 0,
+    "doctr_fast_base_parseq_t4": 0,
+    "paddle_ppocrv6_medium_t4": 0,
+    "pgnet_totaltext_joint_t4": 66
+  },
+  "primary_empty_transcriptions": {
+    "easyocr_craft_english_g2_t4": 10,
+    "paddle_db_v3_rec_v4_t4": 157,
+    "tesseract5_best_eng_cpu": 0,
+    "doctr_fast_base_parseq_t4": 66,
+    "paddle_ppocrv6_medium_t4": 59,
+    "pgnet_totaltext_joint_t4": 0
+  },
+  "all_frame_failures": 0,
+  "accuracy_matching_not_independently_rerun": true,
+  "selection": "no_selection",
+  "executed_notebook": "experiments/notebooks/results/iiit-cvid-spotting-colab-t4-v2-r5-executed.ipynb",
+  "executed_notebook_sha256": "1d9324b39dda7fc5b28d0d179bd3533b1bcfa12394c2a3126d1a0b6c65bd47a7",
+  "saved_notebook_audited": true,
+  "exact_saved_figures": 6,
+  "original_saved_error_outputs_retained": true,
+  "protocol": "experiments/registry/datasets/iiit-cvid-spotting-test-261014-protocol.json",
+  "candidates": "experiments/registry/datasets/iiit-cvid-spotting-colab-t4-candidates-261015-v2.json",
+  "evidence_archive": "cvid-spotting-t4-261015-v2-r5-evidence (2).zip",
+  "external_full_artifacts": [
+    "all-prediction-text.csv.gz",
+    "frame-scores.csv.gz",
+    "group-metrics.csv",
+    "raw records/predictions/runtime receipts in full evidence ZIP"
+  ],
+  "notes": [
+    "Full ZIP/dataset/model/cache stay local or on Drive; committed notebook retains original code/outputs.",
+    "PGNet pooled E2E45.60%; docTR38.13%; macrocourse28.01%/27.66%; no_selection.",
+    "Selective released labels, EDA-exposed test and native grouping limit generalization and architecture comparisons."
+  ]
+}
