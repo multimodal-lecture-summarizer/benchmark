@@ -1,0 +1,237 @@
+{
+  "annotation_scope": {
+    "estimand": "Agreement with released annotated instances under fixed matching, normalization and granularity",
+    "ignore_regions": "None inferred; no region/category filtering based on GT, semantic review or candidate output",
+    "input_restriction": "Models receive full PNG pixels only; GT boxes/text, review flags, dataset lexicon/vocab and sensitivity membership cannot filter, guide or decode predictions",
+    "known_scope": "Paper describes words and excludes equations/symbols; EDA observes inconsistent inclusion of math, logos and interface text; exhaustive word coverage unverified",
+    "precision_interpretation": "Precision relative to released annotations; not certified visible-text precision",
+    "prediction_accounting": "Every prediction counted; every unmatched prediction FP for released-label detection/spotting, even if it may represent real unannotated text",
+    "ranking_limit": "Different annotation coverage or detection of real unlabelled text can affect ranking; detection diagnostics do not remove that bias",
+    "recall_interpretation": "Recall of annotated instances; not all visible text"
+  },
+  "claim": "Study-specific end-to-end localization/transcription against released XML; not the paper's query-by-string/example retrieval mAP task or an official leaderboard reproduction; descriptive EDA-exposed course-held-out released-label agreement",
+  "cohort": {
+    "courses": [
+      "10",
+      "14",
+      "18",
+      "20",
+      "24",
+      "3",
+      "7"
+    ],
+    "duplicate_review": "no exact duplicate frames; all 469 dHash candidates reviewed different within that queue only",
+    "independence": "course/video folders are unverified source proxies",
+    "rule": {
+      "exclude_entire_frame": [
+        "missing or duplicate source pairing",
+        "decode or parse failure",
+        "any invalid/nonpositive/out-of-bounds box",
+        "any normalized blank transcription",
+        "any unresolved difficult flag"
+      ],
+      "expected": {
+        "held_frames": 1,
+        "keep": 1657,
+        "metadata_repairs": 97,
+        "selected_frames": 1754,
+        "selected_objects": 40063,
+        "source_frames": 1755,
+        "source_objects": 40103
+      },
+      "expected_held_frame_ids": [
+        "Frames/test/24/25/00_31_56_00006.png"
+      ],
+      "forbidden_exclusions": [
+        "model scores or failure",
+        "apparent semantic error",
+        "uncertain legibility",
+        "short words",
+        "digits/punctuation/math-like or logo/interface labels",
+        "dHash signal alone"
+      ],
+      "frame_id": "Frames/test/<course>/<video>/<filename>.png; EDA alias omits Frames/",
+      "hold_rationale": "Whole-frame exclusion prevents silently converting an invalid labelled region into an unlabelled region while retaining other predictions; no validated ignore mask exists",
+      "integrity_failure": "Unexpected source hashes/counts or EDA discrepancy hard-stop freeze; never silently reduce the expected denominator",
+      "keep": "Decoded PNG and parsed paired XML; every box satisfies 0 <= xmin < xmax <= PNG width and 0 <= ymin < ymax <= PNG height; every normalized transcription nonblank; difficult flag exactly 0",
+      "metadata_only_repair": "Use decoded PNG width/height for derived evaluation metadata; preserve raw XML, all coordinates and text; no scaling, clipping or extrapolation",
+      "pool": "All 1,755 native test PNG/XML pairs in the pinned release"
+    },
+    "source_group_count": 276
+  },
+  "execution_gate": {
+    "configuration_selection": "reuse pinned candidate defaults/configuration without test tuning; no GT-based prediction filtering",
+    "required_before_any_inference": [
+      "test cohort/GT/policy/protocol and candidate binding verified",
+      "pinned model files/config/source hashes and locked runtime loading verified",
+      "run identity binds source pixels, test freeze, weights, decoder, preprocessing, thresholds, grouping and failure schema"
+    ],
+    "status": "pending_candidate_runtime_loading_validation; no spotting inference in this freeze"
+  },
+  "failures": {
+    "duplicate_or_extra_frame_id": "hard reject run; do not silently deduplicate or filter",
+    "frame_error": "retain frame denominator; no partial predictions; every GT is FN; zero predictions",
+    "malformed_record": "hard reject schema; do not discard malformed records to improve metrics",
+    "missing_record": "convert to frame error missing_record; report in failure ledger",
+    "recognition_error_with_valid_detection": "retain polygon and empty transcription; detection may match, spotting cannot match nonblank GT",
+    "resume": "reuse only records bound to identical input/cohort/protocol/config/source/model identities; never mix run identities",
+    "retry": "at most one retry for recorded transient I/O/transport failure before committing a frame; no score-based retry or best-of selection; log all attempts",
+    "successful_empty_frame": "status ok, zero predictions; all GT FN; distinguish from engine failure"
+  },
+  "frozen_date": "2026-10-14",
+  "geometry": {
+    "coordinate_origin": "raw zero-origin image coordinates; no VOC minus-one shift and no inclusive plus-one area",
+    "gt": "raw XML xmin,ymin,xmax,ymax; continuous rectangle edges, width=xmax-xmin, height=ymax-ymin",
+    "invalid_prediction": "retain in prediction count as FP for both endpoints; no clipping, convex-hull or automatic repair",
+    "iou": "true polygon intersection area divided by union area",
+    "operator": ">",
+    "prediction": "simple polygon in original decoded-frame coordinates; preserve quadrilateral geometry",
+    "primary_threshold": 0.5,
+    "resize": "candidate adapter must invert all resize/padding transforms before scoring",
+    "sensitivity_threshold": 0.75,
+    "valid_prediction": "at least 3 vertices, finite numeric coordinates, positive area, no self-intersection, within 0..width and 0..height"
+  },
+  "gt_policy": {
+    "bytes": 7442,
+    "path": "experiments/registry/datasets/iiit-cvid-spotting-test-261014-gt-policy.json",
+    "sha256": "d1f14217d5e6f3273e5d4ad894af65b822ad04e51df2cfffc631a3e8cf6cb463"
+  },
+  "inherited_protocol": {
+    "bytes": 8122,
+    "path": "experiments/registry/datasets/iiit-cvid-spotting-validation-261013-protocol.json",
+    "sha256": "8fde6c6d6dab81c7321b68c09738253b143c5a22fb96f2b38912c3471616e55e"
+  },
+  "matching": {
+    "detection": "maximum-cardinality one-to-one bipartite matching on IoU > threshold",
+    "determinism": "sort GT by object_id, predictions by polygon string then raw text; adjacency by decreasing IoU then prediction index; deterministic augmenting paths",
+    "duplicates": "each GT and prediction used at most once; unmatched duplicate detections are FP",
+    "granularity": "no one-to-many or many-to-one credit; merged/split predictions penalized",
+    "interpretation": "independently optimized detection and spotting matches are not an additive recognition-error decomposition",
+    "spotting": "independent maximum-cardinality one-to-one matching with IoU > threshold AND exact normalized transcription equality",
+    "unit": "within the same frame only"
+  },
+  "metrics": {
+    "aggregation": "sum TP/FP/FN across frames before calculating each primary score; never mean frame F1",
+    "primary": "pooled micro end-to-end spotting Hmean = 2TP/(2TP+FP+FN)",
+    "primary_uncertainty": {
+      "K": 7,
+      "draws": 2000,
+      "group_key": "course",
+      "interval": "sort N differences; lower at floor(0.025*N), upper at floor(0.975*N)-1, zero-based; no interpolation",
+      "limitation": "few course proxies and uncertain dependence; exploratory conditional intervals, no generalization/power claim",
+      "method": "paired nonparametric cluster bootstrap; sample K cluster IDs with replacement per replicate, retain whole clusters",
+      "pairing": "same frame IDs and cluster assignments for both candidates; no complete-case removal of failed frames",
+      "rng": "Python random.Random(seed).choice(sorted IDs), fresh RNG for each endpoint/grouping",
+      "seed": 20261014,
+      "sorted_ids": [
+        "10",
+        "14",
+        "18",
+        "20",
+        "24",
+        "3",
+        "7"
+      ],
+      "statistic": "candidate B minus A pooled micro spotting Hmean, recomputed from resampled TP/FP/FN totals"
+    },
+    "required": [
+      "spotting precision/recall/Hmean",
+      "detection precision/recall/F1",
+      "TP/FP/FN",
+      "selected/completed/failed frames",
+      "invalid geometries",
+      "empty transcriptions",
+      "per-course and per-source-group tables",
+      "unweighted mean of per-course spotting Hmean and detection F1; retain seven course counts",
+      "primary plus observed_flag_frame_influence; both denominators and candidate B-minus-A differences",
+      "review flags are separate post-scoring diagnostics, never candidate inputs"
+    ],
+    "secondary_uncertainty": {
+      "K": 276,
+      "draws": 2000,
+      "group_key": "source_group",
+      "interval": "sort N differences; lower at floor(0.025*N), upper at floor(0.975*N)-1, zero-based; no interpolation",
+      "limitation": "few course proxies and uncertain dependence; exploratory conditional intervals, no generalization/power claim",
+      "method": "paired nonparametric cluster bootstrap; sample K cluster IDs with replacement per replicate, retain whole clusters",
+      "pairing": "same frame IDs and cluster assignments for both candidates; no complete-case removal of failed frames",
+      "rng": "Python random.Random(seed).choice(sorted IDs), fresh RNG for each endpoint/grouping",
+      "seed": 20261014,
+      "sorted_ids": "lexicographic sorted frozen source_group IDs",
+      "statistic": "candidate B minus A pooled micro spotting Hmean, recomputed from resampled TP/FP/FN totals"
+    },
+    "selection": "descriptive differences only; no generalized/production winner; report ranking sensitivity rather than choose favorable endpoint",
+    "sensitivity": [
+      "same cohort and predictions at IoU > 0.75",
+      "same cohort and predictions with case-sensitive normalization at IoU > 0.5"
+    ],
+    "zero_denominator": "precision=0 if no predictions; recall=0 if no GT; Hmean=0 if neither GT nor predictions; always retain counts"
+  },
+  "protocol_id": "iiit-cvid-spotting-test-261014",
+  "schema": "iiit_cvid_spotting_test_protocol_v1",
+  "scientific_sources": [
+    {
+      "supports": "Section III word annotation seeded by TextSpotter and edited in LabelImg, equations/symbols excluded, course partition; Section V-B IoU > 0.5. Does not certify present XML correctness or our Hmean endpoint",
+      "url": "https://cdn.iiit.ac.in/cdn/cvit.iiit.ac.in/images/ConferencePapers/2018/localizing-recognizing-text.pdf"
+    },
+    {
+      "supports": "ICDAR2015 localization plus transcription evaluation background; our matching/normalization/ignore policy remains explicitly study-specific",
+      "url": "https://imlab.jp/publication_data/1469/C02.pdf"
+    },
+    {
+      "supports": "Northcutt et al. 2021: test-label errors can alter benchmark comparisons; motivates transparent raw-label primary and bounded influence diagnostic, not automated correction or a CVID error-rate estimate",
+      "url": "https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/f2217062e9a397a1dca429e7d70bc6ca-Abstract-round1.html"
+    },
+    {
+      "supports": "Nosek et al. 2018: distinguish analysis choices declared before outcomes from post-hoc exploration; this local freeze is not an external registration",
+      "url": "https://doi.org/10.1073/pnas.1708274114"
+    }
+  ],
+  "semantic_flag_sensitivity": {
+    "excluded_frame_ids": [
+      "Frames/test/10/1/00_13_09_00002.png",
+      "Frames/test/18/15/00_01_40_00001.png",
+      "Frames/test/7/12/00_42_00_00005.png"
+    ],
+    "expected_frames": 1751,
+    "expected_objects": 40023,
+    "flagged_sample_ids": [
+      "sem-004",
+      "sem-005",
+      "sem-027",
+      "sem-064"
+    ],
+    "limits": "Diagnostic influence of known reviewed frames only, not corrected GT, a label-noise bound, a random estimate or proof remaining labels are clean; three frames carry 40 GT objects, only four sampled objects are flagged",
+    "name": "observed_flag_frame_influence",
+    "primary_unchanged": true,
+    "reporting": "Always publish alongside primary with exact changed denominator and candidate differences; never select whichever endpoint favors a candidate",
+    "rule": "Exclude entire geometry-eligible test frames containing any uncertain or apparent_disagreement object in the already completed 72-object EDA sample; freeze IDs before spotting outcomes",
+    "scoring": "First validate/score full primary prediction set; aggregate retained whole-frame rows, without modifying predictions or GT; retain failures in remaining frames"
+  },
+  "source": {
+    "annotation_creator_qc": "not_certified; semantic flags and selective coverage preserved explicitly",
+    "archive_sha256": "b5b562580e250ee3336462b7699bc79d0d1149d3b8cc82f1b221a0d0ce4fb489",
+    "granularity": "one released XML object; no merging or splitting words/lines",
+    "ground_truth": "XML object bbox and original object/name transcription",
+    "input": "released full frame PNG",
+    "redistribution": "preserve raw images and derived transcriptions locally; no new publication or sharing authorized",
+    "repository": "staghado/IIIT-CVid",
+    "revision": "8159222f11460bff70bec7990ade19c468755fe4",
+    "split": "test"
+  },
+  "status": "test_cohort_and_gt_policy_frozen_before_study_spotting_outcomes",
+  "text": {
+    "case_sensitive_sensitivity": "NFKC and split/join whitespace without casefold",
+    "do_not_care": "none; native test difficult flags are 0; literal * and selective labels retained as released",
+    "lexicon": "none; dataset vocab/lexicon, GT strings and recognition predictions cannot be decoder inputs",
+    "preserve": [
+      "digits",
+      "punctuation",
+      "diacritics",
+      "one-character labels",
+      "literal *"
+    ],
+    "primary": "Unicode NFKC, casefold, split/join whitespace; exact full-string equality",
+    "soft_text_matching": "forbidden for primary Hmean; no CER tolerance, edit-distance threshold, dictionary correction or fuzzy credit",
+    "unicode_version": "14.0.0"
+  }
+}

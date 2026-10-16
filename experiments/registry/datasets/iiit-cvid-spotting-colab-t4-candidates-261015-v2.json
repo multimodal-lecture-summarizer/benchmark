@@ -1,0 +1,452 @@
+{
+  "schema": "cvid_spotting_colab_t4_candidates_v2",
+  "date": "2026-10-15",
+  "status": "six_artifact_locked_required_candidates_runtime_preflight_gated",
+  "candidates": [
+    {
+      "configuration": {
+        "call": {
+          "add_margin": 0.1,
+          "adjust_contrast": 0.5,
+          "allowlist": null,
+          "batch_size": 1,
+          "bbox_min_score": 0.2,
+          "bbox_min_size": 3,
+          "beamWidth": 5,
+          "blocklist": null,
+          "canvas_size": 2560,
+          "contrast_ths": 0.1,
+          "decoder": "greedy",
+          "detail": 1,
+          "filter_ths": 0.003,
+          "height_ths": 0.5,
+          "link_threshold": 0.4,
+          "low_text": 0.4,
+          "mag_ratio": 1.0,
+          "max_candidates": 0,
+          "min_size": 20,
+          "output_format": "standard",
+          "paragraph": false,
+          "rotation_info": null,
+          "slope_ths": 0.1,
+          "text_threshold": 0.7,
+          "threshold": 0.2,
+          "width_ths": 0.5,
+          "workers": 0,
+          "x_ths": 1.0,
+          "y_ths": 0.5,
+          "ycenter_ths": 0.5
+        },
+        "constructor": {
+          "cudnn_benchmark": false,
+          "detect_network": "craft",
+          "detector": true,
+          "download_enabled": false,
+          "gpu": true,
+          "lang_list": [
+            "en"
+          ],
+          "quantize": false,
+          "recog_network": "english_g2",
+          "recognizer": true,
+          "verbose": false
+        }
+      },
+      "grouping": {
+        "add_margin": 0.1,
+        "height_ths": 0.5,
+        "min_size": "native max(box width,box height)>20",
+        "policy": "native group_text_box; paragraph=False; no external splitting/merging/NMS",
+        "slope_ths": 0.1,
+        "width_ths": 0.5,
+        "ycenter_ths": 0.5
+      },
+      "preprocessing": {
+        "contrast_retry": "native confidence<0.1 contrast-adjusted recognition pass retained, not a frame retry",
+        "detector": "aspect ratio, canvas<=2560, mag_ratio=1, pad to multiple32; RGB ImageNet mean/std",
+        "input": "native file-path API: RGB detector, OpenCV grayscale recognizer",
+        "recognizer": "native grouped crop, grayscale height64, aspect resize/padding, normalize [-1,1]; greedy"
+      },
+      "candidate_id": "easyocr_craft_english_g2_t4",
+      "adapter": "easyocr",
+      "model_sha256": {
+        "easyocr/craft_mlt_25k.pth": "4a5efbfb48b4081100544e75e1e2b57f8de3d84f213004b14b85fd4b3748db17",
+        "easyocr/english_g2.pth": "e2272681d9d67a04e2dff396b6e95077bc19001f8f6d3593c307b9852e1c29e8"
+      },
+      "artifacts": [
+        {
+          "path": "craft_mlt_25k.zip",
+          "url": "https://github.com/JaidedAI/EasyOCR/releases/download/pre-v1.1.6/craft_mlt_25k.zip",
+          "sha256": "8dc6a1c703a89ed56308ef742d26ebd45c656248cbbbda6e7fe60e569f873e65"
+        },
+        {
+          "path": "models/easyocr/english_g2.pth",
+          "url": "https://github.com/JaidedAI/EasyOCR/releases/download/v1.3/english_g2.zip",
+          "sha256": "e2272681d9d67a04e2dff396b6e95077bc19001f8f6d3593c307b9852e1c29e8",
+          "zip_member": "english_g2.pth"
+        }
+      ],
+      "locked": true,
+      "original_candidate_id": "easyocr_craft_english_g2",
+      "source_urls": [
+        "https://raw.githubusercontent.com/JaidedAI/EasyOCR/v1.7.2/easyocr/easyocr.py",
+        "https://raw.githubusercontent.com/PaddlePaddle/PaddleOCR/v2.8.1/tools/infer/utility.py",
+        "https://raw.githubusercontent.com/PaddlePaddle/PaddleOCR/v2.8.1/tools/infer/predict_system.py"
+      ],
+      "environment": "torch",
+      "packages": [
+        "easyocr==1.7.2"
+      ],
+      "archives": {
+        "craft_mlt_25k.zip": "models/easyocr"
+      },
+      "execution_deviations": [
+        "CUDA FP32 execution; CPU dynamic quantization/MKLDNN disabled; native weights and inference settings preserved"
+      ],
+      "configuration_sha256": "cad3109ef76ee2dd80e406a163caf64f641ba61cbe1c5ad68a10fe6fc359cdfd",
+      "conditional": false,
+      "package_wheel_sha256": {
+        "easyocr-1.7.2-py3-none-any.whl": "5be12f9b0e595d443c9c3d10b0542074b50f0ec2d98b141a109cd961fd1c177c"
+      }
+    },
+    {
+      "configuration": {
+        "call": {
+          "cls": false,
+          "slice": {}
+        },
+        "constructor": {
+          "cpu_threads": 1,
+          "det_algorithm": "DB",
+          "det_box_type": "quad",
+          "det_db_box_thresh": 0.6,
+          "det_db_score_mode": "fast",
+          "det_db_thresh": 0.3,
+          "det_db_unclip_ratio": 1.5,
+          "det_limit_side_len": 960,
+          "det_limit_type": "max",
+          "drop_score": 0.0,
+          "enable_mkldnn": false,
+          "ir_optim": true,
+          "max_batch_size": 10,
+          "max_text_length": 25,
+          "precision": "fp32",
+          "rec_algorithm": "SVTR_LCNet",
+          "rec_batch_num": 1,
+          "rec_image_inverse": true,
+          "rec_image_shape": "3, 48, 320",
+          "return_word_box": false,
+          "save_crop_res": false,
+          "show_log": false,
+          "use_angle_cls": false,
+          "use_dilation": false,
+          "use_gpu": true,
+          "use_onnx": false,
+          "use_space_char": true,
+          "use_tensorrt": false
+        },
+        "english_dictionary": "paddleocr/ppocr/utils/en_dict.txt",
+        "entrypoint": "paddleocr.tools.infer.predict_system.TextSystem"
+      },
+      "grouping": {
+        "policy": "one output per native DB region; no external paragraph/word split/merge, no slice",
+        "return_word_box": false
+      },
+      "preprocessing": {
+        "detector": "native DB resize maxside960, multiple32 rounding; mean[.485,.456,.406]/std[.229,.224,.225], scale1/255",
+        "input": "OpenCV IMREAD_COLOR BGR, decoded original frame",
+        "native_geometry": "DB quad, unclip1.5, scorefast, max_candidates1000; native point-order/clip and <=3px box rejection retained",
+        "recognizer": "native perspective crop + tall-crop rotate if aspect>=1.5; 3x48x320 aspect-width batching/padding; normalize [-1,1]; CTC greedy"
+      },
+      "candidate_id": "paddle_db_v3_rec_v4_t4",
+      "adapter": "paddle_legacy",
+      "model_sha256": {
+        "paddleocr/en_PP-OCRv3_det_infer/inference.pdiparams": "83676ec730627ab4502f401410a4b6a3ce1c0bb98fa249b71db055b6bddae051",
+        "paddleocr/en_PP-OCRv3_det_infer/inference.pdiparams.info": "2fe414d9eadf914bf44e3f9ba212988a6f26f364e4f87c6d0af57438ffffc0c4",
+        "paddleocr/en_PP-OCRv3_det_infer/inference.pdmodel": "c4bfb1b05d9d1d5a760801eaf6d20180ef7e47bcc675fb17d1f3a89da5fef427",
+        "paddleocr/en_PP-OCRv4_rec_infer/inference.pdiparams": "75f64a1ffb70c56b7a25655963ca16f5bf3286202e3f52ac972bee05cdee2f56",
+        "paddleocr/en_PP-OCRv4_rec_infer/inference.pdiparams.info": "710d9f3d7c503067ae708f4bc3adc6973c0d6391adb7a1470c36eb70da6b5b83",
+        "paddleocr/en_PP-OCRv4_rec_infer/inference.pdmodel": "85b952f05f709af259cfe4254012aa7208bef0998f71f57a15495446f25ccd43"
+      },
+      "artifacts": [
+        {
+          "path": "en_PP-OCRv3_det_infer.tar",
+          "url": "https://paddleocr.bj.bcebos.com/PP-OCRv3/english/en_PP-OCRv3_det_infer.tar",
+          "sha256": "e740eb522521827cc83da3ba33e1c70ccfd9b3cf7d9a24a420ce4ca5ebb8794f"
+        },
+        {
+          "path": "en_PP-OCRv4_rec_infer.tar",
+          "url": "https://paddleocr.bj.bcebos.com/PP-OCRv4/english/en_PP-OCRv4_rec_infer.tar",
+          "sha256": "d5ae153a6fbdacd5776543d3194c4258154ed6f83467d55de1cc345f7dd20322"
+        }
+      ],
+      "locked": true,
+      "original_candidate_id": "paddle_db_v3_rec_v4_keep_all",
+      "source_urls": [
+        "https://raw.githubusercontent.com/JaidedAI/EasyOCR/v1.7.2/easyocr/easyocr.py",
+        "https://raw.githubusercontent.com/PaddlePaddle/PaddleOCR/v2.8.1/tools/infer/utility.py",
+        "https://raw.githubusercontent.com/PaddlePaddle/PaddleOCR/v2.8.1/tools/infer/predict_system.py"
+      ],
+      "environment": "paddle_legacy",
+      "packages": [
+        "paddleocr==2.8.1",
+        "paddlepaddle-gpu==2.6.2",
+        "protobuf==3.20.2"
+      ],
+      "archives": {
+        "en_PP-OCRv3_det_infer.tar": "models/paddleocr",
+        "en_PP-OCRv4_rec_infer.tar": "models/paddleocr"
+      },
+      "execution_deviations": [
+        "CUDA FP32 execution; CPU dynamic quantization/MKLDNN disabled; native weights and inference settings preserved"
+      ],
+      "configuration_sha256": "94890f9584cddcb811661459bc94fdfb40fdbec136412b40db4601c1bf99841c",
+      "conditional": false,
+      "package_wheel_sha256": {
+        "paddleocr-2.8.1-py3-none-any.whl": "05bfda60570b1cbeaf26907e4f6a7b26ce532b4058e2dd04c161e65b9103f3a6"
+      }
+    },
+    {
+      "candidate_id": "tesseract5_best_eng_cpu",
+      "adapter": "tesseract",
+      "environment": "cpu",
+      "packages": [],
+      "locked": true,
+      "configuration": {
+        "oem": 1,
+        "psm": 11,
+        "language": "eng",
+        "binary_major": 5,
+        "tessedit_create_tsv": 1
+      },
+      "grouping": {
+        "policy": "native TSV level5 word; empty text retained"
+      },
+      "model_sha256": {
+        "tessdata/eng.traineddata": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+      },
+      "artifacts": [
+        {
+          "path": "models/tessdata/eng.traineddata",
+          "url": "https://raw.githubusercontent.com/tesseract-ocr/tessdata_best/e12c65a915945e4c28e237a9b52bc4a8f39a0cec/eng.traineddata",
+          "sha256": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+        }
+      ],
+      "source_urls": [
+        "https://tesseract-ocr.github.io/tessdoc/Command-Line-Usage.html"
+      ],
+      "system_requirement": "Tesseract5 binary + linked-library identity is sealed at prepare; binary provisioned from Colab apt if absent",
+      "configuration_sha256": "40eaf6d19a7d3bf0833798c5d5962979445c002eddb60398d07033cb8698bb6d",
+      "conditional": false
+    },
+    {
+      "candidate_id": "doctr_fast_base_parseq_t4",
+      "adapter": "doctr",
+      "environment": "torch",
+      "packages": [
+        "python-doctr==0.12.0"
+      ],
+      "locked": true,
+      "configuration": {
+        "det_arch": "fast_base",
+        "reco_arch": "parseq",
+        "assume_straight_pages": false,
+        "export_as_straight_boxes": false,
+        "detect_orientation": false,
+        "straighten_pages": false,
+        "detect_language": false,
+        "det_bs": 1,
+        "reco_bs": 32,
+        "bin_thresh": 0.1,
+        "box_thresh": 0.1,
+        "disable_page_orientation": true,
+        "disable_crop_orientation": true
+      },
+      "grouping": {
+        "policy": "native Word polygons; no GT-informed merge/split"
+      },
+      "model_sha256": {
+        "doctr/fast.pt": "688a8b3489e9f5d0290c476c6272ec3b18de3ee646c8a0dc158203b1a9c62ace",
+        "doctr/parseq.pt": "56125471b17e660253c4179c3fbf3c906c34606d898148895dbb84db257d98ba"
+      },
+      "artifacts": [
+        {
+          "path": "models/doctr/fast.pt",
+          "url": "https://doctr-static.mindee.com/models?id=v0.8.1/fast_base-688a8b34.pt&src=0",
+          "sha256": "688a8b3489e9f5d0290c476c6272ec3b18de3ee646c8a0dc158203b1a9c62ace"
+        },
+        {
+          "path": "models/doctr/parseq.pt",
+          "url": "https://doctr-static.mindee.com/models?id=v0.7.0/parseq-56125471.pt&src=0",
+          "sha256": "56125471b17e660253c4179c3fbf3c906c34606d898148895dbb84db257d98ba"
+        }
+      ],
+      "source_revision": "97d4006d00447ecbaee00a8a3b4882d6e6ce1eea",
+      "source_urls": [
+        "https://github.com/mindee/doctr/tree/97d4006d00447ecbaee00a8a3b4882d6e6ce1eea"
+      ],
+      "configuration_sha256": "61f6c539a8882292039e65320680816fb93d80d051aba32e64984de0d4ba47f8",
+      "conditional": false
+    },
+    {
+      "candidate_id": "paddle_ppocrv6_medium_t4",
+      "adapter": "paddle_modern",
+      "environment": "paddle_modern",
+      "packages": [
+        "paddleocr==3.7.0",
+        "paddlepaddle-gpu==3.3.0"
+      ],
+      "locked": true,
+      "configuration": {
+        "text_detection_model_name": "PP-OCRv6_medium_det",
+        "text_recognition_model_name": "PP-OCRv6_medium_rec",
+        "use_doc_orientation_classify": false,
+        "use_doc_unwarping": false,
+        "use_textline_orientation": false,
+        "text_det_limit_side_len": 960,
+        "text_det_limit_type": "max",
+        "text_det_thresh": 0.3,
+        "text_det_box_thresh": 0.6,
+        "text_det_unclip_ratio": 1.5,
+        "text_rec_score_thresh": 0.0,
+        "device": "gpu:0",
+        "enable_hpi": false,
+        "use_tensorrt": false,
+        "precision": "fp32"
+      },
+      "grouping": {
+        "policy": "native regions; no external split/merge"
+      },
+      "model_sha256": {
+        "pp6/det/inference.json": "0f1a7ec35da36173529c7a60238b7f7919e3831929c3f700ad90ad4896adecd5",
+        "pp6/det/inference.yml": "7298d5ead546584af2504d03355f881ac7a7bc0eb1e282d3e159277c1d0af871",
+        "pp6/det/inference.pdiparams": "85218d2e3d98f5a21c58b4220627be923a97aee5db3cc71f39536ab31ac53960",
+        "pp6/rec/inference.json": "0b2e25e990bd072f1bf77d59d67d508bce6c4bd44af6624e0fb27d6da2cd00e8",
+        "pp6/rec/inference.yml": "991b700facf5b50a7de193468207d5f4255b538dde0d312ae3b7c7a9b6873129",
+        "pp6/rec/inference.pdiparams": "1b01c79a914587933f615569e75de54f2e638ebb5d3f3b3c1b38c24ede8c7319"
+      },
+      "artifacts": [
+        {
+          "path": "models/pp6/det/inference.json",
+          "url": "https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_det/resolve/8e0f56fb2ef86b461d99cfc7ac5c137738985f61/inference.json",
+          "sha256": "0f1a7ec35da36173529c7a60238b7f7919e3831929c3f700ad90ad4896adecd5"
+        },
+        {
+          "path": "models/pp6/det/inference.yml",
+          "url": "https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_det/resolve/8e0f56fb2ef86b461d99cfc7ac5c137738985f61/inference.yml",
+          "sha256": "7298d5ead546584af2504d03355f881ac7a7bc0eb1e282d3e159277c1d0af871"
+        },
+        {
+          "path": "models/pp6/det/inference.pdiparams",
+          "url": "https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_det/resolve/8e0f56fb2ef86b461d99cfc7ac5c137738985f61/inference.pdiparams",
+          "sha256": "85218d2e3d98f5a21c58b4220627be923a97aee5db3cc71f39536ab31ac53960"
+        },
+        {
+          "path": "models/pp6/rec/inference.json",
+          "url": "https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_rec/resolve/e5a92bcbc5cc1b494628e458d267778f0704fd7c/inference.json",
+          "sha256": "0b2e25e990bd072f1bf77d59d67d508bce6c4bd44af6624e0fb27d6da2cd00e8"
+        },
+        {
+          "path": "models/pp6/rec/inference.yml",
+          "url": "https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_rec/resolve/e5a92bcbc5cc1b494628e458d267778f0704fd7c/inference.yml",
+          "sha256": "991b700facf5b50a7de193468207d5f4255b538dde0d312ae3b7c7a9b6873129"
+        },
+        {
+          "path": "models/pp6/rec/inference.pdiparams",
+          "url": "https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_rec/resolve/e5a92bcbc5cc1b494628e458d267778f0704fd7c/inference.pdiparams",
+          "sha256": "1b01c79a914587933f615569e75de54f2e638ebb5d3f3b3c1b38c24ede8c7319"
+        }
+      ],
+      "source_urls": [
+        "https://github.com/PaddlePaddle/PaddleOCR/releases/tag/v3.7.0",
+        "https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_det",
+        "https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_rec"
+      ],
+      "configuration_sha256": "5155454b427dab7818424215dea9223841f9db5b760a2d947a7fbf7f48df5aa6",
+      "conditional": false
+    },
+    {
+      "configuration": {
+        "e2e_algorithm": "PGNet",
+        "e2e_limit_side_len": 768,
+        "e2e_limit_type": "max",
+        "e2e_pgnet_score_thresh": 0.5,
+        "e2e_pgnet_valid_set": "totaltext",
+        "e2e_pgnet_mode": "fast",
+        "use_gpu": true,
+        "gpu_id": 0,
+        "gpu_mem": 500,
+        "precision": "fp32",
+        "use_tensorrt": false,
+        "use_onnx": false,
+        "enable_mkldnn": false,
+        "cpu_threads": 1,
+        "ir_optim": true
+      },
+      "grouping": {
+        "policy": "one output per native PGNet TotalText polygon; no external splitting or merging"
+      },
+      "preprocessing": {
+        "input": "OpenCV BGR original decoded frame",
+        "resize": "official E2EResizeForTest totaltext, max_side_len768; 1.25 scaling capped by height and round each dimension up to stride128; not a generic max-width resize",
+        "normalize": "scale1/255; mean[.485,.456,.406], std[.229,.224,.225]; HWC to CHW",
+        "recognition": "shared f_char head; native PGPostProcess fast dictionary decode; no external crop recognizer"
+      },
+      "candidate_id": "pgnet_totaltext_joint_t4",
+      "adapter": "pgnet",
+      "model_sha256": {
+        "pgnet/e2e_server_pgnetA_infer/inference.pdiparams": "1e662920fa5f01757a9b97402b0080889fb7c2bcd85331df55e710494c1c60cb",
+        "pgnet/e2e_server_pgnetA_infer/inference.pdiparams.info": "da925dcb46daa99968804146121101895786c62b7dfa83c3320085cf44beb986",
+        "pgnet/e2e_server_pgnetA_infer/inference.pdmodel": "2e1f0e4ac5e3c31b3875086f05f2636a20ce6037f6e2179898a1efa25c2ccf3d"
+      },
+      "artifacts": [
+        {
+          "path": "e2e_server_pgnetA_infer.tar",
+          "url": "https://paddleocr.bj.bcebos.com/dygraph_v2.0/pgnet/e2e_server_pgnetA_infer.tar",
+          "sha256": "43085149cbc7f370c06679d011fe8818e68dc464fa1998f4ae6fb836d7d6b1e2"
+        }
+      ],
+      "locked": true,
+      "source_urls": [
+        "https://github.com/PaddlePaddle/PaddleOCR/blob/v2.8.1/tools/infer/predict_e2e.py",
+        "https://github.com/PaddlePaddle/PaddleOCR/blob/v2.8.1/ppocr/postprocess/pg_postprocess.py"
+      ],
+      "environment": "paddle_legacy",
+      "packages": [
+        "paddleocr==2.8.1",
+        "paddlepaddle-gpu==2.6.2",
+        "protobuf==3.20.2"
+      ],
+      "archives": {
+        "e2e_server_pgnetA_infer.tar": "models/pgnet"
+      },
+      "execution_deviations": [
+        "Fixed CUDA FP32/Paddle2.6.2 execution of official PGNet inference export; no additional detection/recognition models"
+      ],
+      "configuration_sha256": "2f237b8179a602f66fee37b14997942af0fe95228991bf6f30a5013729e5f3e5",
+      "conditional": false,
+      "package_wheel_sha256": {
+        "paddleocr-2.8.1-py3-none-any.whl": "05bfda60570b1cbeaf26907e4f6a7b26ce532b4058e2dd04c161e65b9103f3a6"
+      },
+      "decoder_sha256": "71e9aa833ec424844f3670bb5f1a2851867b9ce963f78df531e45d3a4c77dd72",
+      "selection_rationale": "Joint shared-backbone point-gathering text spotter; official inference artifact; no custom Detectron2 op build. Runtime qualification required, no test-score selection.",
+      "sources": [
+        "https://arxiv.org/abs/2104.05458",
+        "https://www.paddleocr.ai/v2.9/algorithm/end_to_end/algorithm_e2e_pgnet.html"
+      ],
+      "native_geometry_policy": "Preserve official TextE2E output including its internal integer clipping; no adapter split/merge/repair",
+      "native_confidence_policy": "API returns polygons/texts without region confidence; no synthetic score is emitted"
+    }
+  ],
+  "supersedes_selection": "iiit-cvid-spotting-colab-t4-candidates-261015.json",
+  "excluded_candidates": [
+    {
+      "candidate_id": "testr_r50_polygon_totaltext_t4",
+      "reason": "Official author links redirect to Microsoft authentication; no checkpoint bytes obtained. Actual current Colab T4 nvcc13.0 does not match sealed TESTR nvcc11.3 build profile.",
+      "replacement": "pgnet_totaltext_joint_t4"
+    }
+  ],
+  "selection": "Five original configurations preserved; PGNet replaces inaccessible TESTR for joint-spotting coverage, not Transformer causal comparison. Required candidate selection precedes test scores.",
+  "preflight_geometry_policy": "retain_and_report_native_invalid_predictions",
+  "preflight_geometry_rationale": "Common policy for all six: runtime/schema admission is not prediction-quality selection. Record invalid native geometry, preserve it as FP at scoring, require at least one valid region across train; no repair/filter or frame exclusion."
+}

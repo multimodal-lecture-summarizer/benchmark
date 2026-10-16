@@ -1,0 +1,71 @@
+{
+  "schema": "iiit_cvid_released_label_gt_policy_v1",
+  "policy_id": "iiit-cvid-spotting-test-261014",
+  "declared_date": "2026-10-14",
+  "scope": "Study-specific end-to-end localization/transcription against released XML; not the paper's query-by-string/example retrieval mAP task or an official leaderboard reproduction",
+  "primary_reference": {
+    "source": "Original object/name and bndbox in released native test XML",
+    "text_corrections": false,
+    "box_corrections": false,
+    "keep_semantic_flags": true,
+    "normalization": "Reuse pinned scorer: Unicode NFKC, casefold, split/join whitespace; preserve digits, punctuation, diacritics, one-character labels and literal *",
+    "xml_crop_disagreements": "Use XML text, never crop-index slash-to-hyphen rewrites; ambiguous equivalent crop assignments do not replace XML object identity",
+    "granularity": "one released XML object, original ordinal; no GT splitting/merging"
+  },
+  "eligibility": {
+    "pool": "All 1,755 native test PNG/XML pairs in the pinned release",
+    "frame_id": "Frames/test/<course>/<video>/<filename>.png; EDA alias omits Frames/",
+    "keep": "Decoded PNG and parsed paired XML; every box satisfies 0 <= xmin < xmax <= PNG width and 0 <= ymin < ymax <= PNG height; every normalized transcription nonblank; difficult flag exactly 0",
+    "metadata_only_repair": "Use decoded PNG width/height for derived evaluation metadata; preserve raw XML, all coordinates and text; no scaling, clipping or extrapolation",
+    "exclude_entire_frame": ["missing or duplicate source pairing", "decode or parse failure", "any invalid/nonpositive/out-of-bounds box", "any normalized blank transcription", "any unresolved difficult flag"],
+    "integrity_failure": "Unexpected source hashes/counts or EDA discrepancy hard-stop freeze; never silently reduce the expected denominator",
+    "forbidden_exclusions": ["model scores or failure", "apparent semantic error", "uncertain legibility", "short words", "digits/punctuation/math-like or logo/interface labels", "dHash signal alone"],
+    "expected": {"source_frames": 1755, "source_objects": 40103, "keep": 1657, "metadata_repairs": 97, "held_frames": 1, "selected_frames": 1754, "selected_objects": 40063},
+    "expected_held_frame_ids": ["Frames/test/24/25/00_31_56_00006.png"],
+    "hold_rationale": "Whole-frame exclusion prevents silently converting an invalid labelled region into an unlabelled region while retaining other predictions; no validated ignore mask exists"
+  },
+  "selective_annotation": {
+    "known_scope": "Paper describes words and excludes equations/symbols; EDA observes inconsistent inclusion of math, logos and interface text; exhaustive word coverage unverified",
+    "prediction_accounting": "Every prediction counted; every unmatched prediction FP for released-label detection/spotting, even if it may represent real unannotated text",
+    "ignore_regions": "None inferred; no region/category filtering based on GT, semantic review or candidate output",
+    "input_restriction": "Models receive full PNG pixels only; GT boxes/text, review flags, dataset lexicon/vocab and sensitivity membership cannot filter, guide or decode predictions",
+    "estimand": "Agreement with released annotated instances under fixed matching, normalization and granularity",
+    "recall_interpretation": "Recall of annotated instances; not all visible text",
+    "precision_interpretation": "Precision relative to released annotations; not certified visible-text precision",
+    "ranking_limit": "Different annotation coverage or detection of real unlabelled text can affect ranking; detection diagnostics do not remove that bias"
+  },
+  "semantic_flag_sensitivity": {
+    "name": "observed_flag_frame_influence",
+    "primary_unchanged": true,
+    "rule": "Exclude entire geometry-eligible test frames containing any uncertain or apparent_disagreement object in the already completed 72-object EDA sample; freeze IDs before spotting outcomes",
+    "excluded_frame_ids": ["Frames/test/10/1/00_13_09_00002.png", "Frames/test/18/15/00_01_40_00001.png", "Frames/test/7/12/00_42_00_00005.png"],
+    "flagged_sample_ids": ["sem-004", "sem-005", "sem-027", "sem-064"],
+    "expected_frames": 1751,
+    "expected_objects": 40023,
+    "scoring": "First validate/score full primary prediction set; aggregate retained whole-frame rows, without modifying predictions or GT; retain failures in remaining frames",
+    "reporting": "Always publish alongside primary with exact changed denominator and candidate differences; never select whichever endpoint favors a candidate",
+    "limits": "Diagnostic influence of known reviewed frames only, not corrected GT, a label-noise bound, a random estimate or proof remaining labels are clean; three frames carry 40 GT objects, only four sampled objects are flagged"
+  },
+  "post_freeze_changes": {
+    "new_flags": "Log separately with date and identities; no primary denominator or label changes; new analyses explicitly exploratory",
+    "corrected_gt": "Requires separate independent human/author adjudication, documented annotation scope and missing-region assessment, revision history and a new GT/cohort/protocol version; never overwrite this freeze",
+    "test_tuning": "No test-score-based model/config/threshold/grouping/GT/cohort changes; version and disclose any later exploratory work",
+    "external_registration": "Local outcome-predeclared freeze after EDA exposure; not externally registered or a blind preregistration"
+  },
+  "claim_limits": [
+    "descriptive course-held-out released-image annotation agreement only",
+    "test images and references exposed during EDA; no untouched/blind test claim",
+    "no human-gold correctness, exhaustive OCR/annotation recall or production winner claim",
+    "course IDs and folder groups are proxies; video identity and universal writer independence not authenticated",
+    "dHash review closes its 469-pair queue only; transformed-content screening recall unknown",
+    "historical model-use completeness and pretraining overlap unknown",
+    "seven course clusters give exploratory conditional uncertainty, not population generalization or statistical-power proof",
+    "candidate runtime-loading verification is a separate inference gate"
+  ],
+  "scientific_sources": [
+    {"url": "https://cdn.iiit.ac.in/cdn/cvit.iiit.ac.in/images/ConferencePapers/2018/localizing-recognizing-text.pdf", "supports": "Section III word annotation seeded by TextSpotter and edited in LabelImg, equations/symbols excluded, course partition; Section V-B IoU > 0.5. Does not certify present XML correctness or our Hmean endpoint"},
+    {"url": "https://imlab.jp/publication_data/1469/C02.pdf", "supports": "ICDAR2015 localization plus transcription evaluation background; our matching/normalization/ignore policy remains explicitly study-specific"},
+    {"url": "https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/f2217062e9a397a1dca429e7d70bc6ca-Abstract-round1.html", "supports": "Northcutt et al. 2021: test-label errors can alter benchmark comparisons; motivates transparent raw-label primary and bounded influence diagnostic, not automated correction or a CVID error-rate estimate"},
+    {"url": "https://doi.org/10.1073/pnas.1708274114", "supports": "Nosek et al. 2018: distinguish analysis choices declared before outcomes from post-hoc exploration; this local freeze is not an external registration"}
+  ]
+}

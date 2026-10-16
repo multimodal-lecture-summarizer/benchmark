@@ -1,0 +1,13 @@
+{
+  "schema": "cvid_pgnet_t4_qualification_audit_v1",
+  "status": "audited_passed",
+  "candidate_id": "pgnet_totaltext_joint_t4",
+  "device": "Tesla T4",
+  "train_frames": 9,
+  "regions": 199,
+  "invalid_native_predictions": 1,
+  "preflight_sha256": "262b8a920620e3cbdb562c2db510790dd4ea8b3a7ac3bb50b4efa8e809653c13",
+  "evidence_zip_sha256": "55663a24c6156933015d42c642f827d6627f4875daca1f16af88b0c598613d2e",
+  "no_test_inference": true,
+  "comparison_preflight_reuse_allowed": false
+}
