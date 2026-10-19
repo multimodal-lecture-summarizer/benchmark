@@ -1,0 +1,14 @@
+{
+  "state": "audit_unsealed",
+  "export_complete": true,
+  "files": {
+    "comparison_contract.json": "f9b242410050c683067064c5decb030469ffa8b036c3fb32a98add386e8c21ce",
+    "dataset_manifest.json": "af4806dae769c67d3cf66ee63b0a876f8f6b7c3608d68dfd4735a5d26e5c2d95",
+    "rights_ledger.json": "abddb699d86f3c90d4e8c1c168946356faac9cfbd224a73ac0c55060624219d4"
+  },
+  "tool_sha256": {
+    "tib_model_benchmark_audit.py": "c81a60a4c6f379b5e816cfe867fe219b1b2ea0ede35c3d9a215f64915d5aa4fe",
+    "tib_model_benchmark_contract.py": "94050702719ac5ce6bddfa5b1f24e653dcabcd45144a267b6f6f6560e1362b21",
+    "tib_model_benchmark_snapshot.py": "3a1c41924f3df3bd72ee43563d2aa2309eed479784714bd6d348a9b5f67fbaa6"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "state": "DEVELOPMENT_REVIEW_REQUIRED_BEFORE_PROFILE_AND_CAP_FINAL_LOCK",
+  "scope": "three source-only staged pilot outputs per neural model; no references scored",
+  "word_cap": 350,
+  "word_cap_is_maximum_not_target": true,
+  "eligible_train_derivation_unchanged": true,
+  "neural_final_outputs": 9,
+  "delivered_cap_hits": 0,
+  "forced_word_boundary_outputs": 0,
+  "final_native_reserve_hits": 0,
+  "final_nodes_terminated_EOS": 9,
+  "intermediate_reserve_hits_without_EOS": {
+    "bart": {
+      "map": "0/31",
+      "reduce": "0/5"
+    },
+    "led": {
+      "map": "4/9",
+      "reduce": "0/2"
+    },
+    "qwen3": {
+      "map": "6/9",
+      "reduce": "2/2"
+    }
+  },
+  "qualitative_development_flags": [
+    {
+      "candidate_id": "led",
+      "record_id": "valid:341",
+      "flag": "repeated_phrase_and_incomplete_ending",
+      "repeated_phrase": "the role of women in open source",
+      "occurrences": 21
+    },
+    {
+      "candidate_id": "led",
+      "record_id": "valid:644",
+      "flag": "repetition_incomplete_ending_and_expansion",
+      "source_words": 197,
+      "delivered_words": 234
+    },
+    {
+      "candidate_id": "led",
+      "record_id": "valid:886",
+      "flag": "repeated_final_sentence"
+    },
+    {
+      "candidate_id": "bart",
+      "record_id": "valid:886",
+      "flag": "final_equals_first_map_output",
+      "interpretation": "Potential semantic attrition; full token lineage does not establish semantic retention."
+    }
+  ],
+  "effective_decoding_note": "resolved_generation_config stores base model defaults. Actual generate kwargs override them with profile.decode and stage max_new_tokens. Preserve both; log explicit merged effective settings before final profile freeze.",
+  "actions_before_freeze": [
+    "Review LED repetition on development without changing cohort or cap ad hoc",
+    "Predeclare intermediate reserve/profile amendment if needed; test capacity and preserve all trials",
+    "Log effective generation configuration, actual device capacity/backend/cache/offload and tokenizer/environment identity",
+    "Expand representative pilot and conservative cost measurement under explicit resource authorization"
+  ],
+  "profile_modified": false,
+  "cap_frozen_for_model_selection": false,
+  "formal_quality_ranking": null
+}

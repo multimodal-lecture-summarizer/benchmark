@@ -1,0 +1,15 @@
+{
+  "validation_version": "reference-review-source-span-validation-v2",
+  "policy_version": "tib-reference-usability-v1-261019-1703",
+  "status": "pass",
+  "reviewed_member_count": 226,
+  "validated_source_span_count": 226,
+  "historical_reviewed_count": 225,
+  "review_receipt_sha256": "625af76da56deb785cbf8459a4bd9121942678a185a8a29a4b9af57b1e73f2de",
+  "helper_sha256": "447290d958628faee43375a4bb998415fe2daee4dbe79d27b0a0914f98659e20",
+  "preserved_files": {
+    "reference_usability_ledger.jsonl": "4c5f98b59cce0fbd333253cb2321613ab022baf1cf8863269e4f53116c8b8e4a",
+    "historical_reuse_review.jsonl": "eec9709fec495aaf0d9d924fafafe7d463447a1e13d152b30461042a6dfb2df3",
+    "reference_summary.json": "21204f752d015597f44a375e09832371247b56d2d35889923271526496e4ee11"
+  }
+}

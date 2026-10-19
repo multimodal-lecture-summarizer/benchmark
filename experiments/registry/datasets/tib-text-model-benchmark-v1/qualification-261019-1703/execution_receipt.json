@@ -1,0 +1,73 @@
+{
+  "state": "development_seal_verified_no_generation",
+  "files": {
+    "experiments\\registry\\datasets\\tib-text-model-benchmark-v1\\qualification-261019-1703\\compute_preflight.json": "16d700c18de0140ab79adf15775e4da266e130140c4b7d0ab1734b3464cd34ec",
+    "experiments\\registry\\datasets\\tib-text-model-benchmark-v1\\qualification-261019-1703\\development_cohort.json": "9ac17534e95be7ebde78291546f215201d02b053b21b99aae8d96e4f23a411db",
+    "experiments\\registry\\datasets\\tib-text-model-benchmark-v1\\qualification-261019-1703\\eda_gap_matrix.json": "e10833497e2f44bbd580173787b684d23824cfd3c8ca836e8012b53942878b21",
+    "experiments\\registry\\datasets\\tib-text-model-benchmark-v1\\qualification-261019-1703\\eda_summary.json": "28c33781603063e1e6b3be03fa42c496d47b0f3cbed48e4c6f0907f1fb845ff5",
+    "experiments\\registry\\datasets\\tib-text-model-benchmark-v1\\qualification-261019-1703\\group_policy.json": "71e2748b8347b573e5e63a5a2c1915e6ea1b2afb1d39bc2d4c14d335978d6f4f",
+    "experiments\\registry\\datasets\\tib-text-model-benchmark-v1\\qualification-261019-1703\\group_validation_review_fix_receipt.json": "865a84a0159ee259f64c2a54d8fec38e3fd34087a91990aaad00ef99294d9d68",
+    "experiments\\registry\\datasets\\tib-text-model-benchmark-v1\\qualification-261019-1703\\historical_reuse_group_reviews.json": "f8fa2045a5365fee36ec2ebd10968b7c1b1ee5358a6b17dacceaf1aef05da6d4",
+    "experiments\\registry\\datasets\\tib-text-model-benchmark-v1\\qualification-261019-1703\\qualification_policy.json": "68d9f8f1404d2684448de2c14c8db711ff9efe6338930ba120fe4b384e899d95",
+    "experiments\\registry\\datasets\\tib-text-model-benchmark-v1\\qualification-261019-1703\\reference_policy.json": "1c123d8810df68637e43f8f9312771c05f43de59ae60c22da7f1fd2a36b69a96",
+    "experiments\\registry\\datasets\\tib-text-model-benchmark-v1\\qualification-261019-1703\\reference_review_validation_v2.json": "f3a8784da9fd0b3a0fdf1b8227e0237b6544cb1a81723cd24ac1218d38026af8",
+    "experiments\\registry\\datasets\\tib-text-model-benchmark-v1\\qualification-261019-1703\\reference_summary.json": "21204f752d015597f44a375e09832371247b56d2d35889923271526496e4ee11",
+    "experiments\\registry\\datasets\\tib-text-model-benchmark-v1\\qualification-261019-1703\\rights_summary.json": "76e7ecc8b4f935a71d19f117d9c43b3025dfe83b67b921a58cf35472f0086c9b",
+    "experiments\\registry\\datasets\\tib-text-model-benchmark-v1\\qualification-261019-1703\\rights_validation_review_fix_receipt.json": "911aa321fc510f09eb9904879729cb6b8cc04886070305d5b524f44444a8e0bb",
+    "experiments\\registry\\datasets\\tib-text-model-benchmark-v1\\qualification-261019-1703\\source_group_summary.json": "09376addb9c3262516b21d09d888a19724b903a9ca997a5845344f85bd60d2fe",
+    "experiments\\registry\\datasets\\tib-text-model-benchmark-v1\\qualification-261019-1703\\source_use_policy.json": "bea92cab0d00ea870925899fe151a52b1581960d7c03eb8d21e18972a6c24249",
+    "research-data\\tib-qualification-261019-1703\\eda\\receipt.json": "ac69240b421808a72b776fd850bc6f771bc9502ae95f6faf415daf30c8934a82",
+    "research-data\\tib-qualification-261019-1703\\qualified_cohort\\qualification_ledger.jsonl": "f60b0e7b3570a62cadbf41059dd5f1694c7b641297f7e9bc9b595f7f62510e64",
+    "research-data\\tib-qualification-261019-1703\\qualified_cohort\\counts.json": "1841b2692679a8f1d88f8cae62fc2469cb183de02a23234e94ebb42b8c8fa08c",
+    "research-data\\tib-qualification-261019-1703\\qualified_cohort\\development_records.json": "23ca866bbc239338ca83a347541f1e6f5834227e56d7d8b18d28f59d00180205",
+    "experiments\\notebooks\\diagnostics\\tib-summarization-gap-closure-261019.ipynb": "5f532de4f460574d7fd32e751218120e029cb76b13af741ed9585ac41ee6bb27",
+    "experiments\\scripts\\tib_model_benchmark_audit.py": "c81a60a4c6f379b5e816cfe867fe219b1b2ea0ede35c3d9a215f64915d5aa4fe",
+    "experiments\\scripts\\tib_model_benchmark_canonical.py": "33500f93510558237d16327912b6192de22bbc7974a7ffe4f6c92cf3d2956ef7",
+    "experiments\\scripts\\tib_model_benchmark_contract.py": "94050702719ac5ce6bddfa5b1f24e653dcabcd45144a267b6f6f6560e1362b21",
+    "experiments\\scripts\\tib_model_benchmark_eda.py": "37f03cbc6350d08986e8b6435f79013ebf9aa42378216c8b8ebbccdba6bf3c6a",
+    "experiments\\scripts\\tib_model_benchmark_group_core.py": "6407a38f99bfb686aab3fe4e25c37d5f33477475d42a0d3d8d797d50230e3862",
+    "experiments\\scripts\\tib_model_benchmark_groups.py": "91dc3a86388edab151043f140e1046eff7d544e74df5182cac4e99a1dfadf571",
+    "experiments\\scripts\\tib_model_benchmark_qualification.py": "ad2f14463704e2aad325cbc458fda053c821ea59ecedf91fa712279e5c40d014",
+    "experiments\\scripts\\tib_model_benchmark_qualification_inputs.py": "b4d629caf1dab5c4c98eb260464a5714f540235bdd42dbde4712b596477cfdcf",
+    "experiments\\scripts\\tib_model_benchmark_references.py": "447290d958628faee43375a4bb998415fe2daee4dbe79d27b0a0914f98659e20",
+    "experiments\\scripts\\tib_model_benchmark_rights.py": "196b0eaf8a1c0d850a75ed0d869124f2151af7b4c052ee1b7d5dab5f50962596",
+    "experiments\\scripts\\tib_model_benchmark_sampling.py": "56f51e6ae3d2af425f91a4199dfc3c087d5bc79b839b54c43b9b892b91d6df75",
+    "experiments\\scripts\\tib_model_benchmark_snapshot.py": "3a1c41924f3df3bd72ee43563d2aa2309eed479784714bd6d348a9b5f67fbaa6"
+  },
+  "records": 9103,
+  "counts": {
+    "train": {
+      "source": 7282,
+      "data_eligible": 4215,
+      "after_exposure": 4213,
+      "exposure_reasons": {
+        "historical_120_or_9_pilot": 2
+      }
+    },
+    "valid": {
+      "source": 910,
+      "data_eligible": 532,
+      "after_exposure": 464,
+      "exposure_reasons": {
+        "historical_120_or_9_pilot": 68
+      }
+    },
+    "test": {
+      "source": 911,
+      "data_eligible": 523,
+      "after_exposure": 523,
+      "exposure_reasons": {}
+    }
+  },
+  "pilot_n": 40,
+  "selection_n": 300,
+  "deterministic_replay_and_reversed_order_identical": true,
+  "known_id_group_role_overlaps": 0,
+  "notebook_executed_code_cells": 6,
+  "notebook_errors": 0,
+  "notebook_scope": "fresh-kernel verification/render of CLI audit artifacts, not a fresh full-snapshot rescan",
+  "focused_tests": "101 passed in 11.63s; process exit0; nonfatal pyreadline3 shutdown warning",
+  "python": "3.11.1",
+  "generation_executed": false,
+  "final_test_sealed": false
+}

@@ -1,0 +1,26 @@
+{
+  "state": "user_authorized_private_Colab_and_Drive_technical_feasibility",
+  "user_instruction": "Colab notebook; source/script ZIP in Drive; checkpoints/logs in Drive; A100 optional but T4 must be established; run strictly under12hours",
+  "records": [
+    "valid:644",
+    "valid:341",
+    "valid:886"
+  ],
+  "scope": "three source-only staged pilot records, no references/selection/test",
+  "private_noncommercial_only": true,
+  "retain_attribution": true,
+  "public_sharing": false,
+  "external_generation_API": false,
+  "amends_local_only_operating_scope_for_these_records": true,
+  "license_conditions_unchanged": true,
+  "maximum_run_hours_exclusive": 12,
+  "technical_guard_hours": 11.5,
+  "T4_evidence_not_inferred_from_A100": true,
+  "remaining_formal_gates": [
+    "T4 actual profile evidence",
+    "final cap feasibility lock",
+    "numeric total budget/projection",
+    "durable store verification",
+    "final cohort seal"
+  ]
+}

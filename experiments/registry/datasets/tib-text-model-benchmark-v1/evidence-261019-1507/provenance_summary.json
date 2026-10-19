@@ -1,0 +1,286 @@
+{
+  "snapshot_revision": "e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee",
+  "observed_counts_by_split": {
+    "train": {
+      "rows": 7282,
+      "license_label_counts": {
+        "CC Attribution 3.0 Unported:": 2049,
+        "CC Attribution 2.0 Belgium:": 1375,
+        "CC Attribution 4.0 International:": 393,
+        "CC Attribution 3.0 Germany:": 749,
+        "CC Attribution - NonCommercial - NoDerivatives 4.0 International:": 216,
+        "CC Attribution - NoDerivatives 4.0 International:": 13,
+        "CC Attribution - NoDerivatives 2.0 UK: England & Wales:": 169,
+        "CC Attribution - NonCommercial - ShareAlike 3.0 Unported:": 869,
+        "CC Attribution - ShareAlike 3.0 Unported:": 676,
+        "CC Attribution - NonCommercial 3.0 Unported:": 6,
+        "CC Attribution - ShareAlike 4.0 International:": 72,
+        "CC Attribution - NonCommercial - ShareAlike 3.0 Germany:": 68,
+        "CC Attribution - ShareAlike 3.0 Germany:": 237,
+        "CC Attribution - NonCommercial - NoDerivatives 2.0 Generic:": 98,
+        "CC Attribution - NonCommercial - NoDerivatives 3.0 Germany:": 122,
+        "CC Attribution - ShareAlike 3.0 USA:": 41,
+        "CC Attribution - NonCommercial - NoDerivatives 2.5 Switzerland:": 42,
+        "CC Attribution - NonCommercial - NoDerivatives 3.0 USA:": 14,
+        "CC Attribution - NoDerivatives 3.0 Germany:": 5,
+        "No Open Access License:": 14,
+        "MISSING": 1,
+        "CC Attribution - NonCommercial 2.0 Germany:": 8,
+        "CC Attribution - NonCommercial - ShareAlike 4.0 International:": 41,
+        "CC Attribution - NonCommercial 3.0 Germany:": 3,
+        "CC Attribution - NonCommercial - NoDerivatives 3.0 Unported:": 1
+      },
+      "missing_provenance_fields": {
+        "license": 1,
+        "author": 5
+      }
+    },
+    "valid": {
+      "rows": 910,
+      "license_label_counts": {
+        "CC Attribution 2.0 Belgium:": 178,
+        "CC Attribution 3.0 Unported:": 248,
+        "CC Attribution - NonCommercial - ShareAlike 3.0 Unported:": 105,
+        "CC Attribution 3.0 Germany:": 98,
+        "CC Attribution - NonCommercial - NoDerivatives 4.0 International:": 22,
+        "CC Attribution 4.0 International:": 50,
+        "CC Attribution - ShareAlike 3.0 Unported:": 73,
+        "CC Attribution - ShareAlike 3.0 USA:": 7,
+        "CC Attribution - NoDerivatives 2.0 UK: England & Wales:": 19,
+        "CC Attribution - ShareAlike 3.0 Germany:": 32,
+        "CC Attribution - NonCommercial - NoDerivatives 2.5 Switzerland:": 6,
+        "CC Attribution - NonCommercial - NoDerivatives 3.0 Germany:": 22,
+        "CC Attribution - NonCommercial - NoDerivatives 2.0 Generic:": 14,
+        "CC Attribution - NonCommercial 2.0 Germany:": 5,
+        "CC Attribution - ShareAlike 4.0 International:": 8,
+        "CC Attribution - NonCommercial 3.0 Unported:": 3,
+        "CC Attribution - NonCommercial - ShareAlike 4.0 International:": 5,
+        "MISSING": 2,
+        "CC Attribution - NonCommercial - ShareAlike 3.0 Germany:": 6,
+        "CC Attribution - NonCommercial - ShareAlike 3.0 USA:": 1,
+        "CC Attribution - NoDerivatives 4.0 International:": 3,
+        "CC Attribution - NonCommercial - NoDerivatives 3.0 USA:": 2,
+        "No Open Access License:": 1
+      },
+      "missing_provenance_fields": {
+        "license": 2,
+        "author": 1
+      }
+    },
+    "test": {
+      "rows": 911,
+      "license_label_counts": {
+        "CC Attribution 2.0 Belgium:": 164,
+        "CC Attribution - ShareAlike 3.0 USA:": 4,
+        "CC Attribution - ShareAlike 3.0 Unported:": 81,
+        "CC Attribution - NonCommercial - ShareAlike 3.0 Unported:": 115,
+        "CC Attribution 3.0 Germany:": 88,
+        "CC Attribution 3.0 Unported:": 283,
+        "CC Attribution - NoDerivatives 2.0 UK: England & Wales:": 22,
+        "CC Attribution 4.0 International:": 47,
+        "CC Attribution - NonCommercial - NoDerivatives 3.0 Germany:": 20,
+        "CC Attribution - ShareAlike 3.0 Germany:": 24,
+        "CC Attribution - NonCommercial - NoDerivatives 4.0 International:": 19,
+        "CC Attribution - NonCommercial - NoDerivatives 2.5 Switzerland:": 6,
+        "CC Attribution - NonCommercial - ShareAlike 4.0 International:": 5,
+        "CC Attribution - ShareAlike 4.0 International:": 10,
+        "MISSING": 1,
+        "CC Attribution - NonCommercial 3.0 Unported:": 2,
+        "CC Attribution - NoDerivatives 3.0 Germany:": 2,
+        "CC Attribution - NoDerivatives 4.0 International:": 3,
+        "CC Attribution - NonCommercial - NoDerivatives 2.0 Generic:": 6,
+        "No Open Access License:": 2,
+        "CC Attribution - NonCommercial - ShareAlike 3.0 Germany:": 6,
+        "CC Attribution - NonCommercial - NoDerivatives 3.0 Unported:": 1
+      },
+      "missing_provenance_fields": {
+        "license": 1,
+        "author": 1
+      }
+    }
+  },
+  "license_label_counts": {
+    "CC Attribution 3.0 Unported:": 2580,
+    "CC Attribution 2.0 Belgium:": 1717,
+    "CC Attribution 4.0 International:": 490,
+    "CC Attribution 3.0 Germany:": 935,
+    "CC Attribution - NonCommercial - NoDerivatives 4.0 International:": 257,
+    "CC Attribution - NoDerivatives 4.0 International:": 19,
+    "CC Attribution - NoDerivatives 2.0 UK: England & Wales:": 210,
+    "CC Attribution - NonCommercial - ShareAlike 3.0 Unported:": 1089,
+    "CC Attribution - ShareAlike 3.0 Unported:": 830,
+    "CC Attribution - NonCommercial 3.0 Unported:": 11,
+    "CC Attribution - ShareAlike 4.0 International:": 90,
+    "CC Attribution - NonCommercial - ShareAlike 3.0 Germany:": 80,
+    "CC Attribution - ShareAlike 3.0 Germany:": 293,
+    "CC Attribution - NonCommercial - NoDerivatives 2.0 Generic:": 118,
+    "CC Attribution - NonCommercial - NoDerivatives 3.0 Germany:": 164,
+    "CC Attribution - ShareAlike 3.0 USA:": 52,
+    "CC Attribution - NonCommercial - NoDerivatives 2.5 Switzerland:": 54,
+    "CC Attribution - NonCommercial - NoDerivatives 3.0 USA:": 16,
+    "CC Attribution - NoDerivatives 3.0 Germany:": 7,
+    "No Open Access License:": 17,
+    "MISSING": 4,
+    "CC Attribution - NonCommercial 2.0 Germany:": 13,
+    "CC Attribution - NonCommercial - ShareAlike 4.0 International:": 51,
+    "CC Attribution - NonCommercial 3.0 Germany:": 3,
+    "CC Attribution - NonCommercial - NoDerivatives 3.0 Unported:": 2,
+    "CC Attribution - NonCommercial - ShareAlike 3.0 USA:": 1
+  },
+  "license_label_examples": {
+    "CC Attribution 3.0 Unported:": {
+      "record_id": "train:0",
+      "source_url": "https://av.tib.eu/media/18349",
+      "doi": "10.5446/18349 (DOI)"
+    },
+    "CC Attribution 2.0 Belgium:": {
+      "record_id": "train:1",
+      "source_url": "https://av.tib.eu/media/47465",
+      "doi": "10.5446/47465 (DOI)"
+    },
+    "CC Attribution 4.0 International:": {
+      "record_id": "train:2",
+      "source_url": "https://av.tib.eu/media/43826",
+      "doi": "10.5446/43826 (DOI)"
+    },
+    "CC Attribution 3.0 Germany:": {
+      "record_id": "train:3",
+      "source_url": "https://av.tib.eu/media/42853",
+      "doi": "10.5446/42853 (DOI)"
+    },
+    "CC Attribution - NonCommercial - NoDerivatives 4.0 International:": {
+      "record_id": "train:6",
+      "source_url": "https://av.tib.eu/media/54294",
+      "doi": "10.14288/1.0398184 (DOI)"
+    },
+    "CC Attribution - NoDerivatives 4.0 International:": {
+      "record_id": "train:9",
+      "source_url": "https://av.tib.eu/media/45472",
+      "doi": "10.5446/45472 (DOI)"
+    },
+    "CC Attribution - NoDerivatives 2.0 UK: England & Wales:": {
+      "record_id": "train:11",
+      "source_url": "https://av.tib.eu/media/32375",
+      "doi": "10.5446/32375 (DOI)"
+    },
+    "CC Attribution - NonCommercial - ShareAlike 3.0 Unported:": {
+      "record_id": "train:13",
+      "source_url": "https://av.tib.eu/media/21116",
+      "doi": "10.5446/21116 (DOI)"
+    },
+    "CC Attribution - ShareAlike 3.0 Unported:": {
+      "record_id": "train:14",
+      "source_url": "https://av.tib.eu/media/37810",
+      "doi": "10.5446/37810 (DOI)"
+    },
+    "CC Attribution - NonCommercial 3.0 Unported:": {
+      "record_id": "train:15",
+      "source_url": "https://av.tib.eu/media/48054",
+      "doi": "10.5446/48054 (DOI)"
+    },
+    "CC Attribution - ShareAlike 4.0 International:": {
+      "record_id": "train:16",
+      "source_url": "https://av.tib.eu/media/18901",
+      "doi": "10.5446/18901 (DOI)"
+    },
+    "CC Attribution - NonCommercial - ShareAlike 3.0 Germany:": {
+      "record_id": "train:19",
+      "source_url": "https://av.tib.eu/media/32017",
+      "doi": "10.5446/32017 (DOI)"
+    },
+    "CC Attribution - ShareAlike 3.0 Germany:": {
+      "record_id": "train:29",
+      "source_url": "https://av.tib.eu/media/33508",
+      "doi": "10.5446/33508 (DOI)"
+    },
+    "CC Attribution - NonCommercial - NoDerivatives 2.0 Generic:": {
+      "record_id": "train:46",
+      "source_url": "https://av.tib.eu/media/57341",
+      "doi": "10.5446/57341 (DOI)"
+    },
+    "CC Attribution - NonCommercial - NoDerivatives 3.0 Germany:": {
+      "record_id": "train:51",
+      "source_url": "https://av.tib.eu/media/49067",
+      "doi": "10.5446/49067 (DOI)"
+    },
+    "CC Attribution - ShareAlike 3.0 USA:": {
+      "record_id": "train:123",
+      "source_url": "https://av.tib.eu/media/19002",
+      "doi": "10.5446/19002 (DOI)"
+    },
+    "CC Attribution - NonCommercial - NoDerivatives 2.5 Switzerland:": {
+      "record_id": "train:253",
+      "source_url": "https://av.tib.eu/media/35248",
+      "doi": "10.5446/35248 (DOI)"
+    },
+    "CC Attribution - NonCommercial - NoDerivatives 3.0 USA:": {
+      "record_id": "train:270",
+      "source_url": "https://av.tib.eu/media/19390",
+      "doi": "10.5446/19390 (DOI)"
+    },
+    "CC Attribution - NoDerivatives 3.0 Germany:": {
+      "record_id": "train:282",
+      "source_url": "https://av.tib.eu/media/56115",
+      "doi": "10.5446/56115 (DOI)"
+    },
+    "No Open Access License:": {
+      "record_id": "train:400",
+      "source_url": "https://av.tib.eu/media/40177",
+      "doi": "10.5446/40177 (DOI)"
+    },
+    "MISSING": {
+      "record_id": "train:586",
+      "source_url": "https://av.tib.eu/media/58069",
+      "doi": "10.5446/58069 (DOI)"
+    },
+    "CC Attribution - NonCommercial 2.0 Germany:": {
+      "record_id": "train:795",
+      "source_url": "https://av.tib.eu/media/19639",
+      "doi": "10.5446/19639 (DOI)"
+    },
+    "CC Attribution - NonCommercial - ShareAlike 4.0 International:": {
+      "record_id": "train:851",
+      "source_url": "https://av.tib.eu/media/42675",
+      "doi": "10.5446/42675 (DOI)"
+    },
+    "CC Attribution - NonCommercial 3.0 Germany:": {
+      "record_id": "train:1480",
+      "source_url": "https://av.tib.eu/media/37258",
+      "doi": "10.5446/37258 (DOI)"
+    },
+    "CC Attribution - NonCommercial - NoDerivatives 3.0 Unported:": {
+      "record_id": "train:7110",
+      "source_url": "https://av.tib.eu/media/20028",
+      "doi": "10.5446/20028 (DOI)"
+    },
+    "CC Attribution - NonCommercial - ShareAlike 3.0 USA:": {
+      "record_id": "valid:370",
+      "source_url": "https://av.tib.eu/media/14078",
+      "doi": "10.5446/14078 (DOI)"
+    }
+  },
+  "distinct_license_labels": 26,
+  "schema_fields": [
+    "abstract",
+    "author",
+    "contributors",
+    "doi",
+    "genre",
+    "keyframes",
+    "language",
+    "license",
+    "release_year",
+    "subject",
+    "title",
+    "transcript",
+    "transcript_segments",
+    "url",
+    "video_url"
+  ],
+  "distinct_dois": 9103,
+  "duplicate_doi_keys": 0,
+  "distinct_source_urls": 9103,
+  "duplicate_source_url_keys": 0,
+  "rights_labels_are_not_permission_decisions": true,
+  "selected_ids": []
+}

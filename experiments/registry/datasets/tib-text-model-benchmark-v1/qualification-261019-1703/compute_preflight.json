@@ -1,0 +1,15 @@
+{
+  "observed_gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "memory_MiB": 6141,
+  "driver": "610.88",
+  "observation_command": "nvidia-smi --query-gpu=name,memory.total,driver_version --format=csv,noheader",
+  "T4_verified": false,
+  "inference_executed": false,
+  "runtime_blockers": [
+    "scorer_ready",
+    "candidate_profiles",
+    "T4_measured_capacity",
+    "compute_storage_retry_budgets"
+  ],
+  "global_output_word_cap": null
+}

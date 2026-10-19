@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "scope": [
+    "snapshot_technical_binding",
+    "opendata_field_binding"
+  ],
+  "status": "PASS_WITH_SCOPE_LIMITS",
+  "review_method": "independent read-only rehash/inventory/row checks and full official OpenData rescan",
+  "verified_media_rows": 44254,
+  "verified_found_media_ids": 6521,
+  "verified_reference_matches": 5592,
+  "source_uses_conditional": 6503,
+  "source_cc0_matches": 0,
+  "g1_status": "HOLD_PENDING_REMAINING_FIELD_SCOPE",
+  "doi_difference": {
+    "record_id": "train:3780",
+    "source_media_id": 54270,
+    "released_doi": "10.14288/1.0398149",
+    "export_doi": "10.14288/1.0398140",
+    "action": "flag_for_interpretation_not_automatic_exclusion"
+  },
+  "base_evidence_receipt_sha256": "02727801017e8d445507b1bd688ff628ea0978e8089fd8cf7be6a837a092e364",
+  "selected_ids": [],
+  "benchmark_executed": false
+}

@@ -1,0 +1,18 @@
+{
+  "notebook_execution": "fresh kernel; six code cells; zero saved errors",
+  "attempts": [
+    {
+      "status": "interrupted_before_saved_notebook",
+      "scope": "sandbox local-kernel startup stalled; no model/data scan rerun"
+    },
+    {
+      "status": "notebook_executed_and_saved_receipt_export_failed",
+      "reason": "resume publisher omitted cohort variable; notebook unaffected"
+    },
+    {
+      "status": "receipt_export_completed",
+      "reason": "read executed notebook and export immutable compact receipt without rerunning notebook"
+    }
+  ],
+  "model_generation_executed": false
+}

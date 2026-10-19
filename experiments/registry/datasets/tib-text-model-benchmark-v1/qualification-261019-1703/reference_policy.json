@@ -1,0 +1,93 @@
+{
+  "policy_version": "tib-reference-usability-v1-261019-1703",
+  "revision": "e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee",
+  "status": "frozen_before_full_ledger",
+  "calibration": [
+    {
+      "record_id": "train:0",
+      "source_raw_sha256": "02ab37dc31b4c6d36195d3639c99deefab88c0c2b64644493f0e76ab6f8e7aad",
+      "reference_raw_sha256": "3d49957abfeda229cf1b02e1cf482f5b6b75159f585bd1bea3898f0f9397c5c3",
+      "label": "B",
+      "review_scope": "entire abstract and first 1200 transcript characters",
+      "relation_note": "Rod/bar manufacture and testing appear in opening; full coverage unreviewed.",
+      "uncertainty": "full presentation relation unreviewed"
+    },
+    {
+      "record_id": "train:1",
+      "source_raw_sha256": "fe4caf7fcc9aa8550a8a68a44a05d0b1ec435ee356cf9a26c06bc3debe7aadf3",
+      "reference_raw_sha256": "186e594a41f5d3a2f39a9848238a0523d989a3da5e3440ff5c364e653efe8b2e",
+      "label": "B",
+      "review_scope": "entire abstract and first 1200 transcript characters",
+      "relation_note": "ROS evolution appears in opening; design/new-feature claims unreviewed.",
+      "uncertainty": "full presentation relation unreviewed"
+    },
+    {
+      "record_id": "train:2",
+      "source_raw_sha256": "175230fe64199d2a96bea55f5647d4dbd2c3470356268b006f39294d66ee3b3a",
+      "reference_raw_sha256": "39c3312e6e1799a1558b744fe93753fb75dfcfa41523f52ec0e18201a78434a6",
+      "label": "B",
+      "review_scope": "entire abstract and first 1200 transcript characters",
+      "relation_note": "Custom pinball topic appears in opening; hardware/software coverage unreviewed.",
+      "uncertainty": "full presentation relation unreviewed"
+    },
+    {
+      "record_id": "train:3",
+      "source_raw_sha256": "22bdad3d6ef687a989e2e0236c97713fbcb37fd13a9a04b30a9a282c082be1a4",
+      "reference_raw_sha256": "2135f38b6836c9746e43867b98961d8a3a867db91bd375ffb5b792cad09ce6e9",
+      "label": "B",
+      "review_scope": "entire abstract and first 1200 transcript characters",
+      "relation_note": "Differential privacy/census relation appears in opening; full coverage unreviewed.",
+      "uncertainty": "full presentation relation unreviewed"
+    },
+    {
+      "record_id": "train:4",
+      "source_raw_sha256": "2aacdc224e5d605245b21fcdca44b3f71d087f7d73fc2631807d293ed102acce",
+      "reference_raw_sha256": "223b6ec191ee7fa8c1e852ad9000117a127b53f5ee3879a8a157cbde4726bb31",
+      "label": "B",
+      "review_scope": "entire abstract and first 1200 transcript characters",
+      "relation_note": "Course boilerplate plus specific organometallic title; opening related, full coverage uncertain.",
+      "uncertainty": "full presentation relation unreviewed"
+    },
+    {
+      "record_id": "train:5",
+      "source_raw_sha256": "0a9ffa9711592dc16e5aa58a5402c14b1f6dae16ce44cf7a887ff31c84253b22",
+      "reference_raw_sha256": "cdea2bdd0f548276e4d732dee64b7d99dcd43aed213a3f40d2dd03a5a9ad9b4e",
+      "label": "B",
+      "review_scope": "entire abstract and first 1200 transcript characters",
+      "relation_note": "React Hooks/Volto integration appears in opening; transformation demonstration unreviewed.",
+      "uncertainty": "full presentation relation unreviewed"
+    }
+  ],
+  "calibration_version": "train-first-six-v1",
+  "canonical_source": "transcript",
+  "normalization": "Unicode NFC then whitespace collapse; case-sensitive",
+  "historical_normalization": "legacy strip/casefold/whitespace collapse; no NFC",
+  "A": "Reviewed reference content and presentation relation supported by explicit source spans; not factual gold.",
+  "B": "Nonempty creator abstract with unresolved coverage/relation/quality uncertainty; retained in primary A+B.",
+  "C": "Empty normalized reference, or explicit reviewed evidence of unusability/mismatch; no proxy cutoff.",
+  "default_nonempty": "B",
+  "empty": "C",
+  "primary": [
+    "A",
+    "B"
+  ],
+  "short_generic_reused": "diagnostic flags only; never automatic C",
+  "nonempty_review_requirement": [
+    "reviewer",
+    "reference_hash",
+    "source_hash",
+    "source_spans",
+    "relation_evidence",
+    "uncertainty"
+  ],
+  "calibration_decision": "Topic-related openings alone do not justify A; boilerplate/shortness alone do not justify C.",
+  "rights_scope": "Reference labels grant no rights; permission/source/group eligibility is separate.",
+  "forbidden_inputs": [
+    "model predictions",
+    "ROUGE",
+    "BERTScore",
+    "candidate outcomes",
+    "test performance"
+  ],
+  "amendment": "Version and requalify every split before related outcomes; preserve prior receipt."
+}

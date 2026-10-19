@@ -1,0 +1,46 @@
+{
+  "status": "pass",
+  "original_summary_sha256": "09376addb9c3262516b21d09d888a19724b903a9ca997a5845344f85bd60d2fe",
+  "source_group_ledger_sha256": "10a797ebfc8c91ba9321d085fb8a732009aca5763d058ec0af8ec16cc149e54e",
+  "source_group_pairs_sha256": "184d630115c50aaf161460fac9897d401c2c29887538736519376169e0347107",
+  "policy_sha256": "71e2748b8347b573e5e63a5a2c1915e6ea1b2afb1d39bc2d4c14d335978d6f4f",
+  "current_runner_sha256": "91dc3a86388edab151043f140e1046eff7d544e74df5182cac4e99a1dfadf571",
+  "current_core_sha256": "6407a38f99bfb686aab3fe4e25c37d5f33477475d42a0d3d8d797d50230e3862",
+  "current_test_sha256": "806cabf0e5213d805ddb399e5277089f5ce0283b3b511900dd1acd04078fcde9",
+  "all_9103_hashes_revalidated": true,
+  "accepted_pairs_revalidated": true,
+  "graph_reconstruction_identical": true,
+  "raw_and_canonical_hash_records_checked": 9103,
+  "source_word_counts_and_metadata_revalidated": true,
+  "accepted_pair_count_revalidated": 22,
+  "split_counts": {
+    "train": 7282,
+    "valid": 910,
+    "test": 911
+  },
+  "source_files": [
+    {
+      "path": "research-data/tib-evidence-261019-1507/e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee/data/train-00000-of-00002.parquet",
+      "sha256": "fb6cb53550b168a8d9b639995f10d34a247d7abdf57e5d84139ce429c7447cc3"
+    },
+    {
+      "path": "research-data/tib-evidence-261019-1507/e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee/data/train-00001-of-00002.parquet",
+      "sha256": "333f221a6d9ce28bd8c3e7c265c284b94de1530c7717a2ffc2627864d3bca48e"
+    },
+    {
+      "path": "research-data/tib-evidence-261019-1507/e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee/data/valid-00000-of-00001.parquet",
+      "sha256": "d5c6b26e8730e39f5e1dae6d261ec6bdca00304f90a0c96f05fef2695cfb8497"
+    },
+    {
+      "path": "research-data/tib-evidence-261019-1507/e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee/data/test-00000-of-00001.parquet",
+      "sha256": "bbe5db9f176e465c5b2514757d48ef92ce3a1d9873ba9e64c015b50172f5b9a6"
+    }
+  ],
+  "focused_tests": "9 passed including load_rows runtime wiring regression",
+  "fix": "Restore digest import in source runner; no grouping algorithm, thresholds, fingerprints, or policy changed.",
+  "provenance_limitation": "Original processor had loaded the earlier module version with digest imported before subsequent on-disk edits removed that import. Original final metadata runner hash observed the file version at receipt enrichment; it was not a sealed identity of executed code. The core SHA256 is unchanged from the completed summary. This additive replay validates every source hash/count, all22 accepted decisions, and every component against the corrected current modules; the2,854,654 rejected/candidate comparisons were not rerun.",
+  "full_candidate_scan_rerun": false,
+  "core_unchanged_from_completed_summary": true,
+  "original_completed_artifacts_preserved": true,
+  "runtime_seconds": 32.344
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "study_id": "tib-text-model-benchmark-v1",
+  "state": "development_unsealed",
+  "global_output_word_cap": null,
+  "canonical_input": "transcript",
+  "segments_role": "audit_sidecar",
+  "prompt_timestamps": false,
+  "pipelines": [
+    {"candidate_id": "lead3", "role": "fixed_control", "generation_device": "cpu", "config_search": false, "checkpoint": null},
+    {"candidate_id": "lexrank", "role": "model_family", "generation_device": "cpu", "config_search": true, "checkpoint": null},
+    {"candidate_id": "bart", "role": "model_family", "generation_device": "cuda", "config_search": true, "checkpoint": "facebook/bart-large-cnn"},
+    {"candidate_id": "led", "role": "model_family", "generation_device": "cuda", "config_search": true, "checkpoint": "allenai/led-large-16384-arxiv"},
+    {"candidate_id": "qwen3", "role": "model_family", "generation_device": "cuda", "config_search": true, "checkpoint": "Qwen/Qwen3-4B"}
+  ],
+  "profile_revisions": null,
+  "scorer_ready_receipt": null
+}

@@ -1,0 +1,312 @@
+{
+  "schema_version": 1,
+  "policy_version": "tib-local-private-noncommercial-v1-261019-1703",
+  "frozen_before_ledger_and_model_outputs": true,
+  "frozen_at": "2026-10-19T17:08:22.356295+07:00",
+  "scope": {
+    "local_only": true,
+    "private_only": true,
+    "noncommercial_only": true,
+    "retain_attribution": true,
+    "public_text_redistribution": false,
+    "external_api_text_transfer": false
+  },
+  "expected_counts_by_split": {
+    "train": 7282,
+    "valid": 910,
+    "test": 911
+  },
+  "input_sha256": {
+    "research-data/tib-evidence-261019-1507/field-rights-ledger-v2.jsonl": "3addfeebfe1807eb3a711d93885b5893051a4a2175a24cc08c58b18cf662177d",
+    "research-data/tib-evidence-261019-1507/local-audit/rights_ledger.json": "55f5ac91542e81ef69ab28d8374ccbd9c85503edda43cd06cada1e3ac7d8d800",
+    "research-data/tib-evidence-261019-1507/provenance-summary.json": "bb3a9b7498a6b11703d7a30ac677db7a5444ef8dcf6b3a607f1e576d7f198b0a",
+    "experiments/registry/datasets/tib-text-model-benchmark-v1/evidence-261019-1507/license_uri_examples.json": "b3b45dbd058c9bd77ac7031ba6438e0df15cb9fd71770f29581e06be82db1d1c"
+  },
+  "license_routes": {
+    "https://creativecommons.org/licenses/by-nc-nd/2.0/": {
+      "decision": "hold",
+      "family": "by-nc-nd",
+      "version": "2.0",
+      "legalcode_url": "https://creativecommons.org/licenses/by-nc-nd/2.0/legalcode",
+      "reason": "older_ND_private_adaptation_not_adjudicated",
+      "noncommercial_required": true,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": false,
+      "private_adaptation_only": true
+    },
+    "https://creativecommons.org/licenses/by-nc-nd/2.5/ch/": {
+      "decision": "hold",
+      "family": "by-nc-nd",
+      "version": "2.5",
+      "legalcode_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/ch/legalcode",
+      "reason": "older_ND_private_adaptation_not_adjudicated",
+      "noncommercial_required": true,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": false,
+      "private_adaptation_only": true
+    },
+    "https://creativecommons.org/licenses/by-nc-nd/3.0/": {
+      "decision": "hold",
+      "family": "by-nc-nd",
+      "version": "3.0",
+      "legalcode_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/legalcode",
+      "reason": "older_ND_private_adaptation_not_adjudicated",
+      "noncommercial_required": true,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": false,
+      "private_adaptation_only": true
+    },
+    "https://creativecommons.org/licenses/by-nc-nd/3.0/de/": {
+      "decision": "hold",
+      "family": "by-nc-nd",
+      "version": "3.0",
+      "legalcode_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/de/legalcode",
+      "reason": "older_ND_private_adaptation_not_adjudicated",
+      "noncommercial_required": true,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": false,
+      "private_adaptation_only": true
+    },
+    "https://creativecommons.org/licenses/by-nc-nd/3.0/us/": {
+      "decision": "hold",
+      "family": "by-nc-nd",
+      "version": "3.0",
+      "legalcode_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/legalcode",
+      "reason": "older_ND_private_adaptation_not_adjudicated",
+      "noncommercial_required": true,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": false,
+      "private_adaptation_only": true
+    },
+    "https://creativecommons.org/licenses/by-nc-nd/4.0/": {
+      "decision": "conditional",
+      "family": "by-nc-nd",
+      "version": "4.0",
+      "legalcode_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.en",
+      "reason": "licensed_reproduction_and_adaptation_within_source_licensor_rights",
+      "noncommercial_required": true,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": false,
+      "private_adaptation_only": true
+    },
+    "https://creativecommons.org/licenses/by-nc-sa/3.0/": {
+      "decision": "conditional",
+      "family": "by-nc-sa",
+      "version": "3.0",
+      "legalcode_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode",
+      "reason": "licensed_reproduction_and_adaptation_within_source_licensor_rights",
+      "noncommercial_required": true,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": true,
+      "private_adaptation_only": false
+    },
+    "https://creativecommons.org/licenses/by-nc-sa/3.0/de/": {
+      "decision": "conditional",
+      "family": "by-nc-sa",
+      "version": "3.0",
+      "legalcode_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/legalcode",
+      "reason": "licensed_reproduction_and_adaptation_within_source_licensor_rights",
+      "noncommercial_required": true,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": true,
+      "private_adaptation_only": false
+    },
+    "https://creativecommons.org/licenses/by-nc-sa/3.0/us/": {
+      "decision": "conditional",
+      "family": "by-nc-sa",
+      "version": "3.0",
+      "legalcode_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/legalcode",
+      "reason": "licensed_reproduction_and_adaptation_within_source_licensor_rights",
+      "noncommercial_required": true,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": true,
+      "private_adaptation_only": false
+    },
+    "https://creativecommons.org/licenses/by-nc-sa/4.0/": {
+      "decision": "conditional",
+      "family": "by-nc-sa",
+      "version": "4.0",
+      "legalcode_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en",
+      "reason": "licensed_reproduction_and_adaptation_within_source_licensor_rights",
+      "noncommercial_required": true,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": true,
+      "private_adaptation_only": false
+    },
+    "https://creativecommons.org/licenses/by-nc/2.0/de/": {
+      "decision": "conditional",
+      "family": "by-nc",
+      "version": "2.0",
+      "legalcode_url": "https://creativecommons.org/licenses/by-nc/2.0/de/legalcode.de",
+      "reason": "licensed_reproduction_and_adaptation_within_source_licensor_rights",
+      "noncommercial_required": true,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": false,
+      "private_adaptation_only": false
+    },
+    "https://creativecommons.org/licenses/by-nc/3.0/": {
+      "decision": "conditional",
+      "family": "by-nc",
+      "version": "3.0",
+      "legalcode_url": "https://creativecommons.org/licenses/by-nc/3.0/legalcode",
+      "reason": "licensed_reproduction_and_adaptation_within_source_licensor_rights",
+      "noncommercial_required": true,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": false,
+      "private_adaptation_only": false
+    },
+    "https://creativecommons.org/licenses/by-nc/3.0/de/": {
+      "decision": "conditional",
+      "family": "by-nc",
+      "version": "3.0",
+      "legalcode_url": "https://creativecommons.org/licenses/by-nc/3.0/de/legalcode",
+      "reason": "licensed_reproduction_and_adaptation_within_source_licensor_rights",
+      "noncommercial_required": true,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": false,
+      "private_adaptation_only": false
+    },
+    "https://creativecommons.org/licenses/by-nd/3.0/de/": {
+      "decision": "hold",
+      "family": "by-nd",
+      "version": "3.0",
+      "legalcode_url": "https://creativecommons.org/licenses/by-nd/3.0/de/legalcode",
+      "reason": "older_ND_private_adaptation_not_adjudicated",
+      "noncommercial_required": false,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": false,
+      "private_adaptation_only": true
+    },
+    "https://creativecommons.org/licenses/by-nd/4.0/": {
+      "decision": "conditional",
+      "family": "by-nd",
+      "version": "4.0",
+      "legalcode_url": "https://creativecommons.org/licenses/by-nd/4.0/legalcode.en",
+      "reason": "licensed_reproduction_and_adaptation_within_source_licensor_rights",
+      "noncommercial_required": false,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": false,
+      "private_adaptation_only": true
+    },
+    "https://creativecommons.org/licenses/by-sa/3.0/": {
+      "decision": "conditional",
+      "family": "by-sa",
+      "version": "3.0",
+      "legalcode_url": "https://creativecommons.org/licenses/by-sa/3.0/legalcode",
+      "reason": "licensed_reproduction_and_adaptation_within_source_licensor_rights",
+      "noncommercial_required": false,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": true,
+      "private_adaptation_only": false
+    },
+    "https://creativecommons.org/licenses/by-sa/3.0/de/": {
+      "decision": "conditional",
+      "family": "by-sa",
+      "version": "3.0",
+      "legalcode_url": "https://creativecommons.org/licenses/by-sa/3.0/de/legalcode",
+      "reason": "licensed_reproduction_and_adaptation_within_source_licensor_rights",
+      "noncommercial_required": false,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": true,
+      "private_adaptation_only": false
+    },
+    "https://creativecommons.org/licenses/by-sa/3.0/us/": {
+      "decision": "conditional",
+      "family": "by-sa",
+      "version": "3.0",
+      "legalcode_url": "https://creativecommons.org/licenses/by-sa/3.0/us/legalcode",
+      "reason": "licensed_reproduction_and_adaptation_within_source_licensor_rights",
+      "noncommercial_required": false,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": true,
+      "private_adaptation_only": false
+    },
+    "https://creativecommons.org/licenses/by-sa/4.0/": {
+      "decision": "conditional",
+      "family": "by-sa",
+      "version": "4.0",
+      "legalcode_url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.en",
+      "reason": "licensed_reproduction_and_adaptation_within_source_licensor_rights",
+      "noncommercial_required": false,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": true,
+      "private_adaptation_only": false
+    },
+    "https://creativecommons.org/licenses/by/2.0/be/": {
+      "decision": "conditional",
+      "family": "by",
+      "version": "2.0",
+      "legalcode_url": "https://creativecommons.org/licenses/by/2.0/be/legalcode.fr",
+      "reason": "licensed_reproduction_and_adaptation_within_source_licensor_rights",
+      "noncommercial_required": false,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": false,
+      "private_adaptation_only": false
+    },
+    "https://creativecommons.org/licenses/by/3.0/": {
+      "decision": "conditional",
+      "family": "by",
+      "version": "3.0",
+      "legalcode_url": "https://creativecommons.org/licenses/by/3.0/legalcode",
+      "reason": "licensed_reproduction_and_adaptation_within_source_licensor_rights",
+      "noncommercial_required": false,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": false,
+      "private_adaptation_only": false
+    },
+    "https://creativecommons.org/licenses/by/3.0/de/": {
+      "decision": "conditional",
+      "family": "by",
+      "version": "3.0",
+      "legalcode_url": "https://creativecommons.org/licenses/by/3.0/de/legalcode",
+      "reason": "licensed_reproduction_and_adaptation_within_source_licensor_rights",
+      "noncommercial_required": false,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": false,
+      "private_adaptation_only": false
+    },
+    "https://creativecommons.org/licenses/by/4.0/": {
+      "decision": "conditional",
+      "family": "by",
+      "version": "4.0",
+      "legalcode_url": "https://creativecommons.org/licenses/by/4.0/legalcode.en",
+      "reason": "licensed_reproduction_and_adaptation_within_source_licensor_rights",
+      "noncommercial_required": false,
+      "no_sharing_required": true,
+      "sharealike_if_future_sharing": false,
+      "private_adaptation_only": false
+    }
+  },
+  "evidence_basis": {
+    "source": "Per-record current URI in full official Open Data export, bound via source media URL and original full raw license hash. Representative pages corroborate URI meaning only, never fill absent per-record current evidence.",
+    "reference": "Only SUPPORTED_CC0_FIELD_MATCH with raw_exact or technical_normalization_exact is allowed for reference use. Source license never grants separate abstract rights.",
+    "cc0_source": "No released transcript has a CC0 field match; no source allow route inferred.",
+    "attribution": "Each output row retains author, title, URL, raw license prose, exact source URI and transformation notice. Missing author/title/URL held conservatively.",
+    "raw_conflicts": "Preserve full raw label/prose and hashes; authoritative current URI resolves use route; flag known BY-SA versus noncommercial-prose conflicts without editing release.",
+    "doi": "A DOI difference is a traceable flag, not proof of wrong source; source media URL and current record binding remain primary.",
+    "future_sharing": "No source, reference, normalized text or expressive derived text sharing approved here. SA/ND/NC/version obligations must be re-reviewed for a changed use.",
+    "authority_limit": "Conditional decisions address only licensed rights the source licensor can grant. No universal legal or third-party-rights clearance, statutory-exception claim, media download or public redistribution permission.",
+    "primary_research_report": "../plans/reports/research-261019-1507-tib-rights-provenance-report.md"
+  },
+  "model_outputs_consulted": false,
+  "reference_quality_independent": true,
+  "missing_unmapped_nonopen_action": "hold",
+  "older_nd_action": "hold_pending_version_analysis",
+  "nd4_basis": "CC BY-ND 4.0 and BY-NC-ND 4.0 section 2(a)(1)(B) permits producing/reproducing adapted material privately without Share; NC additionally constrained to noncommercial.",
+  "sharealike_basis": "Current use makes no public distribution/public performance; SA conditions for shared adaptations remain deferred, not removed.",
+  "decision_definition": {
+    "allow": "Direct field grant with supported use; references only in current data.",
+    "conditional": "Verified per-record source CC URI and fulfilled recorded constraints for this narrow local use.",
+    "hold": "Insufficient current grant, unsupported version, missing attribution or text evidence."
+  },
+  "primary_terms_review_261019": {
+    "additional_live_review": true,
+    "cc_by_2_be_legalcode": "https://creativecommons.org/licenses/by/2.0/be/legalcode.fr",
+    "cc_by_nc_2_de_legalcode": "https://creativecommons.org/licenses/by-nc/2.0/de/legalcode.de",
+    "cc_by_nc_sa_3_us": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "cc_by_nc_sa_3_us_note": "Official deed accessed; legalcode tool URL inaccessible. Current private noncommercial adaptation supported by deed; no public sharing adjudication.",
+    "nd4": "https://creativecommons.org/licenses/by-nd/4.0/legalcode.en",
+    "nc_nd4": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.en",
+    "other_versioned_legalcodes": "BY3, BY3-DE, SA3, SA3-DE, SA3-US, NC3, NC3-DE, NC-SA3, NC-SA3-DE, SA4, NC-SA4 accessed via primary CC. Existing report supports BY4."
+  }
+}

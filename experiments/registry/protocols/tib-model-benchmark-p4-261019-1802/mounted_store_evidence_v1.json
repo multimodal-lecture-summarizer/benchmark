@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "scope": "mounted Drive write/fsync/rename/readback and downloaded artifact restore",
+  "write_readback_verified": true,
+  "restore_verified": true,
+  "remote_source_use_authorized": true,
+  "cross_session_survival_verified": false,
+  "storage_capacity_bytes": null,
+  "mounted_probe_files": [
+    {
+      "path": "checkpoints/bart/store-probe-1792414297451205651.json",
+      "sha256": "3b7d17ef7a61bcc4f71577659612ac503ee9472ff9f9dbf40e2d37674b4554e0"
+    },
+    {
+      "path": "checkpoints/led/store-probe-1792414388574561382.json",
+      "sha256": "bee1d6590a64f15a54e88ec849dbafc310b7879ae35fcdfa8124a4768e779f0a"
+    },
+    {
+      "path": "checkpoints/led/store-probe-1792415490572328993.json",
+      "sha256": "dee23bb328615a878a7f9ca2bc8e174ea8566dbca3a41cd42140cabc8d787edd"
+    },
+    {
+      "path": "checkpoints/qwen3/store-probe-1792414400647504083.json",
+      "sha256": "31882ec16085e15fa84b0e117a039476972fd7380fc4c7143e9d32339dc5b07c"
+    },
+    {
+      "path": "checkpoints/store-probe-1792414280968354354.json",
+      "sha256": "82b6df40e635bc8c560e3340d9530a3f469e7181afb622a2d63035e51fe24c93"
+    },
+    {
+      "path": "checkpoints/store-probe-1792415476736110814.json",
+      "sha256": "83e3e7858f5a004b7600bd169fe71686256c43254ba6bcfe685ca14d8f563383"
+    }
+  ],
+  "probe_count": 6,
+  "private_raw_evidence_root": "research-data/tib-p4-261019-1802/returned-evidence-20261019T131542Z",
+  "scope_limit": "Successful probes and local envelope restore do not establish fresh-runtime checkpoint reuse or storage quota."
+}

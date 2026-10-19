@@ -1,0 +1,18 @@
+{
+  "state": "USER_DECISION_FROZEN_LOCAL_VERIFIED_RUNTIME_BINDING_PENDING",
+  "tests": {
+    "focused_passed": 39,
+    "duration_seconds": 0.41
+  },
+  "verified_links": 9,
+  "classifier_only_not_standalone_context_hash_validator": true,
+  "CPU_native_EOS_NA": true,
+  "model_or_scorer_run": false,
+  "raw_receipts_unchanged": true,
+  "future_runner_policy_binding_verified": false,
+  "evidence_files_sha256": {
+    "intermediate_acceptance_policy_v1.json": "83f23ca8c8ae725cbed33674be9c062fe7cc757e4131aa0c306d6cef176a48ff",
+    "development_decision_v1.json": "ce45caf3b27cf4a1eb42daf1c2cf603f2d5913528c54461d776afb26ceb4f758",
+    "derived_p41_acceptance_view_v1.json": "9d92adf4e657cdd5b2b2cc7a2b6db4f1b4ba1c5c58496d6d7a007049ec47b92c"
+  }
+}

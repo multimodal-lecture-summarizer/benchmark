@@ -1,0 +1,459 @@
+{
+  "state": "offline_integrity_and_adapter_replay_PASS",
+  "audit_script_sha256": "7a022374f8722a56f757a5489aa00f3ccc221d9183f2f771b0110f92a16a95a0",
+  "input_zip_sha256": "46ad3fb937f7089839865e7a35ff14a63e90f9f0b15490c156d715c7265e7abb",
+  "input_zip_bytes": 266844,
+  "private_archive_copy": "research-data/tib-p4-261019-1802/returned-evidence-20261019T131542Z/tib-p4-evidence-20261019T131542Z.zip",
+  "private_extracted_root": "research-data/tib-p4-261019-1802/returned-evidence-20261019T131542Z",
+  "manifest_files_verified": 159,
+  "json_envelopes_verified": 155,
+  "log_files_verified": 4,
+  "neural_outputs_replayed": 9,
+  "model_inference_rerun": false,
+  "new_reference_scoring": false,
+  "successful_capacity": [
+    {
+      "candidate_id": "bart",
+      "receipt": "checkpoints/bart/capacity-1792414297487990724.json",
+      "receipt_sha256": "975c83e6b7c4d4f7b60632484a2eadfa401770e284f03b5bff4022ce48268c29",
+      "bundle_versions": [
+        "v2"
+      ],
+      "logs": [
+        "checkpoints/bart-session-1792414282514263246.log"
+      ],
+      "T4_capacity_verified_three_records": true,
+      "fresh_generation_only": true,
+      "device_name": "Tesla T4",
+      "dtype": "torch.float16",
+      "packages": {
+        "huggingface-hub": "0.36.2",
+        "numpy": "2.1.3",
+        "torch": "2.11.0+cu130",
+        "transformers": "4.57.6"
+      },
+      "profile_sha256": "5b07c5bd27fbdf8f384274e4ab553a664fda52399302252573bb49270e991902",
+      "model_id": "facebook/bart-large-cnn",
+      "model_revision": "37f520fa929c961707657b28798b30c003dd100b",
+      "peak_process_rss_bytes": 3209842688,
+      "cuda_peak_allocated_bytes": 1078640128,
+      "cuda_peak_reserved_bytes": 1157627904,
+      "load_seconds": 23.343507716000033,
+      "total_wall_seconds": 81.75328493400002,
+      "native_calls": {
+        "final": 3,
+        "map": 31,
+        "reduce": 5
+      },
+      "native_reserve_hits": {
+        "final": 0,
+        "map": 0,
+        "reduce": 0
+      },
+      "terminal_not_EOS": {
+        "final": 0,
+        "map": 0,
+        "reduce": 0
+      },
+      "records": [
+        {
+          "record_id": "valid:644",
+          "source_words": 197,
+          "source_tokens": 227,
+          "stratum": "short",
+          "raw_words": 61,
+          "delivered_words": 61,
+          "capped": false,
+          "forced_word_boundary": false,
+          "calls": {
+            "final": 1
+          },
+          "wall_seconds": 2.223482441000044,
+          "cpu_seconds": 1.613331403,
+          "artifact": "checkpoints/bart/valid-644-1792414297487990724.json",
+          "sha256": "b54efb6b6dc96ebfc532646544e33fd90b526d3ec5eac72af34344f9418268d3",
+          "full_source_lineage_replayed": true,
+          "native_bounds_replayed": true
+        },
+        {
+          "record_id": "valid:341",
+          "source_words": 4321,
+          "source_tokens": 4967,
+          "stratum": "medium",
+          "raw_words": 44,
+          "delivered_words": 44,
+          "capped": false,
+          "forced_word_boundary": false,
+          "calls": {
+            "final": 1,
+            "map": 5,
+            "reduce": 1
+          },
+          "wall_seconds": 8.655339163999997,
+          "cpu_seconds": 8.379968071,
+          "artifact": "checkpoints/bart/valid-341-1792414297487990724.json",
+          "sha256": "e91ebfb69e21e569f24a98937ffc24b4c916db55c23ad179dcdc71c204cdfa16",
+          "full_source_lineage_replayed": true,
+          "native_bounds_replayed": true
+        },
+        {
+          "record_id": "valid:886",
+          "source_words": 20409,
+          "source_tokens": 25895,
+          "stratum": "long",
+          "raw_words": 63,
+          "delivered_words": 63,
+          "capped": false,
+          "forced_word_boundary": false,
+          "calls": {
+            "final": 1,
+            "map": 26,
+            "reduce": 4
+          },
+          "wall_seconds": 47.41443050800001,
+          "cpu_seconds": 45.640145367,
+          "artifact": "checkpoints/bart/valid-886-1792414297487990724.json",
+          "sha256": "56403c1e4ca062f0d5beb3964bfd8434f92dc9c49a4d76a51983ed8cb7933893",
+          "full_source_lineage_replayed": true,
+          "native_bounds_replayed": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "led",
+      "receipt": "checkpoints/led/capacity-1792415490815698217.json",
+      "receipt_sha256": "5125975d2afdb4ab91b8b20f79996fffdf07cd1634ae28eda127bb0da961fea6",
+      "bundle_versions": [
+        "v3"
+      ],
+      "logs": [
+        "checkpoints/led-session-1792415478301480689.log"
+      ],
+      "T4_capacity_verified_three_records": true,
+      "fresh_generation_only": true,
+      "device_name": "Tesla T4",
+      "dtype": "torch.float16",
+      "packages": {
+        "huggingface-hub": "0.36.2",
+        "numpy": "2.1.3",
+        "torch": "2.11.0+cu130",
+        "transformers": "4.57.6"
+      },
+      "profile_sha256": "3acaae418fd0d32a4586fa408c2fb1bcc24cf53e7e990a9c1d1c52a12dd2a246",
+      "model_id": "allenai/led-large-16384-arxiv",
+      "model_revision": "0f8b26971c44af9d4e21edd17ccb5e000f22dac1",
+      "peak_process_rss_bytes": 3599323136,
+      "cuda_peak_allocated_bytes": 1856134144,
+      "cuda_peak_reserved_bytes": 2325741568,
+      "load_seconds": 27.619176478999975,
+      "total_wall_seconds": 108.303502546,
+      "native_calls": {
+        "final": 3,
+        "map": 9,
+        "reduce": 2
+      },
+      "native_reserve_hits": {
+        "final": 0,
+        "map": 4,
+        "reduce": 0
+      },
+      "terminal_not_EOS": {
+        "final": 0,
+        "map": 4,
+        "reduce": 0
+      },
+      "records": [
+        {
+          "record_id": "valid:644",
+          "source_words": 197,
+          "source_tokens": 227,
+          "stratum": "short",
+          "raw_words": 234,
+          "delivered_words": 234,
+          "capped": false,
+          "forced_word_boundary": false,
+          "calls": {
+            "final": 1
+          },
+          "wall_seconds": 6.816576672000053,
+          "cpu_seconds": 4.930360486999998,
+          "artifact": "checkpoints/led/valid-644-1792415490815698217.json",
+          "sha256": "8bd750eec388f8e958a907c6441aa14909573190c018098b1b519716cfdc7cdc",
+          "full_source_lineage_replayed": true,
+          "native_bounds_replayed": true
+        },
+        {
+          "record_id": "valid:341",
+          "source_words": 4321,
+          "source_tokens": 4967,
+          "stratum": "medium",
+          "raw_words": 211,
+          "delivered_words": 211,
+          "capped": false,
+          "forced_word_boundary": false,
+          "calls": {
+            "final": 1,
+            "map": 2,
+            "reduce": 1
+          },
+          "wall_seconds": 17.56370155799999,
+          "cpu_seconds": 17.061839224000003,
+          "artifact": "checkpoints/led/valid-341-1792415490815698217.json",
+          "sha256": "8a1c0f89f3311faaedfab344f3e3c85a50975172d9b6bd6cc671f39f05abb3a8",
+          "full_source_lineage_replayed": true,
+          "native_bounds_replayed": true
+        },
+        {
+          "record_id": "valid:886",
+          "source_words": 20409,
+          "source_tokens": 25895,
+          "stratum": "long",
+          "raw_words": 126,
+          "delivered_words": 126,
+          "capped": false,
+          "forced_word_boundary": false,
+          "calls": {
+            "final": 1,
+            "map": 7,
+            "reduce": 1
+          },
+          "wall_seconds": 56.001049056,
+          "cpu_seconds": 55.224181566999995,
+          "artifact": "checkpoints/led/valid-886-1792415490815698217.json",
+          "sha256": "ede1703a41f2309df980e7fd5bc3804205869c606df0d407137082c1a9541e04",
+          "full_source_lineage_replayed": true,
+          "native_bounds_replayed": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "qwen3",
+      "receipt": "checkpoints/qwen3/capacity-1792414400687501832.json",
+      "receipt_sha256": "5afef3b6a469d5d2999c116ac0fe842f5abd06c72a789d0659c9726f2196ebd0",
+      "bundle_versions": [
+        "v2"
+      ],
+      "logs": [
+        "checkpoints/qwen3-session-1792414395787962864.log"
+      ],
+      "T4_capacity_verified_three_records": true,
+      "fresh_generation_only": true,
+      "device_name": "Tesla T4",
+      "dtype": "torch.float16",
+      "packages": {
+        "huggingface-hub": "0.36.2",
+        "numpy": "2.1.3",
+        "torch": "2.11.0+cu130",
+        "transformers": "4.57.6"
+      },
+      "profile_sha256": "0e74de398ad425c90a1786427075133c18887268bc7ce58e7e1b3968400ff1c6",
+      "model_id": "Qwen/Qwen3-4B",
+      "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "peak_process_rss_bytes": 6316843008,
+      "cuda_peak_allocated_bytes": 12582168064,
+      "cuda_peak_reserved_bytes": 14204010496,
+      "load_seconds": 165.31069736400002,
+      "total_wall_seconds": 446.95415506399996,
+      "native_calls": {
+        "final": 3,
+        "map": 9,
+        "reduce": 2
+      },
+      "native_reserve_hits": {
+        "final": 0,
+        "map": 6,
+        "reduce": 2
+      },
+      "terminal_not_EOS": {
+        "final": 0,
+        "map": 6,
+        "reduce": 2
+      },
+      "records": [
+        {
+          "record_id": "valid:644",
+          "source_words": 197,
+          "source_tokens": 228,
+          "stratum": "short",
+          "raw_words": 94,
+          "delivered_words": 94,
+          "capped": false,
+          "forced_word_boundary": false,
+          "calls": {
+            "final": 1
+          },
+          "wall_seconds": 8.656284493000044,
+          "cpu_seconds": 7.544044284000009,
+          "artifact": "checkpoints/qwen3/valid-644-1792414400687501832.json",
+          "sha256": "a655c9d95544527f457cc3f0c6b3e41d79d058f7ad6ee1fac6d35bf9f1429f14",
+          "full_source_lineage_replayed": true,
+          "native_bounds_replayed": true
+        },
+        {
+          "record_id": "valid:341",
+          "source_words": 4321,
+          "source_tokens": 4997,
+          "stratum": "medium",
+          "raw_words": 136,
+          "delivered_words": 136,
+          "capped": false,
+          "forced_word_boundary": false,
+          "calls": {
+            "final": 1,
+            "map": 2,
+            "reduce": 1
+          },
+          "wall_seconds": 65.66088262300002,
+          "cpu_seconds": 65.389044887,
+          "artifact": "checkpoints/qwen3/valid-341-1792414400687501832.json",
+          "sha256": "eaaef8ab5c4c7a51ad27c8d8c6d7a48c172c40a7ea2966082e0059f440f46cb1",
+          "full_source_lineage_replayed": true,
+          "native_bounds_replayed": true
+        },
+        {
+          "record_id": "valid:886",
+          "source_words": 20409,
+          "source_tokens": 25431,
+          "stratum": "long",
+          "raw_words": 153,
+          "delivered_words": 153,
+          "capped": false,
+          "forced_word_boundary": false,
+          "calls": {
+            "final": 1,
+            "map": 7,
+            "reduce": 1
+          },
+          "wall_seconds": 207.164763633,
+          "cpu_seconds": 206.618470147,
+          "artifact": "checkpoints/qwen3/valid-886-1792414400687501832.json",
+          "sha256": "fe3728e73f7d8c26e04397cf6ea9c5d0ca1be3170a49d6e9dcdc7731cb5e9d56",
+          "full_source_lineage_replayed": true,
+          "native_bounds_replayed": true
+        }
+      ]
+    }
+  ],
+  "historical_failures": [
+    {
+      "receipt": "checkpoints/led/capacity-1792414388613396545.json",
+      "sha256": "50890080a2e73dcba75faf8c19603d738551bf8098a68f7b530e3adebfe3dc7e",
+      "candidate_id": "led",
+      "error": "OSError: Error no file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /root/.cache/huggingface/hub/models--allenai--led-large-16384-arxiv/snapshots/0f8b26971c44af9d4e21edd17ccb5e000f22dac1.",
+      "wall_seconds": 5.434483532000002
+    }
+  ],
+  "schema_version": 1,
+  "scope": "actual T4 technical capacity on three presealed pilot sources only",
+  "decision": "SCOPED_CAPACITY_PASS_NOT_FORMAL_ADMISSION",
+  "cpu_outputs_replayed": [
+    {
+      "candidate_id": "lead3",
+      "record_id": "valid:644",
+      "artifact": "checkpoints/cpu-smoke-1792414282450986281.json",
+      "wall_seconds": 0.0003289840000206823,
+      "delivered_words": 61,
+      "capped": false
+    },
+    {
+      "candidate_id": "lexrank",
+      "record_id": "valid:644",
+      "artifact": "checkpoints/cpu-smoke-1792414282450986281.json",
+      "wall_seconds": 1.213893042000052,
+      "delivered_words": 197,
+      "capped": false
+    },
+    {
+      "candidate_id": "lead3",
+      "record_id": "valid:341",
+      "artifact": "checkpoints/cpu-smoke-1792414282450986281.json",
+      "wall_seconds": 0.0014986310000040248,
+      "delivered_words": 33,
+      "capped": false
+    },
+    {
+      "candidate_id": "lexrank",
+      "record_id": "valid:341",
+      "artifact": "checkpoints/cpu-smoke-1792414282450986281.json",
+      "wall_seconds": 0.009414141000036125,
+      "delivered_words": 350,
+      "capped": false
+    },
+    {
+      "candidate_id": "lead3",
+      "record_id": "valid:886",
+      "artifact": "checkpoints/cpu-smoke-1792414282450986281.json",
+      "wall_seconds": 0.007810813999981292,
+      "delivered_words": 28,
+      "capped": false
+    },
+    {
+      "candidate_id": "lexrank",
+      "record_id": "valid:886",
+      "artifact": "checkpoints/cpu-smoke-1792414282450986281.json",
+      "wall_seconds": 0.23769188699998267,
+      "delivered_words": 350,
+      "capped": false
+    },
+    {
+      "candidate_id": "lead3",
+      "record_id": "valid:644",
+      "artifact": "checkpoints/cpu-smoke-1792415478270378664.json",
+      "wall_seconds": 0.00038187100000186547,
+      "delivered_words": 61,
+      "capped": false
+    },
+    {
+      "candidate_id": "lexrank",
+      "record_id": "valid:644",
+      "artifact": "checkpoints/cpu-smoke-1792415478270378664.json",
+      "wall_seconds": 1.4045594919999758,
+      "delivered_words": 197,
+      "capped": false
+    },
+    {
+      "candidate_id": "lead3",
+      "record_id": "valid:341",
+      "artifact": "checkpoints/cpu-smoke-1792415478270378664.json",
+      "wall_seconds": 0.0014891320000174346,
+      "delivered_words": 33,
+      "capped": false
+    },
+    {
+      "candidate_id": "lexrank",
+      "record_id": "valid:341",
+      "artifact": "checkpoints/cpu-smoke-1792415478270378664.json",
+      "wall_seconds": 0.009352134999971895,
+      "delivered_words": 350,
+      "capped": false
+    },
+    {
+      "candidate_id": "lead3",
+      "record_id": "valid:886",
+      "artifact": "checkpoints/cpu-smoke-1792415478270378664.json",
+      "wall_seconds": 0.007723012999974799,
+      "delivered_words": 28,
+      "capped": false
+    },
+    {
+      "candidate_id": "lexrank",
+      "record_id": "valid:886",
+      "artifact": "checkpoints/cpu-smoke-1792415478270378664.json",
+      "wall_seconds": 0.09588684800002056,
+      "delivered_words": 350,
+      "capped": false
+    }
+  ],
+  "development_cohort_path": "experiments/registry/datasets/tib-text-model-benchmark-v1/qualification-261019-1703/development_cohort.json",
+  "development_cohort_sha256": "9ac17534e95be7ebde78291546f215201d02b053b21b99aae8d96e4f23a411db",
+  "profile_proposal_file_sha256": "b27b3cf8a242ba7478665122ff3cdac977749c848dc982a7f3f22383fc7c9c1b",
+  "independent_official_weight_bytes_verification": false,
+  "model_asset_binding_note": "Returned asset hashes retained; pinned tokenizer hashes match local verified assets. Model weight files were not downloaded independently for this audit.",
+  "cpu_replay_numeric_tolerance": "LexRank sentence_scores rel_tol1e-12/abs_tol1e-15; selected sentences, summaries, delivery metadata and hashes match exactly",
+  "full_pilot40_completed": false,
+  "selection300_executed": false,
+  "final523_executed": false,
+  "full_study_budget_verified": false,
+  "final_test_sealed": false,
+  "audit_result_sha256": "cd797ffbd5f8995ce710dafa966635f1086b8201f217ed779989911d8a212cd1"
+}

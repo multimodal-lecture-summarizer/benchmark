@@ -1,0 +1,492 @@
+{
+  "snapshot_revision": "e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee",
+  "records": 9103,
+  "counts": {
+    "train": {
+      "n": 7282,
+      "source_words": {
+        "n": 7282,
+        "p50": 4702.0,
+        "p90": 8961.900000000001,
+        "p95": 10517.55,
+        "max": 30044.0
+      },
+      "reference_words": {
+        "n": 7282,
+        "p50": 110.0,
+        "p90": 275.0,
+        "p95": 346.0,
+        "max": 909.0
+      },
+      "compression_ratio": {
+        "n": 7276,
+        "p50": 41.8939150401837,
+        "p90": 167.2121578099839,
+        "p95": 259.95577956989246,
+        "max": 7589.0
+      },
+      "source_native_tokens": {
+        "bart": {
+          "n": 7282,
+          "p50": 5596.0,
+          "p90": 10770.0,
+          "p95": 12590.849999999995,
+          "max": 37558.0
+        },
+        "led": {
+          "n": 7282,
+          "p50": 5596.0,
+          "p90": 10770.0,
+          "p95": 12590.849999999995,
+          "max": 37558.0
+        },
+        "qwen3": {
+          "n": 7282,
+          "p50": 5584.5,
+          "p90": 10777.500000000004,
+          "p95": 12555.8,
+          "max": 37455.0
+        }
+      },
+      "illustrative_window_lower_bounds": {
+        "bart": {
+          "n": 7282,
+          "p50": 6.0,
+          "p90": 11.0,
+          "p95": 13.0,
+          "max": 37.0
+        },
+        "led": {
+          "n": 7282,
+          "p50": 2.0,
+          "p90": 3.0,
+          "p95": 4.0,
+          "max": 10.0
+        },
+        "qwen3": {
+          "n": 7282,
+          "p50": 2.0,
+          "p90": 3.0,
+          "p95": 4.0,
+          "max": 10.0
+        }
+      },
+      "genre": {
+        "Lecture": 665,
+        "Conference/Talk": 6364,
+        "Workshop/Interactive Format\nLecture": 80,
+        "Webinar/Tutorial": 109,
+        "Conference/Talk\nLecture": 25,
+        "Lecture\nConference/Talk": 21,
+        "Conference/Talk\nWorkshop/Interactive Format": 13,
+        "Conference/Talk\nLecture\nWorkshop/Interactive Format": 3,
+        "Lecture\nConference/Talk\nResearch Data\nVideo Abstract": 1,
+        "UNKNOWN": 1
+      },
+      "subject": {
+        "Engineering": 46,
+        "Computer Science": 5872,
+        "Chemistry": 279,
+        "Mathematics": 292,
+        "Economics and Social Sciences": 56,
+        "Physics": 200,
+        "Mathematics\nPhysics": 88,
+        "Architecture": 22,
+        "Information Science": 112,
+        "Linguistics": 76,
+        "Computer Science\nMathematics": 35,
+        "Computer Science\nInformation Science": 42,
+        "Educational Science": 2,
+        "Computer Science\nEarth Sciences\nEnvironmental Sciences / Ecology\nOther": 1,
+        "Computer Science\nMathematics\nPhysics": 39,
+        "Life Sciences\nMathematics\nPhysics": 18,
+        "Life Sciences\nMathematics": 27,
+        "Economics and Social Sciences\nEnvironmental Sciences / Ecology": 8,
+        "Computer Science\nEconomics and Social Sciences\nMathematics": 4,
+        "Medicine": 28,
+        "Other": 5,
+        "Earth Sciences\nEnvironmental Sciences / Ecology": 7,
+        "Life Sciences": 5,
+        "Environmental Sciences / Ecology": 4,
+        "Life Sciences\nChemistry\nEngineering": 5,
+        "Earth Sciences": 1,
+        "Chemistry\nEngineering": 1,
+        "Philosophy": 1,
+        "Earth Sciences\nComputer Science": 1,
+        "Information Science\nMathematics": 1,
+        "UNKNOWN": 1,
+        "Computer Science\nEarth Sciences": 1,
+        "Life Sciences\nChemistry\nEarth Sciences": 1,
+        "History": 1
+      },
+      "language": {
+        "en": 7282
+      },
+      "anomalies": {
+        "transcript_segment_mismatch": 358,
+        "replacement_character_no_automatic_repair": 26,
+        "overlapping_segment_time": 48,
+        "invalid_segment_time": 83,
+        "empty_reference": 6
+      }
+    },
+    "valid": {
+      "n": 910,
+      "source_words": {
+        "n": 910,
+        "p50": 4566.5,
+        "p90": 9026.200000000003,
+        "p95": 10731.099999999999,
+        "max": 27966.0
+      },
+      "reference_words": {
+        "n": 910,
+        "p50": 110.0,
+        "p90": 253.10000000000002,
+        "p95": 311.8499999999997,
+        "max": 771.0
+      },
+      "compression_ratio": {
+        "n": 909,
+        "p50": 42.405660377358494,
+        "p90": 145.2757647058824,
+        "p95": 241.11144385026722,
+        "max": 1809.6666666666667
+      },
+      "source_native_tokens": {
+        "bart": {
+          "n": 910,
+          "p50": 5470.5,
+          "p90": 10842.7,
+          "p95": 12724.299999999996,
+          "max": 34599.0
+        },
+        "led": {
+          "n": 910,
+          "p50": 5470.5,
+          "p90": 10842.7,
+          "p95": 12724.299999999996,
+          "max": 34599.0
+        },
+        "qwen3": {
+          "n": 910,
+          "p50": 5477.5,
+          "p90": 10901.4,
+          "p95": 12706.05,
+          "max": 34564.0
+        }
+      },
+      "illustrative_window_lower_bounds": {
+        "bart": {
+          "n": 910,
+          "p50": 6.0,
+          "p90": 11.0,
+          "p95": 13.0,
+          "max": 34.0
+        },
+        "led": {
+          "n": 910,
+          "p50": 2.0,
+          "p90": 3.0,
+          "p95": 4.0,
+          "max": 9.0
+        },
+        "qwen3": {
+          "n": 910,
+          "p50": 2.0,
+          "p90": 3.0,
+          "p95": 4.0,
+          "max": 10.0
+        }
+      },
+      "genre": {
+        "Conference/Talk": 810,
+        "Lecture": 71,
+        "Webinar/Tutorial": 10,
+        "Workshop/Interactive Format\nLecture": 11,
+        "Conference/Talk\nLecture": 2,
+        "Conference/Talk\nWorkshop/Interactive Format": 2,
+        "Lecture\nConference/Talk": 3,
+        "Conference/Talk\nLecture\nWorkshop/Interactive Format": 1
+      },
+      "subject": {
+        "Computer Science": 719,
+        "Engineering": 6,
+        "Physics": 24,
+        "Information Science": 21,
+        "Mathematics": 35,
+        "Life Sciences\nMathematics": 2,
+        "Computer Science\nMathematics": 6,
+        "Chemistry": 22,
+        "Mathematics\nPhysics": 25,
+        "Linguistics": 11,
+        "Environmental Sciences / Ecology": 2,
+        "Economics and Social Sciences": 11,
+        "Computer Science\nMathematics\nPhysics": 8,
+        "Educational Science": 1,
+        "Computer Science\nInformation Science": 4,
+        "Computer Science\nEarth Sciences\nEnvironmental Sciences / Ecology\nOther": 1,
+        "Computer Science\nMathematics\nEngineering": 1,
+        "Other": 3,
+        "Architecture": 6,
+        "Medicine": 1,
+        "Life Sciences\nMathematics\nPhysics": 1
+      },
+      "language": {
+        "en": 910
+      },
+      "anomalies": {
+        "transcript_segment_mismatch": 51,
+        "overlapping_segment_time": 12,
+        "replacement_character_no_automatic_repair": 1,
+        "unordered_segment_time": 2,
+        "invalid_segment_time": 4,
+        "empty_reference": 1
+      }
+    },
+    "test": {
+      "n": 911,
+      "source_words": {
+        "n": 911,
+        "p50": 4728.0,
+        "p90": 9005.0,
+        "p95": 10411.5,
+        "max": 20107.0
+      },
+      "reference_words": {
+        "n": 911,
+        "p50": 106.0,
+        "p90": 269.0,
+        "p95": 345.5,
+        "max": 787.0
+      },
+      "compression_ratio": {
+        "n": 910,
+        "p50": 42.92498514557338,
+        "p90": 175.07021276595745,
+        "p95": 279.150625,
+        "max": 1778.75
+      },
+      "source_native_tokens": {
+        "bart": {
+          "n": 911,
+          "p50": 5618.0,
+          "p90": 10822.0,
+          "p95": 12468.0,
+          "max": 23118.0
+        },
+        "led": {
+          "n": 911,
+          "p50": 5618.0,
+          "p90": 10822.0,
+          "p95": 12468.0,
+          "max": 23118.0
+        },
+        "qwen3": {
+          "n": 911,
+          "p50": 5564.0,
+          "p90": 10895.0,
+          "p95": 12467.0,
+          "max": 23001.0
+        }
+      },
+      "illustrative_window_lower_bounds": {
+        "bart": {
+          "n": 911,
+          "p50": 6.0,
+          "p90": 11.0,
+          "p95": 13.0,
+          "max": 23.0
+        },
+        "led": {
+          "n": 911,
+          "p50": 2.0,
+          "p90": 3.0,
+          "p95": 4.0,
+          "max": 6.0
+        },
+        "qwen3": {
+          "n": 911,
+          "p50": 2.0,
+          "p90": 3.0,
+          "p95": 4.0,
+          "max": 6.0
+        }
+      },
+      "genre": {
+        "Conference/Talk": 792,
+        "Lecture": 91,
+        "Webinar/Tutorial": 18,
+        "Conference/Talk\nWorkshop/Interactive Format": 3,
+        "Workshop/Interactive Format\nLecture": 5,
+        "Conference/Talk\nLecture": 1,
+        "Lecture\nConference/Talk": 1
+      },
+      "subject": {
+        "Computer Science": 728,
+        "Chemistry": 34,
+        "Mathematics": 41,
+        "Information Science": 15,
+        "Physics": 22,
+        "Linguistics": 14,
+        "Engineering": 7,
+        "Architecture": 6,
+        "Mathematics\nPhysics": 9,
+        "Economics and Social Sciences": 8,
+        "Computer Science\nEconomics and Social Sciences\nMathematics": 2,
+        "Computer Science\nMathematics\nPhysics": 5,
+        "Computer Science\nMathematics": 5,
+        "Environmental Sciences / Ecology": 3,
+        "Life Sciences\nMathematics": 3,
+        "Earth Sciences\nEnvironmental Sciences / Ecology": 2,
+        "Computer Science\nInformation Science": 4,
+        "Medicine": 1,
+        "Life Sciences": 1,
+        "Life Sciences\nMathematics\nPhysics": 1
+      },
+      "language": {
+        "en": 911
+      },
+      "anomalies": {
+        "transcript_segment_mismatch": 39,
+        "invalid_segment_time": 11,
+        "overlapping_segment_time": 10,
+        "empty_reference": 1,
+        "unordered_segment_time": 1
+      }
+    }
+  },
+  "tokenizers": {
+    "retrieved_at_utc": "2026-10-19T10:07:34.829477+00:00",
+    "tokenizers": {
+      "bart": {
+        "repo": "facebook/bart-large-cnn",
+        "revision": "37f520fa929c961707657b28798b30c003dd100b",
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "c6cb642aec929b65f514ee0ec7c04f9de19f705c143491577ecd8b7cc923c6ed",
+            "bytes": 1585,
+            "url": "https://huggingface.co/facebook/bart-large-cnn/resolve/37f520fa929c961707657b28798b30c003dd100b/config.json"
+          },
+          {
+            "file": "merges.txt",
+            "sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+            "bytes": 456318,
+            "url": "https://huggingface.co/facebook/bart-large-cnn/resolve/37f520fa929c961707657b28798b30c003dd100b/merges.txt"
+          },
+          {
+            "file": "tokenizer.json",
+            "sha256": "847bbeab6174d66a88898f729d52fa8d355fafe1bea101cf960dd404581df70e",
+            "bytes": 1355863,
+            "url": "https://huggingface.co/facebook/bart-large-cnn/resolve/37f520fa929c961707657b28798b30c003dd100b/tokenizer.json"
+          },
+          {
+            "file": "vocab.json",
+            "sha256": "9e7f63c2d15d666b52e21d250d2e513b87c9b713cfa6987a82ed89e5e6e50655",
+            "bytes": 898823,
+            "url": "https://huggingface.co/facebook/bart-large-cnn/resolve/37f520fa929c961707657b28798b30c003dd100b/vocab.json"
+          }
+        ],
+        "model_weights_downloaded": false,
+        "effective_backend_sha256": "20306cc7e6234a067fed0f6ca8da3c5311a023dd72c34378a500c69ed4a48e2f"
+      },
+      "led": {
+        "repo": "allenai/led-large-16384-arxiv",
+        "revision": "0f8b26971c44af9d4e21edd17ccb5e000f22dac1",
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "6f8e4b8c142d8eb31d92b5041d1af544536fc2e1fadbce93e31fdf0ea69e3ce7",
+            "bytes": 1291,
+            "url": "https://huggingface.co/allenai/led-large-16384-arxiv/resolve/0f8b26971c44af9d4e21edd17ccb5e000f22dac1/config.json"
+          },
+          {
+            "file": "merges.txt",
+            "sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+            "bytes": 456318,
+            "url": "https://huggingface.co/allenai/led-large-16384-arxiv/resolve/0f8b26971c44af9d4e21edd17ccb5e000f22dac1/merges.txt"
+          },
+          {
+            "file": "special_tokens_map.json",
+            "sha256": "c611b1f7d416eb001ee4f293d903ea8c88e703463f1d403f1866a0352743fd00",
+            "bytes": 772,
+            "url": "https://huggingface.co/allenai/led-large-16384-arxiv/resolve/0f8b26971c44af9d4e21edd17ccb5e000f22dac1/special_tokens_map.json"
+          },
+          {
+            "file": "tokenizer_config.json",
+            "sha256": "76a85b39973e02a6454c2743a905edafff47f47b587fe2f8631f92d8e9acba8e",
+            "bytes": 27,
+            "url": "https://huggingface.co/allenai/led-large-16384-arxiv/resolve/0f8b26971c44af9d4e21edd17ccb5e000f22dac1/tokenizer_config.json"
+          },
+          {
+            "file": "vocab.json",
+            "sha256": "06b4d46c8e752d410213d9548eb27a54db70fda0319b6271fb8d59dead5e1cab",
+            "bytes": 898822,
+            "url": "https://huggingface.co/allenai/led-large-16384-arxiv/resolve/0f8b26971c44af9d4e21edd17ccb5e000f22dac1/vocab.json"
+          }
+        ],
+        "model_weights_downloaded": false,
+        "effective_backend_sha256": "20306cc7e6234a067fed0f6ca8da3c5311a023dd72c34378a500c69ed4a48e2f"
+      },
+      "qwen3": {
+        "repo": "Qwen/Qwen3-4B",
+        "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "8ba006f74fecfaaeb392872a60f4a480e7ec9860153d2e1b769ec81f9a147f8a",
+            "bytes": 726,
+            "url": "https://huggingface.co/Qwen/Qwen3-4B/resolve/1cfa9a7208912126459214e8b04321603b3df60c/config.json"
+          },
+          {
+            "file": "merges.txt",
+            "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "bytes": 1671853,
+            "url": "https://huggingface.co/Qwen/Qwen3-4B/resolve/1cfa9a7208912126459214e8b04321603b3df60c/merges.txt"
+          },
+          {
+            "file": "tokenizer.json",
+            "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "bytes": 11422654,
+            "url": "https://huggingface.co/Qwen/Qwen3-4B/resolve/1cfa9a7208912126459214e8b04321603b3df60c/tokenizer.json"
+          },
+          {
+            "file": "tokenizer_config.json",
+            "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+            "bytes": 9732,
+            "url": "https://huggingface.co/Qwen/Qwen3-4B/resolve/1cfa9a7208912126459214e8b04321603b3df60c/tokenizer_config.json"
+          },
+          {
+            "file": "vocab.json",
+            "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+            "bytes": 2776833,
+            "url": "https://huggingface.co/Qwen/Qwen3-4B/resolve/1cfa9a7208912126459214e8b04321603b3df60c/vocab.json"
+          }
+        ],
+        "model_weights_downloaded": false,
+        "effective_backend_sha256": "a63080b4b30dc861fe1b0e420c53a241304dc81aff3d9bb315e6e33e2a1ab794"
+      }
+    }
+  },
+  "global_output_word_cap": null,
+  "generation_executed": false,
+  "normalization": "NFC/whitespace; raw text, hashes and offset runs retained",
+  "window_counts_scope": "illustrative lower bounds; no wrappers/overlap/reduction; not measured T4 calls",
+  "illustrative_source_token_capacity_upper_bounds": {
+    "bart": 1022,
+    "led": 4094,
+    "qwen3": 3840
+  },
+  "source_word_cutpoints_train_tertiles": [
+    3635,
+    6131
+  ],
+  "output_cap_train_reference_evidence": {
+    "n": 7282,
+    "p50": 110.0,
+    "p90": 275.0,
+    "p95": 346.0,
+    "max": 909.0
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "version": "tib-intermediate-acceptance-v1",
+  "scope": "prospective; do not rewrite historical raw statuses",
+  "usable_text": "decoded string containing at least one Unicode letter or number",
+  "warnings": [
+    "no_terminal_eos",
+    "token_budget_exhausted",
+    "output_reserve_reached",
+    "possible_forced_terminal_eos",
+    "repetition",
+    "sentence_ending"
+  ],
+  "warning_effect": "retain valid output and denominator; no automatic retry",
+  "quality_claim": "automatic flags do not establish factuality or semantic coverage",
+  "schema_version": 1,
+  "state": "FROZEN_BEFORE_SELECTION_BY_USER_DECISION",
+  "applies_to": "all five pipelines; native node requirements apply to neural generation",
+  "source_user_decision": "2026-10-19 user finalizes completed_with_warning and bounded development close",
+  "technical_usability_is_not_semantic_quality": true,
+  "technical_contracts": [
+    "decoded Unicode text has letter/number content",
+    "native IDs/count/output reserves and required config/EOS telemetry valid",
+    "context/wrapper/padding and hash/source-lineage independently validated by caller",
+    "delivered output is usable and within common word cap"
+  ],
+  "statuses": [
+    "completed",
+    "completed_with_warning",
+    "failed"
+  ],
+  "successful_generation_statuses": [
+    "completed",
+    "completed_with_warning"
+  ],
+  "warning_outputs_enter_scoring": true,
+  "warnings_retained_in_common_coverage": true,
+  "attempted_denominator_never_drops_failures_or_warnings": true,
+  "generation_failure_quality": "NULL, no zero imputation",
+  "scorer_failure_axis": "separate per-metric status/coverage; do not change generation acceptance",
+  "semantic_clone_diagnostics_cause_automatic_failure": false,
+  "automatic_retries": false,
+  "score_based_retry_or_exclusion": false,
+  "historical_raw_status_rewrite": false,
+  "runtime_gate": "future pilot/selection runner must bind this policy and classifier hashes before execution",
+  "extractive_controls": "validate algorithm/source/output contracts and delivery cap; native EOS rules N/A",
+  "classifier_path": "experiments/scripts/tib_benchmark_acceptance.py",
+  "classifier_sha256": "f98a2a6bae3cf8619fea35be9e98321254e8d0e505a2d86d42cf6068a8465578",
+  "diagnostic_rules_path": "experiments/scripts/tib_benchmark_generation_telemetry.py",
+  "diagnostic_rules_sha256": "9429f4e2aaad98809318c66d20a6c8fa869911ba3d2d21297ca490695f13d23a"
+}

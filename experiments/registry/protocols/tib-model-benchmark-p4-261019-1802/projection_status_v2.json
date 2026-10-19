@@ -1,0 +1,5 @@
+{
+  "state": "REQUIRED_NO_START",
+  "reason": "Missing gate receipt path",
+  "final_cohort_sealed": false
+}

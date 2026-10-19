@@ -1,0 +1,22 @@
+{
+  "state": "executed_data_eda_profile_dependent_gaps_open",
+  "records": 9103,
+  "covered": {
+    "canonical_raw_normalized_hash_offsets": "eda/canonical_records.jsonl.gz; all native splits",
+    "source_reference_compression_quantiles": "eda/summary.json; p50/p90/p95/max; zero denominators excluded explicitly",
+    "genre_subject_language_segment_flags": "eda/summary.json; split counts, observed metadata only",
+    "native_source_token_counts": "three pinned tokenizers; full canonical source, special tokens excluded",
+    "reference_policy": "A=0/B=9095/C=8; historical225 flags reviewed as uncertain B; no gold claim",
+    "source_groups": "22 confirmed edges, 9082 components; approximate retrieval, recall unknown",
+    "rights_and_exposure": "9103 ledger decisions; data and role denominators reported separately",
+    "development_roles": "40 pilot/300 selection sealed; known group and ID overlap zero"
+  },
+  "open": {
+    "wrapper_aware_context_and_windows": "P4 frozen prompts, special tokens, output reserve, overlap, reduction and measured capacity required",
+    "lexrank_lead3_sentence_cpu_tails": "P4 splitter profiles and CPU profiling not executed",
+    "global_output_word_cap": "UNSET; train/development reference distribution exists, product constraint and ratification pending",
+    "final_cohort_diagnostics": "P4 budget and validation selection required; final test not sealed",
+    "reference_A_only": "not estimable because A=0; report unavailable rather than fabricate sensitivity"
+  },
+  "generation_executed": false
+}

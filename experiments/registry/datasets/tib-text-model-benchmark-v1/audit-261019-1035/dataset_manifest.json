@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "study_id": "tib-text-model-benchmark-v1",
+  "dataset": "gigant/tib",
+  "requested_revision": "e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee",
+  "revision_evidence": "local_directory_name_only_not_remote_verified",
+  "state": "audit_unsealed",
+  "g1_status": "HOLD",
+  "expected_counts": {
+    "train": 7282,
+    "valid": 910,
+    "test": 911
+  },
+  "observed_counts": {
+    "train": null,
+    "valid": null,
+    "test": null
+  },
+  "source_bytes_modified": false,
+  "network_access": false,
+  "canonicalization_executed": false,
+  "selected_ids": [],
+  "card": {
+    "path": "C:\\Users\\hung\\.cache\\huggingface\\hub\\datasets--gigant--tib\\blobs\\9d994baad192f3f6c6a4d64d9e7d838183d2aba4",
+    "sha256": "77cffb2ca71d4cb4ee06b9242251de912dd0375156f7f4ba010816fc646a1678",
+    "bytes": 6870
+  },
+  "splits": {
+    "train": {
+      "files": [],
+      "expected_rows": 7282,
+      "observed_rows": null
+    },
+    "valid": {
+      "files": [],
+      "expected_rows": 910,
+      "observed_rows": null
+    },
+    "test": {
+      "files": [],
+      "expected_rows": 911,
+      "observed_rows": null
+    }
+  },
+  "blocking_reasons": [
+    "unverified_split_count:train",
+    "unverified_split_count:valid",
+    "unverified_split_count:test",
+    "remote_revision_and_file_hash_binding_unverified",
+    "transcript_and_abstract_reuse_rights_unreviewed",
+    "paper_source_accounting_pending"
+  ]
+}

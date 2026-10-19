@@ -1,0 +1,13 @@
+{
+  "state": "T4_runtime_connected_mount_attempt_not_completed_OAuth_client_approval_required",
+  "client": "Google Drive for desktop",
+  "auto_review_rejection": "Continue would grant or reauthorize access-sensitive Drive permission; specific client/scope approval missing",
+  "approval_requested": true,
+  "approval_received": false,
+  "workaround_attempted": false,
+  "notebook_first_mount_cell_shows_error": true,
+  "error_message_not_extracted": true,
+  "model_generation_T4_verified": false,
+  "formal_benchmark_executed": false,
+  "next_step": "After explicit approval, complete OAuth and rerun mount/technical notebook; retain original failed attempt evidence"
+}

@@ -1,0 +1,13 @@
+{
+  "version": "p41-generation-diagnostics-v1",
+  "word_regex": "\\b\\w+\\b",
+  "normalization": "unicode_casefold",
+  "ngram_size": 4,
+  "repetition_count_threshold": 3,
+  "repetition_rule": "casefold_unicode_word_4gram_count_gte_3_v1",
+  "sentence_completion_rule": "flag_missing_terminal_sentence_punctuation_v1",
+  "eos_observed_rule": "last_generated_token_is_valid_eos",
+  "token_budget_exhausted_rule": "generated_count_equals_reserve_and_no_terminal_eos",
+  "forced_eos_rule": "at_reserve_and_last_token_in_configured_forced_eos_ids_is_candidate_only",
+  "acceptance_effect": "diagnostic_only_no_retry_or_rejection"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "state": "P41_PREPARED_LOCAL_TESTED_NOT_EXECUTED_ON_T4",
+  "tests": {
+    "passed": 129,
+    "duration_seconds": 39.84,
+    "scope": "all test_tib_benchmark*.py focused modules; no full app test suite"
+  },
+  "model_weights_loaded": false,
+  "new_model_inference_executed": false,
+  "scorer_inference_executed": false,
+  "new_T4_trial_evidence": false,
+  "default_trials": 7,
+  "maximum_trials_including_deferred": 8,
+  "unique_source_records": 3,
+  "word_cap": 350,
+  "cohorts_unchanged": {
+    "pilot": 40,
+    "selection": 300,
+    "eligible_test": 523
+  },
+  "formal_intermediate_acceptance_policy_frozen": false,
+  "selection_executed": false,
+  "final_test_sealed": false,
+  "package_readback_verified": true,
+  "native_tokenizer_plans_verified": 24,
+  "baseline_sha_readback_verified": true,
+  "review_findings_resolved": [
+    "runtime identity complete inference bindings",
+    "failed call cost visible in attempts/events",
+    "deferred512 receipt identity/source binding"
+  ],
+  "files_sha256": {
+    "experiments/registry/protocols/tib-model-benchmark-p4-261019-1802/development-trials-261019-2122/package_receipt.json": "f6b35f1b993a14635f45cc7f69bed314e2f4f370018b928b99e07ac811f65257",
+    "experiments/registry/protocols/tib-model-benchmark-p4-261019-1802/development-trials-261019-2122/development_trials.json": "e536278f416f3db110f7bed736ff7e6b69111eedae6c6d1e9f23c14cc10b3cae",
+    "experiments/registry/protocols/tib-model-benchmark-p4-261019-1802/development-trials-261019-2122/baseline_freeze.json": "1508c1606edae36f4a6e77cfd7532fa8d740ce9d14236056625a842a2770c325",
+    "experiments/registry/protocols/tib-model-benchmark-p4-261019-1802/development-trials-261019-2122/quality_rules.json": "ac2ec4a97f7e58e4658ddd430e98abb2c18a5d9223bb0b0a51a257c0ec8d8609",
+    "experiments/registry/protocols/tib-model-benchmark-p4-261019-1802/development-trials-261019-2122/native_window_plans.json": "79c7f89ae0131690626b7ed1dc133fd542537955eb9061dc5725154ec7c01cc0",
+    "experiments/registry/protocols/tib-model-benchmark-p4-261019-1802/bart_reduction_diagnostic_v1.json": "edf91594cfa56e38b733b57f3fa3cde4951c8eba4b4d8e42d457cc2d1485343b"
+  },
+  "zip": "research-data/tib-p41-261019-2122/tib-p41-development-261019.zip",
+  "zip_sha256": "51593e37d868ba05d5fb1c2dfb2ef8eaa95467ca8b6ff1ddeac56b7dd3efefa8",
+  "notebook": "experiments/notebooks/tib-p41-development-colab-261019.ipynb",
+  "notebook_sha256": "2a437a6f2886b73b7d74c543dfc8f9237060ef6710fd3c5753aeabcfe7ffd6b4",
+  "next_required_evidence": "User-run actual T4 development trial archive before output/profile decisions"
+}

@@ -1,0 +1,114 @@
+{
+  "retrieved_at_utc": "2026-10-19T08:10:30.382517+00:00",
+  "revision": "e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee",
+  "api_url": "https://huggingface.co/api/datasets/gigant/tib/revision/e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee?blobs=true",
+  "api_response_sha256": "566293cb3a9b2eb969e483980556760e04e36a52ca507b8ac619684b040880f8",
+  "files": [
+    {
+      "file": ".gitattributes",
+      "bytes": 2265,
+      "sha256": "79deb409a995d414d9b2e89b5e16a5f46fcaa7596c63242dd0bd72311a422458",
+      "expected_lfs_sha256": null,
+      "git_blob_sha1": "f4f3945bd7150d3e12988485c42da1f8c29c59f8",
+      "expected_git_blob": "f4f3945bd7150d3e12988485c42da1f8c29c59f8",
+      "verified": true,
+      "url": "https://huggingface.co/datasets/gigant/tib/resolve/e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee/.gitattributes"
+    },
+    {
+      "file": "README.md",
+      "bytes": 6870,
+      "sha256": "77cffb2ca71d4cb4ee06b9242251de912dd0375156f7f4ba010816fc646a1678",
+      "expected_lfs_sha256": null,
+      "git_blob_sha1": "9d994baad192f3f6c6a4d64d9e7d838183d2aba4",
+      "expected_git_blob": "9d994baad192f3f6c6a4d64d9e7d838183d2aba4",
+      "verified": true,
+      "url": "https://huggingface.co/datasets/gigant/tib/resolve/e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee/README.md"
+    },
+    {
+      "file": "data/test-00000-of-00001.parquet",
+      "bytes": 50073586,
+      "sha256": "bbe5db9f176e465c5b2514757d48ef92ce3a1d9873ba9e64c015b50172f5b9a6",
+      "expected_lfs_sha256": "bbe5db9f176e465c5b2514757d48ef92ce3a1d9873ba9e64c015b50172f5b9a6",
+      "git_blob_sha1": null,
+      "expected_git_blob": "418aa86ba51f761c5b342d8fb970a084efd39695",
+      "verified": true,
+      "url": "https://huggingface.co/datasets/gigant/tib/resolve/e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee/data/test-00000-of-00001.parquet"
+    },
+    {
+      "file": "data/train-00000-of-00002.parquet",
+      "bytes": 202729841,
+      "sha256": "fb6cb53550b168a8d9b639995f10d34a247d7abdf57e5d84139ce429c7447cc3",
+      "expected_lfs_sha256": "fb6cb53550b168a8d9b639995f10d34a247d7abdf57e5d84139ce429c7447cc3",
+      "git_blob_sha1": null,
+      "expected_git_blob": "67f26cf10951df1b6fe714816d10763b4df8bce0",
+      "verified": true,
+      "url": "https://huggingface.co/datasets/gigant/tib/resolve/e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee/data/train-00000-of-00002.parquet"
+    },
+    {
+      "file": "data/train-00001-of-00002.parquet",
+      "bytes": 199464552,
+      "sha256": "333f221a6d9ce28bd8c3e7c265c284b94de1530c7717a2ffc2627864d3bca48e",
+      "expected_lfs_sha256": "333f221a6d9ce28bd8c3e7c265c284b94de1530c7717a2ffc2627864d3bca48e",
+      "git_blob_sha1": null,
+      "expected_git_blob": "35bac0585f8ff77b8a048aaf272ca0c2c852d1f7",
+      "verified": true,
+      "url": "https://huggingface.co/datasets/gigant/tib/resolve/e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee/data/train-00001-of-00002.parquet"
+    },
+    {
+      "file": "data/valid-00000-of-00001.parquet",
+      "bytes": 49651159,
+      "sha256": "d5c6b26e8730e39f5e1dae6d261ec6bdca00304f90a0c96f05fef2695cfb8497",
+      "expected_lfs_sha256": "d5c6b26e8730e39f5e1dae6d261ec6bdca00304f90a0c96f05fef2695cfb8497",
+      "git_blob_sha1": null,
+      "expected_git_blob": "8c8185f846e3e61b4f7511351e833da0a779e4ad",
+      "verified": true,
+      "url": "https://huggingface.co/datasets/gigant/tib/resolve/e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee/data/valid-00000-of-00001.parquet"
+    },
+    {
+      "file": "sources/tib-opendata.html",
+      "url": "https://av.tib.eu/opendata",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "bytes": 68159,
+      "sha256": "fee361a30c48452908b31349f75f63c81cba82412b42174b320b82b461a6ecac",
+      "verified_http_fetch_only": true
+    },
+    {
+      "file": "sources/tib-faq.html",
+      "url": "https://av.tib.eu/faq",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "bytes": 559071,
+      "sha256": "6cf50c4181dad27154c5c9b8ba46b9d8a53bac4d2e75dceac1eae95814fbb086",
+      "verified_http_fetch_only": true
+    },
+    {
+      "file": "sources/tib-terms.html",
+      "url": "https://av.tib.eu/terms",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "bytes": 34608,
+      "sha256": "bab84e99163877716ef6b7cb0e55e9f39ac2871e7b6a70957bba1be854098478",
+      "verified_http_fetch_only": true
+    },
+    {
+      "file": "sources/hal-paper.html",
+      "url": "https://hal.science/hal-04168911",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 97960,
+      "sha256": "d2e7534ecb5113c1405d9e68f47a453f921235589ff0d4ad924218286547e14d",
+      "verified_http_fetch_only": true
+    },
+    {
+      "file": "sources/hal-paper.pdf",
+      "url": "https://hal.science/hal-04168911/document",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 2938494,
+      "sha256": "3b6cdf70eec79f47cc6af461ddbeb458ff659cca800cc9567ce33770d1b3b0be",
+      "verified_http_fetch_only": true
+    }
+  ],
+  "state": "acquisition_verified_not_rights_or_cohort_seal"
+}

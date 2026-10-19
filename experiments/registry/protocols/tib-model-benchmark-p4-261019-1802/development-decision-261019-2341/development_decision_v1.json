@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "state": "DECODE_SEARCH_BRANCH_CLOSED_BY_USER",
+  "default_additional_search_trials": 0,
+  "neural_priority_trial_ids": [
+    "bart-control",
+    "led-ngram3",
+    "qwen-r384"
+  ],
+  "candidate_universe_unchanged": [
+    "lead3",
+    "lexrank",
+    "bart",
+    "led",
+    "qwen3"
+  ],
+  "preferred_profiles": [
+    {
+      "profile_id": "lead3",
+      "candidate_id": "lead3",
+      "generation_profile": {
+        "candidate_id": "lead3",
+        "role": "fixed_control",
+        "config_search": false,
+        "generation_device": "cpu",
+        "checkpoint": null,
+        "algorithm": "first_three_complete_canonical_sentence_units_in_source_order_then_common_delivery",
+        "input_coverage_claim": "full_source_available_first_three_output_selection",
+        "runtime_admitted": false
+      },
+      "generation_profile_sha256": "09ccef3bb10d4947d17ed83430fe665175212548904fa41da2c6b8cb7c3c1de2",
+      "role": "retained_CPU_control_or_family",
+      "formal_admitted": false
+    },
+    {
+      "profile_id": "lexrank",
+      "candidate_id": "lexrank",
+      "generation_profile": {
+        "candidate_id": "lexrank",
+        "role": "model_family",
+        "config_search": true,
+        "generation_device": "cpu",
+        "checkpoint": null,
+        "algorithm": "all_sentence_TFIDF_threshold_graph_PageRank_source_order_output",
+        "tfidf": {
+          "lowercase": true,
+          "stop_words": "sklearn_english",
+          "norm": "l2",
+          "token_pattern": "(?u)\\b\\w+\\b"
+        },
+        "graph": {
+          "cosine_threshold": 0.1,
+          "self_edges": false,
+          "dangling": "uniform",
+          "damping": 0.85,
+          "tolerance_L1": 1e-09,
+          "max_iterations": 1000,
+          "declared_dense_graph_memory_limit_bytes": 536870912
+        },
+        "ties": "ascending_source_sentence_index",
+        "raw_selection": "ranked_complete_sentences_while_word_budget_fits_then_source_order; if_none_fit_top_ranked_sentence_for_explicit_common_forced_boundary",
+        "runtime_admitted": false
+      },
+      "generation_profile_sha256": "5b1c55d748bb12e6f85c6ddeb2d9386fa9d7dc76197f6463b0e3506a7538f206",
+      "role": "retained_CPU_control_or_family",
+      "formal_admitted": false
+    },
+    {
+      "profile_id": "bart-control",
+      "candidate_id": "bart",
+      "generation_profile": {
+        "candidate_id": "bart",
+        "role": "model_family",
+        "config_search": true,
+        "generation_device": "cuda",
+        "checkpoint": "facebook/bart-large-cnn",
+        "revision": "37f520fa929c961707657b28798b30c003dd100b",
+        "architecture": "encoder_decoder",
+        "dtype": "float16",
+        "encoder_cap": 1024,
+        "decoder_cap": 1024,
+        "decoder_prefix_tokens": 1,
+        "map_max_new_tokens_including_EOS": 256,
+        "reduce_max_new_tokens_including_EOS": 256,
+        "final_max_new_tokens_including_EOS": 768,
+        "padding_multiple": 1,
+        "decode": {
+          "do_sample": false,
+          "num_beams": 4
+        },
+        "attention_backend": "eager_proposal_needs_runtime_verification",
+        "runtime_admitted": false,
+        "weights_loaded": false
+      },
+      "generation_profile_sha256": "5b07c5bd27fbdf8f384274e4ab553a664fda52399302252573bb49270e991902",
+      "role": "priority_for_next_controlled_evaluation_not_quality_winner",
+      "formal_admitted": false
+    },
+    {
+      "profile_id": "led-ngram3",
+      "candidate_id": "led",
+      "generation_profile": {
+        "candidate_id": "led",
+        "role": "model_family",
+        "config_search": true,
+        "generation_device": "cuda",
+        "checkpoint": "allenai/led-large-16384-arxiv",
+        "revision": "0f8b26971c44af9d4e21edd17ccb5e000f22dac1",
+        "architecture": "encoder_decoder",
+        "dtype": "float16",
+        "encoder_cap": 4096,
+        "decoder_cap": 1024,
+        "decoder_prefix_tokens": 1,
+        "map_max_new_tokens_including_EOS": 256,
+        "reduce_max_new_tokens_including_EOS": 256,
+        "final_max_new_tokens_including_EOS": 768,
+        "padding_multiple": 1024,
+        "global_attention": "first_nonpadding_wrapped_input_token_only",
+        "decode": {
+          "do_sample": false,
+          "num_beams": 4,
+          "no_repeat_ngram_size": 3
+        },
+        "attention_backend": "eager_proposal_needs_runtime_verification",
+        "runtime_admitted": false,
+        "weights_loaded": false
+      },
+      "generation_profile_sha256": "4e6e81c1437450fab3cffb2a271747f0028cef8d55f8f22f73209930acc7320a",
+      "role": "priority_for_next_controlled_evaluation_not_quality_winner",
+      "formal_admitted": false
+    },
+    {
+      "profile_id": "qwen-r384",
+      "candidate_id": "qwen3",
+      "generation_profile": {
+        "candidate_id": "qwen3",
+        "role": "model_family",
+        "config_search": true,
+        "generation_device": "cuda",
+        "checkpoint": "Qwen/Qwen3-4B",
+        "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+        "architecture": "causal",
+        "dtype": "float16",
+        "context_cap": 4096,
+        "map_max_new_tokens_including_EOS": 384,
+        "reduce_max_new_tokens_including_EOS": 384,
+        "final_max_new_tokens_including_EOS": 768,
+        "padding_multiple": 1,
+        "enable_thinking": false,
+        "chat_template": "pinned_template_unique_sentinel_rendered_prefix_suffix_tokenized_separately_original_payload_native_ids_inserted_unchanged",
+        "decode": {
+          "do_sample": true,
+          "temperature": 0.7,
+          "top_p": 0.8,
+          "top_k": 20
+        },
+        "prompts": {
+          "map": "Summarize all important lecture content in this source passage. Return only concise factual notes, without commentary or timestamps.",
+          "reduce": "Combine all the following lecture notes into shorter factual notes. Preserve important content from every input note. Return only the combined notes.",
+          "final": "Write a concise English lecture summary from these notes. Preserve the principal topics and claims. Return only the summary."
+        },
+        "attention_backend": "eager_proposal_needs_runtime_verification",
+        "runtime_admitted": false,
+        "weights_loaded": false
+      },
+      "generation_profile_sha256": "4b3d1721b2c4727b2794f80aba4c073adb527eb7512e8615c1dbdce33164d034",
+      "role": "priority_for_next_controlled_evaluation_not_quality_winner",
+      "formal_admitted": false
+    }
+  ],
+  "formal_admission_finalized": false,
+  "quality_winner_selected": false,
+  "optional_predeclared_trial": {
+    "trial_id": "qwen-r512",
+    "enabled": false,
+    "required": false,
+    "maximum_additional_profiles": 1,
+    "maximum_source_records": 3,
+    "same_presealed_source_ids": [
+      "valid:644",
+      "valid:341",
+      "valid:886"
+    ],
+    "activation": "separate explicit resource review and existing registry/context/headroom checks",
+    "zero_exhaustion_required_for_research_progress": false
+  },
+  "word_cap": 350,
+  "cap_final_lock_pending_pilot_admission": true,
+  "pilot_n": 40,
+  "selection_n": 300,
+  "eligible_test_n": 523,
+  "fallback_order": [
+    523,
+    500,
+    400
+  ],
+  "diagnostics_inside_final_n": 40,
+  "selection_started": false,
+  "final_test_sealed": false,
+  "acceptance_policy_path": "experiments/registry/protocols/tib-model-benchmark-p4-261019-1802/development-decision-261019-2341/intermediate_acceptance_policy_v1.json",
+  "acceptance_policy_sha256": "83f23ca8c8ae725cbed33674be9c062fe7cc757e4131aa0c306d6cef176a48ff",
+  "prior_trial_registry_path": "experiments/registry/protocols/tib-model-benchmark-p4-261019-1802/development-trials-261019-2122/development_trials.json",
+  "prior_trial_registry_sha256": "e536278f416f3db110f7bed736ff7e6b69111eedae6c6d1e9f23c14cc10b3cae",
+  "prior_trial_audit_sha256": "33cf9d55c7d68bb18ea7cfa033eea699c63d26a255ec827f0082a69ea5832a80",
+  "next_sequence": [
+    "formal_runtime_scorer",
+    "fresh_runtime_resume",
+    "pilot40",
+    "admission_scorer_trial_caps_and_budget_freeze",
+    "selection300_two_levels",
+    "final_seal_then523_or_preoutcome500_or400"
+  ],
+  "scope_note": "close experimental search, not P4 completion; old trial/bundle receipts remain immutable"
+}

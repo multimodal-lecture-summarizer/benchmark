@@ -1,0 +1,24 @@
+{
+  "schema_version": 2,
+  "state": "final_implementation_fixtures_pass_actual_neural_probe_pending",
+  "scorer_ready": false,
+  "spec_file": "scorer_spec_v2.json",
+  "spec_sha256": "b83258fab60ee98d6d70e4f3ee2a2fc6f8956f2a8bd95b1a4a6db271a6ac7fdf",
+  "code_sha256": {
+    "experiments/scripts/tib_benchmark_scorer.py": "6e9c3cb5b65f1ea40cf52adef4589e6378a364e7d9ae96dc725a81e60f2d03b9",
+    "experiments/scripts/tib_benchmark_scorer_probe.py": "c71d5098f55ad1396ad5da99e45dd239c8b97d1839d75fe1e2d292d4afc4a9c8",
+    "experiments/scripts/rq2_tib_benchmark_metrics.py": "5ed3e9fbf89d7ac77f41701cb3970db53b638695e50247b702bbe3482f0846b9",
+    "experiments/scripts/rq2_tib_semantic_v2.py": "9e266aeb946a6c00d570735cd5e79f92c2ea100bdf420f6003c6af62044e7b38",
+    "tests/test_tib_benchmark_scorer.py": "eee0ba4ee342ff7abab3158ac96ab778b328eb2a14e3131f17a00513be42b25f",
+    "tests/test_rq2_tib_semantic_v2.py": "d29c0b01831c22925c33c15f6ba0c6bd6941eae3f3d17aba6ab8f698ee7eec0e"
+  },
+  "fixture_pass_count": 19,
+  "fixture_fail_count": 0,
+  "elapsed_seconds": 24.89,
+  "command": "PYTHONPATH=research-data/tib-p4-261019-1802/python-deps python -m pytest tests/test_tib_benchmark_scorer.py tests/test_rq2_tib_semantic_v2.py --basetemp research-data/tib-p4-261019-1802/pytest-scorer-v3 -q",
+  "fixture_scope": "14 new numerical/error/actual ROUGE tests and 5 inherited locally constructed real tiny transformer tests. No actual final pretrained checkpoint evidence.",
+  "probe_help_exit_code": 0,
+  "actual_pinned_checkpoint_probe": null,
+  "selection_start_authorized": false,
+  "previous_receipt_retained": "scorer_implementation_receipt.json"
+}

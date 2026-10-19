@@ -1,0 +1,45 @@
+{
+  "snapshot_revision": "e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee",
+  "opendata_version": "2026-10-19",
+  "opendata_media_rows_scanned": 44254,
+  "released_rows": 9103,
+  "counts": {
+    "opendata_record_found": {
+      "true": 6521,
+      "false": 2582
+    },
+    "doi_matches_export": {
+      "true": 6520,
+      "unknown": 2582,
+      "false": 1
+    },
+    "reference_cc0_match": {
+      "technical_normalization_exact": 3133,
+      "raw_exact": 2459,
+      "no_text_match": 921,
+      "not_in_export": 2582,
+      "empty_reference": 8
+    },
+    "transcript_cc0_match": {
+      "no_text_match": 6521,
+      "not_in_export": 2582
+    },
+    "text_use_status": {
+      "CONDITIONAL_SOURCE_CC_SCOPE_AND_USE": 6503,
+      "HOLD": 2600
+    },
+    "abstract_use_status": {
+      "SUPPORTED_CC0_FIELD_MATCH": 5592,
+      "HOLD": 3511
+    }
+  },
+  "ledger_sha256": "3addfeebfe1807eb3a711d93885b5893051a4a2175a24cc08c58b18cf662177d",
+  "script_sha256": "d6ae66034fb37ca0b6dccf3fb801339b518044cbb5202c67d029cfe4704ce79d",
+  "g1_status": "HOLD_PENDING_REMAINING_FIELD_SCOPE",
+  "normalization": "NFC plus whitespace only, case-sensitive; VTT cue markup removed for transcript comparison",
+  "source_bytes_unchanged": true,
+  "selected_ids": [],
+  "benchmark_executed": false,
+  "doi_normalization": "Trim whitespace; remove literal (DOI) suffix or doi.org resolver prefix; casefold; raw preserved",
+  "supersedes": "field-rights-summary.json: initial conservative raw-DOI comparison did not remove released (DOI) display suffix"
+}

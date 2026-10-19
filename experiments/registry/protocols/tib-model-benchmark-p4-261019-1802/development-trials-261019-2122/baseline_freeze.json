@@ -1,0 +1,17 @@
+{
+  "scope": "immutable P4 baseline, not replaced by development trials",
+  "returned_archive_sha256": "46ad3fb937f7089839865e7a35ff14a63e90f9f0b15490c156d715c7265e7abb",
+  "baseline_capacity_receipt_sha256": "d10b2f2329c5d686bf6a4f77fabdd4def4b4e2408642ea122e514b44dc61267c",
+  "baseline_profile_proposals_sha256": "b27b3cf8a242ba7478665122ff3cdac977749c848dc982a7f3f22383fc7c9c1b",
+  "baseline_notebook_bundles": {
+    "v2": "600fc9734dee141e7881a90812273fb34852d15d88a1d3f8aa6b4570fa7db6b3",
+    "v3": "b3f31aa57692024916c8db05db23b7f2d0d3b9fb72d04c94f9e4adcbcbcf811e"
+  },
+  "raw_baseline_path": "research-data/tib-p4-261019-1802/returned-evidence-20261019T131542Z/tib-p4-evidence-20261019T131542Z.zip",
+  "cohort_sizes": {
+    "pilot": 40,
+    "selection": 300,
+    "eligible_test": 523
+  },
+  "word_cap": 350
+}

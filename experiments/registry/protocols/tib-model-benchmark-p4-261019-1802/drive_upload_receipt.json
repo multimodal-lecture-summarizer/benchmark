@@ -1,0 +1,15 @@
+{
+  "folder_id": "1gQc-iHsdjTCCCrNDiR340sgfTX8mswIn",
+  "folder_url": "https://drive.google.com/drive/folders/1gQc-iHsdjTCCCrNDiR340sgfTX8mswIn",
+  "zip_id": "1QXA5FuDFyTPXDA0B0Vz5q5uCtR1YhCEQ",
+  "zip_bytes": 63206,
+  "notebook_id": "1ONVvp8DShLMeu7IprGbuFiJD0IL3NEj-",
+  "notebook_url": "https://colab.research.google.com/drive/1ONVvp8DShLMeu7IprGbuFiJD0IL3NEj-",
+  "permission_readback": "shared=false; owner-only permissions on folder, ZIP and notebook",
+  "T4_runtime_UI_connected": true,
+  "actual_model_load_or_generation_verified": false,
+  "current_step": "first cell drive.mount waiting Google Drive for desktop OAuth authorization",
+  "auto_review_rejected_continue": true,
+  "approval_request_pending": true,
+  "formal_benchmark_executed": false
+}

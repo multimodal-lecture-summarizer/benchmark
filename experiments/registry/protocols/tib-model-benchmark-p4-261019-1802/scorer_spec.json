@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "scorer_id": "tib_model_benchmark_scorer_v1",
+  "state": "spec_frozen_neural_backend_probe_pending",
+  "scope": "new TIB model benchmark only; historical120 unchanged",
+  "primary_metric": "rougeL_f1",
+  "code_sha256": {
+    "experiments/scripts/tib_benchmark_scorer.py": "0e5cb3152fd98f8c027d316a260868cf5d3ece8d8f0802049501813e17492525",
+    "experiments/scripts/tib_benchmark_scorer_probe.py": "c71d5098f55ad1396ad5da99e45dd239c8b97d1839d75fe1e2d292d4afc4a9c8",
+    "experiments/scripts/rq2_tib_benchmark_metrics.py": "5ed3e9fbf89d7ac77f41701cb3970db53b638695e50247b702bbe3482f0846b9",
+    "experiments/scripts/rq2_tib_semantic_v2.py": "9e266aeb946a6c00d570735cd5e79f92c2ea100bdf420f6003c6af62044e7b38",
+    "tests/test_tib_benchmark_scorer.py": "eee0ba4ee342ff7abab3158ac96ab778b328eb2a14e3131f17a00513be42b25f",
+    "tests/test_rq2_tib_semantic_v2.py": "d29c0b01831c22925c33c15f6ba0c6bd6941eae3f3d17aba6ab8f698ee7eec0e"
+  },
+  "package_pins": {
+    "rouge-score": "0.1.2",
+    "bert-score": "0.3.13",
+    "sentence-transformers": "5.7.0",
+    "transformers": "4.57.6",
+    "torch": "2.6.0+cu124",
+    "numpy": "2.4.6",
+    "nltk": "3.9.4"
+  },
+  "preprocessing": "canonical NFC and whitespace technical normalization upstream; metric receives delivered output/source/reference separately",
+  "rouge": {
+    "implementation": "rouge-score==0.1.2 RougeScorer",
+    "metrics": [
+      "rouge1_f1",
+      "rouge2_f1",
+      "rougeL_f1"
+    ],
+    "use_stemmer": true,
+    "stemmer": "nltk PorterStemmer default mode, tokens length>3",
+    "tokenizer": "official Google default lowercase ASCII [a-z0-9], punctuation to spaces; no stopwords",
+    "rougeL": "whole-sequence LCS, not rougeLsum",
+    "scale": "0..1"
+  },
+  "bertscore": {
+    "metric_id_native": "bertscore_f1_native_xlmr17_v1",
+    "metric_id_long": "bertscore_f1_window_extension_xlmr17_v1",
+    "combined_output_key": "bertscore_f1",
+    "model": "FacebookAI/xlm-roberta-large",
+    "model_revision": "c23d21b0620b635a76227c604d44e43a9f0ee389",
+    "tokenizer_revision": "c23d21b0620b635a76227c604d44e43a9f0ee389",
+    "use_fast_tokenizer": true,
+    "num_layers": 17,
+    "idf": false,
+    "idf_fit_ids": [],
+    "idf_fit_policy": "no corpus fit; no train/validation/test statistics",
+    "rescale_with_baseline": false,
+    "native_max_sequence_tokens": 512,
+    "long_input": "project extension, not official full-context BERTScore: direct content token IDs in nonoverlapping 510-token windows with wrappers, global greedy token cosine P/R and harmonic F1",
+    "wrappers": "kept as alignment targets with zero aggregation weight, including each long window; content unk/mask retained",
+    "truncation": false,
+    "claim_limit": "native/window equivalence pending actual pinned backend probe; long windows not equivalent full context"
+  },
+  "source_similarity": {
+    "metric_id": "source_sentence_similarity_v1",
+    "role": "diagnostic similarity, not factuality/entailment and not claimed exact Ye et al. reproduction",
+    "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+    "model_revision": "4328cf26390c98c5e3c738b4460a05b95f4911f5",
+    "tokenizer_revision": "4328cf26390c98c5e3c738b4460a05b95f4911f5",
+    "formula": "mean_summary_sentence_max_source_sentence_cosine",
+    "sentence_splitter": "rq2_tib_benchmark_metrics.sentences: Latin .!? followed by whitespace; CJK punctuation; newline",
+    "pooling": "full pinned SentenceTransformer module pipeline; each long sentence direct-token-ID windows; content-token-weighted mean of window sentence vectors then L2",
+    "max_seq_length": "from pinned sentence_bert_config.json; must bind actual value in ready receipt",
+    "window_stride": "capacity, no overlap, every original content token exactly once",
+    "source_coverage": "all sentences streamed batch1; no topN/source truncation",
+    "cosine_range": "-1..1; negative values retained"
+  },
+  "runtime_proposal": {
+    "device": "cpu",
+    "batch_size": 1,
+    "dtype": "float32",
+    "inference_mode": true,
+    "model_eval": true,
+    "generator_gpu_claim": false,
+    "measured_scorer_capacity": false
+  },
+  "failure_policy": {
+    "empty_invalid_source_reference_or_output": "all quality NULL, explicit reason; selected denominator unchanged",
+    "backend_metric_error": "affected metrics NULL; independent successful lexical metrics retained",
+    "nonfinite": "NULL failure; no zero imputation"
+  },
+  "readiness_required": [
+    "pinned model and tokenizer files with complete hash manifests",
+    "actual native/window equivalence and long-input probes",
+    "numeric actual max_seq_length and full model module config bindings",
+    "scorer resource and storage budget",
+    "runtime/profile receipt matches spec package/code/assets"
+  ],
+  "official_sources": [
+    "https://pypi.org/project/rouge-score/0.1.2/",
+    "https://github.com/google-research/google-research/tree/master/rouge",
+    "https://github.com/Tiiiger/bert_score",
+    "https://huggingface.co/FacebookAI/xlm-roberta-large/commit/c23d21b0620b635a76227c604d44e43a9f0ee389",
+    "https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/commit/4328cf26390c98c5e3c738b4460a05b95f4911f5"
+  ]
+}

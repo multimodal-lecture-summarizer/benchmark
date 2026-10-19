@@ -1,0 +1,195 @@
+{
+  "policy_sha256": "71e2748b8347b573e5e63a5a2c1915e6ea1b2afb1d39bc2d4c14d335978d6f4f",
+  "records": 9103,
+  "split_counts": {
+    "train": 7282,
+    "valid": 910,
+    "test": 911
+  },
+  "candidate_pairs_checked": 2854654,
+  "historical_pairs_checked": 2658,
+  "accepted_edges": 22,
+  "groups": 9082,
+  "non_singleton_records": 37,
+  "component_record_size_distribution": {
+    "1": 9066,
+    "2": 24,
+    "3": 9,
+    "4": 4
+  },
+  "omitted_common_sketch_postings": 8,
+  "known_three_edges_reproduced": true,
+  "near_recall": "unknown; sketch retrieval not exhaustive; known-dependent grouping only",
+  "automatic_exclusions": 0,
+  "runtime_seconds": 370.11,
+  "fingerprint_bytes": 391793384,
+  "script_sha256": "7fb4c427c50ec8551e363c0568d48c430c7dcfb786a911ed8124c8e223c51252",
+  "accepted_reason_counts": {
+    "confirmed_near_transcript": 22
+  },
+  "accepted_edge_split_counts": {
+    "train/train": 13,
+    "train/valid": 4,
+    "test/train": 4,
+    "test/valid": 1
+  },
+  "component_size_distribution": {
+    "1": 9066,
+    "2": 12,
+    "3": 3,
+    "4": 1
+  },
+  "largest_components": [
+    [
+      "train:1889",
+      "train:40",
+      "train:4375",
+      "valid:896"
+    ],
+    [
+      "test:782",
+      "train:2341",
+      "valid:433"
+    ],
+    [
+      "train:1615",
+      "train:5583",
+      "train:704"
+    ],
+    [
+      "train:4985",
+      "train:5895",
+      "train:6172"
+    ],
+    [
+      "test:123",
+      "train:5567"
+    ],
+    [
+      "test:834",
+      "train:1983"
+    ],
+    [
+      "test:854",
+      "train:1139"
+    ],
+    [
+      "train:1029",
+      "train:5240"
+    ],
+    [
+      "train:1579",
+      "train:5267"
+    ],
+    [
+      "train:171",
+      "valid:491"
+    ],
+    [
+      "train:2936",
+      "train:3145"
+    ],
+    [
+      "train:3524",
+      "train:6086"
+    ],
+    [
+      "train:3589",
+      "train:7272"
+    ],
+    [
+      "train:3806",
+      "valid:646"
+    ],
+    [
+      "train:4299",
+      "train:5956"
+    ],
+    [
+      "train:561",
+      "train:6583"
+    ]
+  ],
+  "cross_split_components": 7,
+  "source_word_count_quantiles": {
+    "p0": 51.0,
+    "p50": 4842.0,
+    "p90": 9333.8,
+    "p95": 10942.299999999997,
+    "p99": 14205.739999999994,
+    "p100": 31519.0
+  },
+  "status": "completed",
+  "completed": true,
+  "known_historical_three_edges": [
+    {
+      "left_id": "train:2341",
+      "right_id": "valid:433",
+      "historical_queue": true,
+      "shared_fivegrams": 264,
+      "left_fivegrams": 668,
+      "right_fivegrams": 444,
+      "jaccard": 0.3113207547169811,
+      "containment_shorter": 0.5945945945945946,
+      "accepted": true,
+      "reasons": [
+        "confirmed_near_transcript"
+      ]
+    },
+    {
+      "left_id": "train:2341",
+      "right_id": "test:782",
+      "historical_queue": true,
+      "shared_fivegrams": 282,
+      "left_fivegrams": 668,
+      "right_fivegrams": 477,
+      "jaccard": 0.3267670915411356,
+      "containment_shorter": 0.5911949685534591,
+      "accepted": true,
+      "reasons": [
+        "confirmed_near_transcript"
+      ]
+    },
+    {
+      "left_id": "valid:433",
+      "right_id": "test:782",
+      "historical_queue": true,
+      "shared_fivegrams": 264,
+      "left_fivegrams": 444,
+      "right_fivegrams": 477,
+      "jaccard": 0.4018264840182648,
+      "containment_shorter": 0.5945945945945946,
+      "accepted": true,
+      "reasons": [
+        "confirmed_near_transcript"
+      ]
+    }
+  ],
+  "group_core_sha256": "6407a38f99bfb686aab3fe4e25c37d5f33477475d42a0d3d8d797d50230e3862",
+  "runtime_versions": {
+    "python": "3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "pyarrow": "26.0.0",
+    "numba": "0.66.0"
+  },
+  "previous_attempts": [
+    {
+      "status": "interrupted_incomplete",
+      "last_reported_rows": 2363,
+      "last_reported_candidate_pairs": 198829,
+      "last_reported_accepted_edges": 1,
+      "last_reported_elapsed_seconds": 195.5,
+      "reported_counts_are_lower_bounds": true,
+      "reason": "Replaced NumPy sort-based exact intersection with tested semantically equivalent Numba linear merge; restarted full scan for faster bounded-memory execution. Frozen numerical grouping and retrieval policy unchanged.",
+      "partial_pairs_bytes": 0,
+      "partial_pairs_lines": 0,
+      "partial_pairs_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "partial_evidence_retained": false,
+      "retention_reason": "Interrupted buffered output contained zero persisted rows; no duplicate empty file retained.",
+      "policy_sha256": "71e2748b8347b573e5e63a5a2c1915e6ea1b2afb1d39bc2d4c14d335978d6f4f"
+    }
+  ],
+  "source_group_ledger_sha256": "10a797ebfc8c91ba9321d085fb8a732009aca5763d058ec0af8ec16cc149e54e",
+  "source_group_pairs_sha256": "184d630115c50aaf161460fac9897d401c2c29887538736519376169e0347107"
+}

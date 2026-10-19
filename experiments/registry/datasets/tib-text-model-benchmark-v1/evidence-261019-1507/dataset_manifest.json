@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "study_id": "tib-text-model-benchmark-v1",
+  "dataset": "gigant/tib",
+  "requested_revision": "e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee",
+  "revision_evidence": "local_directory_name_only_not_remote_verified",
+  "state": "audit_unsealed",
+  "g1_status": "HOLD",
+  "expected_counts": {
+    "train": 7282,
+    "valid": 910,
+    "test": 911
+  },
+  "observed_counts": {
+    "train": 7282,
+    "valid": 910,
+    "test": 911
+  },
+  "source_bytes_modified": false,
+  "network_access": false,
+  "canonicalization_executed": false,
+  "selected_ids": [],
+  "card": {
+    "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\benchmark\\research-data\\tib-evidence-261019-1507\\e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee\\README.md",
+    "sha256": "77cffb2ca71d4cb4ee06b9242251de912dd0375156f7f4ba010816fc646a1678",
+    "bytes": 6870
+  },
+  "splits": {
+    "train": {
+      "files": [
+        {
+          "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\benchmark\\research-data\\tib-evidence-261019-1507\\e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee\\data\\train-00000-of-00002.parquet",
+          "filename": "train-00000-of-00002.parquet",
+          "num_rows": 3641,
+          "schema": "doi: string\ntitle: string\nurl: string\nvideo_url: string\nlicense: string\nsubject: string\ngenre: string\nrelease_year: string\nauthor: string\ncontributors: string\nabstract: string\ntranscript: string\ntranscript_segments: struct<id: list<element: int32>, seek: list<element: int32>, start: list<element: float>, end: list< (... 239 chars omitted)\n  child 0, id: list<element: int32>\n      child 0, element: int32\n  child 1, seek: list<element: int32>\n      child 0, element: int32\n  child 2, start: list<element: float>\n      child 0, element: float\n  child 3, end: list<element: float>\n      child 0, element: float\n  child 4, text: list<element: string>\n      child 0, element: string\n  child 5, tokens: list<element: list<element: int32>>\n      child 0, element: list<element: int32>\n          child 0, element: int32\n  child 6, temperature: list<element: float>\n      child 0, element: float\n  child 7, avg_logprob: list<element: float>\n      child 0, element: float\n  child 8, compression_ratio: list<element: float>\n      child 0, element: float\n  child 9, no_speech_prob: list<element: float>\n      child 0, element: float\nkeyframes: struct<slide: list<element: string>, frames: list<element: list<element: int32>>, timestamp: list<el (... 29 chars omitted)\n  child 0, slide: list<element: string>\n      child 0, element: string\n  child 1, frames: list<element: list<element: int32>>\n      child 0, element: list<element: int32>\n          child 0, element: int32\n  child 2, timestamp: list<element: list<element: float>>\n      child 0, element: list<element: float>\n          child 0, element: float\nlanguage: string\n-- schema metadata --\nhuggingface: '{\"info\": {\"features\": {\"doi\": {\"dtype\": \"string\", \"_type\": ' + 1488",
+          "schema_errors": [],
+          "bytes": 202729841,
+          "sha256": "fb6cb53550b168a8d9b639995f10d34a247d7abdf57e5d84139ce429c7447cc3"
+        },
+        {
+          "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\benchmark\\research-data\\tib-evidence-261019-1507\\e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee\\data\\train-00001-of-00002.parquet",
+          "filename": "train-00001-of-00002.parquet",
+          "num_rows": 3641,
+          "schema": "doi: string\ntitle: string\nurl: string\nvideo_url: string\nlicense: string\nsubject: string\ngenre: string\nrelease_year: string\nauthor: string\ncontributors: string\nabstract: string\ntranscript: string\ntranscript_segments: struct<id: list<element: int32>, seek: list<element: int32>, start: list<element: float>, end: list< (... 239 chars omitted)\n  child 0, id: list<element: int32>\n      child 0, element: int32\n  child 1, seek: list<element: int32>\n      child 0, element: int32\n  child 2, start: list<element: float>\n      child 0, element: float\n  child 3, end: list<element: float>\n      child 0, element: float\n  child 4, text: list<element: string>\n      child 0, element: string\n  child 5, tokens: list<element: list<element: int32>>\n      child 0, element: list<element: int32>\n          child 0, element: int32\n  child 6, temperature: list<element: float>\n      child 0, element: float\n  child 7, avg_logprob: list<element: float>\n      child 0, element: float\n  child 8, compression_ratio: list<element: float>\n      child 0, element: float\n  child 9, no_speech_prob: list<element: float>\n      child 0, element: float\nkeyframes: struct<slide: list<element: string>, frames: list<element: list<element: int32>>, timestamp: list<el (... 29 chars omitted)\n  child 0, slide: list<element: string>\n      child 0, element: string\n  child 1, frames: list<element: list<element: int32>>\n      child 0, element: list<element: int32>\n          child 0, element: int32\n  child 2, timestamp: list<element: list<element: float>>\n      child 0, element: list<element: float>\n          child 0, element: float\nlanguage: string\n-- schema metadata --\nhuggingface: '{\"info\": {\"features\": {\"doi\": {\"dtype\": \"string\", \"_type\": ' + 1488",
+          "schema_errors": [],
+          "bytes": 199464552,
+          "sha256": "333f221a6d9ce28bd8c3e7c265c284b94de1530c7717a2ffc2627864d3bca48e"
+        }
+      ],
+      "expected_rows": 7282,
+      "observed_rows": 7282
+    },
+    "valid": {
+      "files": [
+        {
+          "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\benchmark\\research-data\\tib-evidence-261019-1507\\e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee\\data\\valid-00000-of-00001.parquet",
+          "filename": "valid-00000-of-00001.parquet",
+          "num_rows": 910,
+          "schema": "doi: string\ntitle: string\nurl: string\nvideo_url: string\nlicense: string\nsubject: string\ngenre: string\nrelease_year: string\nauthor: string\ncontributors: string\nabstract: string\ntranscript: string\ntranscript_segments: struct<id: list<element: int32>, seek: list<element: int32>, start: list<element: float>, end: list< (... 239 chars omitted)\n  child 0, id: list<element: int32>\n      child 0, element: int32\n  child 1, seek: list<element: int32>\n      child 0, element: int32\n  child 2, start: list<element: float>\n      child 0, element: float\n  child 3, end: list<element: float>\n      child 0, element: float\n  child 4, text: list<element: string>\n      child 0, element: string\n  child 5, tokens: list<element: list<element: int32>>\n      child 0, element: list<element: int32>\n          child 0, element: int32\n  child 6, temperature: list<element: float>\n      child 0, element: float\n  child 7, avg_logprob: list<element: float>\n      child 0, element: float\n  child 8, compression_ratio: list<element: float>\n      child 0, element: float\n  child 9, no_speech_prob: list<element: float>\n      child 0, element: float\nkeyframes: struct<slide: list<element: string>, frames: list<element: list<element: int32>>, timestamp: list<el (... 29 chars omitted)\n  child 0, slide: list<element: string>\n      child 0, element: string\n  child 1, frames: list<element: list<element: int32>>\n      child 0, element: list<element: int32>\n          child 0, element: int32\n  child 2, timestamp: list<element: list<element: float>>\n      child 0, element: list<element: float>\n          child 0, element: float\nlanguage: string\n-- schema metadata --\nhuggingface: '{\"info\": {\"features\": {\"doi\": {\"dtype\": \"string\", \"_type\": ' + 1488",
+          "schema_errors": [],
+          "bytes": 49651159,
+          "sha256": "d5c6b26e8730e39f5e1dae6d261ec6bdca00304f90a0c96f05fef2695cfb8497"
+        }
+      ],
+      "expected_rows": 910,
+      "observed_rows": 910
+    },
+    "test": {
+      "files": [
+        {
+          "path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\benchmark\\research-data\\tib-evidence-261019-1507\\e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee\\data\\test-00000-of-00001.parquet",
+          "filename": "test-00000-of-00001.parquet",
+          "num_rows": 911,
+          "schema": "doi: string\ntitle: string\nurl: string\nvideo_url: string\nlicense: string\nsubject: string\ngenre: string\nrelease_year: string\nauthor: string\ncontributors: string\nabstract: string\ntranscript: string\ntranscript_segments: struct<id: list<element: int32>, seek: list<element: int32>, start: list<element: float>, end: list< (... 239 chars omitted)\n  child 0, id: list<element: int32>\n      child 0, element: int32\n  child 1, seek: list<element: int32>\n      child 0, element: int32\n  child 2, start: list<element: float>\n      child 0, element: float\n  child 3, end: list<element: float>\n      child 0, element: float\n  child 4, text: list<element: string>\n      child 0, element: string\n  child 5, tokens: list<element: list<element: int32>>\n      child 0, element: list<element: int32>\n          child 0, element: int32\n  child 6, temperature: list<element: float>\n      child 0, element: float\n  child 7, avg_logprob: list<element: float>\n      child 0, element: float\n  child 8, compression_ratio: list<element: float>\n      child 0, element: float\n  child 9, no_speech_prob: list<element: float>\n      child 0, element: float\nkeyframes: struct<slide: list<element: string>, frames: list<element: list<element: int32>>, timestamp: list<el (... 29 chars omitted)\n  child 0, slide: list<element: string>\n      child 0, element: string\n  child 1, frames: list<element: list<element: int32>>\n      child 0, element: list<element: int32>\n          child 0, element: int32\n  child 2, timestamp: list<element: list<element: float>>\n      child 0, element: list<element: float>\n          child 0, element: float\nlanguage: string\n-- schema metadata --\nhuggingface: '{\"info\": {\"features\": {\"doi\": {\"dtype\": \"string\", \"_type\": ' + 1488",
+          "schema_errors": [],
+          "bytes": 50073586,
+          "sha256": "bbe5db9f176e465c5b2514757d48ef92ce3a1d9873ba9e64c015b50172f5b9a6"
+        }
+      ],
+      "expected_rows": 911,
+      "observed_rows": 911
+    }
+  },
+  "blocking_reasons": [
+    "remote_revision_and_file_hash_binding_unverified",
+    "transcript_and_abstract_reuse_rights_unreviewed",
+    "paper_source_accounting_pending"
+  ]
+}

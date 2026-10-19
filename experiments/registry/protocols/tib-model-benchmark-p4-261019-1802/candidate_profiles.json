@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "state": "technical_implementation_proposals_not_runtime_admitted",
+  "study_id": "tib-text-model-benchmark-v1",
+  "canonical_input": "transcript",
+  "segments_role": "audit_sidecar",
+  "reference_input_to_generation": false,
+  "derived_word_cap": 350,
+  "word_cap_status": "approved_train_p95_derivation_pending_profile_feasibility_before_final_lock",
+  "common_delivery_module": "experiments.scripts.tib_benchmark_output",
+  "common_splitter_id": "punctuation_whitespace_newline_v1",
+  "native_reserves_status": "proposed_pending_native_output_and_T4_checks",
+  "runtime_admission": false,
+  "T4_verified": false,
+  "max_paired_contrasts": 10,
+  "shared": {
+    "batch_size": 1,
+    "gpu_concurrency": false,
+    "overlap_tokens": 0,
+    "direct_path": "one_final_call_on_entire_source_only_if_final_native_budget_including_wrappers_padding_and_output_reserve_fits",
+    "reduce_separator": "\n\n",
+    "reduce_min_fan_in": 2,
+    "reduce_max_depth": 8,
+    "reduce_progress": "strictly_reduce_note_count_and_sum_native_note_tokens_per_layer",
+    "oversized_note": "split_in_order_preserve_lineage_then_reduce_or_explicit_failure",
+    "singleton_reduce_group": "rebalance_from_previous_group_if_at_least_three_else_failure",
+    "input_truncation": false,
+    "hidden_top_n_sentences": false,
+    "failure": "retain_record_id_with_NULL_quality_and_stage_error",
+    "checkpoint_status": "on_node_callback_only_actual_persistent_store_durability_unverified"
+  },
+  "pipelines": [
+    {
+      "candidate_id": "lead3", "role": "fixed_control", "config_search": false,
+      "generation_device": "cpu", "checkpoint": null,
+      "algorithm": "first_three_complete_canonical_sentence_units_in_source_order_then_common_delivery",
+      "input_coverage_claim": "full_source_available_first_three_output_selection",
+      "runtime_admitted": false
+    },
+    {
+      "candidate_id": "lexrank", "role": "model_family", "config_search": true,
+      "generation_device": "cpu", "checkpoint": null,
+      "algorithm": "all_sentence_TFIDF_threshold_graph_PageRank_source_order_output",
+      "tfidf": {"lowercase": true, "stop_words": "sklearn_english", "norm": "l2", "token_pattern": "(?u)\\b\\w+\\b"},
+      "graph": {"cosine_threshold": 0.1, "self_edges": false, "dangling": "uniform", "damping": 0.85, "tolerance_L1": 1e-9, "max_iterations": 1000, "declared_dense_graph_memory_limit_bytes": 536870912},
+      "ties": "ascending_source_sentence_index",
+      "raw_selection": "ranked_complete_sentences_while_word_budget_fits_then_source_order; if_none_fit_top_ranked_sentence_for_explicit_common_forced_boundary",
+      "runtime_admitted": false
+    },
+    {
+      "candidate_id": "bart", "role": "model_family", "config_search": true,
+      "generation_device": "cuda", "checkpoint": "facebook/bart-large-cnn",
+      "revision": "37f520fa929c961707657b28798b30c003dd100b",
+      "architecture": "encoder_decoder", "dtype": "float16",
+      "encoder_cap": 1024, "decoder_cap": 1024, "decoder_prefix_tokens": 1,
+      "map_max_new_tokens_including_EOS": 256, "reduce_max_new_tokens_including_EOS": 256,
+      "final_max_new_tokens_including_EOS": 768, "padding_multiple": 1,
+      "decode": {"do_sample": false, "num_beams": 4},
+      "attention_backend": "eager_proposal_needs_runtime_verification",
+      "runtime_admitted": false, "weights_loaded": false
+    },
+    {
+      "candidate_id": "led", "role": "model_family", "config_search": true,
+      "generation_device": "cuda", "checkpoint": "allenai/led-large-16384-arxiv",
+      "revision": "0f8b26971c44af9d4e21edd17ccb5e000f22dac1",
+      "architecture": "encoder_decoder", "dtype": "float16",
+      "encoder_cap": 4096, "decoder_cap": 1024, "decoder_prefix_tokens": 1,
+      "map_max_new_tokens_including_EOS": 256, "reduce_max_new_tokens_including_EOS": 256,
+      "final_max_new_tokens_including_EOS": 768, "padding_multiple": 1024,
+      "global_attention": "first_nonpadding_wrapped_input_token_only",
+      "decode": {"do_sample": false, "num_beams": 4},
+      "attention_backend": "eager_proposal_needs_runtime_verification",
+      "runtime_admitted": false, "weights_loaded": false
+    },
+    {
+      "candidate_id": "qwen3", "role": "model_family", "config_search": true,
+      "generation_device": "cuda", "checkpoint": "Qwen/Qwen3-4B",
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "architecture": "causal", "dtype": "float16", "context_cap": 4096,
+      "map_max_new_tokens_including_EOS": 256, "reduce_max_new_tokens_including_EOS": 256,
+      "final_max_new_tokens_including_EOS": 768, "padding_multiple": 1,
+      "enable_thinking": false, "chat_template": "pinned_template_unique_sentinel_rendered_prefix_suffix_tokenized_separately_original_payload_native_ids_inserted_unchanged",
+      "decode": {"do_sample": true, "temperature": 0.7, "top_p": 0.8, "top_k": 20},
+      "prompts": {
+        "map": "Summarize all important lecture content in this source passage. Return only concise factual notes, without commentary or timestamps.",
+        "reduce": "Combine all the following lecture notes into shorter factual notes. Preserve important content from every input note. Return only the combined notes.",
+        "final": "Write a concise English lecture summary from these notes. Preserve the principal topics and claims. Return only the summary."
+      },
+      "attention_backend": "eager_proposal_needs_runtime_verification",
+      "runtime_admitted": false, "weights_loaded": false
+    }
+  ],
+  "remaining_gates": ["pinned_dependency_lock_and_weights_hashes", "native_output_reserve_validation", "actual_T4_load_generation_VRAM_RAM_latency_failures", "scorer_ready", "numeric_compute_and_storage_budget", "authorized_persistent_checkpoint_store", "seed_mapping_and_durable_node_integration", "config_trial_list_and_admission_freeze"]
+}

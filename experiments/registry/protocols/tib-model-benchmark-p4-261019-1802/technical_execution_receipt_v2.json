@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "state": "T4_THREE_SOURCE_CAPACITY_VERIFIED_DEVELOPMENT_REVIEW_PENDING",
+  "supersedes_preparation_status_only": "technical_preparation_receipt.json",
+  "historical_receipts_unchanged": true,
+  "T4_pretrained_generation_verified_three_sources": true,
+  "CPU_controls_verified_three_sources": true,
+  "word_cap": 350,
+  "cap_frozen_for_selection": false,
+  "scorer_ready_CPU_fixture_scope": true,
+  "formal_runtime_scorer_verified": false,
+  "full_pilot40_completed": false,
+  "selection300_executed": false,
+  "final_test_sealed": false,
+  "target_eligible_test_count": 523,
+  "fallback_order": [
+    523,
+    500,
+    400
+  ],
+  "diagnostics_inside_final": 40,
+  "source_ids": [
+    "valid:644",
+    "valid:341",
+    "valid:886"
+  ],
+  "evidence_files": {
+    "capacity_observations_v1.json": "d10b2f2329c5d686bf6a4f77fabdd4def4b4e2408642ea122e514b44dc61267c",
+    "development_output_review_v1.json": "ee93664db0c50f625c396e3e3ff36de685d19850f2e1c440d16508fa85b853e9",
+    "mounted_store_evidence_v1.json": "fc097bd11a112a0392f430c111a3e038ea98a957434ae52ad430aae413b61608",
+    "compute_budget_v2.json": "ddb0c80402c75e8ec1529a6166e767b4a7c41a0441530bca7bdf98c095cbb34b",
+    "projection_status_v2.json": "6c3b59bd2b2e51f36c595a96f9afffe4071d48498de0c2520c662530b24873aa"
+  },
+  "remaining_gates": [
+    "development output/repetition and intermediate-reserve review",
+    "explicit effective generation/runtime environment freeze",
+    "representative expanded pilot and per-call/resource measurements",
+    "final output cap/profile admission decision",
+    "formal runtime scorer readiness and throughput",
+    "fresh-session Drive survival/reuse proof",
+    "numeric full-study quotas/storage/projection",
+    "final cohort and diagnostic seal"
+  ],
+  "active_budget_path": "experiments/registry/protocols/tib-model-benchmark-p4-261019-1802/compute_budget_v2.json",
+  "active_projection_status_path": "experiments/registry/protocols/tib-model-benchmark-p4-261019-1802/projection_status_v2.json"
+}

@@ -1,0 +1,312 @@
+[
+  {
+    "label": "CC Attribution 3.0 Unported:",
+    "record_id": "train:0",
+    "doi": "10.5446/18349 (DOI)",
+    "url": "https://av.tib.eu/media/18349",
+    "file": "00.html",
+    "sha256": "ea76f1fb542275c2599f1adc95c22f693e7f52c41f99b175e722f2fb62bcc175",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution 2.0 Belgium:",
+    "record_id": "train:1",
+    "doi": "10.5446/47465 (DOI)",
+    "url": "https://av.tib.eu/media/47465",
+    "file": "01.html",
+    "sha256": "5ce0c6fa65b56dbf5e364f83d616cd9abf2cf0b0faabd20c347edfba8f2a767e",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/2.0/be/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution 4.0 International:",
+    "record_id": "train:2",
+    "doi": "10.5446/43826 (DOI)",
+    "url": "https://av.tib.eu/media/43826",
+    "file": "02.html",
+    "sha256": "8b2c8298176e1b82e695b0b061e694eb24de42fd0e8c9d0d283809e74a0650d7",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/4.0/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution 3.0 Germany:",
+    "record_id": "train:3",
+    "doi": "10.5446/42853 (DOI)",
+    "url": "https://av.tib.eu/media/42853",
+    "file": "03.html",
+    "sha256": "df4cbb1011ba534575c069f0e4fd6f8a37ef7e4e1546ce5d853b48dc3dd2f915",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/de/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution - NonCommercial - NoDerivatives 4.0 International:",
+    "record_id": "train:6",
+    "doi": "10.14288/1.0398184 (DOI)",
+    "url": "https://av.tib.eu/media/54294",
+    "file": "04.html",
+    "sha256": "e23621b278df3883e01fffa07c1f69bc350860fc716d52453c99eb76267ca7f0",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution - NoDerivatives 4.0 International:",
+    "record_id": "train:9",
+    "doi": "10.5446/45472 (DOI)",
+    "url": "https://av.tib.eu/media/45472",
+    "file": "05.html",
+    "sha256": "2a8f27841d78da61b962eecf4c471c3220596fd9a8e2ce53b3b1a47bdab9b25f",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-nd/4.0/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution - NoDerivatives 2.0 UK: England & Wales:",
+    "record_id": "train:11",
+    "doi": "10.5446/32375 (DOI)",
+    "url": "https://av.tib.eu/media/32375",
+    "file": "06.html",
+    "sha256": "f1d95839c38f7a526c54d621c67f5c9d8b74d5b6f25f483a5007ceb2ec140c16",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-nd/2.0/uk/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution - NonCommercial - ShareAlike 3.0 Unported:",
+    "record_id": "train:13",
+    "doi": "10.5446/21116 (DOI)",
+    "url": "https://av.tib.eu/media/21116",
+    "file": "07.html",
+    "sha256": "6759d37a6c9bcecd9ca144597baf8046da5587f6b33d2ff921e9f9b8e9b83f48",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-nc-sa/3.0/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution - ShareAlike 3.0 Unported:",
+    "record_id": "train:14",
+    "doi": "10.5446/37810 (DOI)",
+    "url": "https://av.tib.eu/media/37810",
+    "file": "08.html",
+    "sha256": "87efc00054821619b4ebb1a4f0e3051a98937b69da81455f23f4649fa39de6f2",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-sa/3.0/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution - NonCommercial 3.0 Unported:",
+    "record_id": "train:15",
+    "doi": "10.5446/48054 (DOI)",
+    "url": "https://av.tib.eu/media/48054",
+    "file": "09.html",
+    "sha256": "9d1f88bf7cc4cefb6662204c4a86b3b5e18f4de08867d7b8b5e10f7ce7b89f57",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-nc/3.0/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution - ShareAlike 4.0 International:",
+    "record_id": "train:16",
+    "doi": "10.5446/18901 (DOI)",
+    "url": "https://av.tib.eu/media/18901",
+    "file": "10.html",
+    "sha256": "144c21baa7eaaa1c20e898d2421c6a8ada1ecd5b7b51df5fe134d79818027dba",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution - NonCommercial - ShareAlike 3.0 Germany:",
+    "record_id": "train:19",
+    "doi": "10.5446/32017 (DOI)",
+    "url": "https://av.tib.eu/media/32017",
+    "file": "11.html",
+    "sha256": "26714121438f2dfba661f4e5855fe8bf69b07b47a3c17450302c0d6f38859623",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-nc-sa/3.0/de/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution - ShareAlike 3.0 Germany:",
+    "record_id": "train:29",
+    "doi": "10.5446/33508 (DOI)",
+    "url": "https://av.tib.eu/media/33508",
+    "file": "12.html",
+    "sha256": "d84f51c112e2659d4d92c259151d60c0c5713d18033080d501b66ba56bb4bb6d",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution - NonCommercial - NoDerivatives 2.0 Generic:",
+    "record_id": "train:46",
+    "doi": "10.5446/57341 (DOI)",
+    "url": "https://av.tib.eu/media/57341",
+    "file": "13.html",
+    "sha256": "45c659789bb1a43cfce7bddac3a0000326a7db18dd0c87637b89312a0177752a",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-nc-nd/2.0/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution - NonCommercial - NoDerivatives 3.0 Germany:",
+    "record_id": "train:51",
+    "doi": "10.5446/49067 (DOI)",
+    "url": "https://av.tib.eu/media/49067",
+    "file": "14.html",
+    "sha256": "0d95f154ba20d60c5bb1dd12c5bdec165b0da1d32d40be96ef2bc954b5ea76ae",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-nc-nd/3.0/de/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution - ShareAlike 3.0 USA:",
+    "record_id": "train:123",
+    "doi": "10.5446/19002 (DOI)",
+    "url": "https://av.tib.eu/media/19002",
+    "file": "15.html",
+    "sha256": "9efa5b19d5de0898435eb403b663a39ca347f1616451ce058f5635abef929607",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-sa/3.0/us/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution - NonCommercial - NoDerivatives 2.5 Switzerland:",
+    "record_id": "train:253",
+    "doi": "10.5446/35248 (DOI)",
+    "url": "https://av.tib.eu/media/35248",
+    "file": "16.html",
+    "sha256": "f65de0f397e4215887b850dd647c6bce98c2db03f0168ec9485b12aaeb7a92f0",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-nc-nd/2.5/ch/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution - NonCommercial - NoDerivatives 3.0 USA:",
+    "record_id": "train:270",
+    "doi": "10.5446/19390 (DOI)",
+    "url": "https://av.tib.eu/media/19390",
+    "file": "17.html",
+    "sha256": "a3ef458508cdcb5d99dde08c72606dcc6d98a6f7705387899a8d7c15d28bbeb6",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-nc-nd/3.0/us/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution - NoDerivatives 3.0 Germany:",
+    "record_id": "train:282",
+    "doi": "10.5446/56115 (DOI)",
+    "url": "https://av.tib.eu/media/56115",
+    "file": "18.html",
+    "sha256": "3e4b66d9156ee6b197fab3ce60ae555ef91524887a1e8d80a5525d83f10f8e4f",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-nd/3.0/de/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "No Open Access License:",
+    "record_id": "train:400",
+    "doi": "10.5446/40177 (DOI)",
+    "url": "https://av.tib.eu/media/40177",
+    "file": "19.html",
+    "sha256": "e850e5d431dcba332ab015385016b21ee2019ba8e52d2a9e71c4fbbd65e5ad74",
+    "license_urls": [],
+    "status": "fetched"
+  },
+  {
+    "label": "MISSING",
+    "record_id": "train:586",
+    "doi": "10.5446/58069 (DOI)",
+    "url": "https://av.tib.eu/media/58069",
+    "file": "20.html",
+    "sha256": "2968c440a7a4a8ffc58bf82cdbdb565b736c88617b44432f529094f146123265",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-nc/3.0/de/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution - NonCommercial 2.0 Germany:",
+    "record_id": "train:795",
+    "doi": "10.5446/19639 (DOI)",
+    "url": "https://av.tib.eu/media/19639",
+    "file": "21.html",
+    "sha256": "62a6e435e012233ed1d42c9035011fddd9cb51e9ef6148fab1339e00473731c2",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-nc/2.0/de/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution - NonCommercial - ShareAlike 4.0 International:",
+    "record_id": "train:851",
+    "doi": "10.5446/42675 (DOI)",
+    "url": "https://av.tib.eu/media/42675",
+    "file": "22.html",
+    "sha256": "01bb81f8dded454d260d5799c7ee2b9df8f355ae218e9fd6c04241b8ed641c2b",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution - NonCommercial 3.0 Germany:",
+    "record_id": "train:1480",
+    "doi": "10.5446/37258 (DOI)",
+    "url": "https://av.tib.eu/media/37258",
+    "file": "23.html",
+    "sha256": "9ba86dba399cdf114ccba003ffe1e6376a1b1ee0d1cc1868ca46c28fd128e1af",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-nc/3.0/de/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution - NonCommercial - NoDerivatives 3.0 Unported:",
+    "record_id": "train:7110",
+    "doi": "10.5446/20028 (DOI)",
+    "url": "https://av.tib.eu/media/20028",
+    "file": "24.html",
+    "sha256": "94fcddebb8eee0170674b871284032f01062f5f39f66977d9ac75a118ade94da",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-nc-nd/3.0/deed.en"
+    ],
+    "status": "fetched"
+  },
+  {
+    "label": "CC Attribution - NonCommercial - ShareAlike 3.0 USA:",
+    "record_id": "valid:370",
+    "doi": "10.5446/14078 (DOI)",
+    "url": "https://av.tib.eu/media/14078",
+    "file": "25.html",
+    "sha256": "ac6f2b273a1c142d511bb20d94451edbd662bc68ea5e3728b7f73569753a8486",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-nc-sa/3.0/us/deed.en"
+    ],
+    "status": "fetched"
+  }
+]

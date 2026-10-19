@@ -1,0 +1,38 @@
+{
+  "by_split": {
+    "test": {
+      "rows": 911,
+      "reference_cc0_supported": 556,
+      "source_cc_conditional": 638,
+      "both_reference_supported_source_conditional": 554
+    },
+    "train": {
+      "rows": 7282,
+      "reference_cc0_supported": 4468,
+      "source_cc_conditional": 5210,
+      "both_reference_supported_source_conditional": 4456
+    },
+    "valid": {
+      "rows": 910,
+      "reference_cc0_supported": 568,
+      "source_cc_conditional": 655,
+      "both_reference_supported_source_conditional": 567
+    }
+  },
+  "field_status_cross_counts": {
+    "CONDITIONAL_SOURCE_CC_SCOPE_AND_USE / SUPPORTED_CC0_FIELD_MATCH": 5577,
+    "HOLD / HOLD": 2585,
+    "CONDITIONAL_SOURCE_CC_SCOPE_AND_USE / HOLD": 926,
+    "HOLD / SUPPORTED_CC0_FIELD_MATCH": 15
+  },
+  "identity_conflicts": [
+    {
+      "record_id": "train:3780",
+      "doi": "10.14288/1.0398149 (DOI)",
+      "source_url": "https://av.tib.eu/media/54270",
+      "media_id": 54270,
+      "title": "Analysis and approximation of implicitly constituted fluid flow models"
+    }
+  ],
+  "not_qualified_counts": true
+}

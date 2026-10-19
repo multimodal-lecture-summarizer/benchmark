@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "state": "validation_pass_existing_frozen_decisions_unchanged",
+  "validated_at": "2026-10-19T17:14:48.846478+07:00",
+  "reason": "Fail closed on unknown decision enums and malformed route mappings before making permissions.",
+  "policy_version": "tib-local-private-noncommercial-v1-261019-1703",
+  "policy_sha256": "bea92cab0d00ea870925899fe151a52b1581960d7c03eb8d21e18972a6c24249",
+  "original_ledger_sha256": "ad0f85960ffd7cc92609636ab34e1b0ca9e76252a3823e0ba982cf263c1f5dc5",
+  "original_summary_sha256": "76e7ecc8b4f935a71d19f117d9c43b3025dfe83b67b921a58cf35472f0086c9b",
+  "original_tool_sha256": "fbf7986a7b7035371e29d296c64eccf5f94e2f35e5c7b0620997b68fb9d087a4",
+  "review_fixed_tool_sha256": "196b0eaf8a1c0d850a75ed0d869124f2151af7b4c052ee1b7d5dab5f50962596",
+  "focused_test_sha256": "a0bc996f258e8e5158020126a362e76a032a61db08de4a3b90fc24fe712bae97",
+  "focused_tests_passed": 59,
+  "all_9103_decisions_replayed_in_memory": true,
+  "replay_equals_frozen_ledger": true,
+  "input_hashes_revalidated": true,
+  "original_policy_ledger_summary_modified": false,
+  "counts_unchanged": {
+    "source_allowed": 6171,
+    "reference_allowed": 5592,
+    "source_and_reference_allowed": 5270
+  },
+  "model_outputs_consulted": false
+}

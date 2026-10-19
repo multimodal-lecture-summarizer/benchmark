@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "scorer_ready": true,
+  "state": "ready_cpu_fixture_scope_only",
+  "spec_file": "scorer_spec_v2.json",
+  "bindings_sha256": {
+    "experiments/registry/protocols/tib-model-benchmark-p4-261019-1802/scorer_spec_v2.json": "b83258fab60ee98d6d70e4f3ee2a2fc6f8956f2a8bd95b1a4a6db271a6ac7fdf",
+    "experiments/registry/protocols/tib-model-benchmark-p4-261019-1802/scorer_implementation_receipt_v2.json": "96de6f7ac4bf80d6d4320a8517b9fde1f2ea997e8d87ba04a169e043b965cf0c",
+    "research-data/tib-p4-261019-1802/scorer-neural-probe.json": "f2666f6e217d8bc8ca98745b4d2daf576e59d638665968a0343bb2924af8b7a3",
+    "research-data/tib-p4-261019-1802/scorer-neural-runtime.json": "9e023273005fc8c6a278ced525a7730a0583f0042feeb7146b828a024d559747",
+    "research-data/tib-p4-261019-1802/scorer-assets/bert/asset_manifest.json": "9937514963f6f3efd6742b7314d3b793b1e48e71057409dccf0d7f98c74d78ef",
+    "research-data/tib-p4-261019-1802/scorer-assets/sentence/asset_manifest.json": "070e91efc5608fae27f224293516e6af92f2ba383d423192a8553d5c4c75d8f1"
+  },
+  "scorer_code_sha256": {
+    "experiments/scripts/tib_benchmark_scorer.py": "6e9c3cb5b65f1ea40cf52adef4589e6378a364e7d9ae96dc725a81e60f2d03b9",
+    "experiments/scripts/tib_benchmark_scorer_probe.py": "c71d5098f55ad1396ad5da99e45dd239c8b97d1839d75fe1e2d292d4afc4a9c8",
+    "experiments/scripts/rq2_tib_benchmark_metrics.py": "5ed3e9fbf89d7ac77f41701cb3970db53b638695e50247b702bbe3482f0846b9",
+    "experiments/scripts/rq2_tib_semantic_v2.py": "9e266aeb946a6c00d570735cd5e79f92c2ea100bdf420f6003c6af62044e7b38",
+    "tests/test_tib_benchmark_scorer.py": "eee0ba4ee342ff7abab3158ac96ab778b328eb2a14e3131f17a00513be42b25f",
+    "tests/test_rq2_tib_semantic_v2.py": "d29c0b01831c22925c33c15f6ba0c6bd6941eae3f3d17aba6ab8f698ee7eec0e"
+  },
+  "writer_sha256": "71faa0cc1ed22d2c4fb2ba9edb086b21aeb772815506f338d2251e45eaacc2ea",
+  "runtime_profile": {
+    "device": "cpu",
+    "threads": 4,
+    "batch_size": 1,
+    "dtype": "float32",
+    "bert_max_sequence_tokens": 512,
+    "sentence_max_sequence_tokens": 128,
+    "idf": false,
+    "idf_fit_ids": [],
+    "package_pins": {
+      "rouge-score": "0.1.2",
+      "bert-score": "0.3.13",
+      "sentence-transformers": "5.7.0",
+      "transformers": "4.57.6",
+      "torch": "2.6.0+cu124",
+      "numpy": "2.4.6",
+      "nltk": "3.9.4"
+    }
+  },
+  "actual_e2e_fixture": {
+    "controlled_text": "The lecture explains quantum states. Electrons occupy discrete energy levels.",
+    "result": {
+      "metrics": {
+        "rouge1_f1": 1.0,
+        "rouge2_f1": 1.0,
+        "rougeL_f1": 1.0,
+        "bertscore_f1": 0.9999998807907104,
+        "source_sentence_similarity_v1": 0.9999999701976776
+      },
+      "failures": {}
+    },
+    "elapsed_seconds": 21.19712470000013
+  },
+  "prior_neural_probe": {
+    "status": "pass",
+    "actual_pinned_neural_probe": true,
+    "bert_native_max_abs_error": 1.447541373433836e-07,
+    "sentence_native_max_abs_error": 1.4901161193847656e-08,
+    "long_bert_content_tokens": 1800,
+    "long_bert_preserved_content_tokens": 1800,
+    "long_window_rows": 1808,
+    "packages": {
+      "rouge-score": "0.1.2",
+      "bert-score": "0.3.13",
+      "sentence-transformers": "5.7.0",
+      "transformers": "4.57.6",
+      "torch": "2.6.0+cu124",
+      "numpy": "2.4.6",
+      "nltk": "3.9.4"
+    },
+    "long_sentence_content_tokens": 640,
+    "long_sentence_exact_token_ids_preserved": true,
+    "scorer_ready": false,
+    "remaining_gate": "bind assets/code/runtime/profile and full fixtures in readiness receipt"
+  },
+  "prior_neural_probe_runtime": {
+    "stage": "CPU pinned scorer fixture probe, no corpus benchmark",
+    "exit_code": 0,
+    "wall_seconds": 40.81763569999748,
+    "sampled_peak_process_rss_bytes": 2512113664,
+    "sampled_cpu_seconds": 53.71875,
+    "sampling_interval_seconds": 0.1,
+    "threads": 4,
+    "device": "cpu",
+    "formal_generation_executed": false,
+    "T4_verified": false,
+    "measurement_limit": "sampled process RSS/CPU lower-bound peak; excludes filesystem cache and other processes",
+    "probe_sha256": "f2666f6e217d8bc8ca98745b4d2daf576e59d638665968a0343bb2924af8b7a3"
+  },
+  "unit_fixture_count": 19,
+  "capacity_limit": "fixtures only; no full-corpus throughput projection",
+  "T4_verified": false,
+  "full_compute_budget_verified": false,
+  "selection_start_authorized": false,
+  "formal_benchmark_executed": false,
+  "remaining_gates": [
+    "candidate profiles",
+    "T4 feasibility",
+    "compute/storage budget",
+    "final cohort seal"
+  ]
+}

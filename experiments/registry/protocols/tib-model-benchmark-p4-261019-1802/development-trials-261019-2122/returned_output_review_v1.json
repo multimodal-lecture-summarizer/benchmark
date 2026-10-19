@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "state": "DEVELOPMENT_DIAGNOSTICS_REVIEW_RECORDED_NO_FORMAL_ADMISSION",
+  "trial_audit_path": "experiments/registry/protocols/tib-model-benchmark-p4-261019-1802/development-trials-261019-2122/returned_trial_audit_v1.json",
+  "trial_audit_sha256": "33cf9d55c7d68bb18ea7cfa033eea699c63d26a255ec827f0082a69ea5832a80",
+  "evidence_scope": "21 outputs from3 shared presealed pilot IDs;123calls; no references scored",
+  "notes": [
+    "BART long first-map clone persists; token lineage is complete.",
+    "LED no-repeat3/4 suppress repeated4gram flags partly by construction; EOS notes still contain malformed endings/format artifacts.",
+    "LED medium3 vs4 distribute topics differently; no semantic coverage winner established.",
+    "Qwen384 removes observed map exhaustion but both reduce calls still exhaust384 withoutEOS.",
+    "Concise256 prompt has10 exhausted intermediate calls vs9 for256control; not supported as a truncation fix.",
+    "All21 final outputs terminateEOS below768; none are word-cap350cuts; forcedEOSatreserve candidates0.",
+    "Qwen384 reserved headroom meets predeclared512 operational minimum; does not prove512 fits or authorize/execute it.",
+    "Control Qwen seed differs from original ZIP, so compare384/concise to the current256control.",
+    "Automatic flags are not mandatory zero-error quality gates or factuality/semantic scores."
+  ],
+  "flags_observed": [
+    {
+      "trial_id": "bart-control",
+      "record_id": "valid:886",
+      "flag": "final_equals_first_map_node"
+    },
+    {
+      "trial_id": "led-ngram3",
+      "record_id": "valid:886",
+      "flag": "incomplete_EOS_endings_and_generated_hash_number_artifacts"
+    },
+    {
+      "trial_id": "led-ngram4",
+      "record_id": "valid:886",
+      "flag": "incomplete_EOS_endings_multiblock_footnote_marker_and_abstract_header"
+    },
+    {
+      "trial_id": "qwen-r384",
+      "record_id": "valid:341",
+      "flag": "reduce384_exhausted_without_EOS"
+    },
+    {
+      "trial_id": "qwen-r384",
+      "record_id": "valid:886",
+      "flag": "reduce384_exhausted_without_EOS"
+    }
+  ],
+  "manual_semantic_coverage_acceptance": "pending; qualitative observations are not formal labels",
+  "selection300_authorized": false,
+  "pilot40_completed": false,
+  "final523_executed": false,
+  "remaining_gates": [
+    "formal intermediate policy/config admission on development",
+    "formal-runtime scorer fixtures/throughput",
+    "fresh-runtime Drive resume and cost accounting",
+    "stage-specific numeric resources before expanded pilot40",
+    "full-study trials/quotas/storage/conservative projection",
+    "profile/cap freeze before selection; final cohort seal after decision before test"
+  ]
+}

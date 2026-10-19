@@ -1,0 +1,2265 @@
+{
+  "schema_version": 1,
+  "scope": "derived offline view only; historical raw receipts unchanged",
+  "policy_version": "tib-intermediate-acceptance-v1",
+  "policy_sha256": "83f23ca8c8ae725cbed33674be9c062fe7cc757e4131aa0c306d6cef176a48ff",
+  "input_audit_sha256": "33cf9d55c7d68bb18ea7cfa033eea699c63d26a255ec827f0082a69ea5832a80",
+  "model_inference_rerun": false,
+  "scorer_run": false,
+  "runtime_policy_executed": false,
+  "technical_contracts_basis": "prior verified308-file/281-envelope/123-node full native replay",
+  "counts_all21": {
+    "completed": 8,
+    "completed_with_warning": 13
+  },
+  "counts_preferred9": {
+    "completed": 5,
+    "completed_with_warning": 4
+  },
+  "failure_denominator_dropped": 0,
+  "warning_outputs_excluded": 0,
+  "records": [
+    {
+      "trial_id": "bart-control",
+      "record_id": "valid:644",
+      "preferred_for_next_stage": true,
+      "historical_raw_status": "completed",
+      "raw_artifact": "checkpoints/bart/bart-control/valid-644-1792421111695254782.json",
+      "raw_artifact_sha256": "a6e53976295cba5a594dbc957feb9db43b72bee3ce13dc8a83b1856f6b085862",
+      "derived_acceptance": {
+        "policy_version": "tib-intermediate-acceptance-v1",
+        "status": "completed",
+        "technical_errors": [],
+        "warnings": [],
+        "usable_output": true,
+        "retain_in_denominator": true,
+        "automatic_retry": false,
+        "factuality_verified": false
+      },
+      "nodes": [
+        {
+          "stage": "final",
+          "layer": 0,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        }
+      ]
+    },
+    {
+      "trial_id": "bart-control",
+      "record_id": "valid:341",
+      "preferred_for_next_stage": true,
+      "historical_raw_status": "completed",
+      "raw_artifact": "checkpoints/bart/bart-control/valid-341-1792421111695254782.json",
+      "raw_artifact_sha256": "5fee33cdfc294f7a898b313360df37c6ce903bb6df41495ec3c62ee4678704a3",
+      "derived_acceptance": {
+        "policy_version": "tib-intermediate-acceptance-v1",
+        "status": "completed",
+        "technical_errors": [],
+        "warnings": [],
+        "usable_output": true,
+        "retain_in_denominator": true,
+        "automatic_retry": false,
+        "factuality_verified": false
+      },
+      "nodes": [
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 1,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 2,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 3,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 4,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "reduce",
+          "layer": 1,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "final",
+          "layer": 2,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        }
+      ]
+    },
+    {
+      "trial_id": "bart-control",
+      "record_id": "valid:886",
+      "preferred_for_next_stage": true,
+      "historical_raw_status": "completed",
+      "raw_artifact": "checkpoints/bart/bart-control/valid-886-1792421111695254782.json",
+      "raw_artifact_sha256": "0d349c14502fae2982d6cb197786aaea330de26630c5da87187d7e624c8f776a",
+      "derived_acceptance": {
+        "policy_version": "tib-intermediate-acceptance-v1",
+        "status": "completed",
+        "technical_errors": [],
+        "warnings": [],
+        "usable_output": true,
+        "retain_in_denominator": true,
+        "automatic_retry": false,
+        "factuality_verified": false
+      },
+      "nodes": [
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 1,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 2,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 3,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 4,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 5,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 6,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 7,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 8,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 9,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 10,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 11,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 12,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 13,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 14,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 15,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 16,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 17,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 18,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 19,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 20,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 21,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 22,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 23,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 24,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 25,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "reduce",
+          "layer": 1,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "reduce",
+          "layer": 1,
+          "node": 1,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "reduce",
+          "layer": 1,
+          "node": 2,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "reduce",
+          "layer": 2,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "final",
+          "layer": 3,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        }
+      ]
+    },
+    {
+      "trial_id": "led-ngram0",
+      "record_id": "valid:644",
+      "preferred_for_next_stage": false,
+      "historical_raw_status": "completed",
+      "raw_artifact": "checkpoints/led/led-ngram0/valid-644-1792421208236653092.json",
+      "raw_artifact_sha256": "7b2d622a100abe6ecf6e1f249f1c9acac59dbb7ea1de312cb5b090411023b7ea",
+      "derived_acceptance": {
+        "policy_version": "tib-intermediate-acceptance-v1",
+        "status": "completed_with_warning",
+        "technical_errors": [],
+        "warnings": [
+          "sentence_ending"
+        ],
+        "usable_output": true,
+        "retain_in_denominator": true,
+        "automatic_retry": false,
+        "factuality_verified": false
+      },
+      "nodes": [
+        {
+          "stage": "final",
+          "layer": 0,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        }
+      ]
+    },
+    {
+      "trial_id": "led-ngram0",
+      "record_id": "valid:341",
+      "preferred_for_next_stage": false,
+      "historical_raw_status": "completed",
+      "raw_artifact": "checkpoints/led/led-ngram0/valid-341-1792421208236653092.json",
+      "raw_artifact_sha256": "dbb2e5e6fc3893c2ab6ee13266d03bccfe3f5dc3e24a11429b038fc2bdf5a930",
+      "derived_acceptance": {
+        "policy_version": "tib-intermediate-acceptance-v1",
+        "status": "completed_with_warning",
+        "technical_errors": [],
+        "warnings": [
+          "no_terminal_eos",
+          "token_budget_exhausted",
+          "output_reserve_reached",
+          "sentence_ending",
+          "repetition"
+        ],
+        "usable_output": true,
+        "retain_in_denominator": true,
+        "automatic_retry": false,
+        "factuality_verified": false
+      },
+      "nodes": [
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 1,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "repetition",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "reduce",
+          "layer": 1,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "repetition",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "final",
+          "layer": 2,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "repetition",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        }
+      ]
+    },
+    {
+      "trial_id": "led-ngram0",
+      "record_id": "valid:886",
+      "preferred_for_next_stage": false,
+      "historical_raw_status": "completed",
+      "raw_artifact": "checkpoints/led/led-ngram0/valid-886-1792421208236653092.json",
+      "raw_artifact_sha256": "a873b2cb5713ae485b97a2fc87d56fc5668d5aba43e4084a949fe482a366eac3",
+      "derived_acceptance": {
+        "policy_version": "tib-intermediate-acceptance-v1",
+        "status": "completed_with_warning",
+        "technical_errors": [],
+        "warnings": [
+          "no_terminal_eos",
+          "token_budget_exhausted",
+          "output_reserve_reached",
+          "sentence_ending",
+          "repetition"
+        ],
+        "usable_output": true,
+        "retain_in_denominator": true,
+        "automatic_retry": false,
+        "factuality_verified": false
+      },
+      "nodes": [
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 1,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 2,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "repetition"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 3,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "repetition"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 4,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 5,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "repetition",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 6,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "repetition",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "reduce",
+          "layer": 1,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "repetition",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "final",
+          "layer": 2,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "repetition"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        }
+      ]
+    },
+    {
+      "trial_id": "led-ngram3",
+      "record_id": "valid:644",
+      "preferred_for_next_stage": true,
+      "historical_raw_status": "completed",
+      "raw_artifact": "checkpoints/led/led-ngram3/valid-644-1792421318727811917.json",
+      "raw_artifact_sha256": "7e538695ac0129e401ead9c9e79be8afcc89d92dbfb6fab6c29b454836476502",
+      "derived_acceptance": {
+        "policy_version": "tib-intermediate-acceptance-v1",
+        "status": "completed",
+        "technical_errors": [],
+        "warnings": [],
+        "usable_output": true,
+        "retain_in_denominator": true,
+        "automatic_retry": false,
+        "factuality_verified": false
+      },
+      "nodes": [
+        {
+          "stage": "final",
+          "layer": 0,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        }
+      ]
+    },
+    {
+      "trial_id": "led-ngram3",
+      "record_id": "valid:341",
+      "preferred_for_next_stage": true,
+      "historical_raw_status": "completed",
+      "raw_artifact": "checkpoints/led/led-ngram3/valid-341-1792421318727811917.json",
+      "raw_artifact_sha256": "dabf72f4211c2382809784046f91b72af30281ee70bb6d0269dddd53a6d09097",
+      "derived_acceptance": {
+        "policy_version": "tib-intermediate-acceptance-v1",
+        "status": "completed_with_warning",
+        "technical_errors": [],
+        "warnings": [
+          "sentence_ending"
+        ],
+        "usable_output": true,
+        "retain_in_denominator": true,
+        "automatic_retry": false,
+        "factuality_verified": false
+      },
+      "nodes": [
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 1,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "reduce",
+          "layer": 1,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "final",
+          "layer": 2,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        }
+      ]
+    },
+    {
+      "trial_id": "led-ngram3",
+      "record_id": "valid:886",
+      "preferred_for_next_stage": true,
+      "historical_raw_status": "completed",
+      "raw_artifact": "checkpoints/led/led-ngram3/valid-886-1792421318727811917.json",
+      "raw_artifact_sha256": "d10d702f63540fa11397cd3fcc99a19e0cefa05afbe5db77f262a326b9da0060",
+      "derived_acceptance": {
+        "policy_version": "tib-intermediate-acceptance-v1",
+        "status": "completed_with_warning",
+        "technical_errors": [],
+        "warnings": [
+          "sentence_ending"
+        ],
+        "usable_output": true,
+        "retain_in_denominator": true,
+        "automatic_retry": false,
+        "factuality_verified": false
+      },
+      "nodes": [
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 1,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 2,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 3,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 4,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 5,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 6,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "reduce",
+          "layer": 1,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "final",
+          "layer": 2,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        }
+      ]
+    },
+    {
+      "trial_id": "led-ngram4",
+      "record_id": "valid:644",
+      "preferred_for_next_stage": false,
+      "historical_raw_status": "completed",
+      "raw_artifact": "checkpoints/led/led-ngram4/valid-644-1792421389386826392.json",
+      "raw_artifact_sha256": "b957e4d3302702e9d4784bacda72c02e6b544a3cc00b6acb106e7caca8cefbe5",
+      "derived_acceptance": {
+        "policy_version": "tib-intermediate-acceptance-v1",
+        "status": "completed",
+        "technical_errors": [],
+        "warnings": [],
+        "usable_output": true,
+        "retain_in_denominator": true,
+        "automatic_retry": false,
+        "factuality_verified": false
+      },
+      "nodes": [
+        {
+          "stage": "final",
+          "layer": 0,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        }
+      ]
+    },
+    {
+      "trial_id": "led-ngram4",
+      "record_id": "valid:341",
+      "preferred_for_next_stage": false,
+      "historical_raw_status": "completed",
+      "raw_artifact": "checkpoints/led/led-ngram4/valid-341-1792421389386826392.json",
+      "raw_artifact_sha256": "df18600707fcb242519bc0738864ccbe9946bb5129a5dfba92ea06184f294e22",
+      "derived_acceptance": {
+        "policy_version": "tib-intermediate-acceptance-v1",
+        "status": "completed_with_warning",
+        "technical_errors": [],
+        "warnings": [
+          "sentence_ending"
+        ],
+        "usable_output": true,
+        "retain_in_denominator": true,
+        "automatic_retry": false,
+        "factuality_verified": false
+      },
+      "nodes": [
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 1,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "reduce",
+          "layer": 1,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "final",
+          "layer": 2,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        }
+      ]
+    },
+    {
+      "trial_id": "led-ngram4",
+      "record_id": "valid:886",
+      "preferred_for_next_stage": false,
+      "historical_raw_status": "completed",
+      "raw_artifact": "checkpoints/led/led-ngram4/valid-886-1792421389386826392.json",
+      "raw_artifact_sha256": "c5cace0397dfc08008ffa2c9b4139c7efe978456e9bdd8f9905c4edd699c08a8",
+      "derived_acceptance": {
+        "policy_version": "tib-intermediate-acceptance-v1",
+        "status": "completed_with_warning",
+        "technical_errors": [],
+        "warnings": [
+          "sentence_ending"
+        ],
+        "usable_output": true,
+        "retain_in_denominator": true,
+        "automatic_retry": false,
+        "factuality_verified": false
+      },
+      "nodes": [
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 1,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 2,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 3,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 4,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 5,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 6,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "reduce",
+          "layer": 1,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "final",
+          "layer": 2,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        }
+      ]
+    },
+    {
+      "trial_id": "qwen-concise-r256",
+      "record_id": "valid:644",
+      "preferred_for_next_stage": false,
+      "historical_raw_status": "completed",
+      "raw_artifact": "checkpoints/qwen3/qwen-concise-r256/valid-644-1792422496293663748.json",
+      "raw_artifact_sha256": "25348e1a394e60e5850efdfb36b9645cfdd30d44fe19268ddef91a282695a6d8",
+      "derived_acceptance": {
+        "policy_version": "tib-intermediate-acceptance-v1",
+        "status": "completed",
+        "technical_errors": [],
+        "warnings": [],
+        "usable_output": true,
+        "retain_in_denominator": true,
+        "automatic_retry": false,
+        "factuality_verified": false
+      },
+      "nodes": [
+        {
+          "stage": "final",
+          "layer": 0,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        }
+      ]
+    },
+    {
+      "trial_id": "qwen-concise-r256",
+      "record_id": "valid:341",
+      "preferred_for_next_stage": false,
+      "historical_raw_status": "completed",
+      "raw_artifact": "checkpoints/qwen3/qwen-concise-r256/valid-341-1792422496293663748.json",
+      "raw_artifact_sha256": "8cdeb4811f5c6617c183791032a8466939334e512f99fc82bbf9da6c55092b27",
+      "derived_acceptance": {
+        "policy_version": "tib-intermediate-acceptance-v1",
+        "status": "completed_with_warning",
+        "technical_errors": [],
+        "warnings": [
+          "no_terminal_eos",
+          "token_budget_exhausted",
+          "output_reserve_reached",
+          "sentence_ending"
+        ],
+        "usable_output": true,
+        "retain_in_denominator": true,
+        "automatic_retry": false,
+        "factuality_verified": false
+      },
+      "nodes": [
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 1,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "reduce",
+          "layer": 1,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "final",
+          "layer": 2,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        }
+      ]
+    },
+    {
+      "trial_id": "qwen-concise-r256",
+      "record_id": "valid:886",
+      "preferred_for_next_stage": false,
+      "historical_raw_status": "completed",
+      "raw_artifact": "checkpoints/qwen3/qwen-concise-r256/valid-886-1792422496293663748.json",
+      "raw_artifact_sha256": "56798b1746718d67b1de5b88e7730c2dff3ffb954ffedc8ee5f75d7f773006bf",
+      "derived_acceptance": {
+        "policy_version": "tib-intermediate-acceptance-v1",
+        "status": "completed_with_warning",
+        "technical_errors": [],
+        "warnings": [
+          "no_terminal_eos",
+          "token_budget_exhausted",
+          "output_reserve_reached",
+          "sentence_ending"
+        ],
+        "usable_output": true,
+        "retain_in_denominator": true,
+        "automatic_retry": false,
+        "factuality_verified": false
+      },
+      "nodes": [
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 1,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 2,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 3,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 4,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 5,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 6,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "reduce",
+          "layer": 1,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "final",
+          "layer": 2,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        }
+      ]
+    },
+    {
+      "trial_id": "qwen-r256",
+      "record_id": "valid:644",
+      "preferred_for_next_stage": false,
+      "historical_raw_status": "completed",
+      "raw_artifact": "checkpoints/qwen3/qwen-r256/valid-644-1792421473983013158.json",
+      "raw_artifact_sha256": "33865290d3e7344502653ea243a633d7104f89db668bba16bc270df4ef622b0e",
+      "derived_acceptance": {
+        "policy_version": "tib-intermediate-acceptance-v1",
+        "status": "completed",
+        "technical_errors": [],
+        "warnings": [],
+        "usable_output": true,
+        "retain_in_denominator": true,
+        "automatic_retry": false,
+        "factuality_verified": false
+      },
+      "nodes": [
+        {
+          "stage": "final",
+          "layer": 0,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        }
+      ]
+    },
+    {
+      "trial_id": "qwen-r256",
+      "record_id": "valid:341",
+      "preferred_for_next_stage": false,
+      "historical_raw_status": "completed",
+      "raw_artifact": "checkpoints/qwen3/qwen-r256/valid-341-1792421473983013158.json",
+      "raw_artifact_sha256": "312b2c5700667eb34ca8b16444ac9bfc637ceab2653c02b59319c2ad576972b4",
+      "derived_acceptance": {
+        "policy_version": "tib-intermediate-acceptance-v1",
+        "status": "completed_with_warning",
+        "technical_errors": [],
+        "warnings": [
+          "no_terminal_eos",
+          "token_budget_exhausted",
+          "output_reserve_reached",
+          "sentence_ending"
+        ],
+        "usable_output": true,
+        "retain_in_denominator": true,
+        "automatic_retry": false,
+        "factuality_verified": false
+      },
+      "nodes": [
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 1,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "reduce",
+          "layer": 1,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "final",
+          "layer": 2,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        }
+      ]
+    },
+    {
+      "trial_id": "qwen-r256",
+      "record_id": "valid:886",
+      "preferred_for_next_stage": false,
+      "historical_raw_status": "completed",
+      "raw_artifact": "checkpoints/qwen3/qwen-r256/valid-886-1792421473983013158.json",
+      "raw_artifact_sha256": "ed00e8ee05c4012c23e04e3b5751e418cc334374fbea3a15e9eecf1197a91631",
+      "derived_acceptance": {
+        "policy_version": "tib-intermediate-acceptance-v1",
+        "status": "completed_with_warning",
+        "technical_errors": [],
+        "warnings": [
+          "no_terminal_eos",
+          "token_budget_exhausted",
+          "output_reserve_reached",
+          "sentence_ending"
+        ],
+        "usable_output": true,
+        "retain_in_denominator": true,
+        "automatic_retry": false,
+        "factuality_verified": false
+      },
+      "nodes": [
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 1,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 2,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 3,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 4,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 5,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 6,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "reduce",
+          "layer": 1,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "final",
+          "layer": 2,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        }
+      ]
+    },
+    {
+      "trial_id": "qwen-r384",
+      "record_id": "valid:644",
+      "preferred_for_next_stage": true,
+      "historical_raw_status": "completed",
+      "raw_artifact": "checkpoints/qwen3/qwen-r384/valid-644-1792422066346535528.json",
+      "raw_artifact_sha256": "268ca792018aa7a1fcd37690448305f36ba30310fa8560198845db252a4b431b",
+      "derived_acceptance": {
+        "policy_version": "tib-intermediate-acceptance-v1",
+        "status": "completed",
+        "technical_errors": [],
+        "warnings": [],
+        "usable_output": true,
+        "retain_in_denominator": true,
+        "automatic_retry": false,
+        "factuality_verified": false
+      },
+      "nodes": [
+        {
+          "stage": "final",
+          "layer": 0,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        }
+      ]
+    },
+    {
+      "trial_id": "qwen-r384",
+      "record_id": "valid:341",
+      "preferred_for_next_stage": true,
+      "historical_raw_status": "completed",
+      "raw_artifact": "checkpoints/qwen3/qwen-r384/valid-341-1792422066346535528.json",
+      "raw_artifact_sha256": "f1175d45ee3239733da4601c744c54410df0bfe50e8da2036539ba68b97a35c5",
+      "derived_acceptance": {
+        "policy_version": "tib-intermediate-acceptance-v1",
+        "status": "completed_with_warning",
+        "technical_errors": [],
+        "warnings": [
+          "no_terminal_eos",
+          "token_budget_exhausted",
+          "output_reserve_reached",
+          "sentence_ending"
+        ],
+        "usable_output": true,
+        "retain_in_denominator": true,
+        "automatic_retry": false,
+        "factuality_verified": false
+      },
+      "nodes": [
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 1,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "reduce",
+          "layer": 1,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "final",
+          "layer": 2,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        }
+      ]
+    },
+    {
+      "trial_id": "qwen-r384",
+      "record_id": "valid:886",
+      "preferred_for_next_stage": true,
+      "historical_raw_status": "completed",
+      "raw_artifact": "checkpoints/qwen3/qwen-r384/valid-886-1792422066346535528.json",
+      "raw_artifact_sha256": "8e4689a279e5b7744c11e7b64e0f92fa07093bc82d756e0eb4d801f9b225b16b",
+      "derived_acceptance": {
+        "policy_version": "tib-intermediate-acceptance-v1",
+        "status": "completed_with_warning",
+        "technical_errors": [],
+        "warnings": [
+          "no_terminal_eos",
+          "token_budget_exhausted",
+          "output_reserve_reached",
+          "sentence_ending"
+        ],
+        "usable_output": true,
+        "retain_in_denominator": true,
+        "automatic_retry": false,
+        "factuality_verified": false
+      },
+      "nodes": [
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 1,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 2,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 3,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 4,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 5,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "map",
+          "layer": 0,
+          "node": 6,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "reduce",
+          "layer": 1,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed_with_warning",
+          "technical_errors": [],
+          "warnings": [
+            "no_terminal_eos",
+            "token_budget_exhausted",
+            "output_reserve_reached",
+            "sentence_ending"
+          ],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        },
+        {
+          "stage": "final",
+          "layer": 2,
+          "node": 0,
+          "policy_version": "tib-intermediate-acceptance-v1",
+          "status": "completed",
+          "technical_errors": [],
+          "warnings": [],
+          "usable_output": true,
+          "retain_in_denominator": true,
+          "automatic_retry": false,
+          "factuality_verified": false
+        }
+      ]
+    }
+  ]
+}

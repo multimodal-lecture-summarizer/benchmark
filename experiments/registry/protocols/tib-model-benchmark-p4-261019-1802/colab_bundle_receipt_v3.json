@@ -1,0 +1,44 @@
+{
+  "zip": "research-data\\tib-p4-261019-1802\\colab-package-v3\\tib-p4-feasibility-261019-1802-v3.zip",
+  "zip_bytes": 63452,
+  "zip_sha256": "b3f31aa57692024916c8db05db23b7f2d0d3b9fb72d04c94f9e4adcbcbcf811e",
+  "notebook": "experiments\\notebooks\\tib-p4-feasibility-colab-261019-v3.ipynb",
+  "notebook_sha256": "2364dc025fbf60fc0e3353e546c6cfe06e4b443bb3c56be994bd42469e2c084f",
+  "notebook_executed_on_colab": false,
+  "source_ids": [
+    "valid:644",
+    "valid:341",
+    "valid:886"
+  ],
+  "source_records": 3,
+  "reference_records": 0,
+  "selection_records": 0,
+  "test_records": 0,
+  "model_weights_bundled": false,
+  "manifest": {
+    "schema_version": 1,
+    "scope": "source-only three-record technical feasibility",
+    "staged_pilot_ids": [
+      "valid:644",
+      "valid:341",
+      "valid:886"
+    ],
+    "development_cohort_sha256": "9ac17534e95be7ebde78291546f215201d02b053b21b99aae8d96e4f23a411db",
+    "files": {
+      "experiments/scripts/tib_benchmark_adapter_generation.py": "b9581511890279d3187b6dddf2d0680d050295ae2030d63e17d181653472ca5e",
+      "experiments/scripts/tib_benchmark_adapter_transformers.py": "54e75e18c01d3a1715cac17b70cb46247ca2c0fb1f83145359afc5d3f2ca79e9",
+      "experiments/scripts/tib_benchmark_adapter_budget.py": "281d2c4f993070b131a0b7904db5df9545165e74beba990e1baf41d7a0aeb544",
+      "experiments/scripts/tib_benchmark_adapter_cpu.py": "23c2e4d7e291350c44fc8e39187b629a0bfa14972b22b1debacff599f4b7af1e",
+      "experiments/scripts/tib_benchmark_output.py": "f4c8d7e62b9544dd21b215e771e7b17b243bf59087fe6f8342a4d575b9a84d8b",
+      "experiments/scripts/tib_benchmark_checkpoint.py": "69ddbd9ba6f4b7ab4ddb674c8da871027cef274a3dd933231780612150d0ff52",
+      "experiments/scripts/tib_benchmark_colab_capacity.py": "4d03e9e14548603a4b178da70027e50ade8bd96b08bad2a8a034a2279e7e3616",
+      "experiments/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "experiments/scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidate_profiles.json": "b27b3cf8a242ba7478665122ff3cdac977749c848dc982a7f3f22383fc7c9c1b",
+      "output_policy.json": "761f430aa9056a1cecfecb4020b26fa73cf95e68669fa4894763412d0fdbf8b7",
+      "staged_sources.jsonl": "d02676c554159d64a62bdee7c671febc8e581c74dbe193462fb444d7873ad538",
+      "colab_authorization.json": "4cecfbbea9d73702a531cf385d358e19b23764f3d6318611689d053f30b3cfc0",
+      "USAGE.txt": "0928a6a57feac419484550ab155643038c2b4fec7b10ba5851dc03f45a7856d5"
+    }
+  }
+}

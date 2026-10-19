@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "state": "rights_qualified_not_cohort_sealed",
+  "policy_version": "tib-local-private-noncommercial-v1-261019-1703",
+  "policy_sha256": "bea92cab0d00ea870925899fe151a52b1581960d7c03eb8d21e18972a6c24249",
+  "input_sha256": {
+    "research-data/tib-evidence-261019-1507/field-rights-ledger-v2.jsonl": "3addfeebfe1807eb3a711d93885b5893051a4a2175a24cc08c58b18cf662177d",
+    "research-data/tib-evidence-261019-1507/local-audit/rights_ledger.json": "55f5ac91542e81ef69ab28d8374ccbd9c85503edda43cd06cada1e3ac7d8d800",
+    "research-data/tib-evidence-261019-1507/provenance-summary.json": "bb3a9b7498a6b11703d7a30ac677db7a5444ef8dcf6b3a607f1e576d7f198b0a",
+    "experiments/registry/datasets/tib-text-model-benchmark-v1/evidence-261019-1507/license_uri_examples.json": "b3b45dbd058c9bd77ac7031ba6438e0df15cb9fd71770f29581e06be82db1d1c"
+  },
+  "tool_sha256": "fbf7986a7b7035371e29d296c64eccf5f94e2f35e5c7b0620997b68fb9d087a4",
+  "ledger_sha256": "ad0f85960ffd7cc92609636ab34e1b0ca9e76252a3823e0ba982cf263c1f5dc5",
+  "counts_by_split": {
+    "train": {
+      "total": 7282,
+      "source_status": {
+        "conditional": 4949,
+        "hold": 2333
+      },
+      "source_allowed": 4949,
+      "reference_allowed": 4468,
+      "source_and_reference_allowed": 4215
+    },
+    "valid": {
+      "total": 910,
+      "source_status": {
+        "conditional": 616,
+        "hold": 294
+      },
+      "source_allowed": 616,
+      "reference_allowed": 568,
+      "source_and_reference_allowed": 532
+    },
+    "test": {
+      "total": 911,
+      "source_status": {
+        "conditional": 606,
+        "hold": 305
+      },
+      "source_allowed": 606,
+      "reference_allowed": 556,
+      "source_and_reference_allowed": 523
+    }
+  },
+  "source_reasons": {
+    "verified_source_cc_private_adaptation_conditions_satisfied": 6171,
+    "missing_per_record_current_grant_no_label_extrapolation": 2582,
+    "older_nd_pending_version_specific_adaptation_analysis": 328,
+    "incomplete_attribution_evidence": 5,
+    "unmapped_or_nonopen_current_uri": 17
+  },
+  "flag_counts": {
+    "released_prose_noncommercial_conflicts_with_authoritative_uri": 165,
+    "doi_difference_not_automatic_wrong_record": 1
+  },
+  "source_allowed": 6171,
+  "reference_allowed": 5592,
+  "source_and_reference_allowed": 5270,
+  "selected_ids": [],
+  "model_outputs_consulted": false
+}

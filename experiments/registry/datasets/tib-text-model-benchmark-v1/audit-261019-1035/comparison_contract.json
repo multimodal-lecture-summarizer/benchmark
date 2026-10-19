@@ -1,0 +1,78 @@
+{
+  "candidate_ids": [
+    "bart",
+    "lead3",
+    "led",
+    "lexrank",
+    "qwen3"
+  ],
+  "config_selection_family_ids": [
+    "bart",
+    "led",
+    "lexrank",
+    "qwen3"
+  ],
+  "between_family_candidate_ids": [
+    "bart",
+    "lead3",
+    "led",
+    "lexrank",
+    "qwen3"
+  ],
+  "recommendation_ids": [
+    "bart",
+    "led",
+    "lexrank",
+    "qwen3"
+  ],
+  "paired_contrasts": [
+    [
+      "bart",
+      "lead3"
+    ],
+    [
+      "bart",
+      "led"
+    ],
+    [
+      "bart",
+      "lexrank"
+    ],
+    [
+      "bart",
+      "qwen3"
+    ],
+    [
+      "lead3",
+      "led"
+    ],
+    [
+      "lead3",
+      "lexrank"
+    ],
+    [
+      "lead3",
+      "qwen3"
+    ],
+    [
+      "led",
+      "lexrank"
+    ],
+    [
+      "led",
+      "qwen3"
+    ],
+    [
+      "lexrank",
+      "qwen3"
+    ]
+  ],
+  "generation_devices": {
+    "lead3": "cpu",
+    "lexrank": "cpu",
+    "bart": "cuda",
+    "led": "cuda",
+    "qwen3": "cuda"
+  },
+  "state": "development_unsealed"
+}

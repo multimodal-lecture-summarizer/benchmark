@@ -1,0 +1,20 @@
+{
+  "state": "board_updated_and_readback_verified",
+  "board_url": "https://miro.com/app/board/uXjVHLTov6k=/",
+  "detail_frame_id": "3458764686684583693",
+  "overview_frame_id": "3458764686684081699",
+  "new_detail_title_id": "3458764687742480067",
+  "new_detail_body_id": "3458764687742480068",
+  "new_overview_footer_id": "3458764687742480070",
+  "created_widgets": 3,
+  "existing_widgets_updated": 3,
+  "layout_updates": 3,
+  "deleted_widgets": 0,
+  "failed_items": 0,
+  "readback_verified": true,
+  "layout_spacing_verified": true,
+  "preview_available": true,
+  "scope": "TIB dataset/cohorts, audited P4.1, decision2341 and next scorer HOLD",
+  "formal_scorer_execution_verified": false,
+  "new_selection_or_final_claim": false
+}

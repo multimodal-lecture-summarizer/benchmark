@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "scorer_ready": false,
+  "state": "implementation_and_algorithmic_fixtures_pass_actual_checkpoint_probe_pending",
+  "spec_sha256": "3b13138c8be337cf175fecf58b324fc467d3e25c2638904e2eb172685cf84a0d",
+  "packages_observed": {
+    "rouge-score": "0.1.2",
+    "bert-score": "0.3.13",
+    "sentence-transformers": "5.7.0",
+    "transformers": "4.57.6",
+    "torch": "2.6.0+cu124",
+    "numpy": "2.4.6",
+    "nltk": "3.9.4"
+  },
+  "code_sha256": {
+    "experiments/scripts/tib_benchmark_scorer.py": "0e5cb3152fd98f8c027d316a260868cf5d3ece8d8f0802049501813e17492525",
+    "experiments/scripts/tib_benchmark_scorer_probe.py": "c71d5098f55ad1396ad5da99e45dd239c8b97d1839d75fe1e2d292d4afc4a9c8",
+    "experiments/scripts/rq2_tib_benchmark_metrics.py": "5ed3e9fbf89d7ac77f41701cb3970db53b638695e50247b702bbe3482f0846b9",
+    "experiments/scripts/rq2_tib_semantic_v2.py": "9e266aeb946a6c00d570735cd5e79f92c2ea100bdf420f6003c6af62044e7b38",
+    "tests/test_tib_benchmark_scorer.py": "eee0ba4ee342ff7abab3158ac96ab778b328eb2a14e3131f17a00513be42b25f",
+    "tests/test_rq2_tib_semantic_v2.py": "d29c0b01831c22925c33c15f6ba0c6bd6941eae3f3d17aba6ab8f698ee7eec0e"
+  },
+  "fixtures": {
+    "passed": 19,
+    "failed": 0,
+    "scope": "14 new algorithmic/actual ROUGE fixtures +5 inherited tiny locally constructed real encoder fixtures; not final pretrained checkpoint evidence",
+    "command": "PYTHONPATH=research-data/tib-p4-261019-1802/python-deps python -m pytest tests/test_tib_benchmark_scorer.py tests/test_rq2_tib_semantic_v2.py --basetemp research-data/tib-p4-261019-1802/pytest-scorer-v2 -q"
+  },
+  "actual_final_checkpoint_probe": null,
+  "actual_model_weight_downloaded_by_scorer_agent": false,
+  "neural_ready": false,
+  "selection_start_authorized": false,
+  "observations": [
+    "Initial fixture run:14pass/5errors due sandbox temp safetensors write permissions; workspace basetemp rerun19pass",
+    "Nonfatal pyreadline3 exit warning; pytest exit0",
+    "Specs preserve operational neural definitions from old study, new metric IDs and no old artifact mutations"
+  ]
+}

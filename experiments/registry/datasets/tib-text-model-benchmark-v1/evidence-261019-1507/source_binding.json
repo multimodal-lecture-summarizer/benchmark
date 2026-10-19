@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "revision": "e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee",
+  "retrieved_at_utc": "2026-10-19T08:10:30.382517+00:00",
+  "remote_api_url": "https://huggingface.co/api/datasets/gigant/tib/revision/e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee?blobs=true",
+  "remote_api_response_sha256": "566293cb3a9b2eb969e483980556760e04e36a52ca507b8ac619684b040880f8",
+  "technical_dataset_evidence_status": "PASS",
+  "p1_status": "in_progress",
+  "g1_status": "HOLD_PENDING_RIGHTS_SCOPE",
+  "source_binding_verified": true,
+  "observed_counts": {
+    "train": 7282,
+    "valid": 910,
+    "test": 911
+  },
+  "observed_total": 9103,
+  "full_shard_inventory_matches_remote": true,
+  "declared_field_count": 15,
+  "verified_shards": [
+    {
+      "file": "data/test-00000-of-00001.parquet",
+      "sha256": "bbe5db9f176e465c5b2514757d48ef92ce3a1d9873ba9e64c015b50172f5b9a6",
+      "bytes": 50073586,
+      "observed_rows": 911,
+      "field_set_matches_pinned_card": true,
+      "schema_errors": []
+    },
+    {
+      "file": "data/train-00000-of-00002.parquet",
+      "sha256": "fb6cb53550b168a8d9b639995f10d34a247d7abdf57e5d84139ce429c7447cc3",
+      "bytes": 202729841,
+      "observed_rows": 3641,
+      "field_set_matches_pinned_card": true,
+      "schema_errors": []
+    },
+    {
+      "file": "data/train-00001-of-00002.parquet",
+      "sha256": "333f221a6d9ce28bd8c3e7c265c284b94de1530c7717a2ffc2627864d3bca48e",
+      "bytes": 199464552,
+      "observed_rows": 3641,
+      "field_set_matches_pinned_card": true,
+      "schema_errors": []
+    },
+    {
+      "file": "data/valid-00000-of-00001.parquet",
+      "sha256": "d5c6b26e8730e39f5e1dae6d261ec6bdca00304f90a0c96f05fef2695cfb8497",
+      "bytes": 49651159,
+      "observed_rows": 910,
+      "field_set_matches_pinned_card": true,
+      "schema_errors": []
+    }
+  ],
+  "doi_source_url_nonempty_and_unique": true,
+  "license_evidence_groups": {
+    "cc_by": 5722,
+    "cc_nd": 847,
+    "cc_nc_sa": 1221,
+    "cc_sa": 1265,
+    "cc_nc": 27,
+    "no_open_access": 17,
+    "missing": 4
+  },
+  "effective_blocking_reasons": [
+    "transcript_and_abstract_reuse_scope_requires_review"
+  ],
+  "local_audit_scope_note": "Local-only audit lists remote/paper checks as pending by design; this supplement binds remote inventory. Paper accounting is documented separately. No source audit receipt was edited.",
+  "input_manifest_sha256": "8d13b294e472cdb2f1fc8d76a630ee7a07e2992239b141e54483ba89e7574479",
+  "rights_ledger_sha256": "55f5ac91542e81ef69ab28d8374ccbd9c85503edda43cd06cada1e3ac7d8d800",
+  "selected_ids": [],
+  "benchmark_executed": false
+}

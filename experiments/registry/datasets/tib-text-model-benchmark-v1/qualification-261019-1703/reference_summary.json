@@ -1,0 +1,49 @@
+{
+  "policy_version": "tib-reference-usability-v1-261019-1703",
+  "policy_sha256": "5562791aba7b8125bba765f58388d86f1ccac3eccfa05ed5cd95bdf963a789fd",
+  "revision": "e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee",
+  "source_count": 9103,
+  "labels": {
+    "B": 9095,
+    "C": 8
+  },
+  "by_split": {
+    "train": {
+      "B": 7276,
+      "C": 6
+    },
+    "valid": {
+      "B": 909,
+      "C": 1
+    },
+    "test": {
+      "B": 910,
+      "C": 1
+    }
+  },
+  "legacy_structural_eligible": 9002,
+  "legacy_empty_after_structure": 8,
+  "legacy_reused_flags": 225,
+  "legacy_reused_groups": 18,
+  "legacy_broad_pool": 8769,
+  "current_case_sensitive_reused_flags": 224,
+  "current_case_sensitive_reused_groups": 17,
+  "legacy_only_reused_ids": [
+    "train:4447",
+    "train:7123"
+  ],
+  "current_only_reused_ids": [
+    "train:5322"
+  ],
+  "targeted_adjudication_complete": true,
+  "A_only_sensitivity_available": false,
+  "cohort_seal_ready": false,
+  "rights_granted": false,
+  "historical_reconciliation": "legacy structural pool + casefold reference groups; new flags use all rows + NFC case-sensitive references",
+  "raw_text_storage": "pinned ignored Parquet only; no transcript/abstract text copied to registry",
+  "historical_expected_counts_match": true,
+  "historical_reviewed_count": 225,
+  "all_row_targeted_reviewed_count": 226,
+  "review_receipt_sha256": "625af76da56deb785cbf8459a4bd9121942678a185a8a29a4b9af57b1e73f2de",
+  "review_scope": "All historical reuse members reviewed via entire abstract, title and one source context span; conservative B, not full-transcript/factuality review"
+}

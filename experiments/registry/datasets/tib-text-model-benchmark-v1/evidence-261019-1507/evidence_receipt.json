@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "state": "evidence_complete_not_cohort_or_permission_seal",
+  "technical_dataset_evidence_status": "PASS",
+  "overall_g1_status": "HOLD_PENDING_REMAINING_FIELD_SCOPE",
+  "selected_ids": [],
+  "benchmark_executed": false,
+  "files": {
+    "acquisition_receipt.json": "5d8bc6a0d6f35511378afd0fc593abd694dcdb7b5c24c6bdb59ad0e918eeba21",
+    "dataset_manifest.json": "8d13b294e472cdb2f1fc8d76a630ee7a07e2992239b141e54483ba89e7574479",
+    "field_rights_summary.json": "915b9dce0976d7894d9cb34dfa82016b05f952705db4de1ebcd830c30088e782",
+    "hf_revision_api.json": "566293cb3a9b2eb969e483980556760e04e36a52ca507b8ac619684b040880f8",
+    "license_uri_examples.json": "b3b45dbd058c9bd77ac7031ba6438e0df15cb9fd71770f29581e06be82db1d1c",
+    "opendata_acquisition_receipt.json": "68421c4d1c18f91e6c4ed413154bc806bcbbca07725013ef1a9c4ed07373bb43",
+    "paper_source_accounting.json": "f89a11f2cf1026eb0431c86281022bcc6b45169c67e0062423ffbee95e75b33e",
+    "provenance_summary.json": "bb3a9b7498a6b11703d7a30ac677db7a5444ef8dcf6b3a607f1e576d7f198b0a",
+    "rights_availability_summary.json": "3fd250c423fdf19a1d0179efa8d3fed545181f046cd339807169d7ba3bb97804",
+    "source_binding.json": "63588b9b3c1feed12962532820e6c1fa0602bfa4a79d44305a88aed2718f686c"
+  },
+  "local_artifacts": {
+    "research-data/tib-evidence-261019-1507/field-rights-ledger-v2.jsonl": {
+      "bytes": 12643963,
+      "sha256": "3addfeebfe1807eb3a711d93885b5893051a4a2175a24cc08c58b18cf662177d",
+      "storage": "ignored_local_not_committed"
+    },
+    "research-data/tib-evidence-261019-1507/match_opendata.py": {
+      "bytes": 8209,
+      "sha256": "d6ae66034fb37ca0b6dccf3fb801339b518044cbb5202c67d029cfe4704ce79d",
+      "storage": "ignored_local_not_committed"
+    },
+    "research-data/tib-evidence-261019-1507/sources/tib-opendata.html": {
+      "bytes": 68159,
+      "sha256": "fee361a30c48452908b31349f75f63c81cba82412b42174b320b82b461a6ecac",
+      "storage": "ignored_local_not_committed"
+    },
+    "research-data/tib-evidence-261019-1507/sources/tib-faq.html": {
+      "bytes": 559071,
+      "sha256": "6cf50c4181dad27154c5c9b8ba46b9d8a53bac4d2e75dceac1eae95814fbb086",
+      "storage": "ignored_local_not_committed"
+    },
+    "research-data/tib-evidence-261019-1507/sources/tib-terms.html": {
+      "bytes": 34608,
+      "sha256": "bab84e99163877716ef6b7cb0e55e9f39ac2871e7b6a70957bba1be854098478",
+      "storage": "ignored_local_not_committed"
+    },
+    "research-data/tib-evidence-261019-1507/sources/hal-paper.pdf": {
+      "bytes": 2938494,
+      "sha256": "3b6cdf70eec79f47cc6af461ddbeb458ff659cca800cc9567ce33770d1b3b0be",
+      "storage": "ignored_local_not_committed"
+    },
+    "research-data/tib-evidence-261019-1507/local-audit/rights_ledger.json": {
+      "bytes": 6749462,
+      "sha256": "55f5ac91542e81ef69ab28d8374ccbd9c85503edda43cd06cada1e3ac7d8d800",
+      "storage": "ignored_local_not_committed"
+    }
+  }
+}

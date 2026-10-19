@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "title": "TIB: A Dataset for Abstractive Summarization of Long Multimodal Videoconference Records",
+  "authors": [
+    "Theo Gigant",
+    "Frederic Dufaux",
+    "Camille Guinaudeau",
+    "Marc Decombas"
+  ],
+  "conference": "CBMI 2023",
+  "doi": "10.1145/3617233.3617238",
+  "source_url": "https://hal.science/hal-04168911/document",
+  "pdf_relative_path": "research-data/tib-evidence-261019-1507/sources/hal-paper.pdf",
+  "pdf_sha256": "3b6cdf70eec79f47cc6af461ddbeb458ff659cca800cc9567ce33770d1b3b0be",
+  "claims": {
+    "lead3_original_paper_baseline": {
+      "status": "VERIFIED_ATTRIBUTION",
+      "location": "section5.2 PDFpage5/printedpage4; Table2 PDFpage7/printedpage6",
+      "meaning": "first three transcript sentences; local splitter/cap reproduction not established"
+    },
+    "extractive_oracle": {
+      "status": "VERIFIED_ATTRIBUTION",
+      "location": "section5.2 andTable2",
+      "meaning": "reference-aware ROUGE sentence selection diagnostic, not deployable candidate"
+    },
+    "dataset_wide_text_rights": {
+      "status": "NOT_ESTABLISHED_BY_PAPER"
+    },
+    "optional_emnlp2024_relevance": {
+      "status": "UNVERIFIED_DEFAULT_OFF"
+    }
+  }
+}
