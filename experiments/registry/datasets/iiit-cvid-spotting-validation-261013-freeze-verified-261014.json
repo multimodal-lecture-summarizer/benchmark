@@ -1,0 +1,49 @@
+{
+  "artifacts": [
+    {
+      "bytes": 2272300,
+      "path": "experiments/outputs/iiit-cvid-spotting-validation-261013/ground-truth.jsonl",
+      "sha256": "238731f770cb4765fca54d9c9062c48588881559b2bb2c5a467582d0f1e018d1"
+    },
+    {
+      "bytes": 1026,
+      "path": "experiments/outputs/iiit-cvid-spotting-validation-261013/annotation-holds.json",
+      "sha256": "4a2d2cae7af9c712eabfb2c1a2e2701e33c574891552ee16e9747002b757b535"
+    },
+    {
+      "bytes": 367358,
+      "path": "experiments/registry/datasets/iiit-cvid-spotting-validation-261013-cohort.json",
+      "sha256": "4657eedf5c527a2fc6ff7e4ba8c6508ad032f805f19ab93d1e1c6fcf2c72f9cb"
+    },
+    {
+      "bytes": 8122,
+      "path": "experiments/registry/datasets/iiit-cvid-spotting-validation-261013-protocol.json",
+      "sha256": "8fde6c6d6dab81c7321b68c09738253b143c5a22fb96f2b38912c3471616e55e"
+    }
+  ],
+  "claim": "descriptive released exposed validation only",
+  "cohort_frozen": true,
+  "coordinate_crop_checks": {
+    "objects": 15379,
+    "raw_half_open": 15379,
+    "voc_one_based_inclusive": 0,
+    "zero_based_inclusive": 0
+  },
+  "date": "2026-10-14",
+  "implementation_note": "Verified implementation handles overflowing invalid coordinates as FP; data and metric protocol unchanged",
+  "implementation_sha256": {
+    "freeze_iiit_cvid_spotting.py": "cd4a8a16bbc5b3f93a1d1268d6318fb30237bfca46ca6f3471ec82bdf23a2221",
+    "spotting_metrics.py": "56ffdf7151ea441af4814a9f675d41146343c6c88e1973a01124a4e4c8122f40"
+  },
+  "python": "3.11.1",
+  "schema": "iiit_cvid_spotting_freeze_v1",
+  "source_label_inventory": {
+    "literal_asterisk_objects": 2,
+    "one_character_objects": 1684,
+    "whitespace_in_label": 33
+  },
+  "spotting_inference_executed": false,
+  "superseded_receipt_sha256": "1dce2cc596cf91adb440d8072b1f3c3fb462064df9df92f6715c8b7be71b92d5",
+  "supersedes_receipt": "iiit-cvid-spotting-validation-261013-freeze.json",
+  "unicode_version": "14.0.0"
+}

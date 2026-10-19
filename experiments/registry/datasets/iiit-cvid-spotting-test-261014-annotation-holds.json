@@ -1,0 +1,21 @@
+[
+  {
+    "excluded_objects": 40,
+    "frame_id": "Frames/test/24/25/00_31_56_00006.png",
+    "issues": [
+      {
+        "bbox_xyxy": [
+          -2,
+          4,
+          28,
+          19
+        ],
+        "object_id": "Frames/test/24/25/00_31_56_00006.png#object-0036",
+        "reasons": [
+          "outside_or_nonpositive_box"
+        ],
+        "text": "jle"
+      }
+    ]
+  }
+]

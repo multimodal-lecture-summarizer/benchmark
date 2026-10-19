@@ -1,0 +1,4 @@
+# Reference freeze/scoring environment: Python 3.11, Unicode 14.0.0.
+# Keep this environment separate from OCR inference dependencies.
+Pillow==12.3.0
+shapely==2.1.2

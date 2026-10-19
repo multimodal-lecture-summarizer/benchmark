@@ -1,0 +1,1906 @@
+{
+  "schema_version": 1,
+  "queue_id": "mlpdataset-targeted-review-v1",
+  "created": "2026-10-19",
+  "selection": "observations_plus_all_structural_edges_and_original_neighbors",
+  "hardcoded_sample_cap": null,
+  "inventory": {
+    "videos": 333,
+    "marks": 9021,
+    "excluded_inventory_rows": 0
+  },
+  "input_notebook_sha256": "5a1b0622cd046c42df3e12b8347fb07864056f6bbe0301be6b9824f4c55c9c64",
+  "legacy_archive_sha256": "dbd07ef37de603a22abb7be7d81245034b3c487f4878227cbef36ae3d451cfa7",
+  "updated_release": {
+    "sha256": "9d85728e0fdf27999f7ca2794ab49b24da4b5f8fa42a7defcb122223a763447d",
+    "bytes": 148633724,
+    "crc": "PASS",
+    "members": 28191,
+    "source_video_rows": 333,
+    "segment_files": 332,
+    "media_files": 0,
+    "identical_files": 27810,
+    "changed_files": [
+      "dental/dental.json"
+    ],
+    "legacy_only": 17,
+    "updated_only": 1,
+    "all_transition_asr_spoken_members_byte_identical": true,
+    "json_parse_failures": 0
+  },
+  "drive_run_name": "mlpdataset-eda-261017-v3",
+  "required_drive_exports": [
+    {
+      "relative_path": "analysis/boundary-ledger.csv",
+      "path": "boundary-ledger.csv",
+      "sha256": "6c5875640db2c1ec785c77f16c2a22d36c39edd1d80d0b41635b0988e329373f",
+      "bytes": 1413602
+    },
+    {
+      "relative_path": "analysis/video-ledger.csv",
+      "path": "video-ledger.csv",
+      "sha256": "eb2102c06e997664ec9ed41bdd24b084f98adc73bc6c4c24be9cbc9fcff7177b",
+      "bytes": 103631
+    },
+    {
+      "relative_path": "analysis/full-release-mark-coverage.csv",
+      "path": "full-release-mark-coverage.csv",
+      "sha256": "3102389cd7b27f03edc68306162e3eab370f3150b0cfe5f68da2c124d7b818f1",
+      "bytes": 2521944
+    },
+    {
+      "relative_path": "analysis/full-release-video-coverage.csv",
+      "path": "full-release-video-coverage.csv",
+      "sha256": "829a8a010700fcfd9d746a760c6e7d298a3d4715ca9695343a3499757ea71bf7",
+      "bytes": 168064
+    }
+  ],
+  "protocol_id": "mlpdataset-slide-transition-protocol-v1",
+  "annotation_repairs_applied": 0,
+  "semantic_certified_events": 0,
+  "evaluation_ready": false,
+  "cases": [
+    {
+      "video_id": "-8QB3Rbeqoc",
+      "annotation_index": 5,
+      "annotation_s": 817.456,
+      "source_sha256": "0b8e9c305bc16e56ab2af5d8ca8584445ee8761a840b76479a04828252beaf42",
+      "source_relative_path": "videos/-8QB3Rbeqoc/source.mp4",
+      "duration_s": 819.4,
+      "group": "dental",
+      "annotation_sha256": "63d4339e7a61189f23483725e5e7853f867255d12a4fdcee30430368c23db742",
+      "original_source_line": 6,
+      "reasons": [
+        "historical_dense_control"
+      ],
+      "review_action": "historical_coarse_review_available",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": {
+        "event_observation": "credits_then_fade",
+        "source_sha256": "0b8e9c305bc16e56ab2af5d8ca8584445ee8761a840b76479a04828252beaf42",
+        "annotation_s": 817.456,
+        "clip_local_path": "benchmark/experiments/outputs/mlpdataset_dense_executed_review_261017/clip-01.mp4",
+        "clip_drive_relative_path": "analysis/dense-boundaries/-8QB3Rbeqoc_5_6a20dde72786/clip.mp4",
+        "clip_sha256": "2128fada27048d17422cdfaaf1d9f907b1cb7159244304c717aab6e207788ed4",
+        "frame_ledger_sha256": "4bb6b46025e5748c17a871774ae8b2f0e0407c757a6f354ec079fa80b19b6219",
+        "old_receipt_sha256": "4cff1a2a16486033a1b4cc97d9b26bb805df077225adc216f88dfe6a3ec5d6f5",
+        "contact_sheet": "benchmark/experiments/outputs/mlpdataset_targeted_review_261019/historical-window-01.jpg",
+        "measured_window": {
+          "effective_start_s": 812.456,
+          "effective_end_s": 819.4
+        },
+        "reviewer": "Codex visual diagnostic review",
+        "reviewed_date": "2026-10-19",
+        "timing_status": "coarse_only_no_native_endpoint_certification",
+        "gt_disposition": "hold",
+        "reviewed_point_s": null
+      }
+    },
+    {
+      "video_id": "-a5-EHnZ_XA",
+      "annotation_index": 5,
+      "annotation_s": 355.4222,
+      "source_sha256": "b5e7a2c046e0af27c3efde8358cc846183338416b9c4aa5e58efa84d9d1187ef",
+      "source_relative_path": "videos/-a5-EHnZ_XA/source.mp4",
+      "duration_s": 486.666667,
+      "group": "dental",
+      "annotation_sha256": "be5572403c5a16da3655b9b6473609660d42b7eec0c88b060f47ad8b69861314",
+      "original_source_line": 6,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "-a5-EHnZ_XA",
+      "annotation_index": 6,
+      "annotation_s": 355.4221,
+      "source_sha256": "b5e7a2c046e0af27c3efde8358cc846183338416b9c4aa5e58efa84d9d1187ef",
+      "source_relative_path": "videos/-a5-EHnZ_XA/source.mp4",
+      "duration_s": 486.666667,
+      "group": "dental",
+      "annotation_sha256": "be5572403c5a16da3655b9b6473609660d42b7eec0c88b060f47ad8b69861314",
+      "original_source_line": 7,
+      "reasons": [
+        "nonincreasing_original_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "-a5-EHnZ_XA",
+      "annotation_index": 7,
+      "annotation_s": 357.4221,
+      "source_sha256": "b5e7a2c046e0af27c3efde8358cc846183338416b9c4aa5e58efa84d9d1187ef",
+      "source_relative_path": "videos/-a5-EHnZ_XA/source.mp4",
+      "duration_s": 486.666667,
+      "group": "dental",
+      "annotation_sha256": "be5572403c5a16da3655b9b6473609660d42b7eec0c88b060f47ad8b69861314",
+      "original_source_line": 8,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "077X0x07S0c",
+      "annotation_index": 32,
+      "annotation_s": 1966.0,
+      "source_sha256": "c1e9e7a89ca1fb345f7e9b677b9710eb2f027602d59c057327c566bb7c0c9446",
+      "source_relative_path": "videos/077X0x07S0c/source.mp4",
+      "duration_s": 2022.0,
+      "group": "bio-4",
+      "annotation_sha256": "2e526aa4d542442f9dfee2c9398d0899e9a944f7ce0b645e472c5dd1af8cff5d",
+      "original_source_line": 33,
+      "reasons": [
+        "visually_ambiguous_sparse_window"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "0gf3IJFTxEA",
+      "annotation_index": 0,
+      "annotation_s": 29.5,
+      "source_sha256": "a68df814e2b2321795d8c9bcf2e8996c6b89e1e50bc080f0f938168a6bff29c0",
+      "source_relative_path": "videos/0gf3IJFTxEA/source.mp4",
+      "duration_s": 2801.0,
+      "group": "speaking",
+      "annotation_sha256": "007d7a3c6898c1a561a574a1acd1e534289b690dc9dc967dbf5d6b117b897136",
+      "original_source_line": 1,
+      "reasons": [
+        "historical_dense_control"
+      ],
+      "review_action": "historical_coarse_review_available",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": {
+        "event_observation": "intro_to_presenter",
+        "source_sha256": "a68df814e2b2321795d8c9bcf2e8996c6b89e1e50bc080f0f938168a6bff29c0",
+        "annotation_s": 29.5,
+        "clip_local_path": "benchmark/experiments/outputs/mlpdataset_dense_executed_review_261017/clip-02.mp4",
+        "clip_drive_relative_path": "analysis/dense-boundaries/0gf3IJFTxEA_0_6a20dde72786/clip.mp4",
+        "clip_sha256": "e2e33408c6f2846bfda01a59c4ad026394a3c7ae0a12f37628e42969fbb3c7aa",
+        "frame_ledger_sha256": "4bb6b46025e5748c17a871774ae8b2f0e0407c757a6f354ec079fa80b19b6219",
+        "old_receipt_sha256": "4cff1a2a16486033a1b4cc97d9b26bb805df077225adc216f88dfe6a3ec5d6f5",
+        "contact_sheet": "benchmark/experiments/outputs/mlpdataset_targeted_review_261019/historical-window-02.jpg",
+        "measured_window": {
+          "effective_start_s": 24.5,
+          "effective_end_s": 34.5
+        },
+        "reviewer": "Codex visual diagnostic review",
+        "reviewed_date": "2026-10-19",
+        "timing_status": "coarse_only_no_native_endpoint_certification",
+        "gt_disposition": "hold",
+        "reviewed_point_s": null
+      }
+    },
+    {
+      "video_id": "0gf3IJFTxEA",
+      "annotation_index": 23,
+      "annotation_s": 2780.4558,
+      "source_sha256": "a68df814e2b2321795d8c9bcf2e8996c6b89e1e50bc080f0f938168a6bff29c0",
+      "source_relative_path": "videos/0gf3IJFTxEA/source.mp4",
+      "duration_s": 2801.0,
+      "group": "speaking",
+      "annotation_sha256": "007d7a3c6898c1a561a574a1acd1e534289b690dc9dc967dbf5d6b117b897136",
+      "original_source_line": 24,
+      "reasons": [
+        "historical_dense_control"
+      ],
+      "review_action": "historical_coarse_review_available",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": {
+        "event_observation": "presenter_to_outro",
+        "source_sha256": "a68df814e2b2321795d8c9bcf2e8996c6b89e1e50bc080f0f938168a6bff29c0",
+        "annotation_s": 2780.4558,
+        "clip_local_path": "benchmark/experiments/outputs/mlpdataset_dense_executed_review_261017/clip-03.mp4",
+        "clip_drive_relative_path": "analysis/dense-boundaries/0gf3IJFTxEA_23_6a20dde72786/clip.mp4",
+        "clip_sha256": "5fe5c803fb6ff76df34bb0b66a5bda34779b0d7b054a8e2c3f825b0b7fa8beb0",
+        "frame_ledger_sha256": "4bb6b46025e5748c17a871774ae8b2f0e0407c757a6f354ec079fa80b19b6219",
+        "old_receipt_sha256": "4cff1a2a16486033a1b4cc97d9b26bb805df077225adc216f88dfe6a3ec5d6f5",
+        "contact_sheet": "benchmark/experiments/outputs/mlpdataset_targeted_review_261019/historical-window-03.jpg",
+        "measured_window": {
+          "effective_start_s": 2775.4558,
+          "effective_end_s": 2785.4558
+        },
+        "reviewer": "Codex visual diagnostic review",
+        "reviewed_date": "2026-10-19",
+        "timing_status": "coarse_only_no_native_endpoint_certification",
+        "gt_disposition": "hold",
+        "reviewed_point_s": null
+      }
+    },
+    {
+      "video_id": "18SixEz5GDE",
+      "annotation_index": 0,
+      "annotation_s": 17.4132,
+      "source_sha256": "d892448c45a2074e2b19a216ec8354879afb0457d5b67dd6c47108a1428c1ac8",
+      "source_relative_path": "videos/18SixEz5GDE/source.mp4",
+      "duration_s": 2381.2,
+      "group": "psy-1",
+      "annotation_sha256": "2d3068cf2d03094bdb242d88d291c366b4dced8114528c2ef6942565363422b6",
+      "original_source_line": 1,
+      "reasons": [
+        "historical_dense_control",
+        "visually_ambiguous_sparse_window"
+      ],
+      "review_action": "historical_coarse_review_available",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": {
+        "event_observation": "instructional_slide_with_delayed_effect",
+        "source_sha256": "d892448c45a2074e2b19a216ec8354879afb0457d5b67dd6c47108a1428c1ac8",
+        "annotation_s": 17.4132,
+        "clip_local_path": "benchmark/experiments/outputs/mlpdataset_dense_executed_review_261017/clip-04.mp4",
+        "clip_drive_relative_path": "analysis/dense-boundaries/18SixEz5GDE_0_6a20dde72786/clip.mp4",
+        "clip_sha256": "0efa02cf4eb1f8fe9058490b50bf280dd71b886fe791c507b3109a9198d0189d",
+        "frame_ledger_sha256": "4bb6b46025e5748c17a871774ae8b2f0e0407c757a6f354ec079fa80b19b6219",
+        "old_receipt_sha256": "4cff1a2a16486033a1b4cc97d9b26bb805df077225adc216f88dfe6a3ec5d6f5",
+        "contact_sheet": "benchmark/experiments/outputs/mlpdataset_targeted_review_261019/historical-window-04.jpg",
+        "measured_window": {
+          "effective_start_s": 12.4132,
+          "effective_end_s": 22.4132
+        },
+        "reviewer": "Codex visual diagnostic review",
+        "reviewed_date": "2026-10-19",
+        "timing_status": "coarse_only_no_native_endpoint_certification",
+        "gt_disposition": "hold",
+        "reviewed_point_s": null
+      }
+    },
+    {
+      "video_id": "18SixEz5GDE",
+      "annotation_index": 13,
+      "annotation_s": 1015.913,
+      "source_sha256": "d892448c45a2074e2b19a216ec8354879afb0457d5b67dd6c47108a1428c1ac8",
+      "source_relative_path": "videos/18SixEz5GDE/source.mp4",
+      "duration_s": 2381.2,
+      "group": "psy-1",
+      "annotation_sha256": "2d3068cf2d03094bdb242d88d291c366b4dced8114528c2ef6942565363422b6",
+      "original_source_line": 14,
+      "reasons": [
+        "historical_dense_control",
+        "visually_ambiguous_sparse_window"
+      ],
+      "review_action": "historical_coarse_review_available",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": {
+        "event_observation": "instructional_slide_with_delayed_effect",
+        "source_sha256": "d892448c45a2074e2b19a216ec8354879afb0457d5b67dd6c47108a1428c1ac8",
+        "annotation_s": 1015.913,
+        "clip_local_path": "benchmark/experiments/outputs/mlpdataset_dense_executed_review_261017/clip-05.mp4",
+        "clip_drive_relative_path": "analysis/dense-boundaries/18SixEz5GDE_13_6a20dde72786/clip.mp4",
+        "clip_sha256": "6f5f7dc3006fb7deee44d28a50972ac288bf45a64cfb1a6c3d07ee574daf5f22",
+        "frame_ledger_sha256": "4bb6b46025e5748c17a871774ae8b2f0e0407c757a6f354ec079fa80b19b6219",
+        "old_receipt_sha256": "4cff1a2a16486033a1b4cc97d9b26bb805df077225adc216f88dfe6a3ec5d6f5",
+        "contact_sheet": "benchmark/experiments/outputs/mlpdataset_targeted_review_261019/historical-window-05.jpg",
+        "measured_window": {
+          "effective_start_s": 1010.913,
+          "effective_end_s": 1020.913
+        },
+        "reviewer": "Codex visual diagnostic review",
+        "reviewed_date": "2026-10-19",
+        "timing_status": "coarse_only_no_native_endpoint_certification",
+        "gt_disposition": "hold",
+        "reviewed_point_s": null
+      }
+    },
+    {
+      "video_id": "18SixEz5GDE",
+      "annotation_index": 26,
+      "annotation_s": 2365.6396,
+      "source_sha256": "d892448c45a2074e2b19a216ec8354879afb0457d5b67dd6c47108a1428c1ac8",
+      "source_relative_path": "videos/18SixEz5GDE/source.mp4",
+      "duration_s": 2381.2,
+      "group": "psy-1",
+      "annotation_sha256": "2d3068cf2d03094bdb242d88d291c366b4dced8114528c2ef6942565363422b6",
+      "original_source_line": 27,
+      "reasons": [
+        "historical_dense_control"
+      ],
+      "review_action": "historical_coarse_review_available",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": {
+        "event_observation": "instructional_slide_to_end_card",
+        "source_sha256": "d892448c45a2074e2b19a216ec8354879afb0457d5b67dd6c47108a1428c1ac8",
+        "annotation_s": 2365.6396,
+        "clip_local_path": "benchmark/experiments/outputs/mlpdataset_dense_executed_review_261017/clip-06.mp4",
+        "clip_drive_relative_path": "analysis/dense-boundaries/18SixEz5GDE_26_6a20dde72786/clip.mp4",
+        "clip_sha256": "18ce640d7eecee0f59a87f776eca9e6c5ad3cf6f225e919f4129ab7bd43165f6",
+        "frame_ledger_sha256": "4bb6b46025e5748c17a871774ae8b2f0e0407c757a6f354ec079fa80b19b6219",
+        "old_receipt_sha256": "4cff1a2a16486033a1b4cc97d9b26bb805df077225adc216f88dfe6a3ec5d6f5",
+        "contact_sheet": "benchmark/experiments/outputs/mlpdataset_targeted_review_261019/historical-window-06.jpg",
+        "measured_window": {
+          "effective_start_s": 2360.6396,
+          "effective_end_s": 2370.6396
+        },
+        "reviewer": "Codex visual diagnostic review",
+        "reviewed_date": "2026-10-19",
+        "timing_status": "coarse_only_no_native_endpoint_certification",
+        "gt_disposition": "hold",
+        "reviewed_point_s": null
+      }
+    },
+    {
+      "video_id": "1LmKuxUzGUw",
+      "annotation_index": 0,
+      "annotation_s": 7.6068,
+      "source_sha256": "964df22deaac512bb27de75031fbcdba27f348b0f1c2d108c74c9c8f0a7a1624",
+      "source_relative_path": "videos/1LmKuxUzGUw/source.mp4",
+      "duration_s": 785.833333,
+      "group": "dental",
+      "annotation_sha256": "0f58c90cefdac4cd6337e60189b0c83c069dc122121ae909101b48ba45968243",
+      "original_source_line": 1,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "1LmKuxUzGUw",
+      "annotation_index": 1,
+      "annotation_s": 7.6068,
+      "source_sha256": "964df22deaac512bb27de75031fbcdba27f348b0f1c2d108c74c9c8f0a7a1624",
+      "source_relative_path": "videos/1LmKuxUzGUw/source.mp4",
+      "duration_s": 785.833333,
+      "group": "dental",
+      "annotation_sha256": "0f58c90cefdac4cd6337e60189b0c83c069dc122121ae909101b48ba45968243",
+      "original_source_line": 2,
+      "reasons": [
+        "nonincreasing_original_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "1LmKuxUzGUw",
+      "annotation_index": 2,
+      "annotation_s": 49.6068,
+      "source_sha256": "964df22deaac512bb27de75031fbcdba27f348b0f1c2d108c74c9c8f0a7a1624",
+      "source_relative_path": "videos/1LmKuxUzGUw/source.mp4",
+      "duration_s": 785.833333,
+      "group": "dental",
+      "annotation_sha256": "0f58c90cefdac4cd6337e60189b0c83c069dc122121ae909101b48ba45968243",
+      "original_source_line": 3,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "2NgUY8f1pa8",
+      "annotation_index": 0,
+      "annotation_s": 157.9194,
+      "source_sha256": "64809e1655a2f2ed6174b184ac6cf27f8061966deeea6c3f195fe7750f2dce1a",
+      "source_relative_path": "videos/2NgUY8f1pa8/source.mp4",
+      "duration_s": 4105.233333,
+      "group": "bio-1",
+      "annotation_sha256": "26005dc181ddc13a507db76762587f99231ff0ce5b256d43ca28305de58d4cf3",
+      "original_source_line": 1,
+      "reasons": [
+        "historical_dense_control"
+      ],
+      "review_action": "historical_coarse_review_available",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": {
+        "event_observation": "instructional_slide_change",
+        "source_sha256": "64809e1655a2f2ed6174b184ac6cf27f8061966deeea6c3f195fe7750f2dce1a",
+        "annotation_s": 157.9194,
+        "clip_local_path": "benchmark/experiments/outputs/mlpdataset_dense_executed_review_261017/clip-07.mp4",
+        "clip_drive_relative_path": "analysis/dense-boundaries/2NgUY8f1pa8_0_6a20dde72786/clip.mp4",
+        "clip_sha256": "eebc6b4487b1fbdcf0b3c5bfd6dcc407bb80b6d5e8dab754824ec85088719dfa",
+        "frame_ledger_sha256": "4bb6b46025e5748c17a871774ae8b2f0e0407c757a6f354ec079fa80b19b6219",
+        "old_receipt_sha256": "4cff1a2a16486033a1b4cc97d9b26bb805df077225adc216f88dfe6a3ec5d6f5",
+        "contact_sheet": "benchmark/experiments/outputs/mlpdataset_targeted_review_261019/historical-window-07.jpg",
+        "measured_window": {
+          "effective_start_s": 152.9194,
+          "effective_end_s": 162.9194
+        },
+        "reviewer": "Codex visual diagnostic review",
+        "reviewed_date": "2026-10-19",
+        "timing_status": "coarse_only_no_native_endpoint_certification",
+        "gt_disposition": "hold",
+        "reviewed_point_s": null
+      }
+    },
+    {
+      "video_id": "2NgUY8f1pa8",
+      "annotation_index": 27,
+      "annotation_s": 2019.5012,
+      "source_sha256": "64809e1655a2f2ed6174b184ac6cf27f8061966deeea6c3f195fe7750f2dce1a",
+      "source_relative_path": "videos/2NgUY8f1pa8/source.mp4",
+      "duration_s": 4105.233333,
+      "group": "bio-1",
+      "annotation_sha256": "26005dc181ddc13a507db76762587f99231ff0ce5b256d43ca28305de58d4cf3",
+      "original_source_line": 28,
+      "reasons": [
+        "historical_dense_control"
+      ],
+      "review_action": "historical_coarse_review_available",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": {
+        "event_observation": "instructional_slide_change",
+        "source_sha256": "64809e1655a2f2ed6174b184ac6cf27f8061966deeea6c3f195fe7750f2dce1a",
+        "annotation_s": 2019.5012,
+        "clip_local_path": "benchmark/experiments/outputs/mlpdataset_dense_executed_review_261017/clip-08.mp4",
+        "clip_drive_relative_path": "analysis/dense-boundaries/2NgUY8f1pa8_27_6a20dde72786/clip.mp4",
+        "clip_sha256": "ac2bf7316239db07e7ba3c51fd0e725f1843248ae08f7109e1e862f81eac9c7d",
+        "frame_ledger_sha256": "4bb6b46025e5748c17a871774ae8b2f0e0407c757a6f354ec079fa80b19b6219",
+        "old_receipt_sha256": "4cff1a2a16486033a1b4cc97d9b26bb805df077225adc216f88dfe6a3ec5d6f5",
+        "contact_sheet": "benchmark/experiments/outputs/mlpdataset_targeted_review_261019/historical-window-08.jpg",
+        "measured_window": {
+          "effective_start_s": 2014.5012,
+          "effective_end_s": 2024.5012
+        },
+        "reviewer": "Codex visual diagnostic review",
+        "reviewed_date": "2026-10-19",
+        "timing_status": "coarse_only_no_native_endpoint_certification",
+        "gt_disposition": "hold",
+        "reviewed_point_s": null
+      }
+    },
+    {
+      "video_id": "2NgUY8f1pa8",
+      "annotation_index": 54,
+      "annotation_s": 3990.6669,
+      "source_sha256": "64809e1655a2f2ed6174b184ac6cf27f8061966deeea6c3f195fe7750f2dce1a",
+      "source_relative_path": "videos/2NgUY8f1pa8/source.mp4",
+      "duration_s": 4105.233333,
+      "group": "bio-1",
+      "annotation_sha256": "26005dc181ddc13a507db76762587f99231ff0ce5b256d43ca28305de58d4cf3",
+      "original_source_line": 55,
+      "reasons": [
+        "historical_dense_control"
+      ],
+      "review_action": "historical_coarse_review_available",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": {
+        "event_observation": "instructional_slide_to_summary",
+        "source_sha256": "64809e1655a2f2ed6174b184ac6cf27f8061966deeea6c3f195fe7750f2dce1a",
+        "annotation_s": 3990.6669,
+        "clip_local_path": "benchmark/experiments/outputs/mlpdataset_dense_executed_review_261017/clip-09.mp4",
+        "clip_drive_relative_path": "analysis/dense-boundaries/2NgUY8f1pa8_54_6a20dde72786/clip.mp4",
+        "clip_sha256": "35ee0d6918d81328c1f2a72d2227a835641598d4a5450be67f30c2b77383d93c",
+        "frame_ledger_sha256": "4bb6b46025e5748c17a871774ae8b2f0e0407c757a6f354ec079fa80b19b6219",
+        "old_receipt_sha256": "4cff1a2a16486033a1b4cc97d9b26bb805df077225adc216f88dfe6a3ec5d6f5",
+        "contact_sheet": "benchmark/experiments/outputs/mlpdataset_targeted_review_261019/historical-window-09.jpg",
+        "measured_window": {
+          "effective_start_s": 3985.6669,
+          "effective_end_s": 3995.6669
+        },
+        "reviewer": "Codex visual diagnostic review",
+        "reviewed_date": "2026-10-19",
+        "timing_status": "coarse_only_no_native_endpoint_certification",
+        "gt_disposition": "hold",
+        "reviewed_point_s": null
+      }
+    },
+    {
+      "video_id": "2_dZ5GBlRgU",
+      "annotation_index": 64,
+      "annotation_s": 4152.262,
+      "source_sha256": "a00c5b1c86a514e8e52d1ee21649ac54d1f09fbfeb1691a531cdb83d0e285229",
+      "source_relative_path": "videos/2_dZ5GBlRgU/source.mp4",
+      "duration_s": 4152.133333,
+      "group": "ml-1",
+      "annotation_sha256": "e3d137b079f3d6fe3e228239110da35cc5edcf3d4b360bb9251ae9865f0bbe8f",
+      "original_source_line": 65,
+      "reasons": [
+        "at_or_after_measured_source_end",
+        "historical_dense_control"
+      ],
+      "review_action": "historical_coarse_review_available",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": {
+        "event_observation": "source_end_context_no_new_slide",
+        "source_sha256": "a00c5b1c86a514e8e52d1ee21649ac54d1f09fbfeb1691a531cdb83d0e285229",
+        "annotation_s": 4152.262,
+        "clip_local_path": "benchmark/experiments/outputs/mlpdataset_dense_executed_review_261017/clip-10.mp4",
+        "clip_drive_relative_path": "analysis/dense-boundaries/2_dZ5GBlRgU_64_6a20dde72786/clip.mp4",
+        "clip_sha256": "b0c467b75c504fcf2f97a85f9ce0df1e8685fca3c8690ea5c1e44a57b5156979",
+        "frame_ledger_sha256": "4bb6b46025e5748c17a871774ae8b2f0e0407c757a6f354ec079fa80b19b6219",
+        "old_receipt_sha256": "4cff1a2a16486033a1b4cc97d9b26bb805df077225adc216f88dfe6a3ec5d6f5",
+        "contact_sheet": "benchmark/experiments/outputs/mlpdataset_targeted_review_261019/historical-window-10.jpg",
+        "measured_window": {
+          "effective_start_s": 4147.262,
+          "effective_end_s": 4152.133333
+        },
+        "reviewer": "Codex visual diagnostic review",
+        "reviewed_date": "2026-10-19",
+        "timing_status": "coarse_only_no_native_endpoint_certification",
+        "gt_disposition": "hold",
+        "reviewed_point_s": null
+      }
+    },
+    {
+      "video_id": "2xr4P0WGKSA",
+      "annotation_index": 0,
+      "annotation_s": 4.267,
+      "source_sha256": "3c5fbf974f41a3075a0bd40a6f4f3ae47cc890d6d27af6199f9bf2302ca55450",
+      "source_relative_path": "videos/2xr4P0WGKSA/source.mp4",
+      "duration_s": 4767.72,
+      "group": "ml-1",
+      "annotation_sha256": "5842de31d60ccf265183763f7a9c577cd4acc5c5625042e7319dee833bc91a02",
+      "original_source_line": 1,
+      "reasons": [
+        "visually_ambiguous_sparse_window"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "2xr4P0WGKSA",
+      "annotation_index": 26,
+      "annotation_s": 2190.7665,
+      "source_sha256": "3c5fbf974f41a3075a0bd40a6f4f3ae47cc890d6d27af6199f9bf2302ca55450",
+      "source_relative_path": "videos/2xr4P0WGKSA/source.mp4",
+      "duration_s": 4767.72,
+      "group": "ml-1",
+      "annotation_sha256": "5842de31d60ccf265183763f7a9c577cd4acc5c5625042e7319dee833bc91a02",
+      "original_source_line": 27,
+      "reasons": [
+        "visually_ambiguous_sparse_window"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "37z_tJD81y8",
+      "annotation_index": 68,
+      "annotation_s": 3971.7774,
+      "source_sha256": "2914c0995ebb96585084f329c14eff5f274b8c33fecf7646eaae3ad08d36fbc7",
+      "source_relative_path": "videos/37z_tJD81y8/source.mp4",
+      "duration_s": 4801.233333,
+      "group": "ml-1",
+      "annotation_sha256": "b924c068b24d5fb32a8bb2edae015662845bc3e0c792b08120237e533f64e846",
+      "original_source_line": 69,
+      "reasons": [
+        "visually_ambiguous_sparse_window"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "3ZA33n7BrRg",
+      "annotation_index": 12,
+      "annotation_s": 743.4999,
+      "source_sha256": "ad518a3385a72ef6f63171460f2bf01dcff3b9551e34bc913d854bafb1bb9265",
+      "source_relative_path": "videos/3ZA33n7BrRg/source.mp4",
+      "duration_s": 4812.166667,
+      "group": "anat-1",
+      "annotation_sha256": "a206b24af44af83dd4ced646bb11800e1b2f35b2f726c1796df21d7b0e314e33",
+      "original_source_line": 13,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "3ZA33n7BrRg",
+      "annotation_index": 13,
+      "annotation_s": 743.4998,
+      "source_sha256": "ad518a3385a72ef6f63171460f2bf01dcff3b9551e34bc913d854bafb1bb9265",
+      "source_relative_path": "videos/3ZA33n7BrRg/source.mp4",
+      "duration_s": 4812.166667,
+      "group": "anat-1",
+      "annotation_sha256": "a206b24af44af83dd4ced646bb11800e1b2f35b2f726c1796df21d7b0e314e33",
+      "original_source_line": 14,
+      "reasons": [
+        "nonincreasing_original_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "3ZA33n7BrRg",
+      "annotation_index": 14,
+      "annotation_s": 783.9998,
+      "source_sha256": "ad518a3385a72ef6f63171460f2bf01dcff3b9551e34bc913d854bafb1bb9265",
+      "source_relative_path": "videos/3ZA33n7BrRg/source.mp4",
+      "duration_s": 4812.166667,
+      "group": "anat-1",
+      "annotation_sha256": "a206b24af44af83dd4ced646bb11800e1b2f35b2f726c1796df21d7b0e314e33",
+      "original_source_line": 15,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "6U2ZTAWnVvo",
+      "annotation_index": 23,
+      "annotation_s": 2257.096,
+      "source_sha256": "bef648d2c082db5115b35528438a0f5754c455a483686f683e983415b5c4655f",
+      "source_relative_path": "videos/6U2ZTAWnVvo/source.mp4",
+      "duration_s": 2257.033333,
+      "group": "dental",
+      "annotation_sha256": "f291afd1b18f0fe9004de46e36c52675f15e7269942c356eee7f3a4957fed417",
+      "original_source_line": 24,
+      "reasons": [
+        "at_or_after_measured_source_end"
+      ],
+      "review_action": "source_edge_policy_hold",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "8OrCdgHcMVM",
+      "annotation_index": 6,
+      "annotation_s": 1076.275,
+      "source_sha256": "8156602de4704e6546fd03672e8722441445f4a17a1c2e6c70edb9a3745df157",
+      "source_relative_path": "videos/8OrCdgHcMVM/source.mp4",
+      "duration_s": 1968.466667,
+      "group": "psy-2",
+      "annotation_sha256": "e11532f0106ca08bc9b112d518c5e9d35e6e53aab00020dde188e6f533a36db7",
+      "original_source_line": 7,
+      "reasons": [
+        "historical_dense_control"
+      ],
+      "review_action": "historical_coarse_review_available",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": {
+        "event_observation": "instructional_slide_change",
+        "source_sha256": "8156602de4704e6546fd03672e8722441445f4a17a1c2e6c70edb9a3745df157",
+        "annotation_s": 1076.275,
+        "clip_local_path": "benchmark/experiments/outputs/mlpdataset_dense_executed_review_261017/clip-11.mp4",
+        "clip_drive_relative_path": "analysis/dense-boundaries/8OrCdgHcMVM_6_6a20dde72786/clip.mp4",
+        "clip_sha256": "ddc4ec0b4399f217eeb4dc3c16cd85e51ea53acc9789fe479e61665a701bd3db",
+        "frame_ledger_sha256": "4bb6b46025e5748c17a871774ae8b2f0e0407c757a6f354ec079fa80b19b6219",
+        "old_receipt_sha256": "4cff1a2a16486033a1b4cc97d9b26bb805df077225adc216f88dfe6a3ec5d6f5",
+        "contact_sheet": "benchmark/experiments/outputs/mlpdataset_targeted_review_261019/historical-window-11.jpg",
+        "measured_window": {
+          "effective_start_s": 1071.275,
+          "effective_end_s": 1081.275
+        },
+        "reviewer": "Codex visual diagnostic review",
+        "reviewed_date": "2026-10-19",
+        "timing_status": "coarse_only_no_native_endpoint_certification",
+        "gt_disposition": "hold",
+        "reviewed_point_s": null
+      }
+    },
+    {
+      "video_id": "8OrCdgHcMVM",
+      "annotation_index": 12,
+      "annotation_s": 1955.3792,
+      "source_sha256": "8156602de4704e6546fd03672e8722441445f4a17a1c2e6c70edb9a3745df157",
+      "source_relative_path": "videos/8OrCdgHcMVM/source.mp4",
+      "duration_s": 1968.466667,
+      "group": "psy-2",
+      "annotation_sha256": "e11532f0106ca08bc9b112d518c5e9d35e6e53aab00020dde188e6f533a36db7",
+      "original_source_line": 13,
+      "reasons": [
+        "historical_dense_control"
+      ],
+      "review_action": "historical_coarse_review_available",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": {
+        "event_observation": "instructional_slide_to_end_card",
+        "source_sha256": "8156602de4704e6546fd03672e8722441445f4a17a1c2e6c70edb9a3745df157",
+        "annotation_s": 1955.3792,
+        "clip_local_path": "benchmark/experiments/outputs/mlpdataset_dense_executed_review_261017/clip-12.mp4",
+        "clip_drive_relative_path": "analysis/dense-boundaries/8OrCdgHcMVM_12_6a20dde72786/clip.mp4",
+        "clip_sha256": "401bc1367945f380db069658c2ddf28f81b92f96ea55d330c7f737983599f43e",
+        "frame_ledger_sha256": "4bb6b46025e5748c17a871774ae8b2f0e0407c757a6f354ec079fa80b19b6219",
+        "old_receipt_sha256": "4cff1a2a16486033a1b4cc97d9b26bb805df077225adc216f88dfe6a3ec5d6f5",
+        "contact_sheet": "benchmark/experiments/outputs/mlpdataset_targeted_review_261019/historical-window-12.jpg",
+        "measured_window": {
+          "effective_start_s": 1950.3792,
+          "effective_end_s": 1960.3792
+        },
+        "reviewer": "Codex visual diagnostic review",
+        "reviewed_date": "2026-10-19",
+        "timing_status": "coarse_only_no_native_endpoint_certification",
+        "gt_disposition": "hold",
+        "reviewed_point_s": null
+      }
+    },
+    {
+      "video_id": "9GmySN5P408",
+      "annotation_index": 24,
+      "annotation_s": 884.656,
+      "source_sha256": "553d52833bbd3cd1c249d4a2acafa1d56e43f820563c47ee7decfd055bc3f783",
+      "source_relative_path": "videos/9GmySN5P408/source.mp4",
+      "duration_s": 885.623643,
+      "group": "dental",
+      "annotation_sha256": "f91ffc4721558aa3954ecfd24fb70eea1550f655cde026dde94096df01aa0c34",
+      "original_source_line": 25,
+      "reasons": [
+        "visually_ambiguous_sparse_window"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "ALRJCeVT0fQ",
+      "annotation_index": 7,
+      "annotation_s": 848.761,
+      "source_sha256": "084cfcd43a8a9e4563e817a58b3867c5addbb49045ba2dfe64c2b943ce9d7907",
+      "source_relative_path": "videos/ALRJCeVT0fQ/source.mp4",
+      "duration_s": 857.0,
+      "group": "anat-2",
+      "annotation_sha256": "80b4fd22f39d4c186007a349289e4db527493f920d92b3fb3583f30332467393",
+      "original_source_line": 8,
+      "reasons": [
+        "historical_dense_control",
+        "visually_ambiguous_sparse_window"
+      ],
+      "review_action": "historical_coarse_review_available",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": {
+        "event_observation": "content_to_blank_unresolved",
+        "source_sha256": "084cfcd43a8a9e4563e817a58b3867c5addbb49045ba2dfe64c2b943ce9d7907",
+        "annotation_s": 848.761,
+        "clip_local_path": "benchmark/experiments/outputs/mlpdataset_dense_executed_review_261017/clip-13.mp4",
+        "clip_drive_relative_path": "analysis/dense-boundaries/ALRJCeVT0fQ_7_6a20dde72786/clip.mp4",
+        "clip_sha256": "0910c8db23406894dcb48ed8e99847810f4f9094a90dbcecc7b888b134d205a1",
+        "frame_ledger_sha256": "4bb6b46025e5748c17a871774ae8b2f0e0407c757a6f354ec079fa80b19b6219",
+        "old_receipt_sha256": "4cff1a2a16486033a1b4cc97d9b26bb805df077225adc216f88dfe6a3ec5d6f5",
+        "contact_sheet": "benchmark/experiments/outputs/mlpdataset_targeted_review_261019/historical-window-13.jpg",
+        "measured_window": {
+          "effective_start_s": 843.761,
+          "effective_end_s": 853.761
+        },
+        "reviewer": "Codex visual diagnostic review",
+        "reviewed_date": "2026-10-19",
+        "timing_status": "coarse_only_no_native_endpoint_certification",
+        "gt_disposition": "hold",
+        "reviewed_point_s": null
+      }
+    },
+    {
+      "video_id": "AS8KJMeiNpM",
+      "annotation_index": 0,
+      "annotation_s": 0.0,
+      "source_sha256": "7b7db348d6152f9fc1989b96ed9ef452497deac22f8bb049de469fbab49e490d",
+      "source_relative_path": "videos/AS8KJMeiNpM/source.mp4",
+      "duration_s": 5038.0,
+      "group": "bio-3",
+      "annotation_sha256": "4f85c93ed5fea3b9c7d9a32651dc8e182ec2de865a798e00357da5925808bffd",
+      "original_source_line": 1,
+      "reasons": [
+        "historical_dense_control",
+        "source_start_zero_mark"
+      ],
+      "review_action": "historical_coarse_review_available",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": {
+        "event_observation": "source_start_context",
+        "source_sha256": "7b7db348d6152f9fc1989b96ed9ef452497deac22f8bb049de469fbab49e490d",
+        "annotation_s": 0.0,
+        "clip_local_path": "benchmark/experiments/outputs/mlpdataset_dense_executed_review_261017/clip-14.mp4",
+        "clip_drive_relative_path": "analysis/dense-boundaries/AS8KJMeiNpM_0_6a20dde72786/clip.mp4",
+        "clip_sha256": "7116e871dc518b9dbc74a85a5c49f3df529541715e065514efeaa04b29476e22",
+        "frame_ledger_sha256": "4bb6b46025e5748c17a871774ae8b2f0e0407c757a6f354ec079fa80b19b6219",
+        "old_receipt_sha256": "4cff1a2a16486033a1b4cc97d9b26bb805df077225adc216f88dfe6a3ec5d6f5",
+        "contact_sheet": "benchmark/experiments/outputs/mlpdataset_targeted_review_261019/historical-window-14.jpg",
+        "measured_window": {
+          "effective_start_s": 0.0,
+          "effective_end_s": 5.0
+        },
+        "reviewer": "Codex visual diagnostic review",
+        "reviewed_date": "2026-10-19",
+        "timing_status": "coarse_only_no_native_endpoint_certification",
+        "gt_disposition": "hold",
+        "reviewed_point_s": null
+      }
+    },
+    {
+      "video_id": "DZSEErNZ1d4",
+      "annotation_index": 8,
+      "annotation_s": 490.7598,
+      "source_sha256": "c9572702bf295d7feaa88d21b988e2c5c5ba081f366d61f421638589b6e2da24",
+      "source_relative_path": "videos/DZSEErNZ1d4/source.mp4",
+      "duration_s": 3948.0,
+      "group": "bio-3",
+      "annotation_sha256": "2f1cabd87c4fd856485a266374ab02fa1ccfda5a6882bbc42f15dfdb25e30168",
+      "original_source_line": 9,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "DZSEErNZ1d4",
+      "annotation_index": 9,
+      "annotation_s": 490.7597,
+      "source_sha256": "c9572702bf295d7feaa88d21b988e2c5c5ba081f366d61f421638589b6e2da24",
+      "source_relative_path": "videos/DZSEErNZ1d4/source.mp4",
+      "duration_s": 3948.0,
+      "group": "bio-3",
+      "annotation_sha256": "2f1cabd87c4fd856485a266374ab02fa1ccfda5a6882bbc42f15dfdb25e30168",
+      "original_source_line": 10,
+      "reasons": [
+        "nonincreasing_original_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "DZSEErNZ1d4",
+      "annotation_index": 10,
+      "annotation_s": 538.7596,
+      "source_sha256": "c9572702bf295d7feaa88d21b988e2c5c5ba081f366d61f421638589b6e2da24",
+      "source_relative_path": "videos/DZSEErNZ1d4/source.mp4",
+      "duration_s": 3948.0,
+      "group": "bio-3",
+      "annotation_sha256": "2f1cabd87c4fd856485a266374ab02fa1ccfda5a6882bbc42f15dfdb25e30168",
+      "original_source_line": 11,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "DZSEErNZ1d4",
+      "annotation_index": 20,
+      "annotation_s": 976.4894,
+      "source_sha256": "c9572702bf295d7feaa88d21b988e2c5c5ba081f366d61f421638589b6e2da24",
+      "source_relative_path": "videos/DZSEErNZ1d4/source.mp4",
+      "duration_s": 3948.0,
+      "group": "bio-3",
+      "annotation_sha256": "2f1cabd87c4fd856485a266374ab02fa1ccfda5a6882bbc42f15dfdb25e30168",
+      "original_source_line": 21,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "DZSEErNZ1d4",
+      "annotation_index": 21,
+      "annotation_s": 976.4894,
+      "source_sha256": "c9572702bf295d7feaa88d21b988e2c5c5ba081f366d61f421638589b6e2da24",
+      "source_relative_path": "videos/DZSEErNZ1d4/source.mp4",
+      "duration_s": 3948.0,
+      "group": "bio-3",
+      "annotation_sha256": "2f1cabd87c4fd856485a266374ab02fa1ccfda5a6882bbc42f15dfdb25e30168",
+      "original_source_line": 22,
+      "reasons": [
+        "nonincreasing_original_row",
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "DZSEErNZ1d4",
+      "annotation_index": 22,
+      "annotation_s": 976.4893,
+      "source_sha256": "c9572702bf295d7feaa88d21b988e2c5c5ba081f366d61f421638589b6e2da24",
+      "source_relative_path": "videos/DZSEErNZ1d4/source.mp4",
+      "duration_s": 3948.0,
+      "group": "bio-3",
+      "annotation_sha256": "2f1cabd87c4fd856485a266374ab02fa1ccfda5a6882bbc42f15dfdb25e30168",
+      "original_source_line": 23,
+      "reasons": [
+        "nonincreasing_original_row",
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "DZSEErNZ1d4",
+      "annotation_index": 23,
+      "annotation_s": 1017.4893,
+      "source_sha256": "c9572702bf295d7feaa88d21b988e2c5c5ba081f366d61f421638589b6e2da24",
+      "source_relative_path": "videos/DZSEErNZ1d4/source.mp4",
+      "duration_s": 3948.0,
+      "group": "bio-3",
+      "annotation_sha256": "2f1cabd87c4fd856485a266374ab02fa1ccfda5a6882bbc42f15dfdb25e30168",
+      "original_source_line": 24,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "DZSEErNZ1d4",
+      "annotation_index": 39,
+      "annotation_s": 1817.4892,
+      "source_sha256": "c9572702bf295d7feaa88d21b988e2c5c5ba081f366d61f421638589b6e2da24",
+      "source_relative_path": "videos/DZSEErNZ1d4/source.mp4",
+      "duration_s": 3948.0,
+      "group": "bio-3",
+      "annotation_sha256": "2f1cabd87c4fd856485a266374ab02fa1ccfda5a6882bbc42f15dfdb25e30168",
+      "original_source_line": 40,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "DZSEErNZ1d4",
+      "annotation_index": 40,
+      "annotation_s": 1817.4892,
+      "source_sha256": "c9572702bf295d7feaa88d21b988e2c5c5ba081f366d61f421638589b6e2da24",
+      "source_relative_path": "videos/DZSEErNZ1d4/source.mp4",
+      "duration_s": 3948.0,
+      "group": "bio-3",
+      "annotation_sha256": "2f1cabd87c4fd856485a266374ab02fa1ccfda5a6882bbc42f15dfdb25e30168",
+      "original_source_line": 41,
+      "reasons": [
+        "nonincreasing_original_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "DZSEErNZ1d4",
+      "annotation_index": 41,
+      "annotation_s": 1860.4892,
+      "source_sha256": "c9572702bf295d7feaa88d21b988e2c5c5ba081f366d61f421638589b6e2da24",
+      "source_relative_path": "videos/DZSEErNZ1d4/source.mp4",
+      "duration_s": 3948.0,
+      "group": "bio-3",
+      "annotation_sha256": "2f1cabd87c4fd856485a266374ab02fa1ccfda5a6882bbc42f15dfdb25e30168",
+      "original_source_line": 42,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "DZSEErNZ1d4",
+      "annotation_index": 59,
+      "annotation_s": 2871.989,
+      "source_sha256": "c9572702bf295d7feaa88d21b988e2c5c5ba081f366d61f421638589b6e2da24",
+      "source_relative_path": "videos/DZSEErNZ1d4/source.mp4",
+      "duration_s": 3948.0,
+      "group": "bio-3",
+      "annotation_sha256": "2f1cabd87c4fd856485a266374ab02fa1ccfda5a6882bbc42f15dfdb25e30168",
+      "original_source_line": 60,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "DZSEErNZ1d4",
+      "annotation_index": 60,
+      "annotation_s": 2871.9889,
+      "source_sha256": "c9572702bf295d7feaa88d21b988e2c5c5ba081f366d61f421638589b6e2da24",
+      "source_relative_path": "videos/DZSEErNZ1d4/source.mp4",
+      "duration_s": 3948.0,
+      "group": "bio-3",
+      "annotation_sha256": "2f1cabd87c4fd856485a266374ab02fa1ccfda5a6882bbc42f15dfdb25e30168",
+      "original_source_line": 61,
+      "reasons": [
+        "nonincreasing_original_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "DZSEErNZ1d4",
+      "annotation_index": 61,
+      "annotation_s": 2931.9889,
+      "source_sha256": "c9572702bf295d7feaa88d21b988e2c5c5ba081f366d61f421638589b6e2da24",
+      "source_relative_path": "videos/DZSEErNZ1d4/source.mp4",
+      "duration_s": 3948.0,
+      "group": "bio-3",
+      "annotation_sha256": "2f1cabd87c4fd856485a266374ab02fa1ccfda5a6882bbc42f15dfdb25e30168",
+      "original_source_line": 62,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "E_3gxQWaCoQ",
+      "annotation_index": 24,
+      "annotation_s": 1846.1454,
+      "source_sha256": "6c66ae2a2f76c969f5d48d9bab63f145a6606940f74175205e9621c9ba14cc46",
+      "source_relative_path": "videos/E_3gxQWaCoQ/source.mp4",
+      "duration_s": 2926.433333,
+      "group": "ml-1",
+      "annotation_sha256": "fbeb3da58829b28ab5b4cce4b8329fd8b96be2a27588b3dc0947bfe65122f10e",
+      "original_source_line": 25,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "E_3gxQWaCoQ",
+      "annotation_index": 25,
+      "annotation_s": 1846.1454,
+      "source_sha256": "6c66ae2a2f76c969f5d48d9bab63f145a6606940f74175205e9621c9ba14cc46",
+      "source_relative_path": "videos/E_3gxQWaCoQ/source.mp4",
+      "duration_s": 2926.433333,
+      "group": "ml-1",
+      "annotation_sha256": "fbeb3da58829b28ab5b4cce4b8329fd8b96be2a27588b3dc0947bfe65122f10e",
+      "original_source_line": 26,
+      "reasons": [
+        "nonincreasing_original_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "E_3gxQWaCoQ",
+      "annotation_index": 26,
+      "annotation_s": 1905.6453,
+      "source_sha256": "6c66ae2a2f76c969f5d48d9bab63f145a6606940f74175205e9621c9ba14cc46",
+      "source_relative_path": "videos/E_3gxQWaCoQ/source.mp4",
+      "duration_s": 2926.433333,
+      "group": "ml-1",
+      "annotation_sha256": "fbeb3da58829b28ab5b4cce4b8329fd8b96be2a27588b3dc0947bfe65122f10e",
+      "original_source_line": 27,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "FnMYvGkk_YE",
+      "annotation_index": 23,
+      "annotation_s": 2241.074,
+      "source_sha256": "e7d7c85a7152180636c6df2261c5b9b1d5d18f2c2da830d0e59c42968c5eb948",
+      "source_relative_path": "videos/FnMYvGkk_YE/source.mp4",
+      "duration_s": 2241.0,
+      "group": "bio-4",
+      "annotation_sha256": "ba8d6c73d9b3e68347bd9740fd85ef66c2a7f56e988917a1604f266101ee6dde",
+      "original_source_line": 24,
+      "reasons": [
+        "at_or_after_measured_source_end"
+      ],
+      "review_action": "source_edge_policy_hold",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "KDVP_WAIUXs",
+      "annotation_index": 3,
+      "annotation_s": 208.5586,
+      "source_sha256": "2b06d854c42e42882b58345e83cefa8e9877d83414a1ab59ce27bca02b4b7371",
+      "source_relative_path": "videos/KDVP_WAIUXs/source.mp4",
+      "duration_s": 823.656167,
+      "group": "dental",
+      "annotation_sha256": "a6a3453e532fec0fff3ebff1ff68ad628cbb3d352909ce44f4174cd8830cec73",
+      "original_source_line": 4,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "KDVP_WAIUXs",
+      "annotation_index": 4,
+      "annotation_s": 208.5586,
+      "source_sha256": "2b06d854c42e42882b58345e83cefa8e9877d83414a1ab59ce27bca02b4b7371",
+      "source_relative_path": "videos/KDVP_WAIUXs/source.mp4",
+      "duration_s": 823.656167,
+      "group": "dental",
+      "annotation_sha256": "a6a3453e532fec0fff3ebff1ff68ad628cbb3d352909ce44f4174cd8830cec73",
+      "original_source_line": 5,
+      "reasons": [
+        "nonincreasing_original_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "KDVP_WAIUXs",
+      "annotation_index": 5,
+      "annotation_s": 252.5586,
+      "source_sha256": "2b06d854c42e42882b58345e83cefa8e9877d83414a1ab59ce27bca02b4b7371",
+      "source_relative_path": "videos/KDVP_WAIUXs/source.mp4",
+      "duration_s": 823.656167,
+      "group": "dental",
+      "annotation_sha256": "a6a3453e532fec0fff3ebff1ff68ad628cbb3d352909ce44f4174cd8830cec73",
+      "original_source_line": 6,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "L1TiP9P55-8",
+      "annotation_index": 58,
+      "annotation_s": 4175.2499,
+      "source_sha256": "4f4b9d0f51633324aab47524da81ba5d4603eab7143f1f23129bfc1716704116",
+      "source_relative_path": "videos/L1TiP9P55-8/source.mp4",
+      "duration_s": 4175.1,
+      "group": "ml-1",
+      "annotation_sha256": "ade8e42f8739bb7d470527928a34d4507f3785a7498f7958aa71bb35f714065f",
+      "original_source_line": 59,
+      "reasons": [
+        "at_or_after_measured_source_end"
+      ],
+      "review_action": "source_edge_policy_hold",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "NQtXvfJCtxo",
+      "annotation_index": 1,
+      "annotation_s": 77.4999,
+      "source_sha256": "baf1e94da7a9dbf513972d4df9a8028db5efbb5792b0c5a1ecc5d130b1547496",
+      "source_relative_path": "videos/NQtXvfJCtxo/source.mp4",
+      "duration_s": 1093.6,
+      "group": "dental",
+      "annotation_sha256": "afd5a21b9e2a84460bfcdfe644949b1277cc0dccd85f0d3523ea3e3c3827c7b5",
+      "original_source_line": 2,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "NQtXvfJCtxo",
+      "annotation_index": 2,
+      "annotation_s": 77.4999,
+      "source_sha256": "baf1e94da7a9dbf513972d4df9a8028db5efbb5792b0c5a1ecc5d130b1547496",
+      "source_relative_path": "videos/NQtXvfJCtxo/source.mp4",
+      "duration_s": 1093.6,
+      "group": "dental",
+      "annotation_sha256": "afd5a21b9e2a84460bfcdfe644949b1277cc0dccd85f0d3523ea3e3c3827c7b5",
+      "original_source_line": 3,
+      "reasons": [
+        "nonincreasing_original_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "NQtXvfJCtxo",
+      "annotation_index": 3,
+      "annotation_s": 113.4999,
+      "source_sha256": "baf1e94da7a9dbf513972d4df9a8028db5efbb5792b0c5a1ecc5d130b1547496",
+      "source_relative_path": "videos/NQtXvfJCtxo/source.mp4",
+      "duration_s": 1093.6,
+      "group": "dental",
+      "annotation_sha256": "afd5a21b9e2a84460bfcdfe644949b1277cc0dccd85f0d3523ea3e3c3827c7b5",
+      "original_source_line": 4,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "RntXStwLA48",
+      "annotation_index": 30,
+      "annotation_s": 2269.612,
+      "source_sha256": "b77c5e05a5e3cfe373271f7726898b3582d547e64fac1d744256890b61798d91",
+      "source_relative_path": "videos/RntXStwLA48/source.mp4",
+      "duration_s": 2269.5,
+      "group": "bio-1",
+      "annotation_sha256": "9de9db27fe663df8374e2dbbd99c25458e2a5b4cc0094a8a409c0380bdec12d1",
+      "original_source_line": 31,
+      "reasons": [
+        "at_or_after_measured_source_end"
+      ],
+      "review_action": "source_edge_policy_hold",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "UsAgvMC5fRs",
+      "annotation_index": 0,
+      "annotation_s": 0.0,
+      "source_sha256": "eb4042e9121da1c69e8397284c339c7d592541ffb9b5931955ea8850d78a3dd4",
+      "source_relative_path": "videos/UsAgvMC5fRs/source.mp4",
+      "duration_s": 4951.28,
+      "group": "ml-1",
+      "annotation_sha256": "866b15967d75ea91f1b1962845889e9f239e9107a19da3fe29fec4542f5246fb",
+      "original_source_line": 1,
+      "reasons": [
+        "source_start_zero_mark"
+      ],
+      "review_action": "source_edge_policy_hold",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "W0-80WT5G_s",
+      "annotation_index": 21,
+      "annotation_s": 3006.567,
+      "source_sha256": "b53116c4992bf8a095f2920b817af68c64e4cf68cd292cb81c94b67b1e03aff3",
+      "source_relative_path": "videos/W0-80WT5G_s/source.mp4",
+      "duration_s": 3006.5,
+      "group": "anat-1",
+      "annotation_sha256": "15fe11c5c55aacb4778e1f44a71434815c5fc9e5981162920bdc314b545e7ee9",
+      "original_source_line": 22,
+      "reasons": [
+        "at_or_after_measured_source_end"
+      ],
+      "review_action": "source_edge_policy_hold",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "WGrvg7ZuPEc",
+      "annotation_index": 0,
+      "annotation_s": 15.5,
+      "source_sha256": "35a7c3fab2ec9a5d1e6db28f8d451c5cab4348d19bb9f472798b0b687b85a867",
+      "source_relative_path": "videos/WGrvg7ZuPEc/source.mp4",
+      "duration_s": 1678.9,
+      "group": "dental",
+      "annotation_sha256": "80f74caf735349da33638655341195e9d424a7faaaa5bcda343742d57c9746c0",
+      "original_source_line": 1,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "WGrvg7ZuPEc",
+      "annotation_index": 1,
+      "annotation_s": 15.5,
+      "source_sha256": "35a7c3fab2ec9a5d1e6db28f8d451c5cab4348d19bb9f472798b0b687b85a867",
+      "source_relative_path": "videos/WGrvg7ZuPEc/source.mp4",
+      "duration_s": 1678.9,
+      "group": "dental",
+      "annotation_sha256": "80f74caf735349da33638655341195e9d424a7faaaa5bcda343742d57c9746c0",
+      "original_source_line": 2,
+      "reasons": [
+        "nonincreasing_original_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "WGrvg7ZuPEc",
+      "annotation_index": 2,
+      "annotation_s": 48.0,
+      "source_sha256": "35a7c3fab2ec9a5d1e6db28f8d451c5cab4348d19bb9f472798b0b687b85a867",
+      "source_relative_path": "videos/WGrvg7ZuPEc/source.mp4",
+      "duration_s": 1678.9,
+      "group": "dental",
+      "annotation_sha256": "80f74caf735349da33638655341195e9d424a7faaaa5bcda343742d57c9746c0",
+      "original_source_line": 3,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "XVHN0izviAw",
+      "annotation_index": 0,
+      "annotation_s": 0.0,
+      "source_sha256": "839df1d12c32562f83ce016ab11d378871ddebc604e21af6fef1258936d7836e",
+      "source_relative_path": "videos/XVHN0izviAw/source.mp4",
+      "duration_s": 4604.3,
+      "group": "ml-1",
+      "annotation_sha256": "3da5486c6e9ee5ec821ededf0ae53a145b044e1c569dadd6244b7c8da692d9b2",
+      "original_source_line": 1,
+      "reasons": [
+        "source_start_zero_mark"
+      ],
+      "review_action": "source_edge_policy_hold",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "_Jw3DQ7_pxg",
+      "annotation_index": 56,
+      "annotation_s": 3171.08,
+      "source_sha256": "e3afe8fc1be453b7888ed599ba48bd72c5de5f154d68e9f1e2d823798e743f4e",
+      "source_relative_path": "videos/_Jw3DQ7_pxg/source.mp4",
+      "duration_s": 3171.0,
+      "group": "bio-4",
+      "annotation_sha256": "8d2d8c340438e5bcd7e917b128b939ba78c5807a22d28e155fb34a6dae9f8a04",
+      "original_source_line": 57,
+      "reasons": [
+        "at_or_after_measured_source_end"
+      ],
+      "review_action": "source_edge_policy_hold",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "_yre2uKcj7A",
+      "annotation_index": 16,
+      "annotation_s": 1570.5,
+      "source_sha256": "997d2fbfbb1c66ffa9433faa5674f71cae79818ac39e942216c466f96d65371a",
+      "source_relative_path": "videos/_yre2uKcj7A/source.mp4",
+      "duration_s": 2952.966667,
+      "group": "anat-1",
+      "annotation_sha256": "710ad809612d35e6f705f6823e31ea0a9ec4e0b51533f9bcfe21f389b6e1b267",
+      "original_source_line": 17,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "_yre2uKcj7A",
+      "annotation_index": 17,
+      "annotation_s": 1570.5,
+      "source_sha256": "997d2fbfbb1c66ffa9433faa5674f71cae79818ac39e942216c466f96d65371a",
+      "source_relative_path": "videos/_yre2uKcj7A/source.mp4",
+      "duration_s": 2952.966667,
+      "group": "anat-1",
+      "annotation_sha256": "710ad809612d35e6f705f6823e31ea0a9ec4e0b51533f9bcfe21f389b6e1b267",
+      "original_source_line": 18,
+      "reasons": [
+        "nonincreasing_original_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "_yre2uKcj7A",
+      "annotation_index": 18,
+      "annotation_s": 1688.0,
+      "source_sha256": "997d2fbfbb1c66ffa9433faa5674f71cae79818ac39e942216c466f96d65371a",
+      "source_relative_path": "videos/_yre2uKcj7A/source.mp4",
+      "duration_s": 2952.966667,
+      "group": "anat-1",
+      "annotation_sha256": "710ad809612d35e6f705f6823e31ea0a9ec4e0b51533f9bcfe21f389b6e1b267",
+      "original_source_line": 19,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "_yre2uKcj7A",
+      "annotation_index": 32,
+      "annotation_s": 2953.021,
+      "source_sha256": "997d2fbfbb1c66ffa9433faa5674f71cae79818ac39e942216c466f96d65371a",
+      "source_relative_path": "videos/_yre2uKcj7A/source.mp4",
+      "duration_s": 2952.966667,
+      "group": "anat-1",
+      "annotation_sha256": "710ad809612d35e6f705f6823e31ea0a9ec4e0b51533f9bcfe21f389b6e1b267",
+      "original_source_line": 33,
+      "reasons": [
+        "at_or_after_measured_source_end"
+      ],
+      "review_action": "source_edge_policy_hold",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "aLK_nkgx8wo",
+      "annotation_index": 0,
+      "annotation_s": 13.9937,
+      "source_sha256": "802dd54ca7db9ce7b1f568da0a21c600facd739fc7bdb1679ab13aaceb3191f5",
+      "source_relative_path": "videos/aLK_nkgx8wo/source.mp4",
+      "duration_s": 2449.533333,
+      "group": "psy-2",
+      "annotation_sha256": "17ad9f9443e303612af32f85fa754ce147aa5bbc23d190b9954fcea530954f7e",
+      "original_source_line": 1,
+      "reasons": [
+        "visually_ambiguous_sparse_window"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "aLK_nkgx8wo",
+      "annotation_index": 30,
+      "annotation_s": 2449.589,
+      "source_sha256": "802dd54ca7db9ce7b1f568da0a21c600facd739fc7bdb1679ab13aaceb3191f5",
+      "source_relative_path": "videos/aLK_nkgx8wo/source.mp4",
+      "duration_s": 2449.533333,
+      "group": "psy-2",
+      "annotation_sha256": "17ad9f9443e303612af32f85fa754ce147aa5bbc23d190b9954fcea530954f7e",
+      "original_source_line": 31,
+      "reasons": [
+        "at_or_after_measured_source_end"
+      ],
+      "review_action": "source_edge_policy_hold",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "aZDNeibQBzY",
+      "annotation_index": 20,
+      "annotation_s": 3126.66,
+      "source_sha256": "6b6c231a3f606c64f639e1e220a5462e19aef07760cd9c2f28e13e4cc1f400dc",
+      "source_relative_path": "videos/aZDNeibQBzY/source.mp4",
+      "duration_s": 3126.56,
+      "group": "speaking",
+      "annotation_sha256": "a103181233d7a3d30dac727e27f915fdacaa4027854f967a85e9805c098f7bbe",
+      "original_source_line": 21,
+      "reasons": [
+        "at_or_after_measured_source_end"
+      ],
+      "review_action": "source_edge_policy_hold",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "b118qvD927M",
+      "annotation_index": 0,
+      "annotation_s": 538.866,
+      "source_sha256": "abf559b9b6203d04c5797b58ad28f3ffea14fede476bdb58d7e7b2c67075c142",
+      "source_relative_path": "videos/b118qvD927M/source.mp4",
+      "duration_s": 538.833333,
+      "group": "dental",
+      "annotation_sha256": "d4ea2899ba59b05580eb24f459dd4ca447f4fbebee079c7e123b3ffdbfdd583e",
+      "original_source_line": 1,
+      "reasons": [
+        "at_or_after_measured_source_end",
+        "visually_ambiguous_sparse_window"
+      ],
+      "review_action": "source_edge_policy_hold",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "crA3cOwKXmc",
+      "annotation_index": 23,
+      "annotation_s": 2290.417,
+      "source_sha256": "c55b23be3b1a15564a17e18eecdd61a84f6a1fc6ef94c6cd8ad6f275528ed80c",
+      "source_relative_path": "videos/crA3cOwKXmc/source.mp4",
+      "duration_s": 2290.366667,
+      "group": "dental",
+      "annotation_sha256": "bea7105111648f4b3949da0640befbb308c01a982b34676f8b52b2a90e35fccc",
+      "original_source_line": 24,
+      "reasons": [
+        "at_or_after_measured_source_end"
+      ],
+      "review_action": "source_edge_policy_hold",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "ewjt-8MRbxY",
+      "annotation_index": 25,
+      "annotation_s": 2292.089,
+      "source_sha256": "45b5a9880c0203e46a259f06bb84df0d6e1b27aea901ae4a93c7662de0180c75",
+      "source_relative_path": "videos/ewjt-8MRbxY/source.mp4",
+      "duration_s": 2292.025359,
+      "group": "dental",
+      "annotation_sha256": "133c6e2c3bd7e214afadbe15193e8907978c1f3f5f68c8d098ad6d08054b082f",
+      "original_source_line": 26,
+      "reasons": [
+        "at_or_after_measured_source_end"
+      ],
+      "review_action": "source_edge_policy_hold",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "fBYu8I52nVM",
+      "annotation_index": 24,
+      "annotation_s": 2284.167,
+      "source_sha256": "b2f773cb98180097ec25a63d47eceecc143e030a9c26bf9f458e2e8b30e8cd1f",
+      "source_relative_path": "videos/fBYu8I52nVM/source.mp4",
+      "duration_s": 4884.433333,
+      "group": "ml-1",
+      "annotation_sha256": "797d1915005825b3826298619ff79896bdd02f70d397d2c485f7d6d2e02f875a",
+      "original_source_line": 25,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "fBYu8I52nVM",
+      "annotation_index": 25,
+      "annotation_s": 2284.1669,
+      "source_sha256": "b2f773cb98180097ec25a63d47eceecc143e030a9c26bf9f458e2e8b30e8cd1f",
+      "source_relative_path": "videos/fBYu8I52nVM/source.mp4",
+      "duration_s": 4884.433333,
+      "group": "ml-1",
+      "annotation_sha256": "797d1915005825b3826298619ff79896bdd02f70d397d2c485f7d6d2e02f875a",
+      "original_source_line": 26,
+      "reasons": [
+        "nonincreasing_original_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "fBYu8I52nVM",
+      "annotation_index": 26,
+      "annotation_s": 2327.1668,
+      "source_sha256": "b2f773cb98180097ec25a63d47eceecc143e030a9c26bf9f458e2e8b30e8cd1f",
+      "source_relative_path": "videos/fBYu8I52nVM/source.mp4",
+      "duration_s": 4884.433333,
+      "group": "ml-1",
+      "annotation_sha256": "797d1915005825b3826298619ff79896bdd02f70d397d2c485f7d6d2e02f875a",
+      "original_source_line": 27,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "grudC3qeMfU",
+      "annotation_index": 53,
+      "annotation_s": 2123.047,
+      "source_sha256": "3052f2aeb344bb07cb1e7fcb9ae89e03442b36fb5b0e945a429880d8d66a04e0",
+      "source_relative_path": "videos/grudC3qeMfU/source.mp4",
+      "duration_s": 2123.0,
+      "group": "bio-4",
+      "annotation_sha256": "e10edbb937ef995636006fbb3d3402473d21ca24b183712f35127519bce44871",
+      "original_source_line": 54,
+      "reasons": [
+        "at_or_after_measured_source_end"
+      ],
+      "review_action": "source_edge_policy_hold",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "h2CWXJSQMD0",
+      "annotation_index": 20,
+      "annotation_s": 3148.997,
+      "source_sha256": "b2242676f64700a3807d6e0f815632f0481b1fafac815b9c9e0cdfd590d3df6e",
+      "source_relative_path": "videos/h2CWXJSQMD0/source.mp4",
+      "duration_s": 3148.933333,
+      "group": "psy-1",
+      "annotation_sha256": "28fc508980fd4264e3a9b7332736733c4e8ec6a8e1934dbd6822eb9edbe7cedc",
+      "original_source_line": 21,
+      "reasons": [
+        "at_or_after_measured_source_end"
+      ],
+      "review_action": "source_edge_policy_hold",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "jLgLSlM9jwI",
+      "annotation_index": 0,
+      "annotation_s": 0.0,
+      "source_sha256": "30e7ea104b7ad6368a7bf8a6a2fdb56571967c4333636d0e79c4058ef0dd72b2",
+      "source_relative_path": "videos/jLgLSlM9jwI/source.mp4",
+      "duration_s": 4715.633333,
+      "group": "anat-1",
+      "annotation_sha256": "d4b09651df0b369e65b81613e278ae47f53ce68c543c47cebbcccb0f56bff440",
+      "original_source_line": 1,
+      "reasons": [
+        "source_start_zero_mark"
+      ],
+      "review_action": "source_edge_policy_hold",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "lBI8DXevsDk",
+      "annotation_index": 40,
+      "annotation_s": 3744.2097,
+      "source_sha256": "eff30b1b9b2b030839f61c5712de1c99d9281a68701a06499143972b8ba0efcc",
+      "source_relative_path": "videos/lBI8DXevsDk/source.mp4",
+      "duration_s": 3765.24,
+      "group": "speaking",
+      "annotation_sha256": "fe01cd1cda5a37682fc456c0507ffdcdb5f572dd544146a823432f3383c34432",
+      "original_source_line": 41,
+      "reasons": [
+        "original_neighbor_of_nonincreasing_row"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "lBI8DXevsDk",
+      "annotation_index": 41,
+      "annotation_s": 3744.2097,
+      "source_sha256": "eff30b1b9b2b030839f61c5712de1c99d9281a68701a06499143972b8ba0efcc",
+      "source_relative_path": "videos/lBI8DXevsDk/source.mp4",
+      "duration_s": 3765.24,
+      "group": "speaking",
+      "annotation_sha256": "fe01cd1cda5a37682fc456c0507ffdcdb5f572dd544146a823432f3383c34432",
+      "original_source_line": 42,
+      "reasons": [
+        "nonincreasing_original_row",
+        "visually_ambiguous_sparse_window"
+      ],
+      "review_action": "needs_dense_context",
+      "requires_new_dense_context": true,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "o049fWhBw2A",
+      "annotation_index": 6,
+      "annotation_s": 3159.818,
+      "source_sha256": "06c52eb808f6a87fa56b009697a996bdde6d1553e498d08f87c392a6d9d815ea",
+      "source_relative_path": "videos/o049fWhBw2A/source.mp4",
+      "duration_s": 3159.766667,
+      "group": "psy-1",
+      "annotation_sha256": "56979692c4a8edb9a537c7d426cb4ef6a56d6c1e2381e9299a5a6182fcfa7245",
+      "original_source_line": 7,
+      "reasons": [
+        "at_or_after_measured_source_end"
+      ],
+      "review_action": "source_edge_policy_hold",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "pUH2_SGnm9g",
+      "annotation_index": 44,
+      "annotation_s": 3053.146,
+      "source_sha256": "3be89acaa69f4f56df90de3e90d5e20b9d32014e5a02a5961e38b50215fdb448",
+      "source_relative_path": "videos/pUH2_SGnm9g/source.mp4",
+      "duration_s": 3053.033333,
+      "group": "bio-1",
+      "annotation_sha256": "f4a96ab343189bdb393d9e260738fafff10bbfe5df33c34ccbe33d1b3ce4f3f6",
+      "original_source_line": 45,
+      "reasons": [
+        "at_or_after_measured_source_end",
+        "visually_ambiguous_sparse_window"
+      ],
+      "review_action": "source_edge_policy_hold",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    },
+    {
+      "video_id": "tmXh_vj88sE",
+      "annotation_index": 25,
+      "annotation_s": 3064.895,
+      "source_sha256": "8f665b393bb47d04b4643eef04c10029e6d57b4976618a7822e1d6cbd1a4ddcf",
+      "source_relative_path": "videos/tmXh_vj88sE/source.mp4",
+      "duration_s": 3064.866667,
+      "group": "psy-2",
+      "annotation_sha256": "35ae3058bad65c7799e9b554035cc92b22290e6567563c23a8f2d9977b25663a",
+      "original_source_line": 26,
+      "reasons": [
+        "at_or_after_measured_source_end"
+      ],
+      "review_action": "source_edge_policy_hold",
+      "requires_new_dense_context": false,
+      "semantic_review_status": "pending_native_endpoint_or_policy",
+      "gt_disposition": "hold",
+      "historical_evidence": null
+    }
+  ],
+  "summary": {
+    "selected_marks": 82,
+    "videos": 42,
+    "groups": 10,
+    "historical_verified_clips": 14,
+    "new_dense_contexts": 48,
+    "policy_only_edges": 20
+  }
+}

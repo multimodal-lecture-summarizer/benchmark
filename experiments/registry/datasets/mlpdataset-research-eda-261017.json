@@ -1,0 +1,313 @@
+{
+  "schema_version": 1,
+  "dataset": "MLPDataset pinned legacy mlp_anon.zip",
+  "observed_at_utc": "2026-10-17T02:20:13.388156+00:00",
+  "status": "ANNOTATION_EDA_AND_RELEASE_COMPARISON_COMPLETE_MEDIA_ALIGNMENT_HOLD",
+  "archive_sha256": "dbd07ef37de603a22abb7be7d81245034b3c487f4878227cbef36ae3d451cfa7",
+  "source_id": "1amyxxy4reuHGQ3FaKLE5bYzVxD7DOl7K",
+  "source_repo_commit": "0e5ceabc29e381f52b70383c23a2c32a2dd47962",
+  "upstream_repo_commit": "e1addf4f4e2ddb3457dc18f94117cafa8d063e90",
+  "upstream_updated_archive_id": "1yoilKif2bBb8Z9j8D5yqQKmjzG0uS7IB",
+  "updated_archive_analyzed": true,
+  "updated_release": {
+    "sha256": "9d85728e0fdf27999f7ca2794ab49b24da4b5f8fa42a7defcb122223a763447d",
+    "bytes": 148633724,
+    "crc": "PASS",
+    "members": 28191,
+    "source_video_rows": 333,
+    "segment_files": 332,
+    "media_files": 0,
+    "identical_files": 27810,
+    "changed_files": [
+      "dental/dental.json"
+    ],
+    "legacy_only": 17,
+    "updated_only": 1,
+    "all_transition_asr_spoken_members_byte_identical": true,
+    "json_parse_failures": 0
+  },
+  "selected_source_videos": 333,
+  "accounted_source_videos": 333,
+  "annotation_folders": 332,
+  "released_marks": 9021,
+  "structural_candidate_videos": 315,
+  "structurally_flagged_videos": 18,
+  "empty_segment_files": 6,
+  "missing_annotation_folders": 1,
+  "nonincreasing_marks": 15,
+  "csv_segment_mismatches": 0,
+  "json_parse_failures": 1,
+  "transcript_files": 332,
+  "spoken_files": 9021,
+  "transcript_words": 1652828,
+  "spoken_words": 1613709,
+  "spoken_offset_checked_files": 8684,
+  "spoken_offset_mismatch_files": 0,
+  "spoken_empty_files": 337,
+  "spoken_negative_start_files": 3223,
+  "spoken_raw_word_differences": 41766,
+  "spoken_casefold_word_differences": 0,
+  "media_files_in_archive": 0,
+  "media_probe_selected_ids": [
+    "-8QB3Rbeqoc",
+    "-a5-EHnZ_XA"
+  ],
+  "media_probe_attempted": 2,
+  "decoded_probe_frames": 0,
+  "semantically_verified_video_boundaries": 0,
+  "cohort_frozen": false,
+  "split_assigned": false,
+  "model_inference_run": false,
+  "sources": [
+    {
+      "repo": "mlpdataset/MLPDataset",
+      "revision": "0e5ceabc29e381f52b70383c23a2c32a2dd47962",
+      "source_path": "README.md",
+      "url": "https://raw.githubusercontent.com/mlpdataset/MLPDataset/0e5ceabc29e381f52b70383c23a2c32a2dd47962/README.md",
+      "status": 200,
+      "sha256": "95f31d64d11477f69ef75e2fd58888ff16e7d4c37a60d4d2250bc3d33bdfdf3d",
+      "bytes": 10492,
+      "local_file": "mlpdataset__README.txt",
+      "observed_at_utc": "2026-10-17T02:07:54.590078+00:00"
+    },
+    {
+      "repo": "mlpdataset/MLPDataset",
+      "revision": "0e5ceabc29e381f52b70383c23a2c32a2dd47962",
+      "source_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/mlpdataset/MLPDataset/0e5ceabc29e381f52b70383c23a2c32a2dd47962/LICENSE",
+      "status": 200,
+      "sha256": "1349a4b6148492b44f629e64eed676612e234fe9a839e4f3b277c1482c8849f1",
+      "bytes": 20849,
+      "local_file": "mlpdataset__LICENSE",
+      "observed_at_utc": "2026-10-17T02:07:55.041076+00:00"
+    },
+    {
+      "repo": "mlpdataset/MLPDataset",
+      "revision": "0e5ceabc29e381f52b70383c23a2c32a2dd47962",
+      "source_path": "dataset/README.md",
+      "url": "https://raw.githubusercontent.com/mlpdataset/MLPDataset/0e5ceabc29e381f52b70383c23a2c32a2dd47962/dataset/README.md",
+      "status": 200,
+      "sha256": "e961de48ccc25e01baf54c7db21c573cbd95e4ea9fe99d0a6f5bc5436d4494c3",
+      "bytes": 2088,
+      "local_file": "mlpdataset__dataset__README.txt",
+      "observed_at_utc": "2026-10-17T02:07:55.551757+00:00"
+    },
+    {
+      "repo": "mlpdataset/MLPDataset",
+      "revision": "0e5ceabc29e381f52b70383c23a2c32a2dd47962",
+      "source_path": "dataset/raw_video_links.csv",
+      "url": "https://raw.githubusercontent.com/mlpdataset/MLPDataset/0e5ceabc29e381f52b70383c23a2c32a2dd47962/dataset/raw_video_links.csv",
+      "status": 200,
+      "sha256": "982a02af3df872d10bd0590e8ac8f6118458a6545aa7dfb6baa8cd977020346e",
+      "bytes": 110742,
+      "local_file": "mlpdataset__dataset__raw_video_links.csv",
+      "observed_at_utc": "2026-10-17T02:07:56.078482+00:00"
+    },
+    {
+      "repo": "mlpdataset/MLPDataset",
+      "revision": "0e5ceabc29e381f52b70383c23a2c32a2dd47962",
+      "source_path": "preprocessing/README.md",
+      "url": "https://raw.githubusercontent.com/mlpdataset/MLPDataset/0e5ceabc29e381f52b70383c23a2c32a2dd47962/preprocessing/README.md",
+      "status": 200,
+      "sha256": "ce9e47e71c0fd3ab0ddf532b7b2f347a04e3a6b965979f64d6ef2d150f868f10",
+      "bytes": 4741,
+      "local_file": "mlpdataset__preprocessing__README.txt",
+      "observed_at_utc": "2026-10-17T02:07:56.597565+00:00"
+    },
+    {
+      "repo": "mlpdataset/MLPDataset",
+      "revision": "0e5ceabc29e381f52b70383c23a2c32a2dd47962",
+      "source_path": "preprocessing/extract_slide_imgs.py",
+      "url": "https://raw.githubusercontent.com/mlpdataset/MLPDataset/0e5ceabc29e381f52b70383c23a2c32a2dd47962/preprocessing/extract_slide_imgs.py",
+      "status": 200,
+      "sha256": "ed589c1e925c5f4c68dc61558862629946b0da4f11194f7e0dc56d5ed54a2976",
+      "bytes": 1604,
+      "local_file": "mlpdataset__preprocessing__extract_slide_imgs.py",
+      "observed_at_utc": "2026-10-17T02:07:57.054335+00:00"
+    },
+    {
+      "repo": "mlpdataset/MLPDataset",
+      "revision": "0e5ceabc29e381f52b70383c23a2c32a2dd47962",
+      "source_path": "preprocessing/mturk_slide_seg.html",
+      "url": "https://raw.githubusercontent.com/mlpdataset/MLPDataset/0e5ceabc29e381f52b70383c23a2c32a2dd47962/preprocessing/mturk_slide_seg.html",
+      "status": 200,
+      "sha256": "13d56a9f225884de35058a954c4568e99985c105c0cbaf32719e71e562bbe38b",
+      "bytes": 36265,
+      "local_file": "mlpdataset__preprocessing__mturk_slide_seg.html",
+      "observed_at_utc": "2026-10-17T02:07:57.500180+00:00"
+    },
+    {
+      "repo": "mlpdataset/MLPDataset",
+      "revision": "0e5ceabc29e381f52b70383c23a2c32a2dd47962",
+      "source_path": "preprocessing/download_raw_videos.py",
+      "url": "https://raw.githubusercontent.com/mlpdataset/MLPDataset/0e5ceabc29e381f52b70383c23a2c32a2dd47962/preprocessing/download_raw_videos.py",
+      "status": 200,
+      "sha256": "0bf9101f8d70e5a216fac2b875bd00dcfd6a33fa0b608f977d8438ac011e6bd4",
+      "bytes": 1374,
+      "local_file": "mlpdataset__preprocessing__download_raw_videos.py",
+      "observed_at_utc": "2026-10-17T02:07:57.934519+00:00"
+    },
+    {
+      "repo": "mlpdataset/MLPDataset",
+      "revision": "0e5ceabc29e381f52b70383c23a2c32a2dd47962",
+      "source_path": "preprocessing/ASR.py",
+      "url": "https://raw.githubusercontent.com/mlpdataset/MLPDataset/0e5ceabc29e381f52b70383c23a2c32a2dd47962/preprocessing/ASR.py",
+      "status": 200,
+      "sha256": "95459e8bb91c3f03d9a128043e17e6571fb817db051d18685397a4d573b5d5b0",
+      "bytes": 7049,
+      "local_file": "mlpdataset__preprocessing__ASR.py",
+      "observed_at_utc": "2026-10-17T02:07:58.376174+00:00"
+    },
+    {
+      "repo": "dondongwon/LPMDataset",
+      "revision": "e1addf4f4e2ddb3457dc18f94117cafa8d063e90",
+      "source_path": "README.md",
+      "url": "https://raw.githubusercontent.com/dondongwon/LPMDataset/e1addf4f4e2ddb3457dc18f94117cafa8d063e90/README.md",
+      "status": 200,
+      "sha256": "7ad0d72e9be4c444d917f29fa917e04352b61428853aa7f727f4559095a64696",
+      "bytes": 10598,
+      "local_file": "dondongwon__README.txt",
+      "observed_at_utc": "2026-10-17T02:07:58.825294+00:00"
+    },
+    {
+      "repo": "dondongwon/LPMDataset",
+      "revision": "e1addf4f4e2ddb3457dc18f94117cafa8d063e90",
+      "source_path": "dataset/raw_video_links.csv",
+      "url": "https://raw.githubusercontent.com/dondongwon/LPMDataset/e1addf4f4e2ddb3457dc18f94117cafa8d063e90/dataset/raw_video_links.csv",
+      "status": 200,
+      "sha256": "982a02af3df872d10bd0590e8ac8f6118458a6545aa7dfb6baa8cd977020346e",
+      "bytes": 110742,
+      "local_file": "dondongwon__dataset__raw_video_links.csv",
+      "observed_at_utc": "2026-10-17T02:07:59.314201+00:00"
+    },
+    {
+      "repo": "dondongwon/LPMDataset",
+      "revision": "e1addf4f4e2ddb3457dc18f94117cafa8d063e90",
+      "source_path": "preprocessing/extract_slide_imgs.py",
+      "url": "https://raw.githubusercontent.com/dondongwon/LPMDataset/e1addf4f4e2ddb3457dc18f94117cafa8d063e90/preprocessing/extract_slide_imgs.py",
+      "status": 200,
+      "sha256": "ed589c1e925c5f4c68dc61558862629946b0da4f11194f7e0dc56d5ed54a2976",
+      "bytes": 1604,
+      "local_file": "dondongwon__preprocessing__extract_slide_imgs.py",
+      "observed_at_utc": "2026-10-17T02:07:59.875117+00:00"
+    }
+  ],
+  "release_comparison": [
+    {
+      "source": "mlpdataset",
+      "metadata_rows": 334,
+      "common_ids": 333,
+      "ids_only_in_zip": "",
+      "ids_only_in_repo": "dEh_Zk9d0sE",
+      "changed_timestamp_lists": 0,
+      "changed_ids": "",
+      "raw_csv_byte_identical": false
+    },
+    {
+      "source": "dondongwon",
+      "metadata_rows": 334,
+      "common_ids": 333,
+      "ids_only_in_zip": "",
+      "ids_only_in_repo": "dEh_Zk9d0sE",
+      "changed_timestamp_lists": 0,
+      "changed_ids": "",
+      "raw_csv_byte_identical": false
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "experiments/outputs/mlpdataset_research_261017/video-ledger.csv",
+      "sha256": "c50b728f73b8562739dd2360a379f74f3d8588e1da153e0ee126d6f14fdae135",
+      "bytes": 103965
+    },
+    {
+      "path": "experiments/outputs/mlpdataset_research_261017/boundary-ledger.csv",
+      "sha256": "097523d8b0b588943f3f949158b72ea43aaf5cb29dcf13bb79add91a9eeedc1f",
+      "bytes": 1422624
+    },
+    {
+      "path": "experiments/outputs/mlpdataset_research_261017/parse-errors.csv",
+      "sha256": "e4aa5fc921cd5a06b578c6bb168ff27b9c21b3e946e79502f607a5e72b0dd182",
+      "bytes": 27
+    },
+    {
+      "path": "experiments/outputs/mlpdataset_research_261017/release-comparison.csv",
+      "sha256": "93835f34a5b26c4352cb05517e6f0ce2053063dff41fd06f4529ef8e0def9fe2",
+      "bytes": 209
+    },
+    {
+      "path": "experiments/outputs/mlpdataset_research_261017/cross-release-member-hashes.csv",
+      "sha256": "3a57dc2bce7946a0be76cb39e72f46e8443d160d2342376a4b7c7b9c3a54868f",
+      "bytes": 5360993
+    },
+    {
+      "path": "experiments/outputs/mlpdataset_research_261017/updated-json-audit.csv",
+      "sha256": "b155aba9c87a8737b06ef38d0d0758c36445b5cc1d4e220609beb589699a0811",
+      "bytes": 1352
+    },
+    {
+      "path": "experiments/outputs/mlpdataset_research_261017/video-anomalies.csv",
+      "sha256": "f9dff305e03123dddd31ef8bf45e90c7ed430d426005a2e22fb224b0c299a2b5",
+      "bytes": 5511
+    },
+    {
+      "path": "experiments/outputs/mlpdataset_research_261017/terminal-sensitivity.csv",
+      "sha256": "c2abf31b49f1f964de9badfa73ba710e10fd366a0cbbdd7142ebd55db65a0419",
+      "bytes": 72
+    },
+    {
+      "path": "experiments/outputs/mlpdataset_research_261017/speaker-summary.csv",
+      "sha256": "f61f9b275e177fd8610e0835c7778e300659e010861c5651fa3266831c1e953a",
+      "bytes": 405
+    },
+    {
+      "path": "experiments/outputs/mlpdataset_research_261017/json-audit.csv",
+      "sha256": "ee90975e90549850e445fe3b6228532eca72748a0210ebbb7d59d440488120f4",
+      "bytes": 1383
+    },
+    {
+      "path": "experiments/outputs/mlpdataset_research_261017/asr-transcript-audit.csv",
+      "sha256": "9465a89ff1d5da12146783559269ac4cb6a3b5c303653650a57d9bf133bb6451",
+      "bytes": 33853
+    },
+    {
+      "path": "experiments/outputs/mlpdataset_research_261017/spoken-offset-audit.csv",
+      "sha256": "a848aea9217a972e4544876ab533c6bcf174202ba1537b5528cb6dc1afa20ad0",
+      "bytes": 1036349
+    },
+    {
+      "path": "experiments/outputs/mlpdataset_research_261017/annotation-duplicate-groups.csv",
+      "sha256": "ab57784a5634273ed728d4b4fa6cb556216282fae4b0acddd7d82420376ec25e",
+      "bytes": 1852
+    },
+    {
+      "path": "experiments/outputs/mlpdataset_research_261017/series-groups.csv",
+      "sha256": "17b13049c56ab76dfcc51f59b5287c75dea54edac1f56ec08dc80dbfc7ccd74f",
+      "bytes": 1228
+    },
+    {
+      "path": "experiments/outputs/mlpdataset_research_261017/media-probes.csv",
+      "sha256": "09890190a6f6b5948d02338a61bdaf8235d4d2b400512205e14973b67ac96fdf",
+      "bytes": 842
+    }
+  ],
+  "limitations": [
+    "Both author ZIPs inspected; repository CSV has one additional video absent from both ZIPs.",
+    "Slide-end marks; terminal closing-mark policy unresolved.",
+    "ASR offset consistency is internal, not source-video alignment.",
+    "No video pixel duplicate audit or source-disjoint split; speaker/series are dependence proxies.",
+    "Public media access probes cannot certify all sources or underlying video rights."
+  ],
+  "execution": {
+    "notebook": "experiments/notebooks/diagnostics/mlpdataset-slide-transition-eda.ipynb",
+    "notebook_sha256": "43fee77f8c4d3e0c7c0d71fe8815f3b217389ba4850336596ab43bd24b273dd1",
+    "fresh_kernel": true,
+    "code_cells": 13,
+    "executed_code_cells": 13,
+    "error_outputs": 0,
+    "png_outputs": 2,
+    "sequential_execution_counts": true,
+    "media_probes_reused_from_same_research_date": true,
+    "verification": "nbformat, AST, sequential execution, export hashes and independent CSV accounting passed"
+  }
+}

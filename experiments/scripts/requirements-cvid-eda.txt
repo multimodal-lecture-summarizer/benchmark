@@ -1,0 +1,10 @@
+# Observed all-split EDA runtime, Python 3.11.1 / Unicode 14.0.0.
+# Install into a dedicated environment if replaying; notebook does not run pip.
+numpy==2.4.6
+pandas==3.0.5
+Pillow==12.3.0
+matplotlib==3.11.1
+nbformat==5.10.4
+nbclient==0.10.4
+nbconvert==7.17.1
+ipykernel==6.29.5

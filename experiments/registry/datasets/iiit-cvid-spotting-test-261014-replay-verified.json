@@ -1,0 +1,20 @@
+{
+  "artifact_hashes": {
+    "experiments\\outputs\\iiit-cvid-spotting-test-261014\\ground-truth.jsonl": "6263377fe70da58049ffe8c09b57ccca75e674e7e17b0fc6f42281501dd06771",
+    "experiments\\registry\\datasets\\iiit-cvid-spotting-test-261014-annotation-holds.json": "94a7b04dd4099bfccfad077f77a4dcfdaaa927b9df34636d6cad78809528f468",
+    "experiments\\registry\\datasets\\iiit-cvid-spotting-test-261014-candidate-binding.json": "3c8101c36e6fef4b06d5a4efb0a1307757bed3aac742720ecefd034411b55d22",
+    "experiments\\registry\\datasets\\iiit-cvid-spotting-test-261014-cohort.json": "116ccd271dfc95b3bdd1190e75635eac064b49c076ab030ea6f27cf3ea3d5e18",
+    "experiments\\registry\\datasets\\iiit-cvid-spotting-test-261014-freeze.json": "9504e34f69b16f4b63893184e5decf2e3d88d7251833b0efbb85f2eb883438dd",
+    "experiments\\registry\\datasets\\iiit-cvid-spotting-test-261014-gt-policy.json": "d1f14217d5e6f3273e5d4ad894af65b822ad04e51df2cfffc631a3e8cf6cb463",
+    "experiments\\registry\\datasets\\iiit-cvid-spotting-test-261014-influence.json": "bd80635a9a085277f2d3cb1a6d74c2325544ea6201b30b476e5cda56f6fb776b",
+    "experiments\\registry\\datasets\\iiit-cvid-spotting-test-261014-protocol.json": "884aba8bb19a8e7e20734e2fa2f9dee851e78d96417462947b4b2e8c3bf6aa3a",
+    "experiments\\registry\\datasets\\iiit-cvid-spotting-test-261014-selected-frame-ids.txt": "3ad969d979c800fa1209458ce9552f7a703b5f291210bdbee5b200773aa6e6a0"
+  },
+  "builder_sha256": "d16da1295386a02870bcec6c9d871359b3f5dc517d9d7a0fd14fb84ef0d113ab",
+  "byte_identical_replay": true,
+  "date": "2026-10-14",
+  "freeze_receipt_sha256": "9504e34f69b16f4b63893184e5decf2e3d88d7251833b0efbb85f2eb883438dd",
+  "redecoded_source_test": true,
+  "schema": "iiit_cvid_spotting_test_replay_v1",
+  "spotting_inference_executed": false
+}

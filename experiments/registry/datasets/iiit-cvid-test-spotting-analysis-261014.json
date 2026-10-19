@@ -1,0 +1,70 @@
+{
+  "schema": "iiit_cvid_full_test_spotting_analysis_v1",
+  "declared_date": "2026-10-14",
+  "run_name": "cvid-test-spotting-261014",
+  "runtime_receipt_sha256": "475a72e185716f05645d35a01ff2964c141370dfae9583b3dccc162a8c304d70",
+  "candidate_order": [
+    "easyocr_craft_english_g2",
+    "paddle_db_v3_rec_v4_keep_all"
+  ],
+  "selected_frames": 1754,
+  "selected_objects": 40063,
+  "variants": [
+    {
+      "id": "primary",
+      "iou_threshold": 0.5,
+      "case_sensitive": false,
+      "frames": 1754,
+      "objects": 40063
+    },
+    {
+      "id": "iou_075",
+      "iou_threshold": 0.75,
+      "case_sensitive": false,
+      "frames": 1754,
+      "objects": 40063
+    },
+    {
+      "id": "case_sensitive",
+      "iou_threshold": 0.5,
+      "case_sensitive": true,
+      "frames": 1754,
+      "objects": 40063
+    },
+    {
+      "id": "observed_flag_frame_influence",
+      "iou_threshold": 0.5,
+      "case_sensitive": false,
+      "frames": 1751,
+      "objects": 40023
+    }
+  ],
+  "uncertainty": {
+    "statistic": "B_minus_A_pooled_micro_spotting_hmean",
+    "groups": [
+      "course",
+      "source_group"
+    ],
+    "draws": 2000,
+    "seed": 20261014,
+    "implementation": "unchanged cvid_test_scoring.paired_cluster_bootstrap; no detection CI"
+  },
+  "execution": {
+    "profile": "frozen Windows CPU, sequential candidates; native math thread settings unchanged",
+    "frame_wall_seconds": 600,
+    "startup_finalization_wall_seconds": 600,
+    "nbclient_inference_cell_timeout": null,
+    "retry_model_failure": false,
+    "resume": "exact run/frame/source/runtime/implementation identities only; pending after interruption; never validation records",
+    "systemic_identical_model_exceptions": 3
+  },
+  "visualization": {
+    "predeclared": "two frames/course nearest q25/q75 released object count, tie canonical frame ID, no replacement; add three fixed semantic-flag frames, deduplicate",
+    "post_outcome_diagnostic": "six frames with largest absolute per-frame B-minus-A spotting Hmean difference, tie frame ID; diagnostic only",
+    "full_text": "all 1754 IDs, original GT and both raw prediction text arrays without truncation; full polygons/confidences exported"
+  },
+  "reporting": "pooled spotting P/R/Hmean; detection P/R/F1; counts/coverage/failures/empty/invalid; every course/folder plus macro-course; four variants and paired spotting uncertainty",
+  "selection": "descriptive released-label comparison only; no production/generalized winner or inference speed ranking",
+  "cohort_or_gt_change": false,
+  "model_config_threshold_grouping_change": false
+}

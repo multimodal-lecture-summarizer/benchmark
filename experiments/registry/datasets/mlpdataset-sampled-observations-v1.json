@@ -1,0 +1,731 @@
+{
+  "schema_version": 1,
+  "reviewer": "Codex visual diagnostic review",
+  "reviewed_at": "2026-10-19",
+  "review_scope": "All frames shown in33distinct sampled contact sheets, plus matched duplicate sequences; no native certification",
+  "native_endpoint_certified": false,
+  "observations": [
+    {
+      "case_number": 1,
+      "observation_type": "multiple_replacements",
+      "summary": "Diffuse -> Focal -> Diffuse -> BRONJ; more than one real change in short window.",
+      "changes": [
+        {
+          "event_id": "fast-dental-1",
+          "label": "Diffuse to Focal",
+          "last_old_sample_index": 20,
+          "first_different_sample_index": 21,
+          "first_stable_new_sample_index": 21,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        },
+        {
+          "event_id": "fast-dental-2",
+          "label": "Focal back to Diffuse",
+          "last_old_sample_index": 27,
+          "first_different_sample_index": 28,
+          "first_stable_new_sample_index": 28,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        },
+        {
+          "event_id": "fast-dental-3",
+          "label": "Diffuse to BRONJ",
+          "last_old_sample_index": 28,
+          "first_different_sample_index": 29,
+          "first_stable_new_sample_index": 29,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "-a5-EHnZ_XA:5",
+      "source_sha256": "b5e7a2c046e0af27c3efde8358cc846183338416b9c4aa5e58efa84d9d1187ef",
+      "annotation_s": 355.4222,
+      "sampled_sequence_sha256": "60e9accb3f38eebcbed0d9913a54fa54b8fe05a24e954e7ea5cb75467d5f438a"
+    },
+    {
+      "case_number": 3,
+      "observation_type": "multiple_replacements",
+      "summary": "Overlaps case1 with denser phase; preserve all three events and unresolved row mapping.",
+      "changes": [
+        {
+          "event_id": "fast-dental-1",
+          "label": "Diffuse to Focal",
+          "last_old_sample_index": 12,
+          "first_different_sample_index": 13,
+          "first_stable_new_sample_index": 13,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        },
+        {
+          "event_id": "fast-dental-2",
+          "label": "Focal back to Diffuse",
+          "last_old_sample_index": 19,
+          "first_different_sample_index": 20,
+          "first_stable_new_sample_index": 20,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        },
+        {
+          "event_id": "fast-dental-3",
+          "label": "Diffuse to BRONJ",
+          "last_old_sample_index": 21,
+          "first_different_sample_index": 22,
+          "first_stable_new_sample_index": 22,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "-a5-EHnZ_XA:7",
+      "source_sha256": "b5e7a2c046e0af27c3efde8358cc846183338416b9c4aa5e58efa84d9d1187ef",
+      "annotation_s": 357.4221,
+      "sampled_sequence_sha256": "41742481068f000a4208a5317669ef31f18760a512e61458fa2d2fe85da0b675"
+    },
+    {
+      "case_number": 4,
+      "observation_type": "instructional_fade",
+      "summary": "Large Intestine page dissolves into Donating Stool for Research page.",
+      "changes": [
+        {
+          "event_id": "colon-stool",
+          "label": "Colon to stool research",
+          "last_old_sample_index": 17,
+          "first_different_sample_index": 18,
+          "first_stable_new_sample_index": 20,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement_with_fade"
+        }
+      ],
+      "case_key": "077X0x07S0c:32",
+      "source_sha256": "c1e9e7a89ca1fb345f7e9b677b9710eb2f027602d59c057327c566bb7c0c9446",
+      "annotation_s": 1966.0,
+      "sampled_sequence_sha256": "ae3c8a795f311425224206b218166d3566e6f2abd49475deb80c404e00046e6c"
+    },
+    {
+      "case_number": 5,
+      "observation_type": "instructional_title_to_outline",
+      "summary": "NBDE Part1 title to exam outline.",
+      "changes": [
+        {
+          "event_id": "nbde-title-outline",
+          "label": "NBDE title to outline",
+          "last_old_sample_index": 18,
+          "first_different_sample_index": 19,
+          "first_stable_new_sample_index": 19,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "1LmKuxUzGUw:0",
+      "source_sha256": "964df22deaac512bb27de75031fbcdba27f348b0f1c2d108c74c9c8f0a7a1624",
+      "annotation_s": 7.6068,
+      "sampled_sequence_sha256": "ed0fe0f6dc61d34e5aeecf5a277ac29f49cc3fc24f9548ba15b8eed80946b687"
+    },
+    {
+      "case_number": 7,
+      "observation_type": "instructional_replacement",
+      "summary": "Exam outline to exam section table.",
+      "changes": [
+        {
+          "event_id": "nbde-outline-table",
+          "label": "NBDE outline to table",
+          "last_old_sample_index": 19,
+          "first_different_sample_index": 20,
+          "first_stable_new_sample_index": 20,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "1LmKuxUzGUw:2",
+      "source_sha256": "964df22deaac512bb27de75031fbcdba27f348b0f1c2d108c74c9c8f0a7a1624",
+      "annotation_s": 49.6068,
+      "sampled_sequence_sha256": "a003bd11a0229045fb142513e9b0c423da3a034a670c4223742eb1eb99c64457"
+    },
+    {
+      "case_number": 8,
+      "observation_type": "no_change_observed",
+      "summary": "Same lecture title slide throughout sampled source-start window; lecturer moves, no observed replacement.",
+      "changes": [],
+      "case_key": "2xr4P0WGKSA:0",
+      "source_sha256": "3c5fbf974f41a3075a0bd40a6f4f3ae47cc890d6d27af6199f9bf2302ca55450",
+      "annotation_s": 4.267,
+      "sampled_sequence_sha256": "cfcf0f634a5423992b5fefd826f8f13f7ca292cadc14360714ab599185a06a9f"
+    },
+    {
+      "case_number": 9,
+      "observation_type": "delayed_instructional_replacement",
+      "summary": "Transformer Self-Attention to Attention Function after released mark.",
+      "changes": [
+        {
+          "event_id": "transformer-attention",
+          "label": "Self-Attention to Attention Function",
+          "last_old_sample_index": 21,
+          "first_different_sample_index": 22,
+          "first_stable_new_sample_index": 22,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "2xr4P0WGKSA:26",
+      "source_sha256": "3c5fbf974f41a3075a0bd40a6f4f3ae47cc890d6d27af6199f9bf2302ca55450",
+      "annotation_s": 2190.7665,
+      "sampled_sequence_sha256": "f9382971c67ea654dc6ca77528196f6347d3850154ff6cd4152ab01180a2004c"
+    },
+    {
+      "case_number": 10,
+      "observation_type": "delayed_instructional_replacement",
+      "summary": "Rearranging computation to Multimodal Encoder-Decoder nearly3s after released mark.",
+      "changes": [
+        {
+          "event_id": "rearranging-encoder",
+          "label": "Rearranging computation to encoder-decoder",
+          "last_old_sample_index": 29,
+          "first_different_sample_index": 30,
+          "first_stable_new_sample_index": 30,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "37z_tJD81y8:68",
+      "source_sha256": "2914c0995ebb96585084f329c14eff5f274b8c33fecf7646eaae3ad08d36fbc7",
+      "annotation_s": 3971.7774,
+      "sampled_sequence_sha256": "03c93c4d9612ef88cac15105824d04852aab9af708d1dc7acac4410bb219829a"
+    },
+    {
+      "case_number": 11,
+      "observation_type": "instructional_replacement",
+      "summary": "Scapula posterior view to lateral view; same anatomy topic does not mean same slide.",
+      "changes": [
+        {
+          "event_id": "scapula-posterior-lateral",
+          "label": "Posterior to lateral scapula",
+          "last_old_sample_index": 19,
+          "first_different_sample_index": 20,
+          "first_stable_new_sample_index": 20,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "3ZA33n7BrRg:12",
+      "source_sha256": "ad518a3385a72ef6f63171460f2bf01dcff3b9551e34bc913d854bafb1bb9265",
+      "annotation_s": 743.4999,
+      "sampled_sequence_sha256": "14d0cc0137fc4f242d07e4c7026351d921f874f977653eba12634b8cc6cfb121"
+    },
+    {
+      "case_number": 13,
+      "observation_type": "instructional_replacement",
+      "summary": "Scapula figure to Upper Limb text page.",
+      "changes": [
+        {
+          "event_id": "scapula-upper-limb",
+          "label": "Scapula to Upper Limb",
+          "last_old_sample_index": 19,
+          "first_different_sample_index": 20,
+          "first_stable_new_sample_index": 20,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "3ZA33n7BrRg:14",
+      "source_sha256": "ad518a3385a72ef6f63171460f2bf01dcff3b9551e34bc913d854bafb1bb9265",
+      "annotation_s": 783.9998,
+      "sampled_sequence_sha256": "475ac258a0f2250857e4fd22302bfab1150349f6ec7ee170b3e1c5dead6354f0"
+    },
+    {
+      "case_number": 14,
+      "observation_type": "source_end_no_change",
+      "summary": "One Optimal Force remains through last available sample; EOF context does not certify a primary event.",
+      "changes": [],
+      "case_key": "9GmySN5P408:24",
+      "source_sha256": "553d52833bbd3cd1c249d4a2acafa1d56e43f820563c47ee7decfd055bc3f783",
+      "annotation_s": 884.656,
+      "sampled_sequence_sha256": "510a88e4c42c52d47dd15e13b29c55e57fefc064dc5cf7b53cdbabfa63421e72"
+    },
+    {
+      "case_number": 15,
+      "observation_type": "instructional_replacement",
+      "summary": "Water symptoms to bottled-water question.",
+      "changes": [
+        {
+          "event_id": "water-question",
+          "label": "Water symptoms to bottled-water question",
+          "last_old_sample_index": 19,
+          "first_different_sample_index": 20,
+          "first_stable_new_sample_index": 20,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "DZSEErNZ1d4:8",
+      "source_sha256": "c9572702bf295d7feaa88d21b988e2c5c5ba081f366d61f421638589b6e2da24",
+      "annotation_s": 490.7598,
+      "sampled_sequence_sha256": "908ebe527f17945ce2133e41f4ff8f4f673410d1d38b6463ca1e287eb3d1d5bb"
+    },
+    {
+      "case_number": 17,
+      "observation_type": "instructional_replacement",
+      "summary": "Water question to sports-drink page.",
+      "changes": [
+        {
+          "event_id": "water-sports",
+          "label": "Bottled-water question to sports drinks",
+          "last_old_sample_index": 18,
+          "first_different_sample_index": 19,
+          "first_stable_new_sample_index": 19,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "DZSEErNZ1d4:10",
+      "source_sha256": "c9572702bf295d7feaa88d21b988e2c5c5ba081f366d61f421638589b6e2da24",
+      "annotation_s": 538.7596,
+      "sampled_sequence_sha256": "87a0e5869b71d07147d73da27eb867919408ffba1e43d5484338a720e0a6efea"
+    },
+    {
+      "case_number": 18,
+      "observation_type": "instructional_replacement",
+      "summary": "Fiber bars to protein food-source page.",
+      "changes": [
+        {
+          "event_id": "fiber-protein",
+          "label": "Fiber bars to protein food sources",
+          "last_old_sample_index": 18,
+          "first_different_sample_index": 19,
+          "first_stable_new_sample_index": 19,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "DZSEErNZ1d4:20",
+      "source_sha256": "c9572702bf295d7feaa88d21b988e2c5c5ba081f366d61f421638589b6e2da24",
+      "annotation_s": 976.4894,
+      "sampled_sequence_sha256": "c2c64c651c8f6b0f865a30d9425169b729750bbfe2f08451346b7befed90cd0d"
+    },
+    {
+      "case_number": 21,
+      "observation_type": "instructional_same_title_new_page",
+      "summary": "Protein food sources replaced by protein structure text/figures; same heading, whole body changed.",
+      "changes": [
+        {
+          "event_id": "protein-structure",
+          "label": "Protein foods to structure page",
+          "last_old_sample_index": 18,
+          "first_different_sample_index": 19,
+          "first_stable_new_sample_index": 19,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "DZSEErNZ1d4:23",
+      "source_sha256": "c9572702bf295d7feaa88d21b988e2c5c5ba081f366d61f421638589b6e2da24",
+      "annotation_s": 1017.4893,
+      "sampled_sequence_sha256": "0c7be89d324426a249d44666642195c629d47d0c6ec56d97f630b7b5d2b659d2"
+    },
+    {
+      "case_number": 22,
+      "observation_type": "instructional_same_title_new_page",
+      "summary": "Micronutrient overview replaced by vitamins table.",
+      "changes": [
+        {
+          "event_id": "micronutrient-table",
+          "label": "Vitamin overview to table",
+          "last_old_sample_index": 19,
+          "first_different_sample_index": 20,
+          "first_stable_new_sample_index": 20,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "DZSEErNZ1d4:39",
+      "source_sha256": "c9572702bf295d7feaa88d21b988e2c5c5ba081f366d61f421638589b6e2da24",
+      "annotation_s": 1817.4892,
+      "sampled_sequence_sha256": "7bb31c6ea1db1e7a2a898cd775a9a27c3e3afdff81ff51173d555f4d7a2494b6"
+    },
+    {
+      "case_number": 24,
+      "observation_type": "instructional_same_title_new_page",
+      "summary": "Vitamin table replaced by water/fat soluble vitamin text.",
+      "changes": [
+        {
+          "event_id": "vitamin-solubility",
+          "label": "Vitamin table to solubility page",
+          "last_old_sample_index": 19,
+          "first_different_sample_index": 20,
+          "first_stable_new_sample_index": 20,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "DZSEErNZ1d4:41",
+      "source_sha256": "c9572702bf295d7feaa88d21b988e2c5c5ba081f366d61f421638589b6e2da24",
+      "annotation_s": 1860.4892,
+      "sampled_sequence_sha256": "aad05681795335312b06a0205ac7f3e92b57153047a1d1a85af061468ddc0964"
+    },
+    {
+      "case_number": 25,
+      "observation_type": "instructional_same_title_new_page",
+      "summary": "Cell Structure organelle list replaced by centrioles/cytoskeleton/vacuole page.",
+      "changes": [
+        {
+          "event_id": "cell-organelles",
+          "label": "Organelle list to cell structures page",
+          "last_old_sample_index": 18,
+          "first_different_sample_index": 19,
+          "first_stable_new_sample_index": 19,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "DZSEErNZ1d4:59",
+      "source_sha256": "c9572702bf295d7feaa88d21b988e2c5c5ba081f366d61f421638589b6e2da24",
+      "annotation_s": 2871.989,
+      "sampled_sequence_sha256": "90b798778c9572141fda6247baa82ba27dedb5a98f750cba2373aaa277104c57"
+    },
+    {
+      "case_number": 27,
+      "observation_type": "instructional_same_title_new_page",
+      "summary": "Cell structures page replaced by supplements/chlorophyll page.",
+      "changes": [
+        {
+          "event_id": "cell-supplements",
+          "label": "Cell structures to supplements",
+          "last_old_sample_index": 19,
+          "first_different_sample_index": 20,
+          "first_stable_new_sample_index": 20,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "DZSEErNZ1d4:61",
+      "source_sha256": "c9572702bf295d7feaa88d21b988e2c5c5ba081f366d61f421638589b6e2da24",
+      "annotation_s": 2931.9889,
+      "sampled_sequence_sha256": "9f2f3367e2d36f0454c4f5a0132b85790c33d291f929dd4e6705d69b2ffa6727"
+    },
+    {
+      "case_number": 28,
+      "observation_type": "two_instructional_replacements",
+      "summary": "Plot -> instructional section title -> agenda; two events, not automatically one duplicate.",
+      "changes": [
+        {
+          "event_id": "optimization-title",
+          "label": "Learning-rate plot to Optimization title",
+          "last_old_sample_index": 13,
+          "first_different_sample_index": 14,
+          "first_stable_new_sample_index": 14,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        },
+        {
+          "event_id": "optimization-agenda",
+          "label": "Optimization title to agenda",
+          "last_old_sample_index": 20,
+          "first_different_sample_index": 21,
+          "first_stable_new_sample_index": 21,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "E_3gxQWaCoQ:24",
+      "source_sha256": "6c66ae2a2f76c969f5d48d9bab63f145a6606940f74175205e9621c9ba14cc46",
+      "annotation_s": 1846.1454,
+      "sampled_sequence_sha256": "7e75dcd7f6ef719694ece0afa5e55843abd308acaa4a05aee27d0216712eb422"
+    },
+    {
+      "case_number": 30,
+      "observation_type": "instructional_replacement",
+      "summary": "Adaptive Learning Rate equations to comparison figures.",
+      "changes": [
+        {
+          "event_id": "adaptive-comparison",
+          "label": "Adaptive Learning Rate to Comparison",
+          "last_old_sample_index": 19,
+          "first_different_sample_index": 20,
+          "first_stable_new_sample_index": 20,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "E_3gxQWaCoQ:26",
+      "source_sha256": "6c66ae2a2f76c969f5d48d9bab63f145a6606940f74175205e9621c9ba14cc46",
+      "annotation_s": 1905.6453,
+      "sampled_sequence_sha256": "3041926e04f7bc0fc68fe893e11954ead76491bbb7731563bbb32ddaaee5cd2e"
+    },
+    {
+      "case_number": 31,
+      "observation_type": "instructional_replacement",
+      "summary": "Anterior Dental Crossbite to Removable Appliance.",
+      "changes": [
+        {
+          "event_id": "crossbite-appliance",
+          "label": "Crossbite to appliance",
+          "last_old_sample_index": 20,
+          "first_different_sample_index": 21,
+          "first_stable_new_sample_index": 21,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "KDVP_WAIUXs:3",
+      "source_sha256": "2b06d854c42e42882b58345e83cefa8e9877d83414a1ab59ce27bca02b4b7371",
+      "annotation_s": 208.5586,
+      "sampled_sequence_sha256": "565319167fc5611889be80ff26e0b2315a8ed1a50606d97e5160524b026a07d1"
+    },
+    {
+      "case_number": 33,
+      "observation_type": "brief_slide_return",
+      "summary": "Appliance -> Crossbite -> Appliance; return is separate observed change.",
+      "changes": [
+        {
+          "event_id": "appliance-crossbite",
+          "label": "Appliance back to Crossbite",
+          "last_old_sample_index": 19,
+          "first_different_sample_index": 20,
+          "first_stable_new_sample_index": 20,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        },
+        {
+          "event_id": "crossbite-return",
+          "label": "Crossbite back to Appliance",
+          "last_old_sample_index": 26,
+          "first_different_sample_index": 27,
+          "first_stable_new_sample_index": 27,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "KDVP_WAIUXs:5",
+      "source_sha256": "2b06d854c42e42882b58345e83cefa8e9877d83414a1ab59ce27bca02b4b7371",
+      "annotation_s": 252.5586,
+      "sampled_sequence_sha256": "390ecbeea40f2e27482c7ceac15948cf4915892dc898c81ffd5ee49f9fa49d59"
+    },
+    {
+      "case_number": 34,
+      "observation_type": "replacement_with_figure_changes",
+      "summary": "Skull page changes diagrams before full Cranium page replacement. Figure changes retained as auxiliary.",
+      "changes": [
+        {
+          "event_id": "skull-figure-build",
+          "label": "Skull diagram change",
+          "last_old_sample_index": 7,
+          "first_different_sample_index": 8,
+          "first_stable_new_sample_index": 8,
+          "primary_candidate": false,
+          "event_class": "animation_or_figure_change"
+        },
+        {
+          "event_id": "skull-figure-return",
+          "label": "Skull diagram return",
+          "last_old_sample_index": 17,
+          "first_different_sample_index": 18,
+          "first_stable_new_sample_index": 18,
+          "primary_candidate": false,
+          "event_class": "animation_or_figure_change"
+        },
+        {
+          "event_id": "skull-cranium",
+          "label": "Skull to Cranium page",
+          "last_old_sample_index": 18,
+          "first_different_sample_index": 19,
+          "first_stable_new_sample_index": 19,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "NQtXvfJCtxo:1",
+      "source_sha256": "baf1e94da7a9dbf513972d4df9a8028db5efbb5792b0c5a1ecc5d130b1547496",
+      "annotation_s": 77.4999,
+      "sampled_sequence_sha256": "cf0956b8dc520b983c216207f22ce3d745a13f5c014ffd6c4121d4a08570437d"
+    },
+    {
+      "case_number": 36,
+      "observation_type": "instructional_replacement",
+      "summary": "Cranium to Face page.",
+      "changes": [
+        {
+          "event_id": "cranium-face",
+          "label": "Cranium to Face",
+          "last_old_sample_index": 20,
+          "first_different_sample_index": 21,
+          "first_stable_new_sample_index": 21,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "NQtXvfJCtxo:3",
+      "source_sha256": "baf1e94da7a9dbf513972d4df9a8028db5efbb5792b0c5a1ecc5d130b1547496",
+      "annotation_s": 113.4999,
+      "sampled_sequence_sha256": "a07879ae7dacb96e21c64e10363ae4780f94a06c28799dfcbc2897789d29008b"
+    },
+    {
+      "case_number": 37,
+      "observation_type": "instructional_title_to_outline",
+      "summary": "Pediatric Dentistry title to instructional outline.",
+      "changes": [
+        {
+          "event_id": "pediatric-outline",
+          "label": "Pediatric title to outline",
+          "last_old_sample_index": 19,
+          "first_different_sample_index": 20,
+          "first_stable_new_sample_index": 20,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "WGrvg7ZuPEc:0",
+      "source_sha256": "35a7c3fab2ec9a5d1e6db28f8d451c5cab4348d19bb9f472798b0b687b85a867",
+      "annotation_s": 15.5,
+      "sampled_sequence_sha256": "07cf62e0bda5080c8a1ee6808716a8b047d4cfa01ab8d17a00bd4d32150f39f1"
+    },
+    {
+      "case_number": 39,
+      "observation_type": "instructional_replacement",
+      "summary": "Pediatric outline to question page.",
+      "changes": [
+        {
+          "event_id": "pediatric-question",
+          "label": "Pediatric outline to question",
+          "last_old_sample_index": 18,
+          "first_different_sample_index": 19,
+          "first_stable_new_sample_index": 19,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "WGrvg7ZuPEc:2",
+      "source_sha256": "35a7c3fab2ec9a5d1e6db28f8d451c5cab4348d19bb9f472798b0b687b85a867",
+      "annotation_s": 48.0,
+      "sampled_sequence_sha256": "06a01b797467d28e2d95ab0eb9813c4f7a5fc90e58af07e9e4b5e4537eca3c93"
+    },
+    {
+      "case_number": 40,
+      "observation_type": "instructional_replacement",
+      "summary": "Clinical Homeostatic Imbalance to Endomembrane System.",
+      "changes": [
+        {
+          "event_id": "clinical-endomembrane",
+          "label": "Clinical page to Endomembrane System",
+          "last_old_sample_index": 20,
+          "first_different_sample_index": 21,
+          "first_stable_new_sample_index": 21,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "_yre2uKcj7A:16",
+      "source_sha256": "997d2fbfbb1c66ffa9433faa5674f71cae79818ac39e942216c466f96d65371a",
+      "annotation_s": 1570.5,
+      "sampled_sequence_sha256": "21e0417b87441e08cd6be54a9d5962d68f9dd38f606966e00b35fa2a4daa53d1"
+    },
+    {
+      "case_number": 42,
+      "observation_type": "instructional_replacement",
+      "summary": "Endomembrane text page to full cell diagram.",
+      "changes": [
+        {
+          "event_id": "endomembrane-diagram",
+          "label": "Endomembrane text to diagram",
+          "last_old_sample_index": 20,
+          "first_different_sample_index": 21,
+          "first_stable_new_sample_index": 21,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "_yre2uKcj7A:18",
+      "source_sha256": "997d2fbfbb1c66ffa9433faa5674f71cae79818ac39e942216c466f96d65371a",
+      "annotation_s": 1688.0,
+      "sampled_sequence_sha256": "434572866b7981d1e7f33170cb9d136ccbe0a5b5a4ea1ec46834fbb0c5f0403b"
+    },
+    {
+      "case_number": 43,
+      "observation_type": "instructional_wipe",
+      "summary": "Chapter Three title to Newborn Reflexes with a vertical wipe.",
+      "changes": [
+        {
+          "event_id": "newborn-wipe",
+          "label": "Chapter title to Newborn Reflexes",
+          "last_old_sample_index": 18,
+          "first_different_sample_index": 19,
+          "first_stable_new_sample_index": 22,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement_with_wipe"
+        }
+      ],
+      "case_key": "aLK_nkgx8wo:0",
+      "source_sha256": "802dd54ca7db9ce7b1f568da0a21c600facd739fc7bdb1679ab13aaceb3191f5",
+      "annotation_s": 13.9937,
+      "sampled_sequence_sha256": "0e923eb22a644d7e6eba2705fa175c19616aa8731c83d62fbf7fe898aea69b3a"
+    },
+    {
+      "case_number": 44,
+      "observation_type": "instructional_replacement",
+      "summary": "Caption generation evaluation page to challenge results page.",
+      "changes": [
+        {
+          "event_id": "caption-results",
+          "label": "Caption evaluation to challenge results",
+          "last_old_sample_index": 20,
+          "first_different_sample_index": 21,
+          "first_stable_new_sample_index": 21,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "fBYu8I52nVM:24",
+      "source_sha256": "b2f773cb98180097ec25a63d47eceecc143e030a9c26bf9f458e2e8b30e8cd1f",
+      "annotation_s": 2284.167,
+      "sampled_sequence_sha256": "ca8121c195f0487cb5369f39d82e670aca1f69b66aeb56b39298e7c14d8fbe3e"
+    },
+    {
+      "case_number": 46,
+      "observation_type": "instructional_same_title_new_page",
+      "summary": "Challenge results table replaced by automatic-evaluation text; same heading, new body.",
+      "changes": [
+        {
+          "event_id": "caption-automatic",
+          "label": "Results table to automatic evaluation",
+          "last_old_sample_index": 21,
+          "first_different_sample_index": 22,
+          "first_stable_new_sample_index": 22,
+          "primary_candidate": true,
+          "event_class": "instructional_replacement"
+        }
+      ],
+      "case_key": "fBYu8I52nVM:26",
+      "source_sha256": "b2f773cb98180097ec25a63d47eceecc143e030a9c26bf9f458e2e8b30e8cd1f",
+      "annotation_s": 2327.1668,
+      "sampled_sequence_sha256": "2c71e5fa829310a3ab0d540b95c67308715e357e3825c20518cbddc979f6495a"
+    },
+    {
+      "case_number": 47,
+      "observation_type": "outro_sequence",
+      "summary": "References to presenter-only and copyright/outro; auxiliary context excluded from primary proposal.",
+      "changes": [
+        {
+          "event_id": "references-presenter",
+          "label": "References to presenter-only",
+          "last_old_sample_index": 4,
+          "first_different_sample_index": 5,
+          "first_stable_new_sample_index": 6,
+          "primary_candidate": false,
+          "event_class": "presenter_outro"
+        },
+        {
+          "event_id": "presenter-credits",
+          "label": "Presenter to copyright/outro",
+          "last_old_sample_index": 20,
+          "first_different_sample_index": 21,
+          "first_stable_new_sample_index": 22,
+          "primary_candidate": false,
+          "event_class": "outro_credits"
+        }
+      ],
+      "case_key": "lBI8DXevsDk:40",
+      "source_sha256": "eff30b1b9b2b030839f61c5712de1c99d9281a68701a06499143972b8ba0efcc",
+      "annotation_s": 3744.2097,
+      "sampled_sequence_sha256": "126f087f2a9b3deae4097c251029d155b453a61d8ae7d859ae98f5316e4a46b9"
+    }
+  ],
+  "receipt_sha256": "00d6b17c7b12cefde6fa47c56c647d88cd856180a031b3ec0f788bcbbb4bf81d"
+}

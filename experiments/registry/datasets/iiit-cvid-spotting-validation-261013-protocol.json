@@ -1,0 +1,101 @@
+{
+  "schema": "iiit_cvid_spotting_protocol_v1",
+  "protocol_id": "iiit-cvid-spotting-validation-261013",
+  "frozen_date": "2026-10-13",
+  "status": "cohort_and_scoring_contract_frozen_before_spotting_outcomes",
+  "claim": "Descriptive comparison against released annotations on exposed validation frames; not an official ICDAR or LectureVideoDB leaderboard reproduction",
+  "source": {
+    "repository": "staghado/IIIT-CVid",
+    "revision": "8159222f11460bff70bec7990ade19c468755fe4",
+    "archive_sha256": "b5b562580e250ee3336462b7699bc79d0d1149d3b8cc82f1b221a0d0ce4fb489",
+    "split": "val",
+    "input": "released full frame PNG",
+    "ground_truth": "XML object bbox and original object/name transcription",
+    "granularity": "one released XML object; no merging or splitting words/lines",
+    "annotation_creator_qc": "unresolved; source/database=Unknown does not certify label quality",
+    "redistribution": "preserve raw images and derived transcriptions locally; no new publication or sharing authorized"
+  },
+  "cohort": {
+    "rule": "all 549 released val PNG/XML pairs, selected solely by predeclared annotation validity",
+    "selected_frames": 546,
+    "expected_keep": 543,
+    "expected_metadata_repairs": 3,
+    "expected_held_frames": 3,
+    "metadata_repair": "use decoded PNG width/height in derived metadata only; preserve XML and coordinates",
+    "hold_entire_frame": "blank transcription, invalid/nonpositive/out-of-bounds box, unresolved difficult flag, decode/parse failure",
+    "no_automatic_exclusions": ["low model score", "short word", "digit", "punctuation", "dHash flag"],
+    "duplicates": "exact image hashes inventoried; cross-split dHash candidates remain unresolved and no unseen claim is made",
+    "independence": "course/video folders are released source proxies, not certified independent source identities"
+  },
+  "geometry": {
+    "gt": "raw XML xmin,ymin,xmax,ymax; continuous rectangle edges, width=xmax-xmin, height=ymax-ymin",
+    "coordinate_origin": "raw zero-origin image coordinates; no VOC minus-one shift and no inclusive plus-one area",
+    "prediction": "simple polygon in original decoded-frame coordinates; preserve quadrilateral geometry",
+    "valid_prediction": "at least 3 vertices, finite numeric coordinates, positive area, no self-intersection, within 0..width and 0..height",
+    "invalid_prediction": "retain in prediction count as FP for both endpoints; no clipping, convex-hull or automatic repair",
+    "iou": "true polygon intersection area divided by union area",
+    "primary_threshold": 0.5,
+    "operator": ">",
+    "sensitivity_threshold": 0.75,
+    "resize": "candidate adapter must invert all resize/padding transforms before scoring"
+  },
+  "matching": {
+    "unit": "within the same frame only",
+    "detection": "maximum-cardinality one-to-one bipartite matching on IoU > threshold",
+    "spotting": "independent maximum-cardinality one-to-one matching with IoU > threshold AND exact normalized transcription equality",
+    "determinism": "sort GT by object_id, predictions by polygon string then raw text; adjacency by decreasing IoU then prediction index; deterministic augmenting paths",
+    "duplicates": "each GT and prediction used at most once; unmatched duplicate detections are FP",
+    "granularity": "no one-to-many or many-to-one credit; merged/split predictions penalized",
+    "interpretation": "independently optimized detection and spotting matches are not an additive recognition-error decomposition"
+  },
+  "text": {
+    "primary": "Unicode NFKC, casefold, split/join whitespace; exact full-string equality",
+    "unicode_version": "14.0.0",
+    "case_sensitive_sensitivity": "NFKC and split/join whitespace without casefold",
+    "preserve": ["digits", "punctuation", "diacritics", "one-character labels", "literal *"],
+    "do_not_care": "none inferred: validation difficult flags are 0; literal * meaning unresolved and retained as released text",
+    "lexicon": "none; dataset vocab/lexicon, GT strings and recognition predictions cannot be decoder inputs",
+    "soft_text_matching": "forbidden for primary Hmean; no CER tolerance, edit-distance threshold, dictionary correction or fuzzy credit"
+  },
+  "metrics": {
+    "primary": "pooled micro end-to-end spotting Hmean = 2TP/(2TP+FP+FN)",
+    "required": ["spotting precision/recall/Hmean", "detection precision/recall/F1", "TP/FP/FN", "selected/completed/failed frames", "invalid geometries", "empty transcriptions", "per-course and per-source-group tables"],
+    "aggregation": "sum TP/FP/FN across frames before calculating each primary score; never mean frame F1",
+    "zero_denominator": "precision=0 if no predictions; recall=0 if no GT; Hmean=0 if neither GT nor predictions; always retain counts",
+    "sensitivity": ["same cohort and predictions at IoU > 0.75", "same cohort and predictions with case-sensitive normalization at IoU > 0.5"],
+    "primary_uncertainty": {
+      "method": "paired course-cluster nonparametric bootstrap, enumerate all ordered 5^5=3125 resamples",
+      "statistic": "candidate B minus A pooled micro spotting Hmean, recomputed from resampled count totals",
+      "interval": "sorted draws at floor(0.025*N) and floor(0.975*N)-1",
+      "limitation": "only five course proxies; exploratory conditional uncertainty, not reliable unseen-course generalization or proof of power"
+    },
+    "secondary_uncertainty": {
+      "method": "paired bootstrap source_group course/video, draw number of groups with replacement; retain all frames/objects per group",
+      "draws": 2000,
+      "seed": 20261013,
+      "rng": "Python random.Random; sorted source_group IDs",
+      "limitation": "assumes folder-level clusters independent conditional on observed courses; dependence unresolved"
+    },
+    "selection": "report descriptive differences and all failures; no production winner or generalized winner from this exposed cohort"
+  },
+  "failures": {
+    "frame_error": "retain frame denominator; no partial predictions; every GT is FN; zero predictions",
+    "missing_record": "convert to frame error missing_record; report in failure ledger",
+    "successful_empty_frame": "status ok, zero predictions; all GT FN; distinguish from engine failure",
+    "recognition_error_with_valid_detection": "retain polygon and empty transcription; detection may match, spotting cannot match nonblank GT",
+    "duplicate_or_extra_frame_id": "hard reject run; do not silently deduplicate or filter",
+    "malformed_record": "hard reject schema; do not discard malformed records to improve metrics",
+    "retry": "at most one retry for recorded transient I/O/transport failure before committing a frame; no score-based retry or best-of selection; log all attempts",
+    "resume": "reuse only records bound to identical input/cohort/protocol/config/source/model identities; never mix run identities"
+  },
+  "execution_gate": {
+    "status": "pending_candidate_runtime_freeze; no spotting inference executed",
+    "required_before_any_inference": ["candidate versions and detector/recognizer model SHA-256", "source commit/hash", "full preprocessing and resize settings", "detector/recognizer confidence thresholds, NMS and word/line grouping", "decoder, lexicon disabled", "CPU/GPU, threads, batch sizes and precision", "cohort, GT and protocol hashes", "per-frame prediction/error schema"],
+    "configuration_selection": "published defaults or disjoint source train development only; no tuning on frozen val GT or spotting outcomes",
+    "scope": "candidate runtime freeze is separate from this completed data/scoring freeze; recognition-only wrappers cannot produce spotting outputs"
+  },
+  "scientific_sources": [
+    {"url": "https://imlab.jp/publication_data/1469/C02.pdf", "supports": "ICDAR2015 joint localization/transcription, IoU>0.5, case-insensitive recognition and pooled metrics; short-word/punctuation/ignore exclusions are intentionally not inherited"},
+    {"url": "https://kris314.github.io/publication/inst-vids/", "supports": "author publication identity for Localizing and Recognizing Text in Lecture Videos, ICFHR2018"}
+  ]
+}

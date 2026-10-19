@@ -1,0 +1,114 @@
+{
+  "status": "VIDEO_SELECTOR_JS_RUNTIME_FIX_PENDING_COLAB_RUN",
+  "notebook": "experiments/notebooks/diagnostics/mlpdataset-slide-transition-eda-colab.ipynb",
+  "notebook_sha256": "c79aae1a62b69cb8fd19cf305e8aad38835d6bf0523270abadade09338cede00",
+  "received_backup_sha256": "2ab363fc10512c56cc1989c8bb66cab150a9de4e7e00b440f935d58cde591054",
+  "selector_validation": [
+    {
+      "video_id": "-8QB3Rbeqoc",
+      "old_matches": 0,
+      "new_matches": 1,
+      "chosen_format": "134",
+      "height": 360,
+      "protocol": "https"
+    },
+    {
+      "video_id": "077X0x07S0c",
+      "old_matches": 0,
+      "new_matches": 1,
+      "chosen_format": "134",
+      "height": 360,
+      "protocol": "https"
+    },
+    {
+      "video_id": "0gf3IJFTxEA",
+      "old_matches": 0,
+      "new_matches": 1,
+      "chosen_format": "134",
+      "height": 360,
+      "protocol": "https"
+    },
+    {
+      "video_id": "18SixEz5GDE",
+      "old_matches": 0,
+      "new_matches": 1,
+      "chosen_format": "134",
+      "height": 360,
+      "protocol": "https"
+    },
+    {
+      "video_id": "2NgUY8f1pa8",
+      "old_matches": 0,
+      "new_matches": 1,
+      "chosen_format": "134",
+      "height": 360,
+      "protocol": "https"
+    },
+    {
+      "video_id": "2U3DsK7BHVU",
+      "old_matches": 0,
+      "new_matches": 1,
+      "chosen_format": "396",
+      "height": 360,
+      "protocol": "https"
+    },
+    {
+      "video_id": "2_dZ5GBlRgU",
+      "old_matches": 0,
+      "new_matches": 1,
+      "chosen_format": "134",
+      "height": 320,
+      "protocol": "https"
+    },
+    {
+      "video_id": "8OrCdgHcMVM",
+      "old_matches": 0,
+      "new_matches": 1,
+      "chosen_format": "134",
+      "height": 360,
+      "protocol": "https"
+    },
+    {
+      "video_id": "ALRJCeVT0fQ",
+      "old_matches": 0,
+      "new_matches": 1,
+      "chosen_format": "134",
+      "height": 360,
+      "protocol": "https"
+    },
+    {
+      "video_id": "AS8KJMeiNpM",
+      "old_matches": 0,
+      "new_matches": 1,
+      "chosen_format": "134",
+      "height": 360,
+      "protocol": "https"
+    }
+  ],
+  "helper_validation": {
+    "status": "PASS",
+    "actual_ffmpeg_clip_probe": true,
+    "decoded_preview_frames": 5,
+    "negative_eof_status": true,
+    "stale_export_excluded": true,
+    "stale_success_rejected": true,
+    "identity_change_rejected": true,
+    "timeout_killed": true,
+    "interrupt_process_killed": true,
+    "interrupted_attempt_persisted": true,
+    "network_download_or_colab_tested": false
+  },
+  "offline_validation": {
+    "fresh_kernel": true,
+    "executed_cells": 18,
+    "error_outputs": 0,
+    "bootstrap_config_overridden": true,
+    "installer_JS_EJS_Drive_network_excluded": true,
+    "local_ejs_metadata": "not-installed-offline-validation"
+  },
+  "default_run_name": "mlpdataset-eda-261017-v3",
+  "default_manual_id": "-8QB3Rbeqoc",
+  "colab_installer_verified": false,
+  "live_download_success_verified": false,
+  "result_zip_created": false
+}

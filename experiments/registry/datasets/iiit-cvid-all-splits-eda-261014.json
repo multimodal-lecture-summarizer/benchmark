@@ -1,0 +1,65 @@
+{
+  "schema": "cvid_all_split_eda_execution_v1",
+  "started_at_utc": "2026-10-14T09:10:26.635169+00:00",
+  "completed_at_utc": "2026-10-14T09:17:14.867882+00:00",
+  "wall_seconds": 408.234078999998,
+  "fresh_kernel": true,
+  "python": "3.11.1",
+  "code_cells": 16,
+  "executed_code_cells": 16,
+  "saved_errors": 0,
+  "png_outputs": 11,
+  "jpeg_outputs": 75,
+  "notebook": {
+    "path": "experiments/notebooks/diagnostics/iiit-cvid-all-splits-eda.ipynb",
+    "sha256": "045ea659d9eb94c9143681a8f7e277192a4dfaa168d3f75d2090927ff98fa203",
+    "bytes": 41285893
+  },
+  "html": {
+    "path": "experiments/outputs/cvid-all-split-eda-261014/iiit-cvid-all-splits-eda.html",
+    "sha256": "f13e533dc562d7175768ecf445e32da133f40d29bdcdbd1ebde453ad45ed2284",
+    "bytes": 41275289
+  },
+  "eda_summary": {
+    "path": "experiments/outputs/cvid-all-split-eda-261014/eda-summary.json",
+    "sha256": "4d978a4d6d5ef0005ab5dcbbda6360ee9d776a6415bcb904363536f015241349"
+  },
+  "coverage": {
+    "frames": 5475,
+    "objects": 137745,
+    "decoded_crops": 137745,
+    "indexed_crops": 137745,
+    "read_failures": 0,
+    "unmatched_objects": 0
+  },
+  "visual_pair_review": {
+    "count": 469,
+    "decisions": {
+      "different_observed_content": 469
+    },
+    "reviewer": "single Codex visual review; queue-limited"
+  },
+  "semantic_review": {
+    "samples": 72,
+    "decisions": {
+      "visually_consistent_at_review_resolution": 60,
+      "apparent_disagreement": 7,
+      "uncertain": 5
+    },
+    "limit": "course/height diagnostic sample; two Codex reviewers, not independent human gold; no population error rate"
+  },
+  "readiness": {
+    "eda_execution_complete": true,
+    "descriptive_released_label_protocol_design_supported": true,
+    "blind_test_claim_supported": false,
+    "source_video_independence_verified": false,
+    "semantic_gt_certified": false,
+    "cohort_test_frozen": false,
+    "spotting_inference_executed": false
+  },
+  "unresolved": [
+    "semantic flags and selective annotation scope need a predeclared test-GT policy",
+    "per-video identity and writer independence not established",
+    "historical test model-use completeness and model-pretraining overlap unknown"
+  ]
+}

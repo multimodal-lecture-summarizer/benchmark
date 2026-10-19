@@ -1,0 +1,107 @@
+{
+  "artifact_hashes_verified": 8,
+  "date": "2026-10-14",
+  "endpoints": {
+    "observed_flag_frame_influence": {
+      "empty_success_frames": 1751,
+      "frames": 1751,
+      "missing_all_frames": 1751,
+      "missing_and_empty_fn": 40023,
+      "objects": 40023,
+      "oracle": {
+        "detection": {
+          "fn": 0,
+          "fp": 0,
+          "hmean": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "tp": 40023
+        },
+        "spotting": {
+          "fn": 0,
+          "fp": 0,
+          "hmean": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "tp": 40023
+        }
+      },
+      "paired_identity_bootstrap": {
+        "draws": 2000,
+        "group_key": "course",
+        "groups": [
+          "10",
+          "14",
+          "18",
+          "20",
+          "24",
+          "3",
+          "7"
+        ],
+        "interval_95": [
+          0.0,
+          0.0
+        ],
+        "limit": "exploratory conditional uncertainty; cluster independence and population generalization unverified",
+        "observed": 0.0,
+        "rng": "Python random.Random.choice",
+        "seed": 20261014,
+        "statistic": "B_minus_A_pooled_micro_spotting_hmean"
+      }
+    },
+    "primary": {
+      "empty_success_frames": 1754,
+      "frames": 1754,
+      "missing_all_frames": 1754,
+      "missing_and_empty_fn": 40063,
+      "objects": 40063,
+      "oracle": {
+        "detection": {
+          "fn": 0,
+          "fp": 0,
+          "hmean": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "tp": 40063
+        },
+        "spotting": {
+          "fn": 0,
+          "fp": 0,
+          "hmean": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "tp": 40063
+        }
+      },
+      "paired_identity_bootstrap": {
+        "draws": 2000,
+        "group_key": "course",
+        "groups": [
+          "10",
+          "14",
+          "18",
+          "20",
+          "24",
+          "3",
+          "7"
+        ],
+        "interval_95": [
+          0.0,
+          0.0
+        ],
+        "limit": "exploratory conditional uncertainty; cluster independence and population generalization unverified",
+        "observed": 0.0,
+        "rng": "Python random.Random.choice",
+        "seed": 20261014,
+        "statistic": "B_minus_A_pooled_micro_spotting_hmean"
+      }
+    }
+  },
+  "freeze_receipt_sha256": "9504e34f69b16f4b63893184e5decf2e3d88d7251833b0efbb85f2eb883438dd",
+  "full_gt_rows_compared": 40063,
+  "limits": "Oracle uses released GT as synthetic predictions solely to test scorer contracts; no model accuracy result",
+  "preserved_hashes_verified": 83,
+  "schema": "iiit_cvid_spotting_test_freeze_verification_v1",
+  "spotting_inference_executed": false,
+  "verification_implementation_sha256": "b649a2ec7b957ab8a6d521e3fe0182275044253c7560e0b70d48811cbebe049c"
+}

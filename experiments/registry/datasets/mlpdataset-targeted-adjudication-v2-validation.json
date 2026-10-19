@@ -1,0 +1,35 @@
+{
+  "status": "pass",
+  "scope": "integrity_not_semantic_or_formal_GT_certification",
+  "verified_rows": 82,
+  "verified_native_frames": 3553,
+  "verified_logs": 64,
+  "unique_files_hashed": 3629,
+  "summary": {
+    "original_rows": 82,
+    "row_dispositions": {
+      "excluded_non_target": 11,
+      "hold": 31,
+      "included_local_review": 40
+    },
+    "canonical_events": 43,
+    "primary_events": 39,
+    "local_reviewed_primary_points": 35,
+    "mapped_unique_primary_points": 28
+  },
+  "ledger_sha256": "ba47a871675375f839c773318e206889c84c7c9dcb4576c8b66e925e215d3483",
+  "csv_sha256": "ad4ccf02f9196044d03154d7b2e60d19d947c48f48b771e224b336b935d4df75",
+  "reviewed_at": "2026-10-19",
+  "independent_scientific_review": "pass",
+  "formal_evaluation_ready": false,
+  "raw_annotations_changed": false,
+  "verifier": {
+    "path": "benchmark/experiments/scripts/verify_mlpdataset_final_adjudication.py",
+    "sha256": "40c18d4edaa44d7a5faef7582536c36a4181066a7535a28d0c7696acfe6948f7"
+  },
+  "report": {
+    "path": "plans/reports/dataset-adjudication-261019-1504-mlpdataset-final-review-report.md",
+    "sha256": "05dc50e22c241b80cf88d2d24cb9aefaa33f30164769aee1e70bd3f615fe0336"
+  },
+  "evidence_limits": "Local scaled lossy native-cadence presentations and saved logs. No independent raw source/PNG/probe JSON rehash or source-wide completeness certification."
+}

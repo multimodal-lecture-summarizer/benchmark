@@ -1,0 +1,38 @@
+{
+  "status": "INLINE_OUTPUTS_REVISION_PENDING_USER_RERUN",
+  "notebook": "experiments/notebooks/diagnostics/mlpdataset-slide-transition-eda-colab.ipynb",
+  "notebook_sha256": "0a336ceb7c3b8667c86feabd27beb2462e6889b8ccffe39d6bfae49e8312ac79",
+  "code_cells": 18,
+  "received_colab": {
+    "backup_sha256": "c114e0d26e6abd70d6d3370e3d6a253d67478363f1dc2eb7d6c799e518f361f5",
+    "executed_cells": 17,
+    "download_failed": 10,
+    "decoded_frames": 0
+  },
+  "local_validation": {
+    "executed_cells": 18,
+    "fresh_kernel": true,
+    "error_outputs": 0,
+    "network_and_drive_disabled": true,
+    "bootstrap_configuration_overridden_only": true,
+    "executed_copy_sha256": "bb17e147d59cbc025e77703dbe376fcb25d7bab00ce00995ed69ba3283729eac"
+  },
+  "regression_checks": {
+    "status": "PASS",
+    "actual_ffmpeg_clip_probe": true,
+    "decoded_preview_frames": 5,
+    "negative_eof_status": true,
+    "stale_export_excluded": true,
+    "stale_success_rejected": true,
+    "identity_change_rejected": true,
+    "timeout_killed": true,
+    "interrupt_process_killed": true,
+    "interrupted_attempt_persisted": true,
+    "network_download_or_colab_tested": false
+  },
+  "full_log_rendering_html_escape_and_url_sanitization_checked": true,
+  "result_zip_generated": false,
+  "prior_annotation_outputs_preserved": true,
+  "revised_live_colab_execution_verified": false,
+  "live_format_diagnostics_verified": false
+}

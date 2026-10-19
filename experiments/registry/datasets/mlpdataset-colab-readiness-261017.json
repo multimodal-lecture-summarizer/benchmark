@@ -1,0 +1,36 @@
+{
+  "status": "PREPARED_COLAB_UNEXECUTED_CPU",
+  "notebook": "experiments/notebooks/diagnostics/mlpdataset-slide-transition-eda-colab.ipynb",
+  "notebook_sha256": "225bddf19f55be5cb37aafaf2dfca7e83ca4ae3a8fb64760f5e06b1364f38794",
+  "code_cells": 17,
+  "local_validation": {
+    "fresh_kernel": true,
+    "executed_code_cells": 17,
+    "error_outputs": 0,
+    "real_cached_annotation_videos": 333,
+    "released_slide_end_marks": 9021,
+    "bootstrap_overridden": true,
+    "drive_and_video_download_disabled": true,
+    "execution_notebook": "experiments/outputs/mlpdataset_colab_validation_261017/local-executed-validation.ipynb",
+    "execution_notebook_sha256": "cb21929b1ae7143fdaca1e870357ed963f2c361c14eaa8a4672ee2fafcee4d5b",
+    "unmodified_code_cells_except_bootstrap_configuration": true
+  },
+  "helper_checks": {
+    "status": "PASS",
+    "actual_ffmpeg_clip_probe": true,
+    "decoded_preview_frames": 5,
+    "negative_eof_status": true,
+    "stale_export_excluded": true,
+    "stale_success_rejected": true,
+    "identity_change_rejected": true,
+    "timeout_killed": true,
+    "interrupt_process_killed": true,
+    "interrupted_attempt_persisted": true,
+    "network_download_or_colab_tested": false
+  },
+  "live_colab_executed": false,
+  "drive_mount_executed": false,
+  "live_video_download_verified": false,
+  "prior_executed_notebook_unchanged_sha256": "43fee77f8c4d3e0c7c0d71fe8815f3b217389ba4850336596ab43bd24b273dd1",
+  "review": "plan and artifact reviews approved; interruption and stale-file blockers resolved"
+}

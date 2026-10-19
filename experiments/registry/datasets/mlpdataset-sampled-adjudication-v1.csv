@@ -1,0 +1,83 @@
+﻿key,original_source_line,released_time_sec,event_class,reason,proposed_disposition,disposition,native_endpoint_s,candidate_event_ids,native_job_ids
+-8QB3Rbeqoc:5,6,817.456,credits_then_fade,Retained context; no native endpoint certification,excluded_non_target,hold,,,
+-a5-EHnZ_XA:5,6,355.4222,multiple_replacements,Diffuse -> Focal -> Diffuse -> BRONJ; more than one real change in short window.,included_after_native_and_mapping_qualification,hold,,-a5-EHnZ_XA/fast-dental-1;-a5-EHnZ_XA/fast-dental-2;-a5-EHnZ_XA/fast-dental-3,native-001;native-002
+-a5-EHnZ_XA:6,7,355.4221,multiple_replacements,Diffuse -> Focal -> Diffuse -> BRONJ; more than one real change in short window.,included_after_native_and_mapping_qualification,hold,,-a5-EHnZ_XA/fast-dental-1;-a5-EHnZ_XA/fast-dental-2;-a5-EHnZ_XA/fast-dental-3,native-001;native-002
+-a5-EHnZ_XA:7,8,357.4221,multiple_replacements,Overlaps case1 with denser phase; preserve all three events and unresolved row mapping.,included_after_native_and_mapping_qualification,hold,,-a5-EHnZ_XA/fast-dental-1;-a5-EHnZ_XA/fast-dental-2;-a5-EHnZ_XA/fast-dental-3,native-001;native-002
+077X0x07S0c:32,33,1966.0,instructional_fade,Large Intestine page dissolves into Donating Stool for Research page.,included_after_native_and_mapping_qualification,hold,,077X0x07S0c/colon-stool,native-003
+0gf3IJFTxEA:0,1,29.5,intro_to_presenter,Retained context; no native endpoint certification,excluded_non_target,hold,,,
+0gf3IJFTxEA:23,24,2780.4558,presenter_to_outro,Retained context; no native endpoint certification,excluded_non_target,hold,,,
+18SixEz5GDE:0,1,17.4132,instructional_slide_with_delayed_effect,Retained context; no native endpoint certification,included_after_native_and_mapping_qualification,hold,,,native-004
+18SixEz5GDE:13,14,1015.913,instructional_slide_with_delayed_effect,Retained context; no native endpoint certification,included_after_native_and_mapping_qualification,hold,,,native-005
+18SixEz5GDE:26,27,2365.6396,instructional_slide_to_end_card,Retained context; no native endpoint certification,excluded_non_target,hold,,,
+1LmKuxUzGUw:0,1,7.6068,instructional_title_to_outline,NBDE Part1 title to exam outline.,included_after_native_and_mapping_qualification,hold,,1LmKuxUzGUw/nbde-title-outline,native-006
+1LmKuxUzGUw:1,2,7.6068,instructional_title_to_outline,NBDE Part1 title to exam outline.,included_after_native_and_mapping_qualification,hold,,1LmKuxUzGUw/nbde-title-outline,native-006
+1LmKuxUzGUw:2,3,49.6068,instructional_replacement,Exam outline to exam section table.,included_after_native_and_mapping_qualification,hold,,1LmKuxUzGUw/nbde-outline-table,native-007
+2NgUY8f1pa8:0,1,157.9194,instructional_slide_change,Retained context; no native endpoint certification,included_after_native_and_mapping_qualification,hold,,,native-008
+2NgUY8f1pa8:27,28,2019.5012,instructional_slide_change,Retained context; no native endpoint certification,included_after_native_and_mapping_qualification,hold,,,native-009
+2NgUY8f1pa8:54,55,3990.6669,instructional_slide_to_summary,Retained context; no native endpoint certification,included_after_native_and_mapping_qualification,hold,,,native-010
+2_dZ5GBlRgU:64,65,4152.262,source_end_context_no_new_slide,Retained context; no native endpoint certification,hold,hold,,,
+2xr4P0WGKSA:0,1,4.267,no_change_observed,"Same lecture title slide throughout sampled source-start window; lecturer moves, no observed replacement.",hold,hold,,,native-011
+2xr4P0WGKSA:26,27,2190.7665,delayed_instructional_replacement,Transformer Self-Attention to Attention Function after released mark.,included_after_native_and_mapping_qualification,hold,,2xr4P0WGKSA/transformer-attention,native-012
+37z_tJD81y8:68,69,3971.7774,delayed_instructional_replacement,Rearranging computation to Multimodal Encoder-Decoder nearly3s after released mark.,included_after_native_and_mapping_qualification,hold,,37z_tJD81y8/rearranging-encoder,native-013
+3ZA33n7BrRg:12,13,743.4999,instructional_replacement,Scapula posterior view to lateral view; same anatomy topic does not mean same slide.,included_after_native_and_mapping_qualification,hold,,3ZA33n7BrRg/scapula-posterior-lateral,native-014
+3ZA33n7BrRg:13,14,743.4998,instructional_replacement,Scapula posterior view to lateral view; same anatomy topic does not mean same slide.,included_after_native_and_mapping_qualification,hold,,3ZA33n7BrRg/scapula-posterior-lateral,native-014
+3ZA33n7BrRg:14,15,783.9998,instructional_replacement,Scapula figure to Upper Limb text page.,included_after_native_and_mapping_qualification,hold,,3ZA33n7BrRg/scapula-upper-limb,native-015
+6U2ZTAWnVvo:23,24,2257.096,source_edge_policy_hold,Retained context; no native endpoint certification,hold,hold,,,native-016
+8OrCdgHcMVM:6,7,1076.275,instructional_slide_change,Retained context; no native endpoint certification,included_after_native_and_mapping_qualification,hold,,,native-017
+8OrCdgHcMVM:12,13,1955.3792,instructional_slide_to_end_card,Retained context; no native endpoint certification,excluded_non_target,hold,,,
+9GmySN5P408:24,25,884.656,source_end_no_change,One Optimal Force remains through last available sample; EOF context does not certify a primary event.,hold,hold,,,native-018
+ALRJCeVT0fQ:7,8,848.761,content_to_blank_unresolved,Retained context; no native endpoint certification,hold,hold,,,native-019
+AS8KJMeiNpM:0,1,0.0,source_start_context,Retained context; no native endpoint certification,excluded_non_target,hold,,,
+DZSEErNZ1d4:8,9,490.7598,instructional_replacement,Water symptoms to bottled-water question.,included_after_native_and_mapping_qualification,hold,,DZSEErNZ1d4/water-question,native-020
+DZSEErNZ1d4:9,10,490.7597,instructional_replacement,Water symptoms to bottled-water question.,included_after_native_and_mapping_qualification,hold,,DZSEErNZ1d4/water-question,native-020
+DZSEErNZ1d4:10,11,538.7596,instructional_replacement,Water question to sports-drink page.,included_after_native_and_mapping_qualification,hold,,DZSEErNZ1d4/water-sports,native-021
+DZSEErNZ1d4:20,21,976.4894,instructional_replacement,Fiber bars to protein food-source page.,included_after_native_and_mapping_qualification,hold,,DZSEErNZ1d4/fiber-protein,native-022
+DZSEErNZ1d4:21,22,976.4894,instructional_replacement,Fiber bars to protein food-source page.,included_after_native_and_mapping_qualification,hold,,DZSEErNZ1d4/fiber-protein,native-022
+DZSEErNZ1d4:22,23,976.4893,instructional_replacement,Fiber bars to protein food-source page.,included_after_native_and_mapping_qualification,hold,,DZSEErNZ1d4/fiber-protein,native-022
+DZSEErNZ1d4:23,24,1017.4893,instructional_same_title_new_page,"Protein food sources replaced by protein structure text/figures; same heading, whole body changed.",included_after_native_and_mapping_qualification,hold,,DZSEErNZ1d4/protein-structure,native-023
+DZSEErNZ1d4:39,40,1817.4892,instructional_same_title_new_page,Micronutrient overview replaced by vitamins table.,included_after_native_and_mapping_qualification,hold,,DZSEErNZ1d4/micronutrient-table,native-024
+DZSEErNZ1d4:40,41,1817.4892,instructional_same_title_new_page,Micronutrient overview replaced by vitamins table.,included_after_native_and_mapping_qualification,hold,,DZSEErNZ1d4/micronutrient-table,native-024
+DZSEErNZ1d4:41,42,1860.4892,instructional_same_title_new_page,Vitamin table replaced by water/fat soluble vitamin text.,included_after_native_and_mapping_qualification,hold,,DZSEErNZ1d4/vitamin-solubility,native-025
+DZSEErNZ1d4:59,60,2871.989,instructional_same_title_new_page,Cell Structure organelle list replaced by centrioles/cytoskeleton/vacuole page.,included_after_native_and_mapping_qualification,hold,,DZSEErNZ1d4/cell-organelles,native-026
+DZSEErNZ1d4:60,61,2871.9889,instructional_same_title_new_page,Cell Structure organelle list replaced by centrioles/cytoskeleton/vacuole page.,included_after_native_and_mapping_qualification,hold,,DZSEErNZ1d4/cell-organelles,native-026
+DZSEErNZ1d4:61,62,2931.9889,instructional_same_title_new_page,Cell structures page replaced by supplements/chlorophyll page.,included_after_native_and_mapping_qualification,hold,,DZSEErNZ1d4/cell-supplements,native-027
+E_3gxQWaCoQ:24,25,1846.1454,two_instructional_replacements,"Plot -> instructional section title -> agenda; two events, not automatically one duplicate.",included_after_native_and_mapping_qualification,hold,,E_3gxQWaCoQ/optimization-title;E_3gxQWaCoQ/optimization-agenda,native-028;native-029
+E_3gxQWaCoQ:25,26,1846.1454,two_instructional_replacements,"Plot -> instructional section title -> agenda; two events, not automatically one duplicate.",included_after_native_and_mapping_qualification,hold,,E_3gxQWaCoQ/optimization-title;E_3gxQWaCoQ/optimization-agenda,native-028;native-029
+E_3gxQWaCoQ:26,27,1905.6453,instructional_replacement,Adaptive Learning Rate equations to comparison figures.,included_after_native_and_mapping_qualification,hold,,E_3gxQWaCoQ/adaptive-comparison,native-030
+FnMYvGkk_YE:23,24,2241.074,source_edge_policy_hold,Retained context; no native endpoint certification,hold,hold,,,native-031
+KDVP_WAIUXs:3,4,208.5586,instructional_replacement,Anterior Dental Crossbite to Removable Appliance.,included_after_native_and_mapping_qualification,hold,,KDVP_WAIUXs/crossbite-appliance,native-032
+KDVP_WAIUXs:4,5,208.5586,instructional_replacement,Anterior Dental Crossbite to Removable Appliance.,included_after_native_and_mapping_qualification,hold,,KDVP_WAIUXs/crossbite-appliance,native-032
+KDVP_WAIUXs:5,6,252.5586,brief_slide_return,Appliance -> Crossbite -> Appliance; return is separate observed change.,included_after_native_and_mapping_qualification,hold,,KDVP_WAIUXs/appliance-crossbite;KDVP_WAIUXs/crossbite-return,native-033;native-034
+L1TiP9P55-8:58,59,4175.2499,source_edge_policy_hold,Retained context; no native endpoint certification,hold,hold,,,native-035
+NQtXvfJCtxo:1,2,77.4999,replacement_with_figure_changes,Skull page changes diagrams before full Cranium page replacement. Figure changes retained as auxiliary.,included_after_native_and_mapping_qualification,hold,,NQtXvfJCtxo/skull-figure-build;NQtXvfJCtxo/skull-figure-return;NQtXvfJCtxo/skull-cranium,native-036;native-037
+NQtXvfJCtxo:2,3,77.4999,replacement_with_figure_changes,Skull page changes diagrams before full Cranium page replacement. Figure changes retained as auxiliary.,included_after_native_and_mapping_qualification,hold,,NQtXvfJCtxo/skull-figure-build;NQtXvfJCtxo/skull-figure-return;NQtXvfJCtxo/skull-cranium,native-036;native-037
+NQtXvfJCtxo:3,4,113.4999,instructional_replacement,Cranium to Face page.,included_after_native_and_mapping_qualification,hold,,NQtXvfJCtxo/cranium-face,native-038
+RntXStwLA48:30,31,2269.612,source_edge_policy_hold,Retained context; no native endpoint certification,hold,hold,,,native-039
+UsAgvMC5fRs:0,1,0.0,source_edge_policy_hold,Retained context; no native endpoint certification,hold,hold,,,native-040
+W0-80WT5G_s:21,22,3006.567,source_edge_policy_hold,Retained context; no native endpoint certification,hold,hold,,,native-041
+WGrvg7ZuPEc:0,1,15.5,instructional_title_to_outline,Pediatric Dentistry title to instructional outline.,included_after_native_and_mapping_qualification,hold,,WGrvg7ZuPEc/pediatric-outline,native-042
+WGrvg7ZuPEc:1,2,15.5,instructional_title_to_outline,Pediatric Dentistry title to instructional outline.,included_after_native_and_mapping_qualification,hold,,WGrvg7ZuPEc/pediatric-outline,native-042
+WGrvg7ZuPEc:2,3,48.0,instructional_replacement,Pediatric outline to question page.,included_after_native_and_mapping_qualification,hold,,WGrvg7ZuPEc/pediatric-question,native-043
+XVHN0izviAw:0,1,0.0,source_edge_policy_hold,Retained context; no native endpoint certification,hold,hold,,,native-044
+_Jw3DQ7_pxg:56,57,3171.08,source_edge_policy_hold,Retained context; no native endpoint certification,hold,hold,,,native-045
+_yre2uKcj7A:16,17,1570.5,instructional_replacement,Clinical Homeostatic Imbalance to Endomembrane System.,included_after_native_and_mapping_qualification,hold,,_yre2uKcj7A/clinical-endomembrane,native-046
+_yre2uKcj7A:17,18,1570.5,instructional_replacement,Clinical Homeostatic Imbalance to Endomembrane System.,included_after_native_and_mapping_qualification,hold,,_yre2uKcj7A/clinical-endomembrane,native-046
+_yre2uKcj7A:18,19,1688.0,instructional_replacement,Endomembrane text page to full cell diagram.,included_after_native_and_mapping_qualification,hold,,_yre2uKcj7A/endomembrane-diagram,native-047
+_yre2uKcj7A:32,33,2953.021,source_edge_policy_hold,Retained context; no native endpoint certification,hold,hold,,,native-048
+aLK_nkgx8wo:0,1,13.9937,instructional_wipe,Chapter Three title to Newborn Reflexes with a vertical wipe.,included_after_native_and_mapping_qualification,hold,,aLK_nkgx8wo/newborn-wipe,native-049
+aLK_nkgx8wo:30,31,2449.589,source_edge_policy_hold,Retained context; no native endpoint certification,hold,hold,,,native-050
+aZDNeibQBzY:20,21,3126.66,source_edge_policy_hold,Retained context; no native endpoint certification,hold,hold,,,native-051
+b118qvD927M:0,1,538.866,source_edge_policy_hold,Retained context; no native endpoint certification,hold,hold,,,native-052
+crA3cOwKXmc:23,24,2290.417,source_edge_policy_hold,Retained context; no native endpoint certification,hold,hold,,,native-053
+ewjt-8MRbxY:25,26,2292.089,source_edge_policy_hold,Retained context; no native endpoint certification,hold,hold,,,native-054
+fBYu8I52nVM:24,25,2284.167,instructional_replacement,Caption generation evaluation page to challenge results page.,included_after_native_and_mapping_qualification,hold,,fBYu8I52nVM/caption-results,native-055
+fBYu8I52nVM:25,26,2284.1669,instructional_replacement,Caption generation evaluation page to challenge results page.,included_after_native_and_mapping_qualification,hold,,fBYu8I52nVM/caption-results,native-055
+fBYu8I52nVM:26,27,2327.1668,instructional_same_title_new_page,"Challenge results table replaced by automatic-evaluation text; same heading, new body.",included_after_native_and_mapping_qualification,hold,,fBYu8I52nVM/caption-automatic,native-056
+grudC3qeMfU:53,54,2123.047,source_edge_policy_hold,Retained context; no native endpoint certification,hold,hold,,,native-057
+h2CWXJSQMD0:20,21,3148.997,source_edge_policy_hold,Retained context; no native endpoint certification,hold,hold,,,native-058
+jLgLSlM9jwI:0,1,0.0,source_edge_policy_hold,Retained context; no native endpoint certification,hold,hold,,,native-059
+lBI8DXevsDk:40,41,3744.2097,outro_sequence,References to presenter-only and copyright/outro; auxiliary context excluded from primary proposal.,excluded_non_target,hold,,lBI8DXevsDk/references-presenter;lBI8DXevsDk/presenter-credits,native-060;native-061
+lBI8DXevsDk:41,42,3744.2097,outro_sequence,References to presenter-only and copyright/outro; auxiliary context excluded from primary proposal.,excluded_non_target,hold,,lBI8DXevsDk/references-presenter;lBI8DXevsDk/presenter-credits,native-060;native-061
+o049fWhBw2A:6,7,3159.818,source_edge_policy_hold,Retained context; no native endpoint certification,hold,hold,,,native-062
+pUH2_SGnm9g:44,45,3053.146,source_edge_policy_hold,Retained context; no native endpoint certification,hold,hold,,,native-063
+tmXh_vj88sE:25,26,3064.895,source_edge_policy_hold,Retained context; no native endpoint certification,hold,hold,,,native-064

@@ -1,0 +1,1141 @@
+{
+  "schema": "cvid_all_split_inventory_v1",
+  "observed_at_utc": "2026-10-14T07:42:34.105901+00:00",
+  "source_archive": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\benchmark\\research-data\\iiit-cvid-source\\IIIT-CVid.zip",
+  "source_archive_sha256": "b5b562580e250ee3336462b7699bc79d0d1149d3b8cc82f1b221a0d0ce4fb489",
+  "source_bytes": 2427254987,
+  "readme_sha256": "3f1df4555acf1f63def701d1775c3994b2596573ea0cda8c21bf3e11be06c294",
+  "splits": {
+    "train": {
+      "frames": 3171,
+      "xmls": 3171,
+      "crop_pngs": 82263,
+      "orphan_xmls": 0,
+      "boxes": 82263,
+      "nonblank_transcriptions": 82263,
+      "invalid_boxes": 18,
+      "blank_transcriptions": 0,
+      "unresolved_difficult_flags": 0,
+      "KEEP": 3135,
+      "xml_size_mismatches": 23,
+      "empty_frames": 0,
+      "eligible_frames": 3155,
+      "eligible_objects": 81606,
+      "HOLD": 16,
+      "REPAIR_METADATA_DERIVED": 20,
+      "crop_label_rows": 82263,
+      "crop_index_missing_images": 0,
+      "crop_images_missing_index": 0,
+      "duplicate_crop_index_paths": 0,
+      "courses": [
+        "1",
+        "4",
+        "5",
+        "8",
+        "9",
+        "12",
+        "15",
+        "16",
+        "17",
+        "21",
+        "22",
+        "23"
+      ],
+      "source_groups": 395,
+      "crop_xml_mismatched_label_groups": 62,
+      "crop_xml_unmatched_observations": 158
+    },
+    "val": {
+      "frames": 549,
+      "xmls": 549,
+      "crop_pngs": 15379,
+      "orphan_xmls": 0,
+      "boxes": 15379,
+      "nonblank_transcriptions": 15379,
+      "invalid_boxes": 3,
+      "blank_transcriptions": 0,
+      "unresolved_difficult_flags": 0,
+      "KEEP": 543,
+      "xml_size_mismatches": 3,
+      "empty_frames": 0,
+      "eligible_frames": 546,
+      "eligible_objects": 15317,
+      "REPAIR_METADATA_DERIVED": 3,
+      "HOLD": 3,
+      "crop_label_rows": 15379,
+      "crop_index_missing_images": 0,
+      "crop_images_missing_index": 0,
+      "duplicate_crop_index_paths": 0,
+      "courses": [
+        "2",
+        "6",
+        "11",
+        "13",
+        "19"
+      ],
+      "source_groups": 140,
+      "crop_xml_mismatched_label_groups": 3,
+      "crop_xml_unmatched_observations": 6
+    },
+    "test": {
+      "frames": 1755,
+      "xmls": 1755,
+      "crop_pngs": 40103,
+      "orphan_xmls": 0,
+      "boxes": 40103,
+      "nonblank_transcriptions": 40103,
+      "invalid_boxes": 1,
+      "blank_transcriptions": 0,
+      "unresolved_difficult_flags": 0,
+      "KEEP": 1657,
+      "xml_size_mismatches": 98,
+      "empty_frames": 0,
+      "eligible_frames": 1754,
+      "eligible_objects": 40063,
+      "REPAIR_METADATA_DERIVED": 97,
+      "HOLD": 1,
+      "crop_label_rows": 40103,
+      "crop_index_missing_images": 0,
+      "crop_images_missing_index": 0,
+      "duplicate_crop_index_paths": 0,
+      "courses": [
+        "3",
+        "7",
+        "10",
+        "14",
+        "18",
+        "20",
+        "24"
+      ],
+      "source_groups": 276,
+      "crop_xml_mismatched_label_groups": 41,
+      "crop_xml_unmatched_observations": 74
+    }
+  },
+  "frame_index_checks": {
+    "train": {
+      "frame_index_present": true,
+      "rows": 3171,
+      "duplicate_rows": 0,
+      "missing": 0,
+      "extra": 0
+    },
+    "val": {
+      "frame_index_present": false,
+      "derived_from_paired_png_xml": true
+    },
+    "test": {
+      "frame_index_present": true,
+      "rows": 1755,
+      "duplicate_rows": 0,
+      "missing": 0,
+      "extra": 0
+    }
+  },
+  "cross_split_identifiers": {
+    "train__val": {
+      "course_ids": [],
+      "source_group_ids": [],
+      "declared_course_urls": []
+    },
+    "train__test": {
+      "course_ids": [],
+      "source_group_ids": [],
+      "declared_course_urls": []
+    },
+    "val__test": {
+      "course_ids": [],
+      "source_group_ids": [],
+      "declared_course_urls": []
+    }
+  },
+  "exact_duplicate_groups": [],
+  "crop_xml_transcription_group_mismatches": [
+    {
+      "split": "test",
+      "course": "10",
+      "video": "2",
+      "xml_objects": 95,
+      "crop_labels": 95,
+      "unmatched_xml_observations": 3,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "10",
+      "video": "24",
+      "xml_objects": 77,
+      "crop_labels": 77,
+      "unmatched_xml_observations": 2,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "10",
+      "video": "25",
+      "xml_objects": 140,
+      "crop_labels": 140,
+      "unmatched_xml_observations": 6,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "10",
+      "video": "26",
+      "xml_objects": 56,
+      "crop_labels": 56,
+      "unmatched_xml_observations": 8,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "10",
+      "video": "27",
+      "xml_objects": 84,
+      "crop_labels": 84,
+      "unmatched_xml_observations": 2,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "10",
+      "video": "28",
+      "xml_objects": 96,
+      "crop_labels": 96,
+      "unmatched_xml_observations": 2,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "10",
+      "video": "29",
+      "xml_objects": 48,
+      "crop_labels": 48,
+      "unmatched_xml_observations": 3,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "10",
+      "video": "3",
+      "xml_objects": 105,
+      "crop_labels": 105,
+      "unmatched_xml_observations": 3,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "10",
+      "video": "30",
+      "xml_objects": 171,
+      "crop_labels": 171,
+      "unmatched_xml_observations": 2,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "10",
+      "video": "31",
+      "xml_objects": 69,
+      "crop_labels": 69,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "10",
+      "video": "32",
+      "xml_objects": 138,
+      "crop_labels": 138,
+      "unmatched_xml_observations": 2,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "10",
+      "video": "4",
+      "xml_objects": 156,
+      "crop_labels": 156,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "10",
+      "video": "5",
+      "xml_objects": 74,
+      "crop_labels": 74,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "14",
+      "video": "1",
+      "xml_objects": 235,
+      "crop_labels": 235,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "14",
+      "video": "27",
+      "xml_objects": 448,
+      "crop_labels": 448,
+      "unmatched_xml_observations": 2,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "14",
+      "video": "29",
+      "xml_objects": 341,
+      "crop_labels": 341,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "18",
+      "video": "19",
+      "xml_objects": 71,
+      "crop_labels": 71,
+      "unmatched_xml_observations": 2,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "18",
+      "video": "20",
+      "xml_objects": 83,
+      "crop_labels": 83,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "18",
+      "video": "22",
+      "xml_objects": 203,
+      "crop_labels": 203,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "18",
+      "video": "30",
+      "xml_objects": 203,
+      "crop_labels": 203,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "18",
+      "video": "37",
+      "xml_objects": 157,
+      "crop_labels": 157,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "20",
+      "video": "1",
+      "xml_objects": 330,
+      "crop_labels": 330,
+      "unmatched_xml_observations": 3,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "20",
+      "video": "11",
+      "xml_objects": 182,
+      "crop_labels": 182,
+      "unmatched_xml_observations": 2,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "20",
+      "video": "13",
+      "xml_objects": 147,
+      "crop_labels": 147,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "20",
+      "video": "14",
+      "xml_objects": 226,
+      "crop_labels": 226,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "20",
+      "video": "15",
+      "xml_objects": 270,
+      "crop_labels": 270,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "20",
+      "video": "16",
+      "xml_objects": 36,
+      "crop_labels": 36,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "20",
+      "video": "2",
+      "xml_objects": 420,
+      "crop_labels": 420,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "20",
+      "video": "20",
+      "xml_objects": 539,
+      "crop_labels": 539,
+      "unmatched_xml_observations": 2,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "20",
+      "video": "23",
+      "xml_objects": 123,
+      "crop_labels": 123,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "20",
+      "video": "25",
+      "xml_objects": 330,
+      "crop_labels": 330,
+      "unmatched_xml_observations": 4,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "20",
+      "video": "26",
+      "xml_objects": 154,
+      "crop_labels": 154,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "20",
+      "video": "40",
+      "xml_objects": 154,
+      "crop_labels": 154,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "20",
+      "video": "43",
+      "xml_objects": 341,
+      "crop_labels": 341,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "20",
+      "video": "59",
+      "xml_objects": 305,
+      "crop_labels": 305,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "20",
+      "video": "60",
+      "xml_objects": 142,
+      "crop_labels": 142,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "20",
+      "video": "7",
+      "xml_objects": 264,
+      "crop_labels": 264,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "20",
+      "video": "8",
+      "xml_objects": 259,
+      "crop_labels": 259,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "20",
+      "video": "80",
+      "xml_objects": 156,
+      "crop_labels": 156,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "24",
+      "video": "20",
+      "xml_objects": 360,
+      "crop_labels": 360,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "test",
+      "course": "3",
+      "video": "20",
+      "xml_objects": 92,
+      "crop_labels": 92,
+      "unmatched_xml_observations": 2,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "1",
+      "video": "13",
+      "xml_objects": 349,
+      "crop_labels": 349,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "1",
+      "video": "17",
+      "xml_objects": 358,
+      "crop_labels": 358,
+      "unmatched_xml_observations": 4,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "1",
+      "video": "18",
+      "xml_objects": 318,
+      "crop_labels": 318,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "1",
+      "video": "21",
+      "xml_objects": 555,
+      "crop_labels": 555,
+      "unmatched_xml_observations": 3,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "1",
+      "video": "7",
+      "xml_objects": 291,
+      "crop_labels": 291,
+      "unmatched_xml_observations": 4,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "1",
+      "video": "8",
+      "xml_objects": 407,
+      "crop_labels": 407,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "12",
+      "video": "24",
+      "xml_objects": 192,
+      "crop_labels": 192,
+      "unmatched_xml_observations": 4,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "12",
+      "video": "26",
+      "xml_objects": 53,
+      "crop_labels": 53,
+      "unmatched_xml_observations": 6,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "12",
+      "video": "28",
+      "xml_objects": 62,
+      "crop_labels": 62,
+      "unmatched_xml_observations": 7,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "12",
+      "video": "29",
+      "xml_objects": 65,
+      "crop_labels": 65,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "12",
+      "video": "30",
+      "xml_objects": 207,
+      "crop_labels": 207,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "12",
+      "video": "46",
+      "xml_objects": 171,
+      "crop_labels": 171,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "12",
+      "video": "5",
+      "xml_objects": 116,
+      "crop_labels": 116,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "15",
+      "video": "1",
+      "xml_objects": 71,
+      "crop_labels": 71,
+      "unmatched_xml_observations": 2,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "15",
+      "video": "10",
+      "xml_objects": 122,
+      "crop_labels": 122,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "15",
+      "video": "11",
+      "xml_objects": 81,
+      "crop_labels": 81,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "15",
+      "video": "12",
+      "xml_objects": 95,
+      "crop_labels": 95,
+      "unmatched_xml_observations": 2,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "15",
+      "video": "13",
+      "xml_objects": 61,
+      "crop_labels": 61,
+      "unmatched_xml_observations": 3,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "15",
+      "video": "14",
+      "xml_objects": 60,
+      "crop_labels": 60,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "15",
+      "video": "15",
+      "xml_objects": 89,
+      "crop_labels": 89,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "15",
+      "video": "16",
+      "xml_objects": 138,
+      "crop_labels": 138,
+      "unmatched_xml_observations": 2,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "15",
+      "video": "19",
+      "xml_objects": 87,
+      "crop_labels": 87,
+      "unmatched_xml_observations": 2,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "15",
+      "video": "20",
+      "xml_objects": 114,
+      "crop_labels": 114,
+      "unmatched_xml_observations": 6,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "15",
+      "video": "21",
+      "xml_objects": 55,
+      "crop_labels": 55,
+      "unmatched_xml_observations": 3,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "15",
+      "video": "22",
+      "xml_objects": 75,
+      "crop_labels": 75,
+      "unmatched_xml_observations": 9,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "15",
+      "video": "25",
+      "xml_objects": 91,
+      "crop_labels": 91,
+      "unmatched_xml_observations": 2,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "15",
+      "video": "27",
+      "xml_objects": 75,
+      "crop_labels": 75,
+      "unmatched_xml_observations": 7,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "15",
+      "video": "28",
+      "xml_objects": 51,
+      "crop_labels": 51,
+      "unmatched_xml_observations": 2,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "16",
+      "video": "12",
+      "xml_objects": 55,
+      "crop_labels": 55,
+      "unmatched_xml_observations": 2,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "16",
+      "video": "17",
+      "xml_objects": 109,
+      "crop_labels": 109,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "16",
+      "video": "18",
+      "xml_objects": 87,
+      "crop_labels": 87,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "16",
+      "video": "19",
+      "xml_objects": 97,
+      "crop_labels": 97,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "16",
+      "video": "25",
+      "xml_objects": 80,
+      "crop_labels": 80,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "16",
+      "video": "26",
+      "xml_objects": 63,
+      "crop_labels": 63,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "16",
+      "video": "40",
+      "xml_objects": 71,
+      "crop_labels": 71,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "21",
+      "video": "1",
+      "xml_objects": 395,
+      "crop_labels": 395,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "21",
+      "video": "12",
+      "xml_objects": 756,
+      "crop_labels": 756,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "21",
+      "video": "14",
+      "xml_objects": 862,
+      "crop_labels": 862,
+      "unmatched_xml_observations": 7,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "21",
+      "video": "16",
+      "xml_objects": 530,
+      "crop_labels": 530,
+      "unmatched_xml_observations": 2,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "21",
+      "video": "17",
+      "xml_objects": 872,
+      "crop_labels": 872,
+      "unmatched_xml_observations": 4,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "21",
+      "video": "18",
+      "xml_objects": 962,
+      "crop_labels": 962,
+      "unmatched_xml_observations": 6,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "21",
+      "video": "19",
+      "xml_objects": 823,
+      "crop_labels": 823,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "21",
+      "video": "2",
+      "xml_objects": 1104,
+      "crop_labels": 1104,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "21",
+      "video": "20",
+      "xml_objects": 1374,
+      "crop_labels": 1374,
+      "unmatched_xml_observations": 3,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "21",
+      "video": "23",
+      "xml_objects": 876,
+      "crop_labels": 876,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "21",
+      "video": "24",
+      "xml_objects": 629,
+      "crop_labels": 629,
+      "unmatched_xml_observations": 3,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "21",
+      "video": "28",
+      "xml_objects": 210,
+      "crop_labels": 210,
+      "unmatched_xml_observations": 2,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "21",
+      "video": "30",
+      "xml_objects": 821,
+      "crop_labels": 821,
+      "unmatched_xml_observations": 11,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "21",
+      "video": "31",
+      "xml_objects": 730,
+      "crop_labels": 730,
+      "unmatched_xml_observations": 3,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "21",
+      "video": "8",
+      "xml_objects": 939,
+      "crop_labels": 939,
+      "unmatched_xml_observations": 5,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "21",
+      "video": "9",
+      "xml_objects": 441,
+      "crop_labels": 441,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "22",
+      "video": "1",
+      "xml_objects": 205,
+      "crop_labels": 205,
+      "unmatched_xml_observations": 2,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "22",
+      "video": "10",
+      "xml_objects": 32,
+      "crop_labels": 32,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "22",
+      "video": "14",
+      "xml_objects": 146,
+      "crop_labels": 146,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "22",
+      "video": "16",
+      "xml_objects": 91,
+      "crop_labels": 91,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "22",
+      "video": "18",
+      "xml_objects": 52,
+      "crop_labels": 52,
+      "unmatched_xml_observations": 4,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "22",
+      "video": "28",
+      "xml_objects": 190,
+      "crop_labels": 190,
+      "unmatched_xml_observations": 5,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "22",
+      "video": "29",
+      "xml_objects": 118,
+      "crop_labels": 118,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "22",
+      "video": "7",
+      "xml_objects": 83,
+      "crop_labels": 83,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "22",
+      "video": "8",
+      "xml_objects": 162,
+      "crop_labels": 162,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "4",
+      "video": "1",
+      "xml_objects": 105,
+      "crop_labels": 105,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "train",
+      "course": "8",
+      "video": "9",
+      "xml_objects": 217,
+      "crop_labels": 217,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "val",
+      "course": "13",
+      "video": "21",
+      "xml_objects": 136,
+      "crop_labels": 136,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "val",
+      "course": "2",
+      "video": "2",
+      "xml_objects": 44,
+      "crop_labels": 44,
+      "unmatched_xml_observations": 1,
+      "slash_to_hyphen_explains_group": true
+    },
+    {
+      "split": "val",
+      "course": "6",
+      "video": "7",
+      "xml_objects": 173,
+      "crop_labels": 173,
+      "unmatched_xml_observations": 4,
+      "slash_to_hyphen_explains_group": true
+    }
+  ],
+  "perceptual_screen": {
+    "method": "64bit grayscale dHash, Hamming<=6; candidates only, no exclusion",
+    "pairs": 469,
+    "frames": 263
+  },
+  "inference_executed": false,
+  "cohort_frozen": false,
+  "transcription_semantic_accuracy_verified": false,
+  "transcription_policy": "XML object/name is spotting GT; crop indexes replace slash with hyphen; this audit never rewrites XML labels",
+  "script_sha256": "643bfc7e4f3cab6032baccdf0f59e45ef81a87d6bfe1dbec671da53405c475dd",
+  "artifacts": [
+    {
+      "path": "experiments/outputs/cvid-all-split-inventory-261014/frames.csv",
+      "rows": 5475,
+      "sha256": "816b6e8dada6849207d1a3509ff6166a24227bfeeed5e583060481eab2c2f95a"
+    },
+    {
+      "path": "experiments/outputs/cvid-all-split-inventory-261014/annotation-issues.csv",
+      "rows": 22,
+      "sha256": "fd2b0ee55cd35b67d58e89c33729e177539ca51c08f444eac8fa08550de92c35"
+    },
+    {
+      "path": "experiments/outputs/cvid-all-split-inventory-261014/courses.csv",
+      "rows": 24,
+      "sha256": "5dab99c595166bd6aface6eb32a03b95f5989714b19792a7f52483c6e2ff0989"
+    },
+    {
+      "path": "experiments/outputs/cvid-all-split-inventory-261014/cross-split-dhash-candidates.csv",
+      "rows": 469,
+      "sha256": "25d10c86c03cc7e41afee84ac6e3138a39755e26c49c3e6e70d02d3084db7550"
+    }
+  ]
+}

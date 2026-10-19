@@ -1,0 +1,76 @@
+{
+  "candidate_registry": {
+    "bytes": 29609,
+    "path": "experiments/registry/datasets/iiit-cvid-spotting-candidates-261014.json",
+    "sha256": "6408aa4d33f7f87ce3bfc028d8e2b6bd4628a21d48c6d70f9f88db0fc41ef80d"
+  },
+  "candidates": [
+    {
+      "candidate_id": "easyocr_craft_english_g2",
+      "configuration_sha256": "4c41d7b62788832600439be23551662d16f56567c22e2020ddacc5f2a1b996e9",
+      "model_sha256": {
+        "easyocr/craft_mlt_25k.pth": "4a5efbfb48b4081100544e75e1e2b57f8de3d84f213004b14b85fd4b3748db17",
+        "easyocr/english_g2.pth": "e2272681d9d67a04e2dff396b6e95077bc19001f8f6d3593c307b9852e1c29e8"
+      }
+    },
+    {
+      "candidate_id": "paddle_db_v3_rec_v4_keep_all",
+      "configuration_sha256": "f08decf523ce2af9ccdf01a2982a4c5027007240c62cff419236ead60c29cbef",
+      "model_sha256": {
+        "paddleocr/en_PP-OCRv3_det_infer/inference.pdiparams": "83676ec730627ab4502f401410a4b6a3ce1c0bb98fa249b71db055b6bddae051",
+        "paddleocr/en_PP-OCRv3_det_infer/inference.pdiparams.info": "2fe414d9eadf914bf44e3f9ba212988a6f26f364e4f87c6d0af57438ffffc0c4",
+        "paddleocr/en_PP-OCRv3_det_infer/inference.pdmodel": "c4bfb1b05d9d1d5a760801eaf6d20180ef7e47bcc675fb17d1f3a89da5fef427",
+        "paddleocr/en_PP-OCRv4_rec_infer/inference.pdiparams": "75f64a1ffb70c56b7a25655963ca16f5bf3286202e3f52ac972bee05cdee2f56",
+        "paddleocr/en_PP-OCRv4_rec_infer/inference.pdiparams.info": "710d9f3d7c503067ae708f4bc3adc6973c0d6391adb7a1470c36eb70da6b5b83",
+        "paddleocr/en_PP-OCRv4_rec_infer/inference.pdmodel": "85b952f05f709af259cfe4254012aa7208bef0998f71f57a15495446f25ccd43"
+      }
+    }
+  ],
+  "rule": "exact pinned candidate configuration/weights, no test tuning; new runtime run identity required, never resume validation records as test",
+  "schema": "iiit_cvid_spotting_test_candidate_binding_v1",
+  "status": "test_use_binding_frozen; runtime_loading_verification_pending; inference_not_executed",
+  "test_inputs": [
+    {
+      "bytes": 8504868,
+      "path": "experiments/outputs/iiit-cvid-spotting-test-261014/ground-truth.jsonl",
+      "sha256": "6263377fe70da58049ffe8c09b57ccca75e674e7e17b0fc6f42281501dd06771"
+    },
+    {
+      "bytes": 64073,
+      "path": "experiments/registry/datasets/iiit-cvid-spotting-test-261014-selected-frame-ids.txt",
+      "sha256": "3ad969d979c800fa1209458ce9552f7a703b5f291210bdbee5b200773aa6e6a0"
+    },
+    {
+      "bytes": 388,
+      "path": "experiments/registry/datasets/iiit-cvid-spotting-test-261014-annotation-holds.json",
+      "sha256": "94a7b04dd4099bfccfad077f77a4dcfdaaa927b9df34636d6cad78809528f468"
+    },
+    {
+      "bytes": 79858,
+      "path": "experiments/registry/datasets/iiit-cvid-spotting-test-261014-influence.json",
+      "sha256": "bd80635a9a085277f2d3cb1a6d74c2325544ea6201b30b476e5cda56f6fb776b"
+    },
+    {
+      "bytes": 1638916,
+      "path": "experiments/registry/datasets/iiit-cvid-spotting-test-261014-cohort.json",
+      "sha256": "116ccd271dfc95b3bdd1190e75635eac064b49c076ab030ea6f27cf3ea3d5e18"
+    },
+    {
+      "bytes": 14320,
+      "path": "experiments/registry/datasets/iiit-cvid-spotting-test-261014-protocol.json",
+      "sha256": "884aba8bb19a8e7e20734e2fa2f9dee851e78d96417462947b4b2e8c3bf6aa3a"
+    },
+    {
+      "bytes": 7442,
+      "path": "experiments/registry/datasets/iiit-cvid-spotting-test-261014-gt-policy.json",
+      "sha256": "d1f14217d5e6f3273e5d4ad894af65b822ad04e51df2cfffc631a3e8cf6cb463"
+    }
+  ],
+  "validation_cohort_binding_preserved": {
+    "experiments/outputs/iiit-cvid-spotting-validation-261013/ground-truth.jsonl": "238731f770cb4765fca54d9c9062c48588881559b2bb2c5a467582d0f1e018d1",
+    "experiments/registry/datasets/iiit-cvid-spotting-validation-261013-cohort.json": "4657eedf5c527a2fc6ff7e4ba8c6508ad032f805f19ab93d1e1c6fcf2c72f9cb",
+    "experiments/registry/datasets/iiit-cvid-spotting-validation-261013-freeze-verified-261014.json": "e21de989091506c2e50ebf3ca9de3ec6ca46c180038afb38ca33d90c91c18ee3",
+    "experiments/registry/datasets/iiit-cvid-spotting-validation-261013-protocol.json": "8fde6c6d6dab81c7321b68c09738253b143c5a22fb96f2b38912c3471616e55e",
+    "experiments/scripts/spotting_metrics.py": "56ffdf7151ea441af4814a9f675d41146343c6c88e1973a01124a4e4c8122f40"
+  }
+}
