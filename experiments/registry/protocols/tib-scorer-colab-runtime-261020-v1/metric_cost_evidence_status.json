@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "NOT_MEASURED_ON_COLAB",
+  "metric_keys": [
+    "rouge1_f1",
+    "rouge2_f1",
+    "rougeL_f1",
+    "bertscore_f1",
+    "source_sentence_similarity_v1"
+  ],
+  "actual_metric_records": null,
+  "throughput_records_per_second": null,
+  "wall_seconds": null,
+  "CPU_seconds": null,
+  "RAM_peak_bytes": null,
+  "GPU_device": null,
+  "VRAM_peak_allocated_bytes": null,
+  "VRAM_peak_reserved_bytes": null,
+  "checkpoint_bytes": null,
+  "note": "Null means not yet measured. Local guard artifacts only verify refusal to score outside actual Colab T4; their times are not scorer throughput."
+}

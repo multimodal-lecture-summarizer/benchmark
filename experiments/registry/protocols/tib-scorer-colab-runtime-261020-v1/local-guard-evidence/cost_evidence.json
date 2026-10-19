@@ -1,0 +1,63 @@
+{
+  "initialization_seconds": 0.0,
+  "fixtures_seconds": 0.0,
+  "scoring_seconds": 0.0,
+  "checkpoint_seconds": 0.0,
+  "validation_seconds": 0.0,
+  "new_metric_calls": 0,
+  "reused_records": 0,
+  "original_reused_scoring_seconds": 0.0,
+  "input_profiling_seconds": 0.0,
+  "status": "HOLD",
+  "resources": {},
+  "total_wall_seconds": 31.156999999999243,
+  "costs_include_fixture_calls_separately": true,
+  "generation_calls": 0,
+  "new_record_throughput_per_second": null,
+  "successful_records_per_total_wall_second": 0.0,
+  "checkpoint_storage_bytes": 0,
+  "latency_by_profile": {
+    "bart-control": {
+      "record_count": 0,
+      "p50_seconds": null,
+      "p95_seconds": null,
+      "max_seconds": null
+    },
+    "led-ngram0": {
+      "record_count": 0,
+      "p50_seconds": null,
+      "p95_seconds": null,
+      "max_seconds": null
+    },
+    "led-ngram3": {
+      "record_count": 0,
+      "p50_seconds": null,
+      "p95_seconds": null,
+      "max_seconds": null
+    },
+    "led-ngram4": {
+      "record_count": 0,
+      "p50_seconds": null,
+      "p95_seconds": null,
+      "max_seconds": null
+    },
+    "qwen-concise-r256": {
+      "record_count": 0,
+      "p50_seconds": null,
+      "p95_seconds": null,
+      "max_seconds": null
+    },
+    "qwen-r256": {
+      "record_count": 0,
+      "p50_seconds": null,
+      "p95_seconds": null,
+      "max_seconds": null
+    },
+    "qwen-r384": {
+      "record_count": 0,
+      "p50_seconds": null,
+      "p95_seconds": null,
+      "max_seconds": null
+    }
+  }
+}

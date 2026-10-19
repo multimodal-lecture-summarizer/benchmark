@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "status": "HOLD",
+  "scorer_ready": false,
+  "actual_colab_execution": false,
+  "T4_verified": false,
+  "reason": "Prepared only; actual Colab execution evidence required",
+  "archive_local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\benchmark\\research-data\\tib-scorer-colab-runtime-261020-v1\\tib-scorer-colab-runtime-261020-v1.zip",
+  "archive_bytes": 361437,
+  "archive_sha256": "b24cf8d737d0c822305b8c2698155f8b36a59a434f08fc57de622e2d6eb0d9e4",
+  "manifest_sha256": "69825ceb4197a63f87d9100c9f4a1e8146f7e3d31b77bcc76ff945f7d40b7396",
+  "development_output_count": 21,
+  "unique_source_count": 3,
+  "quality_ranking_performed": false,
+  "generation_executed": false,
+  "selection_start_authorized": false
+}

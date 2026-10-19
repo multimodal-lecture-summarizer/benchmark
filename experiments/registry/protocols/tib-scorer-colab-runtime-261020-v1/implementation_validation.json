@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "state": "IMPLEMENTATION_VERIFIED_ACTUAL_COLAB_HOLD",
+  "scorer_ready": false,
+  "actual_colab_execution": false,
+  "tests_passed": 54,
+  "new_tests": 35,
+  "frozen_regression_tests": 19,
+  "test_exit_code": 0,
+  "test_wall_seconds": 105.71,
+  "warning": "One existing SentenceTransformer import deprecation",
+  "local_cli_guard_exit_code": 2,
+  "local_guard_new_metric_calls": 0,
+  "local_guard_denominator": 21,
+  "local_guard_all_quality_null": true,
+  "packaged_files": 19,
+  "zip_sha256": "b24cf8d737d0c822305b8c2698155f8b36a59a434f08fc57de622e2d6eb0d9e4",
+  "manifest_sha256": "69825ceb4197a63f87d9100c9f4a1e8146f7e3d31b77bcc76ff945f7d40b7396",
+  "notebook_sha256": "71e098b9a92db2755b1a9cf7d142dccd40060fd236534c2561b897555707a8b5",
+  "frozen_hashes_verified": true,
+  "dataset_cohort_acceptance_unchanged": true,
+  "new_scorer_code_sha256": {
+    "experiments/scripts/tib_scorer_colab_backend.py": "268d8ec3c5009df4dce915f780125d290910c7816ec3fd8e95b06f86258e53fa",
+    "experiments/scripts/tib_scorer_colab_bundle.py": "728248d534e05fdf3cb588ae27a28f65ea17cdd85860669dc13468e52172d123",
+    "experiments/scripts/tib_scorer_colab_checkpoint.py": "c68b9f3e885f810e80f9f30e99a7711eb5a7f4980fd4c55ef1e4101f9592a176",
+    "experiments/scripts/tib_scorer_colab_notebook.py": "859550310b503f950c4bd67e561786eae72871683220a01e7d346bda74f10e8f",
+    "experiments/scripts/tib_scorer_colab_resources.py": "85056024d7a232002e2646bdf6fcefe92f2aa890bff60d9518f4b12a792e023d",
+    "experiments/scripts/tib_scorer_colab_runner.py": "bb2e29bdf8ea25aecabd1a0c8f2145e4b3c25b222b88f8eb7a151a114be99752"
+  },
+  "generation_selection_final_executed": false
+}

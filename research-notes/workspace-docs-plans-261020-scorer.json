@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "archive": "workspace-docs-plans-261020-scorer.zip",
+  "bytes": 675772,
+  "sha256": "733c0dbcc11bbb135c7d0a1e9818ca9cb35c7dde43329818d096fcfb09b57454",
+  "file_count": 196,
+  "originals_modified_by_archiving": false,
+  "usage": "Extract docs/ and plans/ alongside benchmark/; do not replace earlier historical snapshot."
+}

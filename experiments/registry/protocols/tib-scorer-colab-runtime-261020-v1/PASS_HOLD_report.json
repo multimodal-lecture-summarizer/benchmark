@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "status": "HOLD",
+  "scorer_ready": false,
+  "actual_colab_execution": false,
+  "T4_verified": false,
+  "reason": "No actual Colab scorer execution evidence; implementation prepared only",
+  "local_preflight_guard": "HOLD as required; all21 denominator retained, all metrics NULL, no model load or scorer calls",
+  "scorer_e2e_expected_outputs": 21,
+  "unique_development_sources": 3,
+  "generation_executed": false,
+  "selection_start_authorized": false,
+  "full_compute_budget_verified": false,
+  "remaining": [
+    "actual Colab dependency resolution and scorer model load",
+    "native/window/long-input actual fixtures",
+    "actual all21 stored-output E2E and resources",
+    "actual scorer checkpoint readback",
+    "returned evidence audit"
+  ],
+  "local_guard_artifact_sha256": {
+    "cost_evidence.json": "da56db96f9f0b13d364c55913823645748376dc6fcbe1905b3ff19d4a2184487",
+    "metrics.jsonl": "93e76be6feb465d19cf6837d11432516acb10150ee18c62d661bef13aac726cf",
+    "PASS_HOLD_report.json": "9d0b977bbc75a071a3bc275f5bcf33a6dc2df7defa094fd383c0f38d14c9b290",
+    "scorer_ready_receipt.json": "6b13950b0ebf3c2b6e3cf1ad2b90c8651f6969f7ca3c35348c37a642951c6921"
+  }
+}

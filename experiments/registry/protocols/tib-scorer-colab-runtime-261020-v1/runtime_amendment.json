@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "amendment_id": "tib-scorer-colab-runtime-261020-v1",
+  "state": "PREPARED_HOLD_ACTUAL_COLAB_EXECUTION_REQUIRED",
+  "runtime_pins": {
+    "rouge-score": "0.1.2",
+    "bert-score": "0.3.13",
+    "sentence-transformers": "5.7.0",
+    "transformers": "4.57.6",
+    "torch": "2.11.0+cu130",
+    "numpy": "2.1.3",
+    "nltk": "3.9.4"
+  },
+  "support_package_pins": {
+    "huggingface-hub": "0.36.2",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.8.0",
+    "psutil": "5.9.5",
+    "requests": "2.32.4",
+    "sentencepiece": "0.2.1"
+  },
+  "frozen_spec_sha256": "b83258fab60ee98d6d70e4f3ee2a2fc6f8956f2a8bd95b1a4a6db271a6ac7fdf",
+  "cpu_ready_receipt_sha256": "8ec95f76270da0d846b9a934e2641807fbb81895f52fa0edac7a4fc79681a7a5",
+  "acceptance_view_sha256": "9d92adf4e657cdd5b2b2cc7a2b6db4f1b4ba1c5c58496d6d7a007049ec47b92c",
+  "required_record_ids": [
+    "valid:341",
+    "valid:644",
+    "valid:886"
+  ],
+  "expected_output_count": 21,
+  "expected_profile_ids": [
+    "bart-control",
+    "led-ngram0",
+    "led-ngram3",
+    "led-ngram4",
+    "qwen-concise-r256",
+    "qwen-r256",
+    "qwen-r384"
+  ],
+  "changes_from_cpu": {
+    "torch": [
+      "2.6.0+cu124",
+      "2.11.0+cu130"
+    ],
+    "numpy": [
+      "2.4.6",
+      "2.1.3"
+    ],
+    "device": [
+      "cpu",
+      "cuda:0/Tesla T4"
+    ]
+  },
+  "preserved": {
+    "metric_ids": [
+      "rouge1_f1",
+      "rouge2_f1",
+      "rougeL_f1",
+      "bertscore_f1",
+      "source_sentence_similarity_v1"
+    ],
+    "idf": false,
+    "idf_fit_ids": [],
+    "batch_size": 1,
+    "dtype": "float32",
+    "bert_native_tokens": 512,
+    "sentence_native_tokens": 128,
+    "tokenizers_windows_models_formulas": "unchanged frozen implementation/spec",
+    "delivered_word_cap": 350,
+    "warning_outputs_scoreable": true
+  },
+  "scope": "scorer-only 21 stored development outputs / 3 existing pilot IDs; no quality ranking or admission",
+  "evidence_required": [
+    "actual Colab T4",
+    "native/long/identity/null fixtures",
+    "all21 E2E",
+    "hash-bound checkpoint readback",
+    "measured CPU/RAM/GPU/VRAM/throughput"
+  ],
+  "selection_start_authorized": false,
+  "generation_allowed": false,
+  "dependency_lock_scope": "direct runtime/support pins; full actual transitive package versions captured in receipt",
+  "official_package_metadata": [
+    "https://pypi.org/pypi/sentence-transformers/5.7.0/json",
+    "https://pypi.org/pypi/torch/2.11.0/json"
+  ]
+}
