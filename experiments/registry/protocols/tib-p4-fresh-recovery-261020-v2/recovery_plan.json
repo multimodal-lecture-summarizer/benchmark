@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "state": "PREPARED_HOLD_ACTUAL_FRESH_COLAB_REQUIRED",
+  "scorer_ready_step": "CLOSED_PASS_ACTUAL_T4",
+  "generation_profiles_replayed": 7,
+  "expected_generation_outputs": 21,
+  "expected_generation_nodes": 123,
+  "expected_scorer_checkpoints": 21,
+  "generation_store_files": 288,
+  "scorer_store_files": 21,
+  "origin_witness_required": true,
+  "different_vm_boot_id_required": true,
+  "no_key_or_runtime_identity_rewrite": true,
+  "forbidden_new_generation_calls": true,
+  "forbidden_new_metric_calls": true,
+  "metric_definitions_and_original_bundles_unchanged": true,
+  "cross_session_recovery_verified": false,
+  "pilot40_authorized": false,
+  "selection_start_authorized": false,
+  "pilot_profiles": [
+    "bart-control",
+    "led-ngram3",
+    "qwen-r384",
+    "lead3",
+    "lexrank"
+  ],
+  "pilot_ids": 40,
+  "selection_ids": 300,
+  "final_target": 523,
+  "word_cap_maximum": 350,
+  "full_study_budget_verified": false
+}

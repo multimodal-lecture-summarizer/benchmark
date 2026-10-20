@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "scope": "Fresh-session recovery only; not pilot completion or formal benchmark",
+  "archive_sha256": "985ecb78106b66123216f7b4ff036b567d575c612d05edceed16f1cf9a2eeb2b",
+  "archive_bytes": 673373,
+  "members_verified": 64,
+  "package_files_verified": 51,
+  "different_vm_boot_id_verified": true,
+  "stage_receipt_and_context_hashes_verified": true,
+  "original_source_hashes_verified": {
+    "generation": 288,
+    "scorer": 21
+  },
+  "generation_outputs_verified": 21,
+  "generation_node_keys_output_and_telemetry_verified": 123,
+  "models_reloaded": [
+    "bart",
+    "led",
+    "qwen3"
+  ],
+  "new_generation_calls": 0,
+  "denied_generation_attempts": 0,
+  "scorer_checkpoints_reused": 21,
+  "finite_cached_metric_values_matching_original": 105,
+  "new_metric_calls": 0,
+  "pilot40_authorized": false,
+  "selection_start_authorized": false,
+  "generation_wall_seconds": 214.276389171,
+  "scorer_wall_seconds": 5.060519867000039,
+  "notebook_sha256": "7c125af0b4aed258692b421eadc7be37912da56a7703527064ee37b7d163e4e1",
+  "notebook_code_cells_match_v2": 7,
+  "notebook_error_outputs": 0,
+  "exact_7_by_3_coverage_verified": true,
+  "all_three_runtime_identity_digests_verified": true
+}

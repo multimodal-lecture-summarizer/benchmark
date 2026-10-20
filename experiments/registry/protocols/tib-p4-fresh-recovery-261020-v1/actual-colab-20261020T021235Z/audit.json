@@ -1,0 +1,22 @@
+{
+  "status": "HOLD",
+  "archive_sha256": "9fe7936ff078e4c556e2155314f8f9b17e1f0a1a93328e5d44ab455cead4fa9c",
+  "archive_bytes": 543837,
+  "members_verified": 64,
+  "bound_package_files_verified": 51,
+  "different_vm_boot_id_verified": true,
+  "origin_generation_files_verified": 288,
+  "origin_scorer_files_verified": 21,
+  "stage_context_bindings_verified": true,
+  "scorer_replay_status": "PASS",
+  "scorer_reused_checkpoints": 21,
+  "finite_cached_metric_values": 105,
+  "new_metric_calls": 0,
+  "generation_recovery_status": "HOLD",
+  "generation_replayed_nodes": 0,
+  "new_generation_calls": 0,
+  "cause": "Live id2label integer keys differ from persisted JSON string keys in direct config comparison",
+  "exported_bart_configs_match_original": true,
+  "pilot40_authorized": false,
+  "all105_metric_values_match_original": true
+}

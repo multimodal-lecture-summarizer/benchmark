@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "state": "PREPARATION_VERIFIED_ACTUAL_RECOVERY_HOLD",
+  "tests_passed": 74,
+  "test_exit_code": 0,
+  "test_wall_seconds": 12.01,
+  "recovery_tests": 49,
+  "existing_regressions": 25,
+  "independent_review_passed": true,
+  "archive_sha256": "53ee5b56a8227d41d0c1b5a651753b11f70dcf45241849c24988b14a548202ad",
+  "hash_bound_files": 51,
+  "archive_members": 52,
+  "notebooks": {
+    "handoff": {
+      "path": "experiments/notebooks/tib-p4-handoff-colab-261020-v1.ipynb",
+      "sha256": "f4b6bca590fde2aa9056d54dab99c9f845c5a30b1e7cc474c686e7d46d76dd3b",
+      "executed": false
+    },
+    "fresh-recovery": {
+      "path": "experiments/notebooks/tib-p4-fresh-recovery-colab-261020-v1.ipynb",
+      "sha256": "963bf8d1c7b9883854464004513d37c7d5714e4af5c7a8cc8143e2fce65a571d",
+      "executed": false
+    }
+  },
+  "actual_origin_witness_created": false,
+  "actual_fresh_session_executed": false,
+  "cross_session_recovery_verified": false,
+  "scorer_ready_step_closed_PASS": true,
+  "pilot_selection_final_executed": false
+}

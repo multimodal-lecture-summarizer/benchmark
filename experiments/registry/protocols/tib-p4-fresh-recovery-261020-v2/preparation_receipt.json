@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "status": "HOLD",
+  "actual_fresh_session_executed": false,
+  "archive_local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\benchmark\\research-data\\tib-p4-fresh-recovery-261020-v2\\tib-p4-fresh-recovery-261020-v2.zip",
+  "archive_bytes": 490971,
+  "archive_sha256": "36d08b03c1a4ccefe63556024239d117494e2af02e7827b920921adcaee4f03a",
+  "manifest_sha256": "619f9ce4ad9ae889f6ae1d9ec3479f9af61e934be1b2d07c69fbb3dee400ae1b",
+  "cross_session_recovery_verified": false,
+  "original_bundles_preserved": true
+}

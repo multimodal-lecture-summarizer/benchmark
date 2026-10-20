@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "recovery_run_id": "98c0f252-b0ad-466d-b7e5-bb187331808b",
+  "created_epoch_ns": 1792462267776627385,
+  "recovery_manifest_sha256": "e324a107b2abafe3dd7ddbc087ddd1a02c839455538da99e44c83ab4b1fdbd8f",
+  "origin_witness_sha256": "08c65341bd544044f87a28b14a59adeb0ad7bebef10174f5f5a01da3802d02fe",
+  "origin_witness_path": "/content/drive/MyDrive/TIB_P4_RECOVERY_261020_V1/origin_witness.json",
+  "package_root": "/content/TIB_P4_RECOVERY_261020_V1/package",
+  "drive_root": "/content/drive/MyDrive",
+  "recovery_boot_id": "9d3bfc45-1fd7-4e67-96b0-d9567a0b7d99",
+  "output_root": "/content/drive/MyDrive/TIB_P4_RECOVERY_261020_V1/runs/fresh-1792462266028208129"
+}

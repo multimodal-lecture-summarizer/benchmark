@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "actual_fresh_session_executed": true,
+  "cross_session_recovery_verified": true,
+  "archive_sha256": "985ecb78106b66123216f7b4ff036b567d575c612d05edceed16f1cf9a2eeb2b",
+  "actual_receipt": "actual-colab-20261020T023840Z/recovery/cross_session_recovery_receipt.json",
+  "audit": "actual-colab-20261020T023840Z/audit.json",
+  "notebook_audit": "actual-colab-20261020T023840Z/notebook_audit.json",
+  "pilot40_authorized": false,
+  "selection_start_authorized": false,
+  "historical_preparation_receipt_unchanged": true
+}

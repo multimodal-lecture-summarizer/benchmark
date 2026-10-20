@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "PREPARED_HOLD_ACTUAL_COLAB_REQUIRED",
+  "supersedes_preparation_only": "tib-p4-fresh-recovery-261020-v1",
+  "original_v1_actual_status": "HOLD",
+  "changed_package_files": [
+    "tools/tib_p4_generation_recovery.py"
+  ],
+  "comparison_policy": "Full loaded and saved configuration JSON roundtrip; no fields removed; allow_nan=false",
+  "reason": "Integer id2label keys in live HF config become string keys in persisted JSON",
+  "original_bundles_and_cache_keys_unchanged": true,
+  "new_origin_witness_required": true,
+  "new_drive_root": "TIB_P4_RECOVERY_261020_V2",
+  "actual_v2_execution_verified": false,
+  "local_recovery_tests_passed": 51
+}
