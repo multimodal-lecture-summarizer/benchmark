@@ -1,0 +1,86 @@
+{
+  "initialization_seconds": 33.385307506000004,
+  "fixtures_seconds": 3.7436181109999893,
+  "scoring_seconds": 161.700283845,
+  "checkpoint_seconds": 0.4226295949999326,
+  "validation_seconds": 20.146948157999987,
+  "new_metric_calls": 21,
+  "reused_records": 0,
+  "original_reused_scoring_seconds": 0.0,
+  "input_profiling_seconds": 0.17643455500012806,
+  "status": "PASS",
+  "resources": {
+    "wall_seconds": 199.43993639500002,
+    "cpu_seconds": 193.341074707,
+    "sampled_peak_process_rss_bytes": 3224449024,
+    "cuda_peak_allocated_bytes": 3034134528,
+    "cuda_peak_reserved_bytes": 3084910592,
+    "host_memory_total_bytes": 13605830656,
+    "host_memory_available_bytes": 10470207488,
+    "measurement_note": "sampled process RSS; CUDA peaks include init/fixtures/scoring, not GPU generation"
+  },
+  "total_wall_seconds": 219.61380907099993,
+  "costs_include_fixture_calls_separately": true,
+  "generation_calls": 0,
+  "new_record_throughput_per_second": 0.12986990189905812,
+  "successful_records_per_total_wall_second": 0.09562240229261183,
+  "checkpoint_storage_bytes": 24436,
+  "latency_by_profile": {
+    "bart-control": {
+      "record_count": 3,
+      "p50_seconds": 3.4249394689999804,
+      "p95_seconds": 17.731114733599963,
+      "max_seconds": 19.32068976299996,
+      "method": "linear_interpolation_on_observed_records",
+      "claim_limit": "descriptive three-source development timing; not future budget or population tail estimate"
+    },
+    "led-ngram0": {
+      "record_count": 3,
+      "p50_seconds": 3.8012060750000387,
+      "p95_seconds": 17.60188289989999,
+      "max_seconds": 19.13529143599999,
+      "method": "linear_interpolation_on_observed_records",
+      "claim_limit": "descriptive three-source development timing; not future budget or population tail estimate"
+    },
+    "led-ngram3": {
+      "record_count": 3,
+      "p50_seconds": 3.499677927999983,
+      "p95_seconds": 17.193573608500035,
+      "max_seconds": 18.715117573000043,
+      "method": "linear_interpolation_on_observed_records",
+      "claim_limit": "descriptive three-source development timing; not future budget or population tail estimate"
+    },
+    "led-ngram4": {
+      "record_count": 3,
+      "p50_seconds": 3.37750951299995,
+      "p95_seconds": 17.033622937000086,
+      "max_seconds": 18.5509688730001,
+      "method": "linear_interpolation_on_observed_records",
+      "claim_limit": "descriptive three-source development timing; not future budget or population tail estimate"
+    },
+    "qwen-concise-r256": {
+      "record_count": 3,
+      "p50_seconds": 3.4530237010000064,
+      "p95_seconds": 18.961142392900044,
+      "max_seconds": 20.68426669200005,
+      "method": "linear_interpolation_on_observed_records",
+      "claim_limit": "descriptive three-source development timing; not future budget or population tail estimate"
+    },
+    "qwen-r256": {
+      "record_count": 3,
+      "p50_seconds": 3.5085806149999144,
+      "p95_seconds": 17.507257547000037,
+      "max_seconds": 19.062666095000054,
+      "method": "linear_interpolation_on_observed_records",
+      "claim_limit": "descriptive three-source development timing; not future budget or population tail estimate"
+    },
+    "qwen-r384": {
+      "record_count": 3,
+      "p50_seconds": 3.566566093000006,
+      "p95_seconds": 17.948692857100013,
+      "max_seconds": 19.546706942000014,
+      "method": "linear_interpolation_on_observed_records",
+      "claim_limit": "descriptive three-source development timing; not future budget or population tail estimate"
+    }
+  }
+}

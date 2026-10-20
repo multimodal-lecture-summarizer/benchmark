@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "reasons": [],
+  "expected_records": 21,
+  "selected_denominator": 21,
+  "successful_metric_records": 21,
+  "failed_or_unscored_records": 0,
+  "rankings_computed": false,
+  "generation_executed": false,
+  "formal_benchmark": false,
+  "run_id": "1792458128735048286",
+  "orchestration_checks_passed": true,
+  "testing_dependency_injection": false,
+  "scope": "scorer fixtures and21 stored outputs /3 existing IDs; not pilot40/selection/final",
+  "selection_start_authorized": false,
+  "full_compute_budget_verified": false
+}

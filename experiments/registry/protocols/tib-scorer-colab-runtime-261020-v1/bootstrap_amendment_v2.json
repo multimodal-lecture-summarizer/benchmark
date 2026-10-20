@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "amendment_id": "tib-scorer-bootstrap-261020-v2",
+  "state": "PREPARED_HOLD_ACTUAL_COLAB_REQUIRED",
+  "reported_failure": {
+    "stage": "stdlib venv creation before scorer load",
+    "python": "3.13",
+    "executable": "/usr/bin/python3",
+    "exit_code": 1,
+    "stderr_provided": false
+  },
+  "diagnosis": "Default venv calls ensurepip; missing ensurepip remains a hypothesis without actual stderr. Confirmed defects: no persisted bootstrap stderr, partial bin/python incorrectly treated as ready.",
+  "changes": [
+    "always create venv --system-site-packages --without-pip, no deletion",
+    "verify target sys.prefix before installation",
+    "base pip --python target with unchanged requirements",
+    "persist create-venv.log, venv-identity.log, install.log and bootstrap_policy.json"
+  ],
+  "dependency_metric_model_dataset_cohort_acceptance_changes": false,
+  "zip_unchanged": true,
+  "zip_sha256": "b24cf8d737d0c822305b8c2698155f8b36a59a434f08fc57de622e2d6eb0d9e4",
+  "v1_notebook_unchanged": true,
+  "v2_notebook_sha256": "07a17b80aa97ae17097dc266d3f033f952d18dd9e3770162f739f627c1397ea4",
+  "tests_passed": 40,
+  "test_exit_code": 0,
+  "code_sha256": {
+    "experiments/scripts/tib_scorer_colab_bootstrap.py": "c0f6f5c753ecd65d234feeffdc21e95ef8a3b47045487548faeb8f879b42e2de",
+    "experiments/scripts/tib_scorer_colab_notebook.py": "726fa9dcf4a8062a93512df7e9010d3c2d4396a990fb8d8d48c149f5106f68b8"
+  },
+  "official_docs": [
+    "https://docs.python.org/3.13/library/venv.html",
+    "https://pip.pypa.io/en/stable/topics/python-option/"
+  ],
+  "local_verification": "Actual stdlib repair of controlled missing-ensurepip partial environment, then offline wheel installation with pip --python on Windows. Not actual Colab proof.",
+  "scorer_ready": false,
+  "T4_verified": false,
+  "actual_colab_execution": false,
+  "generation_selection_final_executed": false
+}

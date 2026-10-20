@@ -60,4 +60,4 @@ def test_zip_and_file_manifest_verified_before_subprocess_install(notebook):
     assert "assert sha(archive)==EXPECTED_ZIP_SHA256" in sources[1]
     assert "assert sha(BUNDLE/'package_manifest.json')==EXPECTED_MANIFEST_SHA256" in sources[1]
     assert "target.is_relative_to(BUNDLE.resolve())" in sources[1]
-    assert "pip','install'" in sources[2]
+    assert "'pip','--python',str(PYTHON),'install'" in sources[2]

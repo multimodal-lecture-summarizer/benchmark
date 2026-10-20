@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "state": "SCOPED_SCORER_READY_ACTUAL_COLAB_T4",
+  "scorer_ready": true,
+  "scope": "frozen runtime fixtures +21 stored development outputs/3 existing pilot IDs",
+  "actual_receipt": "actual-colab-20261020T010554Z/scorer_ready_receipt.json",
+  "actual_receipt_sha256": "ef3a0fd8af86f4bc45e3f6e359906d0e07465b716b7deca754770ed9de65930d",
+  "audit_receipt": "actual-colab-20261020T010554Z/audit_receipt.json",
+  "audit_receipt_sha256": "0bd123b1707bcbb21101c5de0cd6af9baf8fa04eef97bbc493cdfed24d9756a5",
+  "prepared_receipt_preserved": "scorer_ready_receipt.json",
+  "historic_cpu_receipt_preserved": true,
+  "cross_session_recovery_verified": false,
+  "pilot40_completed": false,
+  "selection_start_authorized": false,
+  "full_compute_budget_verified": false
+}

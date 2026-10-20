@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "status": "PASS_SCOPED_FORMAL_RUNTIME_SCORER",
+  "zip_bytes": 421816,
+  "zip_sha256": "116ecb2ccce3d47689fba85c35f4036f38b03ee2bab84423be2e0e11b4065ad7",
+  "archive_members_verified": 62,
+  "packaged_files_verified": 19,
+  "checkpoint_envelopes_verified": 21,
+  "metrics_records_verified": 21,
+  "metric_value_count": 105,
+  "unique_sources": 3,
+  "generation_status_counts": {
+    "completed": 8,
+    "completed_with_warning": 13
+  },
+  "run_id": "1792458128735048286",
+  "runtime": {
+    "google_colab_imported": true,
+    "google_colab_module": "/usr/local/lib/python3.13/dist-packages/google/colab/__init__.py",
+    "cuda_available": true,
+    "device_name": "Tesla T4",
+    "T4_device_observed": true,
+    "device_memory_bytes": 15637086208,
+    "cuda_runtime": "13.0",
+    "python": "3.13.15",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "logical_cpu_count": 2,
+    "torch_cpu_threads": 1,
+    "torch_interop_threads": 1
+  },
+  "asset_comparison_to_cpu": {
+    "bert": {
+      "files_identical_to_cpu": true,
+      "file_count": 5,
+      "manifest_bytes_equal_to_cpu": false,
+      "metadata_fields_differ": []
+    },
+    "sentence": {
+      "files_identical_to_cpu": true,
+      "file_count": 10,
+      "manifest_bytes_equal_to_cpu": false,
+      "metadata_fields_differ": []
+    }
+  },
+  "all_binding_and_artifact_hashes_verified": true,
+  "actual_neural_probe_verified": true,
+  "bootstrap_v2_policy_verified": true,
+  "generation_executed": false,
+  "offline_audit_only_no_inference_rerun": true,
+  "scorer_ready": true,
+  "cross_session_recovery_verified": false,
+  "pilot40_completed": false,
+  "selection_start_authorized": false,
+  "full_compute_budget_verified": false,
+  "limits": [
+    "Export omits model weights; compared file hashes to existing independently verified CPU asset manifests, not rehashed exported weights.",
+    "Three-source timings are descriptive, not projection for pilot40/selection300/final523.",
+    "Immediate checkpoint readback/integrity is not fresh-session reuse evidence."
+  ],
+  "executed_notebook": {
+    "path": "experiments/notebooks/tib_p4_scorer_colab_t4_261020_v2.ipynb",
+    "sha256": "0972a6672af34229b06639b1832dfb23cacea8997e1e5e84b4ce8314c3988c36",
+    "executed_code_cells": 6,
+    "error_outputs": 0,
+    "all_six_code_cells_match_v2_template": true,
+    "printed_receipt_matches_export": true,
+    "printed_zip_sha256_matches": true
+  }
+}

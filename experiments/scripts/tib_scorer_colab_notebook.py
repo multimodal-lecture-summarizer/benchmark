@@ -1,19 +1,25 @@
 """Write the scorer-only Colab notebook from an already hashed private bundle."""
+import hashlib
 import json
 from pathlib import Path
 
 from experiments.scripts.tib_scorer_colab_bundle import LOCAL, REGISTRY, ROOT, file_hash
+from experiments.scripts.tib_scorer_colab_bootstrap import SETUP_CELL
 
 
 def create_notebook():
     receipt = json.loads((REGISTRY / "scorer_ready_receipt.json").read_text(encoding="utf-8"))
+    bootstrap_policy = {"amendment_id": "tib-scorer-bootstrap-261020-v2",
+                        "setup_cell_sha256": hashlib.sha256(SETUP_CELL.encode("utf-8")).hexdigest(),
+                        "scorer_bundle_sha256": receipt["archive_sha256"],
+                        "scorer_metrics_and_requirements_changed": False}
     cells = []
     def markdown(text):
         cells.append({"cell_type": "markdown", "metadata": {}, "source": text.splitlines(keepends=True)})
     def code(text):
         cells.append({"cell_type": "code", "metadata": {}, "execution_count": None, "outputs": [],
                       "source": text.splitlines(keepends=True)})
-    markdown("""# TIB P4 — formal-runtime scorer on Colab T4 (v1)
+    markdown("""# TIB P4 — formal-runtime scorer on Colab T4 (notebook v2)
 Choose **Runtime → Change runtime type → T4 GPU**, then run cells in order.
 Upload the matching ZIP. This notebook scores **21 stored development summaries / 3 sources**;
 it never loads generation models or runs selection/test. Reference B and warning outputs remain included.
@@ -37,6 +43,8 @@ STORE = Path('/content/drive/MyDrive/TIB_P4_SCORER_261020_V1')
 STORE.mkdir(parents=True, exist_ok=True)
 OUTPUT = STORE / 'scorer-evidence'
 OUTPUT.mkdir(exist_ok=True)
+BOOTSTRAP_POLICY = {bootstrap_policy!r}
+(OUTPUT/'bootstrap_policy.json').write_text(json.dumps(BOOTSTRAP_POLICY,indent=2))
 def bootstrap_hold(reason):
     payload = {{'status':'HOLD', 'scorer_ready':False, 'T4_verified':False,
                'actual_colab_execution':True, 'reason':str(reason),
@@ -85,33 +93,10 @@ print('Verified files:', len(manifest['files']), '| Stored summaries: 21 | Sourc
 Torch CUDA130 and NumPy differ from the existing CPU receipt; this versioned amendment changes the runtime only.
 Exact scorer/support pins are supplied. The runner records all installed transitive versions and binds them to checkpoints.
 Downloading/replacing CUDA wheels can take time if the Colab base image differs; the notebook does not relax pins.
+Bootstrap v2 bypasses ensurepip with --without-pip and uses base pip --python to install into the target venv.
+Existing partial venvs are repaired without deletion. All bootstrap stderr is retained in exported logs.
 """)
-    code('''ENV = WORK/'venv'
-PYTHON = ENV/'bin/python'
-RUN_ENV = dict(os.environ, USE_TF='0', USE_FLAX='0', TOKENIZERS_PARALLELISM='false',
-               PYTHONPATH=str(BUNDLE), HF_HUB_DISABLE_TELEMETRY='1')
-assert shutil.disk_usage('/content').free >= 12*1024**3, 'Need at least 12 GiB working disk before setup.'
-def execute(command, log_name):
-    remaining = SESSION_LIMIT_SECONDS-(time.monotonic()-SESSION_STARTED)
-    assert remaining>0, 'Session guard reached'
-    log_path = OUTPUT/log_name
-    try:
-        with log_path.open('w') as log:
-            result = subprocess.run(command, cwd=BUNDLE, env=RUN_ENV, stdout=log,
-                                    stderr=subprocess.STDOUT, timeout=remaining)
-        print('exit', result.returncode, '|', log_path)
-        print(log_path.read_text(errors='replace')[-5000:])
-        return result.returncode
-    except Exception as error:
-        bootstrap_hold(error)
-        raise
-if not PYTHON.exists():
-    subprocess.run([sys.executable,'-m','venv','--system-site-packages',str(ENV)],check=True)
-setup = execute([str(PYTHON),'-m','pip','install','-r',str(BUNDLE/'requirements-colab-t4.txt')], 'install.log')
-if setup:
-    bootstrap_hold('Pinned dependency installation failed; see install.log')
-assert setup==0, 'HOLD: dependency setup failed. Export evidence using the last cell.'
-''')
+    code(SETUP_CELL)
     markdown("""## 3. Download and validate the two pinned scorer models
 Only BERTScore XLM-R layer17 and the sentence-similarity model are acquired.
 If the cell was interrupted, rerun: complete manifests are verified; partial files are preserved for diagnosis.
@@ -185,11 +170,11 @@ print('ZIP:',export,'| bytes:',export.stat().st_size,'| SHA256:',sha(export))
 files.download(str(export))
 ''')
     for index, cell in enumerate(cells):
-        cell["id"] = f"scorer-v1-{index:02d}"
+        cell["id"] = f"scorer-v2-{index:02d}"
     notebook = {"nbformat": 4, "nbformat_minor": 5,
                 "metadata": {"kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"},
-                             "accelerator": "GPU", "colab": {"name": "tib-p4-scorer-colab-t4-261020-v1.ipynb"}}, "cells": cells}
-    path = ROOT / "experiments/notebooks/tib-p4-scorer-colab-t4-261020-v1.ipynb"
+                             "accelerator": "GPU", "colab": {"name": "tib-p4-scorer-colab-t4-261020-v2.ipynb"}}, "cells": cells}
+    path = ROOT / "experiments/notebooks/tib-p4-scorer-colab-t4-261020-v2.ipynb"
     path.write_text(json.dumps(notebook, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     return {"notebook": str(path), "sha256": file_hash(path), "execution_count": 0}
 
