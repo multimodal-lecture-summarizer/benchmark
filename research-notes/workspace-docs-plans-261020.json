@@ -1,0 +1,1051 @@
+{
+  "schema_version": 1,
+  "archive": "workspace-docs-plans-261020.zip",
+  "bytes": 699065,
+  "sha256": "8bcafc3f2bd335fd2320ccac1e9f57d845c98f8c603bc810c2380c87680ff2c3",
+  "file_count": 208,
+  "originals_modified_by_archiving": false,
+  "usage": "Extract docs/ and plans/ alongside benchmark/; do not replace earlier historical snapshots.",
+  "files": [
+    {
+      "path": "docs/__pycache__/recover-cvid-r5-doctr-checkpoint.cpython-311.pyc",
+      "bytes": 11281,
+      "sha256": "2a78f1b2d6c34192212fec0dbf48ac7f9d9f24b3acbe5895ac857016debf39d5"
+    },
+    {
+      "path": "docs/colab-environment-reconstruction-diagnostic.py",
+      "bytes": 2799,
+      "sha256": "923ae2ede04d7ea7b2bfeaee9dcd92a325a18541e871e48fe19b2df9eee2abb6"
+    },
+    {
+      "path": "docs/colab-p4-drive-permission.png",
+      "bytes": 155248,
+      "sha256": "b48ac3dee4ff064e273dddf23a9aaf06c5019bb2bfd976ff5b5e7287f382cd96"
+    },
+    {
+      "path": "docs/cvid-joint-spotting-colab-t4-run-guide.md",
+      "bytes": 7154,
+      "sha256": "847ec49688d02f48dfee07ca4a01801e6c5ecaffa1ef7b5be48b8d64fd24f3ff"
+    },
+    {
+      "path": "docs/cvid-spotting-comparison-v2-colab-t4-run-guide.md",
+      "bytes": 14978,
+      "sha256": "64d2f38ecdb8a7dbc97d48211782c2a59fb543073a5a7fa14665bb677cd7bfc5"
+    },
+    {
+      "path": "docs/dataset-use-scope-261013.md",
+      "bytes": 2482,
+      "sha256": "99b0921af80a16b6b42213d4ee4f92cfc69094ab9bc280a7219eaf23feda07c1"
+    },
+    {
+      "path": "docs/journals/261018-mlpdataset-all-failed-retry.md",
+      "bytes": 1798,
+      "sha256": "d6c80afe8630ea9051bebb696a1b6d4bc41027430ac67e99004f2445f038cda5"
+    },
+    {
+      "path": "docs/journals/261018-mlpdataset-http403-recovery.md",
+      "bytes": 3472,
+      "sha256": "e7615d30f190b38b43d914f885b86595a0a1947da47e54cf39303eb3e9d7f297"
+    },
+    {
+      "path": "docs/journals/261018-mlpdataset-preview-resume.md",
+      "bytes": 1485,
+      "sha256": "94875d89ef0917f892694836d8d81f7124b67d7d4b857047b622d990a19ceb0a"
+    },
+    {
+      "path": "docs/journals/261018-mlpdataset-representative-retry.md",
+      "bytes": 2038,
+      "sha256": "87a4b67bd3d7edb9a4f6af79cf8e3998e876f45054a1b23155766b7716ba38f9"
+    },
+    {
+      "path": "docs/journals/261019-mlpdataset-native-review.md",
+      "bytes": 2143,
+      "sha256": "c4e51b7060f23a786853bfd5d7c40231d7fe3f74bfeedc6e9264f6a19c4d4ede"
+    },
+    {
+      "path": "docs/journals/261019-mlpdataset-targeted-review-protocol.md",
+      "bytes": 2791,
+      "sha256": "46885df3703c25591b489a422198f05da48bbc2001bcfab7b96773b11309ae82"
+    },
+    {
+      "path": "docs/journals/261019-summarization-benchmark-scale-amendment.md",
+      "bytes": 6601,
+      "sha256": "259ef7d9c2508df7c950cfef3ea1a20c37b6bcd0e80f6750ccb8d1b8ec6b64e4"
+    },
+    {
+      "path": "docs/journals/261019-tib-local-audit-execution.md",
+      "bytes": 2563,
+      "sha256": "b8fba8a5c3baa2186075d10fe7072647037d89ad75f59db5b5da94f0e8b6ae83"
+    },
+    {
+      "path": "docs/journals/261019-tib-p4-technical-readiness.md",
+      "bytes": 1358,
+      "sha256": "9f80f84a5cb5c9e16aa1b3df86c7f548e60e942c29574fb8bec41008a0f21a5f"
+    },
+    {
+      "path": "docs/journals/261019-tib-qualification-evidence.md",
+      "bytes": 3266,
+      "sha256": "ab6b06d908b7f1265ed00b83355516a42c4e970f6577fcdf8c762de5a4873be4"
+    },
+    {
+      "path": "docs/journals/261020-pilot40-runtime-preparation.md",
+      "bytes": 2057,
+      "sha256": "7fd5f30e85eaaab82026e1ba8e79234b790fbe22d5364659a51fe3986fc62f16"
+    },
+    {
+      "path": "docs/mlpdataset-colab-guide.md",
+      "bytes": 29156,
+      "sha256": "6db5fcbb332e0cbd3e526d40c05d33ddd33d2597797485a8a9d10a93a30357ed"
+    },
+    {
+      "path": "docs/mlpdataset-slide-transition-protocol.md",
+      "bytes": 12927,
+      "sha256": "99a9df8b239c681f9664774e0125544ed1663a12670d40ef102420d22a6c4c6e"
+    },
+    {
+      "path": "docs/ocr-eda-comparison-261013.md",
+      "bytes": 10095,
+      "sha256": "fa091726af5a39151b56a493bec197bb7406950e92424202cab73c9935308588"
+    },
+    {
+      "path": "docs/pgnet-colab-apply-driver-fix-cell.py",
+      "bytes": 2556,
+      "sha256": "61cec27bc90cf8154a56ee8d9ebfdbe9bcca209038ebd8ce466dce8f68d10e00"
+    },
+    {
+      "path": "docs/pgnet-colab-cuda-diagnostic-cell.py",
+      "bytes": 3565,
+      "sha256": "1cb5b8dad96eb5775770403e000644825fad3f6872a64af79467e00627c2eaaf"
+    },
+    {
+      "path": "docs/pgnet-delivery-cleanup-261015.md",
+      "bytes": 1892,
+      "sha256": "a34dd16cf56ad46f7b35d693a0114b28dfa01f2e3eca440644f45fa6acb8a599"
+    },
+    {
+      "path": "docs/recover-cvid-r5-doctr-checkpoint.py",
+      "bytes": 5843,
+      "sha256": "eb37609abaebe9740a162c5296b73f4f32f9d59cadbf29f6189fb4251029fd4d"
+    },
+    {
+      "path": "docs/rq2-rq4-post-run-handoff.md",
+      "bytes": 14079,
+      "sha256": "c94dda02d22aa03d7016809bb5a68d857d017e7d1fea0ee11f2c51dd9f8e451f"
+    },
+    {
+      "path": "docs/rq2-tib-120-results-261013.md",
+      "bytes": 6050,
+      "sha256": "3953ee65804d145faad3422eb8cd4cf8e3a58a91b0fb92f365f06ed809778d9e"
+    },
+    {
+      "path": "docs/rq2-tib-semantic-rescore-v2.md",
+      "bytes": 4968,
+      "sha256": "1973f2dc594007d2f6d05e7e62c4043c437e689d0909b24f6bc272f2afc02bc0"
+    },
+    {
+      "path": "docs/tib-p4-colab-feasibility.md",
+      "bytes": 13920,
+      "sha256": "fd7dfbfbf5d998ae98ef6438e30c4e458908e50f38bb872c6286ca5fc7711c60"
+    },
+    {
+      "path": "docs/tib-summarization-local-audit.md",
+      "bytes": 5421,
+      "sha256": "39a7fa12fdd55f888035de4731e374878cd928d2bc5dc83101f0224e820cad52"
+    },
+    {
+      "path": "docs/tib-summarization-qualification.md",
+      "bytes": 12213,
+      "sha256": "2f9d12a04475a86b70b3c129213c1c05524235656a6d4dcc49c87c2a4ae8c50e"
+    },
+    {
+      "path": "plans/261010-1543-dataset-qualification/plan.md",
+      "bytes": 1812,
+      "sha256": "aee518422611848130681b68f1ed4ecbe53ab50e388fcf07a650ec07dce2ae09"
+    },
+    {
+      "path": "plans/261010-1632-rq2-technical-pilot/plan.md",
+      "bytes": 931,
+      "sha256": "54e90572913bd848a2a3c14d8716bfbdcabecb0fc74ccb79adeaa2d999d7a82c"
+    },
+    {
+      "path": "plans/261012-2249-tib-120-frozen-evaluation/plan.md",
+      "bytes": 6718,
+      "sha256": "be86e3a30d2d31f6e248f26aff264018e0464ad230b7fa32664e27037f5406e2"
+    },
+    {
+      "path": "plans/261013-1123-rq2-semantic-rescore/plan.md",
+      "bytes": 2760,
+      "sha256": "febbaaf9e664a3eb10d044ea327dcb11a1ac965967efc33941b6674103f1c04f"
+    },
+    {
+      "path": "plans/261013-2321-iiit-cvid-spotting-freeze/phase-01-verify-evidence.md",
+      "bytes": 669,
+      "sha256": "32a50b7d70d839560223e1f099091566e5abaa6cfaa098cb5aa6ea473bc95144"
+    },
+    {
+      "path": "plans/261013-2321-iiit-cvid-spotting-freeze/phase-02-freeze-artifacts.md",
+      "bytes": 665,
+      "sha256": "4c4d3dd42e481e0fa8a7f6b589fada5896564d4674f7f40d5cb30017fc300837"
+    },
+    {
+      "path": "plans/261013-2321-iiit-cvid-spotting-freeze/phase-03-validate-contracts.md",
+      "bytes": 560,
+      "sha256": "30f16cd95538a47309a517caae8621b49ec7899992f51647bcd018ecf60433de"
+    },
+    {
+      "path": "plans/261013-2321-iiit-cvid-spotting-freeze/plan.md",
+      "bytes": 1093,
+      "sha256": "f940434db4670e28e09a3eacf966e040368fedbcfec5fb28946edc8ad4eab3fa"
+    },
+    {
+      "path": "plans/261013-ocr-eda-comparison/plan.md",
+      "bytes": 1721,
+      "sha256": "ad8c0df0fb231076ef34d57f6c7ea8d4a732741aa5827648de9f98051d1307c5"
+    },
+    {
+      "path": "plans/261014-1309-spotting-candidate-freeze/phase-01-verify-upstream-evidence.md",
+      "bytes": 571,
+      "sha256": "dc9f5759076c37b5efc2a25f832299e9c0ad06b56ed073a7f661080b09d8c2f5"
+    },
+    {
+      "path": "plans/261014-1309-spotting-candidate-freeze/phase-02-freeze-candidate-artifacts.md",
+      "bytes": 575,
+      "sha256": "89f4ec0c02b9c534d20b17d041fd25ebab2a95aed80a9478d43b3914da3531c5"
+    },
+    {
+      "path": "plans/261014-1309-spotting-candidate-freeze/phase-03-validate-adapters-and-identities.md",
+      "bytes": 587,
+      "sha256": "2f4377eb1573e2049acba39c241e51bf70e8deb0e322225f0458220ab0b1e7e1"
+    },
+    {
+      "path": "plans/261014-1309-spotting-candidate-freeze/plan.md",
+      "bytes": 1487,
+      "sha256": "3478c7ba601f2021c2967f84dc6ca30ee11b780f344846e06f5450d0028ac4e0"
+    },
+    {
+      "path": "plans/261014-1633-cvid-test-spotting-freeze/plan.md",
+      "bytes": 5625,
+      "sha256": "642fc791df28d4034096a4da49aa645923de78126b8b1f35758b1c3cbd85470d"
+    },
+    {
+      "path": "plans/261014-1933-spotting-runtime-loading/plan.md",
+      "bytes": 5073,
+      "sha256": "3d3005bef3505320a7305552948cd11b1b7f59fd7759b52f1a1961e82d2dad8e"
+    },
+    {
+      "path": "plans/261014-2151-cvid-test-spotting-comparison/plan.md",
+      "bytes": 8324,
+      "sha256": "b0651c144c5b0ce733a4c89f0660f74a4c73b9beff97cf85799036c64a419013"
+    },
+    {
+      "path": "plans/261014-eda-cvid-all-splits/plan.md",
+      "bytes": 3115,
+      "sha256": "c1f6382d213631cd520509dda7a63467523d1bce18c4ca360b12fea5eed1181a"
+    },
+    {
+      "path": "plans/261015-1033-joint-spotting-recovery/plan.md",
+      "bytes": 4227,
+      "sha256": "81c97b2fb2c768265ebd9daf72ac2eabdd6e93f04c33701311b89d2331fcb130"
+    },
+    {
+      "path": "plans/261015-2017-cvid-comparison-v2-ready/plan.md",
+      "bytes": 2630,
+      "sha256": "81eab57ad45abfacc9480575b7f978c2ef376ec5326ec9ac1e8b3efdca8310ec"
+    },
+    {
+      "path": "plans/261015-cvid-spotting-colab-t4/plan.md",
+      "bytes": 3740,
+      "sha256": "a8e752b7b0de67dc78e5b49ed64d1f742fa6f7e959bf8fac15c893238d5d8f5b"
+    },
+    {
+      "path": "plans/261017-0932-mlpdataset-colab/plan.md",
+      "bytes": 2200,
+      "sha256": "7286872231892141422798bd9af664b61cb2f9fb999efdcad35683b74f1960d2"
+    },
+    {
+      "path": "plans/261017-1435-mlpdataset-retry-wide-preview/plan.md",
+      "bytes": 1859,
+      "sha256": "fa1026d99aa014efaced6bff13c043a7a0d0632116cc3c2951e55b2afbb13a27"
+    },
+    {
+      "path": "plans/261017-1533-mlpdataset-dense-boundary-analysis/plan.md",
+      "bytes": 2655,
+      "sha256": "7181139fc80a6997744e298fcfd9a45b947df5a40136ab5edffb40e74626bfa4"
+    },
+    {
+      "path": "plans/261017-1705-mlpdataset-full-inventory-eda/plan.md",
+      "bytes": 2306,
+      "sha256": "1226bc765cdfd063bbf8f6d8d10addbfe585acd6fe2893856789546161fcef44"
+    },
+    {
+      "path": "plans/261017-1718-mlpdataset-remove-targeted-diagnostics/plan.md",
+      "bytes": 1324,
+      "sha256": "36c8d0f4dc5fa56d92274913bc95aa25d93b8f3fd62243e7615640264d6485a1"
+    },
+    {
+      "path": "plans/261017-2204-mlpdataset-isolated-budgets/plan.md",
+      "bytes": 2601,
+      "sha256": "10cf41cac3d574eb40223873708b47c74191d0889a8f3810a58d48e3eaaa0aec"
+    },
+    {
+      "path": "plans/261017-mlpdataset-download-fix/plan.md",
+      "bytes": 1144,
+      "sha256": "4212b1c8f4a69bdebc6e6a9014ffdf6da8f1ebe71c7c10a4bd71501ac784b5d1"
+    },
+    {
+      "path": "plans/261017-mlpdataset-inline-outputs/plan.md",
+      "bytes": 1197,
+      "sha256": "733624641916c642851248117b85fc6b9538c933e741f083fff8a643ce541301"
+    },
+    {
+      "path": "plans/261018-0925-mlpdataset-preview-resume/plan.md",
+      "bytes": 1902,
+      "sha256": "fb792c04279441aa1990381d2a9e98c021db656472be690594908472623c0140"
+    },
+    {
+      "path": "plans/261018-0925-mlpdataset-preview-resume/reports/harness/adversarial-validation.json",
+      "bytes": 307,
+      "sha256": "c2c0fc330408661cb9634408030dd96843bd3bf8038937c1e5e9ac233d9a8166"
+    },
+    {
+      "path": "plans/261018-0925-mlpdataset-preview-resume/reports/harness/context-snippets.json",
+      "bytes": 1206,
+      "sha256": "84f41de0a2669004ef13f677463c8fd0e6ed35f35c012c4cf8529c62d4379c98"
+    },
+    {
+      "path": "plans/261018-0925-mlpdataset-preview-resume/reports/harness/review-decision.json",
+      "bytes": 1018,
+      "sha256": "89b849aa815a3ccf588c39b73cbe7a3e2db6081ba2882c5971018bc7140242ab"
+    },
+    {
+      "path": "plans/261018-0925-mlpdataset-preview-resume/reports/harness/risk-gate.json",
+      "bytes": 230,
+      "sha256": "b0757a2310570b77a9bb4c55bd5632a13e4af3f9a3c92b119706b0989a3eedf8"
+    },
+    {
+      "path": "plans/261018-0925-mlpdataset-preview-resume/reports/harness/verification.json",
+      "bytes": 2461,
+      "sha256": "9b21a8139316f61a0deaefe7c07b13554dba830029269a6fdbccf19dc6c88f6f"
+    },
+    {
+      "path": "plans/261018-1118-mlpdataset-representative-retry/plan.md",
+      "bytes": 3315,
+      "sha256": "2e0b80ab130bfe42aa54ef20de83b91ce41152c1cf147b3b77180ce3e734d22f"
+    },
+    {
+      "path": "plans/261018-1118-mlpdataset-representative-retry/reports/harness/adversarial-validation.json",
+      "bytes": 133,
+      "sha256": "5bc683393c00ec939224b584fe70c54ef5b93b60e2a671e935e460acf19a5b81"
+    },
+    {
+      "path": "plans/261018-1118-mlpdataset-representative-retry/reports/harness/context-snippets.json",
+      "bytes": 1262,
+      "sha256": "9dc7cc1cbd3208209dd7c204b637ed0c43b3c9d252c33fd1b52840f7f146ce86"
+    },
+    {
+      "path": "plans/261018-1118-mlpdataset-representative-retry/reports/harness/review-decision.json",
+      "bytes": 907,
+      "sha256": "172c75006c2faf12a5c390efd6f4fb3cd823cf1c74c9b1ff12a8d68886d327fa"
+    },
+    {
+      "path": "plans/261018-1118-mlpdataset-representative-retry/reports/harness/risk-gate.json",
+      "bytes": 247,
+      "sha256": "236ed717f1d1ca64a27bc922c6a6a084f3d24f78633514fcfa822cdeccc44f4b"
+    },
+    {
+      "path": "plans/261018-1118-mlpdataset-representative-retry/reports/harness/verification.json",
+      "bytes": 1919,
+      "sha256": "1766c1365c0a4b7ddc46ecccc17dc79b490cd97455070ca45fc8dbeed5c495df"
+    },
+    {
+      "path": "plans/261018-1231-mlpdataset-all-failed-retry/plan.md",
+      "bytes": 2463,
+      "sha256": "6ae3763a09b7fa6aa22e9f9a311b2f23940af71b123d8b171c029a75a04c1b46"
+    },
+    {
+      "path": "plans/261018-1231-mlpdataset-all-failed-retry/reports/harness/adversarial-validation.json",
+      "bytes": 133,
+      "sha256": "5bc683393c00ec939224b584fe70c54ef5b93b60e2a671e935e460acf19a5b81"
+    },
+    {
+      "path": "plans/261018-1231-mlpdataset-all-failed-retry/reports/harness/context-snippets.json",
+      "bytes": 1181,
+      "sha256": "92365cd85eaca849e03d4f9eba0ef80884b6596e905cf75a869fb6f18c246fce"
+    },
+    {
+      "path": "plans/261018-1231-mlpdataset-all-failed-retry/reports/harness/review-decision.json",
+      "bytes": 1053,
+      "sha256": "864bfd7f7cc20211933bc936069f0e5ea722330b3ac36feb81f1eb255dc820c0"
+    },
+    {
+      "path": "plans/261018-1231-mlpdataset-all-failed-retry/reports/harness/risk-gate.json",
+      "bytes": 256,
+      "sha256": "7e1bf09a71cd3df045fe070f960d8febae71f8f5a15a930f15add63ac518c071"
+    },
+    {
+      "path": "plans/261018-1231-mlpdataset-all-failed-retry/reports/harness/verification.json",
+      "bytes": 2205,
+      "sha256": "6eee8d5759ece960f76f3dadd96592801180b7bd4a2ae358c159bd3200415680"
+    },
+    {
+      "path": "plans/261018-1335-mlpdataset-http403-recovery/plan.md",
+      "bytes": 2741,
+      "sha256": "1b8addd7737439b124c2d78b84d79a1d6ea729a83acbc7f9809cadd22e3e651b"
+    },
+    {
+      "path": "plans/261018-1335-mlpdataset-http403-recovery/reports/harness/adversarial-validation.json",
+      "bytes": 135,
+      "sha256": "4564c425cf8537a593a19b9cf0464a927ac889cb952250c40892f5eeaca585b6"
+    },
+    {
+      "path": "plans/261018-1335-mlpdataset-http403-recovery/reports/harness/context-snippets.json",
+      "bytes": 833,
+      "sha256": "091ddfdda3786befdfbba59bf6b9cdd8dbfd438ea8321d01d36ecebf08f8c2d5"
+    },
+    {
+      "path": "plans/261018-1335-mlpdataset-http403-recovery/reports/harness/review-decision.json",
+      "bytes": 873,
+      "sha256": "c31f7a7a727b3c3d7c20e1e1ee81a8da5690b30bc6fdfded5a67a597e3a3aa86"
+    },
+    {
+      "path": "plans/261018-1335-mlpdataset-http403-recovery/reports/harness/risk-gate.json",
+      "bytes": 270,
+      "sha256": "6d12982e3d854851bfe3cc5c18e3802e082dd246669cf263ab3a45dd367eea5d"
+    },
+    {
+      "path": "plans/261018-1335-mlpdataset-http403-recovery/reports/harness/verification.json",
+      "bytes": 2244,
+      "sha256": "d2302fcefb6187512f125e497bcc2510f0bbd01889670ce5d084556e79057397"
+    },
+    {
+      "path": "plans/261018-2005-mlpdataset-preview-speed/plan.md",
+      "bytes": 1422,
+      "sha256": "a800c882409612c2257650be8f2d3871462066b5cac9026775a8fdc8f262f5c0"
+    },
+    {
+      "path": "plans/261018-2118-rq2-scientific-improvement/phase-01-evidence-audit-and-error-analysis.md",
+      "bytes": 8896,
+      "sha256": "179eeb87e81f5de26ac523f790b9065d06e09bf3c102f596b25f8f3fb218318d"
+    },
+    {
+      "path": "plans/261018-2118-rq2-scientific-improvement/phase-02-data-qualification-and-claim-scope.md",
+      "bytes": 9886,
+      "sha256": "db71b13257875b5eaaac7517aa7c4838b4669dbbad50f5d87f380dfd10afa8d5"
+    },
+    {
+      "path": "plans/261018-2118-rq2-scientific-improvement/phase-03-controlled-experiment-and-analysis-protocol.md",
+      "bytes": 12524,
+      "sha256": "788f1f4bb3382d1664efe7f8b6fc7e733aa574715508d0c9131704018d67942f"
+    },
+    {
+      "path": "plans/261018-2118-rq2-scientific-improvement/phase-04-t4-feasibility-and-execution-handoff.md",
+      "bytes": 11141,
+      "sha256": "432451628507a5d1b65bdf47c8c5014d0195ec611ccc21f29b2def6b9abb6a8b"
+    },
+    {
+      "path": "plans/261018-2118-rq2-scientific-improvement/plan.md",
+      "bytes": 10368,
+      "sha256": "e5881a1335b5a51b13ddb664ab5ef0f3e853490cb0d24baefa71282d9fb7f935"
+    },
+    {
+      "path": "plans/261019-0033-mlpdataset-finish-preview-fast/plan.md",
+      "bytes": 4955,
+      "sha256": "ab7c042f1eb0f658d133e5bbb2023a70c2128faf68a0f6cfa9f6dfab92abf1e0"
+    },
+    {
+      "path": "plans/261019-0033-mlpdataset-finish-preview-fast/reports/harness/adversarial-validation.json",
+      "bytes": 462,
+      "sha256": "ae9fad77d9a546db7dff94a014fb39962e083f3c689ae5a6aee4014aff49b2c9"
+    },
+    {
+      "path": "plans/261019-0033-mlpdataset-finish-preview-fast/reports/harness/context-snippets.json",
+      "bytes": 901,
+      "sha256": "ce79e64bb47bff3d7949f927ee2a1abd2bbfca2ace73297c22b3cb8a85daf86a"
+    },
+    {
+      "path": "plans/261019-0033-mlpdataset-finish-preview-fast/reports/harness/review-decision.json",
+      "bytes": 626,
+      "sha256": "7435fc81145cfbaa4bdc25995db76d38ddd03fc5a737f47efd7177c5e399f87c"
+    },
+    {
+      "path": "plans/261019-0033-mlpdataset-finish-preview-fast/reports/harness/risk-gate.json",
+      "bytes": 236,
+      "sha256": "f1df05fea5436f62286a79de64c8b45472dfc9983f1363419793901c8da49e9b"
+    },
+    {
+      "path": "plans/261019-0033-mlpdataset-finish-preview-fast/reports/harness/verification.json",
+      "bytes": 2292,
+      "sha256": "5d7c9178a3e2cbab9f865bc632667f098d25646fd515417b270b8730848d91ed"
+    },
+    {
+      "path": "plans/261019-0035-summarization-model-benchmark/phase-01-paper-and-dataset-provenance.md",
+      "bytes": 21793,
+      "sha256": "d278aa1a9f5cb52e5dc10eb0a79de2ed19d83e810aeff826a20f06530ea1173f"
+    },
+    {
+      "path": "plans/261019-0035-summarization-model-benchmark/phase-02-eda-and-visualization-gap-closure.md",
+      "bytes": 19760,
+      "sha256": "a489fdbb6ed94b788960b721561ca863d18f9c212ed670520f6d50348b60dd39"
+    },
+    {
+      "path": "plans/261019-0035-summarization-model-benchmark/phase-03-dataset-qualification-and-cohort-freeze.md",
+      "bytes": 23835,
+      "sha256": "9138fc7561ae8164a0b460baad0bde4a30263d9337c366ddbec067b5fc3cf394"
+    },
+    {
+      "path": "plans/261019-0035-summarization-model-benchmark/phase-04-candidate-selection-and-t4-benchmark-protocol.md",
+      "bytes": 37919,
+      "sha256": "0aa30492e5fd2606ac548569854e77432244bac665004818ecaff5813cbfdbb1"
+    },
+    {
+      "path": "plans/261019-0035-summarization-model-benchmark/phase-04a-generation-development-trials.md",
+      "bytes": 7555,
+      "sha256": "b18c418d0f71ec9beb73044df72b6d8f147f08da5325dd6313faae35ba5019c8"
+    },
+    {
+      "path": "plans/261019-0035-summarization-model-benchmark/phase-04b-formal-runtime-scorer.md",
+      "bytes": 5987,
+      "sha256": "f0172e5a8ed280dc17a58d38b42f0ebc36b504b301b5f14cdfc0f4813d3b6152"
+    },
+    {
+      "path": "plans/261019-0035-summarization-model-benchmark/phase-04c-fresh-session-recovery.md",
+      "bytes": 4977,
+      "sha256": "61e1a7483ed2c3f6d2bdf13e269ae56a889d7ef4f9528d1e8018500c03e3c385"
+    },
+    {
+      "path": "plans/261019-0035-summarization-model-benchmark/phase-04d-pilot40-runtime.md",
+      "bytes": 5225,
+      "sha256": "52c002eab587ea6c56d08df1685f89547a2aa70babdd0e92fc830181bfaad484"
+    },
+    {
+      "path": "plans/261019-0035-summarization-model-benchmark/phase-05-evaluation-and-model-selection.md",
+      "bytes": 22886,
+      "sha256": "d1f87a98ff7743da2d8ee93d95262ec1c31e5236d057531bd95155ada98c466c"
+    },
+    {
+      "path": "plans/261019-0035-summarization-model-benchmark/plan.md",
+      "bytes": 38638,
+      "sha256": "6afba2149815a595ba2681eaf9ca87324f3407d0749aa0cdc691968b6ac43c5d"
+    },
+    {
+      "path": "plans/261019-1107-mlpdataset-targeted-review-protocol/plan.md",
+      "bytes": 8757,
+      "sha256": "22f3e330c10d91498874affcf65119ee24999bad62f3ee2b3ed6c0db21cbd637"
+    },
+    {
+      "path": "plans/261019-1107-mlpdataset-targeted-review-protocol/reports/harness/adversarial-validation.json",
+      "bytes": 566,
+      "sha256": "5e18e4c801ec3f57432809c793b013102e081c241ad7b11741b40518f2669877"
+    },
+    {
+      "path": "plans/261019-1107-mlpdataset-targeted-review-protocol/reports/harness/context-snippets.json",
+      "bytes": 888,
+      "sha256": "63f9c04b2453a2af837a59066ae4b87bdcbe50a8113c6932fd2528bd954137ef"
+    },
+    {
+      "path": "plans/261019-1107-mlpdataset-targeted-review-protocol/reports/harness/review-decision.json",
+      "bytes": 660,
+      "sha256": "8236fc7ef653d7e2ae028a28feb4f994a740f636b4dc1a077eb213351ca811d4"
+    },
+    {
+      "path": "plans/261019-1107-mlpdataset-targeted-review-protocol/reports/harness/risk-gate.json",
+      "bytes": 367,
+      "sha256": "314c16d47c42d10afa4ed942bb80e416036abedf556acb954d6370a2f3391922"
+    },
+    {
+      "path": "plans/261019-1107-mlpdataset-targeted-review-protocol/reports/harness/verification.json",
+      "bytes": 969,
+      "sha256": "e9e3c9edb1d8446753f12bbd28c5f8b0672cd74160e0ad464f0280c6431fd122"
+    },
+    {
+      "path": "plans/261019-1200-mlpdataset-native-adjudication/plan.md",
+      "bytes": 5453,
+      "sha256": "cb607473e8423a68b14e5c9fa679d5dba631b722b96e245539045d62689cd161"
+    },
+    {
+      "path": "plans/261019-1200-mlpdataset-native-adjudication/reports/harness/adversarial-validation.json",
+      "bytes": 430,
+      "sha256": "c9620d5fc58e3fdea8b1207351bda0ec3b6f5656c590f9a05a673bb1466b7aca"
+    },
+    {
+      "path": "plans/261019-1200-mlpdataset-native-adjudication/reports/harness/context-snippets.json",
+      "bytes": 1092,
+      "sha256": "d01f530dea8f881e1403aa01e22b25ca11e1549dc09ab285c6bea41f0c5470e0"
+    },
+    {
+      "path": "plans/261019-1200-mlpdataset-native-adjudication/reports/harness/review-decision.json",
+      "bytes": 585,
+      "sha256": "4ffd4a5ab726e412da82c87398242e382957efbb4e0a889c209c68a0be120365"
+    },
+    {
+      "path": "plans/261019-1200-mlpdataset-native-adjudication/reports/harness/risk-gate.json",
+      "bytes": 292,
+      "sha256": "18621a59e75e9da79195408f1b1f78c9bc1303c125e064ff40f4970892036d96"
+    },
+    {
+      "path": "plans/261019-1200-mlpdataset-native-adjudication/reports/harness/verification.json",
+      "bytes": 1007,
+      "sha256": "22b929b8d264057972e61ae3f69a55cbb98e502ee1167f89f2e552f0de87fa6e"
+    },
+    {
+      "path": "plans/261019-1504-mlpdataset-final-adjudication/plan.md",
+      "bytes": 3964,
+      "sha256": "0309a134b36f03c337d25fd52b1ed8e3152f3afa52c7a97f6eb0dd60d463dfbe"
+    },
+    {
+      "path": "plans/reports/bootstrap-fix-261015-1238-pgnet-ensurepip-report.md",
+      "bytes": 2177,
+      "sha256": "7f71dc4528087bf4a782023f9195dbce34de36fae44f928a0a7c3d332ce50647"
+    },
+    {
+      "path": "plans/reports/cache-reconstruction-261015-2254-orchestrator-diagnostic-report.md",
+      "bytes": 1948,
+      "sha256": "939036e65d4ba6eb9993cbcc5555e71bde427ef43a9cddab0c6e9488245c8898"
+    },
+    {
+      "path": "plans/reports/cache-replay-fix-261015-2320-requested-metadata-report.md",
+      "bytes": 1827,
+      "sha256": "842c8a4d2397bac2a064a0ddafcfe76f4b8a0051664dda82cce82a0539239e5c"
+    },
+    {
+      "path": "plans/reports/checkpoint-recovery-261016-1945-r5-doctr-empty-record-report.md",
+      "bytes": 2915,
+      "sha256": "45f73602e061e78e470bf7d46d21e3de902ba52f0a5ba23b011a311a8c7a1080"
+    },
+    {
+      "path": "plans/reports/code-review-261018-1352-mlpdataset-runtime-report.md",
+      "bytes": 4701,
+      "sha256": "53c82c5f37a84a221a079a208efe04c3a98adebd9ef3d7476af5652b55a0dfee"
+    },
+    {
+      "path": "plans/reports/code-reviewer-261015-1007-colab-t4-spotting-report.md",
+      "bytes": 3771,
+      "sha256": "a632796621355363bf7909c9c5adcab397af078a56627291b1c371b1b734e746"
+    },
+    {
+      "path": "plans/reports/colab-output-audit-261017-2317-mlpdataset-isolated-budgets-report.md",
+      "bytes": 2984,
+      "sha256": "98ae32cf9f9dbdb5ddd4db246d5110fe45585e5defb4e3b25d225777dedbce93"
+    },
+    {
+      "path": "plans/reports/colab-output-audit-261018-1034-mlpdataset-preview-resume-report.md",
+      "bytes": 3178,
+      "sha256": "f32898c59a5a7c655c0c095a1b263605f5f63090c87cecf590ce8e2813a31fa0"
+    },
+    {
+      "path": "plans/reports/colab-output-audit-261018-1231-mlpdataset-representative-retry-report.md",
+      "bytes": 3062,
+      "sha256": "60b09bbebe2683d4cf32c32316bcacf61b99cc5ae8f44cc07b8f34ea88955456"
+    },
+    {
+      "path": "plans/reports/colab-output-audit-261019-0028-mlpdataset-completed-run-report.md",
+      "bytes": 4628,
+      "sha256": "7f3bcef599c6436062fd41dad5a23f90823727db597f7fddc5539fd54c888462"
+    },
+    {
+      "path": "plans/reports/comparison-readiness-261015-2017-cvid-v2-report.md",
+      "bytes": 2658,
+      "sha256": "e896a0d19e58cae0602ba484858f52a5044ecb380b58f9b1afce28de0c3417ff"
+    },
+    {
+      "path": "plans/reports/cvid-source-provenance-261014-report.md",
+      "bytes": 6883,
+      "sha256": "22ee4c0e645a153c62a3a5088bc0a39ddb90298bff1b82353159cac9f208ac0e"
+    },
+    {
+      "path": "plans/reports/dataset-adjudication-261019-1504-mlpdataset-final-review-report.md",
+      "bytes": 12292,
+      "sha256": "05dc50e22c241b80cf88d2d24cb9aefaa33f30164769aee1e70bd3f615fe0336"
+    },
+    {
+      "path": "plans/reports/dataset-eda-261014-1526-cvid-all-splits-report.md",
+      "bytes": 13824,
+      "sha256": "30746889251899665874353065c58b250c24ef6805f906f82d3f9b24a89a6a4b"
+    },
+    {
+      "path": "plans/reports/dataset-eda-261019-1058-mlpdataset-preview-conclusions-report.md",
+      "bytes": 11396,
+      "sha256": "cb2f2c93eb8950f59278cdb92d67053ec72542bb02df853490e081b80122df25"
+    },
+    {
+      "path": "plans/reports/dataset-evidence-261019-1507-tib-snapshot-rights-report.md",
+      "bytes": 8288,
+      "sha256": "b2d55542cccaee16a8e7db7dea1e1c813f4da5da135f5dbb330a50d3468048f5"
+    },
+    {
+      "path": "plans/reports/dataset-inventory-261014-1432-cvid-spotting-independence-report.md",
+      "bytes": 11974,
+      "sha256": "880f011f46e5856549d27dbec84d8747fb3d8364891a6f935c7a523c79b012ac"
+    },
+    {
+      "path": "plans/reports/dataset-qualification-261010-report.md",
+      "bytes": 14096,
+      "sha256": "5f2706079deba01b66a38d22c74100ee76399ddf7406d36b89f12bb0045cb50f"
+    },
+    {
+      "path": "plans/reports/dataset-review-261019-1143-mlpdataset-targeted-executed-report.md",
+      "bytes": 6002,
+      "sha256": "07595c08c568be903fb91d89d2cc9affbcf26d491ae5873dbf542f306c7131c1"
+    },
+    {
+      "path": "plans/reports/dataset-review-261019-1440-mlpdataset-native-executed-report.md",
+      "bytes": 5211,
+      "sha256": "3445de963a6861f63954a9e717aeee5bad6e7e2bc231005b231a5b0edc9a3ac4"
+    },
+    {
+      "path": "plans/reports/debug-261019-2004-tib-led-checkpoint-download-report.md",
+      "bytes": 2614,
+      "sha256": "ccdccf786faa0e4bdc6b710a3d290cf86ffd3767e23acee35c2cc60ac51e71c4"
+    },
+    {
+      "path": "plans/reports/debug-261020-0754-tib-colab-venv-bootstrap-report.md",
+      "bytes": 2316,
+      "sha256": "6d2d028f77aca91481813773adb86c7bd65ac32520f59dd7059f788844cd6389"
+    },
+    {
+      "path": "plans/reports/driver-loader-fix-261015-1903-pgnet-report.md",
+      "bytes": 2484,
+      "sha256": "b29562345cb7b3d092941dcef8b64979015ccbf0af9fc31f21da80592358bc83"
+    },
+    {
+      "path": "plans/reports/evidence-audit-261019-2013-tib-p4-returned-capacity-report.md",
+      "bytes": 8976,
+      "sha256": "f97dae9f46c9bc37b11e27299a1e4efa44638c30b7658731af4e383eb0536f58"
+    },
+    {
+      "path": "plans/reports/evidence-audit-261019-2222-tib-p41-returned-trials-report.md",
+      "bytes": 9551,
+      "sha256": "f72f7117918f287275f8760c47de6f89dc62f4188edd10e73fecd932fdd6840f"
+    },
+    {
+      "path": "plans/reports/evidence-audit-261020-0808-tib-colab-scorer-report.md",
+      "bytes": 5790,
+      "sha256": "ebeaba76288c1cd766a9c85ee7772c2611012e2cfa3471f0bbe541a913426005"
+    },
+    {
+      "path": "plans/reports/evidence-audit-261020-0940-tib-recovery-v1-config-fix-report.md",
+      "bytes": 4243,
+      "sha256": "e2559edd7ef43a9b800820a53e85dc9e566b9fb57dfa94c1523d6631c69d22a5"
+    },
+    {
+      "path": "plans/reports/evidence-audit-261020-1056-tib-recovery-v2-report.md",
+      "bytes": 5127,
+      "sha256": "efb632846d30cab8e8fd9a36c621e05d11925e717a4fdc374a4b88e3d00da78c"
+    },
+    {
+      "path": "plans/reports/git-miro-layout-261016-2307-benchmark-push-report.md",
+      "bytes": 1660,
+      "sha256": "f22497fa5cb0a487cea28f1ef8c0e3c31a7a4162278b58ee5d21dff2271ec390"
+    },
+    {
+      "path": "plans/reports/git-save-261016-2053-cvid-r5-notebook-report.md",
+      "bytes": 1397,
+      "sha256": "8f57fbf5bd78651e29300e5d016966accb7058f23bcabf896ec5e636f8b6400d"
+    },
+    {
+      "path": "plans/reports/gpu-diagnostic-261015-1257-pgnet-runtime-report.md",
+      "bytes": 1783,
+      "sha256": "a78c9c6c9f9fe49697e869e2a1f21069ffd2096991e54fddd73628a75ff6978f"
+    },
+    {
+      "path": "plans/reports/gt-policy-261014-1633-cvid-test-spotting-freeze-report.md",
+      "bytes": 16409,
+      "sha256": "6b61c76b0815ec578103fb2e4e503f22e7d06dc4308a8dce5ec3fe1242e7518a"
+    },
+    {
+      "path": "plans/reports/implementation-261015-colab-t4-spotting-preparation-report.md",
+      "bytes": 8441,
+      "sha256": "a959259000c4a2d4841de22c713a4881b992333e0e9e9637f3f0af1f884adce5"
+    },
+    {
+      "path": "plans/reports/implementation-261017-0932-mlpdataset-colab-report.md",
+      "bytes": 4365,
+      "sha256": "bf0bb493aa4fa1b4e1199497b0ab8154a2745ee2a37d1d606dc5f516b0ed0b81"
+    },
+    {
+      "path": "plans/reports/implementation-261017-1037-mlpdataset-inline-outputs-report.md",
+      "bytes": 3116,
+      "sha256": "b984bd5153e83943fb9e6b6c5df43de956aebbdaf9c06a54aa3fc3ce80109330"
+    },
+    {
+      "path": "plans/reports/implementation-261017-1052-mlpdataset-download-fix-report.md",
+      "bytes": 3611,
+      "sha256": "d9a636d7556f796d0e8a17bc9174be741772884466fe8d7f3c7c78c4e5804b5e"
+    },
+    {
+      "path": "plans/reports/implementation-261017-1435-mlpdataset-retry-wide-preview-report.md",
+      "bytes": 1715,
+      "sha256": "4fe675b1f54fb8ba2a26a5eb953e1725ecbd62c2ff1cfd76fba4928d0bb5f329"
+    },
+    {
+      "path": "plans/reports/implementation-261017-1533-mlpdataset-dense-boundary-analysis-report.md",
+      "bytes": 3308,
+      "sha256": "139f7a3d85a31b79784e15ab24a4a7f4eedbd34a56dfc99b5b185f3964851dea"
+    },
+    {
+      "path": "plans/reports/implementation-261017-1705-mlpdataset-full-inventory-eda-report.md",
+      "bytes": 2484,
+      "sha256": "9eaafaeb84edc194473899d4f879f20fb1e9cd2cc05e70258bdae50c2fadd0ec"
+    },
+    {
+      "path": "plans/reports/implementation-261017-1718-mlpdataset-remove-targeted-diagnostics-report.md",
+      "bytes": 1778,
+      "sha256": "088605a3a5dd9b6347fc080fdc7befd6ceb0e0c2409e6c5c453fbae65a9f5129"
+    },
+    {
+      "path": "plans/reports/implementation-261017-2204-mlpdataset-isolated-budgets-report.md",
+      "bytes": 1920,
+      "sha256": "edc7beb1ec3eb8c551eccffa92f6ce45c439c66ce34d76d70305469a37e4bc65"
+    },
+    {
+      "path": "plans/reports/implementation-261018-0925-mlpdataset-preview-resume-report.md",
+      "bytes": 3360,
+      "sha256": "3a4b7c46ac97293bcc02b6a7cc9c20c03a7b040c39fdc871d7d8e8cf24eea560"
+    },
+    {
+      "path": "plans/reports/implementation-261018-1118-mlpdataset-representative-retry-report.md",
+      "bytes": 2891,
+      "sha256": "356c935741886d42379bd005d70d260ac131bbb3a1095c4dce67485bfb2b9396"
+    },
+    {
+      "path": "plans/reports/implementation-261018-1231-mlpdataset-all-failed-retry-report.md",
+      "bytes": 2789,
+      "sha256": "31d6ca5c1ac890005fcfc9068c2d4baa777065382bc507714e33ed03d8ae8f74"
+    },
+    {
+      "path": "plans/reports/implementation-261018-1335-mlpdataset-http403-recovery-report.md",
+      "bytes": 4555,
+      "sha256": "50cb9a28f2fac0342e17963a136433a0302ea39824b6f23ea979209d39371932"
+    },
+    {
+      "path": "plans/reports/implementation-261018-2005-mlpdataset-preview-speed-report.md",
+      "bytes": 4513,
+      "sha256": "9fd07684b23a770ead58d931871233be7ab9181841ce966513ec1e16be8325cd"
+    },
+    {
+      "path": "plans/reports/implementation-261019-0033-mlpdataset-finish-preview-fast-report.md",
+      "bytes": 5000,
+      "sha256": "8b8bc6532240f717986bb7e55b2f8f29f5f1ae2a1e632031cf6714c3dbb8343b"
+    },
+    {
+      "path": "plans/reports/implementation-261019-1035-tib-local-audit-report.md",
+      "bytes": 5231,
+      "sha256": "aa3676d5c194502ad255a19fc465ef50c2a4914c4bcff764ec5ba8e3b3aa3d7c"
+    },
+    {
+      "path": "plans/reports/implementation-261019-1107-mlpdataset-targeted-review-protocol-report.md",
+      "bytes": 8053,
+      "sha256": "54e1bc12908b734db7549d9fc111a80e1fbe34a621c9790c0adcf010ec84a5e6"
+    },
+    {
+      "path": "plans/reports/implementation-261019-1200-mlpdataset-native-adjudication-report.md",
+      "bytes": 7907,
+      "sha256": "39e7354640236f4125630f2535d08cd9f2d366144f7f6839aa9b2ce58e5e5246"
+    },
+    {
+      "path": "plans/reports/implementation-261019-1703-tib-qualification-cohort-report.md",
+      "bytes": 9763,
+      "sha256": "581b2a50346600c65c8d2a3b951369cc07bf54b1d4b1865df47a937f88b420a6"
+    },
+    {
+      "path": "plans/reports/implementation-261019-1802-tib-p4-readiness-report.md",
+      "bytes": 8528,
+      "sha256": "5a09489048f29fc650449eba712a75c7d11af92c7ec4a42b418bb089973268bb"
+    },
+    {
+      "path": "plans/reports/implementation-261019-2122-tib-p41-development-trials-report.md",
+      "bytes": 9123,
+      "sha256": "6040a347a9723d020075161e934436a6b24c8566bfdf3d135449f094cac858e9"
+    },
+    {
+      "path": "plans/reports/implementation-261020-0831-tib-fresh-session-recovery-report.md",
+      "bytes": 7232,
+      "sha256": "3afc0e160a0bba31cd6af39e55e71e090b0ac7b76938381e59bc38631e1769bd"
+    },
+    {
+      "path": "plans/reports/implementation-261020-1107-tib-pilot40-preparation-report.md",
+      "bytes": 8169,
+      "sha256": "7cc06ae930cc06fa2f78eac3549de22f304bbae77d7056ec9e518b28888825ca"
+    },
+    {
+      "path": "plans/reports/implementation-261020-tib-formal-runtime-scorer-report.md",
+      "bytes": 7520,
+      "sha256": "6cd37001fde5ae7ec8c2eee9be7ad5408d4fc4d9ef92cae8f21a1640a54ac4c4"
+    },
+    {
+      "path": "plans/reports/joint-spotting-261015-1033-checkpoint-recovery-report.md",
+      "bytes": 9007,
+      "sha256": "5598e294af3cfeaad760bb4dad8c1b096e7541ac5721f16d3f0efd982f656244"
+    },
+    {
+      "path": "plans/reports/lvvo-followup-261010-report.md",
+      "bytes": 8121,
+      "sha256": "23ee7a0ec0690ab7bc8584511c705c15bd8124b0080f62002625002cecb7801c"
+    },
+    {
+      "path": "plans/reports/miro-layout-261016-2348-r5-note-removal-report.md",
+      "bytes": 809,
+      "sha256": "69ed2057bc1658f28f2d1fd4de5eb58f2a26ea3786ce0e6d435f84b84ac94c9c"
+    },
+    {
+      "path": "plans/reports/miro-sync-261019-2354-tib-p4-decision-report.md",
+      "bytes": 1554,
+      "sha256": "5aaf25e35ec285695a8f9a6320c5cce7d4e16d2dfd62c2c33dc18bc973c49970"
+    },
+    {
+      "path": "plans/reports/miro-sync-261020-1128-tib-pilot40-status-report.md",
+      "bytes": 2729,
+      "sha256": "8b1e10497c0f7e67cfbd230724777f16483cac1558aa7ef4b2e9665ec87ccfdf"
+    },
+    {
+      "path": "plans/reports/notebook-docs-miro-sync-261016-2029-cvid-r5-report.md",
+      "bytes": 4327,
+      "sha256": "f5155d62a732ceb148faefa0d44d6e53d606d5913b580c50ff9ce2535b23d839"
+    },
+    {
+      "path": "plans/reports/notebook-python-cleanup-261016-2108-redundant-files-report.md",
+      "bytes": 2695,
+      "sha256": "a0afaa71fb3d155f5725545a5e8397ce09fad908c5c3077a1e5a53bbca43b138"
+    },
+    {
+      "path": "plans/reports/ocr-recognition-audit-261013-1654-artifact-report.md",
+      "bytes": 8471,
+      "sha256": "8c5858b978a378dc26364f5a680e2d151009e517f50935f9f13a62bd73e29e06"
+    },
+    {
+      "path": "plans/reports/ocr-recognition-audit-261013-1654-evidence.json",
+      "bytes": 17541,
+      "sha256": "2d85f96b32aa11c27101235bd7780bbf68d94c97af600f5798cbb897b9d933be"
+    },
+    {
+      "path": "plans/reports/parseq-compatibility-261015-2232-doctr-report.md",
+      "bytes": 2554,
+      "sha256": "a66cc17789b188009fa796eb9fd61ccd538c00c21ffdcff555cb470fb7857013"
+    },
+    {
+      "path": "plans/reports/protocol-decision-261019-2341-tib-development-close-acceptance-report.md",
+      "bytes": 8869,
+      "sha256": "2fb9112d1c3b0d2332c74c3baa67fd7b5c663a68ac8c945aef63156bcac03007"
+    },
+    {
+      "path": "plans/reports/qualification-261019-1703-tib-reference-usability-report.md",
+      "bytes": 6283,
+      "sha256": "ece7eb9eeec354b79097e120f4719b55c583538376647e75204ed20dbebea5ed"
+    },
+    {
+      "path": "plans/reports/remaining-datasets-followup-261010-report.md",
+      "bytes": 12065,
+      "sha256": "1eb2f44cc78542a1b1403c4df20f9e1f38f481bc165279ddb9ad35af3d0a66e2"
+    },
+    {
+      "path": "plans/reports/research-261013-0813-rq3-reassessment-report.md",
+      "bytes": 18873,
+      "sha256": "19c2e0414edd7884167ecba9cda588f723606df7d0c87e97b55454933a5e58d2"
+    },
+    {
+      "path": "plans/reports/research-261013-1401-dataset-papers-eda-display-report.json",
+      "bytes": 13372,
+      "sha256": "129307ca0594ebf253147914f6f57ad052d64e94a2d5bddad14feb9cc30c343a"
+    },
+    {
+      "path": "plans/reports/research-261013-1401-dataset-papers-eda-display-report.md",
+      "bytes": 8881,
+      "sha256": "8fb167d86b5ffc8d094262afccac46b5ce9bda8a5608410accebd40a7ad476be"
+    },
+    {
+      "path": "plans/reports/research-261015-0948-spotting-candidate-selection-report.md",
+      "bytes": 16879,
+      "sha256": "40429d05ba2d1fd70e67b3a79028506f8a091076a71b2e5171ad62d01f6936f2"
+    },
+    {
+      "path": "plans/reports/research-261017-0904-mlpdataset-notebook-eda-report.md",
+      "bytes": 12234,
+      "sha256": "98f9a03ac0236ae75d085b0a9fbe88a1978ad3316c509bf4f9a593b0f621c7ec"
+    },
+    {
+      "path": "plans/reports/research-261018-1335-mlpdataset-http403-recovery-report.md",
+      "bytes": 4823,
+      "sha256": "c9d9b594dacc5563dca60f2ff4e9bc080891af9abfe5c44125172dd5b8f9507c"
+    },
+    {
+      "path": "plans/reports/research-261018-2225-rq2-hypothesis-evaluation-reassessment-report.md",
+      "bytes": 26077,
+      "sha256": "46002ac104baada03cefcb05705eceedae6318468cf46b3f3209465a5b0d09d5"
+    },
+    {
+      "path": "plans/reports/research-261019-0933-summarization-scientific-t4-verification-report.md",
+      "bytes": 16744,
+      "sha256": "de4c142d3231078ac81dcc01caba0a4973f71d65410569a6d3326cbdd16476b3"
+    },
+    {
+      "path": "plans/reports/research-261019-1507-tib-rights-provenance-report.md",
+      "bytes": 14515,
+      "sha256": "26e90434d4d6f7136ff406295cf3a1afb74853f76c58b176892d7778a3fcdf29"
+    },
+    {
+      "path": "plans/reports/research-261019-1703-tib-source-use-policy-report.md",
+      "bytes": 7428,
+      "sha256": "faf35d9cb2c1be8bf773de593bec127e0433aded11ddaaaeebf25368870e1ac5"
+    },
+    {
+      "path": "plans/reports/research-scope-261010-1621-claim-qualification-report.md",
+      "bytes": 12105,
+      "sha256": "04d3f344dc8c390df243a00cfa18a20fc4e4797241bd26ce399f3cf6bb919c4f"
+    },
+    {
+      "path": "plans/reports/rq2-pilot-261010-1632-technical-design-report.md",
+      "bytes": 11678,
+      "sha256": "4aeecffac5ee14be851bbd5af21dd7c0b43a29dceea3dfec4341a054aaeb7e8e"
+    },
+    {
+      "path": "plans/reports/runtime-loading-261014-1933-spotting-test-candidates-report.md",
+      "bytes": 12151,
+      "sha256": "9e1d62892b62d312ae8c790400d7ce03aa6e3554098ed0ec11f56a43c2b620c1"
+    },
+    {
+      "path": "plans/reports/runtime-seal-fix-261016-1322-shared-train-replay-report.md",
+      "bytes": 3580,
+      "sha256": "13823a7ba00844fd7bc6d3b43e63dd7b24d7dede5b9176b66470508c1e9b600f"
+    },
+    {
+      "path": "plans/reports/spotting-freeze-261013-2321-scientific-protocol-report.md",
+      "bytes": 13692,
+      "sha256": "aa47b3ce8ab8be479990c27e1d74b0ea789edbd9cbc9f1d5d0d38b5ec0987cd4"
+    },
+    {
+      "path": "plans/reports/spotting-results-audit-261016-2019-cvid-r5-final-report.md",
+      "bytes": 7084,
+      "sha256": "1cf401796547cf544f179f8d363baf990ce1a7f30b512cd80a75fe720dd34595"
+    },
+    {
+      "path": "plans/reports/tedlium-cvid-followup-261010-report.md",
+      "bytes": 5791,
+      "sha256": "29d8f980a4fb9306f065531e2cc81b1b5ca2cb05ec995e3e3eb40af344ab5d90"
+    },
+    {
+      "path": "plans/reports/tester-261020-1124-pilot40-final-delivery-report.md",
+      "bytes": 2829,
+      "sha256": "5dc757d507875e9f2c9841a09e37dd6bae07ce5f19ef06423983be13b755b364"
+    },
+    {
+      "path": "plans/reports/visualization-261016-2318-cvid-r5-comparison-report.md",
+      "bytes": 1123,
+      "sha256": "99c655025cc3598ae1752994ea70fe67b0f1dc882e1f75c039f0f8f1fb2a6ce4"
+    },
+    {
+      "path": "plans/reports/visualization-261016-2354-ocr-eda-miro-report.md",
+      "bytes": 1441,
+      "sha256": "96a203bc307e37630472a03f1611bb23204bc389e4f09f5e4fdb1241e638e33a"
+    },
+    {
+      "path": "plans/reports/worker-261015-1003-colab-t4-candidate-runtime-artifact-lock-report.md",
+      "bytes": 7222,
+      "sha256": "9e8ced563f61651889b38c8c03eeee633cfb75489446d0c16104e98f9fcb7465"
+    },
+    {
+      "path": "plans/reports/worker-261019-1203-mlpdataset-native-handoff-verification-report.md",
+      "bytes": 5037,
+      "sha256": "b196feb02315e23aff45815a41718aa84f3d882870b0ee5fbb1d70d76af9fceb"
+    }
+  ]
+}
