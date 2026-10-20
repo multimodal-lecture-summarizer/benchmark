@@ -1,0 +1,20 @@
+{
+  "status": "PASS_LOCAL_PREPARATION_ONLY",
+  "tests_passed": 144,
+  "tests_failed": 0,
+  "tests_skipped": 0,
+  "test_wall_seconds": 28.06,
+  "actual_pretrained_inference_executed": false,
+  "actual_T4_preflight_verified": false,
+  "actual_pilot_executed": false,
+  "archive_sha256": "08c44f0db3a849976037922fbd665736a8465645b120a40f219b305135752e62",
+  "notebook_sha256": "e6298659fd29d8c1dbf43724e7bb697849a51d9cf7e8c6f9acf4fcf8c2427571",
+  "source_records": 40,
+  "profile_count": 5,
+  "expected_matrix_cells": 200,
+  "source_only_generation_inputs_verified": true,
+  "actual_builder_validator_allocation_session_integration_passed": true,
+  "independent_review_blockers": 0,
+  "new_metric_calls": 0,
+  "selection_start_authorized": false
+}

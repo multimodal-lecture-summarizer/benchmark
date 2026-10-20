@@ -1,0 +1,16 @@
+{
+  "status": "PREPARED_ACTUAL_EXECUTION_REQUIRED",
+  "archive_local_path": "C:\\Users\\hung\\Documents\\GitHub\\multimodal-lecture-summarizer\\benchmark\\research-data\\tib-pilot40-261020-v1\\tib-pilot40-261020-v1.zip",
+  "archive_bytes": 651488,
+  "archive_sha256": "08c44f0db3a849976037922fbd665736a8465645b120a40f219b305135752e62",
+  "manifest_sha256": "0a9a85ad4e1af5b886e92ab19ea794001e74c1b516802c35e22fb3c7d319412d",
+  "source_records": 40,
+  "source_strata": {
+    "short": 13,
+    "medium": 12,
+    "long": 15
+  },
+  "expected_matrix_cells": 200,
+  "actual_pilot_executed": false,
+  "selection_start_authorized": false
+}
