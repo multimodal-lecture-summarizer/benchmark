@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "criteria_id": "tib-metric-validity-train-v1",
+  "criteria_sha256_prefix": "9a78fd850ebbf26d",
+  "executed": "2026-10-22, Colab CPU, user-run",
+  "evidence": "executed notebook experiments/notebooks/tib_p4e_metric_validity_train_261022_v1.ipynb (6/6 code cells, no errors, 28 unit tests passed); the receipt JSON and PNG remain in the user's Drive",
+  "sample": {"train_records": 210, "reference_text_used": false, "model_outputs_used": false},
+  "all_pass": false,
+  "results": {
+    "T0_inventory_size": false,
+    "T1_known_groups": true,
+    "T2_fact_deletion_dose_response": true,
+    "T3_unsupported_rate": true,
+    "T4_invariance_and_monotonicity": false,
+    "T5_salience_sensitivity": true,
+    "T6_temporal_coverage_direction": false
+  },
+  "key_numbers": {
+    "T0_share_ge_50_facts": 0.881,
+    "T0_median_facts_definition_A": 94.5,
+    "T1_oracle_gt_random_share": [0.995, 0.995, 0.995],
+    "T1_random_gt_offtopic_share": [0.971, 0.995, 1.0],
+    "T2_mean_coverage_by_pct_removed": [0.770, 0.627, 0.459, 0.254],
+    "T3_mean_unsupported_lead": 0.0,
+    "T3_mean_unsupported_by_appended_sentences": [0.0, 0.304, 0.499, 0.591],
+    "T4_repeat_or_padding_changed": 0.0,
+    "T4_monotone_share": {"lead": 1.0, "uniform": 0.862, "oracle": 1.0},
+    "T5_median_spearman_A_vs_B": 0.779,
+    "T6_share_uniform_gt_lead": 0.367,
+    "T6_mean_temporal_coverage_at_M": {"oracle": 0.996, "lead": 0.809, "uniform": 0.821, "random": 0.920, "offtopic": 0.072}
+  },
+  "interpretation": {
+    "T6": "temporal coverage saturates because covered facts count every source bin they occur in; a prefix summary gets nearly full credit. The metric as defined does not measure where a summary draws from.",
+    "T4": "the failing part is the uniform constructor, whose selected sentences change with the budget so it is not nested; the metric itself was monotone for nested summaries and invariant to repetition and padding.",
+    "T0": "about 12% of sampled sources had fewer than 50 inventory facts; the cause by source length was not recorded."
+  },
+  "decision_2026-10-22": "user chose the simple scheme: the custom fact-coverage, temporal-coverage and unsupported-rate metrics are not adopted; no v2 criteria will be run. Code and this outcome are retained as exploratory evidence."
+}

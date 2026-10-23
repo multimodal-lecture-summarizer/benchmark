@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "criteria_id": "tib-metric-validity-train-v1",
+  "protocol_id": "tib-reference-free-multilength-261022-v1",
+  "state": "preregistered_before_any_validity_run",
+  "decision_basis": "user_ratified_2026-10-22: views S/M/L = 60/120/240 words, contract cap 350",
+  "data": {
+    "split": "train",
+    "reference_text_used": false,
+    "model_outputs_used": false,
+    "record_filter": "structure_pass is true and source_words >= 1000",
+    "ordering": "sha256(salt + record_id) ascending",
+    "salt": "p4e-validity-v1:",
+    "tertile_cutpoints_source_words": [3635, 6131],
+    "records_per_tertile": 70,
+    "total_records": 210,
+    "document_frequency_resource": "all train records passing the filter; source text only"
+  },
+  "budgets": {"S": 60, "M": 120, "L": 240},
+  "fact_inventory": {
+    "tokenizer": "lowercase [a-z][a-z0-9'-]* words; digit tokens normalized by removing commas and trailing periods",
+    "phrase_rule": "maximal runs of non-stopword tokens, sklearn english stop words, windows of 1 and 2 stems (Porter)",
+    "fact_types": ["number", "stem_unigram", "stem_bigram"],
+    "position_bins": 10,
+    "top_k": 100,
+    "definition_A": {"eligibility": "frequency >= 2 and occurs in >= 2 bins and train document frequency <= 0.20", "score": "ln(1+frequency) * occupied_bins / 10"},
+    "definition_B": {"eligibility": "frequency >= 2", "score": "frequency * (ln((1+N)/(1+df)) + 1) using train document frequency"},
+    "coverage": "sum of salience weights of covered facts / sum of salience weights of inventory facts",
+    "auc": "(c_S + 2*c_M + c_L) / 4"
+  },
+  "constructors": {
+    "oracle": "greedy source-sentence selection maximizing newly covered salience per word under the budget, using the same definition being scored",
+    "lead": "first complete source sentences within budget via the common delivery selector",
+    "uniform": "evenly spaced source sentences within budget",
+    "random": "seeded random source sentences within budget, source order",
+    "offtopic": "lead sentences of a different train record within budget",
+    "seed": 20261022
+  },
+  "tests": {
+    "T0_inventory_size": "at least 95% of sampled records have at least 50 inventory facts under definition A",
+    "T1_known_groups": "for each budget, share of records with oracle coverage > random coverage >= 0.95 and share with random coverage > offtopic coverage >= 0.95; lead versus uniform reported without direction",
+    "T2_fact_deletion_dose_response": "starting from oracle at L, remove 0/25/50/75 percent of sentences at random; mean coverage strictly decreasing over the four points and share of records non-increasing >= 0.95",
+    "T3_unsupported_rate": "mean unsupported rate of lead summaries <= 0.01; appending 0/1/3/5 off-topic sentences to oracle at M gives strictly increasing mean unsupported rate and share of records non-decreasing >= 0.90",
+    "T4_invariance_and_monotonicity": "repeating a lead summary twice or padding it with stop words changes coverage in 0 percent of records; coverage S <= M <= L holds in 100% of lead records, >= 90% of uniform records and >= 95% of oracle records",
+    "T5_salience_sensitivity": "median over lead, uniform and random of the Spearman correlation across records between definition A and definition B coverage at M >= 0.70",
+    "T6_temporal_coverage_direction": "share of records at M with uniform temporal coverage > lead temporal coverage >= 0.95"
+  },
+  "admission_rule": "coverage and unsupported-content metrics pass this stage only if every test passes; any failure is recorded and the metric is not admitted as primary",
+  "not_run_in_this_stage": [
+    "cross-family agreement with an entailment-based faithfulness metric (dependencies not approved)",
+    "scoring cost on Colab T4"
+  ],
+  "full_admission_additionally_requires": ["cross-family agreement", "T4 cost measurement"]
+}
