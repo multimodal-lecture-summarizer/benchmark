@@ -4,6 +4,10 @@
 
 **Updated:** 2026-10-19 (RQ2 P1 dataset-evidence update). This file maps research questions, evidence gates and claim limits. The [benchmark protocol](../../../docs/BENCHMARK.md) owns task eligibility, candidate families and metrics; [Dataset EDA](../../../docs/DATASET_EDA.md) records executed versus pending inspection; task plans own run details. The adjacent [original benchmark matrix](02-benchmark-matrix.md) and [decisions log](decisions-log.md) are historical references.
 
+## Scope decision — 2026-10-22
+
+The project scope is general video with people and objects, including tracking; the lecture-domain restriction is withdrawn for the project. This does not widen the existing summarization benchmark, which stays TIB-only with no human scoring and keeps its frozen primary outcome. Secondary analyses add 60/120/240-word views and one off-the-shelf faithfulness metric; a custom fact-coverage metric was not adopted. Claim ceiling: agreement with creator abstracts and faithfulness to the source transcript. No RQ currently plans evidence for detection, tracking, events or visual contribution to summaries. See the [decision report](../../../../plans/reports/protocol-decision-261022-0939-tib-reference-free-multilength-evaluation-report.md).
+
 ## Objective
 
 The completed 120-record RQ2 S1/S3 notebook evidence remains historical no_selection. The user's [current five-stage plan](../../../../plans/261019-0035-summarization-model-benchmark/plan.md) now specifies one primary TIB text-only benchmark, retaining native splits: EDA all 9,103, qualification all splits, default 40 validation pilot / 300 disjoint validation selection (availability fallback 200 before outputs), all eligible native test at most 911 (pretest full-first 600→500→400 resource fallback), and 40 unique final diagnostic cases. LexRank/BART/LED/Qwen3 remain model candidates, with fixed CPU Lead-3 as a sanity control. No new gold summaries, genre-specific independent benchmarks or new S1/S3 study are scheduled. Defaults are proposals without eligibility, power or capacity guarantees; no IDs, protocol or run is frozen/executed.
