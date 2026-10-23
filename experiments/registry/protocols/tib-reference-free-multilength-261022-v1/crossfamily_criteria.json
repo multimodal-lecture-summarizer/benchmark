@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "criteria_id": "tib-faithfulness-crossfamily-cost-v2",
+  "protocol_id": "tib-reference-free-multilength-261022-v1",
+  "state": "preregistered_before_any_run",
+  "revision_note": "v1 of these criteria was never run. v2 removes every self-made quantity (oracle summaries built from the fact inventory, coverage and unsupported-rate reporting) after the user ruled out self-made metrics. Thresholds are unchanged.",
+  "purpose": "choose one published entailment-based faithfulness family and measure its scoring cost on a Colab T4",
+  "data": {
+    "split": "train",
+    "reference_text_used": false,
+    "model_outputs_used": false,
+    "sample": "first 20 records per source-length tertile of a hash-ordered train sample (60 records)",
+    "budget_view_words": 120
+  },
+  "summary_groups_per_record": {
+    "lead": "first complete source sentences within the budget",
+    "uniform": "evenly spaced source sentences within the budget",
+    "random": "seeded random source sentences within the budget",
+    "offtopic": "lead sentences of a different train record within the budget",
+    "corrupted": "the lead summary followed by three sentences of another record that contain a digit or a mid-sentence capital"
+  },
+  "families": {
+    "candidates": ["AlignScore", "MiniCheck", "SummaC"],
+    "rule": "published packages through their documented interfaces only; a family that fails to install or run is recorded as unavailable with its error and is not substituted",
+    "pins": "installed versions and checkpoint names are written to the receipt and frozen from that receipt"
+  },
+  "tests": {
+    "G1_known_groups": "per family, AUROC of the source-extract groups {lead, uniform, random} against offtopic >= 0.95",
+    "G2_corruption": "per family, share of records with faithfulness(lead) > faithfulness(corrupted) >= 0.90",
+    "G3_cross_family": "when at least two families run, median pairwise Spearman correlation across all summaries >= 0.60"
+  },
+  "reported_without_threshold": [
+    "seconds per summary, peak GPU memory, projected GPU hours for 12000 summaries"
+  ],
+  "admission_rule": "a family is admissible only if G1 and G2 pass and the user accepts its projected scoring cost; G3 is a property of the set of families, not of one family",
+  "cost_threshold": "none pre-registered; the user sets the scoring budget after seeing the projection"
+}

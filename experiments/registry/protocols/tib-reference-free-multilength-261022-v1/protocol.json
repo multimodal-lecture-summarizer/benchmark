@@ -1,0 +1,71 @@
+{
+  "schema_version": 2,
+  "protocol_id": "tib-reference-free-multilength-261022-v1",
+  "id_note": "kept for path stability; the adopted scheme uses standard published metrics plus length views, not the custom fact-coverage metric",
+  "study_id": "tib-text-model-benchmark-v1",
+  "state": "simplified_pending_faithfulness_family_choice",
+  "decision_source": "user_decision_2026-10-22_simple_scheme",
+  "decision_report": "plans/reports/protocol-decision-261022-0939-tib-reference-free-multilength-evaluation-report.md",
+  "generation_executed": false,
+  "scoring_executed": false,
+  "claim_ceiling": "agreement with creator abstracts and entailment-based faithfulness to the source transcript; not human-perceived quality, no factual-correctness claim against the original video, no evidence for detection, tracking or visual fusion",
+  "human_scoring": false,
+  "unchanged_contracts": {
+    "cohort": {"pilot": 40, "selection": 300, "final_target": 523, "final_fallback": [500, 400], "diagnostics": 40},
+    "candidate_profiles": ["lead3", "lexrank", "bart", "led", "qwen3"],
+    "acceptance_policy": "tib-acceptance-v1",
+    "absolute_word_cap": 350,
+    "pilot40_package": "tib-pilot40-261020-v1",
+    "scorer_spec": "scorer_spec_v2 (frozen; ROUGE and BERTScore are used, the source SBERT value is stored but excluded from this study; IDF=false)",
+    "primary_outcome": "ROUGE-L F1 against the creator abstract at the contract view, as already frozen"
+  },
+  "budget_views": {
+    "status": "ratified_2026-10-22",
+    "unit": "english_whitespace_words",
+    "views": {"S": 60, "M": 120, "L": 240},
+    "contract_view": 350,
+    "calibration_split": "train",
+    "calibration_evidence": {
+      "train_n": 7282,
+      "reference_words_quantiles": {"p25": 66, "p50": 110, "p90": 275, "p95": 346},
+      "source_words_quantiles": {"p50": 4703, "p90": 8962},
+      "reference_vs_source_length_note": "reference median 115/116/99 words in short/medium/long source tertiles; absolute budgets chosen over compression ratios"
+    },
+    "view_construction": {
+      "stage_1": "longest_complete_sentence_prefix_of_raw_output_via_common_delivery_selector_applied_uniformly_to_all_five_profiles",
+      "stage_1_measures": "quality of the first N words, not ability to write an N-word summary",
+      "stage_2": "native_budgeted_final_reduce_generation",
+      "stage_2_status": "not_planned"
+    },
+    "implementation": "experiments/scripts/tib_budget_views.py"
+  },
+  "metrics": {
+    "primary": "unchanged: ROUGE-L F1 against the creator abstract at the contract view",
+    "length_view_analysis": "ROUGE-L F1 and BERTScore at S, M and L as pre-specified secondary analyses of the same stored predictions; Holm across the three views; source length tertile x view cross table",
+    "faithfulness": {
+      "status": "MiniCheck (roberta-large) is the only available family and passed G1 (AUROC 0.990) and G2 (1.00); AlignScore is unusable on current Colab (transformers 5 removed AdamW); G3 untestable; scope decided by the user on 2026-10-22: MiniCheck on Pilot40 only (40 records x 5 profiles), views S/M/L derived from per-sentence scores of the L view; see pilot_faithfulness_protocol.json. Selection 300 and final 523 are not covered and need their own budget decision. Measured cost: mean 15.6 s per 120-word summary on T4. See faithfulness_crossfamily_outcome.json",
+      "candidates": ["AlignScore", "MiniCheck", "SummaC"],
+      "selection": "by the T4 notebook (crossfamily_criteria.json): known-group separation, corruption sensitivity, cross-family agreement and projected scoring cost; published validation of the chosen family is cited, not re-derived",
+      "role": "secondary analysis at every view; a gate on the primary only if the user later promotes it"
+    },
+    "secondary": ["BERTScore_vs_abstract", "chrF_vs_abstract (candidate; sacrebleu)"],
+    "policy": "only published metrics through their official or maintained implementations; no metric is reimplemented from a formula or invented for this study (user rule 2026-10-22)",
+    "importance_based_relevance": "IbR (Gigant et al., EMNLP 2024) is published but would be used only through the authors' official code; its repository URL is not yet verified, so it is not included",
+    "excluded_by_user_decision_2026-10-22": {
+      "metric": "source_SBERT_similarity (project-specific SBERT adaptation; attribution to a paper unverified)",
+      "scope": "excluded from every analysis, table and claim of this study, at all views",
+      "scorer_v2_note": "the frozen scorer_spec_v2 and its receipts still compute and store it; they are not edited. Its values are not reported or used for selection."
+    },
+    "not_adopted": ["source_fact_coverage_auc", "temporal_coverage", "unsupported_content_rate"],
+    "not_adopted_reason": "self-made metrics; they failed 3 of 7 pre-registered validity tests (see metric_validity_train_v1_outcome.json) and the user ruled out self-made metrics. The modules tib_fact_inventory, tib_reference_free_metrics and tib_metric_validity are retained only as the record of that run."
+  },
+  "statistics": {
+    "unchanged": "two-tier selection, whole-component bootstrap 5000 resamples seed 20261019, exploratory sensitivity, no_selection when intervals include zero",
+    "added": ["per-view secondary tables with Holm correction", "source-length tertile x view cross table"]
+  },
+  "open_decisions": [
+    "choose the faithfulness family after running the T4 notebook",
+    "approve the scoring budget from the projected GPU hours",
+    "confirm ROUGE-L at the contract view stays the single primary outcome"
+  ]
+}

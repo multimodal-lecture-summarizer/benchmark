@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "protocol_id": "tib-pilot40-faithfulness-minicheck-v1",
+  "parent_protocol": "tib-reference-free-multilength-261022-v1",
+  "state": "specified_before_any_pilot_output_is_scored",
+  "decision_source": "user_decision_2026-10-22 after the T4 cost measurement",
+  "scope": "Pilot40 only: 40 sealed records x 5 profiles (lead3, lexrank, bart, led, qwen3). Final 523 and selection 300 are not covered and need a separate budget decision.",
+  "purpose": "descriptive faithfulness evidence for the technical pilot; no model selection, no ranking, no winner",
+  "inputs": {
+    "evidence": "the Pilot40 evidence ZIP exported by the Pilot40 notebook (pilot/<candidate>/candidate_receipt.json and package/pilot_sources.jsonl)",
+    "output_text": "raw_final of each record; failed or missing records are listed and never scored as zero",
+    "statuses_scored": ["completed", "completed_with_warning"],
+    "reference_text_used": false
+  },
+  "metric": {
+    "family": "MiniCheck",
+    "model_name": "roberta-large",
+    "pins": "package version and checkpoint name are written to the receipt and frozen from it",
+    "unit": "each summary sentence is scored against the whole source",
+    "view_score_mean_prob": "mean of the sentence probabilities of the view",
+    "view_score_flagged_share": "share of sentences with probability below 0.5, the family's own decision boundary",
+    "validated_scope": "separates unrelated and foreign text from source extracts (AUROC 0.990 on train); not validated against subtle hallucination in abstractive summaries, and not against human judgment"
+  },
+  "views": {
+    "definition": "S, M and L are complete-sentence prefixes of the raw output with 60, 120 and 240 word caps (tib_budget_views.build_views)",
+    "scoring": "each distinct sentence of the three views is scored once; each view is derived from those scores, which is identical to scoring the views separately because the view score is a mean of sentence scores",
+    "forced_cut_case": "a view that ends in a forced word-boundary cut contains a truncated sentence; that text is scored as its own claim"
+  },
+  "reporting": {
+    "per_candidate_and_view": ["scored_records", "error_records", "not_scored_records", "mean_prob", "flagged_share", "mean_sentences"],
+    "by_source_stratum": "view M, mean_prob with record counts",
+    "no_ranking": true,
+    "pilot_limits": "40 records per profile, one realization, descriptive; differences are not tested and must not be called a ranking"
+  },
+  "cost_expectation": {
+    "measured": "mean 15.6 s per 120-word summary on a T4 (median 11.65 s) in the cost run",
+    "rough_estimate": "about 31 s per record for the L view, so about 1.7 GPU hours for 200 records; unmeasured for this scope",
+    "stop_rule": "the notebook checkpoints every record and can be resumed; stop and report if more than 2.5 GPU hours are used"
+  }
+}

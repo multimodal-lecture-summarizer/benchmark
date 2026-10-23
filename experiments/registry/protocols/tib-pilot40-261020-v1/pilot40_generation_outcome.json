@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "protocol_id": "tib-pilot40-261020-v1",
+  "scope": "text-free summary of the Pilot40 generation run (23/10). Source text and generated outputs stay in the private evidence zip.",
+  "evidence_zip": "tib-pilot40-evidence-20261023T074252Z.zip",
+  "evidence_zip_sha256": "39cc411bd3304041a478c1fb55b55b2417764538a62df69aa15472ab0980dbce",
+  "denominator_per_profile": 40,
+  "candidates": {
+    "lead3": {
+      "status": "PASS",
+      "summary": {
+        "NULL_quality_for_failures": true,
+        "denominator": 40,
+        "failed_or_interrupted": 0,
+        "fresh": 40,
+        "imported": 0,
+        "pending": 0,
+        "status_counts": {
+          "completed": 40
+        },
+        "successful": 40
+      },
+      "failed": [],
+      "warning_records": 0
+    },
+    "lexrank": {
+      "status": "PASS",
+      "summary": {
+        "NULL_quality_for_failures": true,
+        "denominator": 40,
+        "failed_or_interrupted": 0,
+        "fresh": 40,
+        "imported": 0,
+        "pending": 0,
+        "status_counts": {
+          "completed": 40
+        },
+        "successful": 40
+      },
+      "failed": [],
+      "warning_records": 0
+    },
+    "bart": {
+      "status": "COMPLETED_WITH_FAILURES",
+      "summary": {
+        "NULL_quality_for_failures": true,
+        "denominator": 40,
+        "failed_or_interrupted": 3,
+        "fresh": 37,
+        "imported": 3,
+        "pending": 0,
+        "status_counts": {
+          "completed": 33,
+          "completed_with_warning": 4,
+          "failed": 3
+        },
+        "successful": 37
+      },
+      "failed": [
+        {
+          "error": "ValueError: Historical persisted config mismatch",
+          "records": [
+            {
+              "record_id": "valid:341",
+              "origin": "historical_import"
+            },
+            {
+              "record_id": "valid:644",
+              "origin": "historical_import"
+            },
+            {
+              "record_id": "valid:886",
+              "origin": "historical_import"
+            }
+          ]
+        }
+      ],
+      "warning_records": 4
+    },
+    "led": {
+      "status": "COMPLETED_WITH_FAILURES",
+      "summary": {
+        "NULL_quality_for_failures": true,
+        "denominator": 40,
+        "failed_or_interrupted": 3,
+        "fresh": 37,
+        "imported": 3,
+        "pending": 0,
+        "status_counts": {
+          "completed": 12,
+          "completed_with_warning": 25,
+          "failed": 3
+        },
+        "successful": 37
+      },
+      "failed": [
+        {
+          "error": "ValueError: Historical persisted config mismatch",
+          "records": [
+            {
+              "record_id": "valid:341",
+              "origin": "historical_import"
+            },
+            {
+              "record_id": "valid:644",
+              "origin": "historical_import"
+            },
+            {
+              "record_id": "valid:886",
+              "origin": "historical_import"
+            }
+          ]
+        }
+      ],
+      "warning_records": 25
+    },
+    "qwen3": {
+      "status": "COMPLETED_WITH_FAILURES",
+      "summary": {
+        "NULL_quality_for_failures": true,
+        "denominator": 40,
+        "failed_or_interrupted": 3,
+        "fresh": 37,
+        "imported": 3,
+        "pending": 0,
+        "status_counts": {
+          "completed": 10,
+          "completed_with_warning": 27,
+          "failed": 3
+        },
+        "successful": 37
+      },
+      "failed": [
+        {
+          "error": "ValueError: Historical persisted config mismatch",
+          "records": [
+            {
+              "record_id": "valid:341",
+              "origin": "historical_import"
+            },
+            {
+              "record_id": "valid:644",
+              "origin": "historical_import"
+            },
+            {
+              "record_id": "valid:886",
+              "origin": "historical_import"
+            }
+          ]
+        }
+      ],
+      "warning_records": 27
+    }
+  },
+  "resource_ledger": {
+    "allocation": {
+      "authorization": "User2026-10-20 pilot40 allocation; not full study allocation",
+      "automatic_retries": false,
+      "candidate_order": [
+        "lead3",
+        "lexrank",
+        "bart",
+        "led",
+        "qwen3"
+      ],
+      "ceilings_are_not_measured_needs": true,
+      "checkpoint_bytes": 1073741824,
+      "checkpoint_flush_policy": "fsync_after_every_committed_node",
+      "checkpoint_flush_seconds": 0,
+      "checkpoint_wall_hours": 0.25,
+      "default_session_slice_hours": 5.75,
+      "local_working_storage_bytes": 25769803776,
+      "max_records_per_pipeline": 40,
+      "max_sessions": 2,
+      "minimum_local_free_bytes": 34359738368,
+      "node_forecast_safety_factor": 1.5,
+      "persistent_storage_bytes": 2147483648,
+      "pilot_feasibility_probe_cap_per_candidate": 0,
+      "pilot_metric_tuning_trial_cap_per_candidate": 0,
+      "pilot_total_profile_cap": 5,
+      "recovery_time_hours": 0.5,
+      "reserve_note": "Scoring wall reserve1.5h follows serial T4 GPU reserve; other suballocations are operating ceilings within total, not additions",
+      "reserves_inside_totals": true,
+      "retry_cost_reserve": 0,
+      "retry_limit_per_node": 0,
+      "schema_version": 1,
+      "scoring_cpu_hours": 3,
+      "scoring_gpu_hours": 1.5,
+      "scoring_runs_in_this_bundle": false,
+      "scoring_wall_hours": 1.5,
+      "selection_start_authorized": false,
+      "session_headroom_fraction": 0.15,
+      "session_overhead_hours": 0.75,
+      "session_slice_note": "Two 5.75h session grants preserve total11.5h; lost-session unobserved use charged conservatively",
+      "session_wall_hours": 11.5,
+      "stage": "pilot40_generation",
+      "state": "ALLOCATED",
+      "storage_capacity_bytes": 2147483648,
+      "total_cpu_hours": 23,
+      "total_gpu_hours": 11.5,
+      "total_wall_hours": 11.5,
+      "transfer_bytes": 17179869184,
+      "transfer_wall_hours": 0.5
+    },
+    "allocation_sha256": "e2a8768afafea7fe311c0b033ddb90183c6dd28c4547e106d69123d681077db6",
+    "boot_id": "2853f495-c19a-44f0-8e96-34b14403da7f",
+    "bundle_sha256": "0a9a85ad4e1af5b886e92ab19ea794001e74c1b516802c35e22fb3c7d319412d",
+    "candidate_runs": [
+      {
+        "candidate_id": "lead3",
+        "cpu_seconds": 2.7610209219999997,
+        "wall_seconds": 8.587251220999974
+      },
+      {
+        "candidate_id": "lexrank",
+        "cpu_seconds": 4.949307566,
+        "wall_seconds": 6.505316816000004
+      },
+      {
+        "candidate_id": "bart",
+        "cpu_seconds": 458.849960388,
+        "wall_seconds": 602.0337036230001
+      },
+      {
+        "candidate_id": "led",
+        "cpu_seconds": 576.6129097610001,
+        "wall_seconds": 619.8309739640001
+      },
+      {
+        "candidate_id": "qwen3",
+        "cpu_seconds": 3098.2700581709996,
+        "wall_seconds": 3270.9334990180005
+      }
+    ],
+    "checkpoint_bytes": 11084176,
+    "checkpoint_flush_seconds": 30.4252782320051,
+    "completed_session_wall_seconds": 0.0,
+    "cpu_seconds": 4159.479904530001,
+    "gpu_seconds": 4605.719917,
+    "initial_local_working_bytes": 0,
+    "last_heartbeat_monotonic": 5060.969545128,
+    "local_working_root": "/content/TIB_PILOT40_261020_V1",
+    "logical_cpu_count": 2,
+    "measured_neural_candidate_wall_seconds": 3270.933493998,
+    "observed_usage": {
+      "completed_wall_seconds": 0.0,
+      "cpu_seconds": 18.036728,
+      "gpu_seconds": 90.17670546999994
+    },
+    "session_elapsed_wall_seconds": 4605.71992104,
+    "session_limit_seconds": 20700.0,
+    "session_runs": [
+      {
+        "boot_id": "2853f495-c19a-44f0-8e96-34b14403da7f",
+        "cpu_seconds_at_start": 0.0,
+        "gpu_seconds_at_start": 0.0,
+        "granted_wall_seconds": 20700.0,
+        "logical_cpu_count": 2,
+        "started_epoch_ns": 1792736761712388015,
+        "started_monotonic": 455.249623504,
+        "status": "active"
+      }
+    ],
+    "session_setup_wall_seconds": 90.17670546999994,
+    "session_started_monotonic": 455.249623504,
+    "session_status": "active",
+    "session_wall_budget_seconds": 20700.0,
+    "setup_wall_seconds": 90.17670546999994,
+    "transfer_bytes": 11555373572,
+    "unobserved_loss_reserve": {
+      "cpu_seconds": 0.0,
+      "gpu_seconds": 0.0,
+      "wall_seconds": 0.0
+    }
+  }
+}

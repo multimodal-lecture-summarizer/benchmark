@@ -1,0 +1,4854 @@
+{
+  "schema_version": 1,
+  "protocol_id": "tib-pilot40-faithfulness-minicheck-v1",
+  "protocol_sha256": "53410b2bf1cb543fcb48ae71a95057360f483f0f8c7e1ef77b19d25e4fd56b21",
+  "evidence_zip": "tib-pilot40-evidence-20261023T074252Z.zip",
+  "evidence_zip_sha256": "39cc411bd3304041a478c1fb55b55b2417764538a62df69aa15472ab0980dbce",
+  "environment": {
+    "python": "3.13.15",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "packages": {
+      "nltk": "3.9.1",
+      "scikit-learn": "1.6.1",
+      "scipy": "1.16.3",
+      "numpy": "2.1.3",
+      "pandas": "2.2.3",
+      "torch": "2.11.0+cu130",
+      "transformers": "5.20.1"
+    },
+    "code_sha256": {
+      "tib_benchmark_output.py": "f4c8d7e62b9544dd21b215e771e7b17b243bf59087fe6f8342a4d575b9a84d8b",
+      "tib_budget_views.py": "d9332f87291e90ab5a462d591e51bb2f461768cb9212860fa22d11de78a27275",
+      "tib_faithfulness_cost.py": "9464675b70ff8b594ecc9eec7942dc629f02dc7edddb853f9c5714ceb9e01f0e",
+      "tib_pilot_faithfulness.py": "b9781a7972d9601f82b3e880ac3378cca85f287fc972f69138556aa61163688c",
+      "tib_summary_constructors.py": "20d97b85e714da98e88a74af615ffe4c922c10cb295a8627a8c24ae26fa0977c"
+    },
+    "gpu": "Tesla T4"
+  },
+  "install_log": {
+    "MiniCheck": {
+      "returncode": 0,
+      "tail": ""
+    }
+  },
+  "minicheck": {
+    "package": "0.1.0",
+    "model_name": "roberta-large"
+  },
+  "scoring_seconds_this_run": 2047.224937676,
+  "table": {
+    "bart": {
+      "scored_records": 37,
+      "error_records": 0,
+      "not_scored_records": 3,
+      "views": {
+        "S": {
+          "mean_prob": 0.8521236579738164,
+          "flagged_share": 0.148005148005148,
+          "mean_sentences": 3.4324324324324325
+        },
+        "M": {
+          "mean_prob": 0.8521921303935895,
+          "flagged_share": 0.148005148005148,
+          "mean_sentences": 3.4864864864864864
+        },
+        "L": {
+          "mean_prob": 0.8521921303935895,
+          "flagged_share": 0.148005148005148,
+          "mean_sentences": 3.4864864864864864
+        }
+      },
+      "by_stratum_view_M": {
+        "long": {
+          "records": 14,
+          "mean_prob": 0.8146726202197551
+        },
+        "medium": {
+          "records": 11,
+          "mean_prob": 0.8555472948673096
+        },
+        "short": {
+          "records": 12,
+          "mean_prob": 0.8928893248288198
+        }
+      }
+    },
+    "lead3": {
+      "scored_records": 40,
+      "error_records": 0,
+      "not_scored_records": 0,
+      "views": {
+        "S": {
+          "mean_prob": 0.9362483948469162,
+          "flagged_share": 0.025,
+          "mean_sentences": 2.825
+        },
+        "M": {
+          "mean_prob": 0.9359664514660835,
+          "flagged_share": 0.025,
+          "mean_sentences": 3.0
+        },
+        "L": {
+          "mean_prob": 0.9359664514660835,
+          "flagged_share": 0.025,
+          "mean_sentences": 3.0
+        }
+      },
+      "by_stratum_view_M": {
+        "long": {
+          "records": 15,
+          "mean_prob": 0.9527136405309041
+        },
+        "medium": {
+          "records": 12,
+          "mean_prob": 0.9250743960340818
+        },
+        "short": {
+          "records": 13,
+          "mean_prob": 0.9266969767900614
+        }
+      }
+    },
+    "led": {
+      "scored_records": 37,
+      "error_records": 0,
+      "not_scored_records": 3,
+      "views": {
+        "S": {
+          "mean_prob": 0.7662244061394049,
+          "flagged_share": 0.18468468468468469,
+          "mean_sentences": 1.9189189189189189
+        },
+        "M": {
+          "mean_prob": 0.7663719058916587,
+          "flagged_share": 0.1954954954954955,
+          "mean_sentences": 3.4594594594594597
+        },
+        "L": {
+          "mean_prob": 0.7725928639318037,
+          "flagged_share": 0.19547940797940797,
+          "mean_sentences": 5.405405405405405
+        }
+      },
+      "by_stratum_view_M": {
+        "long": {
+          "records": 14,
+          "mean_prob": 0.7064708082803658
+        },
+        "medium": {
+          "records": 11,
+          "mean_prob": 0.7435878841319319
+        },
+        "short": {
+          "records": 12,
+          "mean_prob": 0.8571418730512498
+        }
+      }
+    },
+    "lexrank": {
+      "scored_records": 40,
+      "error_records": 0,
+      "not_scored_records": 0,
+      "views": {
+        "S": {
+          "mean_prob": 0.9692968913841815,
+          "flagged_share": 0.0,
+          "mean_sentences": 3.475
+        },
+        "M": {
+          "mean_prob": 0.9658278567527796,
+          "flagged_share": 0.007291666666666666,
+          "mean_sentences": 7.125
+        },
+        "L": {
+          "mean_prob": 0.9698669142047354,
+          "flagged_share": 0.0065187590187590185,
+          "mean_sentences": 14.675
+        }
+      },
+      "by_stratum_view_M": {
+        "long": {
+          "records": 15,
+          "mean_prob": 0.9725331694661797
+        },
+        "medium": {
+          "records": 12,
+          "mean_prob": 0.951764957553574
+        },
+        "short": {
+          "records": 13,
+          "mean_prob": 0.9710720951904308
+        }
+      }
+    },
+    "qwen3": {
+      "scored_records": 37,
+      "error_records": 0,
+      "not_scored_records": 3,
+      "views": {
+        "S": {
+          "mean_prob": 0.4950948618352413,
+          "flagged_share": 0.5112612612612613,
+          "mean_sentences": 2.4054054054054053
+        },
+        "M": {
+          "mean_prob": 0.47649201971779614,
+          "flagged_share": 0.524002574002574,
+          "mean_sentences": 5.5675675675675675
+        },
+        "L": {
+          "mean_prob": 0.47523986338243485,
+          "flagged_share": 0.5334357084357084,
+          "mean_sentences": 9.594594594594595
+        }
+      },
+      "by_stratum_view_M": {
+        "long": {
+          "records": 14,
+          "mean_prob": 0.3249424446070073
+        },
+        "medium": {
+          "records": 11,
+          "mean_prob": 0.5503432715448725
+        },
+        "short": {
+          "records": 12,
+          "mean_prob": 0.5856028765055632
+        }
+      }
+    }
+  },
+  "skipped": [
+    {
+      "candidate": "bart",
+      "record_id": "valid:341",
+      "status": "failed"
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:644",
+      "status": "failed"
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:886",
+      "status": "failed"
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:341",
+      "status": "failed"
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:644",
+      "status": "failed"
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:886",
+      "status": "failed"
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:341",
+      "status": "failed"
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:644",
+      "status": "failed"
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:886",
+      "status": "failed"
+    }
+  ],
+  "scores": [
+    {
+      "candidate": "bart",
+      "record_id": "valid:102",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.3414098471403122,
+          "flagged_share": 0.6666666666666666
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.3414098471403122,
+          "flagged_share": 0.6666666666666666
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.3414098471403122,
+          "flagged_share": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:114",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 4,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.9835885316133499,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.9835885316133499,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 4,
+          "mean_prob": 0.9835885316133499,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:168",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9765638510386149,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9765638510386149,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9765638510386149,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:178",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 7,
+      "views": {
+        "S": {
+          "sentences": 7,
+          "mean_prob": 0.7754665570599693,
+          "flagged_share": 0.14285714285714285
+        },
+        "M": {
+          "sentences": 7,
+          "mean_prob": 0.7754665570599693,
+          "flagged_share": 0.14285714285714285
+        },
+        "L": {
+          "sentences": 7,
+          "mean_prob": 0.7754665570599693,
+          "flagged_share": 0.14285714285714285
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:196",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 4,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.9674141556024551,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.9674141556024551,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 4,
+          "mean_prob": 0.9674141556024551,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:207",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 4,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.7583870682865381,
+          "flagged_share": 0.25
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.7583870682865381,
+          "flagged_share": 0.25
+        },
+        "L": {
+          "sentences": 4,
+          "mean_prob": 0.7583870682865381,
+          "flagged_share": 0.25
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:220",
+      "stratum": "medium",
+      "status": "completed_with_warning",
+      "distinct_sentences": 4,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.9101927131414413,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.9101927131414413,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 4,
+          "mean_prob": 0.9101927131414413,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:229",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9890026052792867,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9890026052792867,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9890026052792867,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:230",
+      "stratum": "medium",
+      "status": "completed_with_warning",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.5274004259457191,
+          "flagged_share": 0.3333333333333333
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.5274004259457191,
+          "flagged_share": 0.3333333333333333
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.5274004259457191,
+          "flagged_share": 0.3333333333333333
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:27",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9097038308779398,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9097038308779398,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9097038308779398,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:272",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9878735740979513,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9878735740979513,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9878735740979513,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:273",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 5,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.9851392507553101,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.9849007368087769,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 5,
+          "mean_prob": 0.9849007368087769,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:277",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 4,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.8496386557817459,
+          "flagged_share": 0.25
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.8496386557817459,
+          "flagged_share": 0.25
+        },
+        "L": {
+          "sentences": 4,
+          "mean_prob": 0.8496386557817459,
+          "flagged_share": 0.25
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:278",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.976196308930715,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.976196308930715,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.976196308930715,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:288",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.3311309566100438,
+          "flagged_share": 1.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.3311309566100438,
+          "flagged_share": 1.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.3311309566100438,
+          "flagged_share": 1.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:293",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9874926606814066,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9874926606814066,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9874926606814066,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:368",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 4,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.8373861312866211,
+          "flagged_share": 0.25
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.8373861312866211,
+          "flagged_share": 0.25
+        },
+        "L": {
+          "sentences": 4,
+          "mean_prob": 0.8373861312866211,
+          "flagged_share": 0.25
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:398",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 4,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.29400954814627767,
+          "flagged_share": 0.75
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.29400954814627767,
+          "flagged_share": 0.75
+        },
+        "L": {
+          "sentences": 4,
+          "mean_prob": 0.29400954814627767,
+          "flagged_share": 0.75
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:409",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 4,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.7690265607088804,
+          "flagged_share": 0.25
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.7690265607088804,
+          "flagged_share": 0.25
+        },
+        "L": {
+          "sentences": 4,
+          "mean_prob": 0.7690265607088804,
+          "flagged_share": 0.25
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:414",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9533105492591858,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9533105492591858,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9533105492591858,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:415",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.7208325962225596,
+          "flagged_share": 0.3333333333333333
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.7208325962225596,
+          "flagged_share": 0.3333333333333333
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.7208325962225596,
+          "flagged_share": 0.3333333333333333
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:457",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9876112143198649,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9876112143198649,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9876112143198649,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:469",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9862234195073446,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9862234195073446,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9862234195073446,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:488",
+      "stratum": "short",
+      "status": "completed_with_warning",
+      "distinct_sentences": 4,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.29999017948284745,
+          "flagged_share": 0.75
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.29999017948284745,
+          "flagged_share": 0.75
+        },
+        "L": {
+          "sentences": 4,
+          "mean_prob": 0.29999017948284745,
+          "flagged_share": 0.75
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:532",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.973789632320404,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9765616257985433,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9765616257985433,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:542",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.987276017665863,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.987276017665863,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.987276017665863,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:594",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 4,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.9889518916606903,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.9889518916606903,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 4,
+          "mean_prob": 0.9889518916606903,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:622",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 4,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.9884586483240128,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.9884586483240128,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 4,
+          "mean_prob": 0.9884586483240128,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:653",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9834464987119039,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9834464987119039,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9834464987119039,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:665",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9680072466532389,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9680072466532389,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9680072466532389,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:690",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9859069983164469,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9859069983164469,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9859069983164469,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:755",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9879949887593588,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9879949887593588,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9879949887593588,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:78",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9836990435918173,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9836990435918173,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9836990435918173,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:826",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 4,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.6414952129125595,
+          "flagged_share": 0.5
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.6414952129125595,
+          "flagged_share": 0.5
+        },
+        "L": {
+          "sentences": 4,
+          "mean_prob": 0.6414952129125595,
+          "flagged_share": 0.5
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:857",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9599156379699707,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9599156379699707,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9599156379699707,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:894",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 4,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.9888327717781067,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.9888327717781067,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 4,
+          "mean_prob": 0.9888327717781067,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "bart",
+      "record_id": "valid:905",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 2,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.9858095645904541,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 2,
+          "mean_prob": 0.9858095645904541,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 2,
+          "mean_prob": 0.9858095645904541,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:102",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9782707889874777,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9782707889874777,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9782707889874777,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:114",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9829006195068359,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9829006195068359,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9829006195068359,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:168",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.7400139768918356,
+          "flagged_share": 0.3333333333333333
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.7400139768918356,
+          "flagged_share": 0.3333333333333333
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.7400139768918356,
+          "flagged_share": 0.3333333333333333
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:178",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9188147187232971,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9188147187232971,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9188147187232971,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:196",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9861196478207906,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9861196478207906,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9861196478207906,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:207",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9822488029797872,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9822488029797872,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9822488029797872,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:220",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.850867489973704,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.850867489973704,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.850867489973704,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:229",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9713409940401713,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9713409940401713,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9713409940401713,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:230",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9837645888328552,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9837645888328552,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9837645888328552,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:27",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9768525163332621,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9768525163332621,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9768525163332621,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:272",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 1,
+          "mean_prob": 0.9830801486968994,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9852831164995829,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9852831164995829,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:273",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9673221309979757,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9673221309979757,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9673221309979757,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:277",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9596705238024393,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9596705238024393,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9596705238024393,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:278",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.8847659627596537,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.8847659627596537,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.8847659627596537,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:288",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.8252999583880106,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.8252999583880106,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.8252999583880106,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:293",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.8954171140988668,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.8954171140988668,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.8954171140988668,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:341",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9845987757047018,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9845987757047018,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9845987757047018,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:368",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.6397338211536407,
+          "flagged_share": 0.3333333333333333
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.6397338211536407,
+          "flagged_share": 0.3333333333333333
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.6397338211536407,
+          "flagged_share": 0.3333333333333333
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:398",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9300585786501566,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9300585786501566,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9300585786501566,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:409",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9835528135299683,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9835528135299683,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9835528135299683,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:414",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.987477699915568,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.987477699915568,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.987477699915568,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:415",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9852182666460673,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9852182666460673,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9852182666460673,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:457",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.8359828591346741,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.8359828591346741,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.8359828591346741,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:469",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9805885155995687,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9805885155995687,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9805885155995687,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:488",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9780736565589905,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9780736565589905,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9780736565589905,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:532",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9744933247566223,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9744933247566223,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9744933247566223,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:542",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9857864578564962,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9857864578564962,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9857864578564962,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:594",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.972591757774353,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.972591757774353,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.972591757774353,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:622",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.9841171503067017,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9849070310592651,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9849070310592651,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:644",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.9872087240219116,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9880409638086954,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9880409638086954,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:653",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9754571318626404,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9754571318626404,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9754571318626404,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:665",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9633013804753622,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9633013804753622,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9633013804753622,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:690",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.9858790636062622,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9858052134513855,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9858052134513855,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:755",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9815410772959391,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9815410772959391,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9815410772959391,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:78",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9842448433240255,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9842448433240255,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9842448433240255,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:826",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9579880833625793,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9579880833625793,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9579880833625793,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:857",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.6217367947101593,
+          "flagged_share": 0.3333333333333333
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.6217367947101593,
+          "flagged_share": 0.3333333333333333
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.6217367947101593,
+          "flagged_share": 0.3333333333333333
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:886",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9788782199223837,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9788782199223837,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9788782199223837,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:894",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9219451745351156,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9219451745351156,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9219451745351156,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lead3",
+      "record_id": "valid:905",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 1,
+          "mean_prob": 0.9827316403388977,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9677026669184366,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9677026669184366,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:102",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 1,
+          "mean_prob": 0.9340165257453918,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.8191928664843241,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.8191928664843241,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:114",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 2,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.6001033037900925,
+          "flagged_share": 0.5
+        },
+        "M": {
+          "sentences": 2,
+          "mean_prob": 0.6001033037900925,
+          "flagged_share": 0.5
+        },
+        "L": {
+          "sentences": 2,
+          "mean_prob": 0.6001033037900925,
+          "flagged_share": 0.5
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:168",
+      "stratum": "short",
+      "status": "completed_with_warning",
+      "distinct_sentences": 13,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.8723397701978683,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 6,
+          "mean_prob": 0.905033141374588,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 13,
+          "mean_prob": 0.9442053849880512,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:178",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 2,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.9507168233394623,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 2,
+          "mean_prob": 0.9507168233394623,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 2,
+          "mean_prob": 0.9507168233394623,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:196",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 1,
+          "mean_prob": 0.9542402625083923,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.7000732570886612,
+          "flagged_share": 0.3333333333333333
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.7000732570886612,
+          "flagged_share": 0.3333333333333333
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:207",
+      "stratum": "medium",
+      "status": "completed_with_warning",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.9358788728713989,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.8746750156084696,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.8746750156084696,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:220",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 1,
+          "mean_prob": 0.2342558652162552,
+          "flagged_share": 1.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.43093646814425784,
+          "flagged_share": 0.6666666666666666
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.43093646814425784,
+          "flagged_share": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:229",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 9,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.5123092383146286,
+          "flagged_share": 0.5
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.6732446178793907,
+          "flagged_share": 0.25
+        },
+        "L": {
+          "sentences": 9,
+          "mean_prob": 0.7085945142640008,
+          "flagged_share": 0.2222222222222222
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:230",
+      "stratum": "medium",
+      "status": "completed_with_warning",
+      "distinct_sentences": 1,
+      "views": {
+        "S": {
+          "sentences": 1,
+          "mean_prob": 0.9827086925506592,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 1,
+          "mean_prob": 0.9827086925506592,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 1,
+          "mean_prob": 0.9827086925506592,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:27",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 5,
+      "views": {
+        "S": {
+          "sentences": 1,
+          "mean_prob": 0.5221437811851501,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 2,
+          "mean_prob": 0.7355352342128754,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 5,
+          "mean_prob": 0.8494807124137879,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:272",
+      "stratum": "short",
+      "status": "completed_with_warning",
+      "distinct_sentences": 9,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.9734284579753876,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9747489293416342,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 9,
+          "mean_prob": 0.9053809311654832,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:273",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 2,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.7393525093793869,
+          "flagged_share": 0.5
+        },
+        "M": {
+          "sentences": 2,
+          "mean_prob": 0.7393525093793869,
+          "flagged_share": 0.5
+        },
+        "L": {
+          "sentences": 2,
+          "mean_prob": 0.7393525093793869,
+          "flagged_share": 0.5
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:277",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 2,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.9545265138149261,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 2,
+          "mean_prob": 0.9545265138149261,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 2,
+          "mean_prob": 0.9545265138149261,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:278",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 13,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.9416040480136871,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 7,
+          "mean_prob": 0.9600449545042855,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 13,
+          "mean_prob": 0.9656806129675645,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:288",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.6471524238586426,
+          "flagged_share": 0.5
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.6244504650433859,
+          "flagged_share": 0.3333333333333333
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.6244504650433859,
+          "flagged_share": 0.3333333333333333
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:293",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 8,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.8327062129974365,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.8896148800849915,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 8,
+          "mean_prob": 0.9234711080789566,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:368",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 8,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.7603292067845663,
+          "flagged_share": 0.3333333333333333
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.8110407829284668,
+          "flagged_share": 0.2
+        },
+        "L": {
+          "sentences": 8,
+          "mean_prob": 0.8664310574531555,
+          "flagged_share": 0.125
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:398",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 6,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.961662769317627,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.968700110912323,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 6,
+          "mean_prob": 0.9700943529605865,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:409",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 2,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.640050619840622,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 2,
+          "mean_prob": 0.640050619840622,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 2,
+          "mean_prob": 0.640050619840622,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:414",
+      "stratum": "short",
+      "status": "completed_with_warning",
+      "distinct_sentences": 16,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9857780734697977,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 7,
+          "mean_prob": 0.9690092716898236,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 16,
+          "mean_prob": 0.9169208407402039,
+          "flagged_share": 0.0625
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:415",
+      "stratum": "medium",
+      "status": "completed_with_warning",
+      "distinct_sentences": 5,
+      "views": {
+        "S": {
+          "sentences": 1,
+          "mean_prob": 0.9848936200141907,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.805071984231472,
+          "flagged_share": 0.2
+        },
+        "L": {
+          "sentences": 5,
+          "mean_prob": 0.805071984231472,
+          "flagged_share": 0.2
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:457",
+      "stratum": "medium",
+      "status": "completed_with_warning",
+      "distinct_sentences": 4,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.4478260260075331,
+          "flagged_share": 0.5
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.6987991323694587,
+          "flagged_share": 0.25
+        },
+        "L": {
+          "sentences": 4,
+          "mean_prob": 0.6987991323694587,
+          "flagged_share": 0.25
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:469",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 9,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.8683501183986664,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.8701889514923096,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 9,
+          "mean_prob": 0.8602902823024325,
+          "flagged_share": 0.1111111111111111
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:488",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 2,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.8902947306632996,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 2,
+          "mean_prob": 0.8902947306632996,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 2,
+          "mean_prob": 0.8902947306632996,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:532",
+      "stratum": "medium",
+      "status": "completed_with_warning",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.9311425387859344,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9429957667986552,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.9429957667986552,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:542",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 4,
+      "views": {
+        "S": {
+          "sentences": 1,
+          "mean_prob": 0.9757025837898254,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.5826696753501892,
+          "flagged_share": 0.5
+        },
+        "L": {
+          "sentences": 4,
+          "mean_prob": 0.5826696753501892,
+          "flagged_share": 0.5
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:594",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 2,
+      "views": {
+        "S": {
+          "sentences": 1,
+          "mean_prob": 0.5145869851112366,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 2,
+          "mean_prob": 0.2931561544537544,
+          "flagged_share": 0.5
+        },
+        "L": {
+          "sentences": 2,
+          "mean_prob": 0.2931561544537544,
+          "flagged_share": 0.5
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:622",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 7,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.6085717678070068,
+          "flagged_share": 0.5
+        },
+        "M": {
+          "sentences": 2,
+          "mean_prob": 0.6085717678070068,
+          "flagged_share": 0.5
+        },
+        "L": {
+          "sentences": 7,
+          "mean_prob": 0.8629393918173653,
+          "flagged_share": 0.14285714285714285
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:653",
+      "stratum": "medium",
+      "status": "completed_with_warning",
+      "distinct_sentences": 2,
+      "views": {
+        "S": {
+          "sentences": 1,
+          "mean_prob": 0.3542101979255676,
+          "flagged_share": 1.0
+        },
+        "M": {
+          "sentences": 2,
+          "mean_prob": 0.39687614142894745,
+          "flagged_share": 1.0
+        },
+        "L": {
+          "sentences": 2,
+          "mean_prob": 0.39687614142894745,
+          "flagged_share": 1.0
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:665",
+      "stratum": "medium",
+      "status": "completed_with_warning",
+      "distinct_sentences": 7,
+      "views": {
+        "S": {
+          "sentences": 1,
+          "mean_prob": 0.8403184413909912,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.930487314860026,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 7,
+          "mean_prob": 0.8345624698059899,
+          "flagged_share": 0.14285714285714285
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:690",
+      "stratum": "short",
+      "status": "completed_with_warning",
+      "distinct_sentences": 7,
+      "views": {
+        "S": {
+          "sentences": 1,
+          "mean_prob": 0.9581379294395447,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 2,
+          "mean_prob": 0.9696625769138336,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 7,
+          "mean_prob": 0.8199997786432505,
+          "flagged_share": 0.14285714285714285
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:755",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 4,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.9011159539222717,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.8649833053350449,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 4,
+          "mean_prob": 0.8649833053350449,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:78",
+      "stratum": "short",
+      "status": "completed_with_warning",
+      "distinct_sentences": 14,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9737286965052286,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 6,
+          "mean_prob": 0.972305029630661,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 14,
+          "mean_prob": 0.9339780977794102,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:826",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 7,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9829821983973185,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 6,
+          "mean_prob": 0.9823681811491648,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 7,
+          "mean_prob": 0.9817807589258466,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:857",
+      "stratum": "medium",
+      "status": "completed_with_warning",
+      "distinct_sentences": 4,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.4076077938079834,
+          "flagged_share": 0.5
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.5223390758037567,
+          "flagged_share": 0.5
+        },
+        "L": {
+          "sentences": 4,
+          "mean_prob": 0.5223390758037567,
+          "flagged_share": 0.5
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:894",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.25840023159980774,
+          "flagged_share": 1.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.18607897808154425,
+          "flagged_share": 1.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.18607897808154425,
+          "flagged_share": 1.0
+        }
+      }
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:905",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 3,
+      "views": {
+        "S": {
+          "sentences": 1,
+          "mean_prob": 0.5171292424201965,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 2,
+          "mean_prob": 0.6351532936096191,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 3,
+          "mean_prob": 0.742074191570282,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:102",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 21,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.9818595498800278,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 11,
+          "mean_prob": 0.9806911403482611,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 22,
+          "mean_prob": 0.980670915408568,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:114",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 16,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9870755076408386,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 9,
+          "mean_prob": 0.9854004581769308,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 16,
+          "mean_prob": 0.9853054694831371,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:168",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 16,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9852299094200134,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 6,
+          "mean_prob": 0.9853578209877014,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 16,
+          "mean_prob": 0.9810330644249916,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:178",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 20,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.9836614280939102,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 10,
+          "mean_prob": 0.9820779442787171,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 20,
+          "mean_prob": 0.9819139778614044,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:196",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 14,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.9873130321502686,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 7,
+          "mean_prob": 0.9857472607067653,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 14,
+          "mean_prob": 0.9734675330775124,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:207",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 14,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.9810492247343063,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 8,
+          "mean_prob": 0.9840890616178513,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 14,
+          "mean_prob": 0.9832733571529388,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:220",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 18,
+      "views": {
+        "S": {
+          "sentences": 5,
+          "mean_prob": 0.9226974844932556,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 8,
+          "mean_prob": 0.8414906039834023,
+          "flagged_share": 0.125
+        },
+        "L": {
+          "sentences": 18,
+          "mean_prob": 0.9137456350856357,
+          "flagged_share": 0.05555555555555555
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:229",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 7,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.9809567630290985,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.9792723059654236,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 7,
+          "mean_prob": 0.9709194132259914,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:230",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 15,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9839172959327698,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 7,
+          "mean_prob": 0.9735952189990452,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 15,
+          "mean_prob": 0.978550136089325,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:27",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 19,
+      "views": {
+        "S": {
+          "sentences": 7,
+          "mean_prob": 0.9764576128550938,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 9,
+          "mean_prob": 0.9787399967511495,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 21,
+          "mean_prob": 0.9542323478630611,
+          "flagged_share": 0.047619047619047616
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:272",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 9,
+      "views": {
+        "S": {
+          "sentences": 1,
+          "mean_prob": 0.9830801486968994,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.9859513521194458,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 9,
+          "mean_prob": 0.9864223599433899,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:273",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 14,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.9790050387382507,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 6,
+          "mean_prob": 0.983205666144689,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 14,
+          "mean_prob": 0.9737005616937365,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:277",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 20,
+      "views": {
+        "S": {
+          "sentences": 5,
+          "mean_prob": 0.9376054883003235,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 10,
+          "mean_prob": 0.9590779304504394,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 20,
+          "mean_prob": 0.9728789329528809,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:278",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 15,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.9885734468698502,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 8,
+          "mean_prob": 0.9832682833075523,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 15,
+          "mean_prob": 0.9807392040888468,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:288",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 7,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.9804877638816833,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.9804877638816833,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 7,
+          "mean_prob": 0.9814157826559884,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:293",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 14,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.9853003025054932,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 9,
+          "mean_prob": 0.9839411311679416,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 14,
+          "mean_prob": 0.9812800884246826,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:341",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 10,
+      "views": {
+        "S": {
+          "sentences": 1,
+          "mean_prob": 0.9718522429466248,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.9749867767095566,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 9,
+          "mean_prob": 0.9770237141185336,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:368",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 11,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.9677475392818451,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 6,
+          "mean_prob": 0.8943755924701691,
+          "flagged_share": 0.16666666666666666
+        },
+        "L": {
+          "sentences": 11,
+          "mean_prob": 0.9357640743255615,
+          "flagged_share": 0.09090909090909091
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:398",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 22,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.9530355036258698,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 9,
+          "mean_prob": 0.9714597132470872,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 22,
+          "mean_prob": 0.9779344499111176,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:409",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 14,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.9822569787502289,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 7,
+          "mean_prob": 0.9839218940053668,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 14,
+          "mean_prob": 0.9707080210958209,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:414",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 17,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.9871483594179153,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 9,
+          "mean_prob": 0.9789355794588724,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 17,
+          "mean_prob": 0.980886277030496,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:415",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 15,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.982730969786644,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 7,
+          "mean_prob": 0.9843692098345075,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 15,
+          "mean_prob": 0.982803471883138,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:457",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 15,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.98382967710495,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 7,
+          "mean_prob": 0.9791058472224644,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 15,
+          "mean_prob": 0.980839212735494,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:469",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 13,
+      "views": {
+        "S": {
+          "sentences": 1,
+          "mean_prob": 0.9844704866409302,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 7,
+          "mean_prob": 0.9854204228946141,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 13,
+          "mean_prob": 0.9853430848855239,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:488",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 26,
+      "views": {
+        "S": {
+          "sentences": 6,
+          "mean_prob": 0.9775323669115702,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 14,
+          "mean_prob": 0.9791913671152932,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 26,
+          "mean_prob": 0.9822218739069425,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:532",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 6,
+      "views": {
+        "S": {
+          "sentences": 1,
+          "mean_prob": 0.9886574149131775,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.9135972112417221,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 6,
+          "mean_prob": 0.9301037589708964,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:542",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 11,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.9850241541862488,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9713436365127563,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 11,
+          "mean_prob": 0.9793314879590814,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:594",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 16,
+      "views": {
+        "S": {
+          "sentences": 6,
+          "mean_prob": 0.9495796859264374,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 6,
+          "mean_prob": 0.9495796859264374,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 16,
+          "mean_prob": 0.9617082737386227,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:622",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 12,
+      "views": {
+        "S": {
+          "sentences": 6,
+          "mean_prob": 0.9549009005228678,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 7,
+          "mean_prob": 0.9598466328212193,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 12,
+          "mean_prob": 0.9703011562426885,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:644",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 10,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.9872087240219116,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.9873299598693848,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 10,
+          "mean_prob": 0.9861564040184021,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:653",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 18,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.8534767031669617,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 7,
+          "mean_prob": 0.9253970469747271,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 18,
+          "mean_prob": 0.960618128379186,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:665",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 12,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.9874714314937592,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.987470418214798,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 12,
+          "mean_prob": 0.9852764556805292,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:690",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 8,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.9880218207836151,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.9882338881492615,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 8,
+          "mean_prob": 0.9860156029462814,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:755",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 6,
+      "views": {
+        "S": {
+          "sentences": 1,
+          "mean_prob": 0.9846169948577881,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 3,
+          "mean_prob": 0.9726450641949972,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 6,
+          "mean_prob": 0.9753710826237997,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:78",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 12,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9866144259770712,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 7,
+          "mean_prob": 0.9167240943227496,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 12,
+          "mean_prob": 0.9442238807678223,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:826",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 23,
+      "views": {
+        "S": {
+          "sentences": 6,
+          "mean_prob": 0.9435007572174072,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 12,
+          "mean_prob": 0.9660627990961075,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 23,
+          "mean_prob": 0.9564775669056437,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:857",
+      "stratum": "medium",
+      "status": "completed",
+      "distinct_sentences": 13,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.8069760203361511,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.9140782713890075,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 13,
+          "mean_prob": 0.9368843619640057,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:886",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 26,
+      "views": {
+        "S": {
+          "sentences": 5,
+          "mean_prob": 0.9729991674423217,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 14,
+          "mean_prob": 0.9259203885282788,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 32,
+          "mean_prob": 0.9389184415340424,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:894",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 15,
+      "views": {
+        "S": {
+          "sentences": 7,
+          "mean_prob": 0.983340927532741,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 9,
+          "mean_prob": 0.9839200178782145,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 15,
+          "mean_prob": 0.945313956340154,
+          "flagged_share": 0.06666666666666667
+        }
+      }
+    },
+    {
+      "candidate": "lexrank",
+      "record_id": "valid:905",
+      "stratum": "long",
+      "status": "completed",
+      "distinct_sentences": 9,
+      "views": {
+        "S": {
+          "sentences": 1,
+          "mean_prob": 0.9846124053001404,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 2,
+          "mean_prob": 0.9868048131465912,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 9,
+          "mean_prob": 0.9849030507935418,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:102",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 8,
+      "views": {
+        "S": {
+          "sentences": 1,
+          "mean_prob": 0.019846633076667786,
+          "flagged_share": 1.0
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.16051857359707355,
+          "flagged_share": 1.0
+        },
+        "L": {
+          "sentences": 8,
+          "mean_prob": 0.3083704069722444,
+          "flagged_share": 0.75
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:114",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 10,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.6551733314990997,
+          "flagged_share": 0.3333333333333333
+        },
+        "M": {
+          "sentences": 7,
+          "mean_prob": 0.6535286445702825,
+          "flagged_share": 0.2857142857142857
+        },
+        "L": {
+          "sentences": 10,
+          "mean_prob": 0.51386972181499,
+          "flagged_share": 0.5
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:168",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 12,
+      "views": {
+        "S": {
+          "sentences": 4,
+          "mean_prob": 0.6603811141103506,
+          "flagged_share": 0.25
+        },
+        "M": {
+          "sentences": 7,
+          "mean_prob": 0.641860445695264,
+          "flagged_share": 0.2857142857142857
+        },
+        "L": {
+          "sentences": 12,
+          "mean_prob": 0.5371834480514129,
+          "flagged_share": 0.5
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:178",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 11,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.8807525932788849,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 6,
+          "mean_prob": 0.866724451382955,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 11,
+          "mean_prob": 0.6690845177932219,
+          "flagged_share": 0.18181818181818182
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:196",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 10,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.5389438221851984,
+          "flagged_share": 0.3333333333333333
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.38841682225465773,
+          "flagged_share": 0.6
+        },
+        "L": {
+          "sentences": 10,
+          "mean_prob": 0.5480653263628483,
+          "flagged_share": 0.5
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:207",
+      "stratum": "medium",
+      "status": "completed_with_warning",
+      "distinct_sentences": 13,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.5494688749313354,
+          "flagged_share": 0.5
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.6257218778133392,
+          "flagged_share": 0.4
+        },
+        "L": {
+          "sentences": 13,
+          "mean_prob": 0.5943384949977581,
+          "flagged_share": 0.46153846153846156
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:220",
+      "stratum": "medium",
+      "status": "completed_with_warning",
+      "distinct_sentences": 14,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.4238603661457698,
+          "flagged_share": 0.6666666666666666
+        },
+        "M": {
+          "sentences": 7,
+          "mean_prob": 0.4905407450028828,
+          "flagged_share": 0.5714285714285714
+        },
+        "L": {
+          "sentences": 14,
+          "mean_prob": 0.5243067885083812,
+          "flagged_share": 0.5
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:229",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 8,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.25751807540655136,
+          "flagged_share": 1.0
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.33653801679611206,
+          "flagged_share": 0.8
+        },
+        "L": {
+          "sentences": 8,
+          "mean_prob": 0.3390246124472469,
+          "flagged_share": 0.75
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:230",
+      "stratum": "medium",
+      "status": "completed_with_warning",
+      "distinct_sentences": 9,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.5333704253037771,
+          "flagged_share": 0.3333333333333333
+        },
+        "M": {
+          "sentences": 7,
+          "mean_prob": 0.3919105786564095,
+          "flagged_share": 0.5714285714285714
+        },
+        "L": {
+          "sentences": 9,
+          "mean_prob": 0.3537442362349894,
+          "flagged_share": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:27",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 10,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.4228487201035023,
+          "flagged_share": 0.5
+        },
+        "M": {
+          "sentences": 6,
+          "mean_prob": 0.3796049163987239,
+          "flagged_share": 0.6666666666666666
+        },
+        "L": {
+          "sentences": 10,
+          "mean_prob": 0.32954845800995825,
+          "flagged_share": 0.7
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:272",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 10,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.4924764782190323,
+          "flagged_share": 0.5
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.47685643285512924,
+          "flagged_share": 0.5
+        },
+        "L": {
+          "sentences": 10,
+          "mean_prob": 0.7121549397706985,
+          "flagged_share": 0.2
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:273",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 11,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.10529319755733013,
+          "flagged_share": 1.0
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.24967307820916176,
+          "flagged_share": 0.8
+        },
+        "L": {
+          "sentences": 11,
+          "mean_prob": 0.2145219570533796,
+          "flagged_share": 0.9090909090909091
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:277",
+      "stratum": "medium",
+      "status": "completed_with_warning",
+      "distinct_sentences": 13,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.6193744291861852,
+          "flagged_share": 0.3333333333333333
+        },
+        "M": {
+          "sentences": 7,
+          "mean_prob": 0.4525881899254663,
+          "flagged_share": 0.5714285714285714
+        },
+        "L": {
+          "sentences": 13,
+          "mean_prob": 0.5067288556780952,
+          "flagged_share": 0.5384615384615384
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:278",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 12,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.9257703423500061,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 6,
+          "mean_prob": 0.8522017896175385,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 12,
+          "mean_prob": 0.6253962168314805,
+          "flagged_share": 0.25
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:288",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 9,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.7161204814910889,
+          "flagged_share": 0.5
+        },
+        "M": {
+          "sentences": 7,
+          "mean_prob": 0.4315817265638283,
+          "flagged_share": 0.7142857142857143
+        },
+        "L": {
+          "sentences": 9,
+          "mean_prob": 0.44716082316719824,
+          "flagged_share": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:293",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 8,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.6950213611125946,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.2985957644879818,
+          "flagged_share": 0.6
+        },
+        "L": {
+          "sentences": 8,
+          "mean_prob": 0.27169422758743167,
+          "flagged_share": 0.75
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:368",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 8,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.6898123025894165,
+          "flagged_share": 0.3333333333333333
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.4426503390073776,
+          "flagged_share": 0.6
+        },
+        "L": {
+          "sentences": 8,
+          "mean_prob": 0.48142476473003626,
+          "flagged_share": 0.5
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:398",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 8,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.22555704042315483,
+          "flagged_share": 1.0
+        },
+        "M": {
+          "sentences": 6,
+          "mean_prob": 0.18906951447327933,
+          "flagged_share": 1.0
+        },
+        "L": {
+          "sentences": 8,
+          "mean_prob": 0.16708211973309517,
+          "flagged_share": 1.0
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:409",
+      "stratum": "medium",
+      "status": "completed_with_warning",
+      "distinct_sentences": 9,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.46813327819108963,
+          "flagged_share": 0.6666666666666666
+        },
+        "M": {
+          "sentences": 6,
+          "mean_prob": 0.6643615203599135,
+          "flagged_share": 0.3333333333333333
+        },
+        "L": {
+          "sentences": 9,
+          "mean_prob": 0.6983867246243689,
+          "flagged_share": 0.2222222222222222
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:414",
+      "stratum": "short",
+      "status": "completed_with_warning",
+      "distinct_sentences": 6,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.5667171354095141,
+          "flagged_share": 0.3333333333333333
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.5574617441743612,
+          "flagged_share": 0.25
+        },
+        "L": {
+          "sentences": 6,
+          "mean_prob": 0.5440543970714012,
+          "flagged_share": 0.3333333333333333
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:415",
+      "stratum": "medium",
+      "status": "completed_with_warning",
+      "distinct_sentences": 9,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.21539035812020302,
+          "flagged_share": 1.0
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.31601324006915094,
+          "flagged_share": 0.6
+        },
+        "L": {
+          "sentences": 9,
+          "mean_prob": 0.4847756288945675,
+          "flagged_share": 0.4444444444444444
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:457",
+      "stratum": "medium",
+      "status": "completed_with_warning",
+      "distinct_sentences": 10,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.7785202960173289,
+          "flagged_share": 0.3333333333333333
+        },
+        "M": {
+          "sentences": 6,
+          "mean_prob": 0.651068881774942,
+          "flagged_share": 0.3333333333333333
+        },
+        "L": {
+          "sentences": 10,
+          "mean_prob": 0.60103780888021,
+          "flagged_share": 0.4
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:469",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 11,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.7302618424097697,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 6,
+          "mean_prob": 0.6568130552768707,
+          "flagged_share": 0.16666666666666666
+        },
+        "L": {
+          "sentences": 11,
+          "mean_prob": 0.4885712882334536,
+          "flagged_share": 0.45454545454545453
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:488",
+      "stratum": "short",
+      "status": "completed_with_warning",
+      "distinct_sentences": 8,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.07929879706352949,
+          "flagged_share": 1.0
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.22551137618720532,
+          "flagged_share": 0.8
+        },
+        "L": {
+          "sentences": 8,
+          "mean_prob": 0.18076340039260685,
+          "flagged_share": 0.875
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:532",
+      "stratum": "medium",
+      "status": "completed_with_warning",
+      "distinct_sentences": 6,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.7507151365280151,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.8175855875015259,
+          "flagged_share": 0.0
+        },
+        "L": {
+          "sentences": 6,
+          "mean_prob": 0.8228011727333069,
+          "flagged_share": 0.0
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:542",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 8,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.7751644849777222,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.6455382287502289,
+          "flagged_share": 0.4
+        },
+        "L": {
+          "sentences": 8,
+          "mean_prob": 0.5301473396830261,
+          "flagged_share": 0.5
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:594",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 8,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.1883014552295208,
+          "flagged_share": 1.0
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.2523436602205038,
+          "flagged_share": 0.8
+        },
+        "L": {
+          "sentences": 8,
+          "mean_prob": 0.2966183421667665,
+          "flagged_share": 0.75
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:622",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 7,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.3046589493751526,
+          "flagged_share": 1.0
+        },
+        "M": {
+          "sentences": 4,
+          "mean_prob": 0.2325917910784483,
+          "flagged_share": 1.0
+        },
+        "L": {
+          "sentences": 7,
+          "mean_prob": 0.44427539514643805,
+          "flagged_share": 0.5714285714285714
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:653",
+      "stratum": "medium",
+      "status": "completed_with_warning",
+      "distinct_sentences": 12,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.4788223272189498,
+          "flagged_share": 0.5
+        },
+        "M": {
+          "sentences": 6,
+          "mean_prob": 0.5321141726647814,
+          "flagged_share": 0.5
+        },
+        "L": {
+          "sentences": 12,
+          "mean_prob": 0.6337803948360184,
+          "flagged_share": 0.4166666666666667
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:665",
+      "stratum": "medium",
+      "status": "completed_with_warning",
+      "distinct_sentences": 7,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.8294432163238525,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.5509882535785436,
+          "flagged_share": 0.4
+        },
+        "L": {
+          "sentences": 7,
+          "mean_prob": 0.5671144870242902,
+          "flagged_share": 0.42857142857142855
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:690",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 9,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.5658965210119883,
+          "flagged_share": 0.3333333333333333
+        },
+        "M": {
+          "sentences": 6,
+          "mean_prob": 0.5764627382159233,
+          "flagged_share": 0.3333333333333333
+        },
+        "L": {
+          "sentences": 9,
+          "mean_prob": 0.500494917233785,
+          "flagged_share": 0.4444444444444444
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:755",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 12,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.19733548536896706,
+          "flagged_share": 1.0
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.2837893795222044,
+          "flagged_share": 0.8
+        },
+        "L": {
+          "sentences": 12,
+          "mean_prob": 0.4278312420938164,
+          "flagged_share": 0.5833333333333334
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:78",
+      "stratum": "short",
+      "status": "completed",
+      "distinct_sentences": 8,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.8186116218566895,
+          "flagged_share": 0.0
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.700021505355835,
+          "flagged_share": 0.2
+        },
+        "L": {
+          "sentences": 8,
+          "mean_prob": 0.6529111415147781,
+          "flagged_share": 0.375
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:826",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 8,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.012095687910914421,
+          "flagged_share": 1.0
+        },
+        "M": {
+          "sentences": 5,
+          "mean_prob": 0.2883421592414379,
+          "flagged_share": 0.6
+        },
+        "L": {
+          "sentences": 8,
+          "mean_prob": 0.3136684594210237,
+          "flagged_share": 0.625
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:857",
+      "stratum": "medium",
+      "status": "completed_with_warning",
+      "distinct_sentences": 14,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.46163107082247734,
+          "flagged_share": 0.5
+        },
+        "M": {
+          "sentences": 6,
+          "mean_prob": 0.5608829396466414,
+          "flagged_share": 0.5
+        },
+        "L": {
+          "sentences": 14,
+          "mean_prob": 0.5468479382938572,
+          "flagged_share": 0.5
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:894",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 9,
+      "views": {
+        "S": {
+          "sentences": 2,
+          "mean_prob": 0.2553302235901356,
+          "flagged_share": 1.0
+        },
+        "M": {
+          "sentences": 6,
+          "mean_prob": 0.3153347273667653,
+          "flagged_share": 0.8333333333333334
+        },
+        "L": {
+          "sentences": 9,
+          "mean_prob": 0.24938229637013543,
+          "flagged_share": 0.8888888888888888
+        }
+      }
+    },
+    {
+      "candidate": "qwen3",
+      "record_id": "valid:905",
+      "stratum": "long",
+      "status": "completed_with_warning",
+      "distinct_sentences": 10,
+      "views": {
+        "S": {
+          "sentences": 3,
+          "mean_prob": 0.4305924115081628,
+          "flagged_share": 0.6666666666666666
+        },
+        "M": {
+          "sentences": 7,
+          "mean_prob": 0.47439786126571043,
+          "flagged_share": 0.5714285714285714
+        },
+        "L": {
+          "sentences": 10,
+          "mean_prob": 0.45671265479177237,
+          "flagged_share": 0.6
+        }
+      }
+    }
+  ]
+}

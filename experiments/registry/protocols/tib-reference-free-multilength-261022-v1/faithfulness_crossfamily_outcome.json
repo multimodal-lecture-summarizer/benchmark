@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "criteria_id": "tib-faithfulness-crossfamily-cost-v2",
+  "criteria_sha256_prefix": "71e231b7bd6165db",
+  "executed": "2026-10-22, Colab Tesla T4, user-run",
+  "evidence": "executed notebook experiments/notebooks/tib_p4e_faithfulness_cost_t4_261022_v1.ipynb (15 cells, no errors); the receipt JSON remains in the user's Drive and was not read",
+  "environment": {"python": "3.13 (from the traceback path)", "torch": "2.11.0+cu130", "transformers": "5.20.1", "gpu": "Tesla T4"},
+  "sample": {"train_sources_available": 7159, "records": 60, "summaries": 300, "budget_view_words": 120, "groups": ["lead", "uniform", "random", "offtopic", "corrupted"]},
+  "families": {
+    "MiniCheck": {
+      "model_name": "roberta-large",
+      "install": "pip from the public repository; ran after downloading punkt_tab for NLTK",
+      "scored": "300 of 300, zero row errors",
+      "G1_auroc": 0.9898,
+      "G1_pass": true,
+      "G2_share": 1.0,
+      "G2_pass": true,
+      "seconds_per_summary_median": 11.65,
+      "seconds_per_summary_mean": 15.62,
+      "peak_vram_gib": 1.68,
+      "notebook_projection_gpu_hours_for_12000_summaries": 38.8,
+      "projection_basis_note": "the notebook projects with the median; the mean is the right basis for a total and gives about 52 GPU hours"
+    },
+    "AlignScore": {
+      "available": false,
+      "reason": "pip install fails on its torch<2 pin; installing without dependencies succeeded but importing fails with: cannot import name 'AdamW' from 'transformers' (removed in transformers 5)"
+    },
+    "SummaC": {"available": false, "reason": "not attempted (skipped by default; pins older libraries)"}
+  },
+  "G3_cross_family": "not testable: only one family ran",
+  "limits": [
+    "G1 and G2 are easy checks: gross off-topic and foreign sentences versus source extracts. They show MiniCheck separates unrelated text, not that it detects subtle hallucination in abstractive summaries.",
+    "No agreement check between families, so no evidence that the choice of family does not matter.",
+    "The time is for a 120-word view; the median/mean gap shows a heavy tail, probably long sources, but the per-length breakdown was not printed."
+  ],
+  "admissible_pending_cost_approval": ["MiniCheck"],
+  "decision_needed": "scoring scope and budget"
+}
