@@ -45,3 +45,7 @@ htmlcov/
 
 # Local authoring file
 /docs/workspace/NguyenNgocDuy_E14_updated.docx
+
+# Notebook outputs over GitHub 100 MB limit; kept locally only
+experiments/notebooks/diagnostics/mlpdataset_slide_transition_eda_colab.ipynb
+experiments/notebooks/diagnostics/mlpdataset_native_review_colab.ipynb
