@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "receipt_id": "tib-selection300-readiness-261023",
+  "gates": {
+    "profile_list_v2": {
+      "status": "PASS",
+      "detail": "four profiles bound to Pilot40 run identities, profile content re-hashed"
+    },
+    "allocations_selection300_final523": {
+      "status": "PASS",
+      "detail": "approved ceilings validated against the measured projection and the profile list hash"
+    },
+    "cap350_locked": {
+      "status": "PASS",
+      "detail": "no forced cuts and no non-design capping in Pilot40"
+    },
+    "admission_rules_ratified": {
+      "status": "PASS",
+      "detail": "D1, v2 matches current v1"
+    },
+    "view_policy": {
+      "status": "PASS",
+      "detail": "D2"
+    },
+    "minicheck_scope": {
+      "status": "PASS",
+      "detail": "D3 excluded from budget"
+    },
+    "scorer_frozen": {
+      "status": "PASS",
+      "detail": "D4 scorer v2 identity re-verified against files on disk"
+    },
+    "generation_bundle_for_300_ids": {
+      "status": "OPEN",
+      "detail": "no hash-bound bundle or notebook for the 300 selection IDs exists yet (tib_pilot_bundle.py is fixed to 40)"
+    },
+    "t4_preflight_first_session": {
+      "status": "OPEN",
+      "detail": "actual T4, pins and quota probes pass only inside the first session"
+    },
+    "selection_cohort_hash_bound_to_bundle": {
+      "status": "OPEN",
+      "detail": "development_cohort.json selection IDs must be hashed into the bundle once it exists"
+    },
+    "drive_store_check_first_session": {
+      "status": "OPEN",
+      "detail": "persistent store write/readback is verified per session before long work"
+    }
+  },
+  "binding_gates_pass": true,
+  "blocking_open_gates": [
+    "generation_bundle_for_300_ids",
+    "t4_preflight_first_session",
+    "selection_cohort_hash_bound_to_bundle",
+    "drive_store_check_first_session"
+  ],
+  "selection_start_authorized": false,
+  "note": "This receipt records bound protocol artifacts only. Starting selection300 needs the generation bundle plan and an explicit user go-ahead."
+}

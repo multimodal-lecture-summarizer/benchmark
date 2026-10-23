@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "policy_id": "tib-view-policy-v1",
+  "budgets_words": {
+    "S": 60,
+    "M": 120,
+    "L": 240
+  },
+  "primary_metric": "ROUGE-L F1 at the 350-word delivered view, unchanged",
+  "secondary_views": "ROUGE-L and BERTScore at S, M and L for every profile, Holm over the three views",
+  "identical_view_text": "scored once and reused; still listed per view so every profile has three rows",
+  "reporting_caveat": "Lead-3 and BART produce S=L for most records (35/40 and 35/37 in Pilot40), so their view rows are nearly duplicates and the Holm family counts a view that cannot differ",
+  "views_are_prefix_slices": "they measure the first N words, not the ability to write an N-word summary",
+  "faithfulness_metric": "none in selection300/final523 (MiniCheck excluded by D3)",
+  "selection_start_authorized": false
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "rules_id": "tib-selection300-admission-v2",
+  "ratified": true,
+  "ratification_pending": null,
+  "source_contract": "phase-04 development and validation selection contract, items 4-10",
+  "validation_set": {
+    "selection_n": 300,
+    "strata": [
+      "short",
+      "medium",
+      "long"
+    ],
+    "quotas": {
+      "short": 100,
+      "medium": 90,
+      "long": 110
+    },
+    "cutpoints_words": [
+      3447,
+      5891
+    ]
+  },
+  "families": [
+    "lexrank",
+    "bart",
+    "led"
+  ],
+  "fixed_control": "lead3",
+  "K_models": 3,
+  "K_total": 4,
+  "max_paired_contrasts": 6,
+  "acceptance_policy": {
+    "file": "intermediate_acceptance_policy_v1.json",
+    "sha256": "83f23ca8c8ae725cbed33674be9c062fe7cc757e4131aa0c306d6cef176a48ff",
+    "successful_statuses": [
+      "completed",
+      "completed_with_warning"
+    ],
+    "failures_are_null_not_zero": true
+  },
+  "scored_success": "generation complete and ROUGE-L F1 finite; BERTScore secondary; SBERT diagnostic only, never reported or used to choose",
+  "config_coverage": {
+    "overall_min": 0.95,
+    "per_stratum_min": 0.9,
+    "applies_to": [
+      "lexrank",
+      "bart",
+      "led",
+      "lead3 (fixed control, same floors)"
+    ]
+  },
+  "common_coverage": {
+    "overall_min": 0.9,
+    "per_stratum_min": 0.8,
+    "common_n_min": 180,
+    "per_nonempty_stratum_n_min": 20
+  },
+  "tier_a": "one profile per family and trial cap 0, so A_f = {profile} and the representative is that profile",
+  "tier_a_failure": "an empty A_f, or a C_f below the common floors, makes the family not representative; the profile is not swapped after seeing the family comparison",
+  "f_between_frozen": "F_between is fixed from status, coverage and resource rules before any quality aggregation",
+  "stratum_direction": "the sign of each delta must hold in every stratum above the floor; a reversal there is no_selection",
+  "tier_b": {
+    "min_families": 2,
+    "common_set": "C_between = intersection of scored-success IDs of the admitted representatives and Lead-3",
+    "leader_margin_rouge_l_min": 0.01,
+    "margin_scale": "absolute, 0-1",
+    "lead3_guard_delta_min": 0.0,
+    "guard_scope": "C_between and strata above the floor",
+    "otherwise": "no_selection; no relabelling, no dropping rivals or hard IDs"
+  },
+  "ties": "exact tie by config priority, then stable profile ID; practical-small difference is no_selection",
+  "config_priority": "selection300_profiles_v2.json config_priority_for_exact_ties",
+  "resource_rule": {
+    "partial_on_exhaustion": "report on the whole sealed V, never a completed prefix",
+    "automatic_retries": false,
+    "source_order": "frozen"
+  },
+  "forbidden_after_scores": [
+    "change representatives",
+    "lower floors",
+    "change membership",
+    "open trials",
+    "reselect on the test set"
+  ],
+  "selection_start_authorized": false,
+  "ratified_on": "2026-10-23",
+  "supersedes": {
+    "file": "admission_rules_v1.json",
+    "sha256": "f07f43aa0919229fb2b96a60b78bf66a541f3a5cd6e1d59ef30613b67e1a1e89"
+  },
+  "decision_file": "decisions_261023_v1.json"
+}

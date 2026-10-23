@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "receipt_id": "tib-selection300-readiness-v2-261023",
+  "supersedes_gates_of": "selection300_readiness_receipt.json (v1, unchanged)",
+  "bundle": {
+    "archive_sha256": "80fb1651aadaea639e64b0cbbf5bf41872d73db3afbc7ac945fd7a964d745129",
+    "manifest_sha256": "408ef82fda985953bb40318792651a447235e18ff6fffdf294909d74b535e8a3"
+  },
+  "gates": {
+    "binding_gates_v1": {
+      "status": "PASS",
+      "detail": "all receipt v1 binding gates re-verified from disk"
+    },
+    "generation_bundle_for_300_ids": {
+      "status": "PASS",
+      "detail": "validate_bundle PASS on the built package; ZIP re-hashed and equal to the package; manifest hash equals the preparation receipt; locked artifacts match the contract"
+    },
+    "selection_cohort_hash_bound_to_bundle": {
+      "status": "PASS",
+      "detail": "contract IDs, quotas, staged_ids and cohort hash equal the sealed cohort"
+    },
+    "colab_notebook_prepared": {
+      "status": "PASS",
+      "detail": "notebook hash recorded and embeds the ZIP and manifest hashes"
+    },
+    "t4_preflight_first_session": {
+      "status": "OPEN",
+      "detail": "closes only inside the first Colab session (preflight_receipt.json)"
+    },
+    "drive_store_check_first_session": {
+      "status": "OPEN",
+      "detail": "closes only inside the first Colab session (fsync/rename/readback probe)"
+    }
+  },
+  "prepared_gates_pass": true,
+  "blocking_open_gates": [
+    "t4_preflight_first_session",
+    "drive_store_check_first_session"
+  ],
+  "selection_start_authorized": false,
+  "next_step": "User states explicitly to start; the agent then writes start_authorization.json bound to this manifest hash."
+}

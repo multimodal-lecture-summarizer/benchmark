@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "rule": "1.5x maximum observed Pilot40 call per profile and stage; operational guard, not a statistical bound",
+  "source_zip_sha256": "39cc411bd3304041a478c1fb55b55b2417764538a62df69aa15472ab0980dbce",
+  "stage_seconds": {
+    "bart": {
+      "final": 2.17092287100013,
+      "map": 3.528374198999984,
+      "reduce": 2.397747013499952
+    },
+    "led": {
+      "final": 16.845300370500127,
+      "map": 11.158201596000026,
+      "reduce": 6.517559920500048
+    }
+  },
+  "load_seconds": {
+    "bart": 44.61875566350005,
+    "led": 43.82325574050003
+  },
+  "calls_observed": {
+    "bart": {
+      "final": 37,
+      "map": 258,
+      "reduce": 41
+    },
+    "led": {
+      "final": 37,
+      "map": 64,
+      "reduce": 25
+    }
+  }
+}

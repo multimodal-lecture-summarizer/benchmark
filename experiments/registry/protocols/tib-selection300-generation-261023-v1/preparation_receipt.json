@@ -1,0 +1,15 @@
+{
+  "status": "PREPARED_AUTHORIZATION_AND_ACTUAL_EXECUTION_REQUIRED",
+  "archive_bytes": 3172419,
+  "archive_sha256": "80fb1651aadaea639e64b0cbbf5bf41872d73db3afbc7ac945fd7a964d745129",
+  "manifest_sha256": "408ef82fda985953bb40318792651a447235e18ff6fffdf294909d74b535e8a3",
+  "source_records": 300,
+  "source_strata": {
+    "short": 100,
+    "long": 110,
+    "medium": 90
+  },
+  "expected_cells": 1200,
+  "actual_execution": false,
+  "selection_start_authorized": false
+}

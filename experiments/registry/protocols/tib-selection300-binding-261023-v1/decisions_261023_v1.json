@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "decided_by": "user",
+  "decided_on": "2026-10-23",
+  "answers": {
+    "D1": "ratify_verbatim",
+    "D2": "report_all_three_views",
+    "D3": "exclude_minicheck",
+    "D4": "freeze_v2"
+  },
+  "post_hoc": {
+    "D1": false,
+    "reason": "thresholds ratified verbatim; declared before Pilot40 scores were seen"
+  },
+  "note_D2": "user chose to report all three views for every profile instead of the recommended changing-views-only policy",
+  "selection_start_authorized": false
+}

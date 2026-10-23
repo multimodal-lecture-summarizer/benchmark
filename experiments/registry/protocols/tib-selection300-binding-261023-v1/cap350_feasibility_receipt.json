@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "scope": "cap350 feasibility from Pilot40 outputs; text-free",
+  "pilot40_evidence_zip_sha256": "39cc411bd3304041a478c1fb55b55b2417764538a62df69aa15472ab0980dbce",
+  "word_cap": 350,
+  "usable_outputs": 154,
+  "by_profile": {
+    "lead3": {
+      "usable": 40,
+      "capped": 0,
+      "forced_word_boundary": 0,
+      "records_with_warnings": 0,
+      "warning_counts": {}
+    },
+    "lexrank": {
+      "usable": 40,
+      "capped": 0,
+      "forced_word_boundary": 0,
+      "records_with_warnings": 0,
+      "warning_counts": {}
+    },
+    "bart": {
+      "usable": 37,
+      "capped": 0,
+      "forced_word_boundary": 0,
+      "records_with_warnings": 4,
+      "warning_counts": {
+        "sentence_ending": 4
+      }
+    },
+    "led": {
+      "usable": 37,
+      "capped": 0,
+      "forced_word_boundary": 0,
+      "records_with_warnings": 25,
+      "warning_counts": {
+        "repetition": 2,
+        "sentence_ending": 25,
+        "no_terminal_eos": 10,
+        "token_budget_exhausted": 10,
+        "output_reserve_reached": 10
+      }
+    }
+  },
+  "by_profile_stratum": {
+    "lead3|short": {
+      "raw_words": {
+        "n": 13,
+        "median": 43,
+        "p95_nearest_rank": 92,
+        "max": 92
+      },
+      "delivered_words": {
+        "n": 13,
+        "median": 43,
+        "p95_nearest_rank": 92,
+        "max": 92
+      },
+      "capped": 0,
+      "forced_word_boundary": 0
+    },
+    "lead3|medium": {
+      "raw_words": {
+        "n": 12,
+        "median": 35.0,
+        "p95_nearest_rank": 55,
+        "max": 55
+      },
+      "delivered_words": {
+        "n": 12,
+        "median": 35.0,
+        "p95_nearest_rank": 55,
+        "max": 55
+      },
+      "capped": 0,
+      "forced_word_boundary": 0
+    },
+    "lead3|long": {
+      "raw_words": {
+        "n": 15,
+        "median": 28,
+        "p95_nearest_rank": 118,
+        "max": 118
+      },
+      "delivered_words": {
+        "n": 15,
+        "median": 28,
+        "p95_nearest_rank": 118,
+        "max": 118
+      },
+      "capped": 0,
+      "forced_word_boundary": 0
+    },
+    "lexrank|short": {
+      "raw_words": {
+        "n": 13,
+        "median": 350,
+        "p95_nearest_rank": 350,
+        "max": 350
+      },
+      "delivered_words": {
+        "n": 13,
+        "median": 350,
+        "p95_nearest_rank": 350,
+        "max": 350
+      },
+      "capped": 0,
+      "forced_word_boundary": 0
+    },
+    "lexrank|medium": {
+      "raw_words": {
+        "n": 12,
+        "median": 350.0,
+        "p95_nearest_rank": 350,
+        "max": 350
+      },
+      "delivered_words": {
+        "n": 12,
+        "median": 350.0,
+        "p95_nearest_rank": 350,
+        "max": 350
+      },
+      "capped": 0,
+      "forced_word_boundary": 0
+    },
+    "lexrank|long": {
+      "raw_words": {
+        "n": 15,
+        "median": 350,
+        "p95_nearest_rank": 350,
+        "max": 350
+      },
+      "delivered_words": {
+        "n": 15,
+        "median": 350,
+        "p95_nearest_rank": 350,
+        "max": 350
+      },
+      "capped": 0,
+      "forced_word_boundary": 0
+    },
+    "bart|short": {
+      "raw_words": {
+        "n": 12,
+        "median": 46.5,
+        "p95_nearest_rank": 54,
+        "max": 54
+      },
+      "delivered_words": {
+        "n": 12,
+        "median": 46.5,
+        "p95_nearest_rank": 54,
+        "max": 54
+      },
+      "capped": 0,
+      "forced_word_boundary": 0
+    },
+    "bart|medium": {
+      "raw_words": {
+        "n": 11,
+        "median": 46,
+        "p95_nearest_rank": 64,
+        "max": 64
+      },
+      "delivered_words": {
+        "n": 11,
+        "median": 46,
+        "p95_nearest_rank": 64,
+        "max": 64
+      },
+      "capped": 0,
+      "forced_word_boundary": 0
+    },
+    "bart|long": {
+      "raw_words": {
+        "n": 14,
+        "median": 46.5,
+        "p95_nearest_rank": 68,
+        "max": 68
+      },
+      "delivered_words": {
+        "n": 14,
+        "median": 46.5,
+        "p95_nearest_rank": 68,
+        "max": 68
+      },
+      "capped": 0,
+      "forced_word_boundary": 0
+    },
+    "led|short": {
+      "raw_words": {
+        "n": 12,
+        "median": 197.0,
+        "p95_nearest_rank": 294,
+        "max": 294
+      },
+      "delivered_words": {
+        "n": 12,
+        "median": 197.0,
+        "p95_nearest_rank": 294,
+        "max": 294
+      },
+      "capped": 0,
+      "forced_word_boundary": 0
+    },
+    "led|medium": {
+      "raw_words": {
+        "n": 11,
+        "median": 82,
+        "p95_nearest_rank": 239,
+        "max": 239
+      },
+      "delivered_words": {
+        "n": 11,
+        "median": 82,
+        "p95_nearest_rank": 239,
+        "max": 239
+      },
+      "capped": 0,
+      "forced_word_boundary": 0
+    },
+    "led|long": {
+      "raw_words": {
+        "n": 14,
+        "median": 131.0,
+        "p95_nearest_rank": 244,
+        "max": 244
+      },
+      "delivered_words": {
+        "n": 14,
+        "median": 131.0,
+        "p95_nearest_rank": 244,
+        "max": 244
+      },
+      "capped": 0,
+      "forced_word_boundary": 0
+    }
+  },
+  "forced_word_boundary_total": 0,
+  "capped_outside_by_design_total": 0,
+  "fills_to_cap_by_design": [
+    "lexrank"
+  ],
+  "cap_lock_allowed": true,
+  "claim_limit": "feasibility evidence on 11-15 outputs per profile and stratum, not a guarantee for selection300",
+  "cap_is_maximum_not_generation_target": true,
+  "references_used_for_cap": false,
+  "derivation_source": "output_policy.json: eligible train p95 = 333 words, rounded up to a multiple of 25"
+}

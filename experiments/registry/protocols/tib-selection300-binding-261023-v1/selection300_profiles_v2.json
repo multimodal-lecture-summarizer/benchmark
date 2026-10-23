@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "state": "BOUND_PENDING_READINESS_RECEIPT",
+  "scope": "selection300 and final523",
+  "pilot40_evidence_zip_sha256": "39cc411bd3304041a478c1fb55b55b2417764538a62df69aa15472ab0980dbce",
+  "profiles": [
+    {
+      "candidate_id": "lead3",
+      "profile_id": "lead3",
+      "profile_sha256": "09ccef3bb10d4947d17ed83430fe665175212548904fa41da2c6b8cb7c3c1de2",
+      "profile_content_rehashed": true,
+      "role": "fixed_control",
+      "generation_device": "cpu",
+      "checkpoint": null,
+      "run_identity_sha256": "7a0cc59e5e83d880cc5376120e9b741634750381773376750d990a7dbbb368ee",
+      "acceptance_policy_sha256": "83f23ca8c8ae725cbed33674be9c062fe7cc757e4131aa0c306d6cef176a48ff",
+      "pilot_bundle_sha256": "0a9a85ad4e1af5b886e92ab19ea794001e74c1b516802c35e22fb3c7d319412d",
+      "ran_in_pilot40": {
+        "status": "PASS",
+        "records": 40,
+        "failed_by_origin": {}
+      }
+    },
+    {
+      "candidate_id": "lexrank",
+      "profile_id": "lexrank",
+      "profile_sha256": "5b1c55d748bb12e6f85c6ddeb2d9386fa9d7dc76197f6463b0e3506a7538f206",
+      "profile_content_rehashed": true,
+      "role": "model_family",
+      "generation_device": "cpu",
+      "checkpoint": null,
+      "run_identity_sha256": "93e82c17f74a03d624ff86471c0de4f400918192b0a8a44a74d6292ecedd2cd2",
+      "acceptance_policy_sha256": "83f23ca8c8ae725cbed33674be9c062fe7cc757e4131aa0c306d6cef176a48ff",
+      "pilot_bundle_sha256": "0a9a85ad4e1af5b886e92ab19ea794001e74c1b516802c35e22fb3c7d319412d",
+      "ran_in_pilot40": {
+        "status": "PASS",
+        "records": 40,
+        "failed_by_origin": {}
+      }
+    },
+    {
+      "candidate_id": "bart",
+      "profile_id": "bart-control",
+      "profile_sha256": "5b07c5bd27fbdf8f384274e4ab553a664fda52399302252573bb49270e991902",
+      "profile_content_rehashed": true,
+      "role": "model_family",
+      "generation_device": "cuda",
+      "checkpoint": "facebook/bart-large-cnn",
+      "run_identity_sha256": "5916fd41212f4a98f1952b306c91582dd0b24d0b30b07957c86a0b947e9da62f",
+      "acceptance_policy_sha256": "83f23ca8c8ae725cbed33674be9c062fe7cc757e4131aa0c306d6cef176a48ff",
+      "pilot_bundle_sha256": "0a9a85ad4e1af5b886e92ab19ea794001e74c1b516802c35e22fb3c7d319412d",
+      "ran_in_pilot40": {
+        "status": "COMPLETED_WITH_FAILURES",
+        "records": 40,
+        "failed_by_origin": {
+          "historical_import": 3
+        }
+      },
+      "model_revision": "37f520fa929c961707657b28798b30c003dd100b",
+      "dtype": "torch.float16",
+      "attention_backend": "eager",
+      "device_map": {
+        "": "cuda:0"
+      }
+    },
+    {
+      "candidate_id": "led",
+      "profile_id": "led-ngram3",
+      "profile_sha256": "4e6e81c1437450fab3cffb2a271747f0028cef8d55f8f22f73209930acc7320a",
+      "profile_content_rehashed": true,
+      "role": "model_family",
+      "generation_device": "cuda",
+      "checkpoint": "allenai/led-large-16384-arxiv",
+      "run_identity_sha256": "63d51a4e48d3d489e2998b4c9767c469aa2c6ad05162869205e9c3cbb389d9ca",
+      "acceptance_policy_sha256": "83f23ca8c8ae725cbed33674be9c062fe7cc757e4131aa0c306d6cef176a48ff",
+      "pilot_bundle_sha256": "0a9a85ad4e1af5b886e92ab19ea794001e74c1b516802c35e22fb3c7d319412d",
+      "ran_in_pilot40": {
+        "status": "COMPLETED_WITH_FAILURES",
+        "records": 40,
+        "failed_by_origin": {
+          "historical_import": 3
+        }
+      },
+      "model_revision": "0f8b26971c44af9d4e21edd17ccb5e000f22dac1",
+      "dtype": "torch.float16",
+      "attention_backend": "eager",
+      "device_map": {
+        "": "cuda:0"
+      }
+    }
+  ],
+  "allowed_config_list_sha256": "b38a0259d115ea3ec5127c2fd2d50716f31b3c39347f84f2d5568adda51fcbde",
+  "excluded": {
+    "qwen3": "protocol decision 2026-10-23 18:42: dropped from selection300/final523 (resource subset)"
+  },
+  "K_models": 3,
+  "K_total": 4,
+  "max_paired_contrasts": 6,
+  "selection_trial_cap_per_candidate": 0,
+  "selection_total_profile_cap": 4,
+  "config_priority_for_exact_ties": [
+    "lead3",
+    "lexrank",
+    "bart-control",
+    "led-ngram3"
+  ],
+  "tie_priority_note": "last-resort tie break only; stable profile ID follows",
+  "historical_import_used": false,
+  "selection_start_authorized": false,
+  "decision": "plans/reports/protocol-decision-261023-1940-tib-keep-scorer-v2-approve-budget-ceilings-report.md"
+}

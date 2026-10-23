@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "policy_id": "tib-output-train-p95-350-v2",
+  "state": "locked_before_selection",
+  "derived_global_word_cap": 350,
+  "supersedes_state_of": {
+    "file": "output_policy.json",
+    "sha256": "761f430aa9056a1cecfecb4020b26fa73cf95e68669fa4894763412d0fdbf8b7",
+    "previous_state": "value_ratified_profile_feasibility_pending"
+  },
+  "cap_feasibility_receipt_sha256": "d818cd83b6860cd5a62f79aaa464d65ea2c670089e6168d0e99785a941c78a24",
+  "selector": "experiments.scripts.tib_benchmark_output.select_delivered",
+  "sentence_splitter": "punctuation_whitespace_newline_v1",
+  "eligible_train_n": 4213,
+  "p95_words": 333,
+  "validation_or_test_references_used_for_cap": false,
+  "applies_to": [
+    "lead3",
+    "lexrank",
+    "bart",
+    "led"
+  ],
+  "scoring_text": "delivered summary only; preserve raw output and raw/delivered hashes separately",
+  "cap_is_maximum_not_generation_target": true
+}

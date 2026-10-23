@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "HOLD",
+  "scorer_ready": false,
+  "actual_colab_execution": false,
+  "reason": "Prepared only; actual Colab execution evidence required",
+  "archive_bytes": 1872525,
+  "archive_sha256": "7bf87082613716753556182917d350cc22ea10dc4d4646ee11ad9f912a0831ae",
+  "manifest_sha256": "6ce92817235bbca7b57a96d76e253894c40f622349838809be9d02c9666c319c",
+  "rows": 160,
+  "scoreable_rows": 154,
+  "failed_rows": 6,
+  "rows_by_profile": {
+    "lead3": 40,
+    "lexrank": 40,
+    "bart": 40,
+    "led": 40
+  },
+  "quality_ranking_performed": false,
+  "generation_executed": false,
+  "selection_start_authorized": false
+}

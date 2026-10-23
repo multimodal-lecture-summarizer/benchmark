@@ -1,0 +1,335 @@
+{
+  "checks": {
+    "package_manifest_matches_prepared_bundle": true,
+    "package_files_identical_to_built_bundle": true,
+    "all_1200_cells_present_in_denominator": true,
+    "no_binding_mismatch_and_no_retry": true,
+    "quality_null_everywhere_and_all_fresh": true,
+    "every_delivered_output_within_350_words": true,
+    "no_qwen3_output": true,
+    "cpu_profiles_complete": true,
+    "preflight_pass_on_tesla_t4": true,
+    "authorization_binds_this_bundle": true,
+    "selection_not_authorized_for_metrics": true,
+    "ledger_within_approved_totals": true
+  },
+  "audit_pass": true,
+  "per_profile": {
+    "lead3": {
+      "receipt_status": "PASS",
+      "statuses": {
+        "completed": 300
+      },
+      "records_on_disk": 300,
+      "missing": 0,
+      "binding_mismatches": 0,
+      "delivered_words": {
+        "n": 300,
+        "mean": 43.06,
+        "p50": 36.0,
+        "p90": 73.0,
+        "max": 350
+      },
+      "capped": 2,
+      "forced_word_cuts": 1,
+      "cap_events": [
+        {
+          "record_id": "valid:139",
+          "stratum": "short",
+          "raw_words": 3213,
+          "delivered_words": 350,
+          "forced_word_cut": true
+        },
+        {
+          "record_id": "valid:91",
+          "stratum": "medium",
+          "raw_words": 450,
+          "delivered_words": 59,
+          "forced_word_cut": false
+        }
+      ],
+      "warning_counts": {},
+      "quality_all_null": true,
+      "origin_all_fresh": true,
+      "retried": 0,
+      "new_generation_calls": 0,
+      "new_generation_wall_seconds": 0,
+      "total_wall_seconds": 23.904821960999982,
+      "model_load_wall_seconds": 0,
+      "peak_vram_reserved_bytes": 0
+    },
+    "lexrank": {
+      "receipt_status": "PASS",
+      "statuses": {
+        "completed": 300
+      },
+      "records_on_disk": 300,
+      "missing": 0,
+      "binding_mismatches": 0,
+      "delivered_words": {
+        "n": 300,
+        "mean": 349.27666666666664,
+        "p50": 350.0,
+        "p90": 350.0,
+        "max": 350
+      },
+      "capped": 0,
+      "forced_word_cuts": 0,
+      "cap_events": [],
+      "warning_counts": {},
+      "quality_all_null": true,
+      "origin_all_fresh": true,
+      "retried": 0,
+      "new_generation_calls": 0,
+      "new_generation_wall_seconds": 0,
+      "total_wall_seconds": 31.395239081,
+      "model_load_wall_seconds": 0,
+      "peak_vram_reserved_bytes": 0
+    },
+    "bart": {
+      "receipt_status": "PASS",
+      "statuses": {
+        "completed": 270,
+        "completed_with_warning": 30
+      },
+      "records_on_disk": 300,
+      "missing": 0,
+      "binding_mismatches": 0,
+      "delivered_words": {
+        "n": 300,
+        "mean": 49.78,
+        "p50": 49.0,
+        "p90": 57.0,
+        "max": 72
+      },
+      "capped": 0,
+      "forced_word_cuts": 0,
+      "cap_events": [],
+      "warning_counts": {
+        "sentence_ending": 30
+      },
+      "quality_all_null": true,
+      "origin_all_fresh": true,
+      "retried": 0,
+      "new_generation_calls": 2628,
+      "new_generation_wall_seconds": 3514.3018978209857,
+      "total_wall_seconds": 5010.3783548480005,
+      "model_load_wall_seconds": 36.30295399900001,
+      "peak_vram_reserved_bytes": 1174405120
+    },
+    "led": {
+      "receipt_status": "COMPLETED_WITH_FAILURES",
+      "statuses": {
+        "completed_with_warning": 147,
+        "completed": 150,
+        "failed": 3
+      },
+      "records_on_disk": 300,
+      "missing": 0,
+      "binding_mismatches": 0,
+      "delivered_words": {
+        "n": 297,
+        "mean": 98.92255892255892,
+        "p50": 77.0,
+        "p90": 215.4000000000002,
+        "max": 336
+      },
+      "capped": 5,
+      "forced_word_cuts": 0,
+      "cap_events": [
+        {
+          "record_id": "valid:481",
+          "stratum": "short",
+          "raw_words": 404,
+          "delivered_words": 336,
+          "forced_word_cut": false
+        },
+        {
+          "record_id": "valid:62",
+          "stratum": "short",
+          "raw_words": 358,
+          "delivered_words": 332,
+          "forced_word_cut": false
+        },
+        {
+          "record_id": "valid:627",
+          "stratum": "short",
+          "raw_words": 505,
+          "delivered_words": 293,
+          "forced_word_cut": false
+        },
+        {
+          "record_id": "valid:729",
+          "stratum": "short",
+          "raw_words": 481,
+          "delivered_words": 327,
+          "forced_word_cut": false
+        },
+        {
+          "record_id": "valid:796",
+          "stratum": "short",
+          "raw_words": 482,
+          "delivered_words": 299,
+          "forced_word_cut": false
+        }
+      ],
+      "warning_counts": {
+        "sentence_ending": 147,
+        "no_terminal_eos": 48,
+        "token_budget_exhausted": 48,
+        "output_reserve_reached": 48,
+        "repetition": 16
+      },
+      "quality_all_null": true,
+      "origin_all_fresh": true,
+      "retried": 0,
+      "new_generation_calls": 1011,
+      "new_generation_wall_seconds": 3868.4654362729925,
+      "total_wall_seconds": 6409.342973269001,
+      "model_load_wall_seconds": 26.730184826000368,
+      "peak_vram_reserved_bytes": 2904555520
+    }
+  },
+  "failures": [
+    {
+      "candidate": "led",
+      "record_id": "valid:185",
+      "stratum": "medium",
+      "error": "AdapterFailure: reduction does not reduce note count and native tokens",
+      "events": [
+        "completed",
+        "completed",
+        "completed"
+      ]
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:268",
+      "stratum": "medium",
+      "error": "AdapterFailure: reduction does not reduce note count and native tokens",
+      "events": [
+        "completed",
+        "completed",
+        "completed"
+      ]
+    },
+    {
+      "candidate": "led",
+      "record_id": "valid:549",
+      "stratum": "medium",
+      "error": "AdapterFailure: reduction does not reduce note count and native tokens",
+      "events": [
+        "completed",
+        "completed",
+        "completed"
+      ]
+    }
+  ],
+  "stage_seconds_per_call": {
+    "bart": {
+      "map": {
+        "n": 2004,
+        "mean": 1.398790510369258,
+        "p50": 1.3384876639997856,
+        "p90": 1.7397745019999094,
+        "max": 2.7765251539999554
+      },
+      "reduce": {
+        "n": 324,
+        "mean": 1.187528429055543,
+        "p50": 1.1744148750001386,
+        "p90": 1.3621264365997832,
+        "max": 1.590107966000005
+      },
+      "final": {
+        "n": 300,
+        "mean": 1.0878883467566554,
+        "p50": 1.0691553909999811,
+        "p90": 1.247902815499947,
+        "max": 1.628774772999975
+      }
+    },
+    "led": {
+      "final": {
+        "n": 297,
+        "mean": 2.997829590393962,
+        "p50": 2.0299506170013046,
+        "p90": 6.325711720800246,
+        "max": 16.54892917899997
+      },
+      "map": {
+        "n": 508,
+        "mean": 4.869189681137784,
+        "p50": 4.72946577500079,
+        "p90": 7.614940567400208,
+        "max": 7.836970862001181
+      },
+      "reduce": {
+        "n": 197,
+        "mean": 2.456566045233461,
+        "p50": 2.04168541800027,
+        "p90": 4.36552846900031,
+        "max": 4.769412370998907
+      }
+    }
+  },
+  "ledger": {
+    "cpu_seconds": 8524.04515783,
+    "gpu_seconds": 12276.04906311,
+    "transfer_bytes": 6281134614,
+    "checkpoint_bytes": 63112924,
+    "checkpoint_flush_seconds": 194.6890316980116,
+    "completed_session_wall_seconds": 640.5239534799998,
+    "session_elapsed_wall_seconds": 11635.52511445
+  },
+  "ledger_sessions": [
+    {
+      "status": "preflight_failed_before_any_model",
+      "accounted_wall_seconds": 489.2502023039999
+    },
+    {
+      "status": "preflight_failed_before_any_model",
+      "accounted_wall_seconds": 151.27375117599996
+    }
+  ],
+  "candidate_runs": [
+    {
+      "candidate_id": "lead3",
+      "cpu_seconds": 5.700440592,
+      "wall_seconds": 23.57925282900004
+    },
+    {
+      "candidate_id": "lexrank",
+      "cpu_seconds": 16.942465138,
+      "wall_seconds": 31.074027957
+    },
+    {
+      "candidate_id": "bart",
+      "cpu_seconds": 3885.288731856,
+      "wall_seconds": 5010.1044725930005
+    },
+    {
+      "candidate_id": "led",
+      "cpu_seconds": 4530.115059834,
+      "wall_seconds": 6409.086290498
+    }
+  ],
+  "anomalies": [
+    {
+      "kind": "session_closed_early_but_generation_continued",
+      "closed_status": "preflight_failed_before_any_model",
+      "accounted_wall_seconds": 151.27375117599996,
+      "runtime_heartbeat_elapsed_seconds": 11635.52511445,
+      "candidate_wall_seconds": {
+        "lead3": 23.57925282900004,
+        "lexrank": 31.074027957,
+        "bart": 5010.1044725930005,
+        "led": 6409.086290498
+      }
+    }
+  ],
+  "schema_version": 1,
+  "protocol_id": "tib-selection300-generation-261023-v1",
+  "evidence_zip_sha256": "be9d87f1b7deb2058280eae8565c8559db6d77b0209139309ee66652a43a723a",
+  "scope": "text-free audit of selection300 generation evidence; no ranking, no selection"
+}

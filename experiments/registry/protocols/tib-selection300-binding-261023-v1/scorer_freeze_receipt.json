@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "freeze_id": "tib-scorer-v2-freeze-261023",
+  "frozen_on": "2026-10-23",
+  "scope": "selection300 and final523",
+  "scorer_spec": {
+    "file": "scorer_spec_v2.json",
+    "sha256": "b83258fab60ee98d6d70e4f3ee2a2fc6f8956f2a8bd95b1a4a6db271a6ac7fdf"
+  },
+  "code_sha256": {
+    "experiments/scripts/tib_benchmark_scorer.py": "6e9c3cb5b65f1ea40cf52adef4589e6378a364e7d9ae96dc725a81e60f2d03b9",
+    "experiments/scripts/tib_benchmark_scorer_probe.py": "c71d5098f55ad1396ad5da99e45dd239c8b97d1839d75fe1e2d292d4afc4a9c8",
+    "experiments/scripts/rq2_tib_benchmark_metrics.py": "5ed3e9fbf89d7ac77f41701cb3970db53b638695e50247b702bbe3482f0846b9",
+    "experiments/scripts/rq2_tib_semantic_v2.py": "9e266aeb946a6c00d570735cd5e79f92c2ea100bdf420f6003c6af62044e7b38",
+    "tests/test_tib_benchmark_scorer.py": "eee0ba4ee342ff7abab3158ac96ab778b328eb2a14e3131f17a00513be42b25f",
+    "tests/test_rq2_tib_semantic_v2.py": "d29c0b01831c22925c33c15f6ba0c6bd6941eae3f3d17aba6ab8f698ee7eec0e"
+  },
+  "runtime_amendments": {
+    "p4b_sha256": "4df61f8ee1db3e5e958d80c802c60ce807aed9b919a15a5beccedd51f838255a",
+    "pilot40_scoring_sha256": "ab4eafd2892f2b7f8f79dcb7cfdf7742ac0b4bc54c1f4276e95b4dc9dc5a4db2",
+    "note": "the Pilot40 scoring amendment is a separate file that carries the same pins as P4b"
+  },
+  "requirements_sha256": "cc3ccea7878a6651f7bfbd734bb13803cac10f37bfbff2d06ea5e416993c5824",
+  "receipts": {
+    "p4b_actual_scorer_ready_sha256": "ef3a0fd8af86f4bc45e3f6e359906d0e07465b716b7deca754770ed9de65930d",
+    "p4c_recovery_audit_sha256": "3179955727016382f9cfb94b2a01c18549cfd3d6448acc6e8aa5f551151fe9d7",
+    "pilot40_scoring_outcome_sha256": "ce592dcfa2f2fbeb534e0700acea22add162ce06bac19f40ab578a056c2300d3",
+    "pilot40_scoring_evidence_zip_sha256": "dee9ae83f7606549b9f68bfb16321f56aa5a82c6746ead71d1deb42d86dd0db0"
+  },
+  "asset_manifests_sha256": {
+    "bert": "ba706c496339252d61ade474aa60009f1fbf16c4201d596a74492bdc60925320",
+    "sentence": "2b2501315f46c24005c8e981cd7b9f290408c819ad0b50286383c82f03a4e0d4"
+  },
+  "pilot40_measured_scoring_seconds_by_stratum": {
+    "short": {
+      "n": 50,
+      "mean": 2.088315667380002,
+      "p50": 2.183226123499935,
+      "p90": 2.8741526865000195,
+      "max": 3.26171146899992
+    },
+    "medium": {
+      "n": 46,
+      "mean": 3.349703933608705,
+      "p50": 3.245909632000121,
+      "p90": 4.57996963800008,
+      "max": 4.984011710999994
+    },
+    "long": {
+      "n": 58,
+      "mean": 6.67591727718966,
+      "p50": 6.162954663999983,
+      "p90": 9.711084904499973,
+      "max": 15.70844272599993
+    }
+  },
+  "metrics_reported": [
+    "rouge1_f1",
+    "rouge2_f1",
+    "rougeL_f1",
+    "bertscore_f1"
+  ],
+  "metrics_computed_not_reported": [
+    "source_sentence_similarity_v1"
+  ],
+  "sbert_note": "computed because scorer v2 is kept unchanged; never reported or used to choose (decisions 22/10 and 23/10)",
+  "idf": false,
+  "dtype": "float32",
+  "word_cap": 350,
+  "selection_start_authorized": false
+}
