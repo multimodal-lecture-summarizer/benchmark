@@ -1,0 +1,22 @@
+{
+  "status": "PREPARED_AUTHORIZATION_AND_ACTUAL_EXECUTION_REQUIRED",
+  "archive_bytes": 5142891,
+  "archive_sha256": "54a647f5d1bd6934ce251dfddc6e7ebc0c2345bcfb27673523723568102b55af",
+  "manifest_sha256": "deddb588d008b94e9e531139fc16b38a8b487ec115b92479097373cb2f0a9c69",
+  "source_records": 523,
+  "source_strata": {
+    "medium": 172,
+    "short": 182,
+    "long": 169
+  },
+  "expected_cells": 2092,
+  "locked_choice": {
+    "label": "selected",
+    "selected_profile": "led",
+    "selected_profile_id": "led-ngram3",
+    "analysis_result_sha256": "37d162ca07a83a26ced2ebee8193f6bbb30c596eb2847aeea76dcaf950069af9"
+  },
+  "actual_execution": false,
+  "final_test_authorized": false,
+  "selection_start_authorized": false
+}

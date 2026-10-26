@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "declaration_id": "tib-selection300-analysis-declarations-261024-v1",
+  "declared_by": "user",
+  "declared_on": "2026-10-24",
+  "user_instruction": "accepted the five proposed declarations (\"thực hiện chốt\") in chat on 2026-10-24",
+  "declared_before_viewing": "any between-profile difference of scores; only coverage, timing and ledger summaries of the audit outcome had been viewed",
+  "post_hoc": false,
+  "applies_rule": "admission_rules_v2.json (ratified 2026-10-23); this file only fixes interpretation, it changes no threshold",
+  "bound_hashes": {
+    "admission_rules_v2_sha256": "4186a4ac74cbb476fb5353b0c32c71aa805f7cd1e418486b4b3cd49c5fe1d0ff",
+    "decisions_261023_v1_sha256": "f9a7d7ff517c4d7d94541a398b10cbd6f8f2f1d2edb3f0057d504cb100a5eeeb",
+    "selection300_profiles_v2_sha256": "b4ceefa83b58ec369f51faedfae71b77caf48147ef873a1e4c1bcea0e6f6ab19",
+    "scoring_outcome_sha256": "82800609effea3d121f24e36c3a5e332de478fb29eacd041fb5256db2b44ec4e",
+    "scoring_contract_sha256": "2b47c7622137a2c793728f91a59491806e4fd5193baf2ef37cd89f7fbbfe9b08"
+  },
+  "declarations": {
+    "1_margin_comparison": {
+      "metric": "ROUGE-L F1, per-ID paired difference, mean over C_between",
+      "margin": 0.01,
+      "scale": "absolute 0-1",
+      "rounding": "none; unrounded float64 means",
+      "comparison": "difference >= 0.01 - 1e-12 passes (a value exactly on the threshold passes; the epsilon only absorbs float artefacts)",
+      "below_margin": "no_selection",
+      "leader_must_beat": "every other admitted representative, each by the margin"
+    },
+    "2_partial_coverage": {
+      "rule": "if any admitted profile or C_between misses a coverage/common floor of admission_rules_v2, or the scoring run was partial, the result is no_selection; never evaluated on a completed prefix",
+      "this_run": "coverage complete (3 x 300, LED 297, C_between 297), so not triggered"
+    },
+    "3_stratum_direction": {
+      "strata_considered": "strata whose C_between size is >= 20 (per_nonempty_stratum_n_min)",
+      "reversal": "the leader-minus-rival mean ROUGE-L difference in a considered stratum has the strictly opposite sign to the overall difference",
+      "exactly_zero": "not a reversal",
+      "on_reversal": "no_selection",
+      "no_relabelling_or_dropping": true
+    },
+    "4_lead3_guard": {
+      "definition": "leader minus Lead-3 mean ROUGE-L >= 0.0 on C_between and in every considered stratum (same epsilon)",
+      "valid_139": "Lead-3 valid:139 is cut mid-sentence at 350 words per the declared baseline; scores kept unchanged; reported as a descriptive note only",
+      "no_score_or_guard_adjustment": true
+    },
+    "5_exact_ties": {
+      "rule": "exact tie (difference == 0.0) resolved by config_priority_for_exact_ties in selection300_profiles_v2.json, then stable profile ID; a difference below the margin is no_selection, not a tie-break"
+    }
+  },
+  "also_fixed": {
+    "result_labels": [
+      "selected",
+      "no_selection"
+    ],
+    "result_recorded_immediately": true,
+    "user_approval_wait": false,
+    "forbidden_after_scores": [
+      "change representatives",
+      "lower floors",
+      "change membership",
+      "open trials",
+      "reselect on the test set"
+    ],
+    "any_later_proposal_to_change_this_file": "must be labelled post-hoc"
+  },
+  "open_separately": "final523 budget: the projection from the selection300 measurement exceeds the 15 GPU-hour ceiling (conservative ~13.3 h wall, ceiling 20; stress ~17 h) and the shared ledger has used 3 of 3 sessions; needs a new allocation and ledger, user decision",
+  "selection_start_authorized": false
+}

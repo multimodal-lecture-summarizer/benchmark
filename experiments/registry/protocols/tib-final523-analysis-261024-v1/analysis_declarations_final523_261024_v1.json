@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "declaration_id": "tib-final523-analysis-declarations-261024-v1",
+  "declared_on": "2026-10-24",
+  "declared_by": "user, who authorised in chat on 2026-10-24 the declaration of the final523 analysis rules and their hash; the assistant drafted the choices and the reasons listed under `reasons`",
+  "declared_before_viewing": "any final523 score. Only the generation bundle, readiness receipt and selection300 outcomes existed; no final523 output, ledger or start authorization had been created",
+  "post_hoc": false,
+  "bound_paths_relative_to_protocols_dir": {
+    "final_cohort_sha256": "tib-final523-generation-261024-v1/final_cohort.json",
+    "selection_contract_sha256": "tib-final523-generation-261024-v1/selection_contract.json",
+    "selection_manifest_sha256": "tib-final523-generation-261024-v1/selection_manifest.json",
+    "selection_allocation_sha256": "tib-final523-generation-261024-v1/selection_allocation.json",
+    "admission_rules_v2_sha256": "tib-selection300-binding-261023-v1/admission_rules_v2.json",
+    "decisions_261023_v1_sha256": "tib-selection300-binding-261023-v1/decisions_261023_v1.json",
+    "selection300_profiles_v2_sha256": "tib-selection300-binding-261023-v1/selection300_profiles_v2.json",
+    "view_policy_v1_sha256": "tib-selection300-binding-261023-v1/view_policy_v1.json",
+    "selection300_analysis_declarations_sha256": "tib-selection300-analysis-261024-v1/analysis_declarations_261024_v1.json",
+    "selection300_analysis_result_sha256": "tib-selection300-analysis-261024-v1/selection300_analysis_result.json",
+    "scorer_resume_policy_final523_v1_sha256": "tib-final523-scoring-261024-v1/scorer_resume_policy_final523_v1.json"
+  },
+  "bound_hashes": {
+    "final_cohort_sha256": "4a038d683173f1f4492578580966da0d3bfc83b516cef33d22e0914893c8d596",
+    "selection_contract_sha256": "d3e68e35ff39c35e0d7ab70516b473eb6f1f135c393a057fed05ca06d5881ff6",
+    "selection_manifest_sha256": "deddb588d008b94e9e531139fc16b38a8b487ec115b92479097373cb2f0a9c69",
+    "selection_allocation_sha256": "746520216b5ca436f9261ba48ea7935eefae5ee9073d3e6d0f811755b67af99a",
+    "admission_rules_v2_sha256": "4186a4ac74cbb476fb5353b0c32c71aa805f7cd1e418486b4b3cd49c5fe1d0ff",
+    "decisions_261023_v1_sha256": "f9a7d7ff517c4d7d94541a398b10cbd6f8f2f1d2edb3f0057d504cb100a5eeeb",
+    "selection300_profiles_v2_sha256": "b4ceefa83b58ec369f51faedfae71b77caf48147ef873a1e4c1bcea0e6f6ab19",
+    "view_policy_v1_sha256": "73f07d4ac0be0a75e8bb61d287d3386eccd1d7858ac0bf7802add1440ae92088",
+    "selection300_analysis_declarations_sha256": "6562bb7daa4da8cf07bad894c50611aa0438e3607c58905672cff91c2ac55993",
+    "selection300_analysis_result_sha256": "37d162ca07a83a26ced2ebee8193f6bbb30c596eb2847aeea76dcaf950069af9",
+    "scorer_resume_policy_final523_v1_sha256": "fb647c5e9da4faa590bc3c92115c2d531836fc2e1e053fa0aec74c8ff32ba26a"
+  },
+  "purpose": "Confirm, on the sealed 523-ID test cohort, the choice locked at selection300 (LED ngram3). Not a new selection: nothing here can change the locked profile.",
+  "locked_choice": {
+    "selected_profile_id": "led-ngram3",
+    "candidate_id": "led",
+    "source": "selection300_analysis_result.json"
+  },
+  "profiles": {
+    "candidate_to_profile_id": {
+      "lead3": "lead3",
+      "lexrank": "lexrank",
+      "bart": "bart-control",
+      "led": "led-ngram3"
+    },
+    "leader": "led",
+    "rivals": [
+      "bart",
+      "lexrank"
+    ],
+    "control": "lead3"
+  },
+  "declarations": {
+    "1_result_labels": {
+      "labels": [
+        "confirmed",
+        "not_confirmed",
+        "not_evaluable"
+      ],
+      "not_evaluable": "a coverage or common-set floor of declaration 3 is missed, or the scoring run was partial; the confirmatory test is then not run and only descriptive tables are reported, labelled partial",
+      "recorded": "immediately after one run, as text-free JSON with input/engine/declaration hashes; no waiting for approval",
+      "single_run": "the engine runs once on the real scores; no re-run to try another reading"
+    },
+    "2_primary_metric": {
+      "metric": "ROUGE-L F1 (unicode_word_lcs_rouge_l_f1_v1) of the delivered 350-word output against the creator abstract",
+      "unit": "per-ID paired difference, mean over C_final",
+      "scale": "absolute 0-1, unrounded float64",
+      "secondary_descriptive": [
+        "BERTScore F1 at the delivered view",
+        "ROUGE-L and BERTScore at views S/M/L = 60/120/240 words (view_policy_v1)",
+        "mean delivered words per profile",
+        "wall seconds per record per profile from the ledger (not a standardised latency benchmark)"
+      ],
+      "source_sbert": "kept in the artefacts as a diagnostic; never reported as quality or factuality, never used in a decision (admission_rules_v2)"
+    },
+    "3_populations_and_missing_cells": {
+      "C_final": "IDs scored-success for all four profiles (scored_success = generation completed or completed_with_warning, and ROUGE-L F1 finite)",
+      "failures": "null, never zero; interrupted `started` records count as failed cells; no retry, no imputation, no dropping of hard IDs",
+      "floors": "identical to admission_rules_v2: per-profile coverage >= 0.95 overall and >= 0.90 per stratum; C_final >= 0.90 of 523 overall, >= 0.80 per stratum, |C_final| >= 180; strata with >= 20 members in C_final are considered",
+      "floors_apply_to": [
+        "lead3",
+        "lexrank",
+        "bart",
+        "led"
+      ],
+      "sensitivity_descriptive": "per-contrast pairwise-complete means (each contrast on the IDs where just its two profiles succeeded), plus missing counts by profile and stratum; never a gate",
+      "never": "evaluate on a completed prefix, or fill a missing LED cell with another profile's output"
+    },
+    "4_confirmatory_family": {
+      "contrasts": [
+        "led minus bart",
+        "led minus lexrank"
+      ],
+      "inference": "paired percentile bootstrap, 10000 resamples, seed 20261024, IDs resampled within stratum (523 distinct source groups, so ID is the independence unit)",
+      "interval": "97.5% two-sided interval per contrast (Bonferroni over the two contrasts, family alpha 0.05)",
+      "criterion_confirmed": "the lower bound of both intervals is > 0 AND the Lead-3 guard holds",
+      "lead3_guard": "mean(led minus lead3) >= 0.0 on C_final (epsilon 1e-12; exactly 0 passes)",
+      "otherwise": "not_confirmed",
+      "not_confirmed_meaning": "the locked choice stays as it was and is reported as unconfirmed on test; it is neither swapped for another profile nor re-selected (forbidden_after_scores)"
+    },
+    "5_reported_but_not_gating": {
+      "practical_margin": "for each confirmatory contrast report whether the mean difference is >= 0.01 (the selection300 margin); a descriptive flag, not part of the criterion",
+      "strata": "per-stratum means, differences and the same interval method for short/medium/long; stratum sign reversals are listed and do not change the label",
+      "other_pairs": "the remaining pairwise differences of the four profiles (at most 6 pairs in all) with unadjusted intervals, labelled exploratory",
+      "effect_with_interval": "every number is reported with its interval; no p-value ranking of profiles"
+    },
+    "6_views_S_M_L": {
+      "scope": "descriptive, never gating",
+      "tests": "for both contrasts and both metrics, a paired bootstrap per view; Holm-adjusted over the three views (family size 3 as in view_policy_v1, even where views are identical)",
+      "duplicates": "report per profile the share of IDs whose S, M and L texts are identical; Lead-3 and BART are expected to be near-duplicates, so their view rows are not independent evidence",
+      "meaning": "views are prefix slices of the stored output (the first N words); they do not measure the ability to write an N-word summary"
+    },
+    "7_post_result_diagnostics": {
+      "cases": "36 IDs, 12 per stratum: the 4 most negative and the 4 most positive (led minus bart) ROUGE-L deltas on C_final, and 4 drawn with seed 20261024 from the rest",
+      "when": "selected and listed only after the result file is written; reading text is allowed only then",
+      "meaning": "qualitative error analysis, not rates and not new gold labels"
+    },
+    "8_claim_limits": "agreement with the creator abstract and pipeline cost on a finite English TIB test cohort. No factuality, key-idea preservation, unseen-domain generalisation or audio/image benefit is claimed, and nothing here applies to other video sets."
+  },
+  "forbidden_after_scores": [
+    "change the leader, rivals or membership",
+    "lower a floor or margin",
+    "change metric, views, seed or resample count",
+    "open trials or tune a profile on test",
+    "reselect on the test set",
+    "drop IDs or cells because of their score"
+  ],
+  "engine_requirement": "a text-free analysis engine reading only metrics.jsonl, view_metrics.jsonl and these bound files is built and tested on synthetic data before any real final523 score is read; its sha256 is recorded in the result. Until it exists this file is the only authority.",
+  "any_later_proposal_to_change_this_file": "must be labelled post-hoc",
+  "reasons": {
+    "confirmatory_not_selection": "the choice is already locked and a second selection on test would spend the test set; the question is only whether the advantage replicates",
+    "interval_not_margin": "selection300 led-bart was +0.0136, barely above the 0.01 margin; requiring >= 0.01 again on a fresh sample would be close to a coin flip even if the effect is real. The margin stays as a reported flag",
+    "no_stratum_gate": "each test stratum has about 170-180 IDs; gating on three more sign tests per contrast inflates false not_confirmed. Strata are reported, not gating",
+    "bonferroni": "two contrasts; simple and conservative"
+  },
+  "final_test_authorized": false,
+  "selection_start_authorized": false
+}

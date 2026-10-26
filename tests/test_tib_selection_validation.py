@@ -81,3 +81,102 @@ def test_authorization_must_be_complete_user_made_and_bound_to_this_bundle(tmp_p
     for bad, text in cases:
         with pytest.raises(ValueError, match=text):
             validation.check_authorization(bad, manifest_sha)
+
+
+def final_mini_bundle(root, monkeypatch, n=6):
+    """The selection miniature rewritten into the final523 shape: test IDs, final stage allocation, 300 excluded."""
+    from experiments.scripts.tib_benchmark_checkpoint import digest
+    contract, rows = mini_bundle(root, monkeypatch, n)
+    monkeypatch.setattr(validation, "FINAL_N", n)
+    monkeypatch.setattr(validation, "FINAL_QUOTAS", {"short": 2, "medium": 2, "long": 2})
+    ids = [f"test:{i}" for i in range(n)]
+    for row, new in zip(rows, ids):
+        row["record_id"] = new
+    allocation = json.loads((root / "selection_allocation.json").read_text())
+    allocation.update(stage="final523", records_per_pipeline=n)
+    (root / "selection_allocation.json").write_text(json.dumps(allocation))
+    contract.update(selection_ids=ids, source_strata=dict(zip(ids, [r["source_stratum"] for r in rows])),
+                    excluded_selection_ids=[f"valid:{3000 + i}" for i in range(300)], allocation_sha256=digest(allocation))
+    (root / "selection_contract.json").write_text(json.dumps(contract))
+    (root / "selection_sources.jsonl").write_text("\n".join(map(json.dumps, rows)))
+    refresh(root)
+    return contract, rows
+
+
+def test_final523_shape_round_trips(tmp_path, monkeypatch):
+    root = tmp_path / "f"
+    contract, _ = final_mini_bundle(root, monkeypatch)
+    assert validation.validate_bundle(root)[0] == contract
+
+
+@pytest.mark.parametrize("change,text", [
+    (lambda c: c.update(excluded_selection_ids=c["excluded_selection_ids"][:299]), "development selection"),
+    (lambda c: c["excluded_selection_ids"].__setitem__(0, c["selection_ids"][0]), "development selection"),
+    (lambda c: c.update(expected_cells=23), "self-authorize"),
+    (lambda c: c.update(final_test_authorized=True), "self-authorize"),
+])
+def test_final523_deviations_are_refused(tmp_path, monkeypatch, change, text):
+    root = tmp_path / "f"
+    final_mini_bundle(root, monkeypatch)
+    mutate(root, "selection_contract.json", change)
+    with pytest.raises(ValueError, match=text):
+        validation.validate_bundle(root)
+
+
+def test_final523_allocation_must_count_523_records(tmp_path, monkeypatch):
+    from experiments.scripts.tib_benchmark_checkpoint import digest
+    root = tmp_path / "f"
+    final_mini_bundle(root, monkeypatch)
+    allocation = json.loads((root / "selection_allocation.json").read_text())
+    allocation["records_per_pipeline"] = 300
+    (root / "selection_allocation.json").write_text(json.dumps(allocation))
+    mutate(root, "selection_contract.json", lambda c: c.update(allocation_sha256=digest(allocation)))
+    with pytest.raises(ValueError, match="does not match the stage"):
+        validation.validate_bundle(root)
+
+
+def test_test_ids_are_refused_in_a_selection_bundle(tmp_path, monkeypatch):
+    root = tmp_path / "s"
+    contract, rows = mini_bundle(root, monkeypatch)
+    rows[0]["record_id"] = "test:0"
+    contract["selection_ids"][0] = "test:0"
+    contract["source_strata"] = {r["record_id"]: r["source_stratum"] for r in rows}
+    (root / "selection_contract.json").write_text(json.dumps(contract))
+    (root / "selection_sources.jsonl").write_text("\n".join(map(json.dumps, rows)))
+    refresh(root)
+    with pytest.raises(ValueError, match="does not belong to this stage"):
+        validation.validate_bundle(root)
+
+
+def test_selection_ids_are_refused_in_a_final523_bundle(tmp_path, monkeypatch):
+    root = tmp_path / "f"
+    contract, rows = final_mini_bundle(root, monkeypatch)
+    rows[0]["record_id"] = "valid:5000"
+    contract["selection_ids"][0] = "valid:5000"
+    contract["source_strata"] = {r["record_id"]: r["source_stratum"] for r in rows}
+    (root / "selection_contract.json").write_text(json.dumps(contract))
+    (root / "selection_sources.jsonl").write_text("\n".join(map(json.dumps, rows)))
+    refresh(root)
+    with pytest.raises(ValueError, match="does not belong to this stage"):
+        validation.validate_bundle(root)
+
+
+def test_unknown_stage_is_refused():
+    with pytest.raises(ValueError, match="Unknown stage"):
+        validation.stage_config("final500")
+
+
+def test_a_pinned_stage_must_match_the_allocation(tmp_path, monkeypatch):
+    root = tmp_path / "f"
+    final_mini_bundle(root, monkeypatch)
+    assert validation.validate_bundle(root, expected_stage="final523")
+    with pytest.raises(ValueError, match="another stage"):
+        validation.validate_bundle(root, expected_stage="selection300")
+
+
+def test_contract_and_allocation_must_name_the_same_stage(tmp_path, monkeypatch):
+    root = tmp_path / "f"
+    final_mini_bundle(root, monkeypatch)
+    mutate(root, "selection_contract.json", lambda c: c.update(stage="selection300"))
+    with pytest.raises(ValueError, match="different stages"):
+        validation.validate_bundle(root)

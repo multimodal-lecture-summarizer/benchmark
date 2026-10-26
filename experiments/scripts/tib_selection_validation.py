@@ -24,10 +24,21 @@ MANIFEST = "selection_manifest.json"
 LOCKED_DIR = "locked"
 MANDATORY = {"selection_contract.json", "selection_sources.jsonl", "acceptance_policy.json", "node_forecast.json",
              "selection_allocation.json", "actual_recovery_receipt.json", "actual_scorer_ready_receipt.json"}
+FINAL_N = 523
+FINAL_QUOTAS = {"short": 182, "medium": 172, "long": 169}
 AUTHORIZATION_FIELDS = {"manifest_sha256", "readiness_receipt_v2_sha256", "authorized_by", "authorized_on", "statement"}
 
 
-def validate_bundle(bundle):
+def stage_config(stage):
+    """Shape each stage's bundle must have; selection300 reads the module values so its checks stay as they were."""
+    if stage == "selection300":
+        return {"n": SELECTION_N, "quotas": QUOTAS, "test_ids": False, "development_excluded": None}
+    if stage == "final523":
+        return {"n": FINAL_N, "quotas": FINAL_QUOTAS, "test_ids": True, "development_excluded": 300}
+    raise ValueError("Unknown stage: " + str(stage))
+
+
+def validate_bundle(bundle, expected_stage=None):
     bundle = Path(bundle)
     manifest = json.loads((bundle / MANIFEST).read_text(encoding="utf-8"))
     for name, expected in manifest["files"].items():
@@ -35,19 +46,29 @@ def validate_bundle(bundle):
     require(MANDATORY <= set(manifest["files"]), "Missing bound selection dependency")
     contract = json.loads((bundle / "selection_contract.json").read_text(encoding="utf-8"))
     rows = [json.loads(line) for line in (bundle / "selection_sources.jsonl").read_text(encoding="utf-8").splitlines()]
+    allocation = json.loads((bundle / "selection_allocation.json").read_text(encoding="utf-8"))
+    require(digest(allocation) == contract["allocation_sha256"], "Allocation binding mismatch")
+    require(expected_stage in (None, allocation["stage"]), "Bundle belongs to another stage")
+    require(contract.get("stage", allocation["stage"]) == allocation["stage"], "Contract and allocation name different stages")
+    config = stage_config(allocation["stage"])
+    n, quotas = config["n"], config["quotas"]
     ids = contract["selection_ids"]
-    require(len(ids) == len(set(ids)) == len(rows) == SELECTION_N and [r["record_id"] for r in rows] == ids,
-            f"Exactly {SELECTION_N} sealed ordered selection sources required")
-    require(contract["quotas"] == QUOTAS and {s: sum(v == s for v in contract["source_strata"].values())
-                                              for s in QUOTAS} == QUOTAS, "Sealed 100/90/110 strata required")
+    require(len(ids) == len(set(ids)) == len(rows) == n and [r["record_id"] for r in rows] == ids,
+            f"Exactly {n} sealed ordered selection sources required")
+    require(contract["quotas"] == quotas and {s: sum(v == s for v in contract["source_strata"].values())
+                                              for s in quotas} == quotas, f"Sealed strata {quotas} required")
     require(contract["candidate_order"] == CANDIDATES and contract["word_cap"] == 350
             and [p["candidate_id"] for p in contract["profiles"]] == CANDIDATES, "Exactly four fixed profiles/cap350")
     require(contract["staged_ids"] == [] and "qwen3" not in json.dumps(contract["profiles"]).lower(),
             "No historical import and no Qwen3 in the selection bundle")
     require(not set(ids) & set(contract["excluded_pilot_ids"]) and len(contract["excluded_pilot_ids"]) == 40,
-            "Selection must be disjoint from Pilot40")
+            "Stage must be disjoint from Pilot40")
+    if config["development_excluded"]:
+        excluded = contract["excluded_selection_ids"]
+        require(len(excluded) == config["development_excluded"] and not set(ids) & set(excluded),
+                "Final cohort must be disjoint from the development selection set")
     require(contract["selection_authorized"] is False and contract["final_test_authorized"] is False
-            and contract["expected_cells"] == SELECTION_N * len(CANDIDATES), "Bundle must not self-authorize")
+            and contract["expected_cells"] == n * len(CANDIDATES), "Bundle must not self-authorize")
     for row in rows:
         source_only(row)
         required = {"record_id", "source_normalized", "source_normalized_sha256", "source_stratum", "attribution"}
@@ -58,13 +79,14 @@ def validate_bundle(bundle):
         require(row["source_normalized"] and hashlib.sha256(row["source_normalized"].encode()).hexdigest()
                 == row["source_normalized_sha256"] and contract["source_strata"][row["record_id"]] == row["source_stratum"],
                 "Source/stratum binding mismatch")
-        require(not row["record_id"].startswith("test:") and row["record_id"] not in contract["excluded_pilot_ids"],
-                "Final-test or Pilot40 ID forbidden")
+        require(row["record_id"].startswith("test:") == config["test_ids"]
+                and row["record_id"] not in contract["excluded_pilot_ids"],
+                "Source ID does not belong to this stage (final-test IDs only in final523)")
     for name, expected in contract["locked_artifacts"].items():
         require(sha(safe_file(bundle, f"{LOCKED_DIR}/{name}")) == expected, "Locked artifact mismatch: " + name)
-    allocation = json.loads((bundle / "selection_allocation.json").read_text(encoding="utf-8"))
-    require(digest(allocation) == contract["allocation_sha256"] and allocation["stage"] == "selection300"
-            and allocation["selection_start_authorized"] is False, "Allocation binding mismatch")
+    require(allocation["selection_start_authorized"] is False, "Allocation must not self-authorize")
+    if config["development_excluded"]:   # final523 only: selection300 fixtures shrink N but keep the real allocation
+        require(allocation["records_per_pipeline"] == n, "Allocation does not match the stage")
     policy = json.loads((bundle / "acceptance_policy.json").read_text(encoding="utf-8"))
     require(all(policy.get(k) == v for k, v in ACCEPTANCE_POLICY.items())
             and sha(bundle / "acceptance_policy.json") == contract["acceptance_policy_sha256"],

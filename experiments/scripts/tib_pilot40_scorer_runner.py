@@ -30,6 +30,49 @@ STATUSES = {"completed", "completed_with_warning", "failed"}
 # Fixed by protocol (Qwen3 dropped 2026-10-23); the bundle's own amendment cannot widen them.
 PROFILES = {"lead3", "lexrank", "bart", "led"}
 EXPECTED_ROWS, EXPECTED_SCOREABLE = 160, 154
+# Receipt names/wording per stage; other stages (selection300) pass their own dict to run().
+PILOT40_STAGE = {"name": "pilot40", "receipt": "scorer_pilot40_receipt.json", "ready_key": "scorer_pilot40_ready",
+                 "scope": "Pilot40 4-profile scoring-cost measurement; descriptive, not selection or admission"}
+
+
+# Partial resume (stage policy opt-in): the checkpoint key binds only what can change a score, not the VM it ran on.
+PORTABLE_RUNTIME_FIELDS = ("cuda_runtime", "device_name", "device_memory_bytes", "python", "packages")
+CANARY_ROWS, CANARY_TOLERANCE = 6, 1e-6
+
+
+def runtime_binding_digest(runtime, stage, pinned=None):
+    """Strict stages (Pilot40, selection300) bind the whole runtime; a portable stage binds the compute-relevant subset,
+    with the package list narrowed to the pinned packages so unrelated base-image changes do not orphan checkpoints."""
+    if not stage.get("portable_binding"):
+        return digest(runtime)
+    subset = {name: runtime.get(name) for name in PORTABLE_RUNTIME_FIELDS}
+    if pinned is not None:
+        subset["packages"] = {n: v for n, v in (runtime.get("packages") or {}).items()
+                              if n.lower().replace("_", "-") in pinned}
+    return digest(subset)
+
+
+def canary_rows(reused_rows, count=CANARY_ROWS):
+    """Score-independent sample of the reused rows, in run order: the first row of every profile, then of every stratum not
+    yet covered, then evenly spaced positions, then the earliest remaining rows, up to `count`."""
+    chosen, seen = [], set()
+
+    def take(row):
+        if row["sample_id"] not in seen and len(chosen) < count:
+            seen.add(row["sample_id"])
+            chosen.append(row)
+    for key in ("profile_id", "source_stratum"):
+        covered = set()
+        for row in reused_rows:
+            if row[key] not in covered:
+                covered.add(row[key])
+                take(row)
+    n = len(reused_rows)
+    for j in range(min(count, n)):
+        take(reused_rows[j * n // min(count, n)])
+    for row in reused_rows:
+        take(row)
+    return chosen
 
 
 def validate_pilot_bundle(root):
@@ -167,9 +210,17 @@ def _view_result(result):
 
 def run(bundle, output, assets, *, resume=False, wall_hours=1.5, backend_factory=None,
         fixture_runner=None, runtime_probe=None, score_function=None, view_function=None,
-        asset_validator=None, sampler_factory=None):
-    """Injection hooks test orchestration without model downloads or GPU claims."""
+        asset_validator=None, sampler_factory=None, validator=None, order=None, stage=None, ledger=None,
+        resume_partial=False):
+    """Injection hooks test orchestration without model downloads or GPU claims.
+
+    validator/order/stage/ledger select the bundle contract, scoring order, receipt names and the shared
+    resource ledger of a later stage; they are real code paths, not test injection. Defaults are Pilot40.
+    """
     os.environ["HF_HUB_OFFLINE"] = os.environ["TRANSFORMERS_OFFLINE"] = "1"
+    stage = stage or PILOT40_STAGE
+    if resume_partial and (resume or not stage.get("partial_resume_allowed")):
+        raise ValueError("Partial resume is a stage policy opt-in and excludes --resume")
     bundle, output, assets = Path(bundle), Path(output), Path(assets)
     output.mkdir(parents=True, exist_ok=True)
     started = time.monotonic()
@@ -188,12 +239,16 @@ def run(bundle, output, assets, *, resume=False, wall_hours=1.5, backend_factory
     sampler, resources, views_status, timer = None, {}, "NOT_STARTED", None
     component_after_pass1 = None
     expected_scoreable = 0
+    canary, store, view_store, contributing, reused_runtime = None, None, None, set(), {}
+    cached, view_cached = {}, {}   # the receipt reads them even when the run stopped before they were loaded
     try:
         if not 0 < wall_hours <= 11.5:
             raise ValueError("Scorer session bound must be positive and at most 11.5 hours")
         deadline = started + wall_hours * 3600
+        if ledger is not None and json.loads(Path(ledger).read_text(encoding="utf-8")).get("session_status") != "active":
+            raise ValueError("Shared resource ledger has no active session; refusing to score")
         tick = time.perf_counter()
-        manifest, spec, amendment, rows = validate_pilot_bundle(bundle)
+        manifest, spec, amendment, rows = (validator or validate_pilot_bundle)(bundle)
         expected_scoreable = amendment["expected_scoreable_count"]
         runtime = (runtime_probe or observe_runtime)()
         normalized = {n.lower().replace("_", "-"): v for n, v in runtime["packages"].items()}
@@ -233,19 +288,38 @@ def run(bundle, output, assets, *, resume=False, wall_hours=1.5, backend_factory
                    "code_input_files_sha256": digest(manifest["files"]),
                    "asset_manifests_sha256": {n: file_sha(p / "asset_manifest.json")
                                               for n, p in (("bert", bert), ("sentence", sentence))},
-                   "runtime_sha256": digest(runtime)}
+                   "runtime_sha256": runtime_binding_digest(
+                       runtime, stage, {n.lower().replace("_", "-") for n in
+                                        {**amendment["runtime_pins"], **amendment.get("support_package_pins", {})}})}
         costs["validation_seconds"] = time.perf_counter() - tick
-        store = ScoreCheckpoints(output / "checkpoints", binding, resume=resume)
-        view_store = ScoreCheckpoints(output / "view_checkpoints", binding, resume=resume)
-        ordered = run_order(rows)
+        store = ScoreCheckpoints(output / "checkpoints", binding, resume=resume, partial=resume_partial, run_id=run_id)
+        view_store = ScoreCheckpoints(output / "view_checkpoints", binding, resume=resume, partial=resume_partial,
+                                      run_id=run_id)
+        provenance = ({"run_id": run_id, "runtime_full_sha256": digest(runtime)}
+                      if stage.get("portable_binding") else None)
+        ordered = (order or run_order)(rows)
 
         def view_key(row):
             return {"sample_id": row["sample_id"] + "__views", "views": row["views"],
                     "reference_sha256": row["reference_sha256"]}
 
-        # Validate every cache entry before expensive initialization; never fill holes on resume.
-        cached = {r["sample_id"]: store.load(r) for r in ordered} if resume else {}
-        view_cached = {r["sample_id"]: view_store.load(view_key(r)) for r in ordered} if resume else {}
+        # Validate every cache entry before expensive initialization. --resume never fills holes; --resume-partial
+        # treats only an ABSENT checkpoint as a hole (corrupt, mismatched or foreign files stay errors).
+        if resume_partial:
+            store.require_only(ordered)
+            view_store.require_only([view_key(r) for r in ordered])
+            store.quarantine_torn()
+            view_store.quarantine_torn()
+            cached = {r["sample_id"]: p for r in ordered if (p := store.load_optional(r)) is not None}
+            view_cached = {r["sample_id"]: p for r in ordered if (p := view_store.load_optional(view_key(r))) is not None}
+            reused = [*cached.values(), *view_cached.values()]
+            contributing = {(p.get("provenance") or {}).get("run_id") for p in reused}
+            reused_runtime = {str((p.get("provenance") or {}).get("run_id")): (p.get("provenance") or {}).get("runtime_full_sha256")
+                              for p in reused}
+            costs["reused_original_scoring_seconds"] = sum(p["original_scoring_wall_seconds"] for p in reused)
+        else:
+            cached = {r["sample_id"]: store.load(r) for r in ordered} if resume else {}
+            view_cached = {r["sample_id"]: view_store.load(view_key(r)) for r in ordered} if resume else {}
         sampler = (sampler_factory or ResourceSampler)().start()
         tick = time.perf_counter()
         scorer = (backend_factory or RuntimeSemanticScorer)(bert, sentence)
@@ -259,14 +333,34 @@ def run(bundle, output, assets, *, resume=False, wall_hours=1.5, backend_factory
         costs["fixtures_seconds"] = time.perf_counter() - tick
         if str(fixtures.get("status", "")).lower() != "pass":
             raise ValueError("Actual scorer fixtures/probes did not PASS")
-        timer = ComponentTimer(scorer, sync)
+        if resume_partial and cached:
+            # Re-score a spread of reused rows now: a different session or runtime must reproduce them.
+            tick = time.perf_counter()
+            canary = {"tolerance": CANARY_TOLERANCE, "sample_ids": [], "max_abs_diff": 0.0}
+            # A reused row that stored a scoring failure has no score to reproduce; it is not a drift witness.
+            for row in canary_rows([r for r in ordered if r["sample_id"] in cached and not cached[r["sample_id"]]["result"]["failures"]]):
+                fresh = _finite_result((score_function or score_record)(
+                    row["delivered_summary"], row["reference"], row["source"], semantic=scorer))
+                sync()
+                stored = cached[row["sample_id"]]["result"]["metrics"]
+                for name in METRICS:
+                    a, b = fresh["metrics"].get(name), stored.get(name)
+                    difference = 1e9 if (a is None) != (b is None) else (0.0 if a is None else abs(a - b))
+                    canary["max_abs_diff"] = max(canary["max_abs_diff"], difference)
+                canary["sample_ids"].append(row["sample_id"])
+            costs["canary_seconds"] = time.perf_counter() - tick
+            canary["passed"] = canary["max_abs_diff"] <= CANARY_TOLERANCE
+            if not canary["passed"]:
+                raise ValueError(f"Cross-session drift: reused checkpoints differ from a fresh score by {canary['max_abs_diff']:.3g}")
+        timer = ComponentTimer(scorer, sync)   # after the canary, so its calls stay out of the component totals
 
         # ---- pass 1: delivered summaries, all five scorer-v2 metrics -------------------------
         for row in ordered:
             if time.monotonic() >= deadline:
                 reasons.append("session_deadline")
                 break
-            print("Scorer", "reuse" if resume else "score", row["sample_id"], flush=True)
+            use_cache = row["sample_id"] in cached
+            print("Scorer", "reuse" if use_cache else "score", row["sample_id"], flush=True)
             base = {k: row[k] for k in ("sample_id", "record_id", "candidate_id", "profile_id",
                                        "source_stratum", "generation_status", "warnings",
                                        "source_receipt_sha256")}
@@ -276,7 +370,7 @@ def run(bundle, output, assets, *, resume=False, wall_hours=1.5, backend_factory
             sync()
             before, calls_before = timer.snapshot()
             tick, cpu_tick = time.perf_counter(), time.process_time()
-            if resume:
+            if use_cache:
                 payload = cached[row["sample_id"]]
                 scored = _finite_result(payload["result"])
                 elapsed, cpu_elapsed, reused = 0.0, 0.0, True
@@ -294,7 +388,7 @@ def run(bundle, output, assets, *, resume=False, wall_hours=1.5, backend_factory
                 costs["delivered_scoring_seconds"] += elapsed
                 costs["new_metric_calls"] += 1
                 start = time.perf_counter()
-                store.save(row, scored, elapsed)
+                store.save(row, scored, elapsed, provenance)
                 costs["checkpoint_seconds"] += time.perf_counter() - start
             after, calls_after = timer.snapshot()
             bert_seconds = after["bertscore"] - before["bertscore"]
@@ -321,7 +415,7 @@ def run(bundle, output, assets, *, resume=False, wall_hours=1.5, backend_factory
                 delivered_metrics = {k: by_id[row["sample_id"]]["metrics"].get(k) for k in VIEW_METRICS}
                 scored_views, seen = {}, {row["delivered_summary"]: delivered_metrics}
                 view_wall, new_calls, reused_flags = 0.0, 0, {}
-                if resume:
+                if row["sample_id"] in view_cached:
                     scored_views = view_cached[row["sample_id"]]["result"]
                     reused_flags = dict.fromkeys(VIEW_NAMES, True)
                 else:
@@ -347,7 +441,7 @@ def run(bundle, output, assets, *, resume=False, wall_hours=1.5, backend_factory
                     costs["view_scoring_seconds"] += view_wall
                     costs["new_view_calls"] += new_calls
                     start = time.perf_counter()
-                    view_store.save(view_key(row), scored_views, view_wall)
+                    view_store.save(view_key(row), scored_views, view_wall, provenance)
                     costs["checkpoint_seconds"] += time.perf_counter() - start
                 view_results.append({"sample_id": row["sample_id"], "record_id": row["record_id"],
                                      "profile_id": row["profile_id"], "source_stratum": row["source_stratum"],
@@ -403,11 +497,21 @@ def run(bundle, output, assets, *, resume=False, wall_hours=1.5, backend_factory
               "rankings_computed": False, "generation_executed": False, "qwen3_scored": False,
               "formal_benchmark": False, "run_id": run_id, "orchestration_checks_passed": checks_passed,
               "testing_dependency_injection": injected, "selection_start_authorized": False,
-              "scope": "Pilot40 4-profile scoring-cost measurement; descriptive, not selection or admission"}
-    receipt = {**report, "scorer_pilot40_ready": passed, "binding": binding, "runtime": runtime,
+              "scope": stage["scope"]}
+    receipt = {**report, stage["ready_key"]: passed, "binding": binding, "runtime": runtime,
                "backend_metadata": metadata, "fixtures": fixtures,
                "actual_colab_execution": bool(runtime.get("google_colab_imported")) and not injected,
                "T4_verified": passed, "cached_replay_verified": passed and resume}
+    if resume_partial:
+        by_run = {**reused_runtime, str(run_id): digest(runtime) if runtime else None}
+        receipt.update(partial_resume_requested=True, partial_resume_used=bool(cached or view_cached),
+                       reused_rows=costs["reused_records"], fresh_rows=costs["new_metric_calls"],
+                       reused_failed_rows=sum(bool(p["result"]["failures"]) for p in cached.values()),
+                       run_ids=sorted(str(i) for i in contributing | {run_id} if i is not None),
+                       runtime_full_sha256_by_run=by_run,
+                       mixed_runtime=len({v for v in by_run.values() if v}) > 1,
+                       reused_original_scoring_seconds=costs.get("reused_original_scoring_seconds", 0.0),
+                       quarantined=(store.quarantined + view_store.quarantined) if store else [], canary=canary)
 
     def group(values_of, keys):
         out = {}
@@ -434,8 +538,8 @@ def run(bundle, output, assets, *, resume=False, wall_hours=1.5, backend_factory
         _write(output / name, value, lines=name.endswith(".jsonl"))
     receipt["artifact_sha256"] = {n: file_sha(archive / n) for n in
                                   ("cost_evidence.json", "PASS_HOLD_report.json", "metrics.jsonl", "view_metrics.jsonl")}
-    _write(archive / "scorer_pilot40_receipt.json", receipt)
-    _write(output / "scorer_pilot40_receipt.json", receipt)
+    _write(archive / stage["receipt"], receipt)
+    _write(output / stage["receipt"], receipt)
     return receipt
 
 
@@ -444,10 +548,26 @@ if __name__ == "__main__":
     for argument in ("bundle", "output", "assets"):
         parser.add_argument("--" + argument, required=True, type=Path)
     parser.add_argument("--resume", action="store_true")
+    parser.add_argument("--resume-partial", action="store_true",
+                        help="stage policy opt-in: reuse valid checkpoints, score only the absent ones")
     parser.add_argument("--wall-hours", type=float, default=1.5)
+    parser.add_argument("--stage", choices=("pilot40", "selection300", "final523"), default="pilot40")
+    parser.add_argument("--ledger", type=Path, help="shared resource ledger that must hold an active session")
     arguments = parser.parse_args()
-    result = run(arguments.bundle, arguments.output, arguments.assets,
-                 resume=arguments.resume, wall_hours=arguments.wall_hours)
+    if arguments.stage != "pilot40" and arguments.ledger is None:
+        parser.error(f"--stage {arguments.stage} requires --ledger (active-session guard)")
+    extra = {}
+    if arguments.stage == "selection300":
+        from . import tib_selection300_scorer_validation as selection
+        extra = {"validator": selection.validate_selection_scoring_bundle, "order": selection.interleaved_order,
+                 "stage": selection.SELECTION_STAGE}
+    elif arguments.stage == "final523":
+        from . import tib_final523_scorer_validation as final
+        extra = {"validator": final.validate_final_scoring_bundle, "order": final.interleaved_order,
+                 "stage": final.FINAL_STAGE}
+    result = run(arguments.bundle, arguments.output, arguments.assets, resume=arguments.resume,
+                 wall_hours=arguments.wall_hours, ledger=arguments.ledger, resume_partial=arguments.resume_partial,
+                 **extra)
     print(json.dumps({"delivered_status": result["delivered_status"],
                       "views_status": result["views_status"], "run_id": result["run_id"]}, allow_nan=False))
     raise SystemExit(0 if result["delivered_status"] == "PASS" else 2)

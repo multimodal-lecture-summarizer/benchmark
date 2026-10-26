@@ -48,13 +48,43 @@ def read_checked(path):
 
 
 class ScoreCheckpoints:
-    def __init__(self, root, binding, *, resume=False):
-        self.root, self.binding, self.resume = Path(root), binding, resume
+    """Hash-checked per-row checkpoints.
+
+    Default and `resume=True` are the original strict modes. `partial=True` (a stage policy opt-in, never default):
+    an absent checkpoint is a hole to score fresh, a torn `*.partial` write is quarantined and reported, but a corrupt,
+    mismatched or foreign checkpoint is still an error.
+    """
+
+    def __init__(self, root, binding, *, resume=False, partial=False, run_id=None):
+        self.root, self.binding, self.resume, self.partial = Path(root), binding, resume or partial, partial
+        self.quarantined, self.run_id = [], run_id
         self.root.mkdir(parents=True, exist_ok=True)
-        if list(self.root.glob("*.partial")):
+        self.torn = sorted(self.root.glob("*.partial"))
+        if self.torn and not partial:
             raise ValueError("Partial scorer checkpoint exists; no automatic recovery")
-        if not resume and any(self.root.iterdir()):
+        if not self.resume and any(self.root.iterdir()):
             raise ValueError("Scorer checkpoints exist; use --resume to validate/reuse")
+
+    def require_only(self, rows):
+        """Partial mode: every file in the folder must be a checkpoint of this binding and these rows, a torn write that
+        quarantine_torn will move, or an earlier quarantine. Anything else is stale or foreign."""
+        expected = {digest(self.key(row)) + ".json" for row in rows}
+        torn = {p.name for p in self.torn}
+        foreign = sorted(p.name for p in self.root.iterdir()
+                         if p.name not in expected and p.name not in torn and ".quarantined-" not in p.name)
+        if foreign:
+            raise ValueError(f"{len(foreign)} checkpoint file(s) do not belong to this binding or bundle; refusing to resume")
+
+    def quarantine_torn(self):
+        """Partial mode, run after every HOLD check so a refused run changes nothing. An atomic rename never happened for
+        a torn file, so it never held a valid result; it is renamed (never overwritten) and reported."""
+        for path in self.torn:
+            target = path.with_name(path.name + ".quarantined-" + str(self.run_id))
+            if target.exists():
+                raise ValueError("Quarantine target already exists: " + target.name)
+            path.rename(target)
+            self.quarantined.append(target.name)
+        self.torn = []
 
     def key(self, row):
         return {"binding": self.binding, "sample_id": row["sample_id"], "input_sha256": digest(row)}
@@ -69,13 +99,22 @@ class ScoreCheckpoints:
             raise ValueError("Scorer checkpoint binding mismatch")
         return payload
 
-    def save(self, row, result, scoring_wall_seconds):
+    def load_optional(self, row):
+        """Partial mode: the verified checkpoint, or None when this row has no checkpoint (a hole)."""
+        key = self.key(row)
+        if not (self.root / (digest(key) + ".json")).is_file():
+            return None
+        return self.load(row)
+
+    def save(self, row, result, scoring_wall_seconds, provenance=None):
         key = self.key(row)
         path = self.root / (digest(key) + ".json")
         if path.exists():
             raise ValueError("Scorer checkpoint overwrite forbidden")
-        return atomic_write(path, {"key": key, "result": result,
-                                  "original_scoring_wall_seconds": scoring_wall_seconds})
+        payload = {"key": key, "result": result, "original_scoring_wall_seconds": scoring_wall_seconds}
+        if provenance is not None:
+            payload["provenance"] = provenance
+        return atomic_write(path, payload)
 
 
 def validate_bundle(root):

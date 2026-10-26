@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "decision_id": "tib-final523-use-decisions-261024-v1",
+  "decided_on": "2026-10-24",
+  "decided_by": "user instruction in chat on 2026-10-24 to settle the two open questions; the assistant gathered the evidence and drafted the decisions, the user may veto before the first Colab session",
+  "post_hoc": false,
+  "q1_title_in_generation_zip": {
+    "decision": "keep",
+    "reasons": [
+      "the per-record attribution (author, title, source URL, license, modification notice) is what the CC licences of the sources require and what the local-use policy calls 'attribution retained'",
+      "the title is metadata inside `attribution`; the generation runtime never reads it (no 'attribution' reference in tib_selection_runtime.py) and models receive only source_normalized, so it cannot affect outputs",
+      "selection300 shipped the same field under the same policy"
+    ],
+    "conditions": [
+      "the ZIP stays on the user's private Drive and in ignored research-data; never committed, never shared",
+      "the field is not copied into result, receipt or report files (they stay text-free)"
+    ]
+  },
+  "q2_rights_for_final523": {
+    "decision": "proceed under the existing conditional local-use scope; no new permission is claimed",
+    "evidence_for_the_523_sealed_ids": {
+      "allowed_for_current_local_use": "523/523 (bundle build refuses otherwise)",
+      "source_use_status": "conditional 523/523 (current source CC licence, scope and use conditional)",
+      "reference_abstract_use": "SUPPORTED_CC0_FIELD_MATCH 523/523 (raw_exact 226, technical_normalization_exact 297)",
+      "transcript_cc0_match": "no_text_match 523/523, so no blanket CC0 is assumed for transcripts",
+      "public_source_text_redistribution": "NOT_AUTHORIZED_BY_THIS_AUDIT 523/523",
+      "released_license_labels": "CC BY 2.0 BE 151, BY 3.0 125, BY-NC-SA 3.0 86, BY 3.0 DE 81, BY 4.0 41, BY-NC-ND 4.0 16, BY-SA 3.0 7, BY-NC-SA 3.0 DE 6, BY-NC-SA 4.0 5, BY-NC 3.0 2, BY-SA 3.0 US 1, BY-SA 4.0 1, missing 1"
+    },
+    "operating_conditions": [
+      "local, private, noncommercial analysis only; attribution retained",
+      "generation runs pinned open models on the user's own Colab VM with private Drive; no source or reference text goes to an external generation API (same as selection300)",
+      "no public sharing of source text, references or generated summaries; this includes the 16 BY-NC-ND records, whose outputs are adaptations and stay private",
+      "references reach Colab only in the later scoring bundle, which is allowed by the CC0 field match 523/523",
+      "any plan to publish text, outputs or the ZIP needs a separate rights decision"
+    ],
+    "not_claimed": "legal PASS. Licence labels are evidence, not permission; the rights ledger keeps dataset-level text use at HOLD and the conditions above are the operating limits",
+    "residual_risk": "one record has a missing licence label; it passed the per-record local-use gate but its terms are unknown. Report it, do not publish its output"
+  },
+  "final_test_authorized": false,
+  "selection_start_authorized": false
+}

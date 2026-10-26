@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "status": "HOLD",
+  "scorer_ready": false,
+  "actual_colab_execution": false,
+  "reason": "Prepared only; separate user scoring authorization and actual Colab execution required",
+  "archive_bytes": 14210773,
+  "archive_sha256": "6ae68b7a0ee95afe0551dac8f0b15352656169ab269c60f8fa58a64d99ebd18b",
+  "manifest_sha256": "da389b46612f05bd91fd0bea64056afab0e9b27d74d3a9c716a21b00cac58108",
+  "generation_evidence_zip_name": "tib-final523-evidence-20261025T143504Z.zip",
+  "generation_evidence_zip_sha256": "0ed836e74df7ae8e60b6795da7d4dff85ee0690baaab2e39d35b1e258bcd5afa",
+  "generation_bundle_manifest_sha256": "deddb588d008b94e9e531139fc16b38a8b487ec115b92479097373cb2f0a9c69",
+  "scoring_allocation_sha256": "27b452b7661429b9be2bb2ac14dbbc63ee5ef8d7b14f13452b3f81f057a861f5",
+  "scoring_max_sessions": 2,
+  "scoring_total_hours": 10.85,
+  "scoring_budget_decision_sha256": "73cbd8017e2744deda4907cd87abce8d29b2e025e2bd0818918e3854f8d903ef",
+  "rows": 2092,
+  "scoreable_rows": 2088,
+  "failed_rows": 4,
+  "rows_by_profile": {
+    "lead3": 523,
+    "lexrank": 523,
+    "bart": 523,
+    "led": 523
+  },
+  "quality_ranking_performed": false,
+  "generation_executed": false,
+  "scoring_start_authorized": false,
+  "selection_rule_applied": false
+}

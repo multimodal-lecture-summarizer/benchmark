@@ -1,0 +1,526 @@
+{
+  "label": "selected",
+  "selected_profile": "led",
+  "selected_profile_id": "led-ngram3",
+  "gates": [
+    {
+      "gate": "1_complete_scoring_run",
+      "passed": true,
+      "reason": "every (profile, ID) cell present",
+      "missing_cells": 0
+    },
+    {
+      "gate": "2_control_config_floors",
+      "passed": true,
+      "reason": "Lead-3 meets the config floors",
+      "profile": "lead3",
+      "n": 300,
+      "by_stratum": {
+        "short": 100,
+        "medium": 90,
+        "long": 110
+      },
+      "overall_met": true,
+      "per_stratum_met": {
+        "short": true,
+        "medium": true,
+        "long": true
+      },
+      "floors_met": true
+    },
+    {
+      "gate": "3_tier_a_representatives",
+      "passed": true,
+      "reason": "3 representative families; F_between needs >= 2",
+      "admitted": [
+        "lexrank",
+        "bart",
+        "led"
+      ],
+      "by_family": {
+        "lexrank": {
+          "config_floors": {
+            "n": 300,
+            "by_stratum": {
+              "short": 100,
+              "medium": 90,
+              "long": 110
+            },
+            "overall_met": true,
+            "per_stratum_met": {
+              "short": true,
+              "medium": true,
+              "long": true
+            },
+            "floors_met": true
+          },
+          "c_f_common_floors": {
+            "n": 300,
+            "by_stratum": {
+              "short": 100,
+              "medium": 90,
+              "long": 110
+            },
+            "overall_met": true,
+            "common_n_met": true,
+            "per_stratum_fraction_met": {
+              "short": true,
+              "medium": true,
+              "long": true
+            },
+            "per_nonempty_stratum_n_met": {
+              "short": true,
+              "medium": true,
+              "long": true
+            },
+            "floors_met": true
+          },
+          "representative": true
+        },
+        "bart": {
+          "config_floors": {
+            "n": 300,
+            "by_stratum": {
+              "short": 100,
+              "medium": 90,
+              "long": 110
+            },
+            "overall_met": true,
+            "per_stratum_met": {
+              "short": true,
+              "medium": true,
+              "long": true
+            },
+            "floors_met": true
+          },
+          "c_f_common_floors": {
+            "n": 300,
+            "by_stratum": {
+              "short": 100,
+              "medium": 90,
+              "long": 110
+            },
+            "overall_met": true,
+            "common_n_met": true,
+            "per_stratum_fraction_met": {
+              "short": true,
+              "medium": true,
+              "long": true
+            },
+            "per_nonempty_stratum_n_met": {
+              "short": true,
+              "medium": true,
+              "long": true
+            },
+            "floors_met": true
+          },
+          "representative": true
+        },
+        "led": {
+          "config_floors": {
+            "n": 297,
+            "by_stratum": {
+              "short": 100,
+              "medium": 87,
+              "long": 110
+            },
+            "overall_met": true,
+            "per_stratum_met": {
+              "short": true,
+              "medium": true,
+              "long": true
+            },
+            "floors_met": true
+          },
+          "c_f_common_floors": {
+            "n": 297,
+            "by_stratum": {
+              "short": 100,
+              "medium": 87,
+              "long": 110
+            },
+            "overall_met": true,
+            "common_n_met": true,
+            "per_stratum_fraction_met": {
+              "short": true,
+              "medium": true,
+              "long": true
+            },
+            "per_nonempty_stratum_n_met": {
+              "short": true,
+              "medium": true,
+              "long": true
+            },
+            "floors_met": true
+          },
+          "representative": true
+        }
+      }
+    },
+    {
+      "gate": "4_c_between_common_floors",
+      "passed": true,
+      "reason": "C_between meets the common floors",
+      "members_sha256": "5b093419ef987ab4ac36da787f521a4b4f36ae85765ad8651e8ea89fc4ec08fd",
+      "n": 297,
+      "by_stratum": {
+        "short": 100,
+        "medium": 87,
+        "long": 110
+      },
+      "overall_met": true,
+      "common_n_met": true,
+      "per_stratum_fraction_met": {
+        "short": true,
+        "medium": true,
+        "long": true
+      },
+      "per_nonempty_stratum_n_met": {
+        "short": true,
+        "medium": true,
+        "long": true
+      },
+      "floors_met": true
+    },
+    {
+      "gate": "5_leader_margin",
+      "passed": true,
+      "reason": "leader beats every rival representative by the margin",
+      "leader": "led",
+      "margin": 0.01,
+      "means": {
+        "lexrank": 0.1081522952894645,
+        "bart": 0.12723654879527943,
+        "led": 0.1408548293722841,
+        "lead3": 0.09155714182131192
+      },
+      "deltas_vs_rivals": {
+        "lexrank": 0.03270253408281958,
+        "bart": 0.013618280577004666
+      }
+    },
+    {
+      "gate": "6_stratum_direction",
+      "passed": true,
+      "reason": "no strict sign reversal in a considered stratum",
+      "strata_considered": [
+        "short",
+        "medium",
+        "long"
+      ],
+      "deltas": {
+        "lexrank": {
+          "short": 0.02807290454144903,
+          "medium": 0.02686055667605925,
+          "long": 0.04153176125123052
+        },
+        "bart": {
+          "short": 0.01977513988590589,
+          "medium": 0.008349309132440703,
+          "long": 0.012188413165976865
+        }
+      }
+    },
+    {
+      "gate": "7_lead3_guard",
+      "passed": true,
+      "reason": "leader not below Lead-3 on C_between and every considered stratum",
+      "delta_vs_lead3": {
+        "c_between": 0.049297687550972184,
+        "short": 0.05221048947979167,
+        "medium": 0.045511952222333625,
+        "long": 0.04964385828469588
+      }
+    },
+    {
+      "gate": "8_exact_ties",
+      "passed": true,
+      "reason": "no exact tie with the leader",
+      "leader": "led",
+      "tied_with": [],
+      "priority": [
+        "lead3",
+        "lexrank",
+        "bart",
+        "led"
+      ]
+    }
+  ],
+  "stopped_at": null,
+  "schema_version": 1,
+  "scope": "selection300 tier A/B rule applied once; text-free",
+  "engine_sha256": "f82f3032babfc42d63b86697f46c6d1669f25ce3f7ecae46af0af1dc0854cfb1",
+  "metrics_sha256": "476e7bd73bcae6af6cf1b2586627419e31afb061dbf1ac0feed30d3f0716ae71",
+  "declarations_sha256": "6562bb7daa4da8cf07bad894c50611aa0438e3607c58905672cff91c2ac55993",
+  "bound_hashes": {
+    "admission_rules_v2_sha256": "4186a4ac74cbb476fb5353b0c32c71aa805f7cd1e418486b4b3cd49c5fe1d0ff",
+    "decisions_261023_v1_sha256": "f9a7d7ff517c4d7d94541a398b10cbd6f8f2f1d2edb3f0057d504cb100a5eeeb",
+    "selection300_profiles_v2_sha256": "b4ceefa83b58ec369f51faedfae71b77caf48147ef873a1e4c1bcea0e6f6ab19",
+    "scoring_outcome_sha256": "82800609effea3d121f24e36c3a5e332de478fb29eacd041fb5256db2b44ec4e",
+    "scoring_contract_sha256": "2b47c7622137a2c793728f91a59491806e4fd5193baf2ef37cd89f7fbbfe9b08"
+  },
+  "labels": [
+    "selected",
+    "no_selection"
+  ],
+  "notes": [
+    "Lead-3 valid:139 is cut mid-sentence at 350 words per the declared baseline; kept unchanged. Descriptive note on possible Lead-3 guard bias only; no score or guard adjusted."
+  ],
+  "views_descriptive": {
+    "label": "descriptive, not used to select",
+    "means": {
+      "lead3|short|S": {
+        "n": 100,
+        "rouge1_f1": 0.1390434555363553,
+        "rouge2_f1": 0.020809336068699488,
+        "rougeL_f1": 0.08993332702893098,
+        "bertscore_f1": 0.8442383072271399
+      },
+      "lead3|short|M": {
+        "n": 100,
+        "rouge1_f1": 0.1474623749249539,
+        "rouge2_f1": 0.022686025668965746,
+        "rougeL_f1": 0.09417487484115591,
+        "bertscore_f1": 0.8435143925970509
+      },
+      "lead3|short|L": {
+        "n": 100,
+        "rouge1_f1": 0.14779387748380318,
+        "rouge2_f1": 0.02276316875707593,
+        "rougeL_f1": 0.09395234178546852,
+        "bertscore_f1": 0.8433983858650639
+      },
+      "lead3|medium|S": {
+        "n": 90,
+        "rouge1_f1": 0.13323106136318735,
+        "rouge2_f1": 0.020242931814683788,
+        "rougeL_f1": 0.08475223139375032,
+        "bertscore_f1": 0.8429227834177881
+      },
+      "lead3|medium|M": {
+        "n": 90,
+        "rouge1_f1": 0.14389219382801208,
+        "rouge2_f1": 0.024000517449444415,
+        "rougeL_f1": 0.08934270579663113,
+        "bertscore_f1": 0.8436065276134797
+      },
+      "lead3|medium|L": {
+        "n": 90,
+        "rouge1_f1": 0.14351163750315624,
+        "rouge2_f1": 0.02380766486195927,
+        "rougeL_f1": 0.08933878233734847,
+        "bertscore_f1": 0.8434913164710456
+      },
+      "lead3|long|S": {
+        "n": 110,
+        "rouge1_f1": 0.12525454289300406,
+        "rouge2_f1": 0.0194296160683563,
+        "rougeL_f1": 0.08695882082136044,
+        "bertscore_f1": 0.8408701929557064
+      },
+      "lead3|long|M": {
+        "n": 110,
+        "rouge1_f1": 0.1351126488929371,
+        "rouge2_f1": 0.021358996672736896,
+        "rougeL_f1": 0.09075164817078939,
+        "bertscore_f1": 0.8406462994866762
+      },
+      "lead3|long|L": {
+        "n": 110,
+        "rouge1_f1": 0.13562406060425436,
+        "rouge2_f1": 0.021477497700328835,
+        "rougeL_f1": 0.09071199378264094,
+        "bertscore_f1": 0.8404921385752896
+      },
+      "lexrank|short|S": {
+        "n": 100,
+        "rouge1_f1": 0.19898865979287422,
+        "rouge2_f1": 0.03222612930946073,
+        "rougeL_f1": 0.11788871527085494,
+        "bertscore_f1": 0.8518899100901539
+      },
+      "lexrank|short|M": {
+        "n": 100,
+        "rouge1_f1": 0.257111376250722,
+        "rouge2_f1": 0.04273435792525682,
+        "rougeL_f1": 0.13379551084074096,
+        "bertscore_f1": 0.8499139762114711
+      },
+      "lexrank|short|L": {
+        "n": 100,
+        "rouge1_f1": 0.26823651784124936,
+        "rouge2_f1": 0.04771384579235975,
+        "rougeL_f1": 0.13046740606646823,
+        "bertscore_f1": 0.84423304491014
+      },
+      "lexrank|medium|S": {
+        "n": 90,
+        "rouge1_f1": 0.1937279686647998,
+        "rouge2_f1": 0.02472761492666791,
+        "rougeL_f1": 0.11499673799947115,
+        "bertscore_f1": 0.8471845622416888
+      },
+      "lexrank|medium|M": {
+        "n": 90,
+        "rouge1_f1": 0.24341440560008823,
+        "rouge2_f1": 0.03023459088615734,
+        "rougeL_f1": 0.12923089282077233,
+        "bertscore_f1": 0.8449915363572853
+      },
+      "lexrank|medium|L": {
+        "n": 90,
+        "rouge1_f1": 0.24454988594185992,
+        "rouge2_f1": 0.03232018189681057,
+        "rougeL_f1": 0.12239058570326734,
+        "bertscore_f1": 0.8385693803466802
+      },
+      "lexrank|long|S": {
+        "n": 110,
+        "rouge1_f1": 0.19210972965472473,
+        "rouge2_f1": 0.022542543558431244,
+        "rougeL_f1": 0.11657754842442179,
+        "bertscore_f1": 0.8442577525466793
+      },
+      "lexrank|long|M": {
+        "n": 110,
+        "rouge1_f1": 0.2297666891886377,
+        "rouge2_f1": 0.027748711583234387,
+        "rougeL_f1": 0.12296527158379246,
+        "bertscore_f1": 0.840817297710119
+      },
+      "lexrank|long|L": {
+        "n": 110,
+        "rouge1_f1": 0.21961057473617926,
+        "rouge2_f1": 0.029759701149548085,
+        "rougeL_f1": 0.11165086212752462,
+        "bertscore_f1": 0.8312612507451023
+      },
+      "bart|short|S": {
+        "n": 100,
+        "rouge1_f1": 0.20515593816385888,
+        "rouge2_f1": 0.033452004321599185,
+        "rougeL_f1": 0.12708042245557166,
+        "bertscore_f1": 0.855026627676052
+      },
+      "bart|short|M": {
+        "n": 100,
+        "rouge1_f1": 0.20501119082348654,
+        "rouge2_f1": 0.03320905582325501,
+        "rougeL_f1": 0.12643221232026078,
+        "bertscore_f1": 0.8547920440597953
+      },
+      "bart|short|L": {
+        "n": 100,
+        "rouge1_f1": 0.20501119082348654,
+        "rouge2_f1": 0.03320905582325501,
+        "rougeL_f1": 0.12643221232026078,
+        "bertscore_f1": 0.8547920440597953
+      },
+      "bart|medium|S": {
+        "n": 90,
+        "rouge1_f1": 0.21217301214662954,
+        "rouge2_f1": 0.03567157537395698,
+        "rougeL_f1": 0.1261350669650224,
+        "bertscore_f1": 0.8559219663206401
+      },
+      "bart|medium|M": {
+        "n": 90,
+        "rouge1_f1": 0.21364207646777877,
+        "rouge2_f1": 0.035872971414758446,
+        "rougeL_f1": 0.12687280398624942,
+        "bertscore_f1": 0.8560802424811982
+      },
+      "bart|medium|L": {
+        "n": 90,
+        "rouge1_f1": 0.21364207646777877,
+        "rouge2_f1": 0.035872971414758446,
+        "rougeL_f1": 0.12687280398624942,
+        "bertscore_f1": 0.8560802424811982
+      },
+      "bart|long|S": {
+        "n": 110,
+        "rouge1_f1": 0.21237949678602702,
+        "rouge2_f1": 0.03210046375963433,
+        "rougeL_f1": 0.1272214541259083,
+        "bertscore_f1": 0.8545685512775202
+      },
+      "bart|long|M": {
+        "n": 110,
+        "rouge1_f1": 0.213733953444897,
+        "rouge2_f1": 0.03280424339715152,
+        "rougeL_f1": 0.12802149788585374,
+        "bertscore_f1": 0.8547045402554695
+      },
+      "bart|long|L": {
+        "n": 110,
+        "rouge1_f1": 0.213733953444897,
+        "rouge2_f1": 0.03280424339715152,
+        "rougeL_f1": 0.12802149788585374,
+        "bertscore_f1": 0.8547045402554695
+      },
+      "led|short|S": {
+        "n": 100,
+        "rouge1_f1": 0.22194057140354354,
+        "rouge2_f1": 0.046014598288846395,
+        "rougeL_f1": 0.13981341860883142,
+        "bertscore_f1": 0.8592983330949825
+      },
+      "led|short|M": {
+        "n": 100,
+        "rouge1_f1": 0.2602722766903163,
+        "rouge2_f1": 0.054314265305410524,
+        "rougeL_f1": 0.1479943249954724,
+        "bertscore_f1": 0.8577753680540087
+      },
+      "led|short|L": {
+        "n": 100,
+        "rouge1_f1": 0.2663955470194136,
+        "rouge2_f1": 0.05534971277925675,
+        "rougeL_f1": 0.14639661081237018,
+        "bertscore_f1": 0.8561407765391514
+      },
+      "led|medium|S": {
+        "n": 87,
+        "rouge1_f1": 0.20345770606627792,
+        "rouge2_f1": 0.03974623116103977,
+        "rougeL_f1": 0.12920447225327186,
+        "bertscore_f1": 0.8592051405439397
+      },
+      "led|medium|M": {
+        "n": 87,
+        "rouge1_f1": 0.2307509758802487,
+        "rouge2_f1": 0.04270174396461675,
+        "rougeL_f1": 0.13675435339514136,
+        "bertscore_f1": 0.8579672391109326
+      },
+      "led|medium|L": {
+        "n": 87,
+        "rouge1_f1": 0.23369091328641617,
+        "rouge2_f1": 0.04327460640515172,
+        "rougeL_f1": 0.13551791824425682,
+        "bertscore_f1": 0.8573387434000301
+      },
+      "led|long|S": {
+        "n": 110,
+        "rouge1_f1": 0.20063459818030174,
+        "rouge2_f1": 0.030601994640144244,
+        "rougeL_f1": 0.1256342200907023,
+        "bertscore_f1": 0.8583632508996318
+      },
+      "led|long|M": {
+        "n": 110,
+        "rouge1_f1": 0.2381550945409526,
+        "rouge2_f1": 0.03899505302993644,
+        "rougeL_f1": 0.13966391308280135,
+        "bertscore_f1": 0.8544949463002166
+      },
+      "led|long|L": {
+        "n": 110,
+        "rouge1_f1": 0.23942335248921556,
+        "rouge2_f1": 0.0392148696792201,
+        "rougeL_f1": 0.13941223753875073,
+        "bertscore_f1": 0.8532768240563354
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "decision_id": "tib-final523-scoring-budget-decision-v1",
+  "decided_on": "2026-10-25",
+  "declared_by": "user",
+  "user_instruction": "chat 2026-10-25: 'chạy audit và chuẩn bị toàn bộ những thứ cần thiết cho chấm điểm đi, nếu được thêm 1 phiên dự phòng nữa'",
+  "post_hoc": false,
+  "declared_before_viewing": "any final523 score",
+  "reason": "the generation ledger ended with 3 of its 4 authorised sessions used (one session was lost and charged in full), which left a single scoring session with no spare",
+  "scoring_max_sessions": 2,
+  "scoring_ledger": {
+    "file": "scoring/resource_ledger_scoring.json on the same Drive folder",
+    "binding": "generation bundle manifest hash, like the generation ledger",
+    "generation_ledger": "read-only: never edited, reset or re-bound; the notebook only checks it against the carved-out budget"
+  },
+  "budget_rule": "the scoring allocation is the approved final523 allocation with max_sessions 2 and every ceiling (GPU hours, wall hours, CPU hours, transfer bytes) reduced to what the audited generation ledger left, rounded down. Generation use plus scoring ceiling can therefore never exceed the approved total",
+  "ceilings_unchanged": ["21 GPU-hours total", "42 CPU-hours total", "no automatic retries", "scorer v2 with SBERT", "partial-resume policy scorer_resume_policy_final523_v1.json"],
+  "changed": "overall session count: 3 generation sessions used plus up to 2 scoring sessions = 5 (the approved cap was 4). The wall/GPU total is not raised",
+  "per_session_effect": "each scoring session is granted at most total/2 hours, so a lost scoring session is charged at most that much",
+  "does_not_authorise": "starting scoring; that needs start_authorization_scoring.json made by the user",
+  "scoring_start_authorized": false,
+  "selection_start_authorized": false
+}

@@ -1,0 +1,62 @@
+{
+  "short": {
+    "most_negative": [
+      "test:622",
+      "test:471",
+      "test:543",
+      "test:507"
+    ],
+    "most_positive": [
+      "test:454",
+      "test:590",
+      "test:355",
+      "test:274"
+    ],
+    "random": [
+      "test:194",
+      "test:296",
+      "test:452",
+      "test:778"
+    ]
+  },
+  "medium": {
+    "most_negative": [
+      "test:331",
+      "test:160",
+      "test:616",
+      "test:150"
+    ],
+    "most_positive": [
+      "test:46",
+      "test:695",
+      "test:139",
+      "test:722"
+    ],
+    "random": [
+      "test:2",
+      "test:298",
+      "test:484",
+      "test:858"
+    ]
+  },
+  "long": {
+    "most_negative": [
+      "test:22",
+      "test:182",
+      "test:670",
+      "test:349"
+    ],
+    "most_positive": [
+      "test:421",
+      "test:589",
+      "test:486",
+      "test:619"
+    ],
+    "random": [
+      "test:197",
+      "test:345",
+      "test:491",
+      "test:894"
+    ]
+  }
+}

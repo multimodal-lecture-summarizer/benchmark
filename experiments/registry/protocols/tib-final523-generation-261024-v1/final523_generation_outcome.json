@@ -1,0 +1,506 @@
+{
+  "checks": {
+    "contract_is_final523_and_unauthorized": true,
+    "package_manifest_matches_prepared_bundle": true,
+    "package_files_identical_to_built_bundle": true,
+    "shipped_file_set_equals_the_manifest": true,
+    "final_cohort_bound_to_the_bundle": true,
+    "ids_are_test_ids_disjoint_from_development": true,
+    "no_extra_profile_directory": true,
+    "all_cells_present_in_the_denominator": true,
+    "every_record_file_intact_and_readable": true,
+    "only_known_record_statuses": true,
+    "receipt_summaries_match_the_records": true,
+    "receipt_status_ok": true,
+    "no_binding_mismatch_and_no_retry": true,
+    "records_bound_to_the_run_identity_and_one_runtime": true,
+    "quality_null_everywhere_and_all_fresh": true,
+    "every_delivered_output_within_350_words": true,
+    "no_reference_or_abstract_key_in_any_record": true,
+    "cpu_profiles_complete": true,
+    "run_identity_binds_contract_profile_and_bundle": true,
+    "preflight_pass_on_tesla_t4": true,
+    "authorization_is_the_users_and_binds_this_bundle": true,
+    "metrics_not_executed": true,
+    "ledger_bound_to_this_bundle_and_allocation": true,
+    "ledger_within_approved_totals": true
+  },
+  "audit_pass": true,
+  "per_profile": {
+    "lead3": {
+      "receipt_status": "PASS",
+      "statuses": {
+        "completed": 523
+      },
+      "records_on_disk": 523,
+      "missing": 0,
+      "extra_records": 0,
+      "duplicate_records": 0,
+      "corrupt_or_unreadable_files": 0,
+      "binding_mismatches": 0,
+      "records_not_bound_to_the_run_identity": 0,
+      "distinct_runtime_sha256": 1,
+      "unknown_statuses": [],
+      "receipt_summary_matches_records": true,
+      "delivered_words": {
+        "n": 523,
+        "mean": 38.59655831739962,
+        "p50": 33.0,
+        "p90": 70.0,
+        "max": 215
+      },
+      "capped": 5,
+      "forced_word_cuts": 0,
+      "cap_events": [
+        {
+          "record_id": "test:164",
+          "stratum": "short",
+          "raw_words": 776,
+          "delivered_words": 106,
+          "forced_word_cut": false
+        },
+        {
+          "record_id": "test:170",
+          "stratum": "long",
+          "raw_words": 383,
+          "delivered_words": 72,
+          "forced_word_cut": false
+        },
+        {
+          "record_id": "test:200",
+          "stratum": "medium",
+          "raw_words": 5184,
+          "delivered_words": 22,
+          "forced_word_cut": false
+        },
+        {
+          "record_id": "test:262",
+          "stratum": "short",
+          "raw_words": 576,
+          "delivered_words": 11,
+          "forced_word_cut": false
+        },
+        {
+          "record_id": "test:594",
+          "stratum": "short",
+          "raw_words": 2389,
+          "delivered_words": 109,
+          "forced_word_cut": false
+        }
+      ],
+      "warning_counts": {},
+      "quality_all_null": true,
+      "origin_all_fresh": true,
+      "retried": 0,
+      "forbidden_keys": [],
+      "new_generation_calls": 0,
+      "new_generation_wall_seconds": 0,
+      "total_wall_seconds": 42.300106799000105,
+      "model_load_wall_seconds": 0,
+      "peak_vram_reserved_bytes": 0
+    },
+    "lexrank": {
+      "receipt_status": "PASS",
+      "statuses": {
+        "completed": 523
+      },
+      "records_on_disk": 523,
+      "missing": 0,
+      "extra_records": 0,
+      "duplicate_records": 0,
+      "corrupt_or_unreadable_files": 0,
+      "binding_mismatches": 0,
+      "records_not_bound_to_the_run_identity": 0,
+      "distinct_runtime_sha256": 1,
+      "unknown_statuses": [],
+      "receipt_summary_matches_records": true,
+      "delivered_words": {
+        "n": 523,
+        "mean": 346.8718929254302,
+        "p50": 350.0,
+        "p90": 350.0,
+        "max": 350
+      },
+      "capped": 0,
+      "forced_word_cuts": 0,
+      "cap_events": [],
+      "warning_counts": {},
+      "quality_all_null": true,
+      "origin_all_fresh": true,
+      "retried": 0,
+      "forbidden_keys": [],
+      "new_generation_calls": 0,
+      "new_generation_wall_seconds": 0,
+      "total_wall_seconds": 56.028711079999994,
+      "model_load_wall_seconds": 0,
+      "peak_vram_reserved_bytes": 0
+    },
+    "bart": {
+      "receipt_status": "PASS",
+      "statuses": {
+        "completed": 470,
+        "completed_with_warning": 53
+      },
+      "records_on_disk": 523,
+      "missing": 0,
+      "extra_records": 0,
+      "duplicate_records": 0,
+      "corrupt_or_unreadable_files": 0,
+      "binding_mismatches": 0,
+      "records_not_bound_to_the_run_identity": 0,
+      "distinct_runtime_sha256": 1,
+      "unknown_statuses": [],
+      "receipt_summary_matches_records": true,
+      "delivered_words": {
+        "n": 523,
+        "mean": 50.120458891013385,
+        "p50": 49.0,
+        "p90": 59.0,
+        "max": 80
+      },
+      "capped": 0,
+      "forced_word_cuts": 0,
+      "cap_events": [],
+      "warning_counts": {
+        "sentence_ending": 53
+      },
+      "quality_all_null": true,
+      "origin_all_fresh": true,
+      "retried": 0,
+      "forbidden_keys": [],
+      "new_generation_calls": 4453,
+      "new_generation_wall_seconds": 5892.401308192012,
+      "total_wall_seconds": 10106.568132989,
+      "model_load_wall_seconds": 28.41223657799992,
+      "peak_vram_reserved_bytes": 1176502272
+    },
+    "led": {
+      "receipt_status": "COMPLETED_WITH_FAILURES",
+      "statuses": {
+        "completed_with_warning": 261,
+        "completed": 258,
+        "failed": 4
+      },
+      "records_on_disk": 523,
+      "missing": 0,
+      "extra_records": 0,
+      "duplicate_records": 0,
+      "corrupt_or_unreadable_files": 0,
+      "binding_mismatches": 0,
+      "records_not_bound_to_the_run_identity": 0,
+      "distinct_runtime_sha256": 1,
+      "unknown_statuses": [],
+      "receipt_summary_matches_records": true,
+      "delivered_words": {
+        "n": 519,
+        "mean": 102.30250481695569,
+        "p50": 77.0,
+        "p90": 222.2,
+        "max": 350
+      },
+      "capped": 7,
+      "forced_word_cuts": 1,
+      "cap_events": [
+        {
+          "record_id": "test:148",
+          "stratum": "short",
+          "raw_words": 403,
+          "delivered_words": 57,
+          "forced_word_cut": false
+        },
+        {
+          "record_id": "test:232",
+          "stratum": "short",
+          "raw_words": 363,
+          "delivered_words": 350,
+          "forced_word_cut": true
+        },
+        {
+          "record_id": "test:306",
+          "stratum": "short",
+          "raw_words": 433,
+          "delivered_words": 345,
+          "forced_word_cut": false
+        },
+        {
+          "record_id": "test:401",
+          "stratum": "short",
+          "raw_words": 388,
+          "delivered_words": 350,
+          "forced_word_cut": false
+        },
+        {
+          "record_id": "test:476",
+          "stratum": "short",
+          "raw_words": 530,
+          "delivered_words": 319,
+          "forced_word_cut": false
+        },
+        {
+          "record_id": "test:642",
+          "stratum": "short",
+          "raw_words": 451,
+          "delivered_words": 325,
+          "forced_word_cut": false
+        },
+        {
+          "record_id": "test:763",
+          "stratum": "short",
+          "raw_words": 422,
+          "delivered_words": 327,
+          "forced_word_cut": false
+        }
+      ],
+      "warning_counts": {
+        "sentence_ending": 258,
+        "no_terminal_eos": 79,
+        "token_budget_exhausted": 79,
+        "output_reserve_reached": 79,
+        "repetition": 27
+      },
+      "quality_all_null": true,
+      "origin_all_fresh": true,
+      "retried": 0,
+      "forbidden_keys": [],
+      "new_generation_calls": 346,
+      "new_generation_wall_seconds": 1434.6665247189997,
+      "total_wall_seconds": 4135.706708441,
+      "model_load_wall_seconds": 35.22168455799999,
+      "peak_vram_reserved_bytes": 2327838720
+    }
+  },
+  "failures": [
+    {
+      "candidate": "led",
+      "record_id": "test:127",
+      "stratum": "medium",
+      "error_class": "AdapterFailure",
+      "events": [
+        "completed",
+        "completed",
+        "completed"
+      ]
+    },
+    {
+      "candidate": "led",
+      "record_id": "test:217",
+      "stratum": "long",
+      "error_class": "AdapterFailure",
+      "events": [
+        "completed",
+        "completed",
+        "completed",
+        "completed"
+      ]
+    },
+    {
+      "candidate": "led",
+      "record_id": "test:407",
+      "stratum": "medium",
+      "error_class": "AdapterFailure",
+      "events": [
+        "completed",
+        "completed",
+        "completed"
+      ]
+    },
+    {
+      "candidate": "led",
+      "record_id": "test:900",
+      "stratum": "long",
+      "error_class": "AdapterFailure",
+      "events": [
+        "completed",
+        "completed",
+        "completed"
+      ]
+    }
+  ],
+  "interrupted_records": [],
+  "interrupted_count": 0,
+  "failed_count": 4,
+  "stage_seconds_per_call": {
+    "bart": {
+      "map": {
+        "n": 3383,
+        "mean": 1.3856418391081933,
+        "p50": 1.3365151250000054,
+        "p90": 1.6909709261995889,
+        "max": 3.0349957110001924
+      },
+      "reduce": {
+        "n": 547,
+        "mean": 1.1823199261828103,
+        "p50": 1.1625529399998413,
+        "p90": 1.3532505384002436,
+        "max": 1.8802026959992872
+      },
+      "final": {
+        "n": 523,
+        "mean": 1.067009496877624,
+        "p50": 1.0487870470005873,
+        "p90": 1.1970682548000695,
+        "max": 1.6445935169999757
+      }
+    },
+    "led": {
+      "map": {
+        "n": 850,
+        "mean": 4.857070063647072,
+        "p50": 4.583605459000097,
+        "p90": 7.552403553099976,
+        "max": 8.370755756000108
+      },
+      "reduce": {
+        "n": 339,
+        "mean": 2.445567960342223,
+        "p50": 2.078675664000002,
+        "p90": 4.281245154600401,
+        "max": 5.430316439999842
+      },
+      "final": {
+        "n": 519,
+        "mean": 3.0329812562735725,
+        "p50": 2.224591609000072,
+        "p90": 6.2119695005993885,
+        "max": 16.54218753999976
+      }
+    }
+  },
+  "ledger_source": "session_close_after_export.json",
+  "ledger": {
+    "cpu_seconds": 47041.140608274,
+    "gpu_seconds": 36531.633808807004,
+    "transfer_bytes": 5759850502,
+    "checkpoint_bytes": 107368138,
+    "checkpoint_flush_seconds": 311.2668730731171,
+    "completed_session_wall_seconds": 36531.633808807004,
+    "session_elapsed_wall_seconds": 4231.969402133001
+  },
+  "ledger_sessions": [
+    {
+      "status": "evidence_exported",
+      "granted_wall_seconds": 18900.0,
+      "accounted_wall_seconds": 10304.724699986
+    },
+    {
+      "status": "interrupted",
+      "granted_wall_seconds": 18900.0,
+      "accounted_wall_seconds": 18900.0
+    },
+    {
+      "status": "evidence_exported",
+      "granted_wall_seconds": 18900.0,
+      "accounted_wall_seconds": 7326.909108821001
+    }
+  ],
+  "candidate_runs": [
+    {
+      "candidate_id": "lead3",
+      "cpu_seconds": 9.149365111,
+      "wall_seconds": 41.63314571000001
+    },
+    {
+      "candidate_id": "lexrank",
+      "cpu_seconds": 26.906426165,
+      "wall_seconds": 55.58348562299989
+    },
+    {
+      "candidate_id": "bart",
+      "cpu_seconds": 6992.888859955,
+      "wall_seconds": 10106.152642543999
+    },
+    {
+      "candidate_id": "led",
+      "cpu_seconds": 2140.6197409680003,
+      "wall_seconds": 4135.052471755
+    }
+  ],
+  "bart_led_separation": {
+    "bart_wall_seconds": 10106.152642543999,
+    "led_wall_seconds": 4135.052471755,
+    "largest_session_grant_seconds": 18900.0,
+    "proved_in_different_sessions": false,
+    "note": "the ledger has no per-session candidate id; this is a wall-time proof plus the notebook assertion"
+  },
+  "checkpoint_summary": {
+    "written_utc": "2026-10-25T14:34:59Z",
+    "matches_records_on_disk": true
+  },
+  "anomalies": [
+    {
+      "kind": "sessions_closed_as_interrupted",
+      "count": 1
+    }
+  ],
+  "informational_floors": {
+    "per_profile": {
+      "lead3": {
+        "scored_success_candidates": 523,
+        "fraction": 1.0,
+        "overall_floor_met": true,
+        "stratum_floors_met": {
+          "short": true,
+          "medium": true,
+          "long": true
+        }
+      },
+      "lexrank": {
+        "scored_success_candidates": 523,
+        "fraction": 1.0,
+        "overall_floor_met": true,
+        "stratum_floors_met": {
+          "short": true,
+          "medium": true,
+          "long": true
+        }
+      },
+      "bart": {
+        "scored_success_candidates": 523,
+        "fraction": 1.0,
+        "overall_floor_met": true,
+        "stratum_floors_met": {
+          "short": true,
+          "medium": true,
+          "long": true
+        }
+      },
+      "led": {
+        "scored_success_candidates": 519,
+        "fraction": 0.9923518164435946,
+        "overall_floor_met": true,
+        "stratum_floors_met": {
+          "short": true,
+          "medium": true,
+          "long": true
+        }
+      }
+    },
+    "common_set": {
+      "size": 519,
+      "by_stratum": {
+        "short": 182,
+        "medium": 170,
+        "long": 167
+      },
+      "common_n_met": true,
+      "overall_met": true,
+      "stratum_fraction_met": {
+        "short": true,
+        "medium": true,
+        "long": true
+      }
+    },
+    "rule_applied": false,
+    "note": "generation-stage candidates only (status based); the scoring audit measures scored success. Information, not the decision."
+  },
+  "schema_version": 1,
+  "protocol_id": "tib-final523-generation-261024-v1",
+  "evidence_zip_sha256": "0ed836e74df7ae8e60b6795da7d4dff85ee0690baaab2e39d35b1e258bcd5afa",
+  "prior_evidence_zip_sha256": [
+    "f41479571568bf59b1bd443d2393e148bc542567758bbc3553a857494b00d7bc"
+  ],
+  "rule_applied": false,
+  "scope": "text-free audit of final523 generation evidence; no scores, no ranking, no selection",
+  "claim_limit": "integrity and denominator evidence only; interrupted and failed cells are disclosed, not judged"
+}

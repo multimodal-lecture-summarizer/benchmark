@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "HOLD",
+  "scorer_ready": false,
+  "actual_colab_execution": false,
+  "reason": "Prepared only; separate user scoring authorization and actual Colab execution required",
+  "archive_bytes": 8864874,
+  "archive_sha256": "df73a24ec27fa8c4cb00cb4d894fc5e988beca93f39f477a458a539dcc3dabde",
+  "manifest_sha256": "1dee322c35e36aa8fee65e058c543090c554f95a82c08645c4813f2d0420cc10",
+  "generation_evidence_zip_sha256": "be9d87f1b7deb2058280eae8565c8559db6d77b0209139309ee66652a43a723a",
+  "generation_bundle_manifest_sha256": "408ef82fda985953bb40318792651a447235e18ff6fffdf294909d74b535e8a3",
+  "rows": 1200,
+  "scoreable_rows": 1197,
+  "failed_rows": 3,
+  "rows_by_profile": {
+    "lead3": 300,
+    "lexrank": 300,
+    "bart": 300,
+    "led": 300
+  },
+  "quality_ranking_performed": false,
+  "generation_executed": false,
+  "scoring_start_authorized": false,
+  "selection_rule_applied": false
+}

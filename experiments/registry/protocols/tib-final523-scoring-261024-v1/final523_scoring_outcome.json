@@ -1,0 +1,581 @@
+{
+  "checks": {
+    "contract_is_final523_and_unauthorized": true,
+    "shipped_contract_is_the_registry_contract": true,
+    "receipt_delivered_pass": true,
+    "views_complete": true,
+    "actual_colab_t4": true,
+    "not_injected": true,
+    "fixtures_pass": true,
+    "bundle_manifest_bound": true,
+    "generation_evidence_bound": true,
+    "artifact_hashes_match": true,
+    "rows_are_the_contract_matrix_with_unique_sample_ids": true,
+    "row_counts": true,
+    "failed_cells_are_the_declared_ones": true,
+    "profiles_fixed_no_qwen3": true,
+    "five_metrics_finite": true,
+    "failed_cells_null": true,
+    "view_rows_finite_and_complete": true,
+    "no_generation_no_selection": true,
+    "resources_measured": true,
+    "checkpoints_intact_unique_and_bound_to_the_receipt": true,
+    "checkpoints_cover_exactly_the_scored_cells": true,
+    "fresh_run_checkpoints_all_belong_to_this_run": true,
+    "fresh_run_reused_nothing": true,
+    "resume_policy_is_the_users_pre_run_declaration": true,
+    "no_reused_failed_rows": true,
+    "quarantined_files_are_listed_and_their_rows_scored": true,
+    "contributing_runs_agree_on_the_compute_runtime": true
+  },
+  "audit_pass": true,
+  "anomalies": [],
+  "counts": {
+    "cells": 2092,
+    "scored": 2088,
+    "failed_generation_cells": 4
+  },
+  "resume": {
+    "mode": "fresh",
+    "partial_resume_used": false,
+    "reused_rows": 0,
+    "fresh_rows": 2088,
+    "reused_failed_rows": 0,
+    "canary": null,
+    "quarantined": [],
+    "checkpoint_counts": {
+      "score_checkpoints": 2088,
+      "view_checkpoints": 2088,
+      "quarantined_files": 0,
+      "score_checkpoints_by_run": {
+        "1792976683246376237": 2088
+      },
+      "mixed_runtime": false,
+      "runtime_fields_that_differ_between_runs": [],
+      "compute_fields_that_differ_between_runs": []
+    },
+    "mixed_runtime": false,
+    "runtime_fields_that_differ_between_runs": [],
+    "compute_fields_that_differ_between_runs": [],
+    "reused_original_scoring_seconds": 0.0,
+    "fresh_scoring_seconds": 8455.978167588013
+  },
+  "run_timeline": [
+    {
+      "run_id": "1792976683246376237",
+      "has_receipt": true,
+      "delivered_status": "PASS",
+      "views_status": "COMPLETE",
+      "reasons": [],
+      "rows_scored_fresh": 2088,
+      "rows_reused": 0,
+      "total_wall_seconds": 8717.611620234999
+    }
+  ],
+  "runs_without_receipt": 0,
+  "coverage": {
+    "per_profile": {
+      "lead3": {
+        "denominator": 523,
+        "generated": 523,
+        "scored_success": 523,
+        "rougeL_finite": 523,
+        "by_stratum": {
+          "short": 182,
+          "medium": 172,
+          "long": 169
+        },
+        "overall_fraction": 1.0,
+        "stratum_fraction": {
+          "short": 1.0,
+          "medium": 1.0,
+          "long": 1.0
+        },
+        "informational_floors": {
+          "overall_min": 0.95,
+          "per_stratum_min": 0.9,
+          "overall_met": true,
+          "per_stratum_met": {
+            "short": true,
+            "medium": true,
+            "long": true
+          }
+        }
+      },
+      "lexrank": {
+        "denominator": 523,
+        "generated": 523,
+        "scored_success": 523,
+        "rougeL_finite": 523,
+        "by_stratum": {
+          "short": 182,
+          "medium": 172,
+          "long": 169
+        },
+        "overall_fraction": 1.0,
+        "stratum_fraction": {
+          "short": 1.0,
+          "medium": 1.0,
+          "long": 1.0
+        },
+        "informational_floors": {
+          "overall_min": 0.95,
+          "per_stratum_min": 0.9,
+          "overall_met": true,
+          "per_stratum_met": {
+            "short": true,
+            "medium": true,
+            "long": true
+          }
+        }
+      },
+      "bart": {
+        "denominator": 523,
+        "generated": 523,
+        "scored_success": 523,
+        "rougeL_finite": 523,
+        "by_stratum": {
+          "short": 182,
+          "medium": 172,
+          "long": 169
+        },
+        "overall_fraction": 1.0,
+        "stratum_fraction": {
+          "short": 1.0,
+          "medium": 1.0,
+          "long": 1.0
+        },
+        "informational_floors": {
+          "overall_min": 0.95,
+          "per_stratum_min": 0.9,
+          "overall_met": true,
+          "per_stratum_met": {
+            "short": true,
+            "medium": true,
+            "long": true
+          }
+        }
+      },
+      "led": {
+        "denominator": 523,
+        "generated": 519,
+        "scored_success": 519,
+        "rougeL_finite": 519,
+        "by_stratum": {
+          "short": 182,
+          "medium": 170,
+          "long": 167
+        },
+        "overall_fraction": 0.9923518164435946,
+        "stratum_fraction": {
+          "short": 1.0,
+          "medium": 0.9883720930232558,
+          "long": 0.9881656804733728
+        },
+        "informational_floors": {
+          "overall_min": 0.95,
+          "per_stratum_min": 0.9,
+          "overall_met": true,
+          "per_stratum_met": {
+            "short": true,
+            "medium": true,
+            "long": true
+          }
+        }
+      }
+    },
+    "c_between": {
+      "size": 519,
+      "by_stratum": {
+        "short": 182,
+        "medium": 170,
+        "long": 167
+      },
+      "fraction": 0.9923518164435946,
+      "stratum_fraction": {
+        "short": 1.0,
+        "medium": 0.9883720930232558,
+        "long": 0.9881656804733728
+      },
+      "informational_floors": {
+        "common_n_min": 180,
+        "common_n_met": true,
+        "per_nonempty_stratum_n_min": 20,
+        "per_stratum_n_met": {
+          "short": true,
+          "medium": true,
+          "long": true
+        },
+        "overall_min": 0.9,
+        "per_stratum_min": 0.8
+      }
+    },
+    "rule_applied": false,
+    "note": "measured sizes only; PASS/FAIL here is information, not the tier A/B decision"
+  },
+  "timing_seconds_fresh_rows_only": {
+    "total": {
+      "bart|long": {
+        "n": 169,
+        "mean": 7.026202136692311,
+        "p50": 6.820537979000164,
+        "p90": 10.742457609600573,
+        "max": 18.975899156000196
+      },
+      "bart|medium": {
+        "n": 172,
+        "mean": 3.232246785308118,
+        "p50": 3.1247317404995556,
+        "p90": 4.55694455940029,
+        "max": 6.422861858000033
+      },
+      "bart|short": {
+        "n": 182,
+        "mean": 1.9002719917033433,
+        "p50": 1.7615544005002448,
+        "p90": 3.0097843217990885,
+        "max": 7.66458230399985
+      },
+      "lead3|long": {
+        "n": 169,
+        "mean": 7.035669522136097,
+        "p50": 6.857218749999902,
+        "p90": 10.674930415199926,
+        "max": 18.335002580000037
+      },
+      "lead3|medium": {
+        "n": 172,
+        "mean": 3.226472021988409,
+        "p50": 3.1588671274998887,
+        "p90": 4.496309201199802,
+        "max": 6.42163353000069
+      },
+      "lead3|short": {
+        "n": 182,
+        "mean": 1.8904627923022648,
+        "p50": 1.7810058939994633,
+        "p90": 3.0648476792001933,
+        "max": 7.5691538819992275
+      },
+      "led|long": {
+        "n": 167,
+        "mean": 7.040686065988023,
+        "p50": 6.818003582000074,
+        "p90": 10.815531012599422,
+        "max": 18.689326347000133
+      },
+      "led|medium": {
+        "n": 170,
+        "mean": 3.2492270612764673,
+        "p50": 3.161619147500005,
+        "p90": 4.612603012199725,
+        "max": 6.436400118000165
+      },
+      "led|short": {
+        "n": 182,
+        "mean": 1.9272862121978416,
+        "p50": 1.8185033429999748,
+        "p90": 2.9973180555002727,
+        "max": 7.6268280830008734
+      },
+      "lexrank|long": {
+        "n": 169,
+        "mean": 7.266233318100571,
+        "p50": 7.1272781709999435,
+        "p90": 11.002468287999637,
+        "max": 18.81555888800017
+      },
+      "lexrank|medium": {
+        "n": 172,
+        "mean": 3.4297165309243884,
+        "p50": 3.336793802000102,
+        "p90": 4.7527575386997345,
+        "max": 6.740004992999275
+      },
+      "lexrank|short": {
+        "n": 182,
+        "mean": 2.098211832785662,
+        "p50": 1.9992187269999704,
+        "p90": 3.304647874699822,
+        "max": 7.843793658999857
+      }
+    },
+    "bertscore": {
+      "bart|long": {
+        "n": 169,
+        "mean": 0.0500587844556297,
+        "p50": 0.04459070800021436,
+        "p90": 0.07021777360014315,
+        "max": 0.16319087100055185
+      },
+      "bart|medium": {
+        "n": 172,
+        "mean": 0.047110079127864884,
+        "p50": 0.04243764399961947,
+        "p90": 0.06753472179989331,
+        "max": 0.16028338800060737
+      },
+      "bart|short": {
+        "n": 182,
+        "mean": 0.04724494609338733,
+        "p50": 0.04183945549948476,
+        "p90": 0.06736271629906697,
+        "max": 0.15839308100112248
+      },
+      "lead3|long": {
+        "n": 169,
+        "mean": 0.04813666904143118,
+        "p50": 0.041658591999294003,
+        "p90": 0.07325381239984381,
+        "max": 0.15938157199980196
+      },
+      "lead3|medium": {
+        "n": 172,
+        "mean": 0.045848246226786044,
+        "p50": 0.04155696749967319,
+        "p90": 0.06534194669957288,
+        "max": 0.15859090599951742
+      },
+      "lead3|short": {
+        "n": 182,
+        "mean": 0.04636551126372229,
+        "p50": 0.041957962500418944,
+        "p90": 0.06600335590028408,
+        "max": 0.17238449600154127
+      },
+      "led|long": {
+        "n": 167,
+        "mean": 0.05464521207788349,
+        "p50": 0.04782691300010811,
+        "p90": 0.07961070360015583,
+        "max": 0.1748500370003967
+      },
+      "led|medium": {
+        "n": 170,
+        "mean": 0.05067175925880613,
+        "p50": 0.04553435150000951,
+        "p90": 0.07234928849948119,
+        "max": 0.17859208500067325
+      },
+      "led|short": {
+        "n": 182,
+        "mean": 0.057192299197780176,
+        "p50": 0.05353565499990509,
+        "p90": 0.08435727550058801,
+        "max": 0.16914692799946351
+      },
+      "lexrank|long": {
+        "n": 169,
+        "mean": 0.1048606967041533,
+        "p50": 0.09898165699996753,
+        "p90": 0.1305279023999902,
+        "max": 0.2630208229998061
+      },
+      "lexrank|medium": {
+        "n": 172,
+        "mean": 0.09905306794768008,
+        "p50": 0.09505467300004966,
+        "p90": 0.12299980079978923,
+        "max": 0.22271623100004945
+      },
+      "lexrank|short": {
+        "n": 182,
+        "mean": 0.09855869704940162,
+        "p50": 0.09565501650104125,
+        "p90": 0.12068791160054389,
+        "max": 0.21414709700002277
+      }
+    },
+    "source_similarity_sbert": {
+      "bart|long": {
+        "n": 169,
+        "mean": 6.896362340869424,
+        "p50": 6.67499820099647,
+        "p90": 10.588687714392657,
+        "max": 18.736000899004466
+      },
+      "bart|medium": {
+        "n": 172,
+        "mean": 3.142183404528491,
+        "p50": 3.032498386505722,
+        "p90": 4.450383933001376,
+        "max": 6.309157674983908
+      },
+      "bart|short": {
+        "n": 182,
+        "mean": 1.8207994230376723,
+        "p50": 1.6742111769954136,
+        "p90": 2.908587369308407,
+        "max": 7.54731468400314
+      },
+      "lead3|long": {
+        "n": 169,
+        "mean": 6.907855876964267,
+        "p50": 6.74316654999393,
+        "p90": 10.529493658192951,
+        "max": 18.1203686789936
+      },
+      "lead3|medium": {
+        "n": 172,
+        "mean": 3.1380711955642804,
+        "p50": 3.0574312629992164,
+        "p90": 4.4097589190082545,
+        "max": 6.302367654000591
+      },
+      "lead3|short": {
+        "n": 182,
+        "mean": 1.8124325721705046,
+        "p50": 1.7069715389961857,
+        "p90": 2.986846187108677,
+        "max": 7.46257949397841
+      },
+      "led|long": {
+        "n": 167,
+        "mean": 6.904648872155642,
+        "p50": 6.655569728000046,
+        "p90": 10.65784205101154,
+        "max": 18.46652727399669
+      },
+      "led|medium": {
+        "n": 170,
+        "mean": 3.154434225618067,
+        "p50": 3.0743947005003065,
+        "p90": 4.506783988395363,
+        "max": 6.327249208005014
+      },
+      "led|short": {
+        "n": 182,
+        "mean": 1.836378898313047,
+        "p50": 1.7209040735006056,
+        "p90": 2.9020316763948357,
+        "max": 7.493097569009478
+      },
+      "lexrank|long": {
+        "n": 169,
+        "mean": 7.068726498787902,
+        "p50": 6.9232429550033885,
+        "p90": 10.76557697319804,
+        "max": 18.52370328600682
+      },
+      "lexrank|medium": {
+        "n": 172,
+        "mean": 3.276013118680487,
+        "p50": 3.1854133324945906,
+        "p90": 4.585891103307768,
+        "max": 6.563038237005458
+      },
+      "lexrank|short": {
+        "n": 182,
+        "mean": 1.9573167449284332,
+        "p50": 1.8593113014958362,
+        "p90": 3.161427261001427,
+        "max": 7.653652011011218
+      }
+    },
+    "rouge_and_other": {
+      "bart|long": {
+        "n": 169,
+        "mean": 0.07978101136725615,
+        "p50": 0.07795805700379788,
+        "p90": 0.11178045440592545,
+        "max": 0.19063372699565662
+      },
+      "bart|medium": {
+        "n": 172,
+        "mean": 0.04295330165176216,
+        "p50": 0.042144294008267025,
+        "p90": 0.054967414294969784,
+        "max": 0.07162470600542292
+      },
+      "bart|short": {
+        "n": 182,
+        "mean": 0.03222762257228369,
+        "p50": 0.031164439008534828,
+        "p90": 0.04224419369365933,
+        "max": 0.0792655939967517
+      },
+      "lead3|long": {
+        "n": 169,
+        "mean": 0.07967697613039908,
+        "p50": 0.07802867800091917,
+        "p90": 0.11250005620022421,
+        "max": 0.1807526730065092
+      },
+      "lead3|medium": {
+        "n": 172,
+        "mean": 0.0425525801973425,
+        "p50": 0.041787403989474114,
+        "p90": 0.0543801913921925,
+        "max": 0.0710999200000515
+      },
+      "lead3|short": {
+        "n": 182,
+        "mean": 0.031664708868037864,
+        "p50": 0.03056920200060631,
+        "p90": 0.04128858010490149,
+        "max": 0.07610774702152412
+      },
+      "led|long": {
+        "n": 167,
+        "mean": 0.08139198175449851,
+        "p50": 0.0794243730015296,
+        "p90": 0.11380543620271055,
+        "max": 0.18383512600348695
+      },
+      "led|medium": {
+        "n": 170,
+        "mean": 0.044121076399594186,
+        "p50": 0.04395381550284583,
+        "p90": 0.05563345310538352,
+        "max": 0.06917393099502078
+      },
+      "led|short": {
+        "n": 182,
+        "mean": 0.03371501468701443,
+        "p50": 0.03296039900124015,
+        "p90": 0.04235719420194073,
+        "max": 0.07777870299105416
+      },
+      "lexrank|long": {
+        "n": 169,
+        "mean": 0.09264612260851623,
+        "p50": 0.0893258119967868,
+        "p90": 0.12573485580305716,
+        "max": 0.21995069600325223
+      },
+      "lexrank|medium": {
+        "n": 172,
+        "mean": 0.05465034429622117,
+        "p50": 0.05495422400190364,
+        "p90": 0.07138013498697547,
+        "max": 0.0907773300050394
+      },
+      "lexrank|short": {
+        "n": 182,
+        "mean": 0.04233639080782698,
+        "p50": 0.0412537384981988,
+        "p90": 0.05669792600256187,
+        "max": 0.08432475398876704
+      }
+    }
+  },
+  "wall": {
+    "last_run_total_hours": 2.4215587833986105
+  },
+  "ledger": {
+    "sessions": [
+      {
+        "status": "scoring_evidence_exported",
+        "accounted_wall_seconds": 8943.688960435
+      }
+    ],
+    "gpu_seconds": 8943.688960435
+  },
+  "rule_applied": false,
+  "scores_included": false,
+  "schema_version": 1,
+  "protocol_id": "tib-final523-scoring-261024-v1",
+  "evidence_zip_sha256": "6f068c2dc74059b2833c5480f0ca6a1c2a7a708e902c2bc458b2b46f6fd4d223",
+  "scope": "text-free summary of final523 scoring evidence: integrity, resume provenance, coverage and cost; no scores",
+  "claim_limit": "no score value, ranking, model selection or tier A/B decision is made or stored here"
+}

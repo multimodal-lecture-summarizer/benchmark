@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "receipt_id": "tib-final523-analysis-engine-receipt-261024-v1",
+  "recorded_on": "2026-10-24",
+  "engine_file": "experiments/scripts/tib_final523_analysis.py",
+  "engine_sha256": "24c7ab30d873b35f174407756527c0565dbc78784def0f17e63f18774762a204",
+  "declaration_sha256": "da51606a4d9aef9bdaa2199f8641f512f4e9b26e12751a9f3a9f3ae842f05316",
+  "tested_on": "synthetic 523 x 4 data only; no real final523 score exists",
+  "tests": "tests/test_tib_final523_analysis.py"
+}

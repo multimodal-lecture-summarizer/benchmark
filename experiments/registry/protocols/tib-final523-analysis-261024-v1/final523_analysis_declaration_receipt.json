@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "receipt_id": "tib-final523-analysis-declaration-receipt-261024-v1",
+  "recorded_on": "2026-10-24",
+  "declaration_file": "analysis_declarations_final523_261024_v1.json",
+  "declaration_sha256": "da51606a4d9aef9bdaa2199f8641f512f4e9b26e12751a9f3a9f3ae842f05316",
+  "use_decisions_file": "final523_use_decisions_261024_v1.json",
+  "use_decisions_sha256": "56ba3d94058e59721a7a31d48c7aa642f24c2404a5e1cc9b5d66af21fe67a7bd",
+  "no_final523_score_existed": true,
+  "analysis_engine_built": false,
+  "final_test_authorized": false,
+  "selection_start_authorized": false
+}

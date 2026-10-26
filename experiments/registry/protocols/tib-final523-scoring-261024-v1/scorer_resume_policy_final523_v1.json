@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "policy_id": "tib-final523-scorer-resume-policy-261024-v1",
+  "declared_by": "user",
+  "declared_on": "2026-10-24",
+  "user_instruction": "chose in chat on 2026-10-24: implement scorer partial resume for final523; portable runtime binding; quarantine torn *.partial checkpoints automatically",
+  "declared_before": "any final523 generation or scoring output exists",
+  "post_hoc": false,
+  "applies_to": "stage final523 only; the selection300 and Pilot40 rule (--resume replays a complete cache and never fills holes) is unchanged",
+  "partial_resume_allowed": true,
+  "flag": "--resume-partial",
+  "hole_definition": "a checkpoint file that does not exist; a corrupt, hash-mismatched or key-mismatched checkpoint is a HOLD, not a hole",
+  "orphan_rule": "any checkpoint file in the folder that does not belong to the current binding is a HOLD",
+  "failed_checkpoint_rule": "a checkpoint that stored a scoring failure is reused as a failed row: the run reports it (reused_failed_rows) and cannot PASS; re-scoring such rows is not part of this policy and needs a separate user decision",
+  "torn_write_rule": "a *.partial file is renamed to *.partial.quarantined-<run_id> and listed in the receipt; its row is scored fresh",
+  "runtime_binding": {
+    "mode": "portable",
+    "bound": ["cuda_runtime", "device_name", "device_memory_bytes", "python", "packages"],
+    "dropped": ["google_colab_imported", "google_colab_module", "platform", "logical_cpu_count", "torch_cpu_threads", "torch_interop_threads"],
+    "also_bound": ["package_manifest_sha256", "frozen_spec_sha256", "runtime_amendment_sha256", "evidence_zip_sha256",
+                   "code_input_files_sha256", "asset_manifests_sha256"],
+    "full_runtime_digest": "stored per checkpoint as provenance"
+  },
+  "canary": {
+    "rows": 6,
+    "selection": "reused delivered-summary rows whose stored result has no scoring failure, in run order: the first row of each profile, then of each stratum not yet covered, then evenly spaced positions, up to 6; deterministic and independent of scores",
+    "views": "view checkpoints are bound to the same key and are not re-scored; a view checkpoint is reused only together with a complete pass 1",
+    "tolerance_absolute_per_metric": 1e-06,
+    "on_mismatch": "HOLD (cross-session drift)"
+  },
+  "unchanged": ["scorer v2 metrics, windows, IDF=false, FP32", "350-word cap", "PASS only when every row is scored and views are complete",
+                "failed generation cells stay in the denominator as NULL", "no rows dropped, no scoring on a completed prefix"],
+  "forbidden": ["resuming across different bundles or evidence ZIPs", "changing assets, spec, code or pins between sessions",
+                "using partial resume for any other stage", "choosing which rows to reuse by their scores"],
+  "receipt_fields": ["partial_resume_requested", "partial_resume_used", "reused_rows", "fresh_rows", "reused_failed_rows", "run_ids",
+                     "runtime_full_sha256_by_run", "mixed_runtime", "reused_original_scoring_seconds", "quarantined", "canary"],
+  "package_binding": "only the packages pinned by the runtime amendment (runtime and support pins) enter the key; other installed packages do not",
+  "scoring_start_authorized": false
+}
