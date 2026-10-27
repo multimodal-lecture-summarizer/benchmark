@@ -146,6 +146,89 @@
       ]
     },
     {
+      "dataset": "lvvo",
+      "rq": "component_detection",
+      "claim": "D-A_four_class_slide_element_detection",
+      "added": "2026-10-26",
+      "required_inputs": "released JPG + four-class boxes (table, chart, photo, illustration)",
+      "status": "EVIDENCE_AVAILABLE_FOR_SCOPED_PROTOCOL",
+      "remaining_gates": [
+        "freeze open-vocab zero-shot prompts; closed COCO models marked no_corresponding_class",
+        "declare duplicate dependence: 139 source groups are not independent, bootstrap by source group"
+      ],
+      "not_required_for_this_scope": [
+        "source video restoration",
+        "fine-tuned held-out or unseen-generalization claim"
+      ],
+      "report": "../../../../plans/reports/protocol-decision-261026-1745-detection-tracking-claim-freeze-report.md",
+      "qualification_run": "det-track-qualification-261026-v3 (Colab, 2026-10-26)",
+      "evidence": "LVVO KEEP: 1000 images, 1580 boxes, 21 negatives, 139 groups, 0 exact duplicates, 313 near-duplicate pairs (257 cross-group); archive sha256 f049217c...",
+      "registry": "lvvo-detection-protocol-261026.json",
+      "receipt": "detection-tracking-qualification-receipt-261026.json",
+      "eda_outputs": "../../../outputs/dataset_eda/",
+      "scorer_pin": "pycocotools 2.0.11; experiments.scripts.detection_scoring (tests/test_detection_scoring.py); practical threshold delta_map 0.02 frozen in metric_registry.yaml"
+    },
+    {
+      "dataset": "coco-val2017",
+      "rq": "component_detection",
+      "claim": "D-B_people_object_device_detection",
+      "added": "2026-10-26",
+      "required_inputs": "COCO val2017 image subset + boxes for person, chair, tv, laptop, mouse, keyboard, cell phone, book, clock, bottle",
+      "status": "EVIDENCE_AVAILABLE_FOR_SCOPED_PROTOCOL",
+      "remaining_gates": [
+        "freeze open-vocab to taxonomy mapping after review",
+        "report Florence-2 as score-less baseline, not ranked against scored detectors",
+        "image licenses include NonCommercial/NoDerivs: research use, no redistribution"
+      ],
+      "not_required_for_this_scope": [
+        "lecture-video box GT",
+        "ranking merged with D-A"
+      ],
+      "report": "../../../../plans/reports/protocol-decision-261026-1745-detection-tracking-claim-freeze-report.md",
+      "qualification_run": "det-track-qualification-261026-v3 (Colab, 2026-10-26)",
+      "evidence": "COCO val2017 subset KEEP: 2000 images, 10129 boxes, 10 classes, 0 download/decode failures, 0 size mismatches, 0 exact overlap with LVVO; license terms read from cocodataset.org/dataset/termsofuse.htm and acknowledged for non-commercial research (user, 2026-10-26)",
+      "registry": "coco-subset-261026.json",
+      "receipt": "detection-tracking-qualification-receipt-261026.json",
+      "eda_outputs": "../../../outputs/dataset_eda/",
+      "scorer_pin": "pycocotools 2.0.11; experiments.scripts.detection_scoring (tests/test_detection_scoring.py); practical threshold delta_map 0.02 frozen in metric_registry.yaml"
+    },
+    {
+      "dataset": "dancetrack-sportsmot",
+      "rq": "component_tracking",
+      "claim": "T_general_video_tracking_fixed_detections",
+      "added": "2026-10-26",
+      "required_inputs": "DanceTrack val (25 videos) and SportsMOT val with persistent-ID GT; frozen detections from a COCO-pretrained detector and from dataset-published YOLOX detections, reported separately",
+      "status": "EVIDENCE_AVAILABLE_FOR_SCOPED_PROTOCOL",
+      "remaining_gates": [
+        "equal tuning budget per tracker; report default and tuned; practical threshold delta_hota 2.0 fixed before scores",
+        "single domain only (DanceTrack, near-static cameras): descriptive conclusions, no extrapolation to lecture video",
+        "SportsMOT optional: add only if the Codalab ZIP is supplied"
+      ],
+      "not_required_for_this_scope": [
+        "lecture-domain persistent-ID GT"
+      ],
+      "report": "../../../../plans/reports/protocol-decision-261026-1745-detection-tracking-claim-freeze-report.md",
+      "qualification_run": "det-track-qualification-261026-v3 (Colab, 2026-10-26)",
+      "evidence": "DanceTrack KEEP: val 25 sequences / 25508 frames, train 40 sequences / 41796 frames, 0 blocking QA issues, 0 exact train/val leakage; ids are 0-based; val camera proxy all static. SportsMOT not acquired (HOLD); MOT17 REJECT (license unverified).",
+      "registry": "mot-dancetrack-261026.json",
+      "receipt": "detection-tracking-qualification-receipt-261026.json",
+      "eda_outputs": "../../../outputs/dataset_eda/",
+      "scorer_pin": "TrackEval commit 12c8791b303e0a0b50f753af204249e622d0281a; experiments.scripts.tracking_scoring agrees with the official evaluator to 1e-12 on randomised sequences (tests/test_tracking_scoring.py)"
+    },
+    {
+      "dataset": "lecture-video",
+      "rq": "component_tracking",
+      "claim": "T-lecture_lecture_domain_tracking",
+      "added": "2026-10-26",
+      "required_inputs": "lecture video with persistent-ID GT",
+      "status": "GT_BLOCKED_FOR_PROPOSED_COMPARISON",
+      "remaining_gates": [
+        "no public lecture or classroom dataset with identity GT found; annotation pilot removed from scope by user decision 2026-10-26"
+      ],
+      "not_required_for_this_scope": [],
+      "report": "../../../../plans/reports/protocol-decision-261026-1745-detection-tracking-claim-freeze-report.md"
+    },
+    {
       "dataset": "eduvidqa",
       "rq": "RQ3_retrieval",
       "claim": "retrieval_evidence_quality",

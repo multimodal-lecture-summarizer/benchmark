@@ -1,0 +1,185 @@
+{
+  "decisions": {
+    "coco": {
+      "decision": "KEEP",
+      "reason": "all gates passed for the scoped protocol"
+    },
+    "dancetrack": {
+      "decision": "KEEP",
+      "reason": "all gates passed for the scoped protocol"
+    },
+    "lvvo": {
+      "decision": "KEEP",
+      "reason": "all gates passed for the scoped protocol"
+    },
+    "mot17": {
+      "decision": "REJECT",
+      "reason": "license not verified; not used (plan rule)"
+    },
+    "sportsmot": {
+      "decision": "HOLD",
+      "reason": "data not acquired in this run"
+    }
+  },
+  "finished_utc": "2026-10-26T13:53:52.481751+00:00",
+  "frozen": {
+    "bootstrap": {
+      "ci": 0.95,
+      "method": "paired_percentile",
+      "resamples": 10000
+    },
+    "phase1_report": "plans/reports/protocol-decision-261026-1745-detection-tracking-claim-freeze-report.md",
+    "practical_thresholds": {
+      "delta_hota": 2.0,
+      "delta_map_50_95": 0.02
+    },
+    "taxonomy_coco": {
+      "1": "person",
+      "44": "bottle",
+      "62": "chair",
+      "72": "tv",
+      "73": "laptop",
+      "74": "mouse",
+      "76": "keyboard",
+      "77": "cell phone",
+      "84": "book",
+      "85": "clock"
+    }
+  },
+  "libraries": {
+    "Pillow": "11.3.0",
+    "gdown": "5.2.2",
+    "huggingface_hub": "1.33.0",
+    "matplotlib": "3.10.0",
+    "numpy": "2.1.3",
+    "opencv-python": "5.0.0.93",
+    "opencv-python-headless": "5.0.0.93",
+    "pandas": "2.2.3",
+    "requests": "2.32.4"
+  },
+  "license_ack": {
+    "coco": true,
+    "dancetrack": true,
+    "lvvo": true,
+    "sportsmot": false
+  },
+  "license_evidence": {
+    "coco": {
+      "fetched_utc": "2026-10-26T13:52:02.125343+00:00",
+      "lines": [
+        "<h1>Terms of Use</h1>",
+        "<p>The annotations in this dataset along with this website belong to the COCO Consortium and are licensed under a <a href=\"https://creativecommons.org/licenses/by/4.0/legalcode\" target='_blank'>Creative Commons Attribution 4.0 License</a>.</p>",
+        "<p>The COCO Consortium does not own the copyright of the images. Use of the images must abide by the <a href=\"https://www.flickr.com/creativecommons/\" target='_blank'>Flickr Terms of Use</a>. The users of the images accept full responsibility for the use of the dataset, including but not limited to ",
+        "<p>Copyright (c) 2015, COCO Consortium. All rights reserved. Redistribution and use software in source and binary form, with or without modification, are permitted provided that the following conditions are met:</p>",
+        "<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>",
+        "<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>"
+      ],
+      "matched": true,
+      "ok": true,
+      "sha256": "bd019f88ee44c29b2f19c5b99888cf5bc2e7c16f57b6e52af8ed3a60462e8bdd",
+      "url": "https://cocodataset.org/dataset/termsofuse.htm",
+      "verified": true,
+      "verified_via": "official_page"
+    },
+    "dancetrack": {
+      "fetched_utc": "2026-10-26T13:52:02.389538+00:00",
+      "lines": [
+        "- The annotations of DanceTrack are licensed under a [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).",
+        "- The dataset of DanceTrack is available for **non-commercial** research purposes only.",
+        "- The code of DanceTrack is released under the MIT License."
+      ],
+      "matched": true,
+      "ok": true,
+      "sha256": "7997e05579642e07eba3dcf35021b2425898561f4c27e4bdb1aebb8bc811b65f",
+      "url": "https://raw.githubusercontent.com/DanceTrack/DanceTrack/main/README.md",
+      "verified": true,
+      "verified_via": "official_page"
+    },
+    "lvvo": {
+      "fetched_utc": "2026-10-26T13:52:01.961809+00:00",
+      "lines": [
+        "# LICENSE.txt",
+        "This repository includes multiple datasets and metadata files, each governed by a separate license:",
+        "The primary dataset developed by the authors and made available via the Google Drive link is licensed under:",
+        "Creative Commons Attribution 4.0 International License (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "Licensed under:",
+        "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "Licensed under:",
+        "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      ],
+      "matched": true,
+      "ok": true,
+      "sha256": "fb0a2c4c2ad3085d7af4e245a001b90534ec22cb0a5e682ba6822b869e3fa0ef",
+      "url": "https://raw.githubusercontent.com/dbiswas55/LVVO_dataset/d53418d8846c5c08abf9cfa7380da8a4f16626ce/LICENSE.txt",
+      "verified": true,
+      "verified_via": "official_page"
+    },
+    "sportsmot": {
+      "fetched_utc": "2026-10-26T13:52:02.516561+00:00",
+      "lines": [
+        "<p style = \"text-align:center;color:gray;font-size:0.7em;text-indent:0\">Distributions(Gaussian PDF) of the fragment speed in 3 sports in SportsMOT.</p>",
+        "## Terms",
+        "SportsMOT is allowed to be used only if you accept these terms and conditions of our [competition](https://codalab.lisn.upsaclay.fr/competitions/12424#participate).",
+        "- You agree not to distribute the SportsMOT dataset without prior written permission.",
+        "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc/4.0/88x31.png\" /></a><br />",
+        "SportsMOT is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc/4.0/\">Creative Commons Attribution-NonCommercial 4.0 International License</a>."
+      ],
+      "matched": true,
+      "ok": true,
+      "sha256": "c45c295f7ec84d4af4cbe7dd5c9791065a02ea27dd9a7425716aedab39d84b22",
+      "url": "https://raw.githubusercontent.com/MCG-NJU/SportsMOT/main/README.md",
+      "verified": true,
+      "verified_via": "official_page"
+    }
+  },
+  "model_inference_run": false,
+  "note": "KEEP = eligible for the scoped protocol only; no benchmark result is implied.",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "python": "3.13.16",
+  "results": {
+    "coco": {
+      "acquired": true,
+      "blocking_qa": 0,
+      "exact_leakage": 0,
+      "registry": "coco-subset-261026.json",
+      "summary": {
+        "boxes": 10129,
+        "images": 2000
+      }
+    },
+    "dancetrack": {
+      "acquired": true,
+      "blocking_qa": 0,
+      "exact_leakage": 0,
+      "registry": "mot-dancetrack-261026.json",
+      "summary": {
+        "train_sequences": 40,
+        "val_frames": 25508,
+        "val_sequences": 25
+      }
+    },
+    "lvvo": {
+      "acquired": true,
+      "blocking_qa": 0,
+      "exact_leakage": 0,
+      "registry": "lvvo-detection-protocol-261026.json",
+      "summary": {
+        "boxes": 1580,
+        "groups": 139,
+        "images": 1000
+      }
+    },
+    "sportsmot": {
+      "acquired": false,
+      "blocking_qa": 0,
+      "error": "FileNotFoundError('Không có dữ liệu sportsmot. Đặt ZIP vào /content/drive/MyDrive/DetTrack/manual-downloads (tên chứa \"sportsmot\") rồi chạy lại cell này.')",
+      "exact_leakage": 0
+    }
+  },
+  "run_id": "det-track-qualification-261026-v3",
+  "scoring_run": false,
+  "seed": 20261026
+}
