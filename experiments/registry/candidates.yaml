@@ -214,14 +214,16 @@ candidates:
     reference_paper: "https://github.com/ultralytics/ultralytics"
     tags: [object_detection, realtime, latest]
 
+  # NOTE (2026-10-27): `rtdetr-r18.pt` is not an Ultralytics release asset (only rtdetr-l/x exist), so RT-DETR-R18vd is
+  # loaded from Hugging Face (Apache-2.0, COCO-only training). Inference settings for the 03a runner live in
+  # experiments/scripts/detection_runner.py (DEFAULTS): conf 0.001 for mAP, 0.25 only for P/R diagnostics.
   - id: RQ0_OD.OD-C_RTDETR_r18
     task: RQ0_OD
-    display_name: "RT-DETR-r18 (DETR-based realtime)"
-    model_class: ultralytics.RTDETR
+    display_name: "RT-DETR-R18vd (DETR-based realtime, COCO-only)"
+    model_class: transformers.RTDetrForObjectDetection
     model_kwargs:
-      model_id: rtdetr-r18.pt
-      imgsz: 640
-      conf: 0.25
+      model_id: PekingU/rtdetr_r18vd
+      conf: 0.001
     required_features: [image.jpg]
     compute_budget:
       max_vram_mb: 3072
@@ -230,30 +232,46 @@ candidates:
     reference_paper: "https://arxiv.org/abs/2304.08069"
     tags: [object_detection, transformer]
 
-  - id: RQ0_OD.OD-D_Florence2_PhraseGrounding
+  - id: RQ0_OD.OD-D_Florence2_OD
     task: RQ0_OD
-    display_name: "Florence-2 Phrase Grounding (open-vocab)"
-    model_class: ai_workers.modules.detection.Florence2Detector
+    display_name: "Florence-2-base <OD> (open-vocab baseline, score-less)"
+    model_class: experiments.scripts.detection_runner.FlorenceAdapter
     model_kwargs:
       task: "<OD>"
-      text_prompt: "person, laptop, book, screen, slide, table, chair, whiteboard, hand, face"
-      use_vendored: true
+      model_dir: ai_workers/modules/visual_v2/florence2_vendor   # SHA-256 verified against florence_runtime.py
+      score_policy: constant_1.0   # no confidence output: AP is bounded, never ranked against scored detectors
     required_features: [image.jpg]
     compute_budget:
       max_vram_mb: 5120
-      max_latency_ms: 250
+      max_latency_ms: 1500
     family: vision_language_model
     reference_paper: "https://arxiv.org/abs/2311.06242"
-    tags: [object_detection, open_vocab, slow]
+    tags: [object_detection, open_vocab, slow, score_less]
+
+  - id: RQ0_OD.OD-D2_Florence2_OVD
+    task: RQ0_OD
+    display_name: "Florence-2-base <OPEN_VOCABULARY_DETECTION> (D-A only; needs approval before ranking)"
+    model_class: experiments.scripts.detection_runner.FlorenceAdapter
+    model_kwargs:
+      task: "<OPEN_VOCABULARY_DETECTION>"
+      model_dir: ai_workers/modules/visual_v2/florence2_vendor
+      score_policy: constant_1.0
+    required_features: [image.jpg]
+    compute_budget:
+      max_vram_mb: 5120
+      max_latency_ms: 6000
+    family: vision_language_model
+    reference_paper: "https://arxiv.org/abs/2311.06242"
+    tags: [object_detection, open_vocab, slow, score_less, extra_baseline]
 
   - id: RQ0_OD.OD-E_GroundingDINO_base
     task: RQ0_OD
     display_name: "GroundingDINO-base (open-vocab)"
-    model_class: autodistill.GroundingDINO
+    model_class: experiments.scripts.detection_runner.GroundingDinoAdapter
     model_kwargs:
       model_id: IDEA-Research/grounding-dino-base
-      box_threshold: 0.25
-      text_threshold: 0.25
+      box_threshold: 0.01    # low on purpose: mAP needs the whole precision-recall curve
+      label_policy: best_prompt_phrase_per_query   # argmax over prompt phrases, not the library's text-threshold labels
     required_features: [image.jpg]
     compute_budget:
       max_vram_mb: 5120

@@ -1,4 +1,9 @@
-"""Object detection bake-off runner for notebook 03a (smoke/full)."""
+"""Legacy object detection runner (first-frame `detection_hmean` score; not valid for the 03a benchmark).
+
+Superseded by `experiments/scripts/detection_runner.py` + `detection_scoring.py` (pycocotools mAP on the
+frozen cohorts) and the notebook `experiments/notebooks/03a-object-detection-benchmark-colab.ipynb`.
+Kept only so older notebooks still import. Do not report scores from this module.
+"""
 
 from __future__ import annotations
 

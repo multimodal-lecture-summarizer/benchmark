@@ -98,10 +98,10 @@ tracks:
     primary_metric: {name: coco_map_50_95, direction: higher}
     secondary_metrics: [ap50, ap75, per_class_ap, ap_small, ap_medium, ap_large, average_recall]
     diagnostic_metrics: [precision, recall, calibration_error, latency_per_frame]
-    scorer: {package: pycocotools, version: phase2_pin_required, parameters: {iou_range: "0.50:0.05:0.95"}}
-    aggregation_unit: video
+    scorer: {package: pycocotools, version: "2.0.11", parameters: {iou_range: "0.50:0.05:0.95", max_dets: 100, conf_for_map: 0.001, implementation: experiments.scripts.detection_scoring}}
+    aggregation_unit: image_or_source_group
     failure_policy: count_failure_separately
-    practical_threshold: phase2_freeze_required
+    practical_threshold: 0.02  # absolute delta mAP@[.50:.95]; paired bootstrap 10000, CI excludes 0 (frozen 2026-10-26)
 
   - id: object_detection_open
     task_id: OBJECT_DETECTION
@@ -109,10 +109,10 @@ tracks:
     primary_metric: {name: mapped_map_50_95, direction: higher}
     secondary_metrics: [mapped_ap50, per_concept_ap, average_recall]
     diagnostic_metrics: [unknown_concept_rate, taxonomy_mapping_coverage, latency_per_frame]
-    scorer: {package: pycocotools_plus_frozen_taxonomy_map, version: phase2_pin_required, parameters: {taxonomy_map: phase2_freeze_required}}
-    aggregation_unit: video
+    scorer: {package: pycocotools_plus_frozen_taxonomy_map, version: "2.0.11", parameters: {taxonomy_map: "coco-subset-261026.json#taxonomy_map_open_vocab (D-B); lvvo-detection-protocol-261026.json#sub_tracks (D-A prompts)", unknown_label_policy: counted_not_scored, implementation: experiments.scripts.detection_scoring}}
+    aggregation_unit: image_or_source_group
     failure_policy: count_failure_separately
-    practical_threshold: phase2_freeze_required
+    practical_threshold: 0.02  # absolute delta mAP@[.50:.95]; Florence-2 is score-less and reported as a baseline, not ranked
 
   - id: tracking_fixed_detector
     task_id: MULTI_OBJECT_TRACKING
@@ -120,10 +120,10 @@ tracks:
     primary_metric: {name: hota, direction: higher}
     secondary_metrics: [deta, assa, loca, idf1]
     diagnostic_metrics: [mota, id_switches, fragmentation, mostly_tracked, mostly_lost, fps]
-    scorer: {package: trackeval, version: phase2_pin_required, parameters: {detections: fixed, matching: phase2_freeze_required}}
+    scorer: {package: trackeval, version: "commit 12c8791b303e0a0b50f753af204249e622d0281a", parameters: {detections: fixed, matching: "IoU 0.5 for CLEAR/Identity; HOTA averaged over alpha 0.05-0.95, DO_PREPROC false, zero-marked GT rows dropped", implementation: experiments.scripts.tracking_scoring}}
     aggregation_unit: video
     failure_policy: count_failure_separately
-    practical_threshold: phase2_freeze_required
+    practical_threshold: 2.0  # delta HOTA in points (0-100); paired video bootstrap 10000 (frozen 2026-10-26)
 
   - id: chaptering
     task_id: CHAPTERING

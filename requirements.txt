@@ -14,3 +14,7 @@ accelerate
 bitsandbytes
 scikit-learn
 pillow
+
+# Detection / tracking benchmark scorers (03a/03b)
+pycocotools==2.0.11
+trackeval @ https://github.com/JonathonLuiten/TrackEval/archive/12c8791b303e0a0b50f753af204249e622d0281a.zip
