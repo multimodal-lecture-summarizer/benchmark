@@ -1,0 +1,4 @@
+a,b,mAP_a,mAP_b,delta,ci_lo,ci_hi,verdict,note
+florence2_base,florence2_base_ovd,0.0,0.018051052732067384,-0.018051052732067384,-0.02276399435284446,-0.014896572440838814,indistinguishable,score-less baseline: not ranked
+florence2_base,grounding_dino_base,0.0,0.08692917188652638,-0.08692917188652638,-0.1012966446885962,-0.0775936200882544,b_better,score-less baseline: not ranked
+florence2_base_ovd,grounding_dino_base,0.018051052732067384,0.08692917188652638,-0.06887811915445899,-0.08081019685931148,-0.0604077310537154,b_better,score-less baseline: not ranked

@@ -1,0 +1,2 @@
+a,b,mAP_a,mAP_b,delta,ci_lo,ci_hi,verdict,note
+florence2_base,grounding_dino_base,0.34948048007672555,0.5361446946570116,-0.1866642145802861,-0.19619564285479837,-0.16925164431842035,b_better,score-less baseline: not ranked

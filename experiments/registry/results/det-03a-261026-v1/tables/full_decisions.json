@@ -1,0 +1,85 @@
+{
+  "D-A|open": [
+    {
+      "a": "florence2_base",
+      "b": "florence2_base_ovd",
+      "ci_hi": -0.014896572440838814,
+      "ci_lo": -0.02276399435284446,
+      "delta": -0.018051052732067384,
+      "mAP_a": 0.0,
+      "mAP_b": 0.018051052732067384,
+      "note": "score-less baseline: not ranked",
+      "verdict": "indistinguishable"
+    },
+    {
+      "a": "florence2_base",
+      "b": "grounding_dino_base",
+      "ci_hi": -0.0775936200882544,
+      "ci_lo": -0.1012966446885962,
+      "delta": -0.08692917188652638,
+      "mAP_a": 0.0,
+      "mAP_b": 0.08692917188652638,
+      "note": "score-less baseline: not ranked",
+      "verdict": "b_better"
+    },
+    {
+      "a": "florence2_base_ovd",
+      "b": "grounding_dino_base",
+      "ci_hi": -0.0604077310537154,
+      "ci_lo": -0.08081019685931148,
+      "delta": -0.06887811915445899,
+      "mAP_a": 0.018051052732067384,
+      "mAP_b": 0.08692917188652638,
+      "note": "score-less baseline: not ranked",
+      "verdict": "b_better"
+    }
+  ],
+  "D-B|closed": [
+    {
+      "a": "yolov8n",
+      "b": "yolo11n",
+      "ci_hi": 0.00325695189618736,
+      "ci_lo": -0.011492619092159623,
+      "delta": -0.004216599249217079,
+      "mAP_a": 0.4075553101518726,
+      "mAP_b": 0.41177190940108965,
+      "note": "",
+      "verdict": "indistinguishable"
+    },
+    {
+      "a": "yolov8n",
+      "b": "rtdetr_r18",
+      "ci_hi": -0.008764874288191074,
+      "ci_lo": -0.0317667937629902,
+      "delta": -0.02097795644416922,
+      "mAP_a": 0.4075553101518726,
+      "mAP_b": 0.4285332665960418,
+      "note": "",
+      "verdict": "b_better"
+    },
+    {
+      "a": "yolo11n",
+      "b": "rtdetr_r18",
+      "ci_hi": -0.005001904428795944,
+      "ci_lo": -0.027662227924233534,
+      "delta": -0.016761357194952142,
+      "mAP_a": 0.41177190940108965,
+      "mAP_b": 0.4285332665960418,
+      "note": "",
+      "verdict": "indistinguishable"
+    }
+  ],
+  "D-B|open": [
+    {
+      "a": "florence2_base",
+      "b": "grounding_dino_base",
+      "ci_hi": -0.16925164431842035,
+      "ci_lo": -0.19619564285479837,
+      "delta": -0.1866642145802861,
+      "mAP_a": 0.34948048007672555,
+      "mAP_b": 0.5361446946570116,
+      "note": "score-less baseline: not ranked",
+      "verdict": "b_better"
+    }
+  ]
+}
