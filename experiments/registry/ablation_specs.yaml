@@ -61,6 +61,23 @@ ablation_specs:
         - 640
     max_combinations_per_base: 8
 
+  # 03b: published defaults vs dev-tuned parameters, on each fixed detection source (never mixed in one table).
+  RQ0_MOT:
+    description: "MOT ablation: default vs tuned parameters x detection source (DanceTrack)"
+    base_candidates:
+      - RQ0_MOT.sort
+      - RQ0_MOT.bytetrack
+      - RQ0_MOT.ocsort
+      - RQ0_MOT.botsort
+    toggles:
+      params:
+        - default
+        - tuned
+      detections:
+        - source_a
+        - source_b
+    max_combinations_per_base: 4
+
   # ==========================================================================
   # RQ1: Chaptering — ablate visual_snapping + dynamic_nms + pos_weight
   # ==========================================================================

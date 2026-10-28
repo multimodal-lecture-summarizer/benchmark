@@ -49,6 +49,15 @@ leaderboard_weights:
       precision: higher
       recall: higher
 
+  # 03b ranks by HOTA alone: DanceTrack tables are reported per metric, with no composite score. A single weight is
+  # only here because the registry contract needs weights per task; DetA/AssA/IDF1 stay diagnostics outside the rank.
+  RQ0_MOT:
+    metrics:
+      HOTA: 1.0               # (higher better)
+    directions:
+      HOTA: higher
+    note: "single primary metric, paired video bootstrap decides ties (practical threshold 2.0 HOTA)"
+
   # ==========================================================================
   # RQ1: Chaptering — WindowDiff/F1 metrics + success_rate
   # ==========================================================================

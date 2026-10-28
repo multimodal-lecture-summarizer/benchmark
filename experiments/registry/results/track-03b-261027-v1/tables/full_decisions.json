@@ -1,0 +1,276 @@
+{
+  "a": [
+    {
+      "HOTA_a": 40.18116151906094,
+      "HOTA_b": 38.872511022331416,
+      "ci_hi": 3.4970438598005456,
+      "ci_lo": -1.1605876510584043,
+      "comparison": "default: botsort vs bytetrack",
+      "delta": 1.308650496729527,
+      "verdict": "indistinguishable"
+    },
+    {
+      "HOTA_a": 40.18116151906094,
+      "HOTA_b": 34.38861544907937,
+      "ci_hi": 7.135703265489053,
+      "ci_lo": 4.589212468148844,
+      "comparison": "default: botsort vs ocsort",
+      "delta": 5.792546069981576,
+      "verdict": "a_better"
+    },
+    {
+      "HOTA_a": 40.18116151906094,
+      "HOTA_b": 16.894301336503194,
+      "ci_hi": 26.51855868290991,
+      "ci_lo": 20.019363264147604,
+      "comparison": "default: botsort vs sort",
+      "delta": 23.28686018255775,
+      "verdict": "a_better"
+    },
+    {
+      "HOTA_a": 38.872511022331416,
+      "HOTA_b": 34.38861544907937,
+      "ci_hi": 6.864994530226685,
+      "ci_lo": 2.366968638321867,
+      "comparison": "default: bytetrack vs ocsort",
+      "delta": 4.483895573252049,
+      "verdict": "a_better"
+    },
+    {
+      "HOTA_a": 38.872511022331416,
+      "HOTA_b": 16.894301336503194,
+      "ci_hi": 25.15929565053319,
+      "ci_lo": 19.070303667364733,
+      "comparison": "default: bytetrack vs sort",
+      "delta": 21.978209685828222,
+      "verdict": "a_better"
+    },
+    {
+      "HOTA_a": 34.38861544907937,
+      "HOTA_b": 16.894301336503194,
+      "ci_hi": 20.525492641751523,
+      "ci_lo": 14.242801608062702,
+      "comparison": "default: ocsort vs sort",
+      "delta": 17.494314112576173,
+      "verdict": "a_better"
+    },
+    {
+      "HOTA_a": 40.18116151906094,
+      "HOTA_b": 38.735453763899564,
+      "ci_hi": 4.0294770019664385,
+      "ci_lo": -1.249020868431632,
+      "comparison": "tuned: botsort vs bytetrack",
+      "delta": 1.4457077551613793,
+      "verdict": "indistinguishable"
+    },
+    {
+      "HOTA_a": 40.18116151906094,
+      "HOTA_b": 36.238467259563734,
+      "ci_hi": 5.486425019409478,
+      "ci_lo": 2.6080437464091153,
+      "comparison": "tuned: botsort vs ocsort",
+      "delta": 3.942694259497209,
+      "verdict": "a_better"
+    },
+    {
+      "HOTA_a": 40.18116151906094,
+      "HOTA_b": 22.352465727310253,
+      "ci_hi": 21.441923839887313,
+      "ci_lo": 14.054469812369177,
+      "comparison": "tuned: botsort vs sort",
+      "delta": 17.82869579175069,
+      "verdict": "a_better"
+    },
+    {
+      "HOTA_a": 38.735453763899564,
+      "HOTA_b": 36.238467259563734,
+      "ci_hi": 5.502924467288161,
+      "ci_lo": -0.39468425444634586,
+      "comparison": "tuned: bytetrack vs ocsort",
+      "delta": 2.4969865043358297,
+      "verdict": "indistinguishable"
+    },
+    {
+      "HOTA_a": 38.735453763899564,
+      "HOTA_b": 22.352465727310253,
+      "ci_hi": 19.52918640300876,
+      "ci_lo": 13.280315528556148,
+      "comparison": "tuned: bytetrack vs sort",
+      "delta": 16.38298803658931,
+      "verdict": "a_better"
+    },
+    {
+      "HOTA_a": 36.238467259563734,
+      "HOTA_b": 22.352465727310253,
+      "ci_hi": 17.39953545503609,
+      "ci_lo": 10.143181217950392,
+      "comparison": "tuned: ocsort vs sort",
+      "delta": 13.88600153225348,
+      "verdict": "a_better"
+    },
+    {
+      "HOTA_a": 38.735453763899564,
+      "HOTA_b": 38.872511022331416,
+      "ci_hi": 1.055673176363609,
+      "ci_lo": -1.385851013495877,
+      "comparison": "bytetrack: tuned vs default",
+      "delta": -0.13705725843185235,
+      "verdict": "indistinguishable"
+    },
+    {
+      "HOTA_a": 36.238467259563734,
+      "HOTA_b": 34.38861544907937,
+      "ci_hi": 3.003468684110229,
+      "ci_lo": 0.581562574784316,
+      "comparison": "ocsort: tuned vs default",
+      "delta": 1.8498518104843669,
+      "verdict": "indistinguishable"
+    },
+    {
+      "HOTA_a": 22.352465727310253,
+      "HOTA_b": 16.894301336503194,
+      "ci_hi": 6.609479715967784,
+      "ci_lo": 4.4543254145044395,
+      "comparison": "sort: tuned vs default",
+      "delta": 5.45816439080706,
+      "verdict": "a_better"
+    }
+  ],
+  "b": [
+    {
+      "HOTA_a": 51.07011814369545,
+      "HOTA_b": 48.03230146772107,
+      "ci_hi": 5.031248853312863,
+      "ci_lo": 0.8774583986438769,
+      "comparison": "default: botsort vs bytetrack",
+      "delta": 3.0378166759743834,
+      "verdict": "a_better"
+    },
+    {
+      "HOTA_a": 51.07011814369545,
+      "HOTA_b": 48.943997639616725,
+      "ci_hi": 3.975806674786063,
+      "ci_lo": 0.15997750321963494,
+      "comparison": "default: botsort vs ocsort",
+      "delta": 2.1261205040787274,
+      "verdict": "a_better"
+    },
+    {
+      "HOTA_a": 51.07011814369545,
+      "HOTA_b": 42.674462420950995,
+      "ci_hi": 10.797584605942491,
+      "ci_lo": 5.9594563056058245,
+      "comparison": "default: botsort vs sort",
+      "delta": 8.395655722744458,
+      "verdict": "a_better"
+    },
+    {
+      "HOTA_a": 48.03230146772107,
+      "HOTA_b": 48.943997639616725,
+      "ci_hi": 0.9189012809566212,
+      "ci_lo": -2.698041083406607,
+      "comparison": "default: bytetrack vs ocsort",
+      "delta": -0.911696171895656,
+      "verdict": "indistinguishable"
+    },
+    {
+      "HOTA_a": 48.03230146772107,
+      "HOTA_b": 42.674462420950995,
+      "ci_hi": 7.459362595276958,
+      "ci_lo": 3.4463992410186,
+      "comparison": "default: bytetrack vs sort",
+      "delta": 5.357839046770074,
+      "verdict": "a_better"
+    },
+    {
+      "HOTA_a": 48.943997639616725,
+      "HOTA_b": 42.674462420950995,
+      "ci_hi": 8.128973179213492,
+      "ci_lo": 4.554534645112089,
+      "comparison": "default: ocsort vs sort",
+      "delta": 6.26953521866573,
+      "verdict": "a_better"
+    },
+    {
+      "HOTA_a": 51.07011814369545,
+      "HOTA_b": 48.97681011917121,
+      "ci_hi": 3.7930136161199983,
+      "ci_lo": 0.1490983869932538,
+      "comparison": "tuned: botsort vs bytetrack",
+      "delta": 2.093308024524241,
+      "verdict": "a_better"
+    },
+    {
+      "HOTA_a": 51.07011814369545,
+      "HOTA_b": 49.37805319068631,
+      "ci_hi": 3.5395956803376336,
+      "ci_lo": 0.014912332236286362,
+      "comparison": "tuned: botsort vs ocsort",
+      "delta": 1.6920649530091438,
+      "verdict": "indistinguishable"
+    },
+    {
+      "HOTA_a": 51.07011814369545,
+      "HOTA_b": 44.536482116635014,
+      "ci_hi": 8.685516286586449,
+      "ci_lo": 4.335150818132843,
+      "comparison": "tuned: botsort vs sort",
+      "delta": 6.533636027060439,
+      "verdict": "a_better"
+    },
+    {
+      "HOTA_a": 48.97681011917121,
+      "HOTA_b": 49.37805319068631,
+      "ci_hi": 1.0448098470089535,
+      "ci_lo": -1.834890043689503,
+      "comparison": "tuned: bytetrack vs ocsort",
+      "delta": -0.40124307151509697,
+      "verdict": "indistinguishable"
+    },
+    {
+      "HOTA_a": 48.97681011917121,
+      "HOTA_b": 44.536482116635014,
+      "ci_hi": 6.128489709457235,
+      "ci_lo": 2.8202022748365803,
+      "comparison": "tuned: bytetrack vs sort",
+      "delta": 4.440328002536198,
+      "verdict": "a_better"
+    },
+    {
+      "HOTA_a": 49.37805319068631,
+      "HOTA_b": 44.536482116635014,
+      "ci_hi": 6.227649022495041,
+      "ci_lo": 3.3636706736365727,
+      "comparison": "tuned: ocsort vs sort",
+      "delta": 4.841571074051295,
+      "verdict": "a_better"
+    },
+    {
+      "HOTA_a": 48.97681011917121,
+      "HOTA_b": 48.03230146772107,
+      "ci_hi": 2.362732448043226,
+      "ci_lo": -0.450276478086548,
+      "comparison": "bytetrack: tuned vs default",
+      "delta": 0.9445086514501426,
+      "verdict": "indistinguishable"
+    },
+    {
+      "HOTA_a": 49.37805319068631,
+      "HOTA_b": 48.943997639616725,
+      "ci_hi": 1.9417506439348493,
+      "ci_lo": -1.0929011502457862,
+      "comparison": "ocsort: tuned vs default",
+      "delta": 0.4340555510695836,
+      "verdict": "indistinguishable"
+    },
+    {
+      "HOTA_a": 44.536482116635014,
+      "HOTA_b": 42.674462420950995,
+      "ci_hi": 3.3042356369596533,
+      "ci_lo": 0.732092920406355,
+      "comparison": "sort: tuned vs default",
+      "delta": 1.862019695684019,
+      "verdict": "indistinguishable"
+    }
+  ]
+}

@@ -628,6 +628,7 @@ Mỗi sequence là một đơn vị. Đặc trưng độ khó liên quan trực 
 MOT = r'''
 DT_BASE = 'https://huggingface.co/datasets/noahcao/dancetrack/resolve/main/{}.zip'
 CAM_PAIRS = 6
+DT = {}   # state shared with section 3b (sequence table, GT, open zip members)
 FEATURES = [('boxes_per_frame', 'mật độ box/frame'), ('occluded_share', 'tỉ lệ box bị che (IoU>0.3)'),
             ('close_pairs_per_1k_frames', 'cặp IoU>0.5 / 1000 frame'), ('gap_missing_share', 'tỉ lệ frame vắng của ID'),
             ('gaps_per_track', 'số gián đoạn / track'), ('track_len_median', 'độ dài track trung vị'),
@@ -808,10 +809,178 @@ def eda_dancetrack():
         a.axis('off')
     fig.suptitle('Val sequences spread over density, GT with identity labels')
     savefig(fig, folder, 'overlays.png')
+    DT.update(df=df, gts=gts, seqs=seqs)
     return dict(sequences=len(df))
 
 
 guarded('dancetrack', eda_dancetrack)
+'''
+
+STRAT_MD = r'''
+## 3b. DanceTrack — cấu trúc ID, phân tầng đóng băng, tập dev
+
+Mục đích: hiểu vòng đời ID trước khi chạy tracker và **đóng băng phân tầng + tập dev trước khi có điểm**. Tertile tính trên **train** rồi áp sang val; không có điểm độ khó tổng hợp. Proxy camera: dịch chuyển trung vị phase-correlation 6 cặp > 1 px (@480 px rộng). Kết quả ghi `stratification-dancetrack-<date>.json` với `status=proposed`: **chỉ có hiệu lực sau khi người dùng duyệt** ngưỡng và tập dev.
+'''
+
+STRAT = r'''
+STRAT_AXES = {'density': 'boxes_per_frame', 'id_gaps': 'gaps_per_track', 'speed': 'speed_median'}
+STRAT_DATE = '261027'
+DEV_N, DEV_SEED = 8, 20261027
+TIERS = ('low', 'mid', 'high')
+
+
+def _font(size):
+    from PIL import ImageFont
+    import matplotlib
+    try:
+        return ImageFont.truetype(str(Path(matplotlib.get_data_path()) / 'fonts' / 'ttf' / 'DejaVuSans-Bold.ttf'), size)
+    except Exception:
+        return ImageFont.load_default()
+
+
+def _frame_with_ids(seq_entry, gt, frame, crop):
+    import cv2
+    arr = cv2.imdecode(np.frombuffer(seq_entry['zf'].read(seq_entry['frames'][frame]), np.uint8), cv2.IMREAD_COLOR)[:, :, ::-1]
+    im = Image.fromarray(arr)
+    d = ImageDraw.Draw(im)
+    font = _font(max(18, int(im.height * 0.035)))
+    palette = plt.get_cmap('tab20').colors
+    for row in gt[gt[:, 0] == frame]:
+        col = tuple(int(255 * c) for c in palette[int(row[1]) % 20])
+        d.rectangle((row[2], row[3], row[2] + row[4], row[3] + row[5]), outline=col, width=max(3, im.height // 270))
+        d.text((row[2] + 4, row[3] + 2), str(int(row[1])), fill=col, font=font, stroke_width=2, stroke_fill=(0, 0, 0))
+    return im.crop(crop)
+
+
+def eda_dancetrack_structure():
+    folder = OUT / 'dancetrack'
+    df, gts, seqs = DT['df'], DT['gts'], DT['seqs']
+    strata, edges = eda.stratify_sequences(df, STRAT_AXES, moving_px=1.0)
+    tier_cols = [f'tier_{k}' for k in STRAT_AXES]
+    # dev must lie inside the val range on every axis (feature ranges only, no scores) so tuning does not extrapolate
+    val_ref = strata[strata.split == 'val']
+    inside = np.all([strata[c].between(val_ref[c].min(), val_ref[c].max()) for c in STRAT_AXES.values()], axis=0)
+    dev = eda.select_dev_subset(strata[(strata.split == 'train') & inside], DEV_N, DEV_SEED, tier_cols)
+    strata['role'] = np.where(strata.seq.isin(dev), 'dev', strata.split)
+    conf = pd.DataFrame({k: eda.id_confusion_pairs(g) for k, g in gts.items()}).T
+    conf.index = pd.MultiIndex.from_tuples(conf.index, names=['split', 'seq'])
+    strata = strata.join(conf, on=['split', 'seq'])
+    for c in ('close_pair_frames', 'crossings'):
+        strata[c + '_per_1k'] = strata[c] / strata.frames * 1000
+    save_table(strata.round(4), folder, 'stratification_table.csv', show=False)
+    print('Ngưỡng tertile (train):', {k: tuple(round(x, 3) for x in v) for k, v in edges.items()})
+    display(strata.groupby('role').camera.value_counts().unstack(fill_value=0))
+    for c in tier_cols:
+        display(pd.crosstab(strata.role, strata[c]).reindex(columns=list(TIERS)))
+
+    # ---- 3b.1 dev coverage vs val ----
+    val, devdf = strata[strata.split == 'val'], strata[strata.role == 'dev']
+    cols = list(STRAT_AXES.values())
+    cov = eda.coverage_vs_reference(devdf, val, cols)
+    save_table(cov, folder, 'dev_coverage_vs_val.csv')
+    for f, r in cov.iterrows():
+        observe('dancetrack', f'dev_outside_val_range[{f}]', int(r.n_outside), flag='DEV_OUT_OF_RANGE' if r.n_outside else None,
+                rule='dev sequences outside the min-max of val on this axis (dev is drawn from train; change DEV_SEED if wide)')
+    pairs = [('boxes_per_frame', 'gaps_per_track'), ('boxes_per_frame', 'speed_median'), ('gaps_per_track', 'speed_median')]
+    axis_of = {v: k for k, v in STRAT_AXES.items()}
+    rest = strata[strata.role == 'train']
+    moving = strata[strata.camera == 'moving']
+    fig, ax = plt.subplots(1, 3, figsize=(17, 5))
+    for a, (x, y) in zip(ax, pairs):
+        a.scatter(rest[x], rest[y], s=18, c='#9ecae1', label='train (rest)')
+        a.scatter(val[x], val[y], s=22, c='#d62728', alpha=.7, label='val')
+        a.scatter(devdf[x], devdf[y], s=80, facecolors='none', edgecolors='k', linewidths=1.6, label='dev')
+        a.scatter(moving[x], moving[y], marker='x', s=40, c='#2ca02c', label='moving camera')
+        for edge in edges[axis_of[x]]:
+            a.axvline(edge, color='gray', ls=':')
+        for edge in edges[axis_of[y]]:
+            a.axhline(edge, color='gray', ls=':')
+        a.set(xlabel=x, ylabel=y)
+    ax[0].legend(fontsize=7)
+    fig.suptitle('Dev subset vs val on the stratification axes (dotted = train tertile edges)')
+    savefig(fig, folder, 'dev_coverage.png')
+
+    # ---- 3b.2 ID lifelines, one representative val sequence per density tier ----
+    reps = {}
+    for t in TIERS:
+        sub = val[val.tier_density == t].sort_values('boxes_per_frame')
+        reps[t] = sub.iloc[len(sub) // 2].seq
+    fig, ax = plt.subplots(1, 3, figsize=(18, 6))
+    for a, t in zip(ax, TIERS):
+        for r in eda.id_lifelines(gts[('val', reps[t])]).itertuples():
+            a.broken_barh([(r.start, r.end - r.start + 1)], (r.id - .4, .8), color='#d62728' if r.occluded else '#1f77b4')
+        a.set(title=f'{t} density: {reps[t]} (red = IoU>0.3 with another box)', xlabel='frame', ylabel='ID')
+        a.yaxis.set_major_locator(matplotlib.ticker.MaxNLocator(integer=True))
+    savefig(fig, folder, 'id_lifelines.png')
+
+    # ---- 3b.3 interruption lengths, train vs val ----
+    gl = {s: np.concatenate([eda.mot_gap_lengths(g) for (sp, _), g in gts.items() if sp == s]) for s in ('train', 'val')}
+    bins = np.logspace(0, np.log10(max(max(v.max() for v in gl.values()), 2)), 30)
+    fig, ax = plt.subplots(1, 2, figsize=(14, 4))
+    for s, col in (('train', '#1f77b4'), ('val', '#d62728')):
+        ax[0].hist(gl[s], bins=bins, alpha=.5, color=col, label=f'{s} (n={len(gl[s])})')
+        ax[1].hist(gl[s], bins=bins, alpha=.5, color=col, weights=gl[s], label=s)
+    for a in ax:
+        a.set_xscale('log')
+    ax[0].set(title='Interruption length of an ID (count)', xlabel='frames')
+    ax[0].legend()
+    ax[1].set(title='Same, weighted by length (frames lost to interruptions)', xlabel='frames')
+    savefig(fig, folder, 'interruption_lengths.png')
+    for s in gl:
+        observe('dancetrack', f'interruption_len[{s}]', dict(n=int(len(gl[s])), median=float(np.median(gl[s])),
+                                                           p90=float(np.quantile(gl[s], .9)), max=int(gl[s].max())))
+
+    # ---- 3b.4 typical frames around the most crowded moment, per density tier ----
+    fig, axes = plt.subplots(3, 5, figsize=(25, 10))
+    for row, t in zip(axes, TIERS):
+        seq = reps[t]
+        ov = eda.mot_frame_overlap(gts[('val', seq)])
+        centre = int(ov['frames'][int(np.argmax(ov['close_pairs']))])
+        length = int(strata[strata.seq == seq].frames.iloc[0])
+        gt_seq = gts[('val', seq)]
+        win = gt_seq[(gt_seq[:, 0] >= centre - 30) & (gt_seq[:, 0] <= centre + 30)]
+        W, H = int(strata[strata.seq == seq].width.iloc[0]), int(strata[strata.seq == seq].height.iloc[0])
+        mx, my = .08 * (win[:, 2] + win[:, 4]).max(), .08 * (win[:, 3] + win[:, 5]).max()
+        crop = (int(max(0, win[:, 2].min() - mx)), int(max(0, win[:, 3].min() - my)),
+                int(min(W, (win[:, 2] + win[:, 4]).max() + mx)), int(min(H, (win[:, 3] + win[:, 5]).max() + my)))   # same crop for the strip, so IDs stay legible
+        for a, off in zip(row, (-30, -15, 0, 15, 30)):
+            fr = int(np.clip(centre + off, 1, length))
+            a.imshow(_frame_with_ids(seqs[('val', seq)], gt_seq, fr, crop))
+            a.set_title(f'{t} | {seq} frame {fr}', fontsize=9)
+            a.axis('off')
+    fig.suptitle('Frames around the most crowded moment (box and ID colour = GT identity)')
+    savefig(fig, folder, 'frames_by_tier.png')
+
+    # ---- 3b.5 close / crossing pairs ----
+    rho = sps.spearmanr(strata.crossings_per_1k, strata.gaps_per_track)
+    observe('dancetrack', 'crossings_vs_gaps_spearman', float(rho.statistic))
+    fig, ax = plt.subplots(1, 2, figsize=(12, 4.5))
+    for a, c in zip(ax, ('close_pair_frames_per_1k', 'crossings_per_1k')):
+        a.scatter(strata.boxes_per_frame, strata[c], c=np.where(strata.split == 'val', '#d62728', '#1f77b4'), s=20)
+        a.set(xlabel='boxes_per_frame', ylabel=c, title=c)
+    savefig(fig, folder, 'confusable_pairs.png')
+
+    # ---- 3b.6 frozen proposal (status=proposed until the user approves) ----
+    payload = dict(
+        status='proposed', approved_by=None, created=datetime.now(timezone.utc).isoformat(),
+        binds_registry_sequence_ids_sha256=REG['mot']['sequence_ids_sha256'],
+        rule=dict(tiers='low: v<=e1, mid: e1<v<=e2, high: v>e2; e1,e2 = 1/3 and 2/3 quantiles of the 40 TRAIN sequences, applied unchanged to val',
+                  axes=STRAT_AXES, composite_score=None,
+                  camera_proxy='median phase-correlation shift over %d consecutive-frame pairs at 480 px width > 1.0 px => moving' % CAM_PAIRS),
+        edges={k: list(v) for k, v in edges.items()},
+        dev=dict(seed=DEV_SEED, n=DEV_N, source_split='train', sequences=dev,
+                 constraint='inside the val min-max on every axis; each tier of each axis >= 2 sequences; >= 1 moving camera'),
+        counts=dict(camera_moving={s: int(((strata.split == s) & (strata.camera == 'moving')).sum()) for s in ('train', 'val')}),
+        sequences=[dict(split=r.split, seq=r.seq, role=r.role, camera=r.camera, **{c: getattr(r, c) for c in tier_cols})
+                   for r in strata.sort_values(['split', 'seq']).itertuples()])
+    write_json(OUT / f'stratification-dancetrack-{STRAT_DATE}.json', payload)
+    observe('dancetrack', 'dev_sequences', dev)
+    observe('dancetrack', 'moving_camera_sequences', moving.seq.tolist(), flag='CAMERA_DESCRIPTIVE_ONLY',
+            rule='3 or fewer moving val sequences: camera results are descriptive, no conclusion')
+    return dict(dev=dev, edges=edges)
+
+
+guarded('dancetrack_structure', eda_dancetrack_structure)
 '''
 
 OBS_MD = r'''
@@ -851,6 +1020,8 @@ def build():
         cell("code", COCO),
         cell("markdown", MOT_MD),
         cell("code", MOT),
+        cell("markdown", STRAT_MD),
+        cell("code", STRAT),
         cell("markdown", OBS_MD),
         cell("code", OBSERVE),
     ]

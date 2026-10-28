@@ -269,6 +269,112 @@ def mot_frame_overlap(gt: np.ndarray, close_iou: float = 0.5, occ_iou: float = 0
                 occluded=max_iou > occ_iou)
 
 
+def id_lifelines(gt: np.ndarray, occ_iou: float = 0.3) -> pd.DataFrame:
+    """Run-length segments per identity: (id, start, end, occluded).
+
+    A segment is a maximal run of consecutive frames with the same occlusion flag (box IoU > occ_iou
+    with another box of that frame). Gaps in presence split segments, so absences stay blank in a Gantt.
+    """
+    occ = mot_frame_overlap(gt, occ_iou=occ_iou)["max_iou"] > occ_iou
+    frames, ids = gt[:, 0].astype(int), gt[:, 1].astype(int)
+    order = np.lexsort((frames, ids))
+    f, i, o = frames[order], ids[order], occ[order]
+    brk = np.flatnonzero((np.diff(i) != 0) | (np.diff(f) != 1) | (o[1:] != o[:-1])) + 1
+    starts, ends = np.r_[0, brk], np.r_[brk, len(f)] - 1
+    return pd.DataFrame(dict(id=i[starts], start=f[starts], end=f[ends], occluded=o[starts]))
+
+
+def id_confusion_pairs(gt: np.ndarray, near: float = 0.5, cross_near: float = 1.0) -> dict[str, float]:
+    """Counts that predict ID switches: how often two identities are close, and how often they swap sides.
+
+    close_pair_frames: (pair, frame) cases with centre distance < near * mean box height.
+    crossings: consecutive co-present frames where the x-order of two identities flips while the pair is
+    within cross_near * mean box height at both frames (trajectories cross, not just drift far apart).
+    """
+    frames = gt[:, 0].astype(int)
+    order = np.argsort(frames, kind="stable")
+    uniq, start = np.unique(frames[order], return_index=True)
+    bounds = np.r_[start, len(order)]
+    close = crossings = 0
+    prev: dict[tuple[int, int], tuple[int, float]] = {}
+    for k, fr in enumerate(uniq):
+        g = gt[order[bounds[k]:bounds[k + 1]]]
+        if len(g) < 2:
+            continue
+        ids = g[:, 1].astype(int)
+        cx, cy, h = g[:, 2] + g[:, 4] / 2, g[:, 3] + g[:, 5] / 2, g[:, 5]
+        hm = (h[:, None] + h[None]) / 2
+        dx = cx[:, None] - cx[None]
+        dist = np.hypot(dx, cy[:, None] - cy[None]) / np.maximum(hm, 1e-6)
+        for a, b in zip(*np.triu_indices(len(g), 1)):
+            key = (min(ids[a], ids[b]), max(ids[a], ids[b]))
+            sign = dx[a, b] if ids[a] < ids[b] else -dx[a, b]
+            near_now = dist[a, b] < cross_near
+            close += dist[a, b] < near
+            if key in prev and prev[key][0] == fr - 1 and near_now and prev[key][2] and sign * prev[key][1] < 0:
+                crossings += 1
+            prev[key] = (fr, sign, near_now)
+    return dict(close_pair_frames=int(close), crossings=int(crossings))
+
+
+# --------------------------------------------------------------------------
+# Frozen stratification and dev subset (decided on train before any tracker score exists)
+# --------------------------------------------------------------------------
+def tertile_edges(train_values: Sequence[float]) -> tuple[float, float]:
+    """Cut points at the 1/3 and 2/3 quantiles of the train distribution."""
+    lo, hi = np.quantile(np.asarray(train_values, dtype=float), [1 / 3, 2 / 3])
+    return float(lo), float(hi)
+
+
+def assign_tier(values: Sequence[float], edges: tuple[float, float]) -> list[str]:
+    """low: v <= e1 < mid: v <= e2 < high. Edges come from train and are applied unchanged to val."""
+    lo, hi = edges
+    return ["low" if v <= lo else "mid" if v <= hi else "high" for v in values]
+
+
+def stratify_sequences(df: pd.DataFrame, axes: dict[str, str], moving_px: float = 1.0,
+                       cam_col: str = "cam_shift_median") -> tuple[pd.DataFrame, dict[str, tuple[float, float]]]:
+    """Add one tier column per axis (name -> feature column) plus `camera` (static/moving).
+
+    Edges use train rows only. No composite difficulty score is built.
+    """
+    train = df[df.split == "train"]
+    edges = {name: tertile_edges(train[col]) for name, col in axes.items()}
+    out = df.copy()
+    for name, col in axes.items():
+        out[f"tier_{name}"] = assign_tier(out[col], edges[name])
+    out["camera"] = np.where(out[cam_col] > moving_px, "moving", "static")
+    return out, edges
+
+
+def select_dev_subset(strata: pd.DataFrame, n: int, seed: int, tier_cols: Sequence[str],
+                      min_per_tier: int = 2, require_moving: bool = True, max_tries: int = 20000) -> list[str]:
+    """Seeded random draw of n train sequences covering every tier of every axis >= min_per_tier times.
+
+    The first draw satisfying the constraints is returned (deterministic for a seed). Raises if none exists.
+    """
+    pool = strata[strata.split == "train"].reset_index(drop=True)
+    rng = np.random.default_rng(seed)
+    for _ in range(max_tries):
+        pick = pool.iloc[rng.choice(len(pool), size=n, replace=False)]
+        if require_moving and not (pick.camera == "moving").any():
+            continue
+        if all((pick[c].value_counts().reindex(["low", "mid", "high"]).fillna(0) >= min_per_tier).all() for c in tier_cols):
+            return sorted(pick.seq.tolist())
+    raise ValueError("no dev subset satisfies the coverage constraints; relax min_per_tier or n")
+
+
+def coverage_vs_reference(dev: pd.DataFrame, ref: pd.DataFrame, cols: Sequence[str]) -> pd.DataFrame:
+    """Per feature: dev range, reference range, and the dev sequences outside the reference range."""
+    rows = {}
+    for c in cols:
+        lo, hi = ref[c].min(), ref[c].max()
+        out = dev[(dev[c] < lo) | (dev[c] > hi)]
+        rows[c] = dict(dev_min=dev[c].min(), dev_max=dev[c].max(), ref_min=lo, ref_max=hi,
+                       n_outside=len(out), outside=",".join(out.seq))
+    return pd.DataFrame(rows).T
+
+
 # --------------------------------------------------------------------------
 # HTTP range access to a remote ZIP (read only the members we need)
 # --------------------------------------------------------------------------

@@ -90,6 +90,72 @@ def test_max_overlap_stats_nested_and_disjoint():
     assert s["max_iou"] == pytest.approx([16 / 100, 16 / 100, 0.0])
     assert e.max_overlap_stats(boxes[:1])["max_iou"].tolist() == [0.0]
 
+def test_id_lifelines_split_on_gaps_and_occlusion():
+    gt = _gt([(1, 1, 0, 0, 10, 10), (2, 1, 0, 0, 10, 10), (3, 1, 0, 0, 10, 10), (5, 1, 0, 0, 10, 10),
+              (3, 2, 5, 0, 10, 10), (4, 2, 100, 0, 10, 10)])
+    seg = e.id_lifelines(gt).set_index(["id", "start"])
+    # id 1: frames 1-2 alone, frame 3 overlaps id 2 (IoU 1/3 > 0.3), frame 5 alone after a gap
+    assert seg.loc[(1, 1), ["end", "occluded"]].tolist() == [2, False]
+    assert seg.loc[(1, 3), ["end", "occluded"]].tolist() == [3, True]
+    assert seg.loc[(1, 5), ["end", "occluded"]].tolist() == [5, False]
+    assert seg.loc[(2, 3), "occluded"] == True and seg.loc[(2, 4), "occluded"] == False
+
+
+def test_id_confusion_pairs_counts_crossing_and_closeness():
+    # two boxes (h=10) pass through each other: x-order flips between frames 2 and 3
+    path = {1: [(1, 0), (2, 4), (3, 8), (4, 12)], 2: [(1, 8), (2, 5), (3, 2), (4, -1)]}
+    gt = _gt([(f, i, x, 0, 10, 10) for i, pts in path.items() for f, x in pts])
+    r = e.id_confusion_pairs(gt)
+    assert r["crossings"] == 1
+    assert r["close_pair_frames"] == 1          # centre gaps 8,1,6,13 px; only 1 px < 0.5 * height 10
+    far = _gt([(f, i, x, 0, 10, 10) for i, x in ((1, 0), (2, 100)) for f in range(1, 5)])
+    assert e.id_confusion_pairs(far) == dict(close_pair_frames=0, crossings=0)
+    parallel = _gt([(f, i, x, 0, 10, 10) for i, x in ((1, 0), (2, 3)) for f in range(1, 5)])
+    assert e.id_confusion_pairs(parallel) == dict(close_pair_frames=4, crossings=0)   # close but never swap
+
+
+def test_tertiles_tiers_and_train_only_edges():
+    assert e.tertile_edges([1, 2, 3, 4, 5, 6, 7]) == pytest.approx((3.0, 5.0))
+    assert e.assign_tier([3, 3.1, 5, 9], (3.0, 5.0)) == ["low", "mid", "mid", "high"]
+    import pandas as pd
+    df = pd.DataFrame(dict(split=["train"] * 7 + ["val"] * 2, seq=list("abcdefghi"),
+                           d=[1, 2, 3, 4, 5, 6, 7, 100, 0], cam=[0, 0, 0, 0, 0, 2.0, 0, 0, 0]))
+    out, edges = e.stratify_sequences(df, {"density": "d"}, cam_col="cam")
+    assert edges["density"] == pytest.approx((3.0, 5.0))               # val outlier 100 does not move the edges
+    assert out.tier_density.tolist() == ["low", "low", "low", "mid", "mid", "high", "high", "high", "low"]
+    assert out.camera.tolist().count("moving") == 1
+
+
+def _strata():
+    import pandas as pd
+    n = 30
+    rng = np.random.default_rng(0)
+    df = pd.DataFrame(dict(split=["train"] * n, seq=[f"s{i}" for i in range(n)],
+                           tier_a=np.resize(["low", "mid", "high"], n), tier_b=rng.permutation(np.resize(["low", "mid", "high"], n)),
+                           camera=["moving" if i in (4, 17) else "static" for i in range(n)]))
+    return df
+
+
+def test_select_dev_subset_deterministic_and_constrained():
+    s = _strata()
+    a = e.select_dev_subset(s, 8, seed=1, tier_cols=["tier_a", "tier_b"])
+    assert a == e.select_dev_subset(s, 8, seed=1, tier_cols=["tier_a", "tier_b"])
+    pick = s[s.seq.isin(a)]
+    assert len(a) == 8 and (pick.camera == "moving").any()
+    for c in ("tier_a", "tier_b"):
+        assert (pick[c].value_counts() >= 2).all() and len(pick[c].unique()) == 3
+    with pytest.raises(ValueError):
+        e.select_dev_subset(s, 4, seed=1, tier_cols=["tier_a", "tier_b"], min_per_tier=2, max_tries=50)
+
+
+def test_coverage_vs_reference_flags_out_of_range():
+    import pandas as pd
+    ref = pd.DataFrame(dict(seq=list("abc"), x=[1.0, 2.0, 3.0]))
+    dev = pd.DataFrame(dict(seq=["d", "e"], x=[2.5, 9.0]))
+    c = e.coverage_vs_reference(dev, ref, ["x"])
+    assert c.loc["x", "n_outside"] == 1 and c.loc["x", "outside"] == "e"
+
+
 def _slide(kind, pad=40, shift=0, noise=0.0, seed=0):
     """White 180x320 'slide' with black pillar bars; `kind` selects the drawing."""
     img = np.full((180, 320), 255.0)

@@ -110,7 +110,7 @@ def test_validate_detects_weights_not_summing_to_one():
 
 def test_task_id_enum_complete():
     """All TaskID values are valid strings."""
-    expected = {"RQ0_A", "RQ0_V", "RQ0_OD", "RQ1", "RQ2", "RQ3", "RQ4"}
+    expected = {"RQ0_A", "RQ0_V", "RQ0_OD", "RQ0_MOT", "RQ1", "RQ2", "RQ3", "RQ4"}
     actual = {t.value for t in TaskID}
     assert actual == expected, f"TaskID mismatch: missing {expected - actual}, extra {actual - expected}"
 

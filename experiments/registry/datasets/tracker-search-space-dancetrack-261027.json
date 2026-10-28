@@ -1,0 +1,301 @@
+{
+  "approved_by": "user (chat 2026-10-27)",
+  "detection_source_b": {
+    "checked": "2026-10-27",
+    "decision": "source (b) kept for detections; every table using it must carry the flag DETECTOR_TRAIN_DATA_UNVERIFIED and may not be called held-out until the upstream exp file / training split is checked",
+    "evidence": [
+      "HF dataset noahcao/dancetrack file list: only dancetrack_url.xlsx, train1/train2/val/test1/test2 zips (no detections file)",
+      "DanceTrack README: no detection files; trained models published at HF noahcao/dancetrack_models (license tag cc-by-4.0)",
+      "HF noahcao/dancetrack_models: bytetrack_models/bytetrack_model.pth.tar (792,835,731 B), centernet_models/*.pth"
+    ],
+    "needs_to_use": [
+      "ByteTrack/YOLOX code + exp file on Colab (torch, brittle with new numpy)",
+      "confirm which splits the checkpoint was trained on before claiming val is unseen"
+    ],
+    "open_item": "verify training split from DanceTrack/ByteTrack exp files (train-only vs train+val) before any held-out claim",
+    "smoke": {
+      "agreement": "IoU 0.5 against val GT; precision is understated if the detector fires on non-dancers that GT does not label",
+      "checkpoint": {
+        "architecture": "YOLOX-X depth 1.33 width 1.25, 1 class, loads strict=True",
+        "bytes": 792835731,
+        "documents_training_data": false,
+        "file": "bytetrack_models/bytetrack_model.pth.tar",
+        "keys": [
+          "model",
+          "optimizer",
+          "start_epoch"
+        ],
+        "repo": "noahcao/dancetrack_models",
+        "sha256": "b8d1afba08f801f3fe2cb122faf3fc9af6c7856405a0da94cf91cdd5eb9b3321",
+        "start_epoch": 8
+      },
+      "fps_note": "~18 s per frame on Colab CPU for the first run: tier B detections need a GPU",
+      "frames": "9 val frames, 3 sequences (0004, 0026, 0063), frames at 1/4, 1/2, 3/4 of length; letterbox 800x1440, NMS 0.7",
+      "preprocessing": {
+        "imagenet_rgb": {
+          "precision_at_0_5": 0.864,
+          "recall_at_0_5": 0.986,
+          "verdict": "correct: RGB /255 then ImageNet mean/std; the runner must use this"
+        },
+        "raw_bgr": {
+          "precision_at_0_5": 0.003,
+          "recall_at_0_5": 0.041,
+          "verdict": "wrong input scaling for this checkpoint"
+        }
+      },
+      "run": "2026-10-27 Colab CPU, notebook yolox-checkpoint-smoke-colab"
+    },
+    "smoke_acceptance": [
+      "checkpoint loads (state dict keys match YOLOX exp) and sha256 recorded",
+      "inference on >=1 frame returns person boxes",
+      "train-split provenance of the checkpoint documented (DanceTrack train only vs CrowdHuman/MOT mix); val counts as unseen only if val was not in training",
+      "if any check fails: drop source (b), record reason"
+    ],
+    "verdict": "usable as a detector (loads, recall 0.986, precision 0.864 on 9 val frames). NOT established: that val is unseen by it. The checkpoint carries no training metadata and recall ~1.0 on val is what a model that saw val would also give."
+  },
+  "library": {
+    "license": "Apache-2.0",
+    "name": "trackers",
+    "supervision": "0.31.2",
+    "supervision_license": "MIT",
+    "version": "2.6.1"
+  },
+  "protocol": {
+    "environment_conflict": "trackers==2.6.1 requires numpy>=2.0.2 but requirements.lock.txt pins numpy==1.26.4 -> tracking tier B is installed from requirements-tracking.txt in its own environment (Colab); the TrackEval shim in tracking_scoring.load_trackeval covers numpy 2.x and its 7 tests pass under numpy 2.4.6",
+    "frame_rate": "per sequence from seqinfo.ini (library default 30.0 would mis-scale lost_track_buffer)",
+    "interface": {
+      "botsort_reid": "none: the library signature has no appearance model, BoT-SORT here = IoU association + camera motion compensation",
+      "empty_frame": "update(sv.Detections.empty()) returns an empty result",
+      "frame_argument": "SORT/ByteTrack/OC-SORT ignore `frame` (pass None, they warn otherwise); BoT-SORT needs the frame for CMC and silently skips CMC when it is None, so the runner must pass frames for BoT-SORT or set enable_cmc=False explicitly",
+      "rows_with_tracker_id_minus_1": "unconfirmed tracks are returned with tracker_id == -1: drop them before writing MOT output"
+    },
+    "n_configs_excluding_default": 20,
+    "sampling": "random search, seeded; the same seed and the same N for every family; config 0 = published default",
+    "seed": 20261027,
+    "selection": "highest mean dev HOTA; ties -> lower config index",
+    "tuning_split": "dev (8 train sequences, see stratification file)"
+  },
+  "status": "approved",
+  "trackers": {
+    "botsort": {
+      "cls": "trackers.BoTSORTTracker",
+      "defaults": {
+        "cmc_downscale": 2,
+        "cmc_method": "sparseOptFlow",
+        "enable_cmc": true,
+        "frame_rate": 30.0,
+        "high_conf_det_threshold": 0.6,
+        "instant_first_frame_activation": true,
+        "lost_track_buffer": 30,
+        "minimum_consecutive_frames": 2,
+        "minimum_iou_threshold_first_assoc": 0.2,
+        "minimum_iou_threshold_second_assoc": 0.5,
+        "minimum_iou_threshold_unconfirmed_assoc": 0.3,
+        "track_activation_threshold": 0.7
+      },
+      "fixed": {
+        "cmc_downscale": 2,
+        "cmc_method": "sparseOptFlow",
+        "enable_cmc": true,
+        "frame_rate": 30.0,
+        "instant_first_frame_activation": true
+      },
+      "search": {
+        "high_conf_det_threshold": {
+          "high": 0.8,
+          "low": 0.3,
+          "type": "uniform"
+        },
+        "lost_track_buffer": {
+          "type": "choice",
+          "values": [
+            15,
+            30,
+            60,
+            90
+          ]
+        },
+        "minimum_consecutive_frames": {
+          "type": "choice",
+          "values": [
+            1,
+            2,
+            3,
+            5
+          ]
+        },
+        "minimum_iou_threshold_first_assoc": {
+          "high": 0.5,
+          "low": 0.1,
+          "type": "uniform"
+        },
+        "minimum_iou_threshold_second_assoc": {
+          "high": 0.7,
+          "low": 0.3,
+          "type": "uniform"
+        },
+        "minimum_iou_threshold_unconfirmed_assoc": {
+          "high": 0.5,
+          "low": 0.1,
+          "type": "uniform"
+        },
+        "track_activation_threshold": {
+          "high": 0.9,
+          "low": 0.3,
+          "type": "uniform"
+        }
+      }
+    },
+    "bytetrack": {
+      "cls": "trackers.ByteTrackTracker",
+      "defaults": {
+        "frame_rate": 30.0,
+        "high_conf_det_threshold": 0.6,
+        "lost_track_buffer": 30,
+        "minimum_consecutive_frames": 2,
+        "minimum_iou_threshold": 0.1,
+        "track_activation_threshold": 0.7
+      },
+      "fixed": {
+        "frame_rate": 30.0
+      },
+      "search": {
+        "high_conf_det_threshold": {
+          "high": 0.8,
+          "low": 0.3,
+          "type": "uniform"
+        },
+        "lost_track_buffer": {
+          "type": "choice",
+          "values": [
+            15,
+            30,
+            60,
+            90
+          ]
+        },
+        "minimum_consecutive_frames": {
+          "type": "choice",
+          "values": [
+            1,
+            2,
+            3,
+            5
+          ]
+        },
+        "minimum_iou_threshold": {
+          "high": 0.4,
+          "low": 0.05,
+          "type": "uniform"
+        },
+        "track_activation_threshold": {
+          "high": 0.9,
+          "low": 0.3,
+          "type": "uniform"
+        }
+      }
+    },
+    "ocsort": {
+      "cls": "trackers.OCSORTTracker",
+      "defaults": {
+        "delta_t": 3,
+        "direction_consistency_weight": 0.2,
+        "frame_rate": 30.0,
+        "high_conf_det_threshold": 0.6,
+        "lost_track_buffer": 30,
+        "minimum_consecutive_frames": 3,
+        "minimum_iou_threshold": 0.3
+      },
+      "fixed": {
+        "frame_rate": 30.0
+      },
+      "search": {
+        "delta_t": {
+          "type": "choice",
+          "values": [
+            1,
+            2,
+            3,
+            5
+          ]
+        },
+        "direction_consistency_weight": {
+          "high": 0.5,
+          "low": 0.0,
+          "type": "uniform"
+        },
+        "high_conf_det_threshold": {
+          "high": 0.8,
+          "low": 0.3,
+          "type": "uniform"
+        },
+        "lost_track_buffer": {
+          "type": "choice",
+          "values": [
+            15,
+            30,
+            60,
+            90
+          ]
+        },
+        "minimum_consecutive_frames": {
+          "type": "choice",
+          "values": [
+            1,
+            2,
+            3,
+            5
+          ]
+        },
+        "minimum_iou_threshold": {
+          "high": 0.5,
+          "low": 0.1,
+          "type": "uniform"
+        }
+      }
+    },
+    "sort": {
+      "cls": "trackers.SORTTracker",
+      "defaults": {
+        "frame_rate": 30.0,
+        "lost_track_buffer": 30,
+        "minimum_consecutive_frames": 3,
+        "minimum_iou_threshold": 0.3,
+        "track_activation_threshold": 0.25
+      },
+      "fixed": {
+        "frame_rate": 30.0
+      },
+      "search": {
+        "lost_track_buffer": {
+          "type": "choice",
+          "values": [
+            15,
+            30,
+            60,
+            90
+          ]
+        },
+        "minimum_consecutive_frames": {
+          "type": "choice",
+          "values": [
+            1,
+            2,
+            3,
+            5
+          ]
+        },
+        "minimum_iou_threshold": {
+          "high": 0.5,
+          "low": 0.1,
+          "type": "uniform"
+        },
+        "track_activation_threshold": {
+          "high": 0.7,
+          "low": 0.1,
+          "type": "uniform"
+        }
+      }
+    }
+  }
+}

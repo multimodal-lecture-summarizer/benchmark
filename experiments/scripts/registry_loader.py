@@ -36,6 +36,7 @@ class TaskID(str, Enum):
     RQ0_A = "RQ0_A"
     RQ0_V = "RQ0_V"
     RQ0_OD = "RQ0_OD"
+    RQ0_MOT = "RQ0_MOT"
     RQ1 = "RQ1"
     RQ2 = "RQ2"
     RQ3 = "RQ3"

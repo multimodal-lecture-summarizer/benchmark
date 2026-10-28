@@ -1,0 +1,639 @@
+{
+  "approved_by": "user (chat 2026-10-27)",
+  "binds_registry_sequence_ids_sha256": "244e1157d4d183bc81636d4263f32a62056a007c2a69d9f299ba8272637f5a32",
+  "counts": {
+    "camera_moving": {
+      "train": 2,
+      "val": 3
+    }
+  },
+  "created": "2026-10-27T11:26:48.659096+00:00",
+  "dev": {
+    "constraint": "inside the val min-max on every axis; each tier of each axis >= 2 sequences; >= 1 moving camera",
+    "n": 8,
+    "seed": 20261027,
+    "sequences": [
+      "dancetrack0015",
+      "dancetrack0023",
+      "dancetrack0024",
+      "dancetrack0039",
+      "dancetrack0045",
+      "dancetrack0057",
+      "dancetrack0061",
+      "dancetrack0099"
+    ],
+    "source_split": "train"
+  },
+  "edges": {
+    "density": [
+      5.886671418389166,
+      8.784525790349418
+    ],
+    "id_gaps": [
+      1.7142857142857142,
+      4.0
+    ],
+    "speed": [
+      0.014820326743195862,
+      0.02092245358753821
+    ]
+  },
+  "rule": {
+    "axes": {
+      "density": "boxes_per_frame",
+      "id_gaps": "gaps_per_track",
+      "speed": "speed_median"
+    },
+    "camera_proxy": "median phase-correlation shift over 6 consecutive-frame pairs at 480 px width > 1.0 px => moving",
+    "composite_score": null,
+    "tiers": "low: v<=e1, mid: e1<v<=e2, high: v>e2; e1,e2 = 1/3 and 2/3 quantiles of the 40 TRAIN sequences, applied unchanged to val"
+  },
+  "sequences": [
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0001",
+      "split": "train",
+      "tier_density": "mid",
+      "tier_id_gaps": "low",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0002",
+      "split": "train",
+      "tier_density": "mid",
+      "tier_id_gaps": "high",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0006",
+      "split": "train",
+      "tier_density": "mid",
+      "tier_id_gaps": "high",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0008",
+      "split": "train",
+      "tier_density": "mid",
+      "tier_id_gaps": "high",
+      "tier_speed": "mid"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0012",
+      "split": "train",
+      "tier_density": "high",
+      "tier_id_gaps": "high",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "dev",
+      "seq": "dancetrack0015",
+      "split": "train",
+      "tier_density": "high",
+      "tier_id_gaps": "mid",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0016",
+      "split": "train",
+      "tier_density": "low",
+      "tier_id_gaps": "high",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0020",
+      "split": "train",
+      "tier_density": "high",
+      "tier_id_gaps": "mid",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "dev",
+      "seq": "dancetrack0023",
+      "split": "train",
+      "tier_density": "mid",
+      "tier_id_gaps": "high",
+      "tier_speed": "mid"
+    },
+    {
+      "camera": "static",
+      "role": "dev",
+      "seq": "dancetrack0024",
+      "split": "train",
+      "tier_density": "mid",
+      "tier_id_gaps": "low",
+      "tier_speed": "mid"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0027",
+      "split": "train",
+      "tier_density": "mid",
+      "tier_id_gaps": "mid",
+      "tier_speed": "mid"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0029",
+      "split": "train",
+      "tier_density": "mid",
+      "tier_id_gaps": "low",
+      "tier_speed": "mid"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0032",
+      "split": "train",
+      "tier_density": "low",
+      "tier_id_gaps": "mid",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0033",
+      "split": "train",
+      "tier_density": "mid",
+      "tier_id_gaps": "mid",
+      "tier_speed": "high"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0037",
+      "split": "train",
+      "tier_density": "mid",
+      "tier_id_gaps": "mid",
+      "tier_speed": "mid"
+    },
+    {
+      "camera": "moving",
+      "role": "dev",
+      "seq": "dancetrack0039",
+      "split": "train",
+      "tier_density": "low",
+      "tier_id_gaps": "high",
+      "tier_speed": "mid"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0044",
+      "split": "train",
+      "tier_density": "high",
+      "tier_id_gaps": "high",
+      "tier_speed": "high"
+    },
+    {
+      "camera": "static",
+      "role": "dev",
+      "seq": "dancetrack0045",
+      "split": "train",
+      "tier_density": "high",
+      "tier_id_gaps": "high",
+      "tier_speed": "mid"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0049",
+      "split": "train",
+      "tier_density": "mid",
+      "tier_id_gaps": "mid",
+      "tier_speed": "mid"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0051",
+      "split": "train",
+      "tier_density": "high",
+      "tier_id_gaps": "low",
+      "tier_speed": "mid"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0052",
+      "split": "train",
+      "tier_density": "low",
+      "tier_id_gaps": "high",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0053",
+      "split": "train",
+      "tier_density": "low",
+      "tier_id_gaps": "mid",
+      "tier_speed": "high"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0055",
+      "split": "train",
+      "tier_density": "low",
+      "tier_id_gaps": "high",
+      "tier_speed": "high"
+    },
+    {
+      "camera": "static",
+      "role": "dev",
+      "seq": "dancetrack0057",
+      "split": "train",
+      "tier_density": "low",
+      "tier_id_gaps": "mid",
+      "tier_speed": "high"
+    },
+    {
+      "camera": "static",
+      "role": "dev",
+      "seq": "dancetrack0061",
+      "split": "train",
+      "tier_density": "low",
+      "tier_id_gaps": "low",
+      "tier_speed": "high"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0062",
+      "split": "train",
+      "tier_density": "low",
+      "tier_id_gaps": "low",
+      "tier_speed": "high"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0066",
+      "split": "train",
+      "tier_density": "low",
+      "tier_id_gaps": "low",
+      "tier_speed": "high"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0068",
+      "split": "train",
+      "tier_density": "low",
+      "tier_id_gaps": "low",
+      "tier_speed": "high"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0069",
+      "split": "train",
+      "tier_density": "low",
+      "tier_id_gaps": "mid",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0072",
+      "split": "train",
+      "tier_density": "low",
+      "tier_id_gaps": "mid",
+      "tier_speed": "high"
+    },
+    {
+      "camera": "moving",
+      "role": "train",
+      "seq": "dancetrack0074",
+      "split": "train",
+      "tier_density": "low",
+      "tier_id_gaps": "high",
+      "tier_speed": "mid"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0075",
+      "split": "train",
+      "tier_density": "mid",
+      "tier_id_gaps": "low",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0080",
+      "split": "train",
+      "tier_density": "high",
+      "tier_id_gaps": "low",
+      "tier_speed": "high"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0082",
+      "split": "train",
+      "tier_density": "high",
+      "tier_id_gaps": "low",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0083",
+      "split": "train",
+      "tier_density": "high",
+      "tier_id_gaps": "low",
+      "tier_speed": "high"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0086",
+      "split": "train",
+      "tier_density": "high",
+      "tier_id_gaps": "low",
+      "tier_speed": "mid"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0087",
+      "split": "train",
+      "tier_density": "high",
+      "tier_id_gaps": "mid",
+      "tier_speed": "high"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0096",
+      "split": "train",
+      "tier_density": "high",
+      "tier_id_gaps": "low",
+      "tier_speed": "mid"
+    },
+    {
+      "camera": "static",
+      "role": "train",
+      "seq": "dancetrack0098",
+      "split": "train",
+      "tier_density": "mid",
+      "tier_id_gaps": "high",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "dev",
+      "seq": "dancetrack0099",
+      "split": "train",
+      "tier_density": "high",
+      "tier_id_gaps": "mid",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "val",
+      "seq": "dancetrack0004",
+      "split": "val",
+      "tier_density": "low",
+      "tier_id_gaps": "high",
+      "tier_speed": "mid"
+    },
+    {
+      "camera": "static",
+      "role": "val",
+      "seq": "dancetrack0005",
+      "split": "val",
+      "tier_density": "low",
+      "tier_id_gaps": "mid",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "val",
+      "seq": "dancetrack0007",
+      "split": "val",
+      "tier_density": "mid",
+      "tier_id_gaps": "mid",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "val",
+      "seq": "dancetrack0010",
+      "split": "val",
+      "tier_density": "low",
+      "tier_id_gaps": "mid",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "val",
+      "seq": "dancetrack0014",
+      "split": "val",
+      "tier_density": "high",
+      "tier_id_gaps": "high",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "val",
+      "seq": "dancetrack0018",
+      "split": "val",
+      "tier_density": "low",
+      "tier_id_gaps": "mid",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "moving",
+      "role": "val",
+      "seq": "dancetrack0019",
+      "split": "val",
+      "tier_density": "mid",
+      "tier_id_gaps": "high",
+      "tier_speed": "high"
+    },
+    {
+      "camera": "static",
+      "role": "val",
+      "seq": "dancetrack0025",
+      "split": "val",
+      "tier_density": "high",
+      "tier_id_gaps": "mid",
+      "tier_speed": "mid"
+    },
+    {
+      "camera": "moving",
+      "role": "val",
+      "seq": "dancetrack0026",
+      "split": "val",
+      "tier_density": "high",
+      "tier_id_gaps": "high",
+      "tier_speed": "high"
+    },
+    {
+      "camera": "static",
+      "role": "val",
+      "seq": "dancetrack0030",
+      "split": "val",
+      "tier_density": "mid",
+      "tier_id_gaps": "low",
+      "tier_speed": "mid"
+    },
+    {
+      "camera": "static",
+      "role": "val",
+      "seq": "dancetrack0034",
+      "split": "val",
+      "tier_density": "high",
+      "tier_id_gaps": "high",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "val",
+      "seq": "dancetrack0035",
+      "split": "val",
+      "tier_density": "mid",
+      "tier_id_gaps": "high",
+      "tier_speed": "mid"
+    },
+    {
+      "camera": "static",
+      "role": "val",
+      "seq": "dancetrack0041",
+      "split": "val",
+      "tier_density": "high",
+      "tier_id_gaps": "high",
+      "tier_speed": "mid"
+    },
+    {
+      "camera": "static",
+      "role": "val",
+      "seq": "dancetrack0043",
+      "split": "val",
+      "tier_density": "high",
+      "tier_id_gaps": "mid",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "val",
+      "seq": "dancetrack0047",
+      "split": "val",
+      "tier_density": "mid",
+      "tier_id_gaps": "mid",
+      "tier_speed": "mid"
+    },
+    {
+      "camera": "static",
+      "role": "val",
+      "seq": "dancetrack0058",
+      "split": "val",
+      "tier_density": "mid",
+      "tier_id_gaps": "low",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "val",
+      "seq": "dancetrack0063",
+      "split": "val",
+      "tier_density": "mid",
+      "tier_id_gaps": "mid",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "val",
+      "seq": "dancetrack0065",
+      "split": "val",
+      "tier_density": "low",
+      "tier_id_gaps": "low",
+      "tier_speed": "high"
+    },
+    {
+      "camera": "moving",
+      "role": "val",
+      "seq": "dancetrack0073",
+      "split": "val",
+      "tier_density": "high",
+      "tier_id_gaps": "low",
+      "tier_speed": "mid"
+    },
+    {
+      "camera": "static",
+      "role": "val",
+      "seq": "dancetrack0077",
+      "split": "val",
+      "tier_density": "high",
+      "tier_id_gaps": "low",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "val",
+      "seq": "dancetrack0079",
+      "split": "val",
+      "tier_density": "high",
+      "tier_id_gaps": "low",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "val",
+      "seq": "dancetrack0081",
+      "split": "val",
+      "tier_density": "high",
+      "tier_id_gaps": "mid",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "val",
+      "seq": "dancetrack0090",
+      "split": "val",
+      "tier_density": "high",
+      "tier_id_gaps": "high",
+      "tier_speed": "mid"
+    },
+    {
+      "camera": "static",
+      "role": "val",
+      "seq": "dancetrack0094",
+      "split": "val",
+      "tier_density": "high",
+      "tier_id_gaps": "high",
+      "tier_speed": "low"
+    },
+    {
+      "camera": "static",
+      "role": "val",
+      "seq": "dancetrack0097",
+      "split": "val",
+      "tier_density": "low",
+      "tier_id_gaps": "mid",
+      "tier_speed": "low"
+    }
+  ],
+  "status": "approved"
+}

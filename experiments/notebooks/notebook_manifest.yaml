@@ -290,6 +290,63 @@ pending_evaluation_notebooks:
   protocol_frozen: true
   model_execution_verified: false
 executed_evaluation_notebooks:
+- dataset: dancetrack
+  path: experiments/notebooks/03b-multi-object-tracking-benchmark-colab.ipynb
+  status: FULL_EXECUTED_REPORTABLE_2026_10_28
+  runner: experiments/scripts/tracking_runner.py
+  scorer: experiments/scripts/tracking_scoring.py
+  builder: experiments/scripts/build_tracking_benchmark_notebook.py
+  notebook_sha256: 8666701efdcef2ed19ce9451b1bf50684f7ec0605da37d1bae6b634eba1a5375
+  notebook_sha256_note: rebuilt after the smoke (detection-diagnostics cell, weak-detector list in the manifest); embedded modules and registries are byte-identical to the smoke run, so the RUN_ID code binding still holds
+  smoke_detection_diagnosis: source_a_scores_too_low_for_default_tracker_thresholds_on_2_of_4_videos
+  modes: [dry, smoke, full]
+  dry_executed_locally_cpu: true
+  smoke_executed: true
+  smoke_run_id: track-03b-261027-v1
+  smoke_finished_utc: '2026-10-28T02:34:04+00:00'
+  smoke_device: Tesla_T4
+  smoke_result: experiments/registry/results/track-03b-261027-v1/smoke_manifest.json
+  smoke_budget_gate: experiments/registry/results/track-03b-261027-v1/smoke-budget-gate.json
+  smoke_gate_valid: true
+  smoke_estimate: {tier_a_gpu_hours: 5.65, tier_b_cpu_hours: 7.79, over_budget: false}
+  full_executed: true
+  full_finished_utc: '2026-10-28T13:59:34+00:00'
+  full_devices: tier_a_tesla_t4_tier_b_cpu_runtime
+  full_result: experiments/registry/results/track-03b-261027-v1/full_manifest.json
+  full_executed_notebook_sha256: 41e85eb66b12d0618e9a88ace3ca4c191a18fdc2108a85798e37e0929d397616
+  full_bundle_sha256: c177759fd6ac89a6e9d3ebd686687b81484a3f0b237bf62994b4817e1dded096
+  full_source_digests_match_smoke: true
+  full_report: ../../plans/reports/tracking-benchmark-261028-2110-03b-full-run-results-report.md
+  weak_detector_videos_source_a: [dancetrack0025, dancetrack0026, dancetrack0043]
+  reportable: true
+  frozen_inputs:
+    cohort: experiments/registry/datasets/mot-dancetrack-261026.json
+    stratification: experiments/registry/datasets/stratification-dancetrack-261027.json
+    search_space: experiments/registry/datasets/tracker-search-space-dancetrack-261027.json
+  frozen_inputs_status: approved_by_user_2026_10_27
+  trackers: [sort, bytetrack, ocsort, botsort]
+  library: trackers==2.6.1
+  botsort_reid: none
+  detection_sources:
+    a: rtdetr_r18_coco_only
+    b: yolox_published_for_dancetrack
+  source_b_flag: DETECTOR_TRAIN_DATA_UNVERIFIED
+  source_b_smoke: experiments/registry/datasets/tracker-search-space-dancetrack-261027.json#detection_source_b.smoke
+  budget_gate_required_before_full: true
+  val_videos: 25
+  dev_videos: 8
+  configs_per_tracker: 21
+- dataset: coco-subset-and-lvvo
+  path: experiments/notebooks/03a-object-detection-benchmark-colab.ipynb
+  status: EXECUTED_FULL_RUN_REPORTABLE
+  notebook_sha256: bc1a84c7b13034007b2ca3dec032c2c2c4fe91b037f82539b6ca556f0ccbdf13
+  run_id: det-03a-261026-v1
+  result_manifest: experiments/registry/results/det-03a-261026-v1/full_manifest.json
+  finished_utc: '2026-10-27T09:13:47.674395+00:00'
+  device: Tesla_T4
+  frozen_gt_sha256:
+    coco: ddaa870f9117c8766a521bfd5ccfff34e590e036ccb51452af519ced9aaf035b
+    lvvo: dcfe3a6874a857c9c9af4f03acfed32d17f2f2031c0b6866fa39337378367b37
 - dataset: tib
   path: experiments/notebooks/rq2-tib-120-evaluation-colab.ipynb
   execution_decision: experiments/registry/datasets/tib-rq2-rq4-120-decision-261010.json

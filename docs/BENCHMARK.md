@@ -91,6 +91,21 @@ Full run `det-03a-261026-v1` on Colab Tesla T4: 8 model/track jobs, 0 failed ima
 
 Paired decisions: among closed models RT-DETR-R18 beats YOLOv8n (Δ +0.021, CI [0.009, 0.032]); YOLO11n is indistinguishable from both (vs YOLOv8n Δ +0.004, vs RT-DETR Δ −0.017, whose CI excludes 0 but stays under 0.02). GroundingDINO beats both Florence variants on D-A (Δ +0.087 and +0.069) and Florence `<OD>` on D-B (Δ +0.187). Closed COCO-80 models are not scored on D-A (no corresponding classes). Limits: D-A group-level CIs do not account for unreviewed cross-group near duplicates; GroundingDINO pretraining overlap with COCO is unchecked; latency is batch 1 on a T4 only; the manifest records `detection_scoring.py` digest `b8220e36…` from before a result-preserving speed-up (repository file `c06d8bcc…`, identical AP in unit tests). Detailed report: [03a results](../../plans/reports/detection-benchmark-261027-1640-03a-full-run-results-report.md).
 
+## Multi-object tracking 03b results (2026-10-28)
+
+Full run `track-03b-261027-v1` on DanceTrack (33 sequences; 8 dev train sequences for tuning, 25 val videos for reporting): detections computed once per source (tier A, Colab T4), then four trackers scored with pinned TrackEval (tier B, CPU), `reportable=true`, source digests identical to the smoke. Libraries: `trackers` 2.6.1, `supervision` 0.31.2, TrackEval 1.0.dev1. Each tracker has a published-default row (config 0) and a tuned row (best mean dev HOTA over 21 configs: default + 20 seeded random). Paired video bootstrap 10,000 resamples; a difference counts only if the CI excludes 0 and |ΔHOTA| ≥ 2.0. The two detection sources are never ranked together and there is no composite score. Research scope on dancers in matching costumes, not lecture video and not a production selection.
+
+| Tracker (val HOTA, default / tuned) | Source a: RT-DETR-R18vd, COCO only | Source b: YOLOX for DanceTrack (flagged) |
+|---|---|---|
+| BoT-SORT (IoU + CMC, no ReID) | 40.2 / 40.2 (default won on dev) | 51.1 / 51.1 (default won on dev) |
+| ByteTrack | 38.9 / 38.7 | 48.0 / 49.0 |
+| OC-SORT | 34.4 / 36.2 | 48.9 / 49.4 |
+| SORT | 16.9 / 22.4 | 42.7 / 44.5 |
+
+BoT-SORT leads and SORT trails in both sources. Source a: BoT-SORT and ByteTrack are indistinguishable; both beat OC-SORT and SORT at default. Source b: BoT-SORT beats ByteTrack and OC-SORT at default (Δ +3.04 and +2.13); after tuning only ByteTrack stays behind (Δ +2.09), and BoT-SORT vs OC-SORT is indistinguishable (Δ +1.69). Tuning gives no reliable validation gain (five of the six tuned-vs-default pairs are indistinguishable; BoT-SORT's tuned row is its default); the one significant case, SORT on source a, starts from a very weak default. HOTA is limited by association (AssA 11–34) more than detection (DetA 45–78).
+
+Limits: source b carries `DETECTOR_TRAIN_DATA_UNVERIFIED` (published YOLOX trained on DanceTrack; val exposure not confirmed, and dev HOTA 60–73 versus val 43–51 suggests dev is exposed). Source a is detector-limited on 0025, 0026 and 0043 (recall < 0.5 at score 0.5); on 0026 the detector finds about 60% of dancers only at score 0.1, so default tracker thresholds discard them. Camera results use a 3-video proxy and are descriptive; on 0026 they are confounded with the weak detector. BoT-SORT here has no ReID. Tracker-only fps (BoT-SORT includes CMC at 11 ms/frame) is not an end-to-end speed claim. Raw tracks and detections stay on Drive with SHA-256 in the manifest. Details: [03b results report](../../plans/reports/tracking-benchmark-261028-2110-03b-full-run-results-report.md); outputs in [results](../experiments/registry/results/track-03b-261027-v1/).
+
 ## Evidence status and locations
 
 [Dataset EDA](DATASET_EDA.md) tracks executed versus pending inspection. [Model selection](MODEL_SELECTION_README.md) separates observed outcomes from proposals. The [master plan](../plans/260901-unified-scientific-benchmark/framework/00-master-plan.md) states open research questions, and the [RQ2 plan](../plans/261002-0946-rq2-controlled-summarization/plan.md) records the current summarization comparison and its historical preparation. Older plans and repair reports may describe retired contracts or runners; they are historical records rather than executable instructions.

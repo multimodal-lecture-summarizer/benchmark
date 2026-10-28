@@ -281,6 +281,83 @@ candidates:
     tags: [object_detection, open_vocab]
 
   # ==========================================================================
+  # RQ0-MOT: Multi-object tracking (4 association families, DanceTrack, benchmark 03b)
+  # Library: trackers==2.6.1 (Apache-2.0) + supervision==0.31.2 (MIT), CPU only. Hyper-parameter defaults and the
+  # tuned search space are frozen in registry/datasets/tracker-search-space-dancetrack-261027.json (approved).
+  # Detections are an input, not a candidate: source (a) = best 03a person detector, source (b) = DanceTrack YOLOX
+  # checkpoint (flag DETECTOR_TRAIN_DATA_UNVERIFIED; imagenet_rgb input). No tracker here uses appearance features
+  # (the library's BoT-SORT = IoU association + camera-motion compensation, no ReID).
+  # ==========================================================================
+
+  - id: RQ0_MOT.sort
+    task: RQ0_MOT
+    display_name: "SORT (Kalman + IoU Hungarian)"
+    model_class: trackers.SORTTracker
+    model_kwargs:
+      library: trackers==2.6.1
+      search_space: experiments/registry/datasets/tracker-search-space-dancetrack-261027.json
+      reid: none
+      needs_frame: false
+    required_features: [detections.mot.txt]
+    compute_budget:
+      max_vram_mb: 0
+      max_latency_ms: 0
+    family: kalman_iou
+    reference_paper: "https://arxiv.org/abs/1602.00763"
+    tags: [tracking, mot, motion_only, cpu]
+
+  - id: RQ0_MOT.bytetrack
+    task: RQ0_MOT
+    display_name: "ByteTrack (two-stage association with low-score boxes)"
+    model_class: trackers.ByteTrackTracker
+    model_kwargs:
+      library: trackers==2.6.1
+      search_space: experiments/registry/datasets/tracker-search-space-dancetrack-261027.json
+      reid: none
+      needs_frame: false
+    required_features: [detections.mot.txt]
+    compute_budget:
+      max_vram_mb: 0
+      max_latency_ms: 0
+    family: kalman_iou_lowscore
+    reference_paper: "https://arxiv.org/abs/2110.06864"
+    tags: [tracking, mot, motion_only, cpu]
+
+  - id: RQ0_MOT.ocsort
+    task: RQ0_MOT
+    display_name: "OC-SORT (observation-centric re-update + direction consistency)"
+    model_class: trackers.OCSORTTracker
+    model_kwargs:
+      library: trackers==2.6.1
+      search_space: experiments/registry/datasets/tracker-search-space-dancetrack-261027.json
+      reid: none
+      needs_frame: false
+    required_features: [detections.mot.txt]
+    compute_budget:
+      max_vram_mb: 0
+      max_latency_ms: 0
+    family: observation_centric
+    reference_paper: "https://arxiv.org/abs/2203.14360"
+    tags: [tracking, mot, motion_only, cpu]
+
+  - id: RQ0_MOT.botsort
+    task: RQ0_MOT
+    display_name: "BoT-SORT (IoU + camera-motion compensation, no ReID in this library)"
+    model_class: trackers.BoTSORTTracker
+    model_kwargs:
+      library: trackers==2.6.1
+      search_space: experiments/registry/datasets/tracker-search-space-dancetrack-261027.json
+      reid: none               # the paper's ReID variant is NOT what is evaluated here
+      needs_frame: true        # without a frame CMC is skipped silently, so the runner refuses to run without frames
+    required_features: [detections.mot.txt, frames.jpg]
+    compute_budget:
+      max_vram_mb: 0
+      max_latency_ms: 0
+    family: kalman_iou_cmc
+    reference_paper: "https://arxiv.org/abs/2206.14651"
+    tags: [tracking, mot, camera_motion_compensation, cpu]
+
+  # ==========================================================================
   # RQ1: Multimodal Chaptering (6 candidates)
   # ==========================================================================
 

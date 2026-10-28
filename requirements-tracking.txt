@@ -1,0 +1,8 @@
+# Tracking tier B (association + TrackEval scoring). Separate from requirements.lock.txt:
+# trackers needs numpy>=2.0.2 while the main lock pins numpy==1.26.4. Install in its own environment (Colab).
+trackers==2.6.1
+supervision==0.31.2
+numpy>=2.0.2
+scipy>=1.13.1
+opencv-python>=4.8.0
+# TrackEval is installed from the pinned commit, see experiments/scripts/tracking_scoring.py INSTALL_HINT

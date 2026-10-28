@@ -1,0 +1,31 @@
+{
+  "bot_sort_cmc": {
+    "cmc_ms_per_frame": 26.079378499616723,
+    "cmc_off": 1.1632310001914448,
+    "cmc_on": 27.242609499808168
+  },
+  "finished_utc": "2026-10-28T02:34:04.624565+00:00",
+  "gpu": "Tesla T4",
+  "job_ms_per_frame": {
+    "botsort": 42.478500120219266,
+    "bytetrack": 1.395654165678602,
+    "ocsort": 1.6496798081511614,
+    "sort": 2.2369291784389853
+  },
+  "mode": "smoke",
+  "over_budget": false,
+  "seconds_per_frame_tier_a": {
+    "a": 0.07438600108342451,
+    "b": 0.3883372012746561
+  },
+  "tier_a_gpu_hours": 5.652806587918342,
+  "tier_a_on_gpu": true,
+  "tier_b_cpu_hours": 7.787960273986966,
+  "update_ms": {
+    "botsort": 29.12626000011187,
+    "bytetrack": 0.769240250178882,
+    "ocsort": 0.9489432501368356,
+    "sort": 1.48982000007436
+  },
+  "valid": true
+}

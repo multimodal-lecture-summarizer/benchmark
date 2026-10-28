@@ -1,0 +1,1289 @@
+{
+  "botsort_cmc": {
+    "cmc_ms_per_frame": 11.348738999004127,
+    "cmc_off": 0.8772399996814784,
+    "cmc_on": 12.225978998685605
+  },
+  "chosen_configs": {
+    "a|botsort": {
+      "cfg": 0,
+      "params": {
+        "cmc_downscale": 2,
+        "cmc_method": "sparseOptFlow",
+        "enable_cmc": true,
+        "frame_rate": 30.0,
+        "high_conf_det_threshold": 0.6,
+        "instant_first_frame_activation": true,
+        "lost_track_buffer": 30,
+        "minimum_consecutive_frames": 2,
+        "minimum_iou_threshold_first_assoc": 0.2,
+        "minimum_iou_threshold_second_assoc": 0.5,
+        "minimum_iou_threshold_unconfirmed_assoc": 0.3,
+        "track_activation_threshold": 0.7
+      }
+    },
+    "a|bytetrack": {
+      "cfg": 16,
+      "params": {
+        "frame_rate": 30.0,
+        "high_conf_det_threshold": 0.7347,
+        "lost_track_buffer": 30,
+        "minimum_consecutive_frames": 1,
+        "minimum_iou_threshold": 0.1288,
+        "track_activation_threshold": 0.7705
+      }
+    },
+    "a|ocsort": {
+      "cfg": 19,
+      "params": {
+        "delta_t": 3,
+        "direction_consistency_weight": 0.0171,
+        "frame_rate": 30.0,
+        "high_conf_det_threshold": 0.6014,
+        "lost_track_buffer": 30,
+        "minimum_consecutive_frames": 1,
+        "minimum_iou_threshold": 0.1477
+      }
+    },
+    "a|sort": {
+      "cfg": 9,
+      "params": {
+        "frame_rate": 30.0,
+        "lost_track_buffer": 90,
+        "minimum_consecutive_frames": 5,
+        "minimum_iou_threshold": 0.1472,
+        "track_activation_threshold": 0.6983
+      }
+    },
+    "b|botsort": {
+      "cfg": 0,
+      "params": {
+        "cmc_downscale": 2,
+        "cmc_method": "sparseOptFlow",
+        "enable_cmc": true,
+        "frame_rate": 30.0,
+        "high_conf_det_threshold": 0.6,
+        "instant_first_frame_activation": true,
+        "lost_track_buffer": 30,
+        "minimum_consecutive_frames": 2,
+        "minimum_iou_threshold_first_assoc": 0.2,
+        "minimum_iou_threshold_second_assoc": 0.5,
+        "minimum_iou_threshold_unconfirmed_assoc": 0.3,
+        "track_activation_threshold": 0.7
+      }
+    },
+    "b|bytetrack": {
+      "cfg": 15,
+      "params": {
+        "frame_rate": 30.0,
+        "high_conf_det_threshold": 0.7007,
+        "lost_track_buffer": 90,
+        "minimum_consecutive_frames": 1,
+        "minimum_iou_threshold": 0.3109,
+        "track_activation_threshold": 0.8586
+      }
+    },
+    "b|ocsort": {
+      "cfg": 16,
+      "params": {
+        "delta_t": 5,
+        "direction_consistency_weight": 0.4184,
+        "frame_rate": 30.0,
+        "high_conf_det_threshold": 0.7347,
+        "lost_track_buffer": 30,
+        "minimum_consecutive_frames": 1,
+        "minimum_iou_threshold": 0.19
+      }
+    },
+    "b|sort": {
+      "cfg": 9,
+      "params": {
+        "frame_rate": 30.0,
+        "lost_track_buffer": 90,
+        "minimum_consecutive_frames": 5,
+        "minimum_iou_threshold": 0.1472,
+        "track_activation_threshold": 0.6983
+      }
+    }
+  },
+  "decisions": {
+    "a": [
+      {
+        "HOTA_a": 40.18116151906094,
+        "HOTA_b": 38.872511022331416,
+        "ci_hi": 3.4970438598005456,
+        "ci_lo": -1.1605876510584043,
+        "comparison": "default: botsort vs bytetrack",
+        "delta": 1.308650496729527,
+        "verdict": "indistinguishable"
+      },
+      {
+        "HOTA_a": 40.18116151906094,
+        "HOTA_b": 34.38861544907937,
+        "ci_hi": 7.135703265489053,
+        "ci_lo": 4.589212468148844,
+        "comparison": "default: botsort vs ocsort",
+        "delta": 5.792546069981576,
+        "verdict": "a_better"
+      },
+      {
+        "HOTA_a": 40.18116151906094,
+        "HOTA_b": 16.894301336503194,
+        "ci_hi": 26.51855868290991,
+        "ci_lo": 20.019363264147604,
+        "comparison": "default: botsort vs sort",
+        "delta": 23.28686018255775,
+        "verdict": "a_better"
+      },
+      {
+        "HOTA_a": 38.872511022331416,
+        "HOTA_b": 34.38861544907937,
+        "ci_hi": 6.864994530226685,
+        "ci_lo": 2.366968638321867,
+        "comparison": "default: bytetrack vs ocsort",
+        "delta": 4.483895573252049,
+        "verdict": "a_better"
+      },
+      {
+        "HOTA_a": 38.872511022331416,
+        "HOTA_b": 16.894301336503194,
+        "ci_hi": 25.15929565053319,
+        "ci_lo": 19.070303667364733,
+        "comparison": "default: bytetrack vs sort",
+        "delta": 21.978209685828222,
+        "verdict": "a_better"
+      },
+      {
+        "HOTA_a": 34.38861544907937,
+        "HOTA_b": 16.894301336503194,
+        "ci_hi": 20.525492641751523,
+        "ci_lo": 14.242801608062702,
+        "comparison": "default: ocsort vs sort",
+        "delta": 17.494314112576173,
+        "verdict": "a_better"
+      },
+      {
+        "HOTA_a": 40.18116151906094,
+        "HOTA_b": 38.735453763899564,
+        "ci_hi": 4.0294770019664385,
+        "ci_lo": -1.249020868431632,
+        "comparison": "tuned: botsort vs bytetrack",
+        "delta": 1.4457077551613793,
+        "verdict": "indistinguishable"
+      },
+      {
+        "HOTA_a": 40.18116151906094,
+        "HOTA_b": 36.238467259563734,
+        "ci_hi": 5.486425019409478,
+        "ci_lo": 2.6080437464091153,
+        "comparison": "tuned: botsort vs ocsort",
+        "delta": 3.942694259497209,
+        "verdict": "a_better"
+      },
+      {
+        "HOTA_a": 40.18116151906094,
+        "HOTA_b": 22.352465727310253,
+        "ci_hi": 21.441923839887313,
+        "ci_lo": 14.054469812369177,
+        "comparison": "tuned: botsort vs sort",
+        "delta": 17.82869579175069,
+        "verdict": "a_better"
+      },
+      {
+        "HOTA_a": 38.735453763899564,
+        "HOTA_b": 36.238467259563734,
+        "ci_hi": 5.502924467288161,
+        "ci_lo": -0.39468425444634586,
+        "comparison": "tuned: bytetrack vs ocsort",
+        "delta": 2.4969865043358297,
+        "verdict": "indistinguishable"
+      },
+      {
+        "HOTA_a": 38.735453763899564,
+        "HOTA_b": 22.352465727310253,
+        "ci_hi": 19.52918640300876,
+        "ci_lo": 13.280315528556148,
+        "comparison": "tuned: bytetrack vs sort",
+        "delta": 16.38298803658931,
+        "verdict": "a_better"
+      },
+      {
+        "HOTA_a": 36.238467259563734,
+        "HOTA_b": 22.352465727310253,
+        "ci_hi": 17.39953545503609,
+        "ci_lo": 10.143181217950392,
+        "comparison": "tuned: ocsort vs sort",
+        "delta": 13.88600153225348,
+        "verdict": "a_better"
+      },
+      {
+        "HOTA_a": 38.735453763899564,
+        "HOTA_b": 38.872511022331416,
+        "ci_hi": 1.055673176363609,
+        "ci_lo": -1.385851013495877,
+        "comparison": "bytetrack: tuned vs default",
+        "delta": -0.13705725843185235,
+        "verdict": "indistinguishable"
+      },
+      {
+        "HOTA_a": 36.238467259563734,
+        "HOTA_b": 34.38861544907937,
+        "ci_hi": 3.003468684110229,
+        "ci_lo": 0.581562574784316,
+        "comparison": "ocsort: tuned vs default",
+        "delta": 1.8498518104843669,
+        "verdict": "indistinguishable"
+      },
+      {
+        "HOTA_a": 22.352465727310253,
+        "HOTA_b": 16.894301336503194,
+        "ci_hi": 6.609479715967784,
+        "ci_lo": 4.4543254145044395,
+        "comparison": "sort: tuned vs default",
+        "delta": 5.45816439080706,
+        "verdict": "a_better"
+      }
+    ],
+    "b": [
+      {
+        "HOTA_a": 51.07011814369545,
+        "HOTA_b": 48.03230146772107,
+        "ci_hi": 5.031248853312863,
+        "ci_lo": 0.8774583986438769,
+        "comparison": "default: botsort vs bytetrack",
+        "delta": 3.0378166759743834,
+        "verdict": "a_better"
+      },
+      {
+        "HOTA_a": 51.07011814369545,
+        "HOTA_b": 48.943997639616725,
+        "ci_hi": 3.975806674786063,
+        "ci_lo": 0.15997750321963494,
+        "comparison": "default: botsort vs ocsort",
+        "delta": 2.1261205040787274,
+        "verdict": "a_better"
+      },
+      {
+        "HOTA_a": 51.07011814369545,
+        "HOTA_b": 42.674462420950995,
+        "ci_hi": 10.797584605942491,
+        "ci_lo": 5.9594563056058245,
+        "comparison": "default: botsort vs sort",
+        "delta": 8.395655722744458,
+        "verdict": "a_better"
+      },
+      {
+        "HOTA_a": 48.03230146772107,
+        "HOTA_b": 48.943997639616725,
+        "ci_hi": 0.9189012809566212,
+        "ci_lo": -2.698041083406607,
+        "comparison": "default: bytetrack vs ocsort",
+        "delta": -0.911696171895656,
+        "verdict": "indistinguishable"
+      },
+      {
+        "HOTA_a": 48.03230146772107,
+        "HOTA_b": 42.674462420950995,
+        "ci_hi": 7.459362595276958,
+        "ci_lo": 3.4463992410186,
+        "comparison": "default: bytetrack vs sort",
+        "delta": 5.357839046770074,
+        "verdict": "a_better"
+      },
+      {
+        "HOTA_a": 48.943997639616725,
+        "HOTA_b": 42.674462420950995,
+        "ci_hi": 8.128973179213492,
+        "ci_lo": 4.554534645112089,
+        "comparison": "default: ocsort vs sort",
+        "delta": 6.26953521866573,
+        "verdict": "a_better"
+      },
+      {
+        "HOTA_a": 51.07011814369545,
+        "HOTA_b": 48.97681011917121,
+        "ci_hi": 3.7930136161199983,
+        "ci_lo": 0.1490983869932538,
+        "comparison": "tuned: botsort vs bytetrack",
+        "delta": 2.093308024524241,
+        "verdict": "a_better"
+      },
+      {
+        "HOTA_a": 51.07011814369545,
+        "HOTA_b": 49.37805319068631,
+        "ci_hi": 3.5395956803376336,
+        "ci_lo": 0.014912332236286362,
+        "comparison": "tuned: botsort vs ocsort",
+        "delta": 1.6920649530091438,
+        "verdict": "indistinguishable"
+      },
+      {
+        "HOTA_a": 51.07011814369545,
+        "HOTA_b": 44.536482116635014,
+        "ci_hi": 8.685516286586449,
+        "ci_lo": 4.335150818132843,
+        "comparison": "tuned: botsort vs sort",
+        "delta": 6.533636027060439,
+        "verdict": "a_better"
+      },
+      {
+        "HOTA_a": 48.97681011917121,
+        "HOTA_b": 49.37805319068631,
+        "ci_hi": 1.0448098470089535,
+        "ci_lo": -1.834890043689503,
+        "comparison": "tuned: bytetrack vs ocsort",
+        "delta": -0.40124307151509697,
+        "verdict": "indistinguishable"
+      },
+      {
+        "HOTA_a": 48.97681011917121,
+        "HOTA_b": 44.536482116635014,
+        "ci_hi": 6.128489709457235,
+        "ci_lo": 2.8202022748365803,
+        "comparison": "tuned: bytetrack vs sort",
+        "delta": 4.440328002536198,
+        "verdict": "a_better"
+      },
+      {
+        "HOTA_a": 49.37805319068631,
+        "HOTA_b": 44.536482116635014,
+        "ci_hi": 6.227649022495041,
+        "ci_lo": 3.3636706736365727,
+        "comparison": "tuned: ocsort vs sort",
+        "delta": 4.841571074051295,
+        "verdict": "a_better"
+      },
+      {
+        "HOTA_a": 48.97681011917121,
+        "HOTA_b": 48.03230146772107,
+        "ci_hi": 2.362732448043226,
+        "ci_lo": -0.450276478086548,
+        "comparison": "bytetrack: tuned vs default",
+        "delta": 0.9445086514501426,
+        "verdict": "indistinguishable"
+      },
+      {
+        "HOTA_a": 49.37805319068631,
+        "HOTA_b": 48.943997639616725,
+        "ci_hi": 1.9417506439348493,
+        "ci_lo": -1.0929011502457862,
+        "comparison": "ocsort: tuned vs default",
+        "delta": 0.4340555510695836,
+        "verdict": "indistinguishable"
+      },
+      {
+        "HOTA_a": 44.536482116635014,
+        "HOTA_b": 42.674462420950995,
+        "ci_hi": 3.3042356369596533,
+        "ci_lo": 0.732092920406355,
+        "comparison": "sort: tuned vs default",
+        "delta": 1.862019695684019,
+        "verdict": "indistinguishable"
+      }
+    ]
+  },
+  "detection_diagnostics": "tables/full_det_diagnostics.csv",
+  "detection_sources": {
+    "a": {
+      "detector": "rtdetr_r18",
+      "flags": [],
+      "label": "a: RT-DETR-R18vd (COCO only)",
+      "meta": {
+        "dancetrack0004": {
+          "dets_sha256": "b6140df983623cdec7168d1708836e992061ec7effbd0897f3f122a7e08dae73",
+          "device": "cuda",
+          "n_boxes": 12924,
+          "n_frames": 1203,
+          "score_floor": 0.1,
+          "seconds": 92.61343397399924,
+          "seconds_per_frame": 0.0769853981496253,
+          "seq": "dancetrack0004",
+          "source": "a"
+        },
+        "dancetrack0005": {
+          "dets_sha256": "49171260817d4898e2fa5b4ba59a2f108f58e24e31af9e146293788cbdedcd18",
+          "device": "cuda",
+          "n_boxes": 16007,
+          "n_frames": 1203,
+          "score_floor": 0.1,
+          "seconds": 87.58283073702023,
+          "seconds_per_frame": 0.07280368307316727,
+          "seq": "dancetrack0005",
+          "source": "a"
+        },
+        "dancetrack0007": {
+          "dets_sha256": "31767fde202454c48ea6f1dba05f54ac5e56a8ef210f90e5932bbf779998a5fb",
+          "device": "cuda",
+          "n_boxes": 20885,
+          "n_frames": 1203,
+          "score_floor": 0.1,
+          "seconds": 87.30870901097842,
+          "seconds_per_frame": 0.07257581796423809,
+          "seq": "dancetrack0007",
+          "source": "a"
+        },
+        "dancetrack0010": {
+          "dets_sha256": "0b05408c94f47d52a66c064a9714e208b91f89a3b8c10ecb041d7d4735269d27",
+          "device": "cuda",
+          "n_boxes": 11338,
+          "n_frames": 1203,
+          "score_floor": 0.1,
+          "seconds": 87.88670707199799,
+          "seconds_per_frame": 0.07305628185535992,
+          "seq": "dancetrack0010",
+          "source": "a"
+        },
+        "dancetrack0014": {
+          "dets_sha256": "2df4957d35f37ac1ee14a763ce892e045c754c49fb77150db2b5a82ec08e4de2",
+          "device": "cuda",
+          "n_boxes": 43508,
+          "n_frames": 1203,
+          "score_floor": 0.1,
+          "seconds": 87.89829371102223,
+          "seconds_per_frame": 0.07306591330924542,
+          "seq": "dancetrack0014",
+          "source": "a"
+        },
+        "dancetrack0015": {
+          "dets_sha256": "1c5616c40ca590ec179cc4edf2b1aa3f9567170c29483c89e52c02b7572c15de",
+          "device": "cuda",
+          "n_boxes": 21931,
+          "n_frames": 1203,
+          "score_floor": 0.1,
+          "seconds": 68.73523760900298,
+          "seconds_per_frame": 0.05713652336575476,
+          "seq": "dancetrack0015",
+          "source": "a"
+        },
+        "dancetrack0018": {
+          "dets_sha256": "3678113e41ad0231679796578a44b6ef77e4ff850f71f520e69a80b5d32eb4fc",
+          "device": "cuda",
+          "n_boxes": 16909,
+          "n_frames": 503,
+          "score_floor": 0.1,
+          "seconds": 38.59136342100328,
+          "seconds_per_frame": 0.07672239248708405,
+          "seq": "dancetrack0018",
+          "source": "a"
+        },
+        "dancetrack0019": {
+          "dets_sha256": "c139565f280fc8f7f2bc0eb9bc69f9a80d92dc3d90af75d4f0509890ce61f50f",
+          "device": "cuda",
+          "n_boxes": 49875,
+          "n_frames": 2402,
+          "score_floor": 0.1,
+          "seconds": 136.14462620801442,
+          "seconds_per_frame": 0.05667969450791607,
+          "seq": "dancetrack0019",
+          "source": "a"
+        },
+        "dancetrack0023": {
+          "dets_sha256": "d077cc13fcb4bfae10ea064ea306200761a3c6af60baac03337e4c1ef5a12e8b",
+          "device": "cuda",
+          "n_boxes": 102816,
+          "n_frames": 1483,
+          "score_floor": 0.1,
+          "seconds": 108.13842262499566,
+          "seconds_per_frame": 0.07291869361092088,
+          "seq": "dancetrack0023",
+          "source": "a"
+        },
+        "dancetrack0024": {
+          "dets_sha256": "f19483d9c4c08427a8b85afb5db2f5d7f2ecf8c981d4e01c18bd3894ea735056",
+          "device": "cuda",
+          "n_boxes": 12421,
+          "n_frames": 763,
+          "score_floor": 0.1,
+          "seconds": 43.25396181700762,
+          "seconds_per_frame": 0.05668933396724459,
+          "seq": "dancetrack0024",
+          "source": "a"
+        },
+        "dancetrack0025": {
+          "dets_sha256": "34dfab3d64852037468d8efc4daa67bdc38eae0b2ffde4298208a115f44a73ba",
+          "device": "cuda",
+          "n_boxes": 28901,
+          "n_frames": 803,
+          "score_floor": 0.1,
+          "seconds": 44.74054661599075,
+          "seconds_per_frame": 0.05571674547445922,
+          "seq": "dancetrack0025",
+          "source": "a"
+        },
+        "dancetrack0026": {
+          "dets_sha256": "2128fc4e9e09546b90b3d7450b2c422d70d1e277057a7d8afc18606583670d98",
+          "device": "cuda",
+          "n_boxes": 12034,
+          "n_frames": 302,
+          "score_floor": 0.1,
+          "seconds": 16.339546941000435,
+          "seconds_per_frame": 0.05410446006953786,
+          "seq": "dancetrack0026",
+          "source": "a"
+        },
+        "dancetrack0030": {
+          "dets_sha256": "eff3b28d554a66528b62180e3f889b25cd6e21b11b7f3a5ada0636e56ab53810",
+          "device": "cuda",
+          "n_boxes": 25442,
+          "n_frames": 1263,
+          "score_floor": 0.1,
+          "seconds": 90.61663667798166,
+          "seconds_per_frame": 0.07174713909578911,
+          "seq": "dancetrack0030",
+          "source": "a"
+        },
+        "dancetrack0034": {
+          "dets_sha256": "4b8cee98f1e50c9089c3ae8995712b4696e0b3970a438439721f150a84a150db",
+          "device": "cuda",
+          "n_boxes": 49491,
+          "n_frames": 923,
+          "score_floor": 0.1,
+          "seconds": 65.77320841901928,
+          "seconds_per_frame": 0.07126024747456043,
+          "seq": "dancetrack0034",
+          "source": "a"
+        },
+        "dancetrack0035": {
+          "dets_sha256": "7aa39142dd884bcc0e2da5f2848ed84c39d30715519d33de88871a68b3208535",
+          "device": "cuda",
+          "n_boxes": 24700,
+          "n_frames": 703,
+          "score_floor": 0.1,
+          "seconds": 49.957739900998604,
+          "seconds_per_frame": 0.07106364139544609,
+          "seq": "dancetrack0035",
+          "source": "a"
+        },
+        "dancetrack0039": {
+          "dets_sha256": "0b38eadc44e70a5f18e27fd0b0ab54b4e2b5f319b2a5bbbd56c4bdff237e20ab",
+          "device": "cuda",
+          "n_boxes": 18057,
+          "n_frames": 1242,
+          "score_floor": 0.1,
+          "seconds": 90.25787967801534,
+          "seconds_per_frame": 0.07267140070693667,
+          "seq": "dancetrack0039",
+          "source": "a"
+        },
+        "dancetrack0041": {
+          "dets_sha256": "3ab323bae9c90d948ba205d84299b8e5d528d08be76e5b9afd72cc97de95580c",
+          "device": "cuda",
+          "n_boxes": 45604,
+          "n_frames": 1003,
+          "score_floor": 0.1,
+          "seconds": 64.75848376700651,
+          "seconds_per_frame": 0.06456478939881008,
+          "seq": "dancetrack0041",
+          "source": "a"
+        },
+        "dancetrack0043": {
+          "dets_sha256": "d076c2ff394c13cc62de077975f5ce68b3dfaf23d3871aefead8b1738de1b197",
+          "device": "cuda",
+          "n_boxes": 7395,
+          "n_frames": 183,
+          "score_floor": 0.1,
+          "seconds": 16.55582076300152,
+          "seconds_per_frame": 0.0904689659180411,
+          "seq": "dancetrack0043",
+          "source": "a"
+        },
+        "dancetrack0045": {
+          "dets_sha256": "92fc63e78ecce62850e35ec95cff3563bc821a067f5e7e6967a601d54f28dbe8",
+          "device": "cuda",
+          "n_boxes": 44362,
+          "n_frames": 1203,
+          "score_floor": 0.1,
+          "seconds": 70.41585465697972,
+          "seconds_per_frame": 0.05853354501827075,
+          "seq": "dancetrack0045",
+          "source": "a"
+        },
+        "dancetrack0047": {
+          "dets_sha256": "aa3342544a8883f268c7ea844b546c649e08ac8bd2bd620b90f80593a2c197ad",
+          "device": "cuda",
+          "n_boxes": 51169,
+          "n_frames": 1203,
+          "score_floor": 0.1,
+          "seconds": 66.19358405899766,
+          "seconds_per_frame": 0.05502376064754585,
+          "seq": "dancetrack0047",
+          "source": "a"
+        },
+        "dancetrack0057": {
+          "dets_sha256": "28bacb969bec2208952c8389b9bbe9718845025e727304b2d357a927ab2753a6",
+          "device": "cuda",
+          "n_boxes": 10784,
+          "n_frames": 622,
+          "score_floor": 0.1,
+          "seconds": 48.32819015198584,
+          "seconds_per_frame": 0.07769805490672964,
+          "seq": "dancetrack0057",
+          "source": "a"
+        },
+        "dancetrack0058": {
+          "dets_sha256": "2465aae28001178c37a7466986b2537bc089cc8cf8fbe22561a9cd8129f6f931",
+          "device": "cuda",
+          "n_boxes": 21970,
+          "n_frames": 1601,
+          "score_floor": 0.1,
+          "seconds": 113.13135953799429,
+          "seconds_per_frame": 0.07066293537663602,
+          "seq": "dancetrack0058",
+          "source": "a"
+        },
+        "dancetrack0061": {
+          "dets_sha256": "f35a1f5246b98846668c1f21b5885d979d31b4d303358e54146b91c0ebb8ca62",
+          "device": "cuda",
+          "n_boxes": 18083,
+          "n_frames": 1203,
+          "score_floor": 0.1,
+          "seconds": 94.0483881889977,
+          "seconds_per_frame": 0.07817821129592495,
+          "seq": "dancetrack0061",
+          "source": "a"
+        },
+        "dancetrack0063": {
+          "dets_sha256": "e30006d9dd6ed98f60c7763e43eb9f69f36e42225080eb6929aa0c76e05637f7",
+          "device": "cuda",
+          "n_boxes": 33655,
+          "n_frames": 1000,
+          "score_floor": 0.1,
+          "seconds": 70.76765452699328,
+          "seconds_per_frame": 0.07076765452699328,
+          "seq": "dancetrack0063",
+          "source": "a"
+        },
+        "dancetrack0065": {
+          "dets_sha256": "862e2957742d74b04502a162171bcd180ad9da1aa62e1a36ba1920c6df96b997",
+          "device": "cuda",
+          "n_boxes": 24650,
+          "n_frames": 702,
+          "score_floor": 0.1,
+          "seconds": 49.780472637995445,
+          "seconds_per_frame": 0.0709123541851787,
+          "seq": "dancetrack0065",
+          "source": "a"
+        },
+        "dancetrack0073": {
+          "dets_sha256": "b633dac9d8c0eb694aafe031704fc96136a86a03d13280f5750cdffdf92795bc",
+          "device": "cuda",
+          "n_boxes": 34534,
+          "n_frames": 703,
+          "score_floor": 0.1,
+          "seconds": 50.177316369995424,
+          "seconds_per_frame": 0.071375983456608,
+          "seq": "dancetrack0073",
+          "source": "a"
+        },
+        "dancetrack0077": {
+          "dets_sha256": "c9a76ac1fff441ce766cbf074492af4a82171ed5a2b3a2a5ef9dedf116607755",
+          "device": "cuda",
+          "n_boxes": 40010,
+          "n_frames": 1203,
+          "score_floor": 0.1,
+          "seconds": 86.80062888498469,
+          "seconds_per_frame": 0.07215347371985427,
+          "seq": "dancetrack0077",
+          "source": "a"
+        },
+        "dancetrack0079": {
+          "dets_sha256": "ef140142ad55365998acd3a08da74378541ef09bf7d9a3d7406737eaaea8fcfd",
+          "device": "cuda",
+          "n_boxes": 35750,
+          "n_frames": 1202,
+          "score_floor": 0.1,
+          "seconds": 91.28620176801724,
+          "seconds_per_frame": 0.07594525937439038,
+          "seq": "dancetrack0079",
+          "source": "a"
+        },
+        "dancetrack0081": {
+          "dets_sha256": "ac29b7d695231d02f65394bd42883f5563008d97103ea3b80fff0e319fb9bb69",
+          "device": "cuda",
+          "n_boxes": 37543,
+          "n_frames": 984,
+          "score_floor": 0.1,
+          "seconds": 59.04260399300438,
+          "seconds_per_frame": 0.060002646334354044,
+          "seq": "dancetrack0081",
+          "source": "a"
+        },
+        "dancetrack0090": {
+          "dets_sha256": "324456907ffe07e1cde57d3c3a163e3e16d60b39975a20cfd6eb1b7f5bdbdc5d",
+          "device": "cuda",
+          "n_boxes": 52084,
+          "n_frames": 1004,
+          "score_floor": 0.1,
+          "seconds": 76.22012759598692,
+          "seconds_per_frame": 0.07591646174899096,
+          "seq": "dancetrack0090",
+          "source": "a"
+        },
+        "dancetrack0094": {
+          "dets_sha256": "5ba80bbe1a7494bd9cfe1d84e98fb3aff60c76389bfb6598b94a3167d035e381",
+          "device": "cuda",
+          "n_boxes": 34729,
+          "n_frames": 603,
+          "score_floor": 0.1,
+          "seconds": 45.52648771999702,
+          "seconds_per_frame": 0.0754999796351526,
+          "seq": "dancetrack0094",
+          "source": "a"
+        },
+        "dancetrack0097": {
+          "dets_sha256": "9518849da17ee5eb783226463f25fcf4715eb56c302ce4e88e2b0a6319491df8",
+          "device": "cuda",
+          "n_boxes": 8307,
+          "n_frames": 1203,
+          "score_floor": 0.1,
+          "seconds": 87.84008350199383,
+          "seconds_per_frame": 0.07301752577056844,
+          "seq": "dancetrack0097",
+          "source": "a"
+        },
+        "dancetrack0099": {
+          "dets_sha256": "eb3ecc883ab3f26294d714a284f83aff1bf86d75e1b0d430585e93d2368229d6",
+          "device": "cuda",
+          "n_boxes": 28029,
+          "n_frames": 603,
+          "score_floor": 0.1,
+          "seconds": 45.977656072998116,
+          "seconds_per_frame": 0.07624818585903502,
+          "seq": "dancetrack0099",
+          "source": "a"
+        }
+      }
+    },
+    "b": {
+      "detector": "yolox_x_dancetrack",
+      "flags": [
+        "DETECTOR_TRAIN_DATA_UNVERIFIED"
+      ],
+      "label": "b: YOLOX published for DanceTrack",
+      "meta": {
+        "dancetrack0004": {
+          "dets_sha256": "7206d0e741a0fc90cdf91ff00686dbb82d56d40a84c1ee05b6c67568ad8fb49f",
+          "device": "cuda",
+          "n_boxes": 5385,
+          "n_frames": 1203,
+          "score_floor": 0.1,
+          "seconds": 451.21986044499863,
+          "seconds_per_frame": 0.3750788532377379,
+          "seq": "dancetrack0004",
+          "source": "b"
+        },
+        "dancetrack0005": {
+          "dets_sha256": "c3b1928fda893a01f5d3f5b37c8ce6a1245ace83c27ed3cb25b55a75f7d3e543",
+          "device": "cuda",
+          "n_boxes": 5223,
+          "n_frames": 1203,
+          "score_floor": 0.1,
+          "seconds": 451.24640516995896,
+          "seconds_per_frame": 0.3751009186782701,
+          "seq": "dancetrack0005",
+          "source": "b"
+        },
+        "dancetrack0007": {
+          "dets_sha256": "99ba97893cb4e5ebb0b5dc7d062d936e924f410c4e130ab52eb0df662c840e31",
+          "device": "cuda",
+          "n_boxes": 9754,
+          "n_frames": 1203,
+          "score_floor": 0.1,
+          "seconds": 451.0659081820231,
+          "seconds_per_frame": 0.37495087961930434,
+          "seq": "dancetrack0007",
+          "source": "b"
+        },
+        "dancetrack0010": {
+          "dets_sha256": "449840b3bfada1c36637b8ef0c6f809015996dd9b3aac1ee2c01e9f5a8adfe1d",
+          "device": "cuda",
+          "n_boxes": 7762,
+          "n_frames": 1203,
+          "score_floor": 0.1,
+          "seconds": 451.0629700360423,
+          "seconds_per_frame": 0.3749484372701931,
+          "seq": "dancetrack0010",
+          "source": "b"
+        },
+        "dancetrack0014": {
+          "dets_sha256": "19ce2a96ffb4341011c42bdb37b34d934a849382a156efb5918314cf73e2363b",
+          "device": "cuda",
+          "n_boxes": 13748,
+          "n_frames": 1203,
+          "score_floor": 0.1,
+          "seconds": 450.76346546998866,
+          "seconds_per_frame": 0.37469947254363145,
+          "seq": "dancetrack0014",
+          "source": "b"
+        },
+        "dancetrack0015": {
+          "dets_sha256": "8c462570577ea666d1e8e63eb90c41ea95e2d627f87d678351ba3417bef28294",
+          "device": "cuda",
+          "n_boxes": 11049,
+          "n_frames": 1203,
+          "score_floor": 0.1,
+          "seconds": 450.397238886977,
+          "seconds_per_frame": 0.37439504479382957,
+          "seq": "dancetrack0015",
+          "source": "b"
+        },
+        "dancetrack0018": {
+          "dets_sha256": "569bee72ffd1b3719105f42d0fedad1b2c7412f904b0a313b9787e0935327387",
+          "device": "cuda",
+          "n_boxes": 3450,
+          "n_frames": 503,
+          "score_floor": 0.1,
+          "seconds": 195.44041411599915,
+          "seconds_per_frame": 0.38854953104572393,
+          "seq": "dancetrack0018",
+          "source": "b"
+        },
+        "dancetrack0019": {
+          "dets_sha256": "9409f7103cad6155d87d6d112a50b6cccddae5acce02032f1ecd187f1f12cd53",
+          "device": "cuda",
+          "n_boxes": 18699,
+          "n_frames": 2402,
+          "score_floor": 0.1,
+          "seconds": 899.6529088070147,
+          "seconds_per_frame": 0.3745432592868504,
+          "seq": "dancetrack0019",
+          "source": "b"
+        },
+        "dancetrack0023": {
+          "dets_sha256": "e29f5f2f5948869e6f11f28250b71ed52f8885942499dd26c1de38892117db2f",
+          "device": "cuda",
+          "n_boxes": 13678,
+          "n_frames": 1483,
+          "score_floor": 0.1,
+          "seconds": 555.8971299300501,
+          "seconds_per_frame": 0.37484634519895493,
+          "seq": "dancetrack0023",
+          "source": "b"
+        },
+        "dancetrack0024": {
+          "dets_sha256": "4d92d0f39a39ceb8a0c1a57e163d2c51d52556f1b60a5abafdd2541ca6f96780",
+          "device": "cuda",
+          "n_boxes": 4673,
+          "n_frames": 763,
+          "score_floor": 0.1,
+          "seconds": 285.97215136493105,
+          "seconds_per_frame": 0.37479967413490306,
+          "seq": "dancetrack0024",
+          "source": "b"
+        },
+        "dancetrack0025": {
+          "dets_sha256": "1ad5e210e6fce4731f0ed9959f673d0c7394f76518e0253d01b37b4031e57bbf",
+          "device": "cuda",
+          "n_boxes": 9085,
+          "n_frames": 803,
+          "score_floor": 0.1,
+          "seconds": 300.77808062398253,
+          "seconds_per_frame": 0.3745679708891439,
+          "seq": "dancetrack0025",
+          "source": "b"
+        },
+        "dancetrack0026": {
+          "dets_sha256": "8a4bd86fe298496b791135e3471f662d1c3cc48af1cbabe52d02963a21a45497",
+          "device": "cuda",
+          "n_boxes": 5242,
+          "n_frames": 302,
+          "score_floor": 0.1,
+          "seconds": 116.96525454599896,
+          "seconds_per_frame": 0.3873021673708575,
+          "seq": "dancetrack0026",
+          "source": "b"
+        },
+        "dancetrack0030": {
+          "dets_sha256": "aa7f13393e988ad69feb630bb77a8b9be70a479d104e6cab7e189160f38542be",
+          "device": "cuda",
+          "n_boxes": 8121,
+          "n_frames": 1263,
+          "score_floor": 0.1,
+          "seconds": 473.24248992299727,
+          "seconds_per_frame": 0.37469714166508095,
+          "seq": "dancetrack0030",
+          "source": "b"
+        },
+        "dancetrack0034": {
+          "dets_sha256": "97bf81d24f089eaf26a7adcfdb6826d4023652b9c6959d9b1f5e9626dae1b9da",
+          "device": "cuda",
+          "n_boxes": 13350,
+          "n_frames": 923,
+          "score_floor": 0.1,
+          "seconds": 345.81471982800394,
+          "seconds_per_frame": 0.3746638351332654,
+          "seq": "dancetrack0034",
+          "source": "b"
+        },
+        "dancetrack0035": {
+          "dets_sha256": "206d3bd5154f5a96d817a6cf19bb364bb0b40b9d05f1a694e7980485dcb5a6f5",
+          "device": "cuda",
+          "n_boxes": 5860,
+          "n_frames": 703,
+          "score_floor": 0.1,
+          "seconds": 263.615862097995,
+          "seconds_per_frame": 0.37498700156187054,
+          "seq": "dancetrack0035",
+          "source": "b"
+        },
+        "dancetrack0039": {
+          "dets_sha256": "6821b63687b19ea9975baf3b6437822d1519dcaebde885716d704c09f9fecbd9",
+          "device": "cuda",
+          "n_boxes": 6347,
+          "n_frames": 1242,
+          "score_floor": 0.1,
+          "seconds": 465.24128199397455,
+          "seconds_per_frame": 0.37459040418194406,
+          "seq": "dancetrack0039",
+          "source": "b"
+        },
+        "dancetrack0041": {
+          "dets_sha256": "a4fb4e4caff1e362dbbe35bd50ed5d0f78f932f7aeb7fea8293a625c51d90a9f",
+          "device": "cuda",
+          "n_boxes": 23960,
+          "n_frames": 1003,
+          "score_floor": 0.1,
+          "seconds": 374.70532730697596,
+          "seconds_per_frame": 0.37358457358621733,
+          "seq": "dancetrack0041",
+          "source": "b"
+        },
+        "dancetrack0043": {
+          "dets_sha256": "144c6fc70ddbfe4610572cf632fb15376f026f5c21da0c8ca0120ff14d41e3a6",
+          "device": "cuda",
+          "n_boxes": 2657,
+          "n_frames": 183,
+          "score_floor": 0.1,
+          "seconds": 71.1767937079992,
+          "seconds_per_frame": 0.3889442279125639,
+          "seq": "dancetrack0043",
+          "source": "b"
+        },
+        "dancetrack0045": {
+          "dets_sha256": "56eb06ea560481ce3ea10944e5be755f2b3290ce073d431726db6aad4d6a05cb",
+          "device": "cuda",
+          "n_boxes": 17098,
+          "n_frames": 1203,
+          "score_floor": 0.1,
+          "seconds": 450.55749143297,
+          "seconds_per_frame": 0.37452825555525354,
+          "seq": "dancetrack0045",
+          "source": "b"
+        },
+        "dancetrack0047": {
+          "dets_sha256": "a055bc8dbf744cd63f1c775fdb22b5f0280983055d77a0b5d949320b1d6480a7",
+          "device": "cuda",
+          "n_boxes": 11844,
+          "n_frames": 1203,
+          "score_floor": 0.1,
+          "seconds": 450.8313447750206,
+          "seconds_per_frame": 0.3747558975685957,
+          "seq": "dancetrack0047",
+          "source": "b"
+        },
+        "dancetrack0057": {
+          "dets_sha256": "30b386681f738141fd3885fde75485ce8034838d80aa2869c459cdab48e5064d",
+          "device": "cuda",
+          "n_boxes": 3165,
+          "n_frames": 622,
+          "score_floor": 0.1,
+          "seconds": 233.07931516404642,
+          "seconds_per_frame": 0.3747255870804605,
+          "seq": "dancetrack0057",
+          "source": "b"
+        },
+        "dancetrack0058": {
+          "dets_sha256": "9709e4a4675a2caabeddce8b869bee6f0471759e5a8f92586da61d458f5c3b52",
+          "device": "cuda",
+          "n_boxes": 11708,
+          "n_frames": 1601,
+          "score_floor": 0.1,
+          "seconds": 600.7575835260177,
+          "seconds_per_frame": 0.37523896535041706,
+          "seq": "dancetrack0058",
+          "source": "b"
+        },
+        "dancetrack0061": {
+          "dets_sha256": "3e687523e6bf2ac8103222c97d36844a7b056feb67ca6c0219986383f1571d5c",
+          "device": "cuda",
+          "n_boxes": 6212,
+          "n_frames": 1203,
+          "score_floor": 0.1,
+          "seconds": 450.9643719049818,
+          "seconds_per_frame": 0.3748664770614978,
+          "seq": "dancetrack0061",
+          "source": "b"
+        },
+        "dancetrack0063": {
+          "dets_sha256": "c654fff7fc42d979f2136857fd82f4e718bed50cb8e9daef38c400596efe6aa4",
+          "device": "cuda",
+          "n_boxes": 14432,
+          "n_frames": 1000,
+          "score_floor": 0.1,
+          "seconds": 374.81007061800483,
+          "seconds_per_frame": 0.3748100706180048,
+          "seq": "dancetrack0063",
+          "source": "b"
+        },
+        "dancetrack0065": {
+          "dets_sha256": "4cfb7fcb2fb6c54fc721fd73d1a9bfff33c89b5c8252db7f88ebb2c1fc656d61",
+          "device": "cuda",
+          "n_boxes": 4237,
+          "n_frames": 702,
+          "score_floor": 0.1,
+          "seconds": 263.5835129069728,
+          "seconds_per_frame": 0.3754750896110724,
+          "seq": "dancetrack0065",
+          "source": "b"
+        },
+        "dancetrack0073": {
+          "dets_sha256": "546aa1c559ed658cfc21e21bc0bc5a56bcb3703b1f947ecf7baf8ac45c1e4bea",
+          "device": "cuda",
+          "n_boxes": 8604,
+          "n_frames": 703,
+          "score_floor": 0.1,
+          "seconds": 263.42846442801056,
+          "seconds_per_frame": 0.3747204330412668,
+          "seq": "dancetrack0073",
+          "source": "b"
+        },
+        "dancetrack0077": {
+          "dets_sha256": "7312c17c8f1930276ec28b3c2f95153ec056679cae469cc7ffca4afe3ec1a9d4",
+          "device": "cuda",
+          "n_boxes": 11872,
+          "n_frames": 1203,
+          "score_floor": 0.1,
+          "seconds": 450.57143550101864,
+          "seconds_per_frame": 0.3745398466342632,
+          "seq": "dancetrack0077",
+          "source": "b"
+        },
+        "dancetrack0079": {
+          "dets_sha256": "4d10f8a4e30ed895c20326a1bfd2a5b18a70272ab2e71badcc0725fb16668231",
+          "device": "cuda",
+          "n_boxes": 14888,
+          "n_frames": 1202,
+          "score_floor": 0.1,
+          "seconds": 450.240008595978,
+          "seconds_per_frame": 0.3745757143061381,
+          "seq": "dancetrack0079",
+          "source": "b"
+        },
+        "dancetrack0081": {
+          "dets_sha256": "80e1255b35d1b2aaad096db51b32562131df81af50e37f9fd8043fdf484ba0d3",
+          "device": "cuda",
+          "n_boxes": 20354,
+          "n_frames": 984,
+          "score_floor": 0.1,
+          "seconds": 368.7398000130379,
+          "seconds_per_frame": 0.37473556911894096,
+          "seq": "dancetrack0081",
+          "source": "b"
+        },
+        "dancetrack0090": {
+          "dets_sha256": "92c54aba4c740084ec4e4cba75415197a34339733a4f5965d513f2ef91f0405a",
+          "device": "cuda",
+          "n_boxes": 15116,
+          "n_frames": 1004,
+          "score_floor": 0.1,
+          "seconds": 376.424185088963,
+          "seconds_per_frame": 0.3749244871404014,
+          "seq": "dancetrack0090",
+          "source": "b"
+        },
+        "dancetrack0094": {
+          "dets_sha256": "f9d994519fdb2b5cdd74fa07e0e704b9e2c8f553e2e188c095b2f635dc8cfffd",
+          "device": "cuda",
+          "n_boxes": 14158,
+          "n_frames": 603,
+          "score_floor": 0.1,
+          "seconds": 226.0154938660089,
+          "seconds_per_frame": 0.3748183977877428,
+          "seq": "dancetrack0094",
+          "source": "b"
+        },
+        "dancetrack0097": {
+          "dets_sha256": "9499a4b82cfb737ba9df86352c84064bddc1f79d12ba2ec0ded9e814b0ccd15d",
+          "device": "cuda",
+          "n_boxes": 4875,
+          "n_frames": 1203,
+          "score_floor": 0.1,
+          "seconds": 450.7282838630708,
+          "seconds_per_frame": 0.37467022765010044,
+          "seq": "dancetrack0097",
+          "source": "b"
+        },
+        "dancetrack0099": {
+          "dets_sha256": "234ecb2604de20ab76765d141e5ffbea2a7eb8f412853aa9f6e9ef1f6206f729",
+          "device": "cuda",
+          "n_boxes": 7026,
+          "n_frames": 603,
+          "score_floor": 0.1,
+          "seconds": 234.29738589799604,
+          "seconds_per_frame": 0.3885528787694793,
+          "seq": "dancetrack0099",
+          "source": "b"
+        }
+      }
+    }
+  },
+  "finished_utc": "2026-10-28T13:59:34.007944+00:00",
+  "frozen": {
+    "configs_per_tracker": 21,
+    "dev_sequences": [
+      "dancetrack0015",
+      "dancetrack0023",
+      "dancetrack0024",
+      "dancetrack0039",
+      "dancetrack0045",
+      "dancetrack0057",
+      "dancetrack0061",
+      "dancetrack0099"
+    ],
+    "search_space_status": "approved",
+    "seed_configs": 20261027,
+    "sequence_ids_sha256": "244e1157d4d183bc81636d4263f32a62056a007c2a69d9f299ba8272637f5a32",
+    "stratification_status": "approved",
+    "val_sequences": [
+      "dancetrack0004",
+      "dancetrack0005",
+      "dancetrack0007",
+      "dancetrack0010",
+      "dancetrack0014",
+      "dancetrack0018",
+      "dancetrack0019",
+      "dancetrack0025",
+      "dancetrack0026",
+      "dancetrack0030",
+      "dancetrack0034",
+      "dancetrack0035",
+      "dancetrack0041",
+      "dancetrack0043",
+      "dancetrack0047",
+      "dancetrack0058",
+      "dancetrack0063",
+      "dancetrack0065",
+      "dancetrack0073",
+      "dancetrack0077",
+      "dancetrack0079",
+      "dancetrack0081",
+      "dancetrack0090",
+      "dancetrack0094",
+      "dancetrack0097"
+    ]
+  },
+  "gpu": null,
+  "libraries": {
+    "TrackEval": "1.0.dev1",
+    "numpy": "2.1.3",
+    "opencv-python-headless": "5.0.0.93",
+    "scipy": "1.16.3",
+    "supervision": "0.31.2",
+    "torch": "2.11.0+cpu",
+    "trackers": "2.6.1",
+    "transformers": "4.57.6"
+  },
+  "mode": "full",
+  "note": "frozen protocol; source (b) results carry DETECTOR_TRAIN_DATA_UNVERIFIED",
+  "python": "3.13.18",
+  "reportable": true,
+  "run_id": "track-03b-261027-v1",
+  "sequence_frame_rates": {
+    "dancetrack0004": 20.0,
+    "dancetrack0005": 20.0,
+    "dancetrack0007": 20.0,
+    "dancetrack0010": 20.0,
+    "dancetrack0014": 20.0,
+    "dancetrack0015": 20.0,
+    "dancetrack0018": 20.0,
+    "dancetrack0019": 20.0,
+    "dancetrack0023": 20.0,
+    "dancetrack0024": 20.0,
+    "dancetrack0025": 20.0,
+    "dancetrack0026": 20.0,
+    "dancetrack0030": 20.0,
+    "dancetrack0034": 20.0,
+    "dancetrack0035": 20.0,
+    "dancetrack0039": 20.0,
+    "dancetrack0041": 20.0,
+    "dancetrack0043": 20.0,
+    "dancetrack0045": 20.0,
+    "dancetrack0047": 20.0,
+    "dancetrack0057": 20.0,
+    "dancetrack0058": 20.0,
+    "dancetrack0061": 20.0,
+    "dancetrack0063": 20.0,
+    "dancetrack0065": 20.0,
+    "dancetrack0073": 20.0,
+    "dancetrack0077": 20.0,
+    "dancetrack0079": 20.0,
+    "dancetrack0081": 20.0,
+    "dancetrack0090": 20.0,
+    "dancetrack0094": 20.0,
+    "dancetrack0097": 20.0,
+    "dancetrack0099": 20.0
+  },
+  "source_a_choice": {
+    "chosen": "rtdetr_r18",
+    "person_ap_D_B": {
+      "florence2_base": {
+        "median_ms": 1007.38,
+        "person_ap": 0.4331,
+        "vocabulary": "open"
+      },
+      "grounding_dino_base": {
+        "median_ms": 760.685,
+        "person_ap": 0.6443,
+        "vocabulary": "open"
+      },
+      "rtdetr_r18": {
+        "median_ms": 50.035,
+        "person_ap": 0.575,
+        "vocabulary": "closed"
+      },
+      "yolo11n": {
+        "median_ms": 18.805,
+        "person_ap": 0.5252,
+        "vocabulary": "closed"
+      },
+      "yolov8n": {
+        "median_ms": 14.58,
+        "person_ap": 0.5206,
+        "vocabulary": "closed"
+      }
+    },
+    "rule": "highest person AP on the 03a D-B track among detectors trained on COCO train2017 only (frozen registry detection_sources[0]); open-vocabulary models use larger pretraining and are excluded"
+  },
+  "source_b_info": {},
+  "source_digests": {
+    "experiments/scripts/detection_runner.py": "a62d18bba47e908817762a584311afd65bc440de605398df08b5cc50a5f84672",
+    "experiments/scripts/detection_scoring.py": "c06d8bccec5fd0b33cb42269fd9a01cf13413640c0980a0177929cb31ad215f5",
+    "experiments/scripts/detection_tracking_eda.py": "83d9606ddf77ee346b91b81e829dc8fa24beb2cc32c7c06791c5e7aac9299b3b",
+    "experiments/scripts/detection_tracking_qualification.py": "e0e45fba315f6b2d8b1aecd98f9b96cbb24804c120de4ee709aecb3f3fea17c8",
+    "experiments/scripts/paired_bootstrap.py": "5fc7bed972706dc840cf643242a07f9f0d20aa30d34eea20781181042e505786",
+    "experiments/scripts/tracking_runner.py": "5687b872906728ef2aa298709b5350be2175586e868dd07401a9ced97cfd89c9",
+    "experiments/scripts/tracking_scoring.py": "89c48e9be18c96c84f5cd61ca5992d7c9ec5515da6ef66ab6ead40858fd11839",
+    "experiments/scripts/yolox_checkpoint_smoke.py": "5c1b9823487f3122cfe71a7f3010a669a9dba47c4df08a6da6218e89b70d0a82",
+    "registry/mot-dancetrack-261026.json": "4c2474f4ad5171aeccf0cb4a330cb70687967ce94fca4415fbc6f64b8433bc63",
+    "registry/stratification-dancetrack-261027.json": "92b05046c001824140fda1a11f1dec735632ed93a14178d76add32b85a5c8162",
+    "registry/tracker-search-space-dancetrack-261027.json": "f8e1e48a7aaa1fc571b13b0718107195d26828aa3799009508921ee77ebe4258"
+  },
+  "trackeval_commit": "12c8791b303e0a0b50f753af204249e622d0281a",
+  "weak_detector_videos": [
+    {
+      "recall": 0.4889,
+      "seq": "dancetrack0025",
+      "source": "a"
+    },
+    {
+      "recall": 0.118,
+      "seq": "dancetrack0026",
+      "source": "a"
+    },
+    {
+      "recall": 0.4776,
+      "seq": "dancetrack0043",
+      "source": "a"
+    }
+  ]
+}
