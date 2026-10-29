@@ -10,9 +10,11 @@
 | [Master plan](../plans/260901-unified-scientific-benchmark/framework/00-master-plan.md) | Research questions and open hypotheses. |
 | [RQ2 plan](../plans/261002-0946-rq2-controlled-summarization/plan.md) | Summarization-specific cohort and comparison decisions. |
 
-The sequence is dataset and candidate selection → executed EDA notebook → evaluation notebook on the same task units and metric. Only lecture-domain datasets with suitable existing labels enter the benchmark. Notebooks are created when needed; the [manifest](../experiments/notebooks/notebook_manifest.yaml) keeps the on-demand execution queue empty while inventorying executed EDA, pilot and current TIB evaluation evidence.
+The sequence is dataset and candidate selection → executed EDA notebook → evaluation notebook on the same task units and metric. Datasets need suitable existing labels; since 2026-10-22 general-video data qualify for detection and tracking, other tasks stay lecture-only. Notebooks are created when needed; the [manifest](../experiments/notebooks/notebook_manifest.yaml) keeps the on-demand execution queue empty while inventorying executed EDA, pilot and evaluation evidence.
 
 ## Retained results
+
+**Current (2026-10-26 to 10-28):** TIB final523 `confirmed` LED ngram3 as the selected summarizer; detection 03a and tracking 03b have full reportable runs. Numbers and limits: [benchmark protocol](BENCHMARK.md#tib-summarization-final523-results-2026-10-26). The 2026-10-13 TIB-120 entry below is historical.
 
 **CVID spotting R5 completed and audited (2026-10-16):** six frozen pipelines were evaluated on the same **1,754 test frames / 40,063 released GT objects**, with all **10,524 checkpoints**, aggregate/runtime/config/source bindings, 48 pooled metric rows and six figures verified. All frames have recorded successful execution; this does not mean correct transcription or valid polygons. One empty docTR checkpoint was recovered from its unchanged sealed aggregate with an audited journal and readback, without rerunning OCR. The [final artifact audit](../experiments/results/cvid-spotting-t4-r5-261016/audit.json) is authoritative; evidence ZIP SHA-256 is `358a51fa96576cbb77820bcbe2177f1b7658556f0e7af1a0355a9276d7b38151`.
 
