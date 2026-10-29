@@ -1,0 +1,212 @@
+{
+  "candidates": [
+    {
+      "family": "cnn_realtime",
+      "id": "yolov8n",
+      "params": {
+        "weights": "yolov8n.pt"
+      },
+      "score_less": false,
+      "tracks": [
+        "D-B"
+      ],
+      "vocabulary": "closed"
+    },
+    {
+      "family": "cnn_realtime",
+      "id": "yolo11n",
+      "params": {
+        "weights": "yolo11n.pt"
+      },
+      "score_less": false,
+      "tracks": [
+        "D-B"
+      ],
+      "vocabulary": "closed"
+    },
+    {
+      "family": "detr_realtime",
+      "id": "rtdetr_r18",
+      "params": {
+        "repo": "PekingU/rtdetr_r18vd"
+      },
+      "score_less": false,
+      "tracks": [
+        "D-B"
+      ],
+      "vocabulary": "closed"
+    },
+    {
+      "family": "vlm",
+      "id": "florence2_base",
+      "params": {
+        "task": "<OD>"
+      },
+      "score_less": true,
+      "tracks": [
+        "D-A",
+        "D-B"
+      ],
+      "vocabulary": "open"
+    },
+    {
+      "family": "vlm",
+      "id": "florence2_base_ovd",
+      "params": {
+        "task": "<OPEN_VOCABULARY_DETECTION>"
+      },
+      "score_less": true,
+      "tracks": [
+        "D-A"
+      ],
+      "vocabulary": "open"
+    },
+    {
+      "family": "open_vocab_detector",
+      "id": "grounding_dino_base",
+      "params": {
+        "repo": "IDEA-Research/grounding-dino-base"
+      },
+      "score_less": false,
+      "tracks": [
+        "D-A",
+        "D-B"
+      ],
+      "vocabulary": "open"
+    }
+  ],
+  "defaults": {
+    "conf": 0.001,
+    "diag_conf": 0.25,
+    "florence_max_new_tokens": 1024,
+    "florence_num_beams": 3,
+    "florence_task": "<OD>",
+    "gdino_box_threshold": 0.01,
+    "imgsz": 640,
+    "iou_nms": 0.7,
+    "max_det": 100,
+    "max_seconds_per_image": 120.0,
+    "warmup_images": 3
+  },
+  "finished_utc": "2026-10-27T04:57:06.640926+00:00",
+  "florence_asset_checks": {
+    "config.json": true,
+    "configuration_florence2.py": true,
+    "model.safetensors": true,
+    "modeling_florence2.py": true,
+    "preprocessor_config.json": true,
+    "processing_florence2.py": true,
+    "tokenizer.json": true,
+    "tokenizer_config.json": true,
+    "vocab.json": true
+  },
+  "florence_assets_verified": true,
+  "frozen_gt_sha": {
+    "coco": "ddaa870f9117c8766a521bfd5ccfff34e590e036ccb51452af519ced9aaf035b",
+    "lvvo": "dcfe3a6874a857c9c9af4f03acfed32d17f2f2031c0b6866fa39337378367b37"
+  },
+  "gpu": "Tesla T4",
+  "libraries": {
+    "Pillow": "11.3.0",
+    "einops": "0.8.2",
+    "numpy": "2.1.3",
+    "pycocotools": "2.0.11",
+    "timm": "1.0.30",
+    "torch": "2.11.0+cu130",
+    "torchvision": "0.26.0+cu130",
+    "transformers": "4.57.6",
+    "ultralytics": "8.4.190"
+  },
+  "mode": "smoke",
+  "note": "smoke results validate the pipeline only",
+  "preds_sha256": {
+    "smoke_florence2_base_D-A.jsonl": "e00bffa8ecd65321d0be6219d27763cdddbb96e41cf236f60b235175f5b32913",
+    "smoke_florence2_base_D-B.jsonl": "f3bc84647ff57dd4d1215bffdede2369db1dffa989c12b75187da09258031e51",
+    "smoke_florence2_base_ovd_D-A.jsonl": "583334bb8a4b06e58a28e1afa9895fb11f32ac3d344d8867e2d326cbe43fb41d",
+    "smoke_grounding_dino_base_D-A.jsonl": "c49e50847aa5416f9de877bf5b1239cea85f90f336df2ee6568f51c9cf5a9662",
+    "smoke_grounding_dino_base_D-B.jsonl": "cfa8b1ff6221e6351717ae53b6f6a5f05550ad7fad6b730d3b9b1b0ee2769ed0",
+    "smoke_rtdetr_r18_D-B.jsonl": "a8c433737b7c01443ca4c284347c645e5459ccef714ba3a59561e40308e12c40",
+    "smoke_yolo11n_D-B.jsonl": "129519e65c1acecd543855fc562a46e2964665059e63cb07156d86845ae2edff",
+    "smoke_yolov8n_D-B.jsonl": "5a0bd4270666deae584201fa1381791f243bdd3f9cd54655b6151fe3eef9a7c9"
+  },
+  "python": "3.13.16",
+  "reportable": false,
+  "run_id": "det-03a-261026-v1",
+  "sample_ids": {
+    "D-A": [
+      12,
+      20,
+      98,
+      342,
+      351,
+      358,
+      364,
+      377,
+      463,
+      529,
+      595,
+      620,
+      631,
+      762,
+      773,
+      774,
+      896,
+      965,
+      974,
+      985
+    ],
+    "D-B": [
+      785,
+      31248,
+      35682,
+      42528,
+      93437,
+      135561,
+      145597,
+      157928,
+      266409,
+      289938,
+      327701,
+      344100,
+      443844,
+      450488,
+      469067,
+      516143,
+      554002,
+      554735,
+      565962,
+      580410
+    ]
+  },
+  "skipped": [
+    [
+      "florence2_base_ovd",
+      "D-B",
+      "track_not_registered"
+    ],
+    [
+      "yolov8n",
+      "D-A",
+      "no_corresponding_class"
+    ],
+    [
+      "yolo11n",
+      "D-A",
+      "no_corresponding_class"
+    ],
+    [
+      "rtdetr_r18",
+      "D-A",
+      "no_corresponding_class"
+    ]
+  ],
+  "source_digests": {
+    "configuration_florence2.py": "23222aff8ac311e7c46a0e2ad7cd6efed28b7ff28d12053c602dd010f37fb83a",
+    "experiments/scripts/detection_runner.py": "a62d18bba47e908817762a584311afd65bc440de605398df08b5cc50a5f84672",
+    "experiments/scripts/detection_scoring.py": "b8220e3641af4bd7ec54d9e614411c8e0437134f1de16fcf2b48300a8df38b70",
+    "experiments/scripts/detection_tracking_qualification.py": "e0e45fba315f6b2d8b1aecd98f9b96cbb24804c120de4ee709aecb3f3fea17c8",
+    "experiments/scripts/paired_bootstrap.py": "f05fa5c9bbe1e6e4b2d790d5e9901e319c92e09d2ae9f8264fb8b7eedb1956f9",
+    "modeling_florence2.py": "b227bab334131b3f0190c660b46d0474293cb7e8445964f0ff48721a99595ebc",
+    "processing_florence2.py": "b3fff5eea95e30395a75b855444a66a5efb3aec2c56cb71f86f419a34767fc31"
+  }
+}
