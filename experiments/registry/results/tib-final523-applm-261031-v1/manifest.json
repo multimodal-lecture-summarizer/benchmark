@@ -1,0 +1,37 @@
+﻿{
+    "schema_version":  1,
+    "run":  "tib-final523-applm-261031-v1",
+    "stage":  "generation",
+    "label":  "exploratory_post_hoc",
+    "protocol":  "experiments/registry/protocols/tib-final523-applm-261031-v1/protocol.json",
+    "protocol_sha256":  "af8c9412070b0ad83ad677eabf1e527bbf06a647003e7f91ed32664e65f54820",
+    "executed_notebook":  "experiments/notebooks/results/tib-final523-applm-generate-t4-261031-v1-executed.ipynb",
+    "executed_notebook_sha256":  "34ea68135bc94b184b1d17fe9a8fcd21329a681cf2152cc6bd128e6e7a9f2f16",
+    "generation_receipt":  "experiments/registry/results/tib-final523-applm-261031-v1/applm_generation_receipt.json",
+    "generation_receipt_sha256":  "f506f2e18c078c238c3185b5866cfab2f38e6bed0cb6d57e84ebc5e3e63d4ee2",
+    "dryrun_receipt":  "experiments/registry/results/tib-final523-applm-261031-v1/applm_dryrun_receipt.json",
+    "dryrun_receipt_sha256":  "b53f740e63bdf30f8e572f6c4e282a250a91274eab9c67cea7f3cd66f433e477",
+    "generation_seconds":  "experiments/registry/results/tib-final523-applm-261031-v1/generation_seconds.json",
+    "generation_seconds_sha256":  "a30b02b254cea5b8b90da3d2a5239dae7576f20bce1edb78209fc1cf6ae2e208",
+    "private_outputs":  "research-data/tib-final523-applm-261031-v1/results/PRIVATE_applm_outputs.jsonl (git-ignored: holds sources, references, summaries)",
+    "private_outputs_sha256":  "ecbb596e53422b086b8529de522004f576c23bea5eb54dbb0cc42b9284033922",
+    "audit":  {
+                  "lines":  531,
+                  "distinct_ids":  523,
+                  "ids_equal_final523_bundle":  true,
+                  "latest_status":  {
+                                        "completed":  511,
+                                        "completed_with_warning":  12,
+                                        "failed":  0
+                                    },
+                  "early_failed_lines":  8,
+                  "early_failed_reason":  "EngineDeadError, lines 0-7, regenerated and finished in the final run; they come from the first crashed attempt before the engine fixes (2 batches, no text)",
+                  "delivered_words_median":  126,
+                  "delivered_words_max":  303,
+                  "summaries_over_350_words":  0,
+                  "gpu_hours_total":  10.33,
+                  "protocol_ceiling_gpu_hours":  8,
+                  "approved_ceiling_gpu_hours":  11
+              },
+    "next":  "scoring notebook (ROUGE + MiniCheck) then analysis"
+}

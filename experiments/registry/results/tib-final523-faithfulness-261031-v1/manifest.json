@@ -1,0 +1,35 @@
+{
+ "schema_version": 1,
+ "run": "tib-final523-faithfulness-261031-v1",
+ "label": "post_hoc_secondary",
+ "protocol": "experiments/registry/protocols/tib-final523-faithfulness-261031-v1/protocol.json",
+ "protocol_sha256": "2b4413b540e1b67042c2cbb494d0a32e6a400590ee934337dbd8749f94cee5b8",
+ "executed_notebook": "experiments/notebooks/results/tib-final523-faithfulness-t4-261031-v1-executed.ipynb",
+ "executed_notebook_sha256": "9accaf38a5d40f3b10a9ee3952f7ccc2157a82818d3ff317b7a5c951eb0d9a07",
+ "built_notebook": "experiments/notebooks/tib-final523-faithfulness-t4-261031-v1.ipynb",
+ "built_notebook_sha256": "5b8f173292853751e9f56acab546cacfba59eb9651f7e86d5762283eb855192b",
+ "code_bundle_sha256_note": "tib-final523-faithfulness-code-261031-v1.zip is rebuilt from the repository files (experiments/outputs is git-ignored)",
+ "scoring_bundle_sha256": "6ae68b7a0ee95afe0551dac8f0b15352656169ab269c60f8fa58a64d99ebd18b",
+ "files": {
+  "final523_faithfulness_receipt.json": "c6ea1562455295bd9a43ac1df32943e4a765dbeadb5f4970cc902b4131e651df",
+  "final523_faithfulness_analysis.json": "cacb12de1d8701cf5401558480ba7c841fc9de147932e99cdfa7f2a2a86ddd0b",
+  "review_labels.json": "aaf40ffe5e1e5c949d755484ac9e1f96b80b7197c0bf15cfa32a5809f28c792d"
+ },
+ "private_not_in_repository": {
+  "PRIVATE_final523_sentence_scores.jsonl": {
+   "sha256": "e56d8ff0d7b5426475da6c35c38a480fcc75e2490b129aa24f2d2e063e5817bc",
+   "location": "research-data/tib-final523-faithfulness-261031-v1/results/ (git-ignored) and the private Drive folder"
+  },
+  "final523_faithfulness_scores.jsonl": {
+   "sha256": "cc318f3f486b77a6207a95899a5eb7246e45b4fae09bec1f96b139311fa03e37"
+  }
+ },
+ "reportable": true,
+ "cells_scored": 1042,
+ "error_rows": 0,
+ "null_cells": 4,
+ "c_final": 519,
+ "gpu_hours": 1.516,
+ "result": "led_less_faithful (post-hoc); LED - BART mean_prob -0.170 [-0.195, -0.145]; false-flag rate LED 5/11, BART 4/11",
+ "report": "plans/261031-2136-rq2-summarization-completion + plans/reports/evidence-audit-261101-tib-final523-faithfulness-report.md"
+}

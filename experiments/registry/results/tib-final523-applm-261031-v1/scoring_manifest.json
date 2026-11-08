@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "run": "tib-final523-applm-261031-v1",
+  "stage": "scoring_and_analysis",
+  "label": "exploratory_post_hoc",
+  "protocol_sha256": "af8c9412070b0ad83ad677eabf1e527bbf06a647003e7f91ed32664e65f54820",
+  "executed_notebook": "experiments/notebooks/results/tib-final523-applm-score-t4-261031-v1-executed.ipynb",
+  "executed_notebook_sha256": "16b869f11598c423450990ebeb78ee6cc20d430c01f4b575a83db4cb8e96e3c9",
+  "scores_receipt": "experiments/registry/results/tib-final523-applm-261031-v1/applm_scores_receipt.json",
+  "scores_receipt_sha256": "a115f3859497a4be8ce605db39666b4d94a02e27a31879e30a834046fcada13a",
+  "faithfulness_seconds": "experiments/registry/results/tib-final523-applm-261031-v1/faithfulness_seconds.json",
+  "faithfulness_seconds_sha256": "b5c4050293d0ef922b62db1c7e136c521b5d024bd1b2fe655ccd2b070bbfba6e",
+  "analysis": "experiments/registry/results/tib-final523-applm-261031-v1/applm_analysis.json",
+  "analysis_sha256": "3a5bc7c51d334dc8eb2784c275b0090aaaf762a44297b7c993c2f97ae755e6b1",
+  "private_sentence_scores": "research-data/tib-final523-applm-261031-v1/results/PRIVATE_applm_sentence_scores.jsonl (git-ignored: holds sentence text)",
+  "private_sentence_scores_sha256": "9740ee06c83f68842979596e94a454a2608aa96b421590465745291432bab99e",
+  "private_checkpoint_sha256": "57e91daceace81c1d4f5192dfcda1fb0bf7b3a6d1f0c1975d67d1d4a22f28d0e",
+  "scored_records": 523,
+  "cohort_c_applm": 519,
+  "faithfulness_gpu_hours": 1.5,
+  "analysis_script": "none stored in the repo; run via tib_final523_applm.analyze with the final523 metrics.jsonl and the faithfulness receipt"
+}

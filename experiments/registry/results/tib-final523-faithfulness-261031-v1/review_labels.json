@@ -1,0 +1,375 @@
+{
+ "protocol_id": "tib-final523-faithfulness-261031-v1",
+ "rater": "Claude, single rater, blind to score and flag while labelling",
+ "sample_seed": 20261031,
+ "note": "text-free: sentence text stays in the private detail file; lookup by (candidate, record_id, sentence_index)",
+ "borderline_items": [
+  4,
+  5,
+  13,
+  21,
+  26
+ ],
+ "labels": [
+  {
+   "n": 0,
+   "candidate": "led",
+   "record_id": "test:355",
+   "stratum": "short",
+   "sentence_index": 0,
+   "prob": 0.022322623059153557,
+   "flagged": true,
+   "label": "P"
+  },
+  {
+   "n": 1,
+   "candidate": "led",
+   "record_id": "test:306",
+   "stratum": "short",
+   "sentence_index": 1,
+   "prob": 0.3999447822570801,
+   "flagged": true,
+   "label": "S"
+  },
+  {
+   "n": 2,
+   "candidate": "led",
+   "record_id": "test:750",
+   "stratum": "short",
+   "sentence_index": 5,
+   "prob": 0.3149254024028778,
+   "flagged": true,
+   "label": "N"
+  },
+  {
+   "n": 3,
+   "candidate": "led",
+   "record_id": "test:744",
+   "stratum": "short",
+   "sentence_index": 1,
+   "prob": 0.2846602499485016,
+   "flagged": true,
+   "label": "S"
+  },
+  {
+   "n": 4,
+   "candidate": "led",
+   "record_id": "test:471",
+   "stratum": "short",
+   "sentence_index": 5,
+   "prob": 0.9711647033691406,
+   "flagged": false,
+   "label": "S"
+  },
+  {
+   "n": 5,
+   "candidate": "led",
+   "record_id": "test:196",
+   "stratum": "short",
+   "sentence_index": 7,
+   "prob": 0.980240523815155,
+   "flagged": false,
+   "label": "S"
+  },
+  {
+   "n": 6,
+   "candidate": "led",
+   "record_id": "test:568",
+   "stratum": "medium",
+   "sentence_index": 0,
+   "prob": 0.25321128964424133,
+   "flagged": true,
+   "label": "S"
+  },
+  {
+   "n": 7,
+   "candidate": "led",
+   "record_id": "test:119",
+   "stratum": "medium",
+   "sentence_index": 7,
+   "prob": 0.12572020292282104,
+   "flagged": true,
+   "label": "S"
+  },
+  {
+   "n": 8,
+   "candidate": "led",
+   "record_id": "test:25",
+   "stratum": "medium",
+   "sentence_index": 0,
+   "prob": 0.37337514758110046,
+   "flagged": true,
+   "label": "P"
+  },
+  {
+   "n": 9,
+   "candidate": "led",
+   "record_id": "test:267",
+   "stratum": "medium",
+   "sentence_index": 0,
+   "prob": 0.03974100202322006,
+   "flagged": true,
+   "label": "U"
+  },
+  {
+   "n": 10,
+   "candidate": "led",
+   "record_id": "test:557",
+   "stratum": "medium",
+   "sentence_index": 0,
+   "prob": 0.9735785722732544,
+   "flagged": false,
+   "label": "S"
+  },
+  {
+   "n": 11,
+   "candidate": "led",
+   "record_id": "test:282",
+   "stratum": "medium",
+   "sentence_index": 1,
+   "prob": 0.8786961436271667,
+   "flagged": false,
+   "label": "S"
+  },
+  {
+   "n": 12,
+   "candidate": "led",
+   "record_id": "test:353",
+   "stratum": "long",
+   "sentence_index": 1,
+   "prob": 0.2557183802127838,
+   "flagged": true,
+   "label": "U"
+  },
+  {
+   "n": 13,
+   "candidate": "led",
+   "record_id": "test:292",
+   "stratum": "long",
+   "sentence_index": 0,
+   "prob": 0.44245022535324097,
+   "flagged": true,
+   "label": "S"
+  },
+  {
+   "n": 14,
+   "candidate": "led",
+   "record_id": "test:901",
+   "stratum": "long",
+   "sentence_index": 0,
+   "prob": 0.3814455270767212,
+   "flagged": true,
+   "label": "P"
+  },
+  {
+   "n": 15,
+   "candidate": "led",
+   "record_id": "test:16",
+   "stratum": "long",
+   "sentence_index": 0,
+   "prob": 0.1831410825252533,
+   "flagged": true,
+   "label": "P"
+  },
+  {
+   "n": 16,
+   "candidate": "led",
+   "record_id": "test:353",
+   "stratum": "long",
+   "sentence_index": 4,
+   "prob": 0.9134166240692139,
+   "flagged": false,
+   "label": "S"
+  },
+  {
+   "n": 17,
+   "candidate": "led",
+   "record_id": "test:315",
+   "stratum": "long",
+   "sentence_index": 0,
+   "prob": 0.8757224082946777,
+   "flagged": false,
+   "label": "S"
+  },
+  {
+   "n": 18,
+   "candidate": "bart",
+   "record_id": "test:222",
+   "stratum": "short",
+   "sentence_index": 0,
+   "prob": 0.26495790481567383,
+   "flagged": true,
+   "label": "P"
+  },
+  {
+   "n": 19,
+   "candidate": "bart",
+   "record_id": "test:275",
+   "stratum": "short",
+   "sentence_index": 3,
+   "prob": 0.17702311277389526,
+   "flagged": true,
+   "label": "P"
+  },
+  {
+   "n": 20,
+   "candidate": "bart",
+   "record_id": "test:778",
+   "stratum": "short",
+   "sentence_index": 1,
+   "prob": 0.017655525356531143,
+   "flagged": true,
+   "label": "U"
+  },
+  {
+   "n": 21,
+   "candidate": "bart",
+   "record_id": "test:250",
+   "stratum": "short",
+   "sentence_index": 2,
+   "prob": 0.4549437463283539,
+   "flagged": true,
+   "label": "S"
+  },
+  {
+   "n": 22,
+   "candidate": "bart",
+   "record_id": "test:63",
+   "stratum": "short",
+   "sentence_index": 1,
+   "prob": 0.9746149182319641,
+   "flagged": false,
+   "label": "S"
+  },
+  {
+   "n": 23,
+   "candidate": "bart",
+   "record_id": "test:611",
+   "stratum": "short",
+   "sentence_index": 0,
+   "prob": 0.9836503863334656,
+   "flagged": false,
+   "label": "S"
+  },
+  {
+   "n": 24,
+   "candidate": "bart",
+   "record_id": "test:769",
+   "stratum": "medium",
+   "sentence_index": 0,
+   "prob": 0.020552678033709526,
+   "flagged": true,
+   "label": "U"
+  },
+  {
+   "n": 25,
+   "candidate": "bart",
+   "record_id": "test:470",
+   "stratum": "medium",
+   "sentence_index": 0,
+   "prob": 0.11258875578641891,
+   "flagged": true,
+   "label": "U"
+  },
+  {
+   "n": 26,
+   "candidate": "bart",
+   "record_id": "test:234",
+   "stratum": "medium",
+   "sentence_index": 2,
+   "prob": 0.08709246665239334,
+   "flagged": true,
+   "label": "S"
+  },
+  {
+   "n": 27,
+   "candidate": "bart",
+   "record_id": "test:200",
+   "stratum": "medium",
+   "sentence_index": 1,
+   "prob": 0.24493034183979034,
+   "flagged": true,
+   "label": "S"
+  },
+  {
+   "n": 28,
+   "candidate": "bart",
+   "record_id": "test:145",
+   "stratum": "medium",
+   "sentence_index": 0,
+   "prob": 0.9877964854240417,
+   "flagged": false,
+   "label": "S"
+  },
+  {
+   "n": 29,
+   "candidate": "bart",
+   "record_id": "test:730",
+   "stratum": "medium",
+   "sentence_index": 1,
+   "prob": 0.9897140264511108,
+   "flagged": false,
+   "label": "S"
+  },
+  {
+   "n": 30,
+   "candidate": "bart",
+   "record_id": "test:285",
+   "stratum": "long",
+   "sentence_index": 3,
+   "prob": 0.449207603931427,
+   "flagged": true,
+   "label": "N"
+  },
+  {
+   "n": 31,
+   "candidate": "bart",
+   "record_id": "test:852",
+   "stratum": "long",
+   "sentence_index": 1,
+   "prob": 0.019142640754580498,
+   "flagged": true,
+   "label": "U"
+  },
+  {
+   "n": 32,
+   "candidate": "bart",
+   "record_id": "test:54",
+   "stratum": "long",
+   "sentence_index": 3,
+   "prob": 0.12777364253997803,
+   "flagged": true,
+   "label": "S"
+  },
+  {
+   "n": 33,
+   "candidate": "bart",
+   "record_id": "test:709",
+   "stratum": "long",
+   "sentence_index": 0,
+   "prob": 0.08240644633769989,
+   "flagged": true,
+   "label": "P"
+  },
+  {
+   "n": 34,
+   "candidate": "bart",
+   "record_id": "test:98",
+   "stratum": "long",
+   "sentence_index": 2,
+   "prob": 0.9896920323371887,
+   "flagged": false,
+   "label": "S"
+  },
+  {
+   "n": 35,
+   "candidate": "bart",
+   "record_id": "test:612",
+   "stratum": "long",
+   "sentence_index": 2,
+   "prob": 0.9873331785202026,
+   "flagged": false,
+   "label": "S"
+  }
+ ]
+}

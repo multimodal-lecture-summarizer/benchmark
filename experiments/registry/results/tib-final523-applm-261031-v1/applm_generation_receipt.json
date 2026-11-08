@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "protocol_id": "tib-final523-applm-261031-v1",
+  "protocol_sha256": "af8c9412070b0ad83ad677eabf1e527bbf06a647003e7f91ed32664e65f54820",
+  "mode": "final",
+  "source_bundle": "tib-final523-scoring-261024-v1.zip",
+  "source_bundle_sha256": "6ae68b7a0ee95afe0551dac8f0b15352656169ab269c60f8fa58a64d99ebd18b",
+  "model": {
+    "repo": "Qwen/Qwen2.5-7B-Instruct-AWQ",
+    "revision": "b25037543e9394b818fdfca67ab2a00ecc7dd641"
+  },
+  "environment": {
+    "python": "3.13.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "packages": {
+      "nltk": "3.9.1",
+      "scikit-learn": "1.6.1",
+      "scipy": "1.16.3",
+      "numpy": "2.1.3",
+      "pandas": "2.2.3",
+      "torch": "2.8.0",
+      "transformers": "4.57.1",
+      "vllm": "0.11.0"
+    },
+    "code_sha256": {
+      "tib_benchmark_generation_telemetry.py": "9429f4e2aaad98809318c66d20a6c8fa869911ba3d2d21297ca490695f13d23a",
+      "tib_benchmark_output.py": "f4c8d7e62b9544dd21b215e771e7b17b243bf59087fe6f8342a4d575b9a84d8b",
+      "tib_budget_views.py": "d9332f87291e90ab5a462d591e51bb2f461768cb9212860fa22d11de78a27275",
+      "tib_final523_applm.py": "334a61a1cf0485dddeb51c1c3bfbed6d00f28aa581283c484234d0ee18a72e8c",
+      "tib_final523_faithfulness.py": "d5c51041420f5f2fcfedcd6e42b6e94e1f03c7c05d41d68dc454ad47af96d755",
+      "tib_pilot_faithfulness.py": "67ed6e8cefab7bbbe066b1abea1b4b9d5e492df0420e77166899df151b9dad5f",
+      "tib_summary_constructors.py": "20d97b85e714da98e88a74af615ffe4c922c10cb295a8627a8c24ae26fa0977c"
+    },
+    "gpu": "Tesla T4, 15360 MiB"
+  },
+  "model_load_seconds": 189.99084639399996,
+  "generation_seconds_total": 37172.701471814,
+  "first_generate_utc": "2026-11-01T11:25:57.265617+00:00",
+  "receipt_written_utc": "2026-11-02T03:31:16.926596+00:00",
+  "summary": {
+    "rows": 523,
+    "scoreable": 523,
+    "failed": 0,
+    "failures": [],
+    "status_counts": {
+      "completed": 511,
+      "completed_with_warning": 12,
+      "failed": 0
+    },
+    "no_terminal_eos": 0,
+    "repetition": 12,
+    "forced_word_boundary_cut": 0,
+    "delivered_words_mean": 127.95984703632887,
+    "delivered_words_max": 303,
+    "finish_reasons": {
+      "stop": 523
+    },
+    "prompt_sha256": "757f5422cc58cc0252d272d53544131cd85a4dcb20b4c1f5d14b5f7dc972a9e4",
+    "decoding": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_new_tokens": 600,
+      "seed": 20261031,
+      "repetition_penalty": 1
+    },
+    "prompt_tokens_max": 23077,
+    "generation_seconds_total": 37125.47475091101
+  },
+  "prompt_sha256": "757f5422cc58cc0252d272d53544131cd85a4dcb20b4c1f5d14b5f7dc972a9e4",
+  "decoding": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_new_tokens": 600,
+    "seed": 20261031,
+    "repetition_penalty": 1
+  },
+  "budget": {
+    "protocol_ceiling_gpu_hours": 8,
+    "approved_ceiling_gpu_hours": 11.0,
+    "note": "the run stopped at the protocol ceiling with 400 of 523 rows; the user approved a higher ceiling on 2026-11-02 to finish the remaining records with the same configuration"
+  }
+}

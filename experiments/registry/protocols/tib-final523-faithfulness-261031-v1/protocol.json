@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "protocol_id": "tib-final523-faithfulness-261031-v1",
+  "parent_protocols": ["tib-reference-free-multilength-261022-v1", "tib-final523-analysis-261024-v1"],
+  "state": "specified_before_any_final523_output_is_scored_for_faithfulness",
+  "label": "post_hoc_secondary",
+  "label_reason": "a faithfulness secondary was declared on 2026-10-22, but the family and this analysis were fixed on 2026-10-31, after the final523 primary outcome was known; the result cannot change the confirmatory label of final523",
+  "decision_source": "user, 2026-10-31: plan 261031-2136-rq2-summarization-completion; margin and rater use the plan's proposed defaults and may be edited only before the first score",
+  "question": "on the final523 compared IDs, are LED ngram3 outputs less supported by their source than BART outputs, by more than the practical margin, in a way not explained by a different false-flag rate of the scorer",
+  "inputs": {
+    "bundle": "tib-final523-scoring-261024-v1.zip (private; scoring_outputs.jsonl holds source, delivered_summary and the S/M/L views of every cell)",
+    "bundle_sha256_source": "research-data/tib-final523-scoring-261024-v1 and the registry copy of the scoring package manifest",
+    "profiles_scored": ["led", "bart"],
+    "cells_expected": 1046,
+    "scoreable_cells_expected": 1042,
+    "not_scored": "cells with scoreable=false (4 LED failures) stay as NULL rows in the denominator and are never scored as zero",
+    "cohort": "C_final = IDs where both LED and BART are scoreable (519 expected: short 182, medium 170, long 167)",
+    "integrity": "sha256 of source and delivered_summary must match source_sha256 and delivered_sha256 of the row; a mismatch stops the run",
+    "reference_text_used": false
+  },
+  "metric": {
+    "family": "MiniCheck",
+    "model_name": "roberta-large",
+    "package": "minicheck 0.1.0",
+    "install": "minicheck @ git+https://github.com/Liyan06/MiniCheck.git@b58b9fa69acbd1015ec970fa65dd752413a053d2",
+    "pin_note": "the Pilot40 run installed @main (package 0.1.0) on 2026-10-22/23; b58b9fa is the repository HEAD on 2026-10-31 and is the pin from now on; the installed version and environment are written to the receipt",
+    "environment_reference": "Pilot40 receipt: torch 2.11.0+cu130, transformers 5.20.1, nltk 3.9.1, Tesla T4",
+    "unit": "each sentence of the delivered summary (tib_summary_constructors.split_sentences) scored against the whole normalized source",
+    "sentence_probability": "MiniCheck support probability",
+    "support_threshold": 0.5,
+    "record_scores": {
+      "mean_prob": "mean of the sentence probabilities of the view (primary statistic of this protocol)",
+      "flagged_share": "share of sentences with probability below 0.5 (secondary)"
+    },
+    "known_validity": "Pilot40 sentence review (2026-10-23): 8/27 flagged sentences fully supported (30%, Wilson 16-48%), more often in multi-idea abstractive sentences; 17/18 unflagged sentences supported. Not validated against human judgment beyond that sample."
+  },
+  "views": {
+    "contract": "delivered_summary (the 350-word contract view that was scored for ROUGE-L); reported as the main view",
+    "S": "the stored 60-word view; length-matched sensitivity because LED outputs are much longer than BART outputs",
+    "M_L": "the stored 120/240-word views are derived from the same sentence scores and reported descriptively",
+    "scoring": "each distinct sentence of the contract, S, M and L texts is scored once; a forced word cut makes a truncated sentence that is scored as its own claim"
+  },
+  "analysis": {
+    "contrast": "LED - BART, per record, on C_final",
+    "statistics": ["mean_prob", "flagged_share"],
+    "views": ["contract", "S"],
+    "bootstrap": "stratified percentile bootstrap by source stratum (tib_final523_analysis.bootstrap), records resampled within stratum",
+    "resamples": 10000,
+    "seed": 20261031,
+    "level": 0.95,
+    "multiplicity": "none: one primary statistic (mean_prob, contract view); all other cells are descriptive",
+    "descriptive": "per profile and stratum means with record counts; Lead-3 and LexRank are not scored (extractive; Pilot40 flagged 3/120 and 4/579 of their sentences)"
+  },
+  "hand_review": {
+    "rater": "Claude, one rater, as in the Pilot40 review; no inter-rater agreement",
+    "sample": "contract-view sentences from the private detail file; for each profile x stratum, 4 flagged and 2 unflagged sentences drawn at random with seed 20261031 (72 sentences); drawn by tib_final523_faithfulness.draw_review_sample before the contrast table is read",
+    "labels": {
+      "S": "source fully supports the sentence",
+      "P": "main point right, a detail wrong, invented or overstated",
+      "U": "source does not say it or contradicts it",
+      "N": "not a claim (fragment)"
+    },
+    "false_flag_rate": "S among flagged sentences of the profile, with a Wilson 95% interval; N excluded from the denominator"
+  },
+  "interpretation": {
+    "practical_margin": 0.05,
+    "led_less_faithful": "all of: (1) the 95% interval of LED - BART mean_prob on the contract view is entirely below 0; (2) the mean difference is <= -0.05; (3) the Wilson intervals of the two profiles' false-flag rates overlap. Result: post-hoc evidence that LED is less faithful; present the 2026-10-26 BART fallback option to the user. Nothing is switched automatically.",
+    "led_more_faithful": "the mirror of the rule above (interval entirely above 0, difference >= 0.05, overlapping false-flag intervals); recorded, no change of choice",
+    "otherwise": "no faithfulness difference established; LED stays the choice; limits are reported",
+    "completeness": "a directional label needs C_final = 519 and zero error rows; error rows are retried by rerunning the notebook (never scored as zero, never dropped); if errors persist, the label is not_evaluable and the descriptive tables are reported with their denominators",
+    "limitation": "with about 12 flagged sentences per profile the Wilson intervals of the false-flag rates almost always overlap, so condition (3) guards only against a large difference; report this with the result",
+    "never": "the result does not change the final523 confirmatory label, is not a factuality percentage and is not evidence for the multimodal pipeline"
+  },
+  "order": "scoring prints no score; the hand-review sample is drawn from the private detail file before the contrast table is computed locally",
+  "budget": {
+    "estimate": "Pilot40 scored 191 records in 2,047 s on a T4 (about 10.7 s per record at up to 240 words); 1,042 cells at up to 350 words: about 3-5 GPU hours",
+    "ceiling_gpu_hours": 6,
+    "stop_rule": "every record is checkpointed; after the first 10 records (spread over both profiles and strata) the projected total is checked against the ceiling; scoring stops before a record would pass the ceiling; then ask for more budget, never drop records to fit"
+  },
+  "outputs": {
+    "receipt": "final523_faithfulness_receipt.json (record scores, environment, MiniCheck pin, first-score and receipt UTC times; error rows carry only the exception type; no sentence text)",
+    "private_detail": "PRIVATE_final523_sentence_scores.jsonl (sentence text and probability; private Drive and local machine only, never in the repository)",
+    "analysis": "final523_faithfulness_analysis.json written by tib_final523_faithfulness.analyze from the receipt"
+  }
+}

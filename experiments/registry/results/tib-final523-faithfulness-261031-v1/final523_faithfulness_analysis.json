@@ -1,0 +1,295 @@
+{
+ "protocol_id": "tib-final523-faithfulness-261031-v1",
+ "label_kind": "post_hoc_secondary",
+ "c_final_n": 519,
+ "c_final_by_stratum": {
+  "short": 182,
+  "medium": 170,
+  "long": 167
+ },
+ "error_rows": 0,
+ "complete": true,
+ "contrasts": {
+  "contract": {
+   "mean_prob": {
+    "n": 519,
+    "mean": -0.16994086759362037,
+    "low": -0.19461937404417934,
+    "high": -0.1448362210810184,
+    "p_two_sided": 0.00019998000199980003
+   },
+   "flagged_share": {
+    "n": 519,
+    "mean": 0.16420456452020188,
+    "low": 0.13134879464359234,
+    "high": 0.19641830819576486,
+    "p_two_sided": 0.00019998000199980003
+   }
+  },
+  "S": {
+   "mean_prob": {
+    "n": 519,
+    "mean": -0.1749571829753488,
+    "low": -0.20145446972301165,
+    "high": -0.14800252037552702,
+    "p_two_sided": 0.00019998000199980003
+   },
+   "flagged_share": {
+    "n": 519,
+    "mean": 0.16210661528580605,
+    "low": 0.12620882649784382,
+    "high": 0.19807780530323885,
+    "p_two_sided": 0.00019998000199980003
+   }
+  }
+ },
+ "descriptive": {
+  "led": {
+   "scored": 519,
+   "errors": 0,
+   "not_scoreable": 4,
+   "views": {
+    "contract": {
+     "all": {
+      "n": 519,
+      "mean_prob": 0.712703364774684,
+      "flagged_share": 0.2638696714107423,
+      "mean_sentences": 4.179190751445087
+     },
+     "short": {
+      "n": 182,
+      "mean_prob": 0.8010297257279549,
+      "flagged_share": 0.16697212000132763,
+      "mean_sentences": 5.423076923076923
+     },
+     "medium": {
+      "n": 170,
+      "mean_prob": 0.6670827110706677,
+      "flagged_share": 0.3187721755368814,
+      "mean_sentences": 3.223529411764706
+     },
+     "long": {
+      "n": 167,
+      "mean_prob": 0.6628836847518543,
+      "flagged_share": 0.3135818190458909,
+      "mean_sentences": 3.7964071856287425
+     }
+    },
+    "S": {
+     "all": {
+      "n": 519,
+      "mean_prob": 0.7071718082729929,
+      "flagged_share": 0.26273511331314797,
+      "mean_sentences": 1.9402697495183043
+     },
+     "short": {
+      "n": 182,
+      "mean_prob": 0.7851929465609236,
+      "flagged_share": 0.18054683411826267,
+      "mean_sentences": 2.1758241758241756
+     },
+     "medium": {
+      "n": 170,
+      "mean_prob": 0.6709375564485569,
+      "flagged_share": 0.3029411764705882,
+      "mean_sentences": 1.7941176470588236
+     },
+     "long": {
+      "n": 167,
+      "mean_prob": 0.6590279498403626,
+      "flagged_share": 0.31137724550898205,
+      "mean_sentences": 1.8323353293413174
+     }
+    },
+    "M": {
+     "all": {
+      "n": 519,
+      "mean_prob": 0.7118944187661342,
+      "flagged_share": 0.261571537005063,
+      "mean_sentences": 3.140655105973025
+     },
+     "short": {
+      "n": 182,
+      "mean_prob": 0.799751371412466,
+      "flagged_share": 0.16532396175253317,
+      "mean_sentences": 3.6538461538461537
+     },
+     "medium": {
+      "n": 170,
+      "mean_prob": 0.66857824827967,
+      "flagged_share": 0.3157563025210084,
+      "mean_sentences": 2.711764705882353
+     },
+     "long": {
+      "n": 167,
+      "mean_prob": 0.6602404283533588,
+      "flagged_share": 0.31130595950955237,
+      "mean_sentences": 3.0179640718562872
+     }
+    },
+    "L": {
+     "all": {
+      "n": 519,
+      "mean_prob": 0.7143054944144726,
+      "flagged_share": 0.26093199243488263,
+      "mean_sentences": 4.08092485549133
+     },
+     "short": {
+      "n": 182,
+      "mean_prob": 0.8023845647272095,
+      "flagged_share": 0.16546302446027722,
+      "mean_sentences": 5.170329670329671
+     },
+     "medium": {
+      "n": 170,
+      "mean_prob": 0.6692622752556701,
+      "flagged_share": 0.3158309990662932,
+      "mean_sentences": 3.211764705882353
+     },
+     "long": {
+      "n": 167,
+      "mean_prob": 0.6641675091454804,
+      "flagged_share": 0.309090801081819,
+      "mean_sentences": 3.7784431137724552
+     }
+    }
+   }
+  },
+  "bart": {
+   "scored": 523,
+   "errors": 0,
+   "not_scoreable": 0,
+   "views": {
+    "contract": {
+     "all": {
+      "n": 523,
+      "mean_prob": 0.8821369632969887,
+      "flagged_share": 0.10017754711827369,
+      "mean_sentences": 3.546845124282983
+     },
+     "short": {
+      "n": 182,
+      "mean_prob": 0.8747766973046768,
+      "flagged_share": 0.11287284144427001,
+      "mean_sentences": 3.565934065934066
+     },
+     "medium": {
+      "n": 172,
+      "mean_prob": 0.8733999397875939,
+      "flagged_share": 0.10562015503875967,
+      "mean_sentences": 3.5290697674418605
+     },
+     "long": {
+      "n": 169,
+      "mean_prob": 0.8989555221976789,
+      "flagged_share": 0.08096646942800789,
+      "mean_sentences": 3.544378698224852
+     }
+    },
+    "S": {
+     "all": {
+      "n": 523,
+      "mean_prob": 0.8816256628356872,
+      "flagged_share": 0.10113357006282436,
+      "mean_sentences": 3.4875717017208414
+     },
+     "short": {
+      "n": 182,
+      "mean_prob": 0.8736537224272231,
+      "flagged_share": 0.11424646781789638,
+      "mean_sentences": 3.489010989010989
+     },
+     "medium": {
+      "n": 172,
+      "mean_prob": 0.8731478110428217,
+      "flagged_share": 0.10610465116279069,
+      "mean_sentences": 3.5
+     },
+     "long": {
+      "n": 169,
+      "mean_prob": 0.8988391756328077,
+      "flagged_share": 0.08195266272189348,
+      "mean_sentences": 3.473372781065089
+     }
+    },
+    "M": {
+     "all": {
+      "n": 523,
+      "mean_prob": 0.8821369632969887,
+      "flagged_share": 0.10017754711827369,
+      "mean_sentences": 3.546845124282983
+     },
+     "short": {
+      "n": 182,
+      "mean_prob": 0.8747766973046768,
+      "flagged_share": 0.11287284144427001,
+      "mean_sentences": 3.565934065934066
+     },
+     "medium": {
+      "n": 172,
+      "mean_prob": 0.8733999397875939,
+      "flagged_share": 0.10562015503875967,
+      "mean_sentences": 3.5290697674418605
+     },
+     "long": {
+      "n": 169,
+      "mean_prob": 0.8989555221976789,
+      "flagged_share": 0.08096646942800789,
+      "mean_sentences": 3.544378698224852
+     }
+    },
+    "L": {
+     "all": {
+      "n": 523,
+      "mean_prob": 0.8821369632969887,
+      "flagged_share": 0.10017754711827369,
+      "mean_sentences": 3.546845124282983
+     },
+     "short": {
+      "n": 182,
+      "mean_prob": 0.8747766973046768,
+      "flagged_share": 0.11287284144427001,
+      "mean_sentences": 3.565934065934066
+     },
+     "medium": {
+      "n": 172,
+      "mean_prob": 0.8733999397875939,
+      "flagged_share": 0.10562015503875967,
+      "mean_sentences": 3.5290697674418605
+     },
+     "long": {
+      "n": 169,
+      "mean_prob": 0.8989555221976789,
+      "flagged_share": 0.08096646942800789,
+      "mean_sentences": 3.544378698224852
+     }
+    }
+   }
+  }
+ },
+ "false_flag_rates": {
+  "led": {
+   "k": 5,
+   "n": 11,
+   "rate": 0.45454545454545453,
+   "low": 0.21271271622459764,
+   "high": 0.719908462590678
+  },
+  "bart": {
+   "k": 4,
+   "n": 11,
+   "rate": 0.36363636363636365,
+   "low": 0.15166471095367573,
+   "high": 0.6461988254921511
+  }
+ },
+ "interpretation": {
+  "label": "led_less_faithful",
+  "reason": "interval below 0, difference beyond the margin, comparable false-flag rates"
+ },
+ "resamples": 10000,
+ "seed": 20261031,
+ "level": 0.95,
+ "practical_margin": 0.05,
+ "receipt_sha256": "c6ea1562455295bd9a43ac1df32943e4a765dbeadb5f4970cc902b4131e651df"
+}

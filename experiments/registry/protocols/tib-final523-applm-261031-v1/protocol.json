@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "protocol_id": "tib-final523-applm-261031-v1",
+  "parent_protocols": [
+    "tib-final523-analysis-261024-v1",
+    "tib-final523-faithfulness-261031-v1"
+  ],
+  "state": "specified_before_any_applm_output_exists",
+  "label": "exploratory_post_hoc",
+  "label_reason": "the final523 test IDs were already used for the confirmatory comparison; this run adds one profile after the primary outcome was known. It cannot change the confirmatory label, the LED choice, or any earlier table, and it is not a model-selection run",
+  "decision_source": "user, 2026-10-31: plan 261031-2136-rq2-summarization-completion phase 2, run local on a T4 (no API, no data sent to a third party)",
+  "question": "how does the text-summarization model family used by the application (Qwen2.5-7B-Instruct, one prompt, no chunking) compare with LED ngram3 and BART on the same final523 IDs, the same delivered-word cap, and the same scorers",
+  "scope_limits": [
+    "text stage only: the application also feeds OCR text and object counts and asks for Vietnamese structured output; this run measures none of that",
+    "the weights are the 4-bit AWQ build of Qwen2.5-7B-Instruct, not the unquantized model reached through OpenRouter in the application; the result describes the identity below only",
+    "the application's fallback chain (Llama, Groq) is not used; a failed call is a failure row, never a call to another model",
+    "creator-abstract agreement and sentence-level source support are not factuality percentages"
+  ],
+  "model": {
+    "repo": "Qwen/Qwen2.5-7B-Instruct-AWQ",
+    "revision": "b25037543e9394b818fdfca67ab2a00ecc7dd641",
+    "revision_observed": "huggingface API, 2026-10-31 (last modified 2024-10-09)",
+    "quantization": "awq",
+    "dtype": "float16",
+    "application_model_id": "qwen/qwen-2.5-7b-instruct (OpenRouter), see multimodal-lecture-summarizer/ai_workers/modules/summarization/summarizer.py"
+  },
+  "engine": {
+    "package": "vllm",
+    "install": "vllm==0.11.0 transformers==4.57.1",
+    "pin_note": "chosen before any generated output; the first Colab attempt (2026-11-01) failed at model load with AttributeError: Qwen2Tokenizer has no attribute all_special_tokens_extended, because vllm 0.11.0 left Colab's transformers 5.x in place; transformers is therefore pinned to 4.57.1 as well (a mechanical engine fix: no output existed and the prompt is untouched). The notebook records the installed versions in the receipt. If it still cannot run on the Colab T4, stop and report; do not switch engine silently",
+    "max_model_len": 32768,
+    "gpu_memory_utilization": 0.8,
+    "max_num_batched_tokens": 2048,
+    "memory_note": "second mechanical fix (2026-11-01, still no output): the dry run died with torch.OutOfMemoryError (a 914 MiB mask allocation with 0.5 GiB free of 14.56 GiB) while prefilling 7,573 tokens at once, so gpu_memory_utilization is lowered from 0.9 to 0.8 and the prefill chunk from vLLM's 8192 to 2048 tokens; prompt, model, decoding and context length are unchanged",
+    "batch_size": 4,
+    "tokenizer_revision": "b25037543e9394b818fdfca67ab2a00ecc7dd641",
+    "projection": "after 5 batches (20 records) of a fixed spread order of the 523 IDs; the projection is compared with the ceiling"
+  },
+  "prompt": {
+    "frozen_before_output": true,
+    "language": "English (TIB talks and abstracts are English)",
+    "system": "You write abstracts of conference talks.",
+    "user_template": "Below is the transcript of a talk. Write the abstract of this talk as one paragraph of about 110 words in English. State the topic, the main points and the conclusions. Use only information that is in the transcript. Output only the abstract.\n\nTranscript:\n{source}",
+    "length_rationale": "110 words is the median reference length of the train split (7,276 train references: p25 66, median 110, p75 185, p95 346 words); no validation or test reference was used",
+    "variants": "none; one prompt, never reworded after any output is seen",
+    "applied_via": "the model's chat template (system and user messages), no few-shot examples, no reference text"
+  },
+  "decoding": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_new_tokens": 600,
+    "seed": 20261031,
+    "repetition_penalty": 1,
+    "note": "greedy decoding; vLLM batching can still change floating-point order, so determinism across sessions is not claimed"
+  },
+  "inputs": {
+    "bundle": "tib-final523-scoring-261024-v1.zip (private); sources and references are read from scoring_outputs.jsonl, the 523 distinct test record IDs",
+    "source_text": "the normalized transcript exactly as given to LED and BART, never truncated: a prompt longer than max_model_len minus max_new_tokens is a failed row (prompt_too_long), not a truncated one",
+    "reference_text_used_for_generation": false,
+    "dry_run": "optional, 8 IDs taken in sorted order from the selection300 (validation) bundle; prints lengths, finish reasons and word counts only. Only mechanical faults (template, token limits, stop tokens) may be fixed after it; wording of the prompt may not"
+  },
+  "output_rows": {
+    "profile_id": "applm",
+    "schema": "same fields as scoring_outputs.jsonl of the final523 scoring bundle (private file, never in the repository)",
+    "delivered_summary": "select_delivered(raw, 350 words), the contract cap used for every final523 profile",
+    "views": "S, M, L = 60, 120, 240 word sentence prefixes (tib_budget_views.build_views)",
+    "generation_status": {
+      "completed": "finish_reason stop",
+      "completed_with_warning": "any warning in `warnings`: finish_reason length (no terminal end-of-sequence), a repeated 4-gram (>= 3 times), or a forced word-boundary cut; kept and scored like LED outputs with the same flags",
+      "failed": "exception, empty output or prompt_too_long; stays in the denominator as NULL and is never scored as zero"
+    },
+    "failure_retry": "prompt_too_long is final; any other failed row is generated again on the next run and appended again (a record can appear twice in the private file; the last line wins and the scoring notebook keeps one row per record); a torn last line is cut off the file on resume; the run stops after 2 consecutive batches without a single generated row"
+  },
+  "metrics": {
+    "rouge": "rouge-score 0.1.2, use_stemmer true, rouge1/rouge2/rougeL F1 against the creator abstract, delivered summary; byte-identical configuration to scorer v2 (reproduces all 2,088 stored final523 ROUGE-L values with maximum difference 0 on 2026-10-31); computed on the delivered (350-word) summary only",
+    "bertscore": "scorer v2 (xlm-roberta-large layer 17, window extension) is available only through the formal scorer venv and assets of the final523 scoring bundle; it is a separate optional step and is not in the generation or scoring notebook of this protocol",
+    "faithfulness": "MiniCheck roberta-large, sentence level, pinned and interpreted exactly as in tib-final523-faithfulness-261031-v1 (mean_prob and flagged_share; contract and S views); a different false-flag rate of MiniCheck on this model family is possible and is not measured here"
+  },
+  "analysis": {
+    "cohort": "C_applm: one cohort for every contrast and mean = IDs with a value for every metric of applm, led and bart (519 if no applm failure); a missing led/bart profile or metric is an error",
+    "contrasts": [
+      "applm - led",
+      "applm - bart"
+    ],
+    "statistics": [
+      "rougeL_f1 (delivered)",
+      "mean_prob contract",
+      "mean_prob S"
+    ],
+    "bootstrap": "stratified percentile bootstrap by source stratum, 10,000 resamples, seed 20261031, level 95% (tib_final523_analysis.bootstrap)",
+    "descriptive": [
+      "per-profile means of rouge1_f1, rouge2_f1, rougeL_f1 and MiniCheck mean_prob/flagged_share on C_applm (tib_final523_applm.analyze)",
+      "applm only, from the generation receipt: delivered words, finish-reason histogram, no-terminal-EOS and repetition counts, failed rows, prompt/completion tokens, seconds",
+      "LED and BART lengths and EOS/repetition shares are taken from the existing final523 reports, not recomputed"
+    ],
+    "no_label": "no confirmed, selected or winner label; intervals are descriptive; no multiplicity adjustment",
+    "length_note": "applm outputs are expected to be longer than BART and shorter than LED; the delivered word means are reported beside every contrast"
+  },
+  "decision_use": {
+    "owner": "user",
+    "report": "plans/reports/protocol-decision-<date>-rq2-app-summarizer-stance-report.md",
+    "options": [
+      "keep the application's LLM and state the text-stage evidence as exploratory",
+      "change the application's text-stage model (needs its own plan: language, structure and multimodal input are outside this run)",
+      "add LED as an English first pass (needs its own plan)"
+    ]
+  },
+  "budget": {
+    "estimate": "about 1.5-3 GPU hours for 523 summaries on a T4 if the plain AWQ kernels are fast enough; they may be slower (prefill up to about 27k tokens), which the projection after 20 records shows; plus about 0.5 GPU hour for MiniCheck",
+    "ceiling_gpu_hours": 8,
+    "stop_rule": "every batch is checkpointed; after the first five batches (20 records in a fixed spread order over strata) the projected total is checked against the ceiling; the run stops before a batch would pass the ceiling and asks for more budget, never dropping records"
+  },
+  "outputs": {
+    "private": [
+      "PRIVATE_applm_outputs.jsonl (sources, references, summaries)",
+      "PRIVATE_applm_sentence_scores.jsonl"
+    ],
+    "receipts": [
+      "applm_generation_receipt.json (counts, token counts, finish reasons, prompt sha256, decoding, timing, environment; no text)",
+      "applm_scores_receipt.json (ROUGE and MiniCheck per record; no text)"
+    ]
+  }
+}
