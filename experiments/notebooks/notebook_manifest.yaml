@@ -289,6 +289,33 @@ pending_evaluation_notebooks:
   cohort_frozen: true
   protocol_frozen: true
   model_execution_verified: false
+- dataset: tib
+  path: experiments/notebooks/tib-final523-applm-generate-t4-261031-v1.ipynb
+  status: EXECUTED_FINAL_523_OF_523_2026_11_02
+  executed_notebook: experiments/notebooks/results/tib-final523-applm-generate-t4-261031-v1-executed.ipynb
+  results: experiments/registry/results/tib-final523-applm-261031-v1/manifest.json
+  scope: exploratory post-hoc generation by the application's summarizer family (Qwen2.5-7B-Instruct AWQ) on the 523 final523 test IDs
+  protocol: experiments/registry/protocols/tib-final523-applm-261031-v1/protocol.json
+  protocol_sha256: af8c9412070b0ad83ad677eabf1e527bbf06a647003e7f91ed32664e65f54820
+  builder: experiments/scripts/build_tib_final523_applm_notebooks.py
+  notebook_sha256: b34bd2fc94d295bbe28f3406a4ef30465944a4eca0be6ba85d6bfd63968ba916
+  notebook_sha256_note: the executed run used earlier builds of this notebook (same protocol hash af8c9412…); the final 123 rows ran with the CEILING 39600 edit that this build now contains
+  model_execution_verified: true
+- dataset: tib
+  path: experiments/notebooks/tib-final523-applm-score-t4-261031-v1.ipynb
+  status: EXECUTED_POST_HOC_EXPLORATORY_523_OF_523_2026_11_02
+  executed_notebook: experiments/notebooks/results/tib-final523-applm-score-t4-261031-v1-executed.ipynb
+  executed_notebook_sha256: 16b869f11598c423450990ebeb78ee6cc20d430c01f4b575a83db4cb8e96e3c9
+  results: experiments/registry/results/tib-final523-applm-261031-v1/
+  receipt_sha256: a115f3859497a4be8ce605db39666b4d94a02e27a31879e30a834046fcada13a
+  scope: ROUGE (scorer v2 configuration) and MiniCheck of the applm outputs; BERTScore is a separate optional step and was not run
+  protocol: experiments/registry/protocols/tib-final523-applm-261031-v1/protocol.json
+  builder: experiments/scripts/build_tib_final523_applm_notebooks.py
+  notebook_sha256: fbae7617c1bc6aa7a257e086eb1de47d86a7bb3975428e2a17932d80e762b015
+  scored_cells: 523
+  device: Tesla_T4
+  gpu_hours: 1.5
+  model_execution_verified: true
 executed_evaluation_notebooks:
 - dataset: dancetrack
   path: experiments/notebooks/03b-multi-object-tracking-benchmark-colab.ipynb
@@ -388,8 +415,26 @@ executed_evaluation_notebooks:
   device: Tesla_T4
   generation_rerun: false
   original_displayed_texts_preserved: true
-  evidence_verification: notebook_outputs_checked_independent_drive_receipt_audit_pending
+  evidence_verification: notebook_outputs_checked_independent_drive_receipt_audit_waived_2026_11_02
   result_decision: no_selection
+- dataset: tib
+  path: experiments/notebooks/tib-final523-faithfulness-t4-261031-v1.ipynb
+  reviewed_execution_notebook: experiments/notebooks/results/tib-final523-faithfulness-t4-261031-v1-executed.ipynb
+  reviewed_execution_notebook_sha256: 9accaf38a5d40f3b10a9ee3952f7ccc2157a82818d3ff317b7a5c951eb0d9a07
+  notebook_sha256: 5b8f173292853751e9f56acab546cacfba59eb9651f7e86d5762283eb855192b
+  protocol: experiments/registry/protocols/tib-final523-faithfulness-261031-v1/protocol.json
+  results: experiments/registry/results/tib-final523-faithfulness-261031-v1/
+  builder: experiments/scripts/build_tib_final523_faithfulness_notebook.py
+  status: EXECUTED_POST_HOC_SECONDARY_2026_11_01
+  scope: MiniCheck sentence-level faithfulness of the final523 LED and BART outputs (no regeneration)
+  scored_cells: 1042
+  null_cells: 4
+  error_rows: 0
+  c_final: 519
+  device: Tesla_T4
+  executed_code_cells: 7
+  result_decision: led_less_faithful_post_hoc_no_change_to_final523_label
+  evidence_verification: notebook_outputs_checked_receipt_integrity_verified_offline
 
 technical_feasibility_notebooks:
 - dataset: tib-text-model-benchmark-v1
