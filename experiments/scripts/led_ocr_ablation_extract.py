@@ -205,6 +205,14 @@ def extract_one(video: dict, video_path: Path, inputs_dir: Path, run_task, check
         if not captured.get("copied"):
             raise RuntimeError("summarizer stub was never reached")
         checkpoint = json.loads(destination.read_text(encoding="utf-8"))
+        asr_model = str((checkpoint["data"].get("audio_result") or {}).get("asr_model"))
+        if "qwen3" not in asr_model.lower():
+            # The protocol fixes ASR to Qwen3. A fallback engine means a pipeline problem, not a result:
+            # keep no input, write no ledger row, and let a later run process the video again.
+            destination.unlink(missing_ok=True)
+            row.update(status="asr_fallback", detail=f"ASR engine was {asr_model}, expected Qwen3-ASR")
+            row["wall_seconds"] = round(time.perf_counter() - started, 1)
+            return row
         row.update(status="ok", input_path=str(destination), input_sha256=sha256_file(destination),
                    input_bytes=destination.stat().st_size, pipeline_seconds=result.get("processing_time"),
                    **describe_inputs(checkpoint, merge))
@@ -262,6 +270,7 @@ def main(argv: list[str] | None = None) -> int:
     todo = pending(videos, done)
     log(f"set={args.set}: {len(videos)} videos, {len(done)} already in the ledger, {len(todo)} to do; app={app_root}")
     log(f"GPU: {gpu_line()}")
+    fallbacks: list[str] = []
     for index, video in enumerate(todo, 1):
         log(f"[{index}/{len(todo)}] {video['id']} ({video['stratum']}, {video['duration_s']}s, {video['size_mb']} MB): download")
         fetched = download(video, videos_dir, download_ledger)
@@ -272,6 +281,12 @@ def main(argv: list[str] | None = None) -> int:
             continue
         log(f"[{index}/{len(todo)}] {video['id']}: video ready ({fetched['bytes'] / 1e6:.0f} MB, sha256 {fetched['sha256'][:12]}), running pipeline")
         row = extract_one(video, Path(fetched["path"]), inputs_dir, run_task, manager._get_checkpoint_path, merge_speech_and_ocr)
+        if row["status"] == "asr_fallback":
+            fallbacks.append(video["id"])
+            log(f"[{index}/{len(todo)}] {video['id']}: ASR FALLBACK after {row['wall_seconds']}s: {row['detail']}. "
+                "No ledger row written; fix Qwen3-ASR and rerun this cell to process the video again.")
+            log(f"GPU: {gpu_line()}")
+            continue
         append_ledger(extract_ledger, row)
         if row["status"] == "ok":
             log(f"[{index}/{len(todo)}] {video['id']}: OK in {row['wall_seconds']}s | segmenter={row['segmenter']} scenes={row['scenes']} "
@@ -282,8 +297,10 @@ def main(argv: list[str] | None = None) -> int:
             log(f"[{index}/{len(todo)}] {video['id']}: ERROR {row['error']} after {row['wall_seconds']}s: {row.get('detail')} (traceback in run/logs/errors.log)")
         log(f"GPU: {gpu_line()}")
     final = read_ledger(extract_ledger)
+    if fallbacks:
+        log(f"NOT PROCESSED (Qwen3-ASR fell back): {fallbacks}")
     log(f"finished: {sum(r.get('status') == 'ok' for r in final.values())} ok, {sum(r.get('status') == 'error' for r in final.values())} error of {len(videos)}")
-    return 0
+    return 1 if fallbacks else 0
 
 
 if __name__ == "__main__":

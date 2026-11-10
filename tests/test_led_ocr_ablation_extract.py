@@ -13,7 +13,7 @@ def fake_merge(utterances, keyframes):
 def checkpoint_doc():
     return {"data": {"utterances": [{"text": "a b c d"}], "keyframes": [{"ocr_text": "Alpha Beta"}, {"ocr_text": ""}],
                      "visual_result": {"segmenter": "slide", "scenes": [1, 2]},
-                     "audio_result": {"asr_model": "qwen3", "language": "en"}}}
+                     "audio_result": {"asr_model": "Qwen/Qwen3-ASR-0.6B", "language": "en"}}}
 
 
 def test_slug_and_ledger_resume(tmp_path):
@@ -75,3 +75,18 @@ def test_pinned_settings_reject_stray_env():
     except SystemExit:
         return
     raise AssertionError("expected SystemExit")
+
+
+def test_whisper_fallback_is_not_recorded_and_leaves_no_input(tmp_path):
+    doc = checkpoint_doc()
+    doc["data"]["audio_result"]["asr_model"] = "small"
+    source = tmp_path / "ckpt.json"
+    source.write_text(json.dumps(doc), encoding="utf-8")
+
+    def run_task(job_id, path, stub):
+        stub(None, [], [], [], job_id=job_id)
+        return {}
+
+    row = ex.extract_one(VIDEO, tmp_path / "v.mp4", tmp_path / "inputs", run_task, lambda job: source, fake_merge)
+    assert row["status"] == "asr_fallback"
+    assert not (tmp_path / "inputs" / "10_5446_1.json").exists()
