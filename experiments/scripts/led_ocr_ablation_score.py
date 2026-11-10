@@ -14,7 +14,7 @@ import re
 import statistics
 from pathlib import Path
 
-from experiments.scripts.led_ocr_ablation_extract import append_ledger, read_rows
+from experiments.scripts.led_ocr_ablation_extract import append_ledger, log, read_rows
 
 SUPPORT_THRESHOLD = 0.5
 WORD = re.compile(r"[^\W\d_]{3,}")
@@ -110,6 +110,7 @@ def main(argv: list[str] | None = None) -> int:
     scored = {(r["id"], r["arm"]) for r in read_rows(out_path)}
     d_source = {i: r["source_text"] for (i, arm), r in private.items() if arm == "D"}
     transcripts = {i: r["transcript_text"] for (i, _), r in private.items() if "transcript_text" in r}
+    log(f"scoring set={args.set}: {len(receipt)} cells, {len(scored)} already scored, {len(references)} references loaded")
     for cell in receipt:
         key = (cell["id"], cell["arm"])
         if key in scored or cell.get("status") != "ok" or key not in private or cell["id"] not in references:
@@ -119,7 +120,9 @@ def main(argv: list[str] | None = None) -> int:
         row = score_cell(cell, private[key], references[cell["id"]], evidence, transcript, scorers)
         row["minicheck_package"] = minicheck_meta
         append_ledger(out_path, row)
-        print(json.dumps({"id": row["id"], "arm": row["arm"], "rougeL": row["rougeL_f1_at_350"]}), flush=True)
+        mc = row["minicheck_evidence_full"] or {}
+        log(f"{row['id']} arm {row['arm']}: rougeL350={row['rougeL_f1_at_350']} rougeL120={row['rougeL_f1_at_120']} bert={row['bertscore_f1']} "
+            f"minicheck_mean={mc.get('mean_prob')} flagged={mc.get('flagged_share')} term_cov={row['slide_term_coverage']} errors={row['errors'] or '-'}")
     return 0
 
 

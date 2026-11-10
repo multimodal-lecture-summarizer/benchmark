@@ -17,8 +17,11 @@ import json
 import os
 import shutil
 import sys
+import subprocess
 import time
+import traceback
 import urllib.request
+from datetime import datetime
 from pathlib import Path
 
 PROTOCOL_ID = "led-ocr-ablation-261110-v1"
@@ -30,6 +33,30 @@ EXTRACTION_ENV = {
 ENV_DUMP_PREFIXES = ("SCENE_SEGMENTER", "SLIDE_", "ASR_", "LED_", "SUMMARIZER_", "ENABLE_", "FLORENCE_", "SPRINT_", "FASTER_WHISPER", "HF_TOKEN")
 PINNED = {"SCENE_SEGMENTER": "slide", "ENABLE_FLORENCE_CAPTIONING": False, "ENABLE_OBJECT_TRACKING": False,
           "ASR_ENGLISH_BACKEND": "qwen3", "SUMMARIZER_ENGLISH_BACKEND": "led"}
+
+
+_T0 = time.time()
+
+
+def log(message: str) -> None:
+    """Timestamped console line; the notebook also tees the stream to a Drive log file."""
+    print(f"[ablation {datetime.now():%H:%M:%S} +{time.time() - _T0:.0f}s] {message}", flush=True)
+
+
+def gpu_line() -> str:
+    try:
+        out = subprocess.run(["nvidia-smi", "--query-gpu=memory.used,memory.total,utilization.gpu", "--format=csv,noheader"],
+                             capture_output=True, text=True, timeout=10).stdout.strip()
+        return out or "nvidia-smi: no output"
+    except Exception as error:  # noqa: BLE001
+        return f"nvidia-smi unavailable: {type(error).__name__}"
+
+
+def log_traceback(folder: Path, video_id: str) -> None:
+    """Full traceback goes to a private log next to the run files, never into a receipt."""
+    folder.mkdir(parents=True, exist_ok=True)
+    with (folder / "errors.log").open("a", encoding="utf-8") as handle:
+        handle.write(f"=== {datetime.now():%Y-%m-%d %H:%M:%S} {video_id}\n{traceback.format_exc()}\n")
 
 
 def video_slug(video_id: str) -> str:
@@ -91,6 +118,7 @@ def download(video: dict, directory: Path, ledger_path: Path) -> dict:
         part.replace(target)
         row.update(status="ok", bytes=target.stat().st_size, sha256=sha256_file(target))
     except Exception as error:  # noqa: BLE001 - recorded, no substitute video
+        log_traceback(directory.parent / "run" / "logs", video["id"])
         part.unlink(missing_ok=True)
         row.update(status="error", error=type(error).__name__)
     append_ledger(ledger_path, row)
@@ -181,6 +209,7 @@ def extract_one(video: dict, video_path: Path, inputs_dir: Path, run_task, check
                    input_bytes=destination.stat().st_size, pipeline_seconds=result.get("processing_time"),
                    **describe_inputs(checkpoint, merge))
     except Exception as error:  # noqa: BLE001 - ledger row, no rerun
+        log_traceback(inputs_dir.parent / "logs", video["id"])
         row.update(status="error", error=type(error).__name__, detail=str(error)[:200])
     row["wall_seconds"] = round(time.perf_counter() - started, 1)
     return row
@@ -230,15 +259,30 @@ def main(argv: list[str] | None = None) -> int:
             Summarizer.process = original
 
     done = read_ledger(extract_ledger)
-    for video in pending(videos, done):
+    todo = pending(videos, done)
+    log(f"set={args.set}: {len(videos)} videos, {len(done)} already in the ledger, {len(todo)} to do; app={app_root}")
+    log(f"GPU: {gpu_line()}")
+    for index, video in enumerate(todo, 1):
+        log(f"[{index}/{len(todo)}] {video['id']} ({video['stratum']}, {video['duration_s']}s, {video['size_mb']} MB): download")
         fetched = download(video, videos_dir, download_ledger)
         if fetched["status"] != "ok":
+            log(f"[{index}/{len(todo)}] {video['id']}: download FAILED ({fetched.get('error')}); no substitute video")
             append_ledger(extract_ledger, {"id": video["id"], "stratum": video["stratum"], "status": "error",
                                            "error": "download_failed"})
             continue
+        log(f"[{index}/{len(todo)}] {video['id']}: video ready ({fetched['bytes'] / 1e6:.0f} MB, sha256 {fetched['sha256'][:12]}), running pipeline")
         row = extract_one(video, Path(fetched["path"]), inputs_dir, run_task, manager._get_checkpoint_path, merge_speech_and_ocr)
         append_ledger(extract_ledger, row)
-        print(json.dumps({k: row.get(k) for k in ("id", "status", "segmenter", "merge_ocr_words", "wall_seconds", "error")}), flush=True)
+        if row["status"] == "ok":
+            log(f"[{index}/{len(todo)}] {video['id']}: OK in {row['wall_seconds']}s | segmenter={row['segmenter']} scenes={row['scenes']} "
+                f"keyframes={row['keyframes']} with_ocr={row['keyframes_with_ocr']} raw_ocr_words={row['raw_ocr_words']} | "
+                f"transcript_words={row['merge_transcript_words']} ocr_words_in_input={row['merge_ocr_words']} slides_used={row['merge_slides_used']} | "
+                f"asr={row['asr_model']} lang={row['language']} | input {row['input_bytes'] / 1e3:.0f} KB sha256 {row['input_sha256'][:12]}")
+        else:
+            log(f"[{index}/{len(todo)}] {video['id']}: ERROR {row['error']} after {row['wall_seconds']}s: {row.get('detail')} (traceback in run/logs/errors.log)")
+        log(f"GPU: {gpu_line()}")
+    final = read_ledger(extract_ledger)
+    log(f"finished: {sum(r.get('status') == 'ok' for r in final.values())} ok, {sum(r.get('status') == 'error' for r in final.values())} error of {len(videos)}")
     return 0
 
 

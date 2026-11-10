@@ -15,7 +15,7 @@ import sys
 import time
 from pathlib import Path
 
-from experiments.scripts.led_ocr_ablation_extract import assert_app_commit, assert_pinned_settings, assert_private_dir, append_ledger, read_ledger, read_rows, video_slug
+from experiments.scripts.led_ocr_ablation_extract import assert_app_commit, assert_pinned_settings, assert_private_dir, append_ledger, gpu_line, log, log_traceback, read_ledger, read_rows, video_slug
 
 ARMS = ("A", "D")
 ARM_FLAG = {"A": False, "D": True}
@@ -81,6 +81,7 @@ def generate_cell(video: dict, arm: str, inputs: dict, led, set_flag, merge, cal
                    summary_sha256=sha256_text(summary), led_calls=call_counter[0])
         private["summary_text"] = summary
     except Exception as error:  # noqa: BLE001 - recorded, never rerun
+        log_traceback(Path(os.environ.get("ABLATION_LOG_DIR", ".")), f"{video['id']}|{arm}")
         row.update(status="error", error=type(error).__name__, detail=str(error)[:160])
     row["generation_seconds"] = round(time.perf_counter() - started, 1)
     return row, private
@@ -160,7 +161,10 @@ def main(argv: list[str] | None = None) -> int:
     def set_flag(value: bool) -> None:
         worker_settings.LED_INCLUDE_OCR = value
 
-    for video in videos:
+    os.environ["ABLATION_LOG_DIR"] = str(out_dir / "logs")
+    log(f"set={args.set}: {len(videos)} videos, {len(done)} cells already in the receipt; model={worker_settings.LED_MODEL}")
+    log(f"GPU: {gpu_line()}")
+    for index, video in enumerate(videos, 1):
         info = extracted.get(video["id"])
         if not info or info.get("status") != "ok":
             for arm in ARMS:  # the pair is not comparable; recorded, not skipped silently
@@ -173,11 +177,19 @@ def main(argv: list[str] | None = None) -> int:
         for arm in ARMS:
             if cell_key(video["id"], arm) in done:
                 continue
+            log(f"[{index}/{len(videos)}] {video['id']} arm {arm}: generating (LED_INCLUDE_OCR={ARM_FLAG[arm]})")
             row, private = generate_cell(video, arm, inputs, build_led_result, set_flag, merge_speech_and_ocr, calls, observed)
             with private_path.open("a", encoding="utf-8") as handle:
                 handle.write(json.dumps(private, ensure_ascii=False) + "\n")
             append_ledger(receipt_path, row)
-            print(json.dumps({k: row.get(k) for k in ("id", "arm", "status", "word_count", "ocr_words", "error")}), flush=True)
+            if row["status"] == "ok":
+                log(f"[{index}/{len(videos)}] {video['id']} arm {arm}: OK in {row['generation_seconds']}s | words={row['word_count']} led_calls={row['led_calls']} "
+                    f"| transcript_words={row['transcript_words']} ocr_words={row['ocr_words']} slides={row['slides_used']} "
+                    f"| source_match={row['source_observed_match']} model={row['model_used']}")
+            else:
+                log(f"[{index}/{len(videos)}] {video['id']} arm {arm}: ERROR {row['error']}: {row.get('detail')}")
+    final = read_rows(receipt_path)
+    log(f"finished: {sum(r.get('status') == 'ok' for r in final)} ok cells, {sum(r.get('status') == 'error' for r in final)} error cells; GPU: {gpu_line()}")
     return 0
 
 
