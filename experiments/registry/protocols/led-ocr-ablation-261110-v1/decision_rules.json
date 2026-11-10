@@ -1,0 +1,35 @@
+{
+  "approved_on": "2026-11-10",
+  "denominator": 40,
+  "format": "led-ocr-ablation-decision-rules-v1",
+  "guard": {
+    "contrast": "D_minus_A",
+    "margin": 0.03,
+    "metric": "minicheck_mean_prob_transcript_plus_ocr"
+  },
+  "interval": {
+    "level": 0.95,
+    "method": "stratified_percentile_bootstrap_by_stratum",
+    "resamples": 10000,
+    "seed": 20261110
+  },
+  "label_order": [
+    "no_selection",
+    "ocr_hurts_summary",
+    "ocr_helps_summary",
+    "no_difference"
+  ],
+  "labels": {
+    "no_difference": "everything else",
+    "no_selection": "fewer than 32 comparable pairs",
+    "ocr_helps_summary": "primary CI low > 0 and primary mean >= +0.01 and guard mean >= -0.03",
+    "ocr_hurts_summary": "(primary CI high < 0 and primary mean <= -0.01) or (guard CI high < 0 and guard mean <= -0.03)"
+  },
+  "min_comparable_pairs": 32,
+  "post_hoc": "any analysis outside this file is labelled post_hoc and never changes the label",
+  "primary": {
+    "contrast": "D_minus_A",
+    "margin": 0.01,
+    "metric": "rougeL_f1_at_350"
+  }
+}

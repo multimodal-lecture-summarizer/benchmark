@@ -1,0 +1,109 @@
+{
+  "analysis": {
+    "default_change": "never automatic; presented to the user",
+    "label_set": [
+      "ocr_helps_summary",
+      "ocr_hurts_summary",
+      "no_difference",
+      "no_selection"
+    ],
+    "level": 0.95,
+    "one_pass": true,
+    "resamples": 10000,
+    "seed": 20261110,
+    "stratify_by": "stratum",
+    "unit": "video"
+  },
+  "app": {
+    "commit": "5e26ea799de9ac7e5a934d684ed4a031ff1202e4",
+    "segmenter_params_check": {
+      "block_threshold": 4.0,
+      "k": 3.0,
+      "min_fraction": 0.22,
+      "min_static_fraction": 0.2,
+      "sample_fps": 2.0,
+      "settle_fraction": 0.03,
+      "volatile_fraction": 0.1
+    },
+    "uncommitted_paths_under_subpath": []
+  },
+  "arms": {
+    "A": {
+      "LED_INCLUDE_OCR": false,
+      "id": "led",
+      "input": "transcript",
+      "valid_cell": "summary_method == 'led' and 'OCR' not in model_used"
+    },
+    "D": {
+      "LED_INCLUDE_OCR": true,
+      "id": "led_ocr",
+      "input": "transcript with 'Slide: ...' blocks",
+      "valid_cell": "summary_method == 'led'"
+    }
+  },
+  "code_sha256": {
+    "led_ocr_ablation_freeze": "55580cc5507f4b40519b4b9884710a30ca76bf570f82a2bcbae0678feb3fbc90"
+  },
+  "cohort_sha256": "ec63d71270336fb3fbd713981233402dc9a4c7f940cc34b8ad65dc4615bb21a8",
+  "decided_on": "2026-11-10",
+  "decision_rules_sha256": "a7fb3f5d9e5ed6c3a2236c2d0ff9f418c6363043d9bf9ea6c65d146191923e9b",
+  "decision_source": "user, 2026-11-10: LED only, two arms, no RAG, no slide-selection evaluation; thresholds, screening-label handling and download scope approved in plan validation",
+  "exposure": "19 cohort videos are in the TIB test split and S1 references were exposed through final523; 17 are train and 4 are valid. The cohort is not an unseen set.",
+  "extraction": {
+    "ASR_ENGLISH_BACKEND": "qwen3",
+    "ENABLE_FLORENCE_CAPTIONING": "false",
+    "ENABLE_OBJECT_TRACKING": "false",
+    "HF_TOKEN": "",
+    "SCENE_SEGMENTER": "slide",
+    "full_environment_capture": "phase 2 records every worker_settings value used, per run",
+    "output_language": "en",
+    "segmenter_params": "frozen 2026-11-09, see segmenter_params_check",
+    "source_language": "en",
+    "summary_length": "detailed",
+    "word_cap": 350
+  },
+  "format": "led-ocr-ablation-protocol-v1",
+  "limitations": [
+    "TIB abstracts mostly summarize speech, so ROUGE-L understates any OCR benefit; no_difference is a valid outcome",
+    "screening labels were not re-reviewed; mislabelled videos dilute the OCR effect toward no_difference",
+    "slide mode has diagnostic-level evidence only; result applies to this configuration (slide, PaddleOCR, 576p)",
+    "no 360p, whiteboard or content-mode generalisation"
+  ],
+  "metrics": {
+    "descriptive": [
+      "BERTScore F1",
+      "ROUGE-L @120",
+      "word count",
+      "MiniCheck with transcript-only evidence",
+      "slide-term coverage",
+      "generation time, LED calls, OCR words, slides used"
+    ],
+    "guard": "MiniCheck mean sentence probability, D minus A, evidence = transcript + cleaned OCR for both arms",
+    "primary": "ROUGE-L F1 @350 words, D minus A (rouge-score 0.1.2, stemmer on)",
+    "slide_term_coverage": "T = content words (>=3 letters, lowercase, stopwords removed) in the cleaned OCR and not in the transcript; coverage = |T ∩ summary words| / |T|; videos with empty T dropped; descriptive only"
+  },
+  "protocol_id": "led-ocr-ablation-261110-v1",
+  "question": "does interleaving slide OCR into the LED input change the English summary versus transcript only",
+  "reference": {
+    "dataset": "gigant/tib",
+    "join": "dataset field `doi` == cohort id; reference = field `abstract`",
+    "note": "ASR transcript here is Qwen3-ASR pipeline output, not the TIB transcript used in final523",
+    "revision": "e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee"
+  },
+  "run_rules": {
+    "automatic_retries": 0,
+    "download_failure": "recorded, no substitute video",
+    "generations_per_cell": 1,
+    "order": "A then D within each video"
+  },
+  "segmenter_params_file": "benchmark/experiments/registry/datasets/slide-segmentation-frozen-params-261109.json",
+  "shortlist_sha256": "502892c258713a2277a079c3656798f688312e3c08819339c2b85942700b8af1",
+  "single_changed_factor": "LED_INCLUDE_OCR; both arms read the same hashed input file per video",
+  "special_cells": {
+    "error_cell": "recorded, pair not comparable, never rerun to change a result",
+    "ocr_not_in_input": "D equals A; still a valid pair (intention-to-treat); report the count",
+    "segmenter_fell_back_to_content": "kept in cohort, flagged, reported separately"
+  },
+  "status": "frozen",
+  "supersedes": "summary part of plan 261108-1746-ocr-ablation-english-summary (paused, not cancelled)"
+}

@@ -1,0 +1,842 @@
+{
+  "count": 40,
+  "format": "led-ocr-ablation-cohort-v1",
+  "negative_control": "none (dropped by the user on 2026-11-10)",
+  "protocol_id": "led-ocr-ablation-261110-v1",
+  "screening_label": "core_ready taken as given from the shortlist; it selects videos, it never enters a score",
+  "smoke_note": "outside the cohort; used only for the phase 2 and 3 dry runs; never scored",
+  "smoke_videos": [
+    {
+      "core_ready": false,
+      "duration_s": 1999,
+      "height": 576,
+      "id": "10.5446/14059",
+      "license": "CC BY 3.0 DE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de03a46335772c1c129ba1565fa4497bcc9242d3c8395c5c293281d18be4e0f392c4/jeremy_c._smith__computational_science_-_saving_the_environment__curing_disease__720p_30fps_h264-128.mp4",
+      "page_url": "https://av.tib.eu/media/14059",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 200.0,
+      "split": "train",
+      "stratum": "S2_cs_talk_unscored",
+      "title": "HITS Symposium 2015 - Computational Science",
+      "visual_class": "image_heavy_low_text",
+      "width": 1024
+    },
+    {
+      "core_ready": false,
+      "duration_s": 2998,
+      "height": 576,
+      "id": "10.5446/16412",
+      "license": "CC BY 3.0 Unported",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de6924c8ed8e3a5d14cbd9555a0bb3cb9a7bd4ca34d5c15eb7b437abdb4908a8ab/lars_brink_-_counterterms_in_gravity_and_n___8_supergravity.mp4",
+      "page_url": "https://av.tib.eu/media/16412",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 289.0,
+      "split": "train",
+      "stratum": "S3_lecture_genre",
+      "title": "Counterterms in gravity and N = 8 Supergravity",
+      "visual_class": "filmed_projection",
+      "width": 1024
+    },
+    {
+      "core_ready": false,
+      "duration_s": 3420,
+      "height": 576,
+      "id": "10.5446/20769",
+      "license": "CC BY 3.0 Unported",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de371352f9b93d8f9ce8b4d0d5c8e492cdffbf5d255f092d9ebb78179ed2abcfde/mahir_hadzic_-_nonlinear_stability_of_expanding_stars_in_the_mass-critical_euler-poisson_system.mp4",
+      "page_url": "https://av.tib.eu/media/20769",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 334.0,
+      "split": "train",
+      "stratum": "S4_stem_formula_talk",
+      "title": "Nonlinear stability of expanding stars in the mass-critical Euler-Poisson system",
+      "visual_class": "filmed_projection",
+      "width": 1024
+    }
+  ],
+  "split_counts": {
+    "test": 19,
+    "train": 17,
+    "valid": 4
+  },
+  "strata_counts": {
+    "S1_cs_talk_scored": 18,
+    "S2_cs_talk_unscored": 8,
+    "S3_lecture_genre": 5,
+    "S4_stem_formula_talk": 9
+  },
+  "total_duration_hours": 20.7,
+  "total_size_mb": 7418.0,
+  "videos": [
+    {
+      "core_ready": true,
+      "duration_s": 1463,
+      "height": 576,
+      "id": "10.5446/31589",
+      "license": "CC BY 3.0 DE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/debf06dbe50d1039a51bbb7639d7ee7efeb4028813a18dc88fa76d24982c3eeccf/03_ivan_martinez_720p.mp4",
+      "page_url": "https://av.tib.eu/media/31589",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 147.0,
+      "split": "test",
+      "stratum": "S1_cs_talk_scored",
+      "title": "Adopting OGC Standards in a Flood Alert System",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 2462,
+      "height": 576,
+      "id": "10.5446/32263",
+      "license": "CC BY 4.0 International",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de49c82dd349d1501e31be5454242f6619168d85847d1d70166ae94888903b7f1c/froscon2017-2032-mysql_mariadb_versus_postgresql.mp4",
+      "page_url": "https://av.tib.eu/media/32263",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 246.0,
+      "split": "test",
+      "stratum": "S1_cs_talk_scored",
+      "title": "MySQL, MariaDB versus PostgreSQL",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 2551,
+      "height": 576,
+      "id": "10.5446/32334",
+      "license": "CC BY 4.0 International",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de016330dc5945151d0c9d07ec54d05418083a06467434521d494ae54b9d60a8c8/froscon2017-1922-cost-efficient_virtual_petabytes_storage_pools.mp4",
+      "page_url": "https://av.tib.eu/media/32334",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 254.0,
+      "split": "train",
+      "stratum": "S2_cs_talk_unscored",
+      "title": "Cost-Efficient Virtual Petabytes Storage Pools",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 2467,
+      "height": 576,
+      "id": "10.5446/37296",
+      "license": "CC BY 3.0 DE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/deb1c64b9f98925630e33d9a81dde1d4b3584e96ba2ebf16314c5dd29fdc596e2b/introduction-scientific-research.mp4",
+      "page_url": "https://av.tib.eu/media/37296",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 249.0,
+      "split": "train",
+      "stratum": "S3_lecture_genre",
+      "title": "Introduction to Scientific Research",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 851,
+      "height": 576,
+      "id": "10.5446/40322",
+      "license": "CC BY 2.0 BE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de2406583bb2e2909607f7d7a99d41b7fcba7a0aa989efa971c070b945feecfa92/spoiling_and_counter-spoiling_x-ale5kz0pu_2.mp4",
+      "page_url": "https://av.tib.eu/media/40322",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 87.0,
+      "split": "test",
+      "stratum": "S1_cs_talk_scored",
+      "title": "Spoilers and Counter-Spoilers",
+      "visual_class": "slide_capture_readable",
+      "width": 768
+    },
+    {
+      "core_ready": true,
+      "duration_s": 1343,
+      "height": 576,
+      "id": "10.5446/41975",
+      "license": "CC BY 2.0 BE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de5d7abe75bd6eeb59e77f0bc66e8c2635bbecc2e4ecbd37ce34dc22b3e5eab5d2/device_tailored_compositors_with_the_qtwayland_compositor_framework.mp4",
+      "page_url": "https://av.tib.eu/media/41975",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 133.0,
+      "split": "test",
+      "stratum": "S1_cs_talk_scored",
+      "title": "Device Tailored Compositors with the QtWayland Compositor Framework",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 3019,
+      "height": 576,
+      "id": "10.5446/42115",
+      "license": "CC BY 2.0 BE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/deea57d1a3114334a4266b519ad5202923d820f252320a58fdf333749e5be7936a/interacting_with_bareos_using_bareos_console_commands_to_automate_task.mp4",
+      "page_url": "https://av.tib.eu/media/42115",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 306.0,
+      "split": "test",
+      "stratum": "S1_cs_talk_scored",
+      "title": "Interacting with Bareos Using Bareos",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 1509,
+      "height": 576,
+      "id": "10.5446/42453",
+      "license": "CC BY 2.0 BE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de84f7a206b9f80db27d924185b94c1d2467163d0ff1c1e9d2c6f6877edbacc708/working_with_spatial_data_in_go.mp4",
+      "page_url": "https://av.tib.eu/media/42453",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 167.0,
+      "split": "train",
+      "stratum": "S2_cs_talk_unscored",
+      "title": "Working with geodata in Go",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 1851,
+      "height": 576,
+      "id": "10.5446/43821",
+      "license": "CC BY 4.0 International",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de8f21d4d646f4f1736f65cada5c30f9e0477f7c99155c30f164f3ee3706cd2a290b22/33c3-7966-geolocation_methods_in_mobile_networks.mp4",
+      "page_url": "https://av.tib.eu/media/43821",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 180.0,
+      "split": "train",
+      "stratum": "S2_cs_talk_unscored",
+      "title": "Geolocation methods in mobile networks",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 2410,
+      "height": 576,
+      "id": "10.5446/44543",
+      "license": "CC BY 2.0 BE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de111cc994ea42f8992eeed1e7b91ded66297c8fefce400fa9bf17799ffd234a9d/smb2_posix_extensions_where_we_are__what_remains_to_be_done__4ws33fe6m1g.mp4",
+      "page_url": "https://av.tib.eu/media/44543",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 237.0,
+      "split": "test",
+      "stratum": "S1_cs_talk_scored",
+      "title": "SMB3 UNIX Extensions",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 1753,
+      "height": 576,
+      "id": "10.5446/44576",
+      "license": "CC BY 2.0 BE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/dedb7947613d17298b2d1f4273aba2e5c83668dd4dd09e8c8cc6125c30cff3372c57/testing_over_1000_gtlds_for_edns0_kp2ir6rmh1m.mp4",
+      "page_url": "https://av.tib.eu/media/44576",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 171.0,
+      "split": "test",
+      "stratum": "S1_cs_talk_scored",
+      "title": "Testing Over 1000 gTLDs for EDNS0",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 676,
+      "height": 576,
+      "id": "10.5446/46040",
+      "license": "CC BY 3.0 DE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de4aa365b95313f9284c669d7a23395ae8ebeeb22d86ab0cd8245aefb291c16fc5/pcb9.mp4",
+      "page_url": "https://av.tib.eu/media/46040",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 68.0,
+      "split": "train",
+      "stratum": "S3_lecture_genre",
+      "title": "Reaction kinetics 101 - Rate law, half life and energy profile of simple reactions",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 1739,
+      "height": 576,
+      "id": "10.5446/46339",
+      "license": "CC BY 3.0 DE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de3c74f9bdfc4257bf51a2175de90106cfedb170f316f73ca00a8e710a4b7d5945/towardsageneralised.mp4",
+      "page_url": "https://av.tib.eu/media/46339",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 176.0,
+      "split": "valid",
+      "stratum": "S4_stem_formula_talk",
+      "title": "Towards a generalised approach for defining, organising and storing metadata from all experiments at the ESRF.",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 1429,
+      "height": 576,
+      "id": "10.5446/47309",
+      "license": "CC BY 2.0 BE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de1632e4876c90b53f135d777b25044345a5aad41acbc2b53bbc89f322868c421f/dip_gnunet.mp4",
+      "page_url": "https://av.tib.eu/media/47309",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 144.0,
+      "split": "test",
+      "stratum": "S1_cs_talk_scored",
+      "title": "GNUnet: A network protocol stack for building secure, distributed, and privacy-preserving applications",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 1274,
+      "height": 576,
+      "id": "10.5446/47326",
+      "license": "CC BY 2.0 BE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de50a2b9d45531d1c623a3fa5c30f9f3ccef33ca7112a316b71dbf7214c16a4fe8a0/openapi.mp4",
+      "page_url": "https://av.tib.eu/media/47326",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 127.0,
+      "split": "test",
+      "stratum": "S1_cs_talk_scored",
+      "title": "Using OpenAPI to Maximise Your Pulp 3 Experience",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 1229,
+      "height": 576,
+      "id": "10.5446/47328",
+      "license": "CC BY 2.0 BE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de4a2ffbec46e63d7ffbafbc1f67164ae9505e0df8c74405876dce61f3eaed9f92/online_open_document_editing_new_possibilities.mp4",
+      "page_url": "https://av.tib.eu/media/47328",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 125.0,
+      "split": "test",
+      "stratum": "S1_cs_talk_scored",
+      "title": "Online Open Document Editing New Possibilities",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 1065,
+      "height": 576,
+      "id": "10.5446/47641",
+      "license": "CC BY 3.0 Unported",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de5c308f029d7dd4b9728baa72c3d231eddfd0b61a916fab6bc3c5867916ba804bc4/_dcberlin18_204_medack_data_classes_and_parsing_js_0fwbkjvhpou.mp4",
+      "page_url": "https://av.tib.eu/media/47641",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 107.0,
+      "split": "test",
+      "stratum": "S1_cs_talk_scored",
+      "title": "Data Classes and Parsing Json - A Story About Converting Models to Kotlin",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 3193,
+      "height": 576,
+      "id": "10.5446/51261",
+      "license": "CC BY 3.0 Unported",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de25e6e815d96de94ead27a4269fdff9161ccd3a1ab75f03930c9d50566ed16385/david_broadhurst_-_tasmanian_adventures_f12a7ldmwva.mp4",
+      "page_url": "https://av.tib.eu/media/51261",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 317.0,
+      "split": "train",
+      "stratum": "S4_stem_formula_talk",
+      "title": "Tasmanian Adventures",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 3250,
+      "height": 576,
+      "id": "10.5446/51264",
+      "license": "CC BY 3.0 Unported",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de9943655fefddf1c96bd5b83a8bc8f90934b5b14f606da4e24988b7644b3d8861/gerald_dunne_-_resurgent_trans-series_analysis_of__29enkkqudvi.mp4",
+      "page_url": "https://av.tib.eu/media/51264",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 323.0,
+      "split": "valid",
+      "stratum": "S4_stem_formula_talk",
+      "title": "Resurgent Trans-series Analysis of Hopf Algebraic Renormalization",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 3124,
+      "height": 576,
+      "id": "10.5446/51267",
+      "license": "CC BY 3.0 Unported",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de7bec327f0e32c3d6746116626e350b39b9745c5c6dfd494ce3393fac0b9afd2fe3/john_gracey_-_generalized_gross-neveu_universality_iixuaplpjwa.mp4",
+      "page_url": "https://av.tib.eu/media/51267",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 311.0,
+      "split": "valid",
+      "stratum": "S4_stem_formula_talk",
+      "title": "Generalized Gross-Neveu Universality Class with Non-abelian Symmetry",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 2842,
+      "height": 576,
+      "id": "10.5446/51290",
+      "license": "CC BY 3.0 Unported",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de0f8633ed255dc33a924cc933306a5af66134d5abea6b1e75e01eaaf096e44f28/richard_kerner_-_unifying_colour_su_3__with_z3-gra_z_kodr3xvpk.mp4",
+      "page_url": "https://av.tib.eu/media/51290",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 287.0,
+      "split": "test",
+      "stratum": "S4_stem_formula_talk",
+      "title": "Unifying Colour SU(3) with Z3-Graded Lorentz-Poincaré Algebra",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 1075,
+      "height": 576,
+      "id": "10.5446/52177",
+      "license": "CC BY 3.0 Unported",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de01720ea8ee617a4a77670faeb41d6d293f5806083aacb8117f206171baac4165/the_death_and_rebirth_of_docs_rs_-_quiet_misdreavu_jlqmnwvun7q.mp4",
+      "page_url": "https://av.tib.eu/media/52177",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 109.0,
+      "split": "test",
+      "stratum": "S1_cs_talk_scored",
+      "title": "The Death and Rebirth of Docs.rs",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 2539,
+      "height": 576,
+      "id": "10.5446/52208",
+      "license": "CC BY 3.0 Unported",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de095e21718075f13199a102862670d5c11d5801634c094751be84b018818fa066/rusty_days_2020_-_lachezar_lechev__drone_control_-_e2mjq9qm_io.mp4",
+      "page_url": "https://av.tib.eu/media/52208",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 280.0,
+      "split": "test",
+      "stratum": "S1_cs_talk_scored",
+      "title": "Drone Control - \"Controlling a drone using Rust over WiFi\"",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 3214,
+      "height": 576,
+      "id": "10.5446/52396",
+      "license": "CC BY 2.0 BE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de3a71492d12c8684e7cbeb2a80cdef93a41cd768bf5042ff1a2cc315c302a4f42d7/humancentricinternet.mp4",
+      "page_url": "https://av.tib.eu/media/52396",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 322.0,
+      "split": "test",
+      "stratum": "S1_cs_talk_scored",
+      "title": "Designing a human centric next generation internet",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 2710,
+      "height": 576,
+      "id": "10.5446/52747",
+      "license": "CC BY 2.0 BE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de4a99bedd4f66485b9215059b398693b471360e93640d4c76d1db5816ad1a228c/mozilla_history_20_years_and_counting.mp4",
+      "page_url": "https://av.tib.eu/media/52747",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 244.0,
+      "split": "train",
+      "stratum": "S2_cs_talk_unscored",
+      "title": "Mozilla History: 20+ Years And Counting",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 1525,
+      "height": 576,
+      "id": "10.5446/52752",
+      "license": "CC BY 2.0 BE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de6cc90b93522c14ce2961767ae7153713b9bfa4758ca2f1251865bd306a633162/hitchhikers_guide_mysql.mp4",
+      "page_url": "https://av.tib.eu/media/52752",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 154.0,
+      "split": "test",
+      "stratum": "S1_cs_talk_scored",
+      "title": "Hitchhiker's Guide to MySQL",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 1473,
+      "height": 576,
+      "id": "10.5446/53272",
+      "license": "CC BY 2.0 BE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de3f7f53c569ee5011382a5327aa5092eb9321bc04e09edefda7173b531ec9af86/postgresql_foreign_data_wrapper_study_for_schemaless_databases.mp4",
+      "page_url": "https://av.tib.eu/media/53272",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 148.0,
+      "split": "train",
+      "stratum": "S2_cs_talk_unscored",
+      "title": "Foreign data wrapper study for schemaless databases",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 1371,
+      "height": 576,
+      "id": "10.5446/53278",
+      "license": "CC BY 2.0 BE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de86e46129bd2b07bf15d09378b1bec1a2053937fde5b9a66228d9ad76492d85c5/postgresql_postgres_architectures_in_production.mp4",
+      "page_url": "https://av.tib.eu/media/53278",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 138.0,
+      "split": "test",
+      "stratum": "S1_cs_talk_scored",
+      "title": "PostgreSQL Architectures in Production",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 1410,
+      "height": 576,
+      "id": "10.5446/54144",
+      "license": "CC BY 3.0 DE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de63838787d6b63bf50118b5119a521e15f697f6e95680c83bf29934ce90e9d90d/mood_sciencewebinars_williamwint_overviewofmoodvectorandhostmodelling_30june.mp4",
+      "page_url": "https://av.tib.eu/media/54144",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 144.0,
+      "split": "train",
+      "stratum": "S3_lecture_genre",
+      "title": "Overview of MOOD Vector and Host Modelling",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 1155,
+      "height": 576,
+      "id": "10.5446/54635",
+      "license": "CC BY 3.0 Unported",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de1cfb68179f04321f6052eb759e0206c73ed19b999a91478d8e5981288137564b/leap_next_-nh4dlwizzu.mp4",
+      "page_url": "https://av.tib.eu/media/54635",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 115.0,
+      "split": "test",
+      "stratum": "S1_cs_talk_scored",
+      "title": "Leap Next",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 1018,
+      "height": 576,
+      "id": "10.5446/54661",
+      "license": "CC BY 3.0 Unported",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de2d255c30e6d7224a170971b0a306d1bc9c136a3b19e4e9fe7ec34ec941eeef716f/why_should_companies_be_interested_in_the_next_ver_sth1fkcgymw.mp4",
+      "page_url": "https://av.tib.eu/media/54661",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 102.0,
+      "split": "train",
+      "stratum": "S2_cs_talk_unscored",
+      "title": "Why Should Companies be interested in the next version of openSUSE Leap",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 1541,
+      "height": 576,
+      "id": "10.5446/54687",
+      "license": "CC BY 3.0 Unported",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/decef89060406590fdf61606c4a8bba243518f1597e6cae28dd894ec153384ea5a/opensuse_virtual_conference_2021_-_live__getting_y_-0j8zn0_518.mp4",
+      "page_url": "https://av.tib.eu/media/54687",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 163.0,
+      "split": "test",
+      "stratum": "S1_cs_talk_scored",
+      "title": "Getting your changes into openSUSE Leap and SLE",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 1728,
+      "height": 576,
+      "id": "10.5446/55529",
+      "license": "CC BY 3.0 Unported",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/decb788a15cce5b5c5f5b7a6f14dd55e0aa577b09b2a344912b5b2c42402b07e8a/jason_parker_-_covariant_isotropy_of_grothendieck__sws0s5ruyqk.mp4",
+      "page_url": "https://av.tib.eu/media/55529",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 174.0,
+      "split": "train",
+      "stratum": "S3_lecture_genre",
+      "title": "Covariant Isotropy of Grothendieck Toposes",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 2007,
+      "height": 576,
+      "id": "10.5446/55545",
+      "license": "CC BY 3.0 Unported",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/defc5f2cb41db5b734e81f876dbdbe31e9c8510b262e8c6422b4d673d5745ea1c6/peter_arndt_-_ranges_of_functors_and_geometric_cla_qsmhp0e-de8.mp4",
+      "page_url": "https://av.tib.eu/media/55545",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 201.0,
+      "split": "train",
+      "stratum": "S3_lecture_genre",
+      "title": "Ranges of functors and geometric classes via topos theory",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 625,
+      "height": 576,
+      "id": "10.5446/56875",
+      "license": "CC BY 2.0 BE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de6395c2038f8af7258b5170c6b20de7c01b08d0db2983686c9ac255bcde161239/lotech_editingsimulation.mp4",
+      "page_url": "https://av.tib.eu/media/56875",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 56.0,
+      "split": "valid",
+      "stratum": "S2_cs_talk_unscored",
+      "title": "Editing Simulation",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 1707,
+      "height": 576,
+      "id": "10.5446/57304",
+      "license": "CC BY 3.0 Unported",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/deeda9796831af31b5b5faefbe88ecf21aeb88a5688168d2243961662db6bebf53/foss4g_-_al_accelerated_human-in-the-loop_schools__jfco23xl8nk.mp4",
+      "page_url": "https://av.tib.eu/media/57304",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 166.0,
+      "split": "train",
+      "stratum": "S2_cs_talk_unscored",
+      "title": "Al Accelerated Human-in-the-Loop schools and land use and land cover mapping",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 2162,
+      "height": 576,
+      "id": "10.5446/57498",
+      "license": "CC BY 3.0 DE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de6e6b51fe2ed36312f6108d31a8d05a7d01a3ef7a6799555e5e880e23d75e74e6/03_may.mp4",
+      "page_url": "https://av.tib.eu/media/57498",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 205.0,
+      "split": "train",
+      "stratum": "S4_stem_formula_talk",
+      "title": "Fiber reinforced polymers - half the weight, but double the modelling effort",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 2176,
+      "height": 576,
+      "id": "10.5446/57501",
+      "license": "CC BY 3.0 DE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/dec009c76412c102b85206938050e396eb193daf0ebfc2e07507fa68a8afcd3ae6/06_doerfler.mp4",
+      "page_url": "https://av.tib.eu/media/57501",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 202.0,
+      "split": "train",
+      "stratum": "S4_stem_formula_talk",
+      "title": "Data-Enabled Predictive Control",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 1684,
+      "height": 576,
+      "id": "10.5446/57505",
+      "license": "CC BY 3.0 DE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/dec02f8493aea4b89947b184cdca8be6c20803cdeb121a09ec858187fdd94bbefc/10_frerichs.mp4",
+      "page_url": "https://av.tib.eu/media/57505",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 152.0,
+      "split": "train",
+      "stratum": "S4_stem_formula_talk",
+      "title": "On reducing spurious oscillations in discontinuous Galerkin methods for convection-diffusion equations",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    },
+    {
+      "core_ready": true,
+      "duration_s": 1901,
+      "height": 576,
+      "id": "10.5446/57507",
+      "license": "CC BY 3.0 DE",
+      "media_url": "https://tib.flowcenter.de/mfc/medialink/3/de24dd84b7b7d1d0075c5c5ea9a397799585065e514d0b3b22f3b15ed412299d9fc0/12_kueker.mp4",
+      "page_url": "https://av.tib.eu/media/57507",
+      "screening_label_source": [
+        "plans/reports/dataset-shortlist-261108-1703-tib-ccc-niche-candidates.csv",
+        "plans/reports/phd-review-261108-1703-benchmark-niche-dataset-report.md"
+      ],
+      "size_mb": 181.0,
+      "split": "train",
+      "stratum": "S4_stem_formula_talk",
+      "title": "Solar and stellar activity: Mean field models and direct numerical simulations",
+      "visual_class": "slide_capture_readable",
+      "width": 1024
+    }
+  ]
+}

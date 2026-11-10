@@ -1,0 +1,9 @@
+{
+  "frozen_on": "2026-11-10",
+  "protocol_id": "led-ocr-ablation-261110-v1",
+  "sha256": {
+    "cohort.json": "ec63d71270336fb3fbd713981233402dc9a4c7f940cc34b8ad65dc4615bb21a8",
+    "decision_rules.json": "a7fb3f5d9e5ed6c3a2236c2d0ff9f418c6363043d9bf9ea6c65d146191923e9b",
+    "protocol.json": "23e900daa856e1a29e55ed89405f7d4cb8aeccfd60737da11f6a30157667b774"
+  }
+}
