@@ -136,6 +136,9 @@ def main(argv: list[str] | None = None) -> int:
 
     if not torch.cuda.is_available():  # infrastructure failure, not a result: stop before any cell is written
         raise SystemExit("no CUDA GPU; no cell written")
+    from ai_workers.core.torch_load_patch import patch_transformers_torch_load_check
+
+    patch_transformers_torch_load_check()  # same step process_video runs before it loads any .bin model (torch 2.5.1 gate)
     led_summarizer.load_led()  # fails here, not as 80 permanent error cells
 
     calls = [0]
