@@ -1,4 +1,4 @@
-"""Phase 3a of the LED OCR ablation: two LED summaries per video from the same extracted input.
+﻿"""Phase 3a of the LED OCR ablation: two LED summaries per video from the same extracted input.
 
 Arm A runs with LED_INCLUDE_OCR=False, arm D with True; nothing else differs. Each cell is generated once,
 in the order A then D per video, and a failed cell is final (no rerun to change a result). Summary and source
@@ -15,7 +15,7 @@ import sys
 import time
 from pathlib import Path
 
-from experiments.scripts.led_ocr_ablation_extract import assert_app_commit, assert_pinned_settings, assert_private_dir, append_ledger, gpu_line, log, log_traceback, read_ledger, read_rows, video_slug
+from experiments.scripts.led_ocr_ablation_extract import EXTRACTION_ENV, assert_app_commit, assert_pinned_settings, assert_private_dir, append_ledger, gpu_line, log, log_traceback, read_ledger, read_rows, video_slug
 
 ARMS = ("A", "D")
 ARM_FLAG = {"A": False, "D": True}
@@ -125,6 +125,7 @@ def main(argv: list[str] | None = None) -> int:
     assert_private_dir(out_dir)
     os.chdir(app_root)
     sys.path.insert(0, str(app_root))
+    os.environ.update(EXTRACTION_ENV)  # same pinned settings as extraction; verified right after the import
     from ai_workers.core.config import worker_settings
     from ai_workers.modules.summarization import led_summarizer
     from ai_workers.modules.summarization.led_summarizer import build_led_result
