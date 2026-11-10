@@ -94,7 +94,7 @@ Label `confirmed` ([analysis report](../../plans/reports/implementation-261026-1
 
 Both parts are **exploratory / post-hoc on the already-used test set** and do not change the `confirmed` label or the LED choice. Cohort C = the 519 IDs with all outputs scored; stratified percentile bootstrap, seed 20261031, 10,000 resamples, 95% intervals. Per-record scores and receipts: [faithfulness](../experiments/registry/results/tib-final523-faithfulness-261031-v1/), [app LLM](../experiments/registry/results/tib-final523-applm-261031-v1/); sentence text stays private.
 
-**Faithfulness (MiniCheck roberta-large, sentence level, whole-source evidence).** LED − BART mean sentence support: −0.170 [−0.195, −0.145]; flagged-sentence share +0.164 [+0.131, +0.196] (LED 26.4% vs BART 10.0%). Label `led_less_faithful`. Caveat: a hand check of 11 flagged sentences per profile found 5/11 (LED) and 4/11 (BART) false flags, so MiniCheck over-flags abstractive sentences and the absolute rates are not hallucination rates. The decision between LED and BART is left to the user.
+**Faithfulness (MiniCheck roberta-large, sentence level, whole-source evidence).** LED − BART mean sentence support: −0.170 [−0.195, −0.145]; flagged-sentence share +0.164 [+0.131, +0.196] (LED 26.4% vs BART 10.0%). Label `led_less_faithful`. Caveat: a single-rater review by Claude (no human rater; blind to score and flag) of 11 flagged sentences per profile found 5/11 (LED) and 4/11 (BART) false flags, so MiniCheck over-flags abstractive sentences and the absolute rates are not hallucination rates. The decision between LED and BART is left to the user.
 
 **App LLM (`Qwen2.5-7B-Instruct-AWQ`, local T4, greedy, frozen prompt, 523/523 generated, 0 failures).** Text-level comparison only: the real app takes multimodal input and writes structured Vietnamese, TIB is an English transcript with an English abstract, and the AWQ build is not the API model.
 
@@ -104,7 +104,7 @@ Both parts are **exploratory / post-hoc on the already-used test set** and do no
 | MiniCheck mean sentence support | 0.482 | 0.713 | 0.883 |
 | MiniCheck flagged share | 52.4% | 26.4% | 10.0% |
 
-LLM − LED ROUGE-L +0.0156 [+0.0116, +0.0196]; LLM − BART +0.0254 [+0.0207, +0.0298]. The LLM writes a median of 126 words (cap 350), so part of the ROUGE difference may be length. Its MiniCheck gap is **not interpretable**: its sentences were not hand-checked and a freely rewriting LLM is the case most exposed to false flags. BERTScore was not run for the LLM. Details and options: [stance report](../../plans/261031-2136-rq2-summarization-completion/reports/protocol-decision-261102-rq2-app-summarizer-stance-report.md).
+LLM − LED ROUGE-L +0.0156 [+0.0116, +0.0196]; LLM − BART +0.0254 [+0.0207, +0.0298]. The LLM writes a median of 126 words (cap 350), so part of the ROUGE difference may be length. Its MiniCheck gap is **not interpretable**: its sentences were not reviewed for false flags and a freely rewriting LLM is the case most exposed to false flags. BERTScore was not run for the LLM. Details and options: [stance report](../../plans/261031-2136-rq2-summarization-completion/reports/protocol-decision-261102-rq2-app-summarizer-stance-report.md).
 
 ## Detection 03a results (2026-10-27)
 
