@@ -110,6 +110,9 @@ def main(argv: list[str] | None = None) -> int:
     scored = {(r["id"], r["arm"]) for r in read_rows(out_path)}
     d_source = {i: r["source_text"] for (i, arm), r in private.items() if arm == "D"}
     transcripts = {i: r["transcript_text"] for (i, _), r in private.items() if "transcript_text" in r}
+    missing = sorted({c["id"] for c in receipt} - set(references))
+    if missing:  # an unscored cohort would silently look like "no result"; stop instead
+        raise SystemExit(f"no reference abstract for {len(missing)} videos, e.g. {missing[:3]}; nothing scored")
     log(f"scoring set={args.set}: {len(receipt)} cells, {len(scored)} already scored, {len(references)} references loaded")
     for cell in receipt:
         key = (cell["id"], cell["arm"])
@@ -133,9 +136,15 @@ def load_references(ids: list[str]) -> dict[str, str]:
     wanted, found = set(ids), {}
     for split in ("train", "valid", "test"):
         for record in load_dataset("gigant/tib", split=split, revision="e6ab9fd7c6acd164f3284b8c4b17eb9d94681eee"):
-            if record.get("doi") in wanted and (record.get("abstract") or "").strip():
-                found[record["doi"]] = record["abstract"].strip()
+            doi = normalize_doi(record.get("doi"))
+            if doi in wanted and (record.get("abstract") or "").strip():
+                found[doi] = record["abstract"].strip()
     return found
+
+
+def normalize_doi(value) -> str:
+    """The dataset stores DOIs as '10.5446/18349 (DOI)'; cohort ids are the bare '10.5446/18349'."""
+    return str(value or "").replace("(DOI)", "").strip()
 
 
 if __name__ == "__main__":

@@ -100,3 +100,8 @@ def test_source_mismatch_and_merge_failure_become_error_cells():
 
 def test_arm_d_ocr_flag_disagreement_is_an_error():
     assert "ocr_flag_inconsistent" in run("D", make_led(model="LED (x, map-reduce)"))[0]["detail"]
+
+
+def test_doi_normalization_matches_dataset_format():
+    assert sc.normalize_doi("10.5446/18349 (DOI)") == "10.5446/18349"
+    assert sc.normalize_doi(None) == ""
