@@ -119,3 +119,30 @@ def test_segment_evidence_splits_runs_without_full_stops():
     passages = sc.segment_evidence(run_on, max_words=60).split("\n")
     assert [len(p.split()) for p in passages] == [60, 60, 30]
     assert sc.segment_evidence("One. Two three.", max_words=60) == "One.\nTwo three."
+
+
+def test_slide_text_is_recovered_from_the_interleaved_source():
+    texts = ["one two", "three", "four"]
+    source = "one two Slide: Alpha beta. three Slide: Gamma. four"
+    assert sc.slide_text_from(source, texts) == "Slide: Alpha beta.\nSlide: Gamma."
+    assert sc.slide_text_from("one two three four", texts) == ""
+    assert sc.slide_text_from("one two four", texts) is None  # utterance missing: no guess
+    assert sc.slide_text_from(source + " Slide: Tail.", texts).endswith("Slide: Tail.")
+
+
+def test_union_never_scores_below_either_source_and_ignores_empty_sources():
+    def claims(evidence, sentences):
+        return [0.9 if "gamma" in evidence else 0.2 for _ in sentences]
+
+    both = sc.minicheck_union(["s1", "s2"], ["plain speech", "Slide: gamma"], claims)
+    assert both["mean_prob"] == pytest.approx(0.9) and both["sources"] == 2
+    only = sc.minicheck_union(["s1"], ["plain speech", "   "], claims)
+    assert only["mean_prob"] == pytest.approx(0.2) and only["sources"] == 1
+    with pytest.raises(ValueError):
+        sc.minicheck_union(["s1"], ["", " "], claims)
+
+
+def test_score_cell_marks_guard_null_when_slide_alignment_failed():
+    cell = {"id": "v", "stratum": "S1", "arm": "D"}
+    row = sc.score_cell(cell, {"summary_text": "good one. bad one"}, "ref", "ev", "ev", scorers(), slide_text=None)
+    assert row["minicheck_evidence_full"] is None and row["errors"]["minicheck_evidence_full"] == "LookupError"

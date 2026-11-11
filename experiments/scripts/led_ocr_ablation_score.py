@@ -14,10 +14,10 @@ import re
 import statistics
 from pathlib import Path
 
-from experiments.scripts.led_ocr_ablation_extract import append_ledger, log, read_rows
+from experiments.scripts.led_ocr_ablation_extract import append_ledger, log, read_rows, video_slug
 
 SUPPORT_THRESHOLD = 0.5
-EVIDENCE_FORMAT = "passages_le60_words_v1"
+EVIDENCE_FORMAT = "union_max_transcript_slides_v2"
 WORD = re.compile(r"[^\W\d_]{3,}")
 SLIDE_PREFIX = re.compile(r"\bSlide:\s")
 STOPWORDS = frozenset("""
@@ -71,6 +71,47 @@ def segment_evidence(text: str, max_words: int = 60) -> str:
     return "\n".join(pieces)
 
 
+def utterance_texts(utterances: list[dict]) -> list[str]:
+    return [t for t in ((u.get("text") or "").strip() for u in utterances) if t]
+
+
+def slide_text_from(source: str, texts: list[str]) -> str | None:
+    """The slide blocks of an arm-D source: whatever sits between the spoken utterances, in order.
+
+    Returns "" when the source is the plain transcript and None when the utterances cannot be located in order
+    (the caller records an error, never a guess).
+    """
+    position, blocks = 0, []
+    for text in texts:
+        index = source.find(text, position)
+        if index < 0:
+            return None
+        gap = source[position:index].strip()
+        if gap:
+            blocks.append(gap)
+        position = index + len(text)
+    tail = source[position:].strip()
+    if tail:
+        blocks.append(tail)
+    return "\n".join(blocks)
+
+
+def minicheck_union(sentences: list[str], sources: list[str], score_claims) -> dict:
+    """Per sentence the best support over independent evidence sources, then the same statistics as minicheck_stats.
+
+    Scoring each source on its own keeps interleaved OCR text from breaking the 400-token windows MiniCheck builds,
+    and adding a source can never lower a sentence's score.
+    """
+    per_source = [[*score_claims(segment_evidence(text), sentences)] for text in sources if text.strip()]
+    if not per_source or not sentences:
+        raise ValueError("no evidence or no sentences to score")
+    best = [max(values) for values in zip(*per_source)]
+    if len(best) != len(sentences) or not all(isinstance(p, float) and 0.0 <= p <= 1.0 for p in best):
+        raise ValueError("scorer returned a probability outside [0, 1]")
+    return {"mean_prob": statistics.fmean(best), "flagged_share": sum(p < SUPPORT_THRESHOLD for p in best) / len(best),
+            "sentences": len(best), "sources": len(per_source)}
+
+
 def minicheck_stats(sentences: list[str], evidence: str, score_claims) -> dict:
     probs = list(score_claims(evidence, sentences)) if sentences else []
     if len(probs) != len(sentences) or not sentences:
@@ -81,18 +122,23 @@ def minicheck_stats(sentences: list[str], evidence: str, score_claims) -> dict:
             "sentences": len(probs)}
 
 
-def score_cell(cell: dict, private: dict, reference: str, evidence_full: str, transcript: str, scorers: dict) -> dict:
+def score_cell(cell: dict, private: dict, reference: str, evidence_full: str, transcript: str, scorers: dict,
+               slide_text: str | None = "") -> dict:
     """Text-free score row for one valid cell. Each metric fails alone into NULL plus an error type."""
     summary = private["summary_text"]
-    evidence_full_text, transcript_text = segment_evidence(evidence_full), segment_evidence(transcript)
+    def guard():
+        if slide_text is None:
+            raise LookupError("slide blocks could not be separated from the arm D source")
+        return minicheck_union(scorers["split"](summary), [transcript, slide_text], scorers["claims"])
+
     row = {"id": cell["id"], "stratum": cell["stratum"], "arm": cell["arm"], "word_count": len(summary.split()),
            "evidence_format": EVIDENCE_FORMAT, "errors": {}}
     metrics = {
         "rougeL_f1_at_350": lambda: scorers["rouge"](reference, summary),
         "rougeL_f1_at_120": lambda: scorers["rouge"](reference, delivered_prefix(summary, 120)),
         "bertscore_f1": lambda: scorers["bert"](summary, reference),
-        "minicheck_evidence_full": lambda: minicheck_stats(scorers["split"](summary), evidence_full_text, scorers["claims"]),
-        "minicheck_evidence_transcript": lambda: minicheck_stats(scorers["split"](summary), transcript_text, scorers["claims"]),
+        "minicheck_evidence_full": guard,
+        "minicheck_evidence_transcript": lambda: minicheck_stats(scorers["split"](summary), segment_evidence(transcript), scorers["claims"]),
     }
     for name, compute in metrics.items():
         try:
@@ -142,13 +188,19 @@ def main(argv: list[str] | None = None) -> int:
     if missing:  # an unscored cohort would silently look like "no result"; stop instead
         raise SystemExit(f"no reference abstract for {len(missing)} videos, e.g. {missing[:3]}; nothing scored")
     log(f"scoring set={args.set}: {len(receipt)} cells, {len(scored)} already scored, {len(references)} references loaded")
+    slide_texts = {}
+    for vid, d_text in d_source.items():
+        inputs_file = out_dir / "inputs" / f"{video_slug(vid)}.json"
+        utterances = json.loads(inputs_file.read_text(encoding="utf-8"))["data"]["utterances"] if inputs_file.exists() else []
+        slide_texts[vid] = slide_text_from(d_text, utterance_texts(utterances)) if utterances else None
     for cell in receipt:
         key = (cell["id"], cell["arm"])
         if key in scored or cell.get("status") != "ok" or key not in private or cell["id"] not in references:
             continue
         evidence = d_source.get(cell["id"], transcripts.get(cell["id"], ""))
         transcript = transcripts.get(cell["id"], "")
-        row = score_cell(cell, private[key], references[cell["id"]], evidence, transcript, scorers)
+        row = score_cell(cell, private[key], references[cell["id"]], evidence, transcript, scorers,
+                         slide_text=slide_texts.get(cell["id"], ""))
         row["minicheck_package"] = minicheck_meta
         append_ledger(out_path, row)
         mc = row["minicheck_evidence_full"] or {}
