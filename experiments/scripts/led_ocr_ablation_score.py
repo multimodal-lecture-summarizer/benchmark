@@ -90,6 +90,10 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--device", default="cuda:0")
     args = parser.parse_args(argv)
 
+    import nltk
+
+    for resource in ("punkt", "punkt_tab"):  # newer nltk needs punkt_tab; MiniCheck raises LookupError without it
+        nltk.download(resource, quiet=True)
     from experiments.scripts.rq2_tib_benchmark_metrics import SemanticScorer
     from experiments.scripts.tib_pilot_faithfulness import load_minicheck_claims
     from experiments.scripts.tib_summary_constructors import split_sentences
@@ -107,7 +111,8 @@ def main(argv: list[str] | None = None) -> int:
                "bert": lambda hyp, ref: float(semantic._bertscore(hyp, ref)),
                "claims": claims, "split": split_sentences}
     out_path = out_dir / f"scores_receipt_{args.set}.jsonl"
-    scored = {(r["id"], r["arm"]) for r in read_rows(out_path)}
+    # A row whose metrics failed (errors recorded) is scored again: a missing library is not a result.
+    scored = {(r["id"], r["arm"]) for r in read_rows(out_path) if not r.get("errors")}
     d_source = {i: r["source_text"] for (i, arm), r in private.items() if arm == "D"}
     transcripts = {i: r["transcript_text"] for (i, _), r in private.items() if "transcript_text" in r}
     missing = sorted({c["id"] for c in receipt} - set(references))
