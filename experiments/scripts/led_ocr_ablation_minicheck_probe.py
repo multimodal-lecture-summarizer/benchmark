@@ -28,6 +28,8 @@ def main() -> int:
     parser.add_argument("--set", default="smoke")
     parser.add_argument("--video", required=True, help="cohort id, e.g. 10.5446/20769")
     parser.add_argument("--device", default="cuda:0")
+    parser.add_argument("--show-text", action="store_true",
+                        help="print each sentence of both arms with its probability under every evidence variant (private data)")
     args = parser.parse_args()
 
     for resource in ("punkt", "punkt_tab"):
@@ -52,6 +54,14 @@ def main() -> int:
             print(f"  probs {[round(p, 3) for p in probs]} mean {statistics.fmean(probs):.4f}")
         for name, claim in controls.items():
             print(f"control {name}: prob {claims(text, [claim])[0]:.4f}")
+    if args.show_text:
+        variants = {"transcript": segment_evidence(transcript), "full(transcript+slides)": segment_evidence(evidence)}
+        slide_lines = [ln for ln in segment_evidence(evidence).split("\n") if "Slide:" in ln]
+        print(f"--- per-sentence view; slide passages in full evidence: {len(slide_lines)}")
+        for arm in ("A", "D"):
+            for index, sentence in enumerate(split_sentences(private[(args.video, arm)]["summary_text"]), 1):
+                probs = {name: round(claims(text, [sentence])[0], 3) for name, text in variants.items()}
+                print(f"[{arm}{index}] {probs} :: {sentence[:260]}")
     print("package:", meta)
     return 0
 
