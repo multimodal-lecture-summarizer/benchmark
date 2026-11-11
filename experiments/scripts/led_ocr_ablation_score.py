@@ -1,4 +1,4 @@
-"""Phase 3b of the LED OCR ablation: score every valid cell. No comparison is computed here.
+﻿"""Phase 3b of the LED OCR ablation: score every valid cell. No comparison is computed here.
 
 Per cell: ROUGE-L F1 at 350 and 120 words, BERTScore F1, word count, MiniCheck mean probability and flagged share
 against two evidence texts (transcript + cleaned OCR; transcript only), and slide-term coverage. A metric that
@@ -17,6 +17,7 @@ from pathlib import Path
 from experiments.scripts.led_ocr_ablation_extract import append_ledger, log, read_rows
 
 SUPPORT_THRESHOLD = 0.5
+EVIDENCE_FORMAT = "passages_le60_words_v1"
 WORD = re.compile(r"[^\W\d_]{3,}")
 SLIDE_PREFIX = re.compile(r"\bSlide:\s")
 STOPWORDS = frozenset("""
@@ -49,6 +50,27 @@ def term_coverage(terms: set[str], summary: str) -> float | None:
     return len(terms & content_words(summary)) / len(terms)
 
 
+def segment_evidence(text: str, max_words: int = 60) -> str:
+    """Break evidence into passages of at most `max_words` words, one per line.
+
+    MiniCheck (RoBERTa) builds chunks from nltk sentences and truncates the END of `chunk + claim` at 512 tokens.
+    ASR text with few full stops makes one "sentence" longer than the whole window, the claim is cut away and every
+    claim gets the same probability. Line breaks are honoured by MiniCheck as sentence boundaries, so short passages
+    keep room for the claim. The same segmentation is applied to both arms and both evidence kinds.
+    """
+    import nltk
+
+    try:
+        nltk.data.find("tokenizers/punkt_tab")
+    except LookupError:
+        nltk.download("punkt_tab", quiet=True)
+    pieces = []
+    for sentence in nltk.sent_tokenize(text.replace("\n", " ")):
+        words = sentence.split()
+        pieces.extend(" ".join(words[i:i + max_words]) for i in range(0, len(words), max_words))
+    return "\n".join(pieces)
+
+
 def minicheck_stats(sentences: list[str], evidence: str, score_claims) -> dict:
     probs = list(score_claims(evidence, sentences)) if sentences else []
     if len(probs) != len(sentences) or not sentences:
@@ -62,14 +84,15 @@ def minicheck_stats(sentences: list[str], evidence: str, score_claims) -> dict:
 def score_cell(cell: dict, private: dict, reference: str, evidence_full: str, transcript: str, scorers: dict) -> dict:
     """Text-free score row for one valid cell. Each metric fails alone into NULL plus an error type."""
     summary = private["summary_text"]
+    evidence_full_text, transcript_text = segment_evidence(evidence_full), segment_evidence(transcript)
     row = {"id": cell["id"], "stratum": cell["stratum"], "arm": cell["arm"], "word_count": len(summary.split()),
-           "errors": {}}
+           "evidence_format": EVIDENCE_FORMAT, "errors": {}}
     metrics = {
         "rougeL_f1_at_350": lambda: scorers["rouge"](reference, summary),
         "rougeL_f1_at_120": lambda: scorers["rouge"](reference, delivered_prefix(summary, 120)),
         "bertscore_f1": lambda: scorers["bert"](summary, reference),
-        "minicheck_evidence_full": lambda: minicheck_stats(scorers["split"](summary), evidence_full, scorers["claims"]),
-        "minicheck_evidence_transcript": lambda: minicheck_stats(scorers["split"](summary), transcript, scorers["claims"]),
+        "minicheck_evidence_full": lambda: minicheck_stats(scorers["split"](summary), evidence_full_text, scorers["claims"]),
+        "minicheck_evidence_transcript": lambda: minicheck_stats(scorers["split"](summary), transcript_text, scorers["claims"]),
     }
     for name, compute in metrics.items():
         try:
@@ -112,7 +135,7 @@ def main(argv: list[str] | None = None) -> int:
                "claims": claims, "split": split_sentences}
     out_path = out_dir / f"scores_receipt_{args.set}.jsonl"
     # A row whose metrics failed (errors recorded) is scored again: a missing library is not a result.
-    scored = {(r["id"], r["arm"]) for r in read_rows(out_path) if not r.get("errors")}
+    scored = {(r["id"], r["arm"]) for r in read_rows(out_path) if not r.get("errors") and r.get("evidence_format") == EVIDENCE_FORMAT}
     d_source = {i: r["source_text"] for (i, arm), r in private.items() if arm == "D"}
     transcripts = {i: r["transcript_text"] for (i, _), r in private.items() if "transcript_text" in r}
     missing = sorted({c["id"] for c in receipt} - set(references))

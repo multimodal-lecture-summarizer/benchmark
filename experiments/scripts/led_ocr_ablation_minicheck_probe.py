@@ -9,10 +9,13 @@ first sentence of the evidence itself. If every claim gets the same probability,
 from __future__ import annotations
 
 import argparse
+
+import nltk
 import statistics
 from pathlib import Path
 
 from experiments.scripts.led_ocr_ablation_extract import read_rows
+from experiments.scripts.led_ocr_ablation_score import segment_evidence
 from experiments.scripts.tib_pilot_faithfulness import load_minicheck_claims
 from experiments.scripts.tib_summary_constructors import split_sentences
 
@@ -27,8 +30,6 @@ def main() -> int:
     parser.add_argument("--device", default="cuda:0")
     args = parser.parse_args()
 
-    import nltk
-
     for resource in ("punkt", "punkt_tab"):
         nltk.download(resource, quiet=True)
     out = Path(args.out_dir)
@@ -36,16 +37,21 @@ def main() -> int:
     claims, meta = load_minicheck_claims(args.device)
     evidence = private[(args.video, "D")]["source_text"]
     transcript = private[(args.video, "D")]["transcript_text"]
-    print(f"evidence words: full={len(evidence.split())} transcript={len(transcript.split())}")
-    for arm in ("A", "D"):
-        sentences = split_sentences(private[(args.video, arm)]["summary_text"])
-        probs = claims(evidence, sentences)
-        print(f"arm {arm}: {len(sentences)} sentences, words per sentence {[len(s.split()) for s in sentences]}")
-        print(f"  probs {[round(p, 3) for p in probs]} mean {statistics.fmean(probs):.4f}")
+    sentences = nltk.sent_tokenize(evidence.replace("\n", " "))
+    lengths = sorted(len(x.split()) for x in sentences)
+    print(f"evidence words={len(evidence.split())} nltk sentences={len(sentences)} median={lengths[len(lengths) // 2]} "
+          f"max={lengths[-1]} words; sentences over 250 words: {sum(n > 250 for n in lengths)}")
     first_evidence_sentence = split_sentences(transcript)[0]
     controls = {"absurd claim": ABSURD, "verbatim transcript sentence": first_evidence_sentence}
-    for name, claim in controls.items():
-        print(f"control {name}: prob {claims(evidence, [claim])[0]:.4f}")
+    for label, text in (("RAW evidence", evidence), ("SEGMENTED evidence (<=60-word passages)", segment_evidence(evidence))):
+        print(f"=== {label}")
+        for arm in ("A", "D"):
+            claims_list = split_sentences(private[(args.video, arm)]["summary_text"])
+            probs = claims(text, claims_list)
+            print(f"arm {arm}: {len(claims_list)} sentences, words {[len(c.split()) for c in claims_list]}")
+            print(f"  probs {[round(p, 3) for p in probs]} mean {statistics.fmean(probs):.4f}")
+        for name, claim in controls.items():
+            print(f"control {name}: prob {claims(text, [claim])[0]:.4f}")
     print("package:", meta)
     return 0
 

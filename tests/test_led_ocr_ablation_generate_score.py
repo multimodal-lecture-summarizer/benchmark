@@ -105,3 +105,17 @@ def test_arm_d_ocr_flag_disagreement_is_an_error():
 def test_doi_normalization_matches_dataset_format():
     assert sc.normalize_doi("10.5446/18349 (DOI)") == "10.5446/18349"
     assert sc.normalize_doi(None) == ""
+
+
+def test_segment_evidence_splits_runs_without_full_stops():
+    pytest.importorskip("nltk")
+    import nltk
+
+    try:
+        nltk.data.find("tokenizers/punkt_tab")
+    except LookupError:
+        nltk.download("punkt_tab", quiet=True)
+    run_on = " ".join(f"w{i}" for i in range(150))  # no sentence boundary at all
+    passages = sc.segment_evidence(run_on, max_words=60).split("\n")
+    assert [len(p.split()) for p in passages] == [60, 60, 30]
+    assert sc.segment_evidence("One. Two three.", max_words=60) == "One.\nTwo three."
