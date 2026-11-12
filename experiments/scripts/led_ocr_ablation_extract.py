@@ -36,6 +36,7 @@ EXTRACTION_ENV = {
 }
 # Only settings the protocol cares about are written to the env dump (allowlist: .env may hold secrets).
 ENV_DUMP_PREFIXES = ("SCENE_SEGMENTER", "SLIDE_", "ASR_", "LED_", "SUMMARIZER_", "ENABLE_", "FLORENCE_", "SPRINT_", "FASTER_WHISPER", "HF_TOKEN")
+FALLBACK_LIMIT = 2  # attempts allowed when Qwen3-ASR falls back; then the video is a final error (counts in the denominator)
 PINNED = {"SCENE_SEGMENTER": "slide", "ENABLE_FLORENCE_CAPTIONING": False, "ENABLE_OBJECT_TRACKING": False,
           "ASR_ENGLISH_BACKEND": "qwen3", "SUMMARIZER_ENGLISH_BACKEND": "led"}
 
@@ -110,6 +111,14 @@ def append_ledger(path: Path, row: dict) -> None:
         handle.write(json.dumps(row, ensure_ascii=False) + "\n")
         handle.flush()
         os.fsync(handle.fileno())  # a Drive mount may buffer; a row must survive the session ending
+
+
+def fallback_attempts(path: Path) -> dict[str, int]:
+    """How many times each video's Qwen3-ASR fell back to another engine (one row per attempt)."""
+    counts: dict[str, int] = {}
+    for row in read_rows(path):
+        counts[row["id"]] = counts.get(row["id"], 0) + 1
+    return counts
 
 
 def input_intact(row: dict, inputs_dir: Path) -> bool:
@@ -300,6 +309,9 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--protocol-dir", required=True, help="registry folder holding the frozen cohort.json")
     parser.add_argument("--max-minutes", type=float, default=0, help="stop before a video that would overrun this session budget (0 = none)")
     parser.add_argument("--retry-ids", nargs="*", default=[], help="ids to process again after an infrastructure failure")
+    parser.add_argument("--max-videos", type=int, default=0,
+                        help="handle at most this many videos, then exit 0 so the caller starts a fresh process (0 = no limit); "
+                             "the pipeline leaks RAM across videos")
     parser.add_argument("--status", action="store_true", help="print progress from the ledgers and exit (no GPU, no app)")
     args = parser.parse_args(argv)
 
@@ -309,6 +321,7 @@ def main(argv: list[str] | None = None) -> int:
     videos = cohort["smoke_videos" if args.set == "smoke" else "videos"]
     suffix = args.set
     download_ledger, extract_ledger = out_dir / f"download_ledger_{suffix}.jsonl", out_dir / f"extract_ledger_{suffix}.jsonl"
+    fallback_log = out_dir / f"asr_fallback_{suffix}.jsonl"
     inputs_dir = out_dir / "inputs"
     progress_path = out_dir / f"progress_{suffix}.json"
 
@@ -356,7 +369,13 @@ def main(argv: list[str] | None = None) -> int:
     fallbacks: list[str] = []
     download_failures: list[str] = []
     stopped_for_budget = False
+    recycled = False
+    handled = 0
     for index, video in enumerate(todo, 1):
+        if args.max_videos and handled >= args.max_videos:
+            recycled = True
+            log(f"RECYCLE: {handled} videos handled in this process; exiting so the caller starts a fresh one (frees leaked RAM)")
+            break
         finished = build_progress(videos, read_ledger(extract_ledger), inputs_dir)
         if should_stop(time.time() - _T0, args.max_minutes, finished["average_seconds"]):
             stopped_for_budget = True
@@ -373,10 +392,21 @@ def main(argv: list[str] | None = None) -> int:
         row = extract_one(video, Path(fetched["path"]), inputs_dir, run_task, manager._get_checkpoint_path, merge_speech_and_ocr)
         if video["id"] in args.retry_ids and video["id"] in done:
             row["retry_of"] = {k: done[video["id"]].get(k) for k in ("status", "error", "detail")}
+        handled += 1
         if row["status"] == "asr_fallback":
-            fallbacks.append(video["id"])
-            log(f"[{index}/{len(todo)}] {video['id']}: ASR FALLBACK after {row['wall_seconds']}s: {row['detail']}. "
-                "No ledger row written; fix Qwen3-ASR and rerun this cell to process the video again.")
+            append_ledger(fallback_log, {"id": video["id"], "detail": row["detail"], "wall_seconds": row["wall_seconds"],
+                                         "at": datetime.now().isoformat(timespec="seconds")})
+            attempts = fallback_attempts(fallback_log)[video["id"]]
+            if attempts >= FALLBACK_LIMIT:
+                # Qwen3 failed on this video every time: a pipeline failure, recorded as a final error and kept in the denominator.
+                final_row = {"id": video["id"], "stratum": video["stratum"], "status": "error", "error": "qwen3_asr_failed",
+                             "detail": f"Qwen3-ASR fell back in {attempts} attempts ({row['detail']})", "attempts": attempts}
+                append_ledger(extract_ledger, final_row)
+                log(f"[{index}/{len(todo)}] {video['id']}: Qwen3-ASR FAILED {attempts} times -> final error row (counts in the denominator)")
+            else:
+                fallbacks.append(video["id"])
+                log(f"[{index}/{len(todo)}] {video['id']}: ASR FALLBACK (attempt {attempts}/{FALLBACK_LIMIT}) after {row['wall_seconds']}s: "
+                    f"{row['detail']}. No result row; the next run tries again.")
             log(f"GPU: {gpu_line()}")
             continue
         append_ledger(extract_ledger, row)
@@ -398,7 +428,9 @@ def main(argv: list[str] | None = None) -> int:
     if download_failures:
         log(f"NOT PROCESSED (download failed): {download_failures}")
     log(f"finished this session: {progress_line(final)}")
-    if stopped_for_budget:
+    if recycled:
+        log("process recycled; the notebook loop continues with a fresh process")
+    elif stopped_for_budget:
         log("time budget reached; rerun the extract cell in a new session to continue where this stopped")
     elif final["remaining"] and not (fallbacks or download_failures):
         log("videos remain; rerun the extract cell to continue where this stopped")

@@ -203,3 +203,12 @@ def test_unicode_line_separator_inside_a_row_does_not_break_reading(tmp_path):
     ex.append_ledger(ledger, {"id": "a", "status": "error", "detail": "bad\u2028char\u0085here"})
     ex.append_ledger(ledger, {"id": "b", "status": "ok"})
     assert [r["id"] for r in ex.read_rows(ledger)] == ["a", "b"]
+
+
+def test_fallback_attempts_are_counted_per_video(tmp_path):
+    log = tmp_path / "asr_fallback.jsonl"
+    assert ex.fallback_attempts(log) == {}
+    for video in ("a", "b", "a"):
+        ex.append_ledger(log, {"id": video, "detail": "small"})
+    assert ex.fallback_attempts(log) == {"a": 2, "b": 1}
+    assert ex.FALLBACK_LIMIT == 2
