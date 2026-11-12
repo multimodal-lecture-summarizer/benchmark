@@ -1,0 +1,57 @@
+{
+  "cohort_size": 40,
+  "comparable_pairs": 39,
+  "decision": {
+    "label": "no_difference",
+    "reason": "neither the helps nor the hurts condition holds"
+  },
+  "decision_rules_sha256": "a7fb3f5d9e5ed6c3a2236c2d0ff9f418c6363043d9bf9ea6c65d146191923e9b",
+  "descriptive_only": {
+    "by_arm": {
+      "A": {
+        "bertscore_f1": 0.8590114181106155,
+        "generation_seconds": 16.27179487179487,
+        "minicheck_transcript_only": 0.6802928122122669,
+        "rougeL_f1_at_120": 0.13193243002224428,
+        "scored": 39,
+        "slide_term_coverage": 0.0007435433538672285,
+        "word_count": 65.64102564102564
+      },
+      "D": {
+        "bertscore_f1": 0.8606038754050797,
+        "generation_seconds": 18.005128205128205,
+        "minicheck_transcript_only": 0.6117272408054266,
+        "rougeL_f1_at_120": 0.14066927107873325,
+        "scored": 39,
+        "slide_term_coverage": 0.010902139233606648,
+        "word_count": 65.74358974358974
+      }
+    },
+    "by_stratum_delta": {},
+    "ocr_not_in_input_videos": [],
+    "segmenter_content_videos": []
+  },
+  "guard": {
+    "high": 0.0711230319211662,
+    "low": -0.08344746813114381,
+    "mean": -0.007142746251563155,
+    "metric": "minicheck_evidence_full",
+    "n": 39
+  },
+  "label_kind": "confirmatory_single_pass",
+  "not_comparable": [
+    {
+      "id": "10.5446/52208",
+      "reason": "not scored: {'A': 'error', 'D': 'error'}",
+      "stratum": "S1_cs_talk_scored"
+    }
+  ],
+  "primary": {
+    "high": 0.019229763867290677,
+    "low": -0.007869649901927388,
+    "mean": 0.005542867243397032,
+    "metric": "rougeL_f1_at_350",
+    "n": 39
+  },
+  "protocol_id": "led-ocr-ablation-261110-v1"
+}
